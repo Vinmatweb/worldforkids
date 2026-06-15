@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VinMatův svět pro děti</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif; }
+        .outline-text {
+            -webkit-text-stroke: 2px #000000;
+            text-stroke: 2px #000000;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+        .char-0 { color: #ef4444; } .char-1 { color: #60a5fa; } .char-2 { color: #4ade80; } 
+        .char-3 { color: #facc15; } .char-4 { color: #a855f7; } .char-5 { color: #f97316; } 
+        .char-6 { color: #f43f5e; } .char-7 { color: #2dd4bf; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
+
+    <div class="bg-slate-900 text-white text-xs py-2 px-4 flex justify-end font-bold">
+        <button onclick="setJazyk('en')" id="lang-to-en" class="hidden hover:text-amber-400 transition-colors">EN</button>
+        <button onclick="setJazyk('cz')" id="lang-to-cz" class="hover:text-amber-400 transition-colors">CZ</button>
+    </div>
+
+    <div class="max-w-7xl w-full mx-auto px-4 pt-6">
+        <header class="header-meadow pt-12 pb-20 px-4 text-center rounded-3xl border border-slate-200 shadow-xs flex flex-col justify-between items-center overflow-hidden w-full bg-sky-200 relative" style="background-image: url('assets/images/banner.png'); background-size: cover; background-position: center bottom; min-height: 280px;">
+            <div class="w-full flex justify-center mt-2">
+                <h1 id="txt-main-title" class="text-4xl md:text-5xl lg:text-6xl tracking-wide flex flex-wrap justify-center select-none"></h1>
+            </div>
+            
+            <div class="absolute top-[185px] left-1/2 transform -translate-x-1/2 z-10 w-full text-center px-4">
+                <p id="txt-sub-title" class="text-slate-800 font-bold text-base md:text-lg bg-white/95 backdrop-blur-xs inline-block px-5 py-1.5 rounded-full shadow-xs">
+                </p>
+            </div>
+        </header>
+    </div>
+
+    <main class="max-w-7xl w-full mx-auto px-4 py-8 flex-grow">
+
+        <section class="bg-white rounded-2xl shadow-sm p-6 mb-6 border border-slate-100 mt-4">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div class="flex flex-wrap items-center gap-2">
+                    <button onclick="setTyp('vse')" id="btn-vse" class="px-5 py-2 rounded-full text-sm font-semibold transition-all bg-slate-900 text-white shadow-sm">Vše</button>
+                    <button onclick="setTyp('bludiste')" id="btn-bludiste" class="px-5 py-2 rounded-full text-sm font-semibold transition-all text-slate-600 bg-slate-100 hover:bg-slate-200">🧩 <span id="lbl-nav-bludiste">Bludiště</span></button>
+                    <button onclick="setTyp('omalovanky')" id="btn-omalovanky" class="px-5 py-2 rounded-full text-sm font-semibold transition-all text-slate-600 bg-slate-100 hover:bg-slate-200">🎨 <span id="lbl-nav-omalovanky">Omalovánky</span></button>
+                    <button onclick="setTyp('spojovacky')" id="btn-spojovacky" class="px-5 py-2 rounded-full text-sm font-semibold transition-all text-slate-600 bg-slate-100 hover:bg-slate-200">🔢 <span id="lbl-nav-spojovacky">Spojovačky</span></button>
+                </div>
+
+                <div class="flex flex-wrap items-center gap-1.5">
+                    <span id="lbl-filter-age-title" class="text-xs font-bold text-slate-400 uppercase tracking-wider mr-1">Věk:</span>
+                    <button onclick="setVek('vse')" id="btn-vek-vse" class="px-4 py-1.5 text-xs font-bold rounded-full bg-slate-900 text-white transition-all">Vše</button>
+                    <button onclick="setVek('LV1')" id="btn-vek-1" class="px-4 py-1.5 text-xs font-bold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all">3–4</button>
+                    <button onclick="setVek('LV2')" id="btn-vek-2" class="px-4 py-1.5 text-xs font-bold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all">5–6</button>
+                    <button onclick="setVek('LV3')" id="btn-vek-3" class="px-4 py-1.5 text-xs font-bold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all">7–9</button>
+                    <button onclick="setVek('LV4')" id="btn-vek-4" class="px-4 py-1.5 text-xs font-bold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all">10+</button>
+                    <button onclick="setVek('LV5')" id="btn-vek-5" class="px-4 py-1.5 text-xs font-bold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all">Expert</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="knihovna-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5"></div>
+            <div id="no-results" class="hidden text-center py-12">
+                <p id="txt-no-results" class="text-xl text-slate-400 font-bold">Pro tento věk tu zatím nic nemáme.</p>
+            </div>
+        </section>
+
+        <section id="about-section" class="bg-white rounded-2xl shadow-sm p-6 mb-6 border border-slate-100 text-slate-600 leading-relaxed text-sm mt-12">
+        </section>
+
+    </main>
+
+    <div id="detail-modal" onclick="closeModalOnBackdrop(event)" class="fixed inset-0 bg-black/60 z-50 hidden flex items-center justify-center p-4 backdrop-blur-xs">
+        <div class="bg-white rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-hidden shadow-2xl flex flex-col md:flex-row relative">
+            <button onclick="closeModal()" class="absolute top-4 right-4 bg-slate-100 hover:bg-slate-200 w-10 h-10 rounded-full flex items-center justify-center font-bold text-slate-700 z-10">✕</button>
+            <div class="md:w-3/5 bg-slate-50 p-6 flex items-center justify-center border-r border-slate-100 max-h-[40vh] md:max-h-[90vh]">
+                <img id="modal-img" src="" alt="" class="max-w-full max-h-full object-contain rounded-lg">
+            </div>
+            <div class="md:w-2/5 p-8 flex flex-col justify-between bg-white">
+                <div>
+                    <div class="flex gap-2 mb-3">
+                        <span id="modal-tag-vek" class="bg-amber-100 text-amber-800 text-xs px-2.5 py-1 rounded-md font-bold"></span>
+                    </div>
+                    <h2 id="modal-title" class="text-2xl font-bold text-slate-900 leading-tight mb-6">Název</h2>
+                    
+                    <div id="modal-version-container" class="mb-8">
+                        <label id="lbl-modal-variant" class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Varianty</label>
+                        <div class="flex gap-2">
+                            <button id="modal-btn-color" onclick="toggleModalVersion('barevne')" class="flex-1 py-2 px-4 rounded-xl font-bold text-sm border-2">🌈 Barevná</button>
+                            <button id="modal-btn-bw" onclick="toggleModalVersion('cernobile')" class="flex-1 py-2 px-4 rounded-xl font-bold text-sm border-2">🪙 Černobílá</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-3 pt-4 border-t border-slate-100">
+                    <button id="modal-download-png" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-xl shadow-sm text-sm">📥 Stáhnout obrázek (PNG)</button>
+                    <button id="print-btn" onclick="tiskniAktualni()" class="w-full bg-slate-800 hover:bg-slate-900 text-white font-bold py-3 px-4 rounded-xl shadow-sm text-sm">🖨️ Vytisknout rovnou</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-6 text-xs text-slate-400 bg-white border-t border-slate-100 mt-12 px-4">
+        <p class="leading-relaxed font-bold">
+            <span id="txt-footer-copyright">© 2026 Vyrobeno s ❤️ pro skvělé tvoření</span> ·   
+            <a href="https://www.vinmat.eu" target="_blank" id="txt-footer-projects" class="underline">Další projekty</a> ·   
+            <a href="privacy.html" id="txt-footer-privacy" class="underline">Privacy Policy</a> ·   
+            <a href="terms.html" id="txt-footer-terms" class="underline">Terms of Service</a> ·   
+            <span id="txt-footer-disclaimer" class="text-slate-500">Všechna stahování jsou zdarma pro osobní a vzdělávací účely</span>
+        </p>
+    </footer>
+
+    <script src="seznam.js"></script>
+
+    <script>
+        const slovnik = {
+            cz: {
+                mainTitle: "VINMATŮV SVĚT PRO DĚTI", subTitle: "Ověřená bludiště, omalovánky a spojovačky pro okamžitou zábavu",
+                vse: "Vše", bludiste: "Bludiště", omalovanky: "Omalovánky", spojovacky: "Spojovačky", ageTitle: "Věk:",
+                noResults: "Pro tento věk tu zatím nic nemáme.", variant: "Vyberte variantu listu",
+                btnPng: "Stáhnout obrázek (PNG)", btnPrint: "Vytisknout rovnou", btnColor: "🌈 Barevná", btnBw: "🪙 Černobílá",
+                labelColor: "Barevné", labelBw: "Černobílé", bludisteLabel: "BLUDIŠTĚ", omalovankyLabel: "OMALOVÁNKY", spojovackyLabel: "SPOJOVAČKY",
+                footerCopyright: "© 2026 Vyrobeno s ❤️ pro skvělé tvoření", footerProjects: "Další projekty", 
+                footerPrivacy: "Zásady ochrany osobních údajů", 
+                footerTerms: "Podmínky užití", 
+                footerDisclaimer: "Všechna stahování jsou zdarma pro osobní a vzdělávací účely",
+                onlyBw: "◧ Pouze černobílé"
+            },
+            en: {
+                mainTitle: "VINMAT'S WORLD FOR KIDS", subTitle: "Verified mazes, coloring pages and dot-to-dots for instant fun",
+                vse: "All", bludiste: "Mazes", omalovanky: "Coloring", spojovacky: "Dot-to-Dots", ageTitle: "Age:",
+                noResults: "Nothing found for this age selection.", variant: "Select list variant",
+                btnPng: "Download Image (PNG)", btnPrint: "Print Directly", btnColor: "🌈 Colored", btnBw: "🪙 B&W",
+                labelColor: "Colored", labelBw: "B&W", bludisteLabel: "MAZES", omalovankyLabel: "COLORING", spojovackyLabel: "DOT-TO-DOTS",
+                footerCopyright: "© 2026 Made with ❤️ for great crafting", footerProjects: "More projects", 
+                footerPrivacy: "Privacy Policy", 
+                footerTerms: "Terms of Service", 
+                footerDisclaimer: "All downloads free for personal & educational use",
+                onlyBw: "◧ B&W only"
+            }
+        };
+
+        const vekMapovani = { 
+            'LV1': { cz: '👶 3–4', en: '👶 3–4' }, 
+            'LV2': { cz: '👧👦 5–6', en: '👧👦 5–6' }, 
+            'LV3': { cz: '👧👦 7–9', en: '👧👦 7–9' }, 
+            'LV4': { cz: '👩‍🦰🧑‍🦱 10+', en: '👩‍🦰🧑‍🦱 10+' },
+            'LV5': { cz: '👩👨 Expert', en: '👩👨 Expert' }
+        };
+
+        let jaz = 'en'; 
+        let aktualniTyp = 'vse'; let aktualniVek = 'vse';
+        let aktivniKartyVerze = {}; let aktivniModalPolozka = null; let aktivniModalVerze = 'barevne';
+        let zparsovanaData = [];
+
+        function parsujSekci(poleObjektu, typSlozky) {
+            poleObjektu.forEach(položkaMix => {
+                const soubor = typeof položkaMix === 'string' ? položkaMix : položkaMix.soubor;
+                const casti = soubor.split('-');
+                if(casti.length < 2) return;
+
+                const vekKod = casti[0]; 
+                let zbytek = casti.slice(1).join('-'); 
+                const cistaPripona = soubor.split('.').pop().toLowerCase(); 
+                let jmenoBezPripony = zbytek.substring(0, zbytek.lastIndexOf('.')); 
+
+                jmenoBezPripony = jmenoBezPripony.replace(/^(Gem_\d+|GPT_\d+)-/i, '');
+                const jedinecneID = `${typSlozky}-${soubor.substring(0, soubor.lastIndexOf('.'))}`;
+
+                if (jmenoBezPripony.toUpperCase().includes('_BW')) {
+                    const cistyNazevProWeb = jmenoBezPripony.replace(/_BW$/i, '');
+                    zparsovanaData.push({
+                        id: jedinecneID, 
+                        nazev: cistyNazevProWeb.replace(/_/g, ' ').replace(/-/g, ' '),
+                        typ: typSlozky,
+                        vek: vekKod,
+                        img_barevne: `public/${typSlozky}/${soubor}`, 
+                        img_cernobile: null, 
+                        jenCernobile: true
+                    });
+                } else {
+                    const bwNazev = soubor.substring(0, soubor.lastIndexOf('.')) + `_BW.${cistaPripona}`;
+                    zparsovanaData.push({
+                        id: jedinecneID,
+                        nazev: jmenoBezPripony.replace(/_/g, ' ').replace(/-/g, ' '),
+                        typ: typSlozky,
+                        vek: vekKod,
+                        img_barevne: `public/${typSlozky}/${soubor}`,
+                        img_cernobile: `public/${typSlozky}/${bwNazev}`, 
+                        jenCernobile: false
+                    });
+                }
+            });
+        }
+
+        function naparsujVsechno() {
+            zparsovanaData = [];
+            if (typeof dataBludiste !== 'undefined') parsujSekci(dataBludiste, 'bludiste');
+            if (typeof dataOmalovanky !== 'undefined') parsujSekci(dataOmalovanky, 'omalovanky');
+            if (typeof dataSpojovacky !== 'undefined') parsujSekci(dataSpojovacky, 'spojovacky');
+        }
+
+        const grid = document.getElementById('knihovna-grid');
+        const noResults = document.getElementById('no-results');
+
+        function setJazyk(novyJazyk) {
+            jaz = novyJazyk;
+            localStorage.setItem('vinmat_lang', jaz);
+
+            document.getElementById('lang-to-en').classList.toggle('hidden', jaz === 'en');
+            document.getElementById('lang-to-cz').classList.toggle('hidden', jaz === 'cz');
+            
+            document.getElementById('txt-main-title').innerHTML = generujBarevnyText(slovnik[jaz].mainTitle);
+            document.getElementById('txt-sub-title').innerText = slovnik[jaz].subTitle;
+            document.getElementById('btn-vse').innerText = slovnik[jaz].vse;
+            document.getElementById('lbl-nav-bludiste').innerText = slovnik[jaz].bludiste;
+            document.getElementById('lbl-nav-omalovanky').innerText = slovnik[jaz].omalovanky;
+            document.getElementById('lbl-nav-spojovacky').innerText = slovnik[jaz].spojovacky;
+            document.getElementById('lbl-filter-age-title').innerText = slovnik[jaz].ageTitle;
+            document.getElementById('btn-vek-vse').innerText = slovnik[jaz].vse;
+            document.getElementById('txt-no-results').innerText = slovnik[jaz].noResults;
+            document.getElementById('lbl-modal-variant').innerText = slovnik[jaz].variant;
+            document.getElementById('modal-download-png').innerText = slovnik[jaz].btnPng;
+            document.getElementById('print-btn').innerText = slovnik[jaz].btnPrint;
+            document.getElementById('modal-btn-color').innerText = slovnik[jaz].btnColor;
+            document.getElementById('modal-btn-bw').innerText = slovnik[jaz].btnBw;
+            document.getElementById('txt-footer-copyright').innerText = slovnik[jaz].footerCopyright;
+            document.getElementById('txt-footer-projects').innerText = slovnik[jaz].footerProjects;
+            
+            document.getElementById('txt-footer-privacy').innerText = slovnik[jaz].footerPrivacy;
+            document.getElementById('txt-footer-terms').innerText = slovnik[jaz].footerTerms;
+            document.getElementById('txt-footer-disclaimer').innerText = slovnik[jaz].footerDisclaimer;
+
+            document.getElementById('txt-footer-privacy').href = jaz === 'cz' ? 'privacy-cz.html' : 'privacy.html';
+            document.getElementById('txt-footer-terms').href = jaz === 'cz' ? 'terms-cz.html' : 'terms.html';
+
+            const aboutSection = document.getElementById('about-section');
+            if (aboutSection) {
+                if (jaz === 'cz') {
+                    aboutSection.innerHTML = `
+                        <h2 class="text-lg font-bold text-slate-900 mb-3">O projektu VinMatův svět pro děti</h2>
+                        <p class="mb-3">Vítejte v naší vybrané knihovně vysoce kvalitních pracovních listů určených pro rodiče, pedagogy a pečovatele. Tato platforma poskytuje bezplatný přístup ke vzdělávacím nástrojům strukturovaným do jasných úrovní obtížnosti, což vám pomůže najít perfektní aktivitu pro podporu kognitivního růstu, jemné motoriky a prostorového vnímání dětí.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 pt-4 border-t border-slate-50">
+                            <div>
+                                <h3 class="font-bold text-slate-800 mb-1">🧩 Ilustrovaná bludiště</h3>
+                                <p class="text-xs">Skvělá pro procvičování řešení problémů, vytrvalosti a logického plánování. K dispozici v živých barvách i v černobílých variantách šetrných k tisku.</p>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-800 mb-1">🎨 Kreativní omalovánky</h3>
+                                <p class="text-xs">Ideální pro umělecké vyjádření, rozpoznávání barev a posilování svalů rukou, které jsou nezbytné pro časné dovednosti psaní.</p>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-800 mb-1">🔢 Zábavné spojovačky</h3>
+                                <p class="text-xs">Poutavé skládačky, které skrytě trénují řazení čísel, koncentraci a přesné kreslení čar.</p>
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    aboutSection.innerHTML = `
+                        <h2 class="text-lg font-bold text-slate-900 mb-3">About VinMat's World for Kids</h2>
+                        <p class="mb-3">Welcome to our curated library of high-quality worksheets designed for parents, educators, and guardians. This platform provides free access to educational tools structured into clear difficulty levels, helping you find the perfect activity to support children's cognitive growth, fine motor skills, and spatial awareness.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 pt-4 border-t border-slate-50">
+                            <div>
+                                <h3 class="font-bold text-slate-800 mb-1">🧩 Illustrated Mazes</h3>
+                                <p class="text-xs">Great for practicing problem-solving, persistence, and logical planning. Available in both vibrant colors and printer-friendly variants.</p>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-800 mb-1">🎨 Creative Coloring</h3>
+                                <p class="text-xs">Perfect for artistic expression, color recognition, and strengthening hand muscles essential for early writing skills.</p>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-800 mb-1">🔢 Dot-to-Dot Sheets</h3>
+                                <p class="text-xs">Engaging puzzle layouts that secretly train number sequencing, concentration, and precise line drawing precision.</p>
+                            </div>
+                        </div>
+                    `;
+                }
+            }
+
+            filtrujData();
+        }
+
+        function generujBarevnyText(text) {
+            let vysledek = ''; let bIdx = 0;
+            for (let i = 0; i < text.length; i++) {
+                if (text[i] === ' ') { vysledek += '<span class="inline-block">&nbsp;</span>'; } 
+                else { vysledek += `<span class="outline-text char-${bIdx % 8}">${text[i]}</span>`; bIdx++; }
+            }
+            return vysledek;
+        }
+
+        function setTyp(typ) {
+            aktualniTyp = typ;
+            ['vse', 'bludiste', 'omalovanky', 'spojovacky'].forEach(t => {
+                document.getElementById(`btn-${t}`).className = t === typ ? "px-5 py-2 rounded-full text-sm font-bold bg-slate-900 text-white shadow-sm" : "px-5 py-2 rounded-full text-sm font-bold text-slate-600 bg-slate-100 hover:bg-slate-200";
+            });
+            filtrujData();
+        }
+
+        function setVek(vek) {
+            aktualniVek = vek;
+            const veky = { 'vse': 'btn-vek-vse', 'LV1': 'btn-vek-1', 'LV2': 'btn-vek-2', 'LV3': 'btn-vek-3', 'LV4': 'btn-vek-4', 'LV5': 'btn-vek-5' };
+            Object.keys(veky).forEach(v => {
+                document.getElementById(veky[v]).className = v === vek ? "px-4 py-1.5 text-xs font-bold rounded-full bg-slate-900 text-white" : "px-4 py-1.5 text-xs font-bold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200";
+            });
+            filtrujData();
+        }
+
+        function setKartaVerze(id, verze) {
+            const polozka = zparsovanaData.find(p => p.id === id);
+            if(!polozka) return;
+            
+            if (polozka.jenCernobile) {
+                document.getElementById(`img-${id}`).src = polozka.img_barevne;
+                return;
+            }
+
+            aktivniKartyVerze[id] = verze;
+            document.getElementById(`img-${id}`).src = verze === 'cernobile' ? polozka.img_cernobile : polozka.img_barevne;
+            
+            const bc = document.getElementById(`btn-color-${id}`);
+            const bb = document.getElementById(`btn-bw-${id}`);
+            if(bc && bb) {
+                if (verze === 'barevne') {
+                    bc.className = "flex-1 py-1 text-xs font-bold rounded-md bg-slate-900 text-white";
+                    bb.className = "flex-1 py-1 text-xs font-bold rounded-md text-slate-500 hover:bg-slate-200";
+                } else {
+                    bc.className = "flex-1 py-1 text-xs font-bold rounded-md text-slate-500 hover:bg-slate-200";
+                    bb.className = "flex-1 py-1 text-xs font-bold rounded-md bg-slate-900 text-white";
+                }
+            }
+        }
+
+        function vykresliKnihovnu(materialy) {
+            grid.innerHTML = "";
+            if (materialy.length === 0) { noResults.classList.remove('hidden'); return; }
+            noResults.classList.add('hidden');
+
+            materialy.forEach(polozka => {
+                if (!aktivniKartyVerze[polozka.id]) aktivniKartyVerze[polozka.id] = polozka.jenCernobile ? 'cernobile' : 'barevne';
+                const aktualniVerze = aktivniKartyVerze[polozka.id];
+                const vybranySrc = polozka.jenCernobile ? polozka.img_barevne : (aktualniVerze === 'cernobile' ? polozka.img_cernobile : polozka.img_barevne);
+
+                const karta = document.createElement('div');
+                karta.className = "bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col";
+                
+                let tlacitkaHTML = "";
+                if (!polozka.jenCernobile) {
+                    tlacitkaHTML = `
+                        <div class="flex gap-1 bg-slate-100 p-0.5 rounded-lg">
+                            <button id="btn-color-${polozka.id}" onclick="setKartaVerze('${polozka.id}', 'barevne')" class="flex-1 py-1 text-[11px] rounded-md">${slovnik[jaz].labelColor}</button>
+                            <button id="btn-bw-${polozka.id}" onclick="setKartaVerze('${polozka.id}', 'cernobile')" class="flex-1 py-1 text-[11px] rounded-md">${slovnik[jaz].labelBw}</button>
+                        </div>
+                    `;
+                } else {
+                    tlacitkaHTML = `
+                        <div class="text-center bg-slate-100 py-1 rounded-lg text-[11px] font-bold text-slate-500">${slovnik[jaz].onlyBw}</div>
+                    `;
+                }
+
+                const vekText = vekMapovani[polozka.vek] ? vekMapovani[polozka.vek][jaz] : polozka.vek;
+
+                karta.innerHTML = `
+                    <div onclick="openModal('${polozka.id}')" class="bg-slate-50 aspect-[4/5] p-4 flex items-center justify-center cursor-pointer group">
+                        <img id="img-${polozka.id}" src="${vybranySrc}" alt="${polozka.nazev}" class="max-w-full max-h-full object-contain group-hover:scale-102 transition-transform duration-300" onerror="this.src='https://placehold.co/400x500?text=Obrazek+bude+doplnen'">
+                    </div>
+                    <div class="p-4 flex-grow flex flex-col justify-between border-t border-slate-50">
+                        <div class="mb-3">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">${slovnik[jaz][polozka.typ + 'Label']}</span>
+                                <span class="text-xs text-slate-400 font-bold">${vekText}</span>
+                            </div>
+                            <h3 onclick="openModal('${polozka.id}')" class="font-bold text-sm text-slate-900 leading-tight cursor-pointer hover:text-indigo-600 line-clamp-2 uppercase">${polozka.nazev}</h3>
+                        </div>
+                        ${tlacitkaHTML}
+                    </div>
+                `;
+                grid.appendChild(karta);
+                if (!polozka.jenCernobile) setKartaVerze(polozka.id, aktualniVerze);
+            });
+        }
+
+        function filtrujData() {
+            let vyfiltrovano = zparsovanaData.filter(polozka => {
+                const odpovidaTyp = (aktualniTyp === 'vse' || polozka.typ === aktualniTyp);
+                const odpovidaVek = (aktualniVek === 'vse' || polozka.vek === aktualniVek);
+                return odpovidaTyp && odpovidaVek;
+            });
+            grid.innerHTML = "";
+            vykresliKnihovnu(vyfiltrovano);
+        }
+
+        function openModal(id) {
+            const polozka = zparsovanaData.find(p => p.id === id);
+            if (!polozka) return;
+
+            aktivniModalPolozka = polozka;
+            aktivniModalVerze = polozka.jenCernobile ? 'cernobile' : (aktivniKartyVerze[id] || 'barevne');
+
+            document.getElementById('modal-title').innerText = polozka.nazev.toUpperCase();
+            
+            const vekText = vekMapovani[polozka.vek] ? vekMapovani[polozka.vek][jaz] : polozka.vek;
+            document.getElementById('modal-tag-vek').innerText = `${vekText.toUpperCase()}`;
+
+            const containerVerze = document.getElementById('modal-version-container');
+            if (polozka.jenCernobile) {
+                containerVerze.classList.add('hidden');
+            } else {
+                containerVerze.classList.remove('hidden');
+            }
+
+            document.getElementById('modal-download-png').onclick = () => {
+                const link = document.createElement('a');
+                const src = polozka.jenCernobile ? polozka.img_barevne : (aktivniModalVerze === 'cernobile' ? polozka.img_cernobile : polozka.img_barevne);
+                link.href = src;
+                link.download = `${polozka.id}_${aktivniModalVerze}.png`;
+                link.click();
+            };
+
+            updateModalDisplay();
+            document.getElementById('detail-modal').classList.remove('hidden');
+        }
+
+        function closeModal() { document.getElementById('detail-modal').classList.add('hidden'); }
+        
+        function toggleModalVersion(verze) {
+            if (aktivniModalPolozka?.jenCernobile) return;
+            aktivniModalVerze = verze; updateModalDisplay();
+            if (aktivniModalPolozka) setKartaVerze(aktivniModalPolozka.id, verze);
+        }
+
+        function updateModalDisplay() {
+            if (!aktivniModalPolozka) return;
+            
+            const src = aktivniModalPolozka.jenCernobile ? aktivniModalPolozka.img_barevne : (aktivniModalVerze === 'cernobile' ? aktivniModalPolozka.img_cernobile : aktivniModalPolozka.img_barevne);
+            document.getElementById('modal-img').src = src;
+            
+            if (!aktivniModalPolozka.jenCernobile) {
+                const mc = document.getElementById('modal-btn-color');
+                const mb = document.getElementById('modal-btn-bw');
+                if (aktivniModalVerze === 'barevne') {
+                    mc.className = "flex-1 py-2 px-4 rounded-xl font-bold text-sm bg-slate-900 text-white";
+                    mb.className = "flex-1 py-2 px-4 rounded-xl font-bold text-sm bg-slate-50 border border-slate-200 text-slate-600";
+                } else {
+                    mc.className = "flex-1 py-2 px-4 rounded-xl font-bold text-sm bg-slate-50 border border-slate-200 text-slate-600";
+                    mb.className = "flex-1 py-2 px-4 rounded-xl font-bold text-sm bg-slate-900 text-white";
+                }
+            }
+        }
+
+        function tiskniAktualni() {
+            if (!aktivniModalPolozka) return;
+            const srcObrasku = aktivniModalPolozka.jenCernobile ? aktivniModalPolozka.img_barevne : (aktivniModalVerze === 'cernobile' ? aktivniModalPolozka.img_cernobile : aktivniModalPolozka.img_barevne);
+            const tiskoveOkno = window.open('', '_blank');
+            tiskoveOkno.document.write(`<html><body style="margin:0; display:flex; justify-content:center; align-items:center; height:100vh;"><img src="${srcObrasku}" style="max-width:100%; max-height:100%; object-fit:contain;" onload="window.print(); window.close();"></body></html>`);
+            tiskoveOkno.document.close();
+        }
+
+        function closeModalOnBackdrop(event) {
+            if (event.target === document.getElementById('detail-modal')) {
+                closeModal();
+            }
+        }
+
+        naparsujVsechno();
+        
+        const ulozenyJazyk = localStorage.getItem('vinmat_lang');
+        if (ulozenyJazyk) {
+            jaz = ulozenyJazyk;
+        }
+        setJazyk(jaz);
+    </script>
+</body>
+</html>
