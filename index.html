@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VinMatův svět pro děti</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif; }
@@ -73,7 +74,7 @@
         <section>
             <div id="knihovna-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5"></div>
             <div id="no-results" class="hidden text-center py-12">
-                <p id="txt-no-results" class="text-xl text-slate-400 font-bold">Pro tento věk tu zatím nic nemáme.</p>
+                <p id="txt-no-results" class="text-xl text-slate-400 font-bold">Pro tento výběr tu zatím nic nemáme.</p>
             </div>
         </section>
 
@@ -115,7 +116,7 @@
     <footer class="text-center py-6 text-xs text-slate-400 bg-white border-t border-slate-100 mt-12 px-4">
         <p class="leading-relaxed font-bold">
             <span id="txt-footer-copyright">© 2026 Vyrobeno s ❤️ pro skvělé tvoření</span> ·   
-            <a href="https://www.vinmat.eu" id="txt-footer-projects" class="underline">Další projekty</a> ·   
+            <a href="https://www.vinmat.eu/worldforkids" id="txt-footer-projects" class="underline">Další projekty</a> ·   
             <a href="privacy.html" id="txt-footer-privacy" class="underline">Privacy Policy</a> ·   
             <a href="terms.html" id="txt-footer-terms" class="underline">Terms of Service</a> ·   
             <span id="txt-footer-disclaimer" class="text-slate-500">Všechna stahování jsou zdarma pro osobní a vzdělávací účely</span>
@@ -132,7 +133,7 @@
                 noResults: "Pro tento výběr tu zatím nic nemáme.", variant: "Vyberte variantu listu",
                 btnPng: "Stáhnout obrázek (PNG)", btnPrint: "Vytisknout rovnou", btnColor: "🌈 Barevná", btnBw: "🪙 Černobílá",
                 labelColor: "Barevné", labelBw: "Černobílé", bludisteLabel: "BLUDIŠTĚ", omalovankyLabel: "OMALOVÁNKY", spojovackyLabel: "SPOJOVAČKY",
-                footerCopyright: "© 2026 Vyrobeno s ❤️ pro skvělé tvoření", footerProjects: "Zpět na rozcestník VinMat.eu", 
+                footerCopyright: "© 2026 Vyrobeno s ❤️ pro skvělé tvoření", footerProjects: "Domů na VinMat.eu", 
                 footerPrivacy: "Zásady ochrany osobních údajů", 
                 footerTerms: "Podmínky užití", 
                 footerDisclaimer: "Všechna stahování jsou zdarma pro osobní a vzdělávací účely",
@@ -146,7 +147,7 @@
                 noResults: "Nothing found for this selection.", variant: "Select list variant",
                 btnPng: "Download Image (PNG)", btnPrint: "Print Directly", btnColor: "🌈 Colored", btnBw: "🪙 B&W",
                 labelColor: "Colored", labelBw: "B&W", bludisteLabel: "MAZES", omalovankyLabel: "COLORING", spojovackyLabel: "DOT-TO-DOTS",
-                footerCopyright: "© 2026 Made with ❤️ for great crafting", footerProjects: "Back to VinMat.eu hub", 
+                footerCopyright: "© 2026 Made with ❤️ for great crafting", footerProjects: "Home to VinMat.eu", 
                 footerPrivacy: "Privacy Policy", 
                 footerTerms: "Terms of Service", 
                 footerDisclaimer: "All downloads free for personal & educational use",
@@ -172,14 +173,19 @@
         function ziskejPrelozenyNazev(surovyNazev, jazyk) {
             if (jazyk === 'en') return surovyNazev.toUpperCase();
             const hledane = surovyNazev.toLowerCase().trim();
-            // Pokud slovník v seznam.js existuje, bere slova z něj
             const slovnikZExternihoSouboru = (typeof prekladySlov !== 'undefined') ? prekladySlov : {};
             return (slovnikZExternihoSouboru[hledane] || surovyNazev).toUpperCase();
         }
 
         function parsujSekci(poleObjektu, typSlozky) {
             poleObjektu.forEach(položkaMix => {
-                const soubor = typeof položkaMix === 'string' ? položkaMix : položkaMix.soubor;
+                let soubor = typeof položkaMix === 'string' ? položkaMix : položkaMix.soubor;
+                
+                // BEZPEČNOSTNÍ FIX: Pokud už v seznamu je napsáno "public/bludiste/...", vysekneme jen čistý název souboru
+                if (soubor.includes('/')) {
+                    soubor = soubor.substring(soubor.lastIndexOf('/') + 1);
+                }
+
                 const casti = soubor.split('-');
                 if(casti.length < 2) return;
 
