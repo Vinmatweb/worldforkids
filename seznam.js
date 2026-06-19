@@ -23,21 +23,21 @@ const prekladySlov = {
 // =========================================================================
 
 const dataBludiste = [
-    "LV2-Gem_1-Ant.png",
-    "LV2-Gem_2-Bee.png",
-    "LV2-GPT_2-Bunny.png"
+    "LV2-Gem_1-Ant",
+    "LV2-Gem_2-Bee",
+    "LV2-GPT_2-Bunny"
 ];
 
 const dataOmalovanky = [
-    "LV1-Gem_1-Bear_BW.png",
-    "LV2-Gem_1-Bear_BW.png",
-    "LV3-Gem_1-Bear_BW.png",
-    "LV4-Gem_1-Bear_BW.png",
-    "LV5-Gem_1-Bear_BW.png",
-    "LV1-Gem_2-baby in stroller_BW.png",
-    "LV2-Gem_2-baby in stroller_BW.png"
+    "LV1-Gem_1-Bear_BW",
+    "LV2-Gem_1-Bear_BW",
+    "LV3-Gem_1-Bear_BW",
+    "LV4-Gem_1-Bear_BW",
+    "LV5-Gem_1-Bear_BW",
+    "LV1-Gem_2-baby in stroller_BW",
+    "LV2-Gem_2-baby in stroller_BW"
 ];
 
 const dataSpojovacky = [
-    "LV1-Gem_1-Bear_BW.png"
+    "LV1-Gem_1-Bear_BW"
 ];
