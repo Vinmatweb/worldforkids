@@ -88,7 +88,7 @@
             <button onclick="closeModal()" class="absolute top-4 right-4 bg-slate-100 hover:bg-slate-200 w-10 h-10 rounded-full flex items-center justify-center font-bold text-slate-700 z-10">✕</button>
             <div class="md:w-3/5 bg-slate-50 p-6 flex items-center justify-center border-r border-slate-100 max-h-[40vh] md:max-h-[90vh]">
                 <div id="modal-img-container" class="max-w-full max-h-full flex items-center justify-center">
-                </div>
+                    </div>
             </div>
             <div class="md:w-2/5 p-8 flex flex-col justify-between bg-white">
                 <div>
@@ -116,7 +116,7 @@
     <footer class="text-center py-6 text-xs text-slate-400 bg-white border-t border-slate-100 mt-12 px-4">
         <p class="leading-relaxed font-bold">
             <span id="txt-footer-copyright">© 2026 Vyrobeno s ❤️ pro skvělé tvoření</span> ·   
-            <a href="https://www.vinmat.eu/worldforkids" id="txt-footer-projects" class="underline">Další projekty</a> ·   
+            <a href="https://www.vinmat.eu" id="txt-footer-projects" class="underline">Další projekty</a> ·   
             <a href="privacy.html" id="txt-footer-privacy" class="underline">Privacy Policy</a> ·   
             <a href="terms.html" id="txt-footer-terms" class="underline">Terms of Service</a> ·   
             <span id="txt-footer-disclaimer" class="text-slate-500">Všechna stahování jsou zdarma pro osobní a vzdělávací účely</span>
@@ -131,7 +131,7 @@
                 mainTitle: "VINMATŮV SVĚT PRO DĚTI", subTitle: "Ověřená bludiště, omalovánky a spojovačky pro okamžitou zábavu",
                 vse: "Vše", bludiste: "Bludiště", omalovanky: "Omalovánky", spojovacky: "Spojovačky", ageTitle: "Věk:",
                 noResults: "Pro tento výběr tu zatím nic nemáme.", variant: "Vyberte variantu listu",
-                btnPng: "Stáhnout obrázek (PNG)", btnPrint: "Vytisknout rovnou", btnColor: "🌈 Barevná", btnBw: "🪙 Černobílá",
+                btnPng: "Stáhnout obrázek", btnPrint: "Vytisknout rovnou", btnColor: "🌈 Barevná", btnBw: "🪙 Černobílá",
                 labelColor: "Barevné", labelBw: "Černobílé", bludisteLabel: "BLUDIŠTĚ", omalovankyLabel: "OMALOVÁNKY", spojovackyLabel: "SPOJOVAČKY",
                 footerCopyright: "© 2026 Vyrobeno s ❤️ pro skvělé tvoření", footerProjects: "Domů na VinMat.eu", 
                 footerPrivacy: "Zásady ochrany osobních údajů", 
@@ -145,7 +145,7 @@
                 mainTitle: "VINMAT'S WORLD FOR KIDS", subTitle: "Verified mazes, coloring pages and dot-to-dots for instant fun",
                 vse: "All", bludiste: "Mazes", omalovanky: "Coloring", spojovacky: "Dot-to-Dots", ageTitle: "Age:",
                 noResults: "Nothing found for this selection.", variant: "Select list variant",
-                btnPng: "Download Image (PNG)", btnPrint: "Print Directly", btnColor: "🌈 Colored", btnBw: "🪙 B&W",
+                btnPng: "Download Image", btnPrint: "Print Directly", btnColor: "🌈 Colored", btnBw: "🪙 B&W",
                 labelColor: "Colored", labelBw: "B&W", bludisteLabel: "MAZES", omalovankyLabel: "COLORING", spojovackyLabel: "DOT-TO-DOTS",
                 footerCopyright: "© 2026 Made with ❤️ for great crafting", footerProjects: "Home to VinMat.eu", 
                 footerPrivacy: "Privacy Policy", 
@@ -179,44 +179,41 @@
 
         function parsujSekci(poleObjektu, typSlozky) {
             poleObjektu.forEach(položkaMix => {
-                let soubor = typeof položkaMix === 'string' ? položkaMix : položkaMix.soubor;
+                let surovyVstup = typeof položkaMix === 'string' ? položkaMix : položkaMix.soubor;
                 
-                // BEZPEČNOSTNÍ FIX: Pokud už v seznamu je napsáno "public/bludiste/...", vysekneme jen čistý název souboru
-                if (soubor.includes('/')) {
-                    soubor = soubor.substring(soubor.lastIndexOf('/') + 1);
-                }
+                let cistyNazev = surovyVstup.split('/').pop();
+                cistyNazev = cistyNazev.replace(/\.(png|jpg|jpeg|webp)$/i, '');
 
-                const casti = soubor.split('-');
+                const casti = cistyNazev.split('-');
                 if(casti.length < 2) return;
 
                 const vekKod = casti[0]; 
-                let zbytek = casti.slice(1).join('-'); 
-                const cistaPripona = soubor.split('.').pop().toLowerCase(); 
-                let jmenoBezPripony = zbytek.substring(0, zbytek.lastIndexOf('.')); 
+                let jmenoBezPripony = casti.slice(1).join('-'); 
+                let jmenoProWeb = jmenoBezPripony.replace(/^(Gem_\d+|GPT_\d+)-/i, '');
 
-                jmenoBezPripony = jmenoBezPripony.replace(/^(Gem_\d+|GPT_\d+)-/i, '');
-                const jedinecneID = `${typSlozky}-${soubor.substring(0, soubor.lastIndexOf('.'))}`;
+                const jedinecneID = `${typSlozky}-${cistyNazev}`;
+                const zakladniCesta = `public/${typSlozky}/`;
 
-                if (jmenoBezPripony.toUpperCase().includes('_BW')) {
-                    const cistyNazevProWeb = jmenoBezPripony.replace(/_BW$/i, '');
+                if (cistyNazev.toUpperCase().endsWith('_BW')) {
+                    const nazevCisty = jmenoProWeb.replace(/_BW$/i, '').replace(/_/g, ' ').replace(/-/g, ' ');
                     zparsovanaData.push({
                         id: jedinecneID, 
-                        surovyNazev: cistyNazevProWeb.replace(/_/g, ' ').replace(/-/g, ' '),
+                        surovyNazev: nazevCisty,
                         typ: typSlozky,
                         vek: vekKod,
-                        img_barevne: `public/${typSlozky}/${soubor}`, 
-                        img_cernobile: null, 
+                        cesta_barevne_base: zakladniCesta + cistyNazev, 
+                        cesta_cernobile_base: null, 
                         jenCernobile: true
                     });
                 } else {
-                    const bwNazev = soubor.substring(0, soubor.lastIndexOf('.')) + `_BW.${cistaPripona}`;
+                    const nazevCisty = jmenoProWeb.replace(/_/g, ' ').replace(/-/g, ' ');
                     zparsovanaData.push({
                         id: jedinecneID,
-                        surovyNazev: jmenoBezPripony.replace(/_/g, ' ').replace(/-/g, ' '),
+                        surovyNazev: nazevCisty,
                         typ: typSlozky,
                         vek: vekKod,
-                        img_barevne: `public/${typSlozky}/${soubor}`,
-                        img_cernobile: `public/${typSlozky}/${bwNazev}`, 
+                        cesta_barevne_base: zakladniCesta + cistyNazev,
+                        cesta_cernobile_base: zakladniCesta + cistyNazev + "_BW", 
                         jenCernobile: false
                     });
                 }
@@ -273,15 +270,42 @@
                     aboutSection.innerHTML = `
                         <h2 class="text-lg font-bold text-slate-900 mb-3">O projektu VinMatův svět pro děti</h2>
                         <p class="mb-3">Vítejte v naší vybrané knihovně vysoce kvalitních pracovních listů určených pro rodiče, pedagogy a pečovatele. Tato platforma poskytuje bezplatný přístup ke vzdělávacím nástrojům strukturovaným do jasných úrovní obtížnosti, což vám pomůže najít perfektní aktivitu pro podporu kognitivního růstu, jemné motoriky a prostorového vnímání dětí.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 pt-4 border-t border-slate-50">
+                            <div>
+                                <h3 class="font-bold text-slate-800 mb-1">🧩 Ilustrovaná bludiště</h3>
+                                <p class="text-xs">Skvělá pro procvičování řešení problémů, vytrvalosti a logického plánování. K dispozici v živých barvách i v černobílých variantách šetrných k tisku.</p>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-800 mb-1">🎨 Kreativní omalovánky</h3>
+                                <p class="text-xs">Ideální pro umělecké vyjádření, rozpoznávání barev a posilování svalů rukou, které jsou nezbytné pro časné dovednosti psaní.</p>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-800 mb-1">🔢 Zábavné spojovačky</h3>
+                                <p class="text-xs">Poutavé skládačky, které skrytě trénují řazení čísel, koncentraci a přesné kreslení čar.</p>
+                            </div>
+                        </div>
                     `;
                 } else {
                     aboutSection.innerHTML = `
                         <h2 class="text-lg font-bold text-slate-900 mb-3">About VinMat's World for Kids</h2>
                         <p class="mb-3">Welcome to our curated library of high-quality worksheets designed for parents, educators, and guardians. This platform provides free access to educational tools structured into clear difficulty levels, helping you find the perfect activity to support children's cognitive growth, fine motor skills, and spatial awareness.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 pt-4 border-t border-slate-50">
+                            <div>
+                                <h3 class="font-bold text-slate-800 mb-1">🧩 Illustrated Mazes</h3>
+                                <p class="text-xs">Great for practicing problem-solving, persistence, and logical planning. Available in both vibrant colors and printer-friendly variants.</p>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-800 mb-1">🎨 Creative Coloring</h3>
+                                <p class="text-xs">Perfect for artistic expression, color recognition, and strengthening hand muscles essential for early writing skills.</p>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-800 mb-1">🔢 Dot-to-Dot Sheets</h3>
+                                <p class="text-xs">Engaging puzzle layouts that secretly train number sequencing, concentration, and precise line drawing precision.</p>
+                            </div>
+                        </div>
                     `;
                 }
             }
-
             filtrujData();
         }
 
@@ -319,13 +343,12 @@
             const container = document.getElementById(`container-img-${id}`);
             if (!container) return;
 
-            const novySrc = verze === 'cernobile' ? polozka.img_cernobile : polozka.img_barevne;
-            const srcBezPripony = novySrc.substring(0, novySrc.lastIndexOf('.'));
+            const cestaBase = verze === 'cernobile' ? polozka.cesta_cernobile_base : polozka.cesta_barevne_base;
 
             container.innerHTML = `
                 <picture class="max-w-full max-h-full flex items-center justify-center">
-                    <source srcset="${srcBezPripony}.webp" type="image/webp">
-                    <img src="${novySrc}" alt="Obrázek" class="max-w-full max-h-full object-contain group-hover:scale-102 transition-transform duration-300">
+                    <source srcset="${cestaBase}.webp" type="image/webp">
+                    <img src="${cestaBase}.png" alt="Obrázek" class="max-w-full max-h-full object-contain group-hover:scale-102 transition-transform duration-300" onerror="this.src='https://placehold.co/400x500?text=Obrazek+bude+doplnen'">
                 </picture>
             `;
             
@@ -350,8 +373,8 @@
             materialy.forEach(polozka => {
                 if (!aktivniKartyVerze[polozka.id]) aktivniKartyVerze[polozka.id] = polozka.jenCernobile ? 'cernobile' : 'barevne';
                 const aktualniVerze = aktivniKartyVerze[polozka.id];
-                const vybranySrc = polozka.jenCernobile ? polozka.img_barevne : (aktualniVerze === 'cernobile' ? polozka.img_cernobile : polozka.img_barevne);
-                const srcBezPripony = vybranySrc.substring(0, vybranySrc.lastIndexOf('.'));
+                
+                const cestaBase = polozka.jenCernobile ? polozka.cesta_barevne_base : (aktualniVerze === 'cernobile' ? polozka.cesta_cernobile_base : polozka.cesta_barevne_base);
 
                 const karta = document.createElement('div');
                 karta.className = "bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col";
@@ -376,8 +399,8 @@
                 karta.innerHTML = `
                     <div id="container-img-${polozka.id}" onclick="openModal('${polozka.id}')" class="bg-slate-50 aspect-[4/5] p-4 flex items-center justify-center cursor-pointer group">
                         <picture class="max-w-full max-h-full flex items-center justify-center">
-                            <source srcset="${srcBezPripony}.webp" type="image/webp">
-                            <img src="${vybranySrc}" alt="${prelozenyNazev}" class="max-w-full max-h-full object-contain group-hover:scale-102 transition-transform duration-300">
+                            <source srcset="${cestaBase}.webp" type="image/webp">
+                            <img src="${cestaBase}.png" alt="${prelozenyNazev}" class="max-w-full max-h-full object-contain group-hover:scale-102 transition-transform duration-300" onerror="this.src='https://placehold.co/400x500?text=Obrazek+bude+doplnen'">
                         </picture>
                     </div>
                     <div class="p-4 flex-grow flex flex-col justify-between border-t border-slate-50">
@@ -413,6 +436,20 @@
             vykresliKnihovnu(vyfiltrovano);
         }
 
+        // DETEKTIV - zjistí jestli existuje PNG, jinak vezme to, co se načetlo
+        async function ziskejNejlepsiSoubor(cestaBase) {
+            const pngUrl = cestaBase + '.png';
+            try {
+                const response = await fetch(pngUrl, { method: 'HEAD' });
+                if (response.ok) {
+                    return pngUrl; 
+                }
+            } catch (error) {}
+            
+            const aktualniObrazek = document.getElementById('aktualni-nahled-obrazku');
+            return aktualniObrazek.currentSrc || aktualniObrazek.src;
+        }
+
         function openModal(id) {
             const polozka = zparsovanaData.find(p => p.id === id);
             if (!polozka) return;
@@ -433,12 +470,22 @@
                 containerVerze.classList.remove('hidden');
             }
 
-            document.getElementById('modal-download-png').onclick = () => {
+            document.getElementById('modal-download-png').onclick = async () => {
+                const cestaBase = polozka.jenCernobile ? polozka.cesta_barevne_base : (aktivniModalVerze === 'cernobile' ? polozka.cesta_cernobile_base : polozka.cesta_barevne_base);
+                
+                const btn = document.getElementById('modal-download-png');
+                const puvodniText = btn.innerText;
+                btn.innerText = "⏳ Otevírám...";
+
+                const nejlepsiCesta = await ziskejNejlepsiSoubor(cestaBase);
+                const pripona = nejlepsiCesta.split('.').pop(); 
+                
                 const link = document.createElement('a');
-                const src = polozka.jenCernobile ? polozka.img_barevne : (aktivniModalVerze === 'cernobile' ? polozka.img_cernobile : polozka.img_barevne);
-                link.href = src;
-                link.download = `${polozka.id}_${aktivniModalVerze}.png`;
+                link.href = nejlepsiCesta;
+                link.download = `${polozka.id}_${aktivniModalVerze}.${pripona}`;
                 link.click();
+
+                btn.innerText = puvodniText;
             };
 
             updateModalDisplay();
@@ -456,14 +503,13 @@
         function updateModalDisplay() {
             if (!aktivniModalPolozka) return;
             
-            const src = aktivniModalPolozka.jenCernobile ? aktivniModalPolozka.img_barevne : (aktivniModalVerze === 'cernobile' ? aktivniModalPolozka.img_cernobile : aktivniModalPolozka.img_barevne);
-            const srcBezPripony = src.substring(0, src.lastIndexOf('.'));
+            const cestaBase = aktivniModalPolozka.jenCernobile ? aktivniModalPolozka.cesta_barevne_base : (aktivniModalVerze === 'cernobile' ? aktivniModalPolozka.cesta_cernobile_base : aktivniModalPolozka.cesta_barevne_base);
 
             const mContainer = document.getElementById('modal-img-container');
             mContainer.innerHTML = `
                 <picture class="max-w-full max-h-full flex items-center justify-center">
-                    <source srcset="${srcBezPripony}.webp" type="image/webp">
-                    <img src="${src}" alt="Detail" class="max-w-full max-h-full object-contain rounded-lg">
+                    <source srcset="${cestaBase}.webp" type="image/webp">
+                    <img id="aktualni-nahled-obrazku" src="${cestaBase}.png" alt="Detail" class="max-w-full max-h-full object-contain rounded-lg" onerror="this.src='https://placehold.co/400x500?text=Obrazek+bude+doplnen'">
                 </picture>
             `;
             
@@ -480,12 +526,22 @@
             }
         }
 
-        function tiskniAktualni() {
+        async function tiskniAktualni() {
             if (!aktivniModalPolozka) return;
-            const srcObrasku = aktivniModalPolozka.jenCernobile ? aktivniModalPolozka.img_barevne : (aktivniModalVerze === 'cernobile' ? aktivniModalPolozka.img_cernobile : aktivniModalPolozka.img_barevne);
+            
+            const btn = document.getElementById('print-btn');
+            const puvodniText = btn.innerText;
+            btn.innerText = "⏳ Připravuji tisk...";
+
+            const cestaBase = aktivniModalPolozka.jenCernobile ? aktivniModalPolozka.cesta_barevne_base : (aktivniModalVerze === 'cernobile' ? aktivniModalPolozka.cesta_cernobile_base : aktivniModalPolozka.cesta_barevne_base);
+            
+            const nejlepsiCesta = await ziskejNejlepsiSoubor(cestaBase);
+            
             const tiskoveOkno = window.open('', '_blank');
-            tiskoveOkno.document.write(`<html><body style="margin:0; display:flex; justify-content:center; align-items:center; height:100vh;"><img src="${srcObrasku}" style="max-width:100%; max-height:100%; object-fit:contain;" onload="window.print(); window.close();"></body></html>`);
+            tiskoveOkno.document.write(`<html><body style="margin:0; display:flex; justify-content:center; align-items:center; height:100vh;"><img src="${nejlepsiCesta}" style="max-width:100%; max-height:100%; object-fit:contain;" onload="window.print(); window.close();"></body></html>`);
             tiskoveOkno.document.close();
+            
+            btn.innerText = puvodniText;
         }
 
         function closeModalOnBackdrop(event) {
