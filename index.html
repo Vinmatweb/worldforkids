@@ -14,8 +14,8 @@
             font-weight: 900;
             text-transform: uppercase;
         }
-        .char-0 { color: #ef4444; } .char-1 { color: #60a5fa; } .char-2 { color: #4ade80; } 
-        .char-3 { color: #facc15; } .char-4 { color: #a855f7; } .char-5 { color: #f97316; } 
+        .char-0 { color: #ef4444; } .char-1 { color: #60a5fa; } .char-2 { color: #4ade80; }
+        .char-3 { color: #facc15; } .char-4 { color: #a855f7; } .char-5 { color: #f97316; }
         .char-6 { color: #f43f5e; } .char-7 { color: #2dd4bf; }
     </style>
 </head>
@@ -36,10 +36,8 @@
             <div class="w-full flex justify-center mt-2">
                 <h1 id="txt-main-title" class="text-4xl md:text-5xl lg:text-6xl tracking-wide flex flex-wrap justify-center select-none"></h1>
             </div>
-            
             <div class="absolute top-[185px] left-1/2 transform -translate-x-1/2 z-10 w-full text-center px-4">
-                <p id="txt-sub-title" class="text-slate-800 font-bold text-base md:text-lg bg-white/95 backdrop-blur-xs inline-block px-5 py-1.5 rounded-full shadow-xs">
-                </p>
+                <p id="txt-sub-title" class="text-slate-800 font-bold text-base md:text-lg bg-white/95 backdrop-blur-xs inline-block px-5 py-1.5 rounded-full shadow-xs"></p>
             </div>
         </header>
     </div>
@@ -54,7 +52,6 @@
                     <button onclick="setTyp('omalovanky')" id="btn-omalovanky" class="px-5 py-2 rounded-full text-sm font-semibold transition-all text-slate-600 bg-slate-100 hover:bg-slate-200">🎨 <span id="lbl-nav-omalovanky">Omalovánky</span></button>
                     <button onclick="setTyp('spojovacky')" id="btn-spojovacky" class="px-5 py-2 rounded-full text-sm font-semibold transition-all text-slate-600 bg-slate-100 hover:bg-slate-200">🔢 <span id="lbl-nav-spojovacky">Spojovačky</span></button>
                 </div>
-
                 <div class="flex flex-wrap items-center gap-1.5">
                     <span id="lbl-filter-age-title" class="text-xs font-bold text-slate-400 uppercase tracking-wider mr-1">Věk:</span>
                     <button onclick="setVek('vse')" id="btn-vek-vse" class="px-4 py-1.5 text-xs font-bold rounded-full bg-slate-900 text-white transition-all">Vše</button>
@@ -65,7 +62,6 @@
                     <button onclick="setVek('LV5')" id="btn-vek-5" class="px-4 py-1.5 text-xs font-bold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all">Expert</button>
                 </div>
             </div>
-
             <div class="pt-2 border-t border-slate-50">
                 <input type="text" id="search-input" oninput="filtrujData()" placeholder="Hledat podle názvu..." class="w-full px-4 py-2 text-sm rounded-xl border border-slate-200 bg-slate-50 focus:outline-hidden focus:border-indigo-500 focus:bg-white transition-all font-sans">
             </div>
@@ -78,8 +74,7 @@
             </div>
         </section>
 
-        <section id="about-section" class="bg-white rounded-2xl shadow-sm p-6 mb-6 border border-slate-100 text-slate-600 leading-relaxed text-sm mt-12">
-        </section>
+        <section id="about-section" class="bg-white rounded-2xl shadow-sm p-6 mb-6 border border-slate-100 text-slate-600 leading-relaxed text-sm mt-12"></section>
 
     </main>
 
@@ -87,8 +82,7 @@
         <div class="bg-white rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-hidden shadow-2xl flex flex-col md:flex-row relative">
             <button onclick="closeModal()" class="absolute top-4 right-4 bg-slate-100 hover:bg-slate-200 w-10 h-10 rounded-full flex items-center justify-center font-bold text-slate-700 z-10">✕</button>
             <div class="md:w-3/5 bg-slate-50 p-6 flex items-center justify-center border-r border-slate-100 max-h-[40vh] md:max-h-[90vh]">
-                <div id="modal-img-container" class="max-w-full max-h-full flex items-center justify-center">
-                    </div>
+                <div id="modal-img-container" class="max-w-full max-h-full flex items-center justify-center"></div>
             </div>
             <div class="md:w-2/5 p-8 flex flex-col justify-between bg-white">
                 <div>
@@ -96,7 +90,6 @@
                         <span id="modal-tag-vek" class="bg-amber-100 text-amber-800 text-xs px-2.5 py-1 rounded-md font-bold"></span>
                     </div>
                     <h2 id="modal-title" class="text-2xl font-bold text-slate-900 leading-tight mb-6">Název</h2>
-                    
                     <div id="modal-version-container" class="mb-8">
                         <label id="lbl-modal-variant" class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Varianty</label>
                         <div class="flex gap-2">
@@ -115,10 +108,10 @@
 
     <footer class="text-center py-6 text-xs text-slate-400 bg-white border-t border-slate-100 mt-12 px-4">
         <p class="leading-relaxed font-bold">
-            <span id="txt-footer-copyright">© 2026 Vyrobeno s ❤️ pro skvělé tvoření</span> ·   
-            <a href="https://www.vinmat.eu" id="txt-footer-projects" class="underline">Další projekty</a> ·   
-            <a href="privacy.html" id="txt-footer-privacy" class="underline">Privacy Policy</a> ·   
-            <a href="terms.html" id="txt-footer-terms" class="underline">Terms of Service</a> ·   
+            <span id="txt-footer-copyright">© 2026 Vyrobeno s ❤️ pro skvělé tvoření</span> ·
+            <a href="https://www.vinmat.eu" id="txt-footer-projects" class="underline">Další projekty</a> ·
+            <a href="privacy.html" id="txt-footer-privacy" class="underline">Privacy Policy</a> ·
+            <a href="terms.html" id="txt-footer-terms" class="underline">Terms of Service</a> ·
             <span id="txt-footer-disclaimer" class="text-slate-500">Všechna stahování jsou zdarma pro osobní a vzdělávací účely</span>
         </p>
     </footer>
@@ -133,13 +126,10 @@
                 noResults: "Pro tento výběr tu zatím nic nemáme.", variant: "Vyberte variantu listu",
                 btnPng: "Stáhnout obrázek", btnPrint: "Vytisknout rovnou", btnColor: "🌈 Barevná", btnBw: "🪙 Černobílá",
                 labelColor: "Barevné", labelBw: "Černobílé", bludisteLabel: "BLUDIŠTĚ", omalovankyLabel: "OMALOVÁNKY", spojovackyLabel: "SPOJOVAČKY",
-                footerCopyright: "© 2026 Vyrobeno s ❤️ pro skvělé tvoření", footerProjects: "Domů na VinMat.eu", 
-                footerPrivacy: "Zásady ochrany osobních údajů", 
-                footerTerms: "Podmínky užití", 
+                footerCopyright: "© 2026 Vyrobeno s ❤️ pro skvělé tvoření", footerProjects: "Domů na VinMat.eu",
+                footerPrivacy: "Zásady ochrany osobních údajů", footerTerms: "Podmínky užití",
                 footerDisclaimer: "Všechna stahování jsou zdarma pro osobní a vzdělávací účely",
-                onlyBw: "◧ Pouze černobílé",
-                scrollTop: "⬆️ NAHORU",
-                searchPlaceholder: "Hledat podle názvu..."
+                onlyBw: "◧ Pouze černobílé", scrollTop: "⬆️ NAHORU", searchPlaceholder: "Hledat podle názvu..."
             },
             en: {
                 mainTitle: "VINMAT'S WORLD FOR KIDS", subTitle: "Verified mazes, coloring pages and dot-to-dots for instant fun",
@@ -147,25 +137,22 @@
                 noResults: "Nothing found for this selection.", variant: "Select list variant",
                 btnPng: "Download Image", btnPrint: "Print Directly", btnColor: "🌈 Colored", btnBw: "🪙 B&W",
                 labelColor: "Colored", labelBw: "B&W", bludisteLabel: "MAZES", omalovankyLabel: "COLORING", spojovackyLabel: "DOT-TO-DOTS",
-                footerCopyright: "© 2026 Made with ❤️ for great crafting", footerProjects: "Home to VinMat.eu", 
-                footerPrivacy: "Privacy Policy", 
-                footerTerms: "Terms of Service", 
+                footerCopyright: "© 2026 Made with ❤️ for great crafting", footerProjects: "Home to VinMat.eu",
+                footerPrivacy: "Privacy Policy", footerTerms: "Terms of Service",
                 footerDisclaimer: "All downloads free for personal & educational use",
-                onlyBw: "◧ B&W only",
-                scrollTop: "⬆️ TOP",
-                searchPlaceholder: "Search by name..."
+                onlyBw: "◧ B&W only", scrollTop: "⬆️ TOP", searchPlaceholder: "Search by name..."
             }
         };
 
-        const vekMapovani = { 
-            'LV1': { cz: '👶 3–4', en: '👶 3–4' }, 
-            'LV2': { cz: '👧👦 5–6', en: '👧👦 5–6' }, 
-            'LV3': { cz: '👧👦 7–9', en: '👧👦 7–9' }, 
+        const vekMapovani = {
+            'LV1': { cz: '👶 3–4', en: '👶 3–4' },
+            'LV2': { cz: '👧👦 5–6', en: '👧👦 5–6' },
+            'LV3': { cz: '👧👦 7–9', en: '👧👦 7–9' },
             'LV4': { cz: '👩‍🦰🧑‍🦱 10+', en: '👩‍🦰🧑‍🦱 10+' },
             'LV5': { cz: '👩👨 Expert', en: '👩👨 Expert' }
         };
 
-        let jaz = 'en'; 
+        let jaz = 'en';
         let aktualniTyp = 'vse'; let aktualniVek = 'vse';
         let aktivniKartyVerze = {}; let aktivniModalPolozka = null; let aktivniModalVerze = 'barevne';
         let zparsovanaData = [];
@@ -173,49 +160,32 @@
         function ziskejPrelozenyNazev(surovyNazev, jazyk) {
             if (jazyk === 'en') return surovyNazev.toUpperCase();
             const hledane = surovyNazev.toLowerCase().trim();
-            const slovnikZExternihoSouboru = (typeof prekladySlov !== 'undefined') ? prekladySlov : {};
-            return (slovnikZExternihoSouboru[hledane] || surovyNazev).toUpperCase();
+            const ext = (typeof prekladySlov !== 'undefined') ? prekladySlov : {};
+            return (ext[hledane] || surovyNazev).toUpperCase();
         }
 
         function parsujSekci(poleObjektu, typSlozky) {
-            poleObjektu.forEach(položkaMix => {
-                let surovyVstup = typeof položkaMix === 'string' ? položkaMix : položkaMix.soubor;
-                
-                let cistyNazev = surovyVstup.split('/').pop();
+            poleObjektu.forEach(function(polozka) {
+                var surovyVstup = typeof polozka === 'string' ? polozka : polozka.soubor;
+                var cistyNazev = surovyVstup.split('/').pop();
                 cistyNazev = cistyNazev.replace(/\.(png|jpg|jpeg|webp)$/i, '');
-
-                const casti = cistyNazev.split('-');
-                if(casti.length < 2) return;
-
-                const vekKod = casti[0]; 
-                let jmenoBezPripony = casti.slice(1).join('-'); 
-                let jmenoProWeb = jmenoBezPripony.replace(/^(Gem_\d+|GPT_\d+)-/i, '');
-
-                const jedinecneID = `${typSlozky}-${cistyNazev}`;
-                const zakladniCesta = `public/${typSlozky}/`;
+                var casti = cistyNazev.split('-');
+                if (casti.length < 2) return;
+                var vekKod = casti[0];
+                var jmenoBezPripony = casti.slice(1).join('-');
+                var jmenoProWeb = jmenoBezPripony.replace(/^(Gem_\d+|GPT_\d+)-/i, '');
+                var jedinecneID = typSlozky + '-' + cistyNazev;
+                var zakladniCesta = 'public/' + typSlozky + '/';
 
                 if (cistyNazev.toUpperCase().endsWith('_BW')) {
-                    const nazevCisty = jmenoProWeb.replace(/_BW$/i, '').replace(/_/g, ' ').replace(/-/g, ' ');
-                    zparsovanaData.push({
-                        id: jedinecneID, 
-                        surovyNazev: nazevCisty,
-                        typ: typSlozky,
-                        vek: vekKod,
-                        cesta_barevne_base: zakladniCesta + cistyNazev, 
-                        cesta_cernobile_base: null, 
-                        jenCernobile: true
-                    });
+                    var nazevCisty = jmenoProWeb.replace(/_BW$/i, '').replace(/_/g, ' ').replace(/-/g, ' ');
+                    zparsovanaData.push({ id: jedinecneID, surovyNazev: nazevCisty, typ: typSlozky, vek: vekKod,
+                        cesta_barevne_base: zakladniCesta + cistyNazev, cesta_cernobile_base: null, jenCernobile: true });
                 } else {
-                    const nazevCisty = jmenoProWeb.replace(/_/g, ' ').replace(/-/g, ' ');
-                    zparsovanaData.push({
-                        id: jedinecneID,
-                        surovyNazev: nazevCisty,
-                        typ: typSlozky,
-                        vek: vekKod,
+                    var nazevCisty2 = jmenoProWeb.replace(/_/g, ' ').replace(/-/g, ' ');
+                    zparsovanaData.push({ id: jedinecneID, surovyNazev: nazevCisty2, typ: typSlozky, vek: vekKod,
                         cesta_barevne_base: zakladniCesta + cistyNazev,
-                        cesta_cernobile_base: zakladniCesta + cistyNazev + "_BW", 
-                        jenCernobile: false
-                    });
+                        cesta_cernobile_base: zakladniCesta + cistyNazev + '_BW', jenCernobile: false });
                 }
             });
         }
@@ -230,16 +200,36 @@
         const grid = document.getElementById('knihovna-grid');
         const noResults = document.getElementById('no-results');
 
+        // Vrátí URL nejlepšího dostupného souboru (webp → png).
+        // Volá se POUZE při kliknutí na stažení/tisk – ne při načítání gridu.
+        async function nejlepsiUrl(cestaBase) {
+            var webp = cestaBase + '.webp';
+            var png = cestaBase + '.png';
+            try {
+                var r = await fetch(webp, { method: 'HEAD' });
+                if (r.ok) return webp;
+            } catch(e) {}
+            return png;
+        }
+
+        // HTML pro zobrazení obrázku v gridu/modalu:
+        // browser sám zvolí webp pokud existuje, jinak png – bez extra requestů při chybě
+        function obrazekHTML(cestaBase, alt, cssClass, idAttr) {
+            var idStr = idAttr ? ' id="' + idAttr + '"' : '';
+            return '<picture class="max-w-full max-h-full flex items-center justify-center">'
+                + '<source srcset="' + cestaBase + '.webp" type="image/webp">'
+                + '<img' + idStr + ' src="' + cestaBase + '.png" alt="' + alt + '" class="' + cssClass + '"'
+                + ' onerror="this.parentElement.querySelector(\'source\').remove(); this.src=\'' + cestaBase + '.png\'">'
+                + '</picture>';
+        }
+
         function setJazyk(novyJazyk) {
             jaz = novyJazyk;
             localStorage.setItem('vinmat_lang', jaz);
-
             document.getElementById('lang-to-en').classList.toggle('hidden', jaz === 'en');
             document.getElementById('lang-to-cz').classList.toggle('hidden', jaz === 'cz');
-            
             document.getElementById('btn-scroll-top').innerText = slovnik[jaz].scrollTop;
             document.getElementById('search-input').placeholder = slovnik[jaz].searchPlaceholder;
-
             document.getElementById('txt-main-title').innerHTML = generujBarevnyText(slovnik[jaz].mainTitle);
             document.getElementById('txt-sub-title').innerText = slovnik[jaz].subTitle;
             document.getElementById('btn-vse').innerText = slovnik[jaz].vse;
@@ -256,112 +246,70 @@
             document.getElementById('modal-btn-bw').innerText = slovnik[jaz].btnBw;
             document.getElementById('txt-footer-copyright').innerText = slovnik[jaz].footerCopyright;
             document.getElementById('txt-footer-projects').innerText = slovnik[jaz].footerProjects;
-            
             document.getElementById('txt-footer-privacy').innerText = slovnik[jaz].footerPrivacy;
             document.getElementById('txt-footer-terms').innerText = slovnik[jaz].footerTerms;
             document.getElementById('txt-footer-disclaimer').innerText = slovnik[jaz].footerDisclaimer;
-
             document.getElementById('txt-footer-privacy').href = jaz === 'cz' ? 'privacy-cz.html' : 'privacy.html';
             document.getElementById('txt-footer-terms').href = jaz === 'cz' ? 'terms-cz.html' : 'terms.html';
 
-            const aboutSection = document.getElementById('about-section');
+            var aboutSection = document.getElementById('about-section');
             if (aboutSection) {
                 if (jaz === 'cz') {
-                    aboutSection.innerHTML = `
-                        <h2 class="text-lg font-bold text-slate-900 mb-3">O projektu VinMatův svět pro děti</h2>
-                        <p class="mb-3">Vítejte v naší vybrané knihovně vysoce kvalitních pracovních listů určených pro rodiče, pedagogy a pečovatele. Tato platforma poskytuje bezplatný přístup ke vzdělávacím nástrojům strukturovaným do jasných úrovní obtížnosti, což vám pomůže najít perfektní aktivitu pro podporu kognitivního růstu, jemné motoriky a prostorového vnímání dětí.</p>
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 pt-4 border-t border-slate-50">
-                            <div>
-                                <h3 class="font-bold text-slate-800 mb-1">🧩 Ilustrovaná bludiště</h3>
-                                <p class="text-xs">Skvělá pro procvičování řešení problémů, vytrvalosti a logického plánování. K dispozici v živých barvách i v černobílých variantách šetrných k tisku.</p>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-slate-800 mb-1">🎨 Kreativní omalovánky</h3>
-                                <p class="text-xs">Ideální pro umělecké vyjádření, rozpoznávání barev a posilování svalů rukou, které jsou nezbytné pro časné dovednosti psaní.</p>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-slate-800 mb-1">🔢 Zábavné spojovačky</h3>
-                                <p class="text-xs">Poutavé skládačky, které skrytě trénují řazení čísel, koncentraci a přesné kreslení čar.</p>
-                            </div>
-                        </div>
-                    `;
+                    aboutSection.innerHTML = '<h2 class="text-lg font-bold text-slate-900 mb-3">O projektu VinMatův svět pro děti</h2><p class="mb-3">Vítejte v naší vybrané knihovně vysoce kvalitních pracovních listů určených pro rodiče, pedagogy a pečovatele. Tato platforma poskytuje bezplatný přístup ke vzdělávacím nástrojům strukturovaným do jasných úrovní obtížnosti, což vám pomůže najít perfektní aktivitu pro podporu kognitivního růstu, jemné motoriky a prostorového vnímání dětí.</p><div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 pt-4 border-t border-slate-50"><div><h3 class="font-bold text-slate-800 mb-1">🧩 Ilustrovaná bludiště</h3><p class="text-xs">Skvělá pro procvičování řešení problémů, vytrvalosti a logického plánování. K dispozici v živých barvách i v černobílých variantách šetrných k tisku.</p></div><div><h3 class="font-bold text-slate-800 mb-1">🎨 Kreativní omalovánky</h3><p class="text-xs">Ideální pro umělecké vyjádření, rozpoznávání barev a posilování svalů rukou, které jsou nezbytné pro časné dovednosti psaní.</p></div><div><h3 class="font-bold text-slate-800 mb-1">🔢 Zábavné spojovačky</h3><p class="text-xs">Poutavé skládačky, které skrytě trénují řazení čísel, koncentraci a přesné kreslení čar.</p></div></div>';
                 } else {
-                    aboutSection.innerHTML = `
-                        <h2 class="text-lg font-bold text-slate-900 mb-3">About VinMat's World for Kids</h2>
-                        <p class="mb-3">Welcome to our curated library of high-quality worksheets designed for parents, educators, and guardians. This platform provides free access to educational tools structured into clear difficulty levels, helping you find the perfect activity to support children's cognitive growth, fine motor skills, and spatial awareness.</p>
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 pt-4 border-t border-slate-50">
-                            <div>
-                                <h3 class="font-bold text-slate-800 mb-1">🧩 Illustrated Mazes</h3>
-                                <p class="text-xs">Great for practicing problem-solving, persistence, and logical planning. Available in both vibrant colors and printer-friendly variants.</p>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-slate-800 mb-1">🎨 Creative Coloring</h3>
-                                <p class="text-xs">Perfect for artistic expression, color recognition, and strengthening hand muscles essential for early writing skills.</p>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-slate-800 mb-1">🔢 Dot-to-Dot Sheets</h3>
-                                <p class="text-xs">Engaging puzzle layouts that secretly train number sequencing, concentration, and precise line drawing precision.</p>
-                            </div>
-                        </div>
-                    `;
+                    aboutSection.innerHTML = '<h2 class="text-lg font-bold text-slate-900 mb-3">About VinMat\'s World for Kids</h2><p class="mb-3">Welcome to our curated library of high-quality worksheets designed for parents, educators, and guardians. This platform provides free access to educational tools structured into clear difficulty levels, helping you find the perfect activity to support children\'s cognitive growth, fine motor skills, and spatial awareness.</p><div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 pt-4 border-t border-slate-50"><div><h3 class="font-bold text-slate-800 mb-1">🧩 Illustrated Mazes</h3><p class="text-xs">Great for practicing problem-solving, persistence, and logical planning. Available in both vibrant colors and printer-friendly variants.</p></div><div><h3 class="font-bold text-slate-800 mb-1">🎨 Creative Coloring</h3><p class="text-xs">Perfect for artistic expression, color recognition, and strengthening hand muscles essential for early writing skills.</p></div><div><h3 class="font-bold text-slate-800 mb-1">🔢 Dot-to-Dot Sheets</h3><p class="text-xs">Engaging puzzle layouts that secretly train number sequencing, concentration, and precise line drawing precision.</p></div></div>';
                 }
             }
             filtrujData();
         }
 
         function generujBarevnyText(text) {
-            let vysledek = ''; let bIdx = 0;
-            for (let i = 0; i < text.length; i++) {
-                if (text[i] === ' ') { vysledek += '<span class="inline-block">&nbsp;</span>'; } 
-                else { vysledek += `<span class="outline-text char-${bIdx % 8}">${text[i]}</span>`; bIdx++; }
+            var vysledek = ''; var bIdx = 0;
+            for (var i = 0; i < text.length; i++) {
+                if (text[i] === ' ') { vysledek += '<span class="inline-block">&nbsp;</span>'; }
+                else { vysledek += '<span class="outline-text char-' + (bIdx % 8) + '">' + text[i] + '</span>'; bIdx++; }
             }
             return vysledek;
         }
 
         function setTyp(typ) {
             aktualniTyp = typ;
-            ['vse', 'bludiste', 'omalovanky', 'spojovacky'].forEach(t => {
-                document.getElementById(`btn-${t}`).className = t === typ ? "px-5 py-2 rounded-full text-sm font-bold bg-slate-900 text-white shadow-sm" : "px-5 py-2 rounded-full text-sm font-bold text-slate-600 bg-slate-100 hover:bg-slate-200";
+            ['vse', 'bludiste', 'omalovanky', 'spojovacky'].forEach(function(t) {
+                document.getElementById('btn-' + t).className = t === typ
+                    ? "px-5 py-2 rounded-full text-sm font-bold bg-slate-900 text-white shadow-sm"
+                    : "px-5 py-2 rounded-full text-sm font-bold text-slate-600 bg-slate-100 hover:bg-slate-200";
             });
             filtrujData();
         }
 
         function setVek(vek) {
             aktualniVek = vek;
-            const veky = { 'vse': 'btn-vek-vse', 'LV1': 'btn-vek-1', 'LV2': 'btn-vek-2', 'LV3': 'btn-vek-3', 'LV4': 'btn-vek-4', 'LV5': 'btn-vek-5' };
-            Object.keys(veky).forEach(v => {
-                document.getElementById(veky[v]).className = v === vek ? "px-4 py-1.5 text-xs font-bold rounded-full bg-slate-900 text-white" : "px-4 py-1.5 text-xs font-bold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200";
+            var veky = { 'vse': 'btn-vek-vse', 'LV1': 'btn-vek-1', 'LV2': 'btn-vek-2', 'LV3': 'btn-vek-3', 'LV4': 'btn-vek-4', 'LV5': 'btn-vek-5' };
+            Object.keys(veky).forEach(function(v) {
+                document.getElementById(veky[v]).className = v === vek
+                    ? "px-4 py-1.5 text-xs font-bold rounded-full bg-slate-900 text-white"
+                    : "px-4 py-1.5 text-xs font-bold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200";
             });
             filtrujData();
         }
 
         function setKartaVerze(id, verze) {
-            const polozka = zparsovanaData.find(p => p.id === id);
-            if(!polozka || polozka.jenCernobile) return;
-
+            var polozka = zparsovanaData.find(function(p) { return p.id === id; });
+            if (!polozka || polozka.jenCernobile) return;
             aktivniKartyVerze[id] = verze;
-            const container = document.getElementById(`container-img-${id}`);
+            var container = document.getElementById('container-img-' + id);
             if (!container) return;
-
-            const cestaBase = verze === 'cernobile' ? polozka.cesta_cernobile_base : polozka.cesta_barevne_base;
-
-            container.innerHTML = `
-                <picture class="max-w-full max-h-full flex items-center justify-center">
-                    <source srcset="${cestaBase}.webp" type="image/webp">
-                    <img src="${cestaBase}.png" alt="Obrázek" class="max-w-full max-h-full object-contain group-hover:scale-102 transition-transform duration-300" onerror="this.src='https://placehold.co/400x500?text=Obrazek+bude+doplnen'">
-                </picture>
-            `;
-            
-            const bc = document.getElementById(`btn-color-${id}`);
-            const bb = document.getElementById(`btn-bw-${id}`);
-            if(bc && bb) {
-                if (verze === 'barevne') {
-                    bc.className = "flex-1 py-1 text-xs font-bold rounded-md bg-slate-900 text-white";
-                    bb.className = "flex-1 py-1 text-xs font-bold rounded-md text-slate-500 hover:bg-slate-200";
-                } else {
-                    bc.className = "flex-1 py-1 text-xs font-bold rounded-md text-slate-500 hover:bg-slate-200";
-                    bb.className = "flex-1 py-1 text-xs font-bold rounded-md bg-slate-900 text-white";
-                }
+            var cestaBase = verze === 'cernobile' ? polozka.cesta_cernobile_base : polozka.cesta_barevne_base;
+            container.innerHTML = obrazekHTML(cestaBase, 'Obrázek', 'max-w-full max-h-full object-contain group-hover:scale-102 transition-transform duration-300', '');
+            var bc = document.getElementById('btn-color-' + id);
+            var bb = document.getElementById('btn-bw-' + id);
+            if (bc && bb) {
+                bc.className = verze === 'barevne'
+                    ? "flex-1 py-1 text-xs font-bold rounded-md bg-slate-900 text-white"
+                    : "flex-1 py-1 text-xs font-bold rounded-md text-slate-500 hover:bg-slate-200";
+                bb.className = verze === 'cernobile'
+                    ? "flex-1 py-1 text-xs font-bold rounded-md bg-slate-900 text-white"
+                    : "flex-1 py-1 text-xs font-bold rounded-md text-slate-500 hover:bg-slate-200";
             }
         }
 
@@ -370,121 +318,81 @@
             if (materialy.length === 0) { noResults.classList.remove('hidden'); return; }
             noResults.classList.add('hidden');
 
-            materialy.forEach(polozka => {
+            materialy.forEach(function(polozka) {
                 if (!aktivniKartyVerze[polozka.id]) aktivniKartyVerze[polozka.id] = polozka.jenCernobile ? 'cernobile' : 'barevne';
-                const aktualniVerze = aktivniKartyVerze[polozka.id];
-                
-                const cestaBase = polozka.jenCernobile ? polozka.cesta_barevne_base : (aktualniVerze === 'cernobile' ? polozka.cesta_cernobile_base : polozka.cesta_barevne_base);
+                var aktualniVerze = aktivniKartyVerze[polozka.id];
+                var cestaBase = polozka.jenCernobile ? polozka.cesta_barevne_base
+                    : (aktualniVerze === 'cernobile' ? polozka.cesta_cernobile_base : polozka.cesta_barevne_base);
+                var vekText = vekMapovani[polozka.vek] ? vekMapovani[polozka.vek][jaz] : polozka.vek;
+                var prelozenyNazev = ziskejPrelozenyNazev(polozka.surovyNazev, jaz);
 
-                const karta = document.createElement('div');
-                karta.className = "bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col";
-                
-                let tlacitkaHTML = "";
+                var tlacitkaHTML = "";
                 if (!polozka.jenCernobile) {
-                    tlacitkaHTML = `
-                        <div class="flex gap-1 bg-slate-100 p-0.5 rounded-lg">
-                            <button id="btn-color-${polozka.id}" onclick="setKartaVerze('${polozka.id}', 'barevne')" class="flex-1 py-1 text-[11px] rounded-md">${slovnik[jaz].labelColor}</button>
-                            <button id="btn-bw-${polozka.id}" onclick="setKartaVerze('${polozka.id}', 'cernobile')" class="flex-1 py-1 text-[11px] rounded-md">${slovnik[jaz].labelBw}</button>
-                        </div>
-                    `;
+                    tlacitkaHTML = '<div class="flex gap-1 bg-slate-100 p-0.5 rounded-lg">'
+                        + '<button id="btn-color-' + polozka.id + '" onclick="setKartaVerze(\'' + polozka.id + '\', \'barevne\')" class="flex-1 py-1 text-[11px] rounded-md">' + slovnik[jaz].labelColor + '</button>'
+                        + '<button id="btn-bw-' + polozka.id + '" onclick="setKartaVerze(\'' + polozka.id + '\', \'cernobile\')" class="flex-1 py-1 text-[11px] rounded-md">' + slovnik[jaz].labelBw + '</button>'
+                        + '</div>';
                 } else {
-                    tlacitkaHTML = `
-                        <div class="text-center bg-slate-100 py-1 rounded-lg text-[11px] font-bold text-slate-500">${slovnik[jaz].onlyBw}</div>
-                    `;
+                    tlacitkaHTML = '<div class="text-center bg-slate-100 py-1 rounded-lg text-[11px] font-bold text-slate-500">' + slovnik[jaz].onlyBw + '</div>';
                 }
 
-                const vekText = vekMapovani[polozka.vek] ? vekMapovani[polozka.vek][jaz] : polozka.vek;
-                const prelozenyNazev = ziskejPrelozenyNazev(polozka.surovyNazev, jaz);
-
-                karta.innerHTML = `
-                    <div id="container-img-${polozka.id}" onclick="openModal('${polozka.id}')" class="bg-slate-50 aspect-[4/5] p-4 flex items-center justify-center cursor-pointer group">
-                        <picture class="max-w-full max-h-full flex items-center justify-center">
-                            <source srcset="${cestaBase}.webp" type="image/webp">
-                            <img src="${cestaBase}.png" alt="${prelozenyNazev}" class="max-w-full max-h-full object-contain group-hover:scale-102 transition-transform duration-300" onerror="this.src='https://placehold.co/400x500?text=Obrazek+bude+doplnen'">
-                        </picture>
-                    </div>
-                    <div class="p-4 flex-grow flex flex-col justify-between border-t border-slate-50">
-                        <div class="mb-3">
-                            <div class="flex justify-between items-center mb-1">
-                                <span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">${slovnik[jaz][polozka.typ + 'Label']}</span>
-                                <span class="text-xs text-slate-400 font-bold">${vekText}</span>
-                            </div>
-                            <h3 onclick="openModal('${polozka.id}')" class="font-bold text-sm text-slate-900 leading-tight cursor-pointer hover:text-indigo-600 line-clamp-2 uppercase">${prelozenyNazev}</h3>
-                        </div>
-                        ${tlacitkaHTML}
-                    </div>
-                `;
+                var karta = document.createElement('div');
+                karta.className = "bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col";
+                karta.innerHTML = '<div id="container-img-' + polozka.id + '" onclick="openModal(\'' + polozka.id + '\')" class="bg-slate-50 aspect-[4/5] p-4 flex items-center justify-center cursor-pointer group">'
+                    + obrazekHTML(cestaBase, prelozenyNazev, 'max-w-full max-h-full object-contain group-hover:scale-102 transition-transform duration-300', '')
+                    + '</div>'
+                    + '<div class="p-4 flex-grow flex flex-col justify-between border-t border-slate-50">'
+                    + '<div class="mb-3">'
+                    + '<div class="flex justify-between items-center mb-1">'
+                    + '<span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">' + slovnik[jaz][polozka.typ + 'Label'] + '</span>'
+                    + '<span class="text-xs text-slate-400 font-bold">' + vekText + '</span>'
+                    + '</div>'
+                    + '<h3 onclick="openModal(\'' + polozka.id + '\')" class="font-bold text-sm text-slate-900 leading-tight cursor-pointer hover:text-indigo-600 line-clamp-2 uppercase">' + prelozenyNazev + '</h3>'
+                    + '</div>' + tlacitkaHTML + '</div>';
                 grid.appendChild(karta);
                 if (!polozka.jenCernobile) setKartaVerze(polozka.id, aktualniVerze);
             });
         }
 
         function filtrujData() {
-            const hledanyText = document.getElementById('search-input').value.toLowerCase().trim();
-
-            let vyfiltrovano = zparsovanaData.filter(polozka => {
-                const odpovidaTyp = (aktualniTyp === 'vse' || polozka.typ === aktualniTyp);
-                const odpovidaVek = (aktualniVek === 'vse' || polozka.vek === aktualniVek);
-                
-                const czNazev = ziskejPrelozenyNazev(polozka.surovyNazev, 'cz').toLowerCase();
-                const enNazev = ziskejPrelozenyNazev(polozka.surovyNazev, 'en').toLowerCase();
-                const odpovidaVyhledavani = (hledanyText === '' || czNazev.includes(hledanyText) || enNazev.includes(hledanyText));
-                
+            var hledanyText = document.getElementById('search-input').value.toLowerCase().trim();
+            var vyfiltrovano = zparsovanaData.filter(function(polozka) {
+                var odpovidaTyp = (aktualniTyp === 'vse' || polozka.typ === aktualniTyp);
+                var odpovidaVek = (aktualniVek === 'vse' || polozka.vek === aktualniVek);
+                var czNazev = ziskejPrelozenyNazev(polozka.surovyNazev, 'cz').toLowerCase();
+                var enNazev = ziskejPrelozenyNazev(polozka.surovyNazev, 'en').toLowerCase();
+                var odpovidaVyhledavani = (hledanyText === '' || czNazev.includes(hledanyText) || enNazev.includes(hledanyText));
                 return odpovidaTyp && odpovidaVek && odpovidaVyhledavani;
             });
             grid.innerHTML = "";
             vykresliKnihovnu(vyfiltrovano);
         }
 
-        // DETEKTIV - zjistí jestli existuje PNG, jinak vezme to, co se načetlo
-        async function ziskejNejlepsiSoubor(cestaBase) {
-            const pngUrl = cestaBase + '.png';
-            try {
-                const response = await fetch(pngUrl, { method: 'HEAD' });
-                if (response.ok) {
-                    return pngUrl; 
-                }
-            } catch (error) {}
-            
-            const aktualniObrazek = document.getElementById('aktualni-nahled-obrazku');
-            return aktualniObrazek.currentSrc || aktualniObrazek.src;
-        }
-
         function openModal(id) {
-            const polozka = zparsovanaData.find(p => p.id === id);
+            var polozka = zparsovanaData.find(function(p) { return p.id === id; });
             if (!polozka) return;
-
             aktivniModalPolozka = polozka;
             aktivniModalVerze = polozka.jenCernobile ? 'cernobile' : (aktivniKartyVerze[id] || 'barevne');
+            document.getElementById('modal-title').innerText = ziskejPrelozenyNazev(polozka.surovyNazev, jaz);
+            var vekText = vekMapovani[polozka.vek] ? vekMapovani[polozka.vek][jaz] : polozka.vek;
+            document.getElementById('modal-tag-vek').innerText = vekText.toUpperCase();
+            var containerVerze = document.getElementById('modal-version-container');
+            if (polozka.jenCernobile) { containerVerze.classList.add('hidden'); }
+            else { containerVerze.classList.remove('hidden'); }
 
-            const prelozenyNazev = ziskejPrelozenyNazev(polozka.surovyNazev, jaz);
-            document.getElementById('modal-title').innerText = prelozenyNazev;
-            
-            const vekText = vekMapovani[polozka.vek] ? vekMapovani[polozka.vek][jaz] : polozka.vek;
-            document.getElementById('modal-tag-vek').innerText = `${vekText.toUpperCase()}`;
-
-            const containerVerze = document.getElementById('modal-version-container');
-            if (polozka.jenCernobile) {
-                containerVerze.classList.add('hidden');
-            } else {
-                containerVerze.classList.remove('hidden');
-            }
-
-            document.getElementById('modal-download-png').onclick = async () => {
-                const cestaBase = polozka.jenCernobile ? polozka.cesta_barevne_base : (aktivniModalVerze === 'cernobile' ? polozka.cesta_cernobile_base : polozka.cesta_barevne_base);
-                
-                const btn = document.getElementById('modal-download-png');
-                const puvodniText = btn.innerText;
-                btn.innerText = "⏳ Otevírám...";
-
-                const nejlepsiCesta = await ziskejNejlepsiSoubor(cestaBase);
-                const pripona = nejlepsiCesta.split('.').pop(); 
-                
-                const link = document.createElement('a');
-                link.href = nejlepsiCesta;
-                link.download = `${polozka.id}_${aktivniModalVerze}.${pripona}`;
+            // Stažení: fetch HEAD jen při kliknutí, ne při načítání
+            document.getElementById('modal-download-png').onclick = async function() {
+                var cestaBase = polozka.jenCernobile ? polozka.cesta_barevne_base
+                    : (aktivniModalVerze === 'cernobile' ? polozka.cesta_cernobile_base : polozka.cesta_barevne_base);
+                var btn = document.getElementById('modal-download-png');
+                var puvodniText = btn.innerText;
+                btn.innerText = '⏳ Připravuji...';
+                var url = await nejlepsiUrl(cestaBase);
+                var pripona = url.split('.').pop();
+                var link = document.createElement('a');
+                link.href = url;
+                link.download = polozka.id + '_' + aktivniModalVerze + '.' + pripona;
                 link.click();
-
                 btn.innerText = puvodniText;
             };
 
@@ -493,69 +401,60 @@
         }
 
         function closeModal() { document.getElementById('detail-modal').classList.add('hidden'); }
-        
+
         function toggleModalVersion(verze) {
-            if (aktivniModalPolozka?.jenCernobile) return;
-            aktivniModalVerze = verze; updateModalDisplay();
+            if (aktivniModalPolozka && aktivniModalPolozka.jenCernobile) return;
+            aktivniModalVerze = verze;
+            updateModalDisplay();
             if (aktivniModalPolozka) setKartaVerze(aktivniModalPolozka.id, verze);
         }
 
         function updateModalDisplay() {
             if (!aktivniModalPolozka) return;
-            
-            const cestaBase = aktivniModalPolozka.jenCernobile ? aktivniModalPolozka.cesta_barevne_base : (aktivniModalVerze === 'cernobile' ? aktivniModalPolozka.cesta_cernobile_base : aktivniModalPolozka.cesta_barevne_base);
+            var cestaBase = aktivniModalPolozka.jenCernobile ? aktivniModalPolozka.cesta_barevne_base
+                : (aktivniModalVerze === 'cernobile' ? aktivniModalPolozka.cesta_cernobile_base : aktivniModalPolozka.cesta_barevne_base);
+            var mContainer = document.getElementById('modal-img-container');
+            mContainer.innerHTML = obrazekHTML(cestaBase, 'Detail', 'max-w-full max-h-full object-contain rounded-lg', 'aktualni-nahled-obrazku');
 
-            const mContainer = document.getElementById('modal-img-container');
-            mContainer.innerHTML = `
-                <picture class="max-w-full max-h-full flex items-center justify-center">
-                    <source srcset="${cestaBase}.webp" type="image/webp">
-                    <img id="aktualni-nahled-obrazku" src="${cestaBase}.png" alt="Detail" class="max-w-full max-h-full object-contain rounded-lg" onerror="this.src='https://placehold.co/400x500?text=Obrazek+bude+doplnen'">
-                </picture>
-            `;
-            
             if (!aktivniModalPolozka.jenCernobile) {
-                const mc = document.getElementById('modal-btn-color');
-                const mb = document.getElementById('modal-btn-bw');
-                if (aktivniModalVerze === 'barevne') {
-                    mc.className = "flex-1 py-2 px-4 rounded-xl font-bold text-sm bg-slate-900 text-white";
-                    mb.className = "flex-1 py-2 px-4 rounded-xl font-bold text-sm bg-slate-50 border border-slate-200 text-slate-600";
-                } else {
-                    mc.className = "flex-1 py-2 px-4 rounded-xl font-bold text-sm bg-slate-50 border border-slate-200 text-slate-600";
-                    mb.className = "flex-1 py-2 px-4 rounded-xl font-bold text-sm bg-slate-900 text-white";
-                }
+                var mc = document.getElementById('modal-btn-color');
+                var mb = document.getElementById('modal-btn-bw');
+                mc.className = aktivniModalVerze === 'barevne'
+                    ? "flex-1 py-2 px-4 rounded-xl font-bold text-sm bg-slate-900 text-white"
+                    : "flex-1 py-2 px-4 rounded-xl font-bold text-sm bg-slate-50 border border-slate-200 text-slate-600";
+                mb.className = aktivniModalVerze === 'cernobile'
+                    ? "flex-1 py-2 px-4 rounded-xl font-bold text-sm bg-slate-900 text-white"
+                    : "flex-1 py-2 px-4 rounded-xl font-bold text-sm bg-slate-50 border border-slate-200 text-slate-600";
             }
         }
 
         async function tiskniAktualni() {
             if (!aktivniModalPolozka) return;
-            
-            const btn = document.getElementById('print-btn');
-            const puvodniText = btn.innerText;
-            btn.innerText = "⏳ Připravuji tisk...";
-
-            const cestaBase = aktivniModalPolozka.jenCernobile ? aktivniModalPolozka.cesta_barevne_base : (aktivniModalVerze === 'cernobile' ? aktivniModalPolozka.cesta_cernobile_base : aktivniModalPolozka.cesta_barevne_base);
-            
-            const nejlepsiCesta = await ziskejNejlepsiSoubor(cestaBase);
-            
-            const tiskoveOkno = window.open('', '_blank');
-            tiskoveOkno.document.write(`<html><body style="margin:0; display:flex; justify-content:center; align-items:center; height:100vh;"><img src="${nejlepsiCesta}" style="max-width:100%; max-height:100%; object-fit:contain;" onload="window.print(); window.close();"></body></html>`);
+            var btn = document.getElementById('print-btn');
+            var puvodniText = btn.innerText;
+            btn.innerText = '⏳ Připravuji tisk...';
+            var cestaBase = aktivniModalPolozka.jenCernobile ? aktivniModalPolozka.cesta_barevne_base
+                : (aktivniModalVerze === 'cernobile' ? aktivniModalPolozka.cesta_cernobile_base : aktivniModalPolozka.cesta_barevne_base);
+            // Pro tisk preferujeme png (kvalitnější), webp jen pokud png chybí
+            var pngUrl = cestaBase + '.png';
+            var tiskUrl = pngUrl;
+            try {
+                var r = await fetch(pngUrl, { method: 'HEAD' });
+                if (!r.ok) { tiskUrl = cestaBase + '.webp'; }
+            } catch(e) {}
+            var tiskoveOkno = window.open('', '_blank');
+            tiskoveOkno.document.write('<html><body style="margin:0;display:flex;justify-content:center;align-items:center;height:100vh;"><img src="' + tiskUrl + '" style="max-width:100%;max-height:100%;object-fit:contain;" onload="window.print();window.close();"></body></html>');
             tiskoveOkno.document.close();
-            
             btn.innerText = puvodniText;
         }
 
         function closeModalOnBackdrop(event) {
-            if (event.target === document.getElementById('detail-modal')) {
-                closeModal();
-            }
+            if (event.target === document.getElementById('detail-modal')) { closeModal(); }
         }
 
         naparsujVsechno();
-        
-        const ulozenyJazyk = localStorage.getItem('vinmat_main_lang') || localStorage.getItem('vinmat_lang');
-        if (ulozenyJazyk) {
-            jaz = ulozenyJazyk;
-        }
+        var ulozenyJazyk = localStorage.getItem('vinmat_main_lang') || localStorage.getItem('vinmat_lang');
+        if (ulozenyJazyk) { jaz = ulozenyJazyk; }
         setJazyk(jaz);
     </script>
 </body>
