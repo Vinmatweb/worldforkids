@@ -11,7 +11,11 @@ const prekladySlov = {
     'baby in stroller': 'Miminko v kočárku',
     'car': 'Auto',
     'rainbow': 'Duha',
-    'horse': 'Koník'
+    'horse': 'Koník',
+    'Little striped piglet looking acorn - forest': 'Malé pruhované prasátko hledá žalud - les',
+    'Little striped piglet looking acorn - deep forest': 'Malé pruhované prasátko hledá žalud - hluboký les',
+    'Little striped piglet looking acorn - hedge': 'Malé pruhované prasátko hledá žalud - živý plot'
+
 
     // SEM POHODLNĚ PŘIPISUJ DALŠÍ
 };
@@ -25,7 +29,10 @@ const prekladySlov = {
 const dataBludiste = [
     "LV2-Gem_1-Ant",
     "LV2-Gem_2-Bee",
-    "LV2-GPT_2-Bunny"
+    "LV2-GPT_2-Bunny",
+    "LV1-Gem_31-1-Little striped piglet looking acorn - hedge",
+    "LV1-Gem_31-2-Little striped piglet looking acorn - forest",
+    "LV1-Gem_31-3-Little striped piglet looking acorn - deep forest"
 ];
 
 const dataOmalovanky = [
