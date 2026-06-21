@@ -30,9 +30,9 @@ const dataBludiste = [
     "LV2-Gem_1-Ant",
     "LV2-Gem_2-Bee",
     "LV2-GPT_2-Bunny",
-    "LV1-Gem_31-1-Little striped piglet looking acorn - hedge",
-    "LV1-Gem_31-2-Little striped piglet looking acorn - forest",
-    "LV1-Gem_31-3-Little striped piglet looking acorn - deep forest"
+    "LV1-Gem_31-Little striped piglet looking acorn - hedge",
+    "LV1-Gem_31-Little striped piglet looking acorn - forest",
+    "LV1-Gem_31-Little striped piglet looking acorn - deep forest"
 ];
 
 const dataOmalovanky = [
