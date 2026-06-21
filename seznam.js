@@ -12,9 +12,9 @@ const prekladySlov = {
     'car': 'Auto',
     'rainbow': 'Duha',
     'horse': 'Koník',
-    'Little striped piglet looking acorn - forest': 'Malé pruhované prasátko hledá žalud - les',
-    'Little striped piglet looking acorn - deep forest': 'Malé pruhované prasátko hledá žalud - hluboký les',
-    'Little striped piglet looking acorn - hedge': 'Malé pruhované prasátko hledá žalud - živý plot'
+    'little striped piglet looking acorn - forest': 'Malé pruhované prasátko hledá žalud - les',
+    'little striped piglet looking acorn - deep forest': 'Malé pruhované prasátko hledá žalud - hluboký les',
+    'little striped piglet looking acorn - hedge': 'Malé pruhované prasátko hledá žalud - živý plot'
 
 
     // SEM POHODLNĚ PŘIPISUJ DALŠÍ
