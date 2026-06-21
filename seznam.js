@@ -13,7 +13,6 @@ const prekladySlov = {
     'rainbow': 'Duha',
     'horse': 'Koník',
     'little striped piglet looking acorn - forest': 'Malé pruhované prasátko hledá žalud - les',
-    'little striped piglet looking acorn - forest': 'Malé pruhované prasátko hledá žalud',
     'little striped piglet looking acorn - deep forest': 'Malé pruhované prasátko hledá žalud - hluboký les',
     'little striped piglet looking acorn - hedge': 'Malé pruhované prasátko hledá žalud - živý plot'
 
