@@ -164,28 +164,49 @@
             return (ext[hledane] || surovyNazev).toUpperCase();
         }
 
-        function parsujSekci(poleObjektu, typSlozky) {
-            poleObjektu.forEach(function(polozka) {
-                var surovyVstup = typeof polozka === 'string' ? polozka : polozka.soubor;
-                var cistyNazev = surovyVstup.split('/').pop();
+function parsujSekci(poleObjektu, typSlozky) {
+            poleObjektu.forEach(položkaMix => {
+                let surovyVstup = typeof položkaMix === 'string' ? položkaMix : položkaMix.soubor;
+                
+                let cistyNazev = surovyVstup.split('/').pop();
                 cistyNazev = cistyNazev.replace(/\.(png|jpg|jpeg|webp)$/i, '');
-                var casti = cistyNazev.split('-');
-                if (casti.length < 2) return;
-                var vekKod = casti[0];
-                var jmenoBezPripony = casti.slice(1).join('-');
-                var jmenoProWeb = jmenoBezPripony.replace(/^(Gem_\d+|GPT_\d+)-/i, '');
-                var jedinecneID = typSlozky + '-' + cistyNazev;
-                var zakladniCesta = 'public/' + typSlozky + '/';
+
+                const casti = cistyNazev.split('-');
+                if(casti.length < 2) return;
+
+                const vekKod = casti[0]; 
+                let jmenoBezPripony = casti.slice(1).join('-'); 
+                let jmenoProWeb = jmenoBezPripony.replace(/^(Gem_\d+|GPT_\d+)-/i, '');
+
+                // 1. OPRAVA: ID prvku nesmí obsahovat mezery (jinak padá JavaScript)
+                const jedinecneID = `${typSlozky}-${cistyNazev.replace(/\s+/g, '-')}`;
+                const zakladniCesta = `public/${typSlozky}/`;
+
+                // 2. OPRAVA: Značka srcset nesnáší mezery, nahradíme je za %20
+                const bezpecnyNazev = cistyNazev.replace(/ /g, '%20');
 
                 if (cistyNazev.toUpperCase().endsWith('_BW')) {
-                    var nazevCisty = jmenoProWeb.replace(/_BW$/i, '').replace(/_/g, ' ').replace(/-/g, ' ');
-                    zparsovanaData.push({ id: jedinecneID, surovyNazev: nazevCisty, typ: typSlozky, vek: vekKod,
-                        cesta_barevne_base: zakladniCesta + cistyNazev, cesta_cernobile_base: null, jenCernobile: true });
+                    const nazevCisty = jmenoProWeb.replace(/_BW$/i, '').replace(/_/g, ' ').replace(/-/g, ' ');
+                    zparsovanaData.push({
+                        id: jedinecneID, 
+                        surovyNazev: nazevCisty,
+                        typ: typSlozky,
+                        vek: vekKod,
+                        cesta_barevne_base: zakladniCesta + bezpecnyNazev, 
+                        cesta_cernobile_base: null, 
+                        jenCernobile: true
+                    });
                 } else {
-                    var nazevCisty2 = jmenoProWeb.replace(/_/g, ' ').replace(/-/g, ' ');
-                    zparsovanaData.push({ id: jedinecneID, surovyNazev: nazevCisty2, typ: typSlozky, vek: vekKod,
-                        cesta_barevne_base: zakladniCesta + cistyNazev,
-                        cesta_cernobile_base: zakladniCesta + cistyNazev + '_BW', jenCernobile: false });
+                    const nazevCisty = jmenoProWeb.replace(/_/g, ' ').replace(/-/g, ' ');
+                    zparsovanaData.push({
+                        id: jedinecneID,
+                        surovyNazev: nazevCisty,
+                        typ: typSlozky,
+                        vek: vekKod,
+                        cesta_barevne_base: zakladniCesta + bezpecnyNazev,
+                        cesta_cernobile_base: zakladniCesta + bezpecnyNazev + "_BW", 
+                        jenCernobile: false
+                    });
                 }
             });
         }
