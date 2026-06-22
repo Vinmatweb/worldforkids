@@ -14,8 +14,8 @@ const prekladySlov = {
     'horse': 'Koník',
     'little striped piglet looking acorn - forest': 'Malé pruhované prasátko hledá žalud - les',
     'little striped piglet looking acorn - deep forest': 'Malé pruhované prasátko hledá žalud - hluboký les',
-    'little striped piglet looking acorn - hedge': 'Malé pruhované prasátko hledá žalud - živý plot'
-
+    'little striped piglet looking acorn - hedge': 'Malé pruhované prasátko hledá žalud - živý plot',
+    'freight train with cars': 'Nákladní vlak s vagóny'
 
     // SEM POHODLNĚ PŘIPISUJ DALŠÍ
 };
@@ -42,7 +42,8 @@ const dataOmalovanky = [
     "LV4-Gem_1-Bear_BW",
     "LV5-Gem_1-Bear_BW",
     "LV1-Gem_2-baby in stroller_BW",
-    "LV2-Gem_2-baby in stroller_BW"
+    "LV2-Gem_2-baby in stroller_BW",
+    "LV2-Gem_1000-Freight Train with Cars_BW"    
 ];
 
 const dataSpojovacky = [
