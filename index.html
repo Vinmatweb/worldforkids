@@ -242,11 +242,6 @@ function parsujSekci(poleObjektu, typSlozky) {
         function setJazyk(novyJazyk) {
             jaz = novyJazyk;
             localStorage.setItem('vinmat_lang', jaz);
-            if (jaz === 'cz') {
-            document.title = "VinMat | Bludiště, omalovánky a další aktivity k vytisknutí";
-            } else {
-            document.title = "VinMat | Free Printable Mazes, Coloring Pages & More Activities";
-            }
             document.getElementById('lang-to-en').classList.toggle('hidden', jaz === 'en');
             document.getElementById('lang-to-cz').classList.toggle('hidden', jaz === 'cz');
             document.getElementById('btn-scroll-top').innerText = slovnik[jaz].scrollTop;
@@ -375,19 +370,40 @@ function parsujSekci(poleObjektu, typSlozky) {
             });
         }
 
-        function filtrujData() {
-            var hledanyText = document.getElementById('search-input').value.toLowerCase().trim();
-            var vyfiltrovano = zparsovanaData.filter(function(polozka) {
-                var odpovidaTyp = (aktualniTyp === 'vse' || polozka.typ === aktualniTyp);
-                var odpovidaVek = (aktualniVek === 'vse' || polozka.vek === aktualniVek);
-                var czNazev = ziskejPrelozenyNazev(polozka.surovyNazev, 'cz').toLowerCase();
-                var enNazev = ziskejPrelozenyNazev(polozka.surovyNazev, 'en').toLowerCase();
-                var odpovidaVyhledavani = (hledanyText === '' || czNazev.includes(hledanyText) || enNazev.includes(hledanyText));
-                return odpovidaTyp && odpovidaVek && odpovidaVyhledavani;
-            });
-            grid.innerHTML = "";
-            vykresliKnihovnu(vyfiltrovano);
+function filtrujData() {
+    var hledanyText = document.getElementById('search-input').value.toLowerCase().trim();
+    var vyfiltrovano = zparsovanaData.filter(function(polozka) {
+        var odpovidaTyp = (aktualniTyp === 'vse' || polozka.typ === aktualniTyp);
+        var odpovidaVek = (aktualniVek === 'vse' || polozka.vek === aktualniVek);
+        var czNazev = ziskejPrelozenyNazev(polozka.surovyNazev, 'cz').toLowerCase();
+        var enNazev = ziskejPrelozenyNazev(polozka.surovyNazev, 'en').toLowerCase();
+        var odpovidaVyhledavani = (hledanyText === '' || czNazev.includes(hledanyText) || enNazev.includes(hledanyText));
+        return odpovidaTyp && odpovidaVek && odpovidaVyhledavani;
+    });
+    grid.innerHTML = "";
+    vykresliKnihovnu(vyfiltrovano);
+    if (jaz === 'cz') {
+        if (aktualniTyp === 'bludiste') {
+            document.title = "Dětská bludiště a labyrinty k vytisknutí";
+        } else if (aktualniTyp === 'omalovanky') {
+            document.title = "Omalovánky a vybarvovánky pro děti k vytisknutí";
+        } else if (aktualniTyp === 'spojovacky') {
+            document.title = "Spojovačky a kreslení podle čísel k vytisknutí";
+        } else {
+            document.title = "VinMat | Bludiště, omalovánky a další aktivity k vytisknutí";
         }
+    } else {
+        if (aktualniTyp === 'bludiste') {
+            document.title = "Free Printable Mazes and Labyrinths for Kids";
+        } else if (aktualniTyp === 'omalovanky') {
+            document.title = "Free Printable Coloring Pages for Kids";
+        } else if (aktualniTyp === 'spojovacky') {
+            document.title = "Free Printable Dot-to-Dot Worksheets for Kids";
+        } else {
+            document.title = "VinMat | Free Printable Mazes, Coloring Pages & More Activities";
+        }
+    }
+}
 
         function openModal(id) {
             var polozka = zparsovanaData.find(function(p) { return p.id === id; });
