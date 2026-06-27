@@ -32,7 +32,7 @@
     </div>
 
     <div class="max-w-7xl w-full mx-auto px-4 pt-6">
-        <header class="header-meadow pt-12 pb-20 px-4 text-center rounded-3xl border border-slate-200 shadow-xs flex flex-col justify-between items-center overflow-hidden w-full bg-sky-200 relative" style="background-image: url('assets/images/banner.png'); background-size: cover; background-position: center bottom; min-height: 280px;">
+        <header class="header-meadow pt-12 pb-20 px-4 text-center rounded-3xl border border-slate-200 shadow-xs flex flex-col justify-between items-center overflow-hidden w-full bg-sky-200 relative" style="background-image: url('assets/images/banner.png'); background-size: cover; background-position: center bottom; min-height: 300px;">
             <div class="w-full flex justify-center mt-2">
                 <h1 class="sr-only">VinMatův svět pro děti – dětská bludiště a omalovánky k vytisknutí zdarma</h1>
                 <div id="txt-main-title" class="text-4xl md:text-5xl lg:text-6xl tracking-wide flex flex-wrap justify-center select-none"></div>
@@ -244,6 +244,11 @@ function parsujSekci(poleObjektu, typSlozky) {
         function setJazyk(novyJazyk) {
             jaz = novyJazyk;
             localStorage.setItem('vinmat_lang', jaz);
+            if (jaz === 'cz') {
+            document.title = "VinMatův svět pro děti | Bludiště a omalovánky k vytisknutí";
+            } else {
+            document.title = "VinMat's World for Kids | Free Printable Mazes & Coloring Pages";
+            }
             document.getElementById('lang-to-en').classList.toggle('hidden', jaz === 'en');
             document.getElementById('lang-to-cz').classList.toggle('hidden', jaz === 'cz');
             document.getElementById('btn-scroll-top').innerText = slovnik[jaz].scrollTop;
