@@ -91,10 +91,8 @@
                     <h2 id="modal-title" class="text-2xl font-bold text-slate-900 leading-tight mb-6">Název</h2>
                     <div id="modal-version-container" class="mb-8">
                         <label id="lbl-modal-variant" class="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Varianty</label>
-                        <div class="flex gap-2">
-                            <button id="modal-btn-color" onclick="toggleModalVersion('barevne')" class="flex-1 py-2 px-4 rounded-xl font-bold text-sm border-2">🌈 Barevná</button>
-                            <button id="modal-btn-bw" onclick="toggleModalVersion('cernobile')" class="flex-1 py-2 px-4 rounded-xl font-bold text-sm border-2">🪙 Černobílá</button>
-                        </div>
+                        <div id="modal-buttons-group" class="flex flex-wrap gap-2">
+                            </div>
                     </div>
                 </div>
                 <div class="space-y-3 pt-4 border-t border-slate-100">
@@ -115,27 +113,27 @@
         </p>
     </footer>
 
-    <script src="seznam.js"></script>
-
     <script>
         const slovnik = {
             cz: {
                 mainTitle: "VINMATŮV SVĚT PRO DĚTI", subTitle: "Ověřená bludiště, omalovánky a spojovačky pro okamžitou zábavu",
                 vse: "Vše", bludiste: "Bludiště", omalovanky: "Omalovánky", spojovacky: "Spojovačky", ageTitle: "Věk:",
                 noResults: "Pro tento výběr tu zatím nic nemáme.", variant: "Vyberte variantu listu",
-                btnPng: "Stáhnout obrázek", btnPrint: "Vytisknout rovnou", btnColor: "🌈 Barevná", btnBw: "🪙 Černobílá",
-                labelColor: "Barevné", labelBw: "Černobílé", bludisteLabel: "BLUDIŠTĚ", omalovankyLabel: "OMALOVÁNKY", spojovackyLabel: "SPOJOVAČKY",
+                btnPng: "Stáhnout obrázek", btnPrint: "Vytisknout rovnou", btnColor: "🌈 Barevná", btnBw: "🪙 Černobílá", btnPartly: "🌗 Polovyceněná",
+                labelColor: "Barevné", labelBw: "Černobílé", labelPartly: "Částečné",
+                bludisteLabel: "BLUDIŠTĚ", omalovankyLabel: "OMALOVÁNKY", spojovackyLabel: "SPOJOVAČKY",
                 footerCopyright: "© 2026 Vyrobeno s ❤️ pro skvělé tvoření", footerProjects: "Domů na VinMat.eu",
                 footerPrivacy: "Zásady ochrany osobních údajů", footerTerms: "Podmínky užití",
                 footerDisclaimer: "Všechna stahování jsou zdarma pro osobní a vzdělávací účely",
-                onlyBw: "◧ Pouze černobílé", scrollTop: "⬆️ NAHORU", searchPlaceholder: "Hledat podle názvu..."
+                onlyBw: "◧ Černobílé", scrollTop: "⬆️ NAHORU", searchPlaceholder: "Hledat podle názvu..."
             },
             en: {
                 mainTitle: "VINMAT'S WORLD FOR KIDS", subTitle: "Verified mazes, coloring pages and dot-to-dots for instant fun",
                 vse: "All", bludiste: "Mazes", omalovanky: "Coloring", spojovacky: "Dot-to-Dots", ageTitle: "Age:",
                 noResults: "Nothing found for this selection.", variant: "Select list variant",
-                btnPng: "Download Image", btnPrint: "Print Directly", btnColor: "🌈 Colored", btnBw: "🪙 B&W",
-                labelColor: "Colored", labelBw: "B&W", bludisteLabel: "MAZES", omalovankyLabel: "COLORING", spojovackyLabel: "DOT-TO-DOTS",
+                btnPng: "Download Image", btnPrint: "Print Directly", btnColor: "🌈 Colored", btnBw: "🪙 B&W", btnPartly: "🌗 Partly Colored",
+                labelColor: "Colored", labelBw: "B&W", labelPartly: "Partly",
+                bludisteLabel: "MAZES", omalovankyLabel: "COLORING", spojovackyLabel: "DOT-TO-DOTS",
                 footerCopyright: "© 2026 Made with ❤️ for great crafting", footerProjects: "Home to VinMat.eu",
                 footerPrivacy: "Privacy Policy", footerTerms: "Terms of Service",
                 footerDisclaimer: "All downloads free for personal & educational use",
@@ -151,73 +149,112 @@
             'LV5': { cz: '👩👨 Expert', en: '👩👨 Expert' }
         };
 
-        let jaz = 'en';
+        let jaz = 'cz';
         let aktualniTyp = 'vse'; let aktualniVek = 'vse';
-        let aktivniKartyVerze = {}; let aktivniModalPolozka = null; let aktivniModalVerze = 'barevne';
+        let aktivniKartyVerze = {}; let aktivniModalPolozka = null; let aktivniModalVerze = 'coloring';
         let zparsovanaData = [];
 
-        function ziskejPrelozenyNazev(surovyNazev, jazyk) {
-            if (jazyk === 'en') return surovyNazev.toUpperCase();
-            const hledane = surovyNazev.toLowerCase().trim();
-            const ext = (typeof prekladySlov !== 'undefined') ? prekladySlov : {};
-            return (ext[hledane] || surovyNazev).toUpperCase();
+        // Pomocná funkce pro parsování CSV řádku s ohledem na uvozovky v textu
+        function rozsekajCsvRadek(text) {
+            let vysledek = [];
+            let uvnitrUvozovek = false;
+            let aktualniBunka = '';
+            for (let i = 0; i < text.length; i++) {
+                let c = text[i];
+                if (c === '"') {
+                    uvnitrUvozovek = !uvnitrUvozovek;
+                } else if (c === ',' && !uvnitrUvozovek) {
+                    vysledek.push(aktualniBunka.trim());
+                    aktualniBunka = '';
+                } else {
+                    aktualniBunka += c;
+                }
+            }
+            vysledek.push(aktualniBunka.trim());
+            return vysledek;
         }
 
-function parsujSekci(poleObjektu, typSlozky) {
-            poleObjektu.forEach(položkaMix => {
-                let surovyVstup = typeof položkaMix === 'string' ? položkaMix : položkaMix.soubor;
-                
-                let cistyNazev = surovyVstup.split('/').pop();
-                cistyNazev = cistyNazev.replace(/\.(png|jpg|jpeg|webp)$/i, '');
+        // Načte CSV data z assets/data/ složky
+        async function nactiCsvData(typAktivity) {
+            try {
+                const response = await fetch(`assets/data/${typAktivity}.csv`);
+                if (!response.ok) return [];
+                const text = await response.text();
+                const radky = text.split(/\r?\n/);
+                if (radky.length <= 1) return [];
 
-                const casti = cistyNazev.split('-');
-                if(casti.length < 2) return;
+                const zahlavi = rozsekajCsvRadek(radky[0]);
+                const data = [];
 
-                const vekKod = casti[0]; 
-                let jmenoBezPripony = casti.slice(1).join('-'); 
-                let jmenoProWeb = jmenoBezPripony.replace(/^(Gem_\d+|GPT_\d+)-/i, '');
-                const jedinecneID = `${typSlozky}-${cistyNazev.replace(/\s+/g, '-')}`;
-                const zakladniCesta = `public/${typSlozky}/`;
-                const bezpecnyNazev = cistyNazev.replace(/ /g, '%20');
-
-                if (cistyNazev.toUpperCase().endsWith('_BW')) {
-                    const nazevCisty = jmenoProWeb.replace(/_BW$/i, '').replace(/_/g, ' ');
-                    zparsovanaData.push({
-                        id: jedinecneID, 
-                        surovyNazev: nazevCisty,
-                        typ: typSlozky,
-                        vek: vekKod,
-                        cesta_barevne_base: zakladniCesta + bezpecnyNazev, 
-                        cesta_cernobile_base: null, 
-                        jenCernobile: true
+                for (let i = 1; i < radky.length; i++) {
+                    if (!radky[i].trim()) continue;
+                    const bunky = rozsekajCsvRadek(radky[i]);
+                    const radekObjekt = {};
+                    zahlavi.forEach((klic, index) => {
+                        radekObjekt[klic] = bunky[index] || '';
                     });
-                } else {
-                    const nazevCisty = jmenoProWeb.replace(/_/g, ' ');
-                    zparsovanaData.push({
-                        id: jedinecneID,
-                        surovyNazev: nazevCisty,
-                        typ: typSlozky,
+                    
+                    if (!radekObjekt.soubor) continue;
+
+                    // Extrakce věku ze souboru (např: lv1_gem_1006 -> LV1)
+                    const vekKod = radekObjekt.soubor.split('_')[0].toUpperCase();
+
+                    // Určení dostupných variant podle vyplněných ALTů (ignoruje "0" nebo prázdné)
+                    const dostupneVarianty = [];
+                    if (radekObjekt.altCz_colored && radekObjekt.altCz_colored !== '0') dostupneVarianty.push('colored');
+                    if (radekObjekt.altCz_coloring && radekObjekt.altCz_coloring !== '0') dostupneVarianty.push('coloring');
+                    if (radekObjekt.altCz_partly_colored && radekObjekt.altCz_partly_colored !== '0') dostupneVarianty.push('partly_colored');
+
+                    // Výchozí verze karty (colored pokud je, jinak coloring)
+                    const vychoziVarianta = dostupneVarianty.includes('colored') ? 'colored' : dostupneVarianty[0] || 'coloring';
+
+                    data.push({
+                        id: `${typAktivity}-${radekObjekt.soubor}`,
+                        souborZáklad: radekObjekt.soubor,
+                        typ: typAktivity,
                         vek: vekKod,
-                        cesta_barevne_base: zakladniCesta + bezpecnyNazev,
-                        cesta_cernobile_base: zakladniCesta + bezpecnyNazev + "_BW", 
-                        jenCernobile: false
+                        kategorie: radekObjekt.kategorie,
+                        podkategorie: radekObjekt.podkategorie,
+                        sezona: radekObjekt.sezona,
+                        zamereni: radekObjekt.zamereni,
+                        nazevCz: radekObjekt.nazevCz,
+                        nazevEn: radekObjekt.nazevEn,
+                        varianty: dostupneVarianty,
+                        vychozi: vychoziVarianta,
+                        alty: {
+                            colored: { cz: radekObjekt.altCz_colored, en: radekObjekt.altEn_colored },
+                            coloring: { cz: radekObjekt.altCz_coloring, en: radekObjekt.altEn_coloring },
+                            partly_colored: { cz: radekObjekt.altCz_partly_colored, en: radekObjekt.altEn_partly_colored }
+                        }
                     });
                 }
-            });
+                return data;
+            } catch (e) {
+                console.error(`Chyba při načítání ${typAktivity}.csv:`, e);
+                return [];
+            }
         }
 
-        function naparsujVsechno() {
-            zparsovanaData = [];
-            if (typeof dataBludiste !== 'undefined') parsujSekci(dataBludiste, 'bludiste');
-            if (typeof dataOmalovanky !== 'undefined') parsujSekci(dataOmalovanky, 'omalovanky');
-            if (typeof dataSpojovacky !== 'undefined') parsujSekci(dataSpojovacky, 'spojovacky');
+        async function inicializujAplikaci() {
+            const bludiste = await nactiCsvData('bludiste');
+            const omalovanky = await nactiCsvData('omalovanky');
+            const spojovacky = await nactiCsvData('spojovacky');
+            
+            zparsovanaData = [...bludiste, ...omalovanky, ...spojovacky];
+
+            const ulozenyJazyk = localStorage.getItem('vinmat_main_lang') || localStorage.getItem('vinmat_lang');
+            if (ulozenyJazyk) { jaz = ulozenyJazyk; }
+            setJazyk(jaz);
+        }
+
+        function ziskejCestuBase(polozka, varianta) {
+            // Sestavení cesty: public/bludiste/lv1_gem_1006-ant-maze-colored
+            return `public/${polozka.typ}/${polozka.souborZáklad}-${varianta}`;
         }
 
         const grid = document.getElementById('knihovna-grid');
         const noResults = document.getElementById('no-results');
 
-        // Vrátí URL nejlepšího dostupného souboru (webp → png).
-        // Volá se POUZE při kliknutí na stažení/tisk – ne při načítání gridu.
         async function nejlepsiUrl(cestaBase) {
             var webp = cestaBase + '.webp';
             var png = cestaBase + '.png';
@@ -228,8 +265,6 @@ function parsujSekci(poleObjektu, typSlozky) {
             return png;
         }
 
-        // HTML pro zobrazení obrázku v gridu/modalu:
-        // browser sám zvolí webp pokud existuje, jinak png – bez extra requestů při chybě
         function obrazekHTML(cestaBase, alt, cssClass, idAttr) {
             var idStr = idAttr ? ' id="' + idAttr + '"' : '';
             return '<picture class="max-w-full max-h-full flex items-center justify-center">'
@@ -258,8 +293,6 @@ function parsujSekci(poleObjektu, typSlozky) {
             document.getElementById('lbl-modal-variant').innerText = slovnik[jaz].variant;
             document.getElementById('modal-download-png').innerText = slovnik[jaz].btnPng;
             document.getElementById('print-btn').innerText = slovnik[jaz].btnPrint;
-            document.getElementById('modal-btn-color').innerText = slovnik[jaz].btnColor;
-            document.getElementById('modal-btn-bw').innerText = slovnik[jaz].btnBw;
             document.getElementById('txt-footer-copyright').innerText = slovnik[jaz].footerCopyright;
             document.getElementById('txt-footer-projects').innerText = slovnik[jaz].footerProjects;
             document.getElementById('txt-footer-privacy').innerText = slovnik[jaz].footerPrivacy;
@@ -311,22 +344,25 @@ function parsujSekci(poleObjektu, typSlozky) {
 
         function setKartaVerze(id, verze) {
             var polozka = zparsovanaData.find(function(p) { return p.id === id; });
-            if (!polozka || polozka.jenCernobile) return;
+            if (!polozka) return;
             aktivniKartyVerze[id] = verze;
             var container = document.getElementById('container-img-' + id);
             if (!container) return;
-            var cestaBase = verze === 'cernobile' ? polozka.cesta_cernobile_base : polozka.cesta_barevne_base;
-            container.innerHTML = obrazekHTML(cestaBase, 'Obrázek', 'max-w-full max-h-full object-contain group-hover:scale-102 transition-transform duration-300', '');
-            var bc = document.getElementById('btn-color-' + id);
-            var bb = document.getElementById('btn-bw-' + id);
-            if (bc && bb) {
-                bc.className = verze === 'barevne'
-                    ? "flex-1 py-1 text-xs font-bold rounded-md bg-slate-900 text-white"
-                    : "flex-1 py-1 text-xs font-bold rounded-md text-slate-500 hover:bg-slate-200";
-                bb.className = verze === 'cernobile'
-                    ? "flex-1 py-1 text-xs font-bold rounded-md bg-slate-900 text-white"
-                    : "flex-1 py-1 text-xs font-bold rounded-md text-slate-500 hover:bg-slate-200";
-            }
+            
+            var cestaBase = ziskejCestuBase(polozka, verze);
+            var altText = polozka.alty[verze][jaz] || polozka[`nazev${jaz === 'cz' ? 'Cz' : 'En'}`];
+            
+            container.innerHTML = obrazekHTML(cestaBase, altText, 'max-w-full max-h-full object-contain group-hover:scale-102 transition-transform duration-300', '');
+            
+            // Přepínání aktivního stylu u mini tlačítek na kartě
+            polozka.varianty.forEach(v => {
+                var btn = document.getElementById(`btn-${v}-${id}`);
+                if (btn) {
+                    btn.className = v === verze
+                        ? "flex-1 py-1 text-[11px] font-bold rounded-md bg-slate-900 text-white"
+                        : "flex-1 py-1 text-[11px] font-bold rounded-md text-slate-500 hover:bg-slate-200";
+                }
+            });
         }
 
         function vykresliKnihovnu(materialy) {
@@ -335,19 +371,23 @@ function parsujSekci(poleObjektu, typSlozky) {
             noResults.classList.add('hidden');
 
             materialy.forEach(function(polozka) {
-                if (!aktivniKartyVerze[polozka.id]) aktivniKartyVerze[polozka.id] = polozka.jenCernobile ? 'cernobile' : 'barevne';
+                if (!aktivniKartyVerze[polozka.id]) aktivniKartyVerze[polozka.id] = polozka.vychozi;
                 var aktualniVerze = aktivniKartyVerze[polozka.id];
-                var cestaBase = polozka.jenCernobile ? polozka.cesta_barevne_base
-                    : (aktualniVerze === 'cernobile' ? polozka.cesta_cernobile_base : polozka.cesta_barevne_base);
+                
+                var cestaBase = ziskejCestuBase(polozka, aktualniVerze);
                 var vekText = vekMapovani[polozka.vek] ? vekMapovani[polozka.vek][jaz] : polozka.vek;
-                var prelozenyNazev = ziskejPrelozenyNazev(polozka.surovyNazev, jaz);
+                var zobrazenyNazev = jaz === 'cz' ? polozka.nazevCz : polozka.nazevEn;
+                var altText = polozka.alty[aktualniVerze][jaz] || zobrazenyNazev;
 
                 var tlacitkaHTML = "";
-                if (!polozka.jenCernobile) {
-                    tlacitkaHTML = '<div class="flex gap-1 bg-slate-100 p-0.5 rounded-lg">'
-                        + '<button id="btn-color-' + polozka.id + '" onclick="setKartaVerze(\'' + polozka.id + '\', \'barevne\')" class="flex-1 py-1 text-[11px] rounded-md">' + slovnik[jaz].labelColor + '</button>'
-                        + '<button id="btn-bw-' + polozka.id + '" onclick="setKartaVerze(\'' + polozka.id + '\', \'cernobile\')" class="flex-1 py-1 text-[11px] rounded-md">' + slovnik[jaz].labelBw + '</button>'
-                        + '</div>';
+                if (polozka.varianty.length > 1) {
+                    tlacitkaHTML = '<div class="flex gap-1 bg-slate-100 p-0.5 rounded-lg">';
+                    polozka.varianty.forEach(v => {
+                        var labelKlice = { colored: 'labelColor', coloring: 'labelColoring', partly_colored: 'labelPartly' };
+                        var textTlacitka = slovnik[jaz][labelKlice[v] || 'labelBw'] || v;
+                        tlacitkaHTML += `<button id="btn-${v}-${polozka.id}" onclick="setKartaVerze('${polozka.id}', '${v}')" class="flex-1 py-1 text-[11px] rounded-md">${textTlacitka}</button>`;
+                    });
+                    tlacitkaHTML += '</div>';
                 } else {
                     tlacitkaHTML = '<div class="text-center bg-slate-100 py-1 rounded-lg text-[11px] font-bold text-slate-500">' + slovnik[jaz].onlyBw + '</div>';
                 }
@@ -355,7 +395,7 @@ function parsujSekci(poleObjektu, typSlozky) {
                 var karta = document.createElement('div');
                 karta.className = "bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col";
                 karta.innerHTML = '<div id="container-img-' + polozka.id + '" onclick="openModal(\'' + polozka.id + '\')" class="bg-slate-50 aspect-[4/5] p-4 flex items-center justify-center cursor-pointer group">'
-                    + obrazekHTML(cestaBase, prelozenyNazev, 'max-w-full max-h-full object-contain group-hover:scale-102 transition-transform duration-300', '')
+                    + obrazekHTML(cestaBase, altText, 'max-w-full max-h-full object-contain group-hover:scale-102 transition-transform duration-300', '')
                     + '</div>'
                     + '<div class="p-4 flex-grow flex flex-col justify-between border-t border-slate-50">'
                     + '<div class="mb-3">'
@@ -363,64 +403,67 @@ function parsujSekci(poleObjektu, typSlozky) {
                     + '<span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">' + slovnik[jaz][polozka.typ + 'Label'] + '</span>'
                     + '<span class="text-xs text-slate-400 font-bold">' + vekText + '</span>'
                     + '</div>'
-                    + '<h3 onclick="openModal(\'' + polozka.id + '\')" class="font-bold text-sm text-slate-900 leading-tight cursor-pointer hover:text-indigo-600 line-clamp-2 uppercase">' + prelozenyNazev + '</h3>'
+                    + '<h3 onclick="openModal(\'' + polozka.id + '\')" class="font-bold text-sm text-slate-900 leading-tight cursor-pointer hover:text-indigo-600 line-clamp-2 uppercase">' + zobrazenyNazev + '</h3>'
                     + '</div>' + tlacitkaHTML + '</div>';
                 grid.appendChild(karta);
-                if (!polozka.jenCernobile) setKartaVerze(polozka.id, aktualniVerze);
+                setKartaVerze(polozka.id, aktualniVerze);
             });
         }
 
-function filtrujData() {
-    var hledanyText = document.getElementById('search-input').value.toLowerCase().trim();
-    var vyfiltrovano = zparsovanaData.filter(function(polozka) {
-        var odpovidaTyp = (aktualniTyp === 'vse' || polozka.typ === aktualniTyp);
-        var odpovidaVek = (aktualniVek === 'vse' || polozka.vek === aktualniVek);
-        var czNazev = ziskejPrelozenyNazev(polozka.surovyNazev, 'cz').toLowerCase();
-        var enNazev = ziskejPrelozenyNazev(polozka.surovyNazev, 'en').toLowerCase();
-        var odpovidaVyhledavani = (hledanyText === '' || czNazev.includes(hledanyText) || enNazev.includes(hledanyText));
-        return odpovidaTyp && odpovidaVek && odpovidaVyhledavani;
-    });
-    grid.innerHTML = "";
-    vykresliKnihovnu(vyfiltrovano);
-    if (jaz === 'cz') {
-        if (aktualniTyp === 'bludiste') {
-            document.title = "Dětská bludiště a labyrinty k vytisknutí";
-        } else if (aktualniTyp === 'omalovanky') {
-            document.title = "Omalovánky a vybarvovánky pro děti k vytisknutí";
-        } else if (aktualniTyp === 'spojovacky') {
-            document.title = "Spojovačky a kreslení podle čísel k vytisknutí";
-        } else {
-            document.title = "VinMat | Bludiště, omalovánky a další aktivity k vytisknutí";
+        function filtrujData() {
+            var hledanyText = document.getElementById('search-input').value.toLowerCase().trim();
+            var vyfiltrovano = zparsovanaData.filter(function(polozka) {
+                var odpovidaTyp = (aktualniTyp === 'vse' || polozka.typ === aktualniTyp);
+                var odpovidaVek = (aktualniVek === 'vse' || polozka.vek === aktualniVek);
+                var czNazev = polozka.nazevCz.toLowerCase();
+                var enNazev = polozka.nazevEn.toLowerCase();
+                var odpovidaVyhledavani = (hledanyText === '' || czNazev.includes(hledanyText) || enNazev.includes(hledanyText));
+                return odpovidaTyp && odpovidaVek && odpovidaVyhledavani;
+            });
+            grid.innerHTML = "";
+            vykresliKnihovnu(vyfiltrovano);
+            
+            if (jaz === 'cz') {
+                if (aktualniTyp === 'bludiste') { document.title = "Dětská bludiště a labyrinty k vytisknutí"; }
+                else if (aktualniTyp === 'omalovanky') { document.title = "Omalovánky a vybarvovánky pro děti k vytisknutí"; }
+                else if (aktualniTyp === 'spojovacky') { document.title = "Spojovačky a kreslení podle čísel k vytisknutí"; }
+                else { document.title = "VinMat | Bludiště, omalovánky a další aktivity k vytisknutí"; }
+            } else {
+                if (aktualniTyp === 'bludiste') { document.title = "Free Printable Mazes and Labyrinths for Kids"; }
+                else if (aktualniTyp === 'omalovanky') { document.title = "Free Printable Coloring Pages for Kids"; }
+                else if (aktualniTyp === 'spojovacky') { document.title = "Free Printable Dot-to-Dot Worksheets for Kids"; }
+                else { document.title = "VinMat | Free Printable Mazes, Coloring Pages & More Activities"; }
+            }
         }
-    } else {
-        if (aktualniTyp === 'bludiste') {
-            document.title = "Free Printable Mazes and Labyrinths for Kids";
-        } else if (aktualniTyp === 'omalovanky') {
-            document.title = "Free Printable Coloring Pages for Kids";
-        } else if (aktualniTyp === 'spojovacky') {
-            document.title = "Free Printable Dot-to-Dot Worksheets for Kids";
-        } else {
-            document.title = "VinMat | Free Printable Mazes, Coloring Pages & More Activities";
-        }
-    }
-}
 
         function openModal(id) {
             var polozka = zparsovanaData.find(function(p) { return p.id === id; });
             if (!polozka) return;
             aktivniModalPolozka = polozka;
-            aktivniModalVerze = polozka.jenCernobile ? 'cernobile' : (aktivniKartyVerze[id] || 'barevne');
-            document.getElementById('modal-title').innerText = ziskejPrelozenyNazev(polozka.surovyNazev, jaz);
+            aktivniModalVerze = aktivniKartyVerze[id] || polozka.vychozi;
+            
+            document.getElementById('modal-title').innerText = jaz === 'cz' ? polozka.nazevCz : polozka.nazevEn;
             var vekText = vekMapovani[polozka.vek] ? vekMapovani[polozka.vek][jaz] : polozka.vek;
             document.getElementById('modal-tag-vek').innerText = vekText.toUpperCase();
+            
             var containerVerze = document.getElementById('modal-version-container');
-            if (polozka.jenCernobile) { containerVerze.classList.add('hidden'); }
-            else { containerVerze.classList.remove('hidden'); }
+            var btnGroup = document.getElementById('modal-buttons-group');
+            btnGroup.innerHTML = '';
 
-            // Stažení: fetch HEAD jen při kliknutí, ne při načítání
+            // Pokud má prvek více variant, vyrobíme velké přepínače v modalu
+            if (polozka.varianty.length > 1) {
+                containerVerze.classList.remove('hidden');
+                polozka.varianty.forEach(v => {
+                    var slovnikKlice = { colored: 'btnColor', coloring: 'btnBw', partly_colored: 'btnPartly' };
+                    var textBtn = slovnik[jaz][slovnikKlice[v]] || v;
+                    btnGroup.innerHTML += `<button id="modal-btn-${v}" onclick="toggleModalVersion('${v}')" class="flex-1 py-2 px-4 rounded-xl font-bold text-sm border-2">${textBtn}</button>`;
+                });
+            } else {
+                containerVerze.classList.add('hidden');
+            }
+
             document.getElementById('modal-download-png').onclick = async function() {
-                var cestaBase = polozka.jenCernobile ? polozka.cesta_barevne_base
-                    : (aktivniModalVerze === 'cernobile' ? polozka.cesta_cernobile_base : polozka.cesta_barevne_base);
+                var cestaBase = ziskejCestuBase(polozka, aktivniModalVerze);
                 var btn = document.getElementById('modal-download-png');
                 var puvodniText = btn.innerText;
                 btn.innerText = '⏳ Připravuji...';
@@ -428,7 +471,7 @@ function filtrujData() {
                 var pripona = url.split('.').pop();
                 var link = document.createElement('a');
                 link.href = url;
-                link.download = polozka.id + '_' + aktivniModalVerze + '.' + pripona;
+                link.download = polozka.souborZáklad + '_' + aktivniModalVerze + '.' + pripona;
                 link.click();
                 btn.innerText = puvodniText;
             };
@@ -440,29 +483,29 @@ function filtrujData() {
         function closeModal() { document.getElementById('detail-modal').classList.add('hidden'); }
 
         function toggleModalVersion(verze) {
-            if (aktivniModalPolozka && aktivniModalPolozka.jenCernobile) return;
+            if (!aktivniModalPolozka) return;
             aktivniModalVerze = verze;
             updateModalDisplay();
-            if (aktivniModalPolozka) setKartaVerze(aktivniModalPolozka.id, verze);
+            setKartaVerze(aktivniModalPolozka.id, verze);
         }
 
         function updateModalDisplay() {
             if (!aktivniModalPolozka) return;
-            var cestaBase = aktivniModalPolozka.jenCernobile ? aktivniModalPolozka.cesta_barevne_base
-                : (aktivniModalVerze === 'cernobile' ? aktivniModalPolozka.cesta_cernobile_base : aktivniModalPolozka.cesta_barevne_base);
+            var cestaBase = ziskejCestuBase(aktivniModalPolozka, aktivniModalVerze);
             var mContainer = document.getElementById('modal-img-container');
-            mContainer.innerHTML = obrazekHTML(cestaBase, 'Detail', 'max-w-full max-h-full object-contain rounded-lg', 'aktualni-nahled-obrazku');
+            var altText = aktivniModalPolozka.alty[aktivniModalVerze][jaz] || (jaz === 'cz' ? aktivniModalPolozka.nazevCz : aktivniModalPolozka.nazevEn);
+            
+            mContainer.innerHTML = obrazekHTML(cestaBase, altText, 'max-w-full max-h-full object-contain rounded-lg', 'aktualni-nahled-obrazku');
 
-            if (!aktivniModalPolozka.jenCernobile) {
-                var mc = document.getElementById('modal-btn-color');
-                var mb = document.getElementById('modal-btn-bw');
-                mc.className = aktivniModalVerze === 'barevne'
-                    ? "flex-1 py-2 px-4 rounded-xl font-bold text-sm bg-slate-900 text-white"
-                    : "flex-1 py-2 px-4 rounded-xl font-bold text-sm bg-slate-50 border border-slate-200 text-slate-600";
-                mb.className = aktivniModalVerze === 'cernobile'
-                    ? "flex-1 py-2 px-4 rounded-xl font-bold text-sm bg-slate-900 text-white"
-                    : "flex-1 py-2 px-4 rounded-xl font-bold text-sm bg-slate-50 border border-slate-200 text-slate-600";
-            }
+            // Aktivace správného tlačítka v modalu
+            aktivniModalPolozka.varianty.forEach(v => {
+                var btn = document.getElementById(`modal-btn-${v}`);
+                if (btn) {
+                    btn.className = v === aktivniModalVerze
+                        ? "flex-1 py-2 px-4 rounded-xl font-bold text-sm bg-slate-900 text-white border-slate-900"
+                        : "flex-1 py-2 px-4 rounded-xl font-bold text-sm bg-slate-50 border border-slate-200 text-slate-600";
+                }
+            });
         }
 
         async function tiskniAktualni() {
@@ -470,9 +513,8 @@ function filtrujData() {
             var btn = document.getElementById('print-btn');
             var puvodniText = btn.innerText;
             btn.innerText = '⏳ Připravuji tisk...';
-            var cestaBase = aktivniModalPolozka.jenCernobile ? aktivniModalPolozka.cesta_barevne_base
-                : (aktivniModalVerze === 'cernobile' ? aktivniModalPolozka.cesta_cernobile_base : aktivniModalPolozka.cesta_barevne_base);
-            // Pro tisk preferujeme png (kvalitnější), webp jen pokud png chybí
+            var cestaBase = ziskejCestuBase(aktivniModalPolozka, aktivniModalVerze);
+            
             var pngUrl = cestaBase + '.png';
             var tiskUrl = pngUrl;
             try {
@@ -489,12 +531,9 @@ function filtrujData() {
             if (event.target === document.getElementById('detail-modal')) { closeModal(); }
         }
 
-        naparsujVsechno();
-        var ulozenyJazyk = localStorage.getItem('vinmat_main_lang') || localStorage.getItem('vinmat_lang');
-        if (ulozenyJazyk) { jaz = ulozenyJazyk; }
-        setJazyk(jaz);
+        // Spuštění kompletní asynchronní aplikace
+        inicializujAplikaci();
     </script>
-    <script data-goatcounter="https://worldforkids.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+    <script data-goatcounter="https://worldforkids.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
