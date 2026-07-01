@@ -114,33 +114,32 @@
     </footer>
 
     <script>
-        const slovnik = {
 const slovnik = {
-    cz: {
-        mainTitle: "VINMATŮV SVĚT PRO DĚTI", subTitle: "Ověřená bludiště, omalovánky a spojovačky pro okamžitou zábavu",
-        vse: "Vše", bludiste: "Bludiště", omalovanky: "Omalovánky", spojovacky: "Spojovačky", ageTitle: "Věk:",
-        noResults: "Pro tento výběr tu zatím nic nemáme.", variant: "Select list variant",
-        btnPng: "Stáhnout obrázek", btnPrint: "Vytisknout rovnou", btnColor: "🌈 Barevná", btnBw: "◧ Černobílá", btnPartly: "🌗 Polovybarvená",
-        labelColor: "Barevné", labelBw: "Černobílé", labelPartly: "Částečné",
-        bludisteLabel: "BLUDIŠTĚ", omalovankyLabel: "OMALOVÁNKY", spojovackyLabel: "SPOJOVAČKY",
-        footerCopyright: "© 2026 Vyrobeno s ❤️ pro skvělé tvoření", footerProjects: "Domů na VinMat.eu",
-        footerPrivacy: "Zásady ochrany osobních údajů", footerTerms: "Podmínky užití",
-        footerDisclaimer: "Všechna stahování jsou zdarma pro osobní a vzdělávací účely",
-        onlyBw: "◧ Černobílé", scrollTop: "⬆️ NAHORU", searchPlaceholder: "Hledat podle názvu..."
-    },
-    en: {
-        mainTitle: "VINMAT'S WORLD FOR KIDS", subTitle: "Verified mazes, coloring pages and dot-to-dots for instant fun",
-        vse: "All", bludiste: "Mazes", omalovanky: "Coloring", spojovacky: "Dot-to-Dots", ageTitle: "Age:",
-        noResults: "Nothing found for this selection.", variant: "Select list variant",
-        btnPng: "Download Image", btnPrint: "Print Directly", btnColor: "🌈 Colored", btnBw: "◧ B&W", btnPartly: "🌗 Partly Colored",
-        labelColor: "Colored", labelBw: "B&W only", labelPartly: "Partly",
-        bludisteLabel: "MAZES", omalovankyLabel: "COLORING", spojovackyLabel: "DOT-TO-DOTS",
-        footerCopyright: "© 2026 Made with ❤️ for great crafting", footerProjects: "Home to VinMat.eu",
-        footerPrivacy: "Privacy Policy", footerTerms: "Terms of Service",
-        footerDisclaimer: "All downloads free for personal & educational use",
-        onlyBw: "◧ B&W only", scrollTop: "⬆️ TOP", searchPlaceholder: "Search by name..."
-    }
-};
+            cz: {
+                mainTitle: "VINMATŮV SVĚT PRO DĚTI", subTitle: "Ověřená bludiště, omalovánky a spojovačky pro okamžitou zábavu",
+                vse: "Vše", bludiste: "Bludiště", omalovanky: "Omalovánky", spojovacky: "Spojovačky", ageTitle: "Věk:",
+                noResults: "Pro tento výběr tu zatím nic nemáme.", variant: "Vyberte variantu listu",
+                btnPng: "Stáhnout obrázek", btnPrint: "Vytisknout rovnou", btnColor: "🌈 Barevná", btnBw: "◧ Černobílá", btnPartly: "🌗 Polovybarvená",
+                labelColor: "Barevné", labelBw: "◧ Černobílé", labelPartly: "Částečné",
+                bludisteLabel: "BLUDIŠTĚ", omalovankyLabel: "OMALOVÁNKY", spojovackyLabel: "SPOJOVAČKY",
+                footerCopyright: "© 2026 Vyrobeno s ❤️ pro skvělé tvoření", footerProjects: "Domů na VinMat.eu",
+                footerPrivacy: "Zásady ochrany osobních údajů", footerTerms: "Podmínky užití",
+                footerDisclaimer: "Všechna stahování jsou zdarma pro osobní a vzdělávací účely",
+                onlyBw: "◧ Černobílé", scrollTop: "⬆️ NAHORU", searchPlaceholder: "Hledat podle názvu..."
+            },
+            en: {
+                mainTitle: "VINMAT'S WORLD FOR KIDS", subTitle: "Verified mazes, coloring pages and dot-to-dots for instant fun",
+                vse: "All", bludiste: "Mazes", omalovanky: "Coloring", spojovacky: "Dot-to-Dots", ageTitle: "Age:",
+                noResults: "Nothing found for this selection.", variant: "Select list variant",
+                btnPng: "Download Image", btnPrint: "Print Directly", btnColor: "🌈 Colored", btnBw: "◧ B&W", btnPartly: "🌗 Partly Colored",
+                labelColor: "Colored", labelBw: "◧ B&W only", labelPartly: "Partly",
+                bludisteLabel: "MAZES", omalovankyLabel: "COLORING", spojovackyLabel: "DOT-TO-DOTS",
+                footerCopyright: "© 2026 Made with ❤️ for great crafting", footerProjects: "Home to VinMat.eu",
+                footerPrivacy: "Privacy Policy", footerTerms: "Terms of Service",
+                footerDisclaimer: "All downloads free for personal & educational use",
+                onlyBw: "◧ B&W only", scrollTop: "⬆️ TOP", searchPlaceholder: "Search by name..."
+            }
+        };
 
         const vekMapovani = {
             'LV1': { cz: '👶 3–4', en: '👶 3–4' },
@@ -155,7 +154,6 @@ const slovnik = {
         let aktivniKartyVerze = {}; let aktivniModalPolozka = null; let aktivniModalVerze = 'coloring';
         let zparsovanaData = [];
 
-        // Pomocná funkce pro parsování CSV řádku s ohledem na uvozovky v textu
         function rozsekajCsvRadek(text) {
             let vysledek = [];
             let uvnitrUvozovek = false;
@@ -175,11 +173,13 @@ const slovnik = {
             return vysledek;
         }
 
-        // Načte CSV data z assets/data/ složky
         async function nactiCsvData(typAktivity) {
             try {
-                const response = await fetch(`assets/data/${typAktivity}.csv`);
-                if (!response.ok) return [];
+                const response = await fetch('assets/data/' + typAktivity + '.csv');
+                if (!response.ok) {
+                    console.warn('Soubor nenalezen nebo chyba site: ' + typAktivity);
+                    return [];
+                }
                 const text = await response.text();
                 const radky = text.split(/\r?\n/);
                 if (radky.length <= 1) return [];
@@ -197,21 +197,17 @@ const slovnik = {
                     
                     if (!radekObjekt.soubor) continue;
 
-                    // Extrakce věku ze souboru (např: lv1_gem_1006 -> LV1)
                     const vekKod = radekObjekt.soubor.split('_')[0].toUpperCase();
-
-                    // Určení dostupných variant podle vyplněných ALTů (ignoruje "0" nebo prázdné)
                     const dostupneVarianty = [];
                     if (radekObjekt.altCz_colored && radekObjekt.altCz_colored !== '0') dostupneVarianty.push('colored');
                     if (radekObjekt.altCz_coloring && radekObjekt.altCz_coloring !== '0') dostupneVarianty.push('coloring');
                     if (radekObjekt.altCz_partly_colored && radekObjekt.altCz_partly_colored !== '0') dostupneVarianty.push('partly_colored');
 
-                    // Výchozí verze karty (colored pokud je, jinak coloring)
-                    const vychoziVarianta = dostupneVarianty.includes('colored') ? 'colored' : dostupneVarianty[0] || 'coloring';
+                    const vychoziVarianta = dostupneVarianty.includes('colored') ? 'colored' : (dostupneVarianty[0] || 'coloring');
 
                     data.push({
-                        id: `${typAktivity}-${radekObjekt.soubor}`,
-                        souborZáklad: radekObjekt.soubor,
+                        id: typAktivity + '-' + radekObjekt.soubor,
+                        souborZaklad: radekObjekt.soubor,
                         typ: typAktivity,
                         vek: vekKod,
                         kategorie: radekObjekt.kategorie,
@@ -231,31 +227,33 @@ const slovnik = {
                 }
                 return data;
             } catch (e) {
-                console.error(`Chyba při načítání ${typAktivity}.csv:`, e);
+                console.error('Chyba pri parsovani CSV: ' + typAktivity, e);
                 return [];
             }
         }
 
         async function inicializujAplikaci() {
-            const bludiste = await nactiCsvData('bludiste');
-            const omalovanky = await nactiCsvData('omalovanky');
-            const spojovacky = await nactiCsvData('spojovacky');
-            
-            zparsovanaData = [...bludiste, ...omalovanky, ...spojovacky];
+            try {
+                const bludiste = await nactiCsvData('bludiste');
+                const omalovanky = await nactiCsvData('omalovanky');
+                const spojovacky = await nactiCsvData('spojovacky');
+                
+                zparsovanaData = bludiste.concat(omalovanky).concat(spojovacky);
 
-            const ulozenyJazyk = localStorage.getItem('vinmat_main_lang') || localStorage.getItem('vinmat_lang');
-            if (ulozenyJazyk) { jaz = ulozenyJazyk; }
-            setJazyk(jaz);
+                const ulozenyJazyk = localStorage.getItem('vinmat_main_lang') || localStorage.getItem('vinmat_lang');
+                if (ulozenyJazyk) { jaz = ulozenyJazyk; } else { jaz = 'cz'; }
+                setJazyk(jaz);
+            } catch (err) {
+                console.error('Chyba pri inicializaci aplikace:', err);
+            }
         }
 
-function ziskejCestuBase(polozka, varianta) {
-    // Pokud má položka jen 1 variantu (omalovánky/spojovačky), nelepíme koncovku varianty za název souboru
-    if (polozka.varianty.length === 1) {
-        return `public/${polozka.typ}/${polozka.souborZáklad}`;
-    }
-    // Pro bludiště s více variantami lepíme příslušný název varianty
-    return `public/${polozka.typ}/${polozka.souborZáklad}-${varianta}`;
-}
+        function ziskejCestuBase(polozka, varianta) {
+            if (polozka.varianty.length === 1) {
+                return 'public/' + polozka.typ + '/' + polozka.souborZaklad;
+            }
+            return 'public/' + polozka.typ + '/' + polozka.souborZaklad + '-' + varianta;
+        }
 
         const grid = document.getElementById('knihovna-grid');
         const noResults = document.getElementById('no-results');
@@ -355,13 +353,13 @@ function ziskejCestuBase(polozka, varianta) {
             if (!container) return;
             
             var cestaBase = ziskejCestuBase(polozka, verze);
-            var altText = polozka.alty[verze][jaz] || polozka[`nazev${jaz === 'cz' ? 'Cz' : 'En'}`];
+            var altText = polozka.alty[verze] ? (polozka.alty[verze][jaz] || '') : '';
+            if (!altText) { altText = jaz === 'cz' ? polozka.nazevCz : polozka.nazevEn; }
             
             container.innerHTML = obrazekHTML(cestaBase, altText, 'max-w-full max-h-full object-contain group-hover:scale-102 transition-transform duration-300', '');
             
-            // Přepínání aktivního stylu u mini tlačítek na kartě
             polozka.varianty.forEach(v => {
-                var btn = document.getElementById(`btn-${v}-${id}`);
+                var btn = document.getElementById('btn-' + v + '-' + id);
                 if (btn) {
                     btn.className = v === verze
                         ? "flex-1 py-1 text-[11px] font-bold rounded-md bg-slate-900 text-white"
@@ -382,21 +380,20 @@ function ziskejCestuBase(polozka, varianta) {
                 var cestaBase = ziskejCestuBase(polozka, aktualniVerze);
                 var vekText = vekMapovani[polozka.vek] ? vekMapovani[polozka.vek][jaz] : polozka.vek;
                 var zobrazenyNazev = jaz === 'cz' ? polozka.nazevCz : polozka.nazevEn;
-                var altText = polozka.alty[aktualniVerze][jaz] || zobrazenyNazev;
+                var altText = polozka.alty[aktualniVerze] ? (polozka.alty[aktualniVerze][jaz] || zobrazenyNazev) : zobrazenyNazev;
 
-var tlacitkaHTML = "";
-if (polozka.varianty.length > 1) {
-    tlacitkaHTML = '<div class="flex gap-1 bg-slate-100 p-0.5 rounded-lg">';
-    polozka.varianty.forEach(v => {
-        // Tady je opravené mapování na správné klíče ze slovníku (labelBw místo neexistujícího labelColoring)
-        var labelKlice = { colored: 'labelColor', coloring: 'labelBw', partly_colored: 'labelPartly' };
-        var textTlacitka = slovnik[jaz][labelKlice[v]] || v;
-        tlacitkaHTML += `<button id="btn-${v}-${polozka.id}" onclick="setKartaVerze('${polozka.id}', '${v}')" class="flex-1 py-1 text-[11px] rounded-md">${textTlacitka}</button>`;
-    });
-    tlacitkaHTML += '</div>';
-} else {
-    tlacitkaHTML = '<div class="text-center bg-slate-100 py-1 rounded-lg text-[11px] font-bold text-slate-500">' + slovnik[jaz].onlyBw + '</div>';
-}
+                var tlacitkaHTML = "";
+                if (polozka.varianty.length > 1) {
+                    tlacitkaHTML = '<div class="flex gap-1 bg-slate-100 p-0.5 rounded-lg">';
+                    polozka.varianty.forEach(v => {
+                        var labelKlice = { colored: 'labelColor', coloring: 'labelBw', partly_colored: 'labelPartly' };
+                        var textTlacitka = slovnik[jaz][labelKlice[v]] || v;
+                        tlacitkaHTML += '<button id="btn-' + v + '-' + polozka.id + '" onclick="setKartaVerze(\'' + polozka.id + '\', \'' + v + '\')" class="flex-1 py-1 text-[11px] rounded-md">' + textTlacitka + '</button>';
+                    });
+                    tlacitkaHTML += '</div>';
+                } else {
+                    tlacitkaHTML = '<div class="text-center bg-slate-100 py-1 rounded-lg text-[11px] font-bold text-slate-500">' + slovnik[jaz].onlyBw + '</div>';
+                }
 
                 var karta = document.createElement('div');
                 karta.className = "bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col";
@@ -442,7 +439,7 @@ if (polozka.varianty.length > 1) {
             }
         }
 
-function openModal(id) {
+        function openModal(id) {
             var polozka = zparsovanaData.find(function(p) { return p.id === id; });
             if (!polozka) return;
             aktivniModalPolozka = polozka;
@@ -461,7 +458,7 @@ function openModal(id) {
                 polozka.varianty.forEach(v => {
                     var slovnikKlice = { colored: 'btnColor', coloring: 'btnBw', partly_colored: 'btnPartly' };
                     var textBtn = slovnik[jaz][slovnikKlice[v]] || v;
-                    btnGroup.innerHTML += `<button id="modal-btn-${v}" onclick="toggleModalVersion('${v}')" class="flex-1 py-2 px-4 rounded-xl font-bold text-sm border-2">${textBtn}</button>`;
+                    btnGroup.innerHTML += '<button id="modal-btn-' + v + '" onclick="toggleModalVersion(\'' + v + '\')" class="flex-1 py-2 px-4 rounded-xl font-bold text-sm border-2">' + textBtn + '</button>';
                 });
             } else {
                 containerVerze.classList.add('hidden');
@@ -476,7 +473,7 @@ function openModal(id) {
                 var pripona = url.split('.').pop();
                 var link = document.createElement('a');
                 link.href = url;
-                link.download = polozka.souborZáklad + '_' + aktivniModalVerze + '.' + pripona;
+                link.download = polozka.souborZaklad + '_' + aktivniModalVerze + '.' + pripona;
                 link.click();
                 btn.innerText = puvodniText;
             };
@@ -498,12 +495,13 @@ function openModal(id) {
             if (!aktivniModalPolozka) return;
             var cestaBase = ziskejCestuBase(aktivniModalPolozka, aktivniModalVerze);
             var mContainer = document.getElementById('modal-img-container');
-            var altText = aktivniModalPolozka.alty[aktivniModalVerze][jaz] || (jaz === 'cz' ? aktivniModalPolozka.nazevCz : aktivniModalPolozka.nazevEn);
+            var altText = aktivniModalPolozka.alty[aktivniModalVerze] ? (aktivniModalPolozka.alty[aktivniModalVerze][jaz] || '') : '';
+            if (!altText) { altText = jaz === 'cz' ? aktivniModalPolozka.nazevCz : aktivniModalPolozka.nazevEn; }
             
             mContainer.innerHTML = obrazekHTML(cestaBase, altText, 'max-w-full max-h-full object-contain rounded-lg', 'aktualni-nahled-obrazku');
 
             aktivniModalPolozka.varianty.forEach(v => {
-                var btn = document.getElementById(`modal-btn-${v}`);
+                var btn = document.getElementById('modal-btn-' + v);
                 if (btn) {
                     btn.className = v === aktivniModalVerze
                         ? "flex-1 py-2 px-4 rounded-xl font-bold text-sm bg-slate-900 text-white border-slate-900"
@@ -535,15 +533,6 @@ function openModal(id) {
             if (event.target === document.getElementById('detail-modal')) { closeModal(); }
         }
 
-        // Spuštění kompletní asynchronní aplikace a nastavení výchozího jazyka na CZ
-        jaz = 'cz';
-        var ulozenyJazyk = localStorage.getItem('vinmat_main_lang') || localStorage.getItem('vinmat_lang');
-        if (ulozenyJazyk) { jaz = ulozenyJazyk; }
-        
-        inicializujAplikaci().then(() => {
-            setJazyk(jaz);
-        });
+        // Spuštění kompletní asynchronní aplikace a řádné zřetězení
+        inicializujAplikaci();
     </script>
-    <script data-goatcounter="https://worldforkids.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-</body>
-</html>
