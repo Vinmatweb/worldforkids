@@ -115,31 +115,32 @@
 
     <script>
         const slovnik = {
-            cz: {
-                mainTitle: "VINMATŮV SVĚT PRO DĚTI", subTitle: "Ověřená bludiště, omalovánky a spojovačky pro okamžitou zábavu",
-                vse: "Vše", bludiste: "Bludiště", omalovanky: "Omalovánky", spojovacky: "Spojovačky", ageTitle: "Věk:",
-                noResults: "Pro tento výběr tu zatím nic nemáme.", variant: "Vyberte variantu listu",
-                btnPng: "Stáhnout obrázek", btnPrint: "Vytisknout rovnou", btnColor: "🌈 Barevná", btnBw: "🪙 Černobílá", btnPartly: "🌗 Polovyceněná",
-                labelColor: "Barevné", labelBw: "Černobílé", labelPartly: "Částečné",
-                bludisteLabel: "BLUDIŠTĚ", omalovankyLabel: "OMALOVÁNKY", spojovackyLabel: "SPOJOVAČKY",
-                footerCopyright: "© 2026 Vyrobeno s ❤️ pro skvělé tvoření", footerProjects: "Domů na VinMat.eu",
-                footerPrivacy: "Zásady ochrany osobních údajů", footerTerms: "Podmínky užití",
-                footerDisclaimer: "Všechna stahování jsou zdarma pro osobní a vzdělávací účely",
-                onlyBw: "◧ Černobílé", scrollTop: "⬆️ NAHORU", searchPlaceholder: "Hledat podle názvu..."
-            },
-            en: {
-                mainTitle: "VINMAT'S WORLD FOR KIDS", subTitle: "Verified mazes, coloring pages and dot-to-dots for instant fun",
-                vse: "All", bludiste: "Mazes", omalovanky: "Coloring", spojovacky: "Dot-to-Dots", ageTitle: "Age:",
-                noResults: "Nothing found for this selection.", variant: "Select list variant",
-                btnPng: "Download Image", btnPrint: "Print Directly", btnColor: "🌈 Colored", btnBw: "🪙 B&W", btnPartly: "🌗 Partly Colored",
-                labelColor: "Colored", labelBw: "B&W", labelPartly: "Partly",
-                bludisteLabel: "MAZES", omalovankyLabel: "COLORING", spojovackyLabel: "DOT-TO-DOTS",
-                footerCopyright: "© 2026 Made with ❤️ for great crafting", footerProjects: "Home to VinMat.eu",
-                footerPrivacy: "Privacy Policy", footerTerms: "Terms of Service",
-                footerDisclaimer: "All downloads free for personal & educational use",
-                onlyBw: "◧ B&W only", scrollTop: "⬆️ TOP", searchPlaceholder: "Search by name..."
-            }
-        };
+const slovnik = {
+    cz: {
+        mainTitle: "VINMATŮV SVĚT PRO DĚTI", subTitle: "Ověřená bludiště, omalovánky a spojovačky pro okamžitou zábavu",
+        vse: "Vše", bludiste: "Bludiště", omalovanky: "Omalovánky", spojovacky: "Spojovačky", ageTitle: "Věk:",
+        noResults: "Pro tento výběr tu zatím nic nemáme.", variant: "Select list variant",
+        btnPng: "Stáhnout obrázek", btnPrint: "Vytisknout rovnou", btnColor: "🌈 Barevná", btnBw: "◧ Černobílá", btnPartly: "🌗 Polovybarvená",
+        labelColor: "Barevné", labelBw: "Černobílé", labelPartly: "Částečné",
+        bludisteLabel: "BLUDIŠTĚ", omalovankyLabel: "OMALOVÁNKY", spojovackyLabel: "SPOJOVAČKY",
+        footerCopyright: "© 2026 Vyrobeno s ❤️ pro skvělé tvoření", footerProjects: "Domů na VinMat.eu",
+        footerPrivacy: "Zásady ochrany osobních údajů", footerTerms: "Podmínky užití",
+        footerDisclaimer: "Všechna stahování jsou zdarma pro osobní a vzdělávací účely",
+        onlyBw: "◧ Černobílé", scrollTop: "⬆️ NAHORU", searchPlaceholder: "Hledat podle názvu..."
+    },
+    en: {
+        mainTitle: "VINMAT'S WORLD FOR KIDS", subTitle: "Verified mazes, coloring pages and dot-to-dots for instant fun",
+        vse: "All", bludiste: "Mazes", omalovanky: "Coloring", spojovacky: "Dot-to-Dots", ageTitle: "Age:",
+        noResults: "Nothing found for this selection.", variant: "Select list variant",
+        btnPng: "Download Image", btnPrint: "Print Directly", btnColor: "🌈 Colored", btnBw: "◧ B&W", btnPartly: "🌗 Partly Colored",
+        labelColor: "Colored", labelBw: "B&W only", labelPartly: "Partly",
+        bludisteLabel: "MAZES", omalovankyLabel: "COLORING", spojovackyLabel: "DOT-TO-DOTS",
+        footerCopyright: "© 2026 Made with ❤️ for great crafting", footerProjects: "Home to VinMat.eu",
+        footerPrivacy: "Privacy Policy", footerTerms: "Terms of Service",
+        footerDisclaimer: "All downloads free for personal & educational use",
+        onlyBw: "◧ B&W only", scrollTop: "⬆️ TOP", searchPlaceholder: "Search by name..."
+    }
+};
 
         const vekMapovani = {
             'LV1': { cz: '👶 3–4', en: '👶 3–4' },
@@ -247,10 +248,14 @@
             setJazyk(jaz);
         }
 
-        function ziskejCestuBase(polozka, varianta) {
-            // Sestavení cesty: public/bludiste/lv1_gem_1006-ant-maze-colored
-            return `public/${polozka.typ}/${polozka.souborZáklad}-${varianta}`;
-        }
+function ziskejCestuBase(polozka, varianta) {
+    // Pokud má položka jen 1 variantu (omalovánky/spojovačky), nelepíme koncovku varianty za název souboru
+    if (polozka.varianty.length === 1) {
+        return `public/${polozka.typ}/${polozka.souborZáklad}`;
+    }
+    // Pro bludiště s více variantami lepíme příslušný název varianty
+    return `public/${polozka.typ}/${polozka.souborZáklad}-${varianta}`;
+}
 
         const grid = document.getElementById('knihovna-grid');
         const noResults = document.getElementById('no-results');
@@ -379,18 +384,19 @@
                 var zobrazenyNazev = jaz === 'cz' ? polozka.nazevCz : polozka.nazevEn;
                 var altText = polozka.alty[aktualniVerze][jaz] || zobrazenyNazev;
 
-                var tlacitkaHTML = "";
-                if (polozka.varianty.length > 1) {
-                    tlacitkaHTML = '<div class="flex gap-1 bg-slate-100 p-0.5 rounded-lg">';
-                    polozka.varianty.forEach(v => {
-                        var labelKlice = { colored: 'labelColor', coloring: 'labelColoring', partly_colored: 'labelPartly' };
-                        var textTlacitka = slovnik[jaz][labelKlice[v] || 'labelBw'] || v;
-                        tlacitkaHTML += `<button id="btn-${v}-${polozka.id}" onclick="setKartaVerze('${polozka.id}', '${v}')" class="flex-1 py-1 text-[11px] rounded-md">${textTlacitka}</button>`;
-                    });
-                    tlacitkaHTML += '</div>';
-                } else {
-                    tlacitkaHTML = '<div class="text-center bg-slate-100 py-1 rounded-lg text-[11px] font-bold text-slate-500">' + slovnik[jaz].onlyBw + '</div>';
-                }
+var tlacitkaHTML = "";
+if (polozka.varianty.length > 1) {
+    tlacitkaHTML = '<div class="flex gap-1 bg-slate-100 p-0.5 rounded-lg">';
+    polozka.varianty.forEach(v => {
+        // Tady je opravené mapování na správné klíče ze slovníku (labelBw místo neexistujícího labelColoring)
+        var labelKlice = { colored: 'labelColor', coloring: 'labelBw', partly_colored: 'labelPartly' };
+        var textTlacitka = slovnik[jaz][labelKlice[v]] || v;
+        tlacitkaHTML += `<button id="btn-${v}-${polozka.id}" onclick="setKartaVerze('${polozka.id}', '${v}')" class="flex-1 py-1 text-[11px] rounded-md">${textTlacitka}</button>`;
+    });
+    tlacitkaHTML += '</div>';
+} else {
+    tlacitkaHTML = '<div class="text-center bg-slate-100 py-1 rounded-lg text-[11px] font-bold text-slate-500">' + slovnik[jaz].onlyBw + '</div>';
+}
 
                 var karta = document.createElement('div');
                 karta.className = "bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col";
