@@ -515,22 +515,28 @@ async function tiskniAktualni() {
             var btn = document.getElementById('print-btn');
             var puvodniText = btn.innerText;
             btn.innerText = '⏳...';
-            var cestaBase = ziskejCestuBase(aktivniModalPolozka, aktivniModalVerze);
             
-            var pngUrl = cestaBase + '.png';
-            var tiskUrl = pngUrl;
-            try {
-                var r = await fetch(pngUrl, { method: 'HEAD' });
-                if (!r.ok) { tiskUrl = cestaBase + '.webp'; }
-            } catch(e) {}
+            // NEPRŮSTŘELNÉ ŘEŠENÍ: Vezmeme hotové a ověřené URL přímo z obrázku, který zrovna svítí v modalu
+            var modalImg = document.getElementById('aktualni-nahled-obrazku');
+            if (!modalImg) {
+                btn.innerText = puvodniText;
+                return;
+            }
+            var tiskUrl = modalImg.src;
             
+            // Ovor v novém čistém okně
             var tiskoveOkno = window.open('', '_blank');
-            // Úprava: Kód nyní bezpečně čeká, až se obrázek v novém okně kompletně vykreslí, a teprve pak spustí tiskové menu
-            tiskoveOkno.document.write('<html><head><title>Tisk</title></head><body style="margin:0;display:flex;justify-content:center;align-items:center;height:100vh;">');
-            tiskoveOkno.document.write('<img src="' + tiskUrl + '" style="max-width:100%;max-height:100%;object-fit:contain;" id="print-img">');
-            tiskoveOkno.document.write('<script>window.onload = function() { setTimeout(function() { window.print(); window.close(); }, 300); };<\/script>');
+            
+            tiskoveOkno.document.write('<html><head><title>Tisk - VinMat</title>');
+            tiskoveOkno.document.write('<style>body{margin:0;display:flex;justify-content:center;align-items:center;height:100vh;} img{max-width:100%;max-height:100%;object-fit:contain;}</style>');
+            tiskoveOkno.document.write('</head><body>');
+            
+            // Tisk se spustí až ve chvíli, kdy se obrázek v novém okně stoprocentně načte do paměti
+            tiskoveOkno.document.write('<img src="' + tiskUrl + '" onload="window.print(); window.close();" onerror="window.close();">');
+            
             tiskoveOkno.document.write('</body></html>');
             tiskoveOkno.document.close();
+            
             btn.innerText = puvodniText;
         }
 
