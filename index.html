@@ -516,22 +516,25 @@ async function tiskniAktualni() {
             var puvodniText = btn.innerText;
             btn.innerText = '⏳...';
             
-            // NEPRŮSTŘELNÉ ŘEŠENÍ: Vezmeme hotové a ověřené URL přímo z obrázku, který zrovna svítí v modalu
+            // 1. Najdeme náhledový obrázek, který v modalu prokazatelně správně svítí
             var modalImg = document.getElementById('aktualni-nahled-obrazku');
             if (!modalImg) {
                 btn.innerText = puvodniText;
                 return;
             }
-            var tiskUrl = modalImg.src;
             
-            // Ovor v novém čistém okně
+            // 2. Vezmeme jeho hotovou cestu (včetně dlouhého názvu) 
+            // a nahradíme tečku s příponou (.webp, .Webp) na čisté .png
+            var tiskUrl = modalImg.src.split('.').slice(0, -1).join('.') + '.png';
+            
+            // 3. Otevřeme nové okno pro tisk
             var tiskoveOkno = window.open('', '_blank');
             
             tiskoveOkno.document.write('<html><head><title>Tisk - VinMat</title>');
             tiskoveOkno.document.write('<style>body{margin:0;display:flex;justify-content:center;align-items:center;height:100vh;} img{max-width:100%;max-height:100%;object-fit:contain;}</style>');
             tiskoveOkno.document.write('</head><body>');
             
-            // Tisk se spustí až ve chvíli, kdy se obrázek v novém okně stoprocentně načte do paměti
+            // 4. Jakmile se PNG v novém okně načte, spustí se tiskové menu
             tiskoveOkno.document.write('<img src="' + tiskUrl + '" onload="window.print(); window.close();" onerror="window.close();">');
             
             tiskoveOkno.document.write('</body></html>');
