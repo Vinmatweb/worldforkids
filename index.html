@@ -442,7 +442,7 @@ if (polozka.varianty.length > 1) {
             }
         }
 
-        function openModal(id) {
+function openModal(id) {
             var polozka = zparsovanaData.find(function(p) { return p.id === id; });
             if (!polozka) return;
             aktivniModalPolozka = polozka;
@@ -456,7 +456,6 @@ if (polozka.varianty.length > 1) {
             var btnGroup = document.getElementById('modal-buttons-group');
             btnGroup.innerHTML = '';
 
-            // Pokud má prvek více variant, vyrobíme velké přepínače v modalu
             if (polozka.varianty.length > 1) {
                 containerVerze.classList.remove('hidden');
                 polozka.varianty.forEach(v => {
@@ -472,7 +471,7 @@ if (polozka.varianty.length > 1) {
                 var cestaBase = ziskejCestuBase(polozka, aktivniModalVerze);
                 var btn = document.getElementById('modal-download-png');
                 var puvodniText = btn.innerText;
-                btn.innerText = '⏳ Připravuji...';
+                btn.innerText = '⏳...';
                 var url = await nejlepsiUrl(cestaBase);
                 var pripona = url.split('.').pop();
                 var link = document.createElement('a');
@@ -503,7 +502,6 @@ if (polozka.varianty.length > 1) {
             
             mContainer.innerHTML = obrazekHTML(cestaBase, altText, 'max-w-full max-h-full object-contain rounded-lg', 'aktualni-nahled-obrazku');
 
-            // Aktivace správného tlačítka v modalu
             aktivniModalPolozka.varianty.forEach(v => {
                 var btn = document.getElementById(`modal-btn-${v}`);
                 if (btn) {
@@ -518,7 +516,7 @@ if (polozka.varianty.length > 1) {
             if (!aktivniModalPolozka) return;
             var btn = document.getElementById('print-btn');
             var puvodniText = btn.innerText;
-            btn.innerText = '⏳ Připravuji tisk...';
+            btn.innerText = '⏳...';
             var cestaBase = ziskejCestuBase(aktivniModalPolozka, aktivniModalVerze);
             
             var pngUrl = cestaBase + '.png';
@@ -537,8 +535,14 @@ if (polozka.varianty.length > 1) {
             if (event.target === document.getElementById('detail-modal')) { closeModal(); }
         }
 
-        // Spuštění kompletní asynchronní aplikace
-        inicializujAplikaci();
+        // Spuštění kompletní asynchronní aplikace a nastavení výchozího jazyka na CZ
+        jaz = 'cz';
+        var ulozenyJazyk = localStorage.getItem('vinmat_main_lang') || localStorage.getItem('vinmat_lang');
+        if (ulozenyJazyk) { jaz = ulozenyJazyk; }
+        
+        inicializujAplikaci().then(() => {
+            setJazyk(jaz);
+        });
     </script>
     <script data-goatcounter="https://worldforkids.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
