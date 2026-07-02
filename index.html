@@ -246,11 +246,23 @@ function obrazekHTML(cestaBase, alt, css, id) {
 // ─── NEJLEPŠÍ URL PRO STAŽENÍ / TISK ─────────────────────────────────────────
 // fetch HEAD se volá JEN při kliknutí, ne při načítání gridu
 async function nejlepsiUrl(cestaBase) {
+    // Zkusí PNG – pokud existuje a má rozumnou velikost (>1KB), použije ho
+    // Jinak zkusí webp, jinak vrátí png jako fallback
     try {
-        var r = await fetch(cestaBase+'.webp', {method:'HEAD'});
-        if (r.ok) return cestaBase+'.webp';
+        var r = await fetch(cestaBase+'.png', {method:'HEAD'});
+        if (r.ok) {
+            var velikost = parseInt(r.headers.get('content-length') || '0');
+            if (velikost > 1024) return cestaBase+'.png';
+        }
     } catch(e) {}
-    return cestaBase+'.png';
+    try {
+        var r2 = await fetch(cestaBase+'.webp', {method:'HEAD'});
+        if (r2.ok) {
+            var velikost2 = parseInt(r2.headers.get('content-length') || '0');
+            if (velikost2 > 1024) return cestaBase+'.webp';
+        }
+    } catch(e) {}
+    return cestaBase+'.png'; // fallback
 }
 
 // ─── JAZYK ───────────────────────────────────────────────────────────────────
@@ -491,16 +503,12 @@ async function tiskniAktualni() {
     var orig = btn.innerText;
     btn.innerText = '⏳...';
 
-    // OPRAVA: nepoužíváme modalImg.src (ten má absolutní URL s tečkami v doméně)
-    // Místo toho sestavíme cestu přímo ze stavu aplikace
     var cestaBase = ziskejCestuBase(aktivniModalPolozka, aktivniModalVerze);
 
-    // Pro tisk preferujeme PNG (kvalitnější), webp jen pokud PNG chybí
-    var tiskUrl = cestaBase + '.png';
-    try {
-        var r = await fetch(cestaBase+'.png', {method:'HEAD'});
-        if (!r.ok) tiskUrl = cestaBase+'.webp';
-    } catch(e) {}
+    // Absolutní URL – nutné pro nové okno (about:blank nezná relativní cesty)
+    var origin = window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '/');
+    var nejlepsi = await nejlepsiUrl(cestaBase);
+    var tiskUrl = origin + nejlepsi;
 
     var okno = window.open('', '_blank');
     okno.document.write(
