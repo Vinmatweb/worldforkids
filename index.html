@@ -3,7 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VinMatův svět pro děti – dětská bludiště a omalovánky k vytisknutí zdarma</title>
+
+    <!-- ═══ ZÁKLADNÍ SEO ═══ -->
+    <title id="page-title">VinMatův svět pro děti – dětská bludiště a omalovánky k vytisknutí zdarma</title>
+    <meta id="meta-desc" name="description" content="Stáhněte zdarma bludiště, omalovánky a spojovačky pro děti 3–10 let. Tisknutelné pracovní listy seřazené podle věku a obtížnosti. Barevné i černobílé varianty.">
+    <meta name="robots" content="index, follow">
+    <link id="link-canonical" rel="canonical" href="https://vinmat.eu/worldforkids/">
+    <meta name="author" content="VinMat">
+    <meta name="keywords" content="bludiště pro děti, omalovánky k vytisknutí, spojovačky, pracovní listy, tisknutelné aktivity, předškoláci">
+
+    <!-- ═══ OPEN GRAPH (Facebook, Pinterest, …) ═══ -->
+    <meta id="og-title"       property="og:title"       content="VinMatův svět pro děti – bludiště a omalovánky zdarma">
+    <meta id="og-desc"        property="og:description"  content="Stáhněte zdarma bludiště, omalovánky a spojovačky pro děti 3–10 let. Barevné i černobílé tisknutelné pracovní listy.">
+    <meta                     property="og:type"         content="website">
+    <meta id="og-url"         property="og:url"          content="https://vinmat.eu/worldforkids/">
+    <meta                     property="og:image"        content="https://vinmat.eu/worldforkids/assets/images/og-image.png">
+    <meta                     property="og:image:width"  content="1200">
+    <meta                     property="og:image:height" content="630">
+    <meta                     property="og:site_name"    content="VinMat – Svět pro děti">
+    <meta                     property="og:locale"       content="cs_CZ">
+    <meta                     property="og:locale:alternate" content="en_US">
+
+    <!-- ═══ TWITTER / X CARD ═══ -->
+    <meta name="twitter:card"        content="summary_large_image">
+    <meta id="tw-title" name="twitter:title"       content="VinMatův svět pro děti – bludiště a omalovánky zdarma">
+    <meta id="tw-desc"  name="twitter:description" content="Stáhněte zdarma bludiště, omalovánky a spojovačky pro děti 3–10 let.">
+    <meta               name="twitter:image"       content="https://vinmat.eu/worldforkids/assets/images/og-image.png">
+
+    <!-- ═══ SCHEMA.ORG – strukturovaná data pro Google ═══ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "VinMat – Svět pro děti",
+        "url": "https://vinmat.eu/worldforkids/",
+        "description": "Zdarma tisknutelná bludiště, omalovánky a spojovačky pro děti 3–10 let.",
+        "inLanguage": ["cs", "en"],
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://vinmat.eu/worldforkids/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+
     <link rel="icon" type="image/png" href="favicon.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -17,13 +60,50 @@
 <body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col pt-[36px]">
 
     <!-- TOP BAR -->
-    <div class="bg-slate-900 text-white text-xs py-2 px-4 flex justify-between items-center font-bold fixed top-0 left-0 w-full z-50 shadow-md">
-        <button onclick="window.scrollTo({top:0,behavior:'smooth'})" id="btn-scroll-top" class="hover:text-amber-400 transition-colors">⬆️ NAHORU</button>
-        <div class="flex gap-4">
-            <button onclick="setJazyk('en')" id="lang-to-en" class="hidden hover:text-amber-400 transition-colors">EN</button>
-            <button onclick="setJazyk('cz')" id="lang-to-cz" class="hover:text-amber-400 transition-colors">CZ</button>
+<div class="bg-slate-900 text-white text-xs py-2 px-4 fixed top-0 left-0 w-full z-50 shadow-md font-bold">
+    <div class="max-w-7xl mx-auto w-full flex justify-between items-center px-6 md:px-8">
+        
+        <div class="flex items-center gap-6">
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" id="btn-scroll-top" class="hover:text-amber-400 transition-colors uppercase whitespace-nowrap">⬆️ NAHORU</button>
+            
+            <span class="text-slate-700 font-normal">|</span>
+            
+            <div class="flex items-center gap-4">
+                <a href="pruvodce-aktivitami.html" id="nav-pruvodce" class="hover:text-amber-400 transition-colors tracking-wide whitespace-nowrap">Průvodce aktivitami</a>
+                <span class="text-slate-700 font-normal">|</span>
+                <a href="urovne-obtiznosti.html" id="nav-urovne" class="hover:text-amber-400 transition-colors tracking-wide whitespace-nowrap">Úrovně obtížnosti</a>
+                <span class="text-slate-700 font-normal">|</span>
+                <a href="nas-pribeh.html" id="nav-pribeh" class="hover:text-amber-400 transition-colors tracking-wide whitespace-nowrap">Náš příběh</a>
+            </div>
         </div>
+        
+        <div class="flex items-center gap-4">
+            <div class="flex items-center gap-2.5 border-r border-slate-700 pr-4">
+                <a href="https://www.youtube.com/@vinmat_worldforkids" target="_blank" rel="noopener noreferrer" class="text-white hover:text-amber-400 transition-colors" aria-label="YouTube">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/vinmat_worldforkids/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-amber-400 transition-colors" aria-label="Instagram">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                </a>
+                <a href="https://www.tiktok.com/@vinmat_worldforkids" target="_blank" rel="noopener noreferrer" class="hidden text-white hover:text-amber-400 transition-colors" aria-label="TikTok">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.05 1.62 4.2 1.22 1.4 3 2.2 4.85 2.32v3.51c-1.35-.04-2.68-.45-3.81-1.19-.61-.4-1.15-.9-1.59-1.49v6.33c0 1.95-.53 3.87-1.56 5.51-1.53 2.45-4.22 4.02-7.14 4.14-2.93.11-5.85-1.07-7.65-3.39C-.5 17.58-1.01 14 .35 10.87c1.14-2.61 3.58-4.52 6.42-4.94v3.62c-1.63.15-3.15 1.11-3.84 2.6-.74 1.63-.52 3.63.58 5.04.99 1.27 2.6 2.01 4.22 1.9 1.74-.11 3.32-1.23 3.9-2.88.3-.85.42-1.75.4-2.65V.02z"/></svg>
+                </a>
+                <a href="https://www.pinterest.com/vinmat_worldforkids/" target="_blank" rel="noopener noreferrer" class="hidden text-white hover:text-amber-400 transition-colors" aria-label="Pinterest">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C11.166 23.945 11.577 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61591523606610" target="_blank" rel="noopener noreferrer" class="hidden text-white hover:text-amber-400 transition-colors" aria-label="Facebook">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg>
+                </a>
+            </div>
+            
+            <div class="flex gap-4">
+                <button onclick="setJazyk('en')" id="lang-to-en" class="hidden hover:text-amber-400 transition-colors">EN</button>
+                <button onclick="setJazyk('cz')" id="lang-to-cz" class="hover:text-amber-400 transition-colors">CZ</button>
+            </div>
+        </div>
+
     </div>
+</div>
 
     <!-- HEADER / BANNER -->
     <div class="max-w-7xl w-full mx-auto px-4 pt-6">
@@ -42,24 +122,62 @@
 
         <!-- FILTRY -->
         <section class="bg-white rounded-2xl shadow-sm p-6 mb-6 border border-slate-100 mt-4 space-y-4">
-            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
-                <div class="flex flex-wrap items-center gap-2">
-                    <button onclick="setTyp('vse')" id="btn-vse" class="px-5 py-2 rounded-full text-sm font-semibold bg-slate-900 text-white shadow-sm">Vše</button>
-                    <button onclick="setTyp('bludiste')" id="btn-bludiste" class="px-5 py-2 rounded-full text-sm font-semibold text-slate-600 bg-slate-100 hover:bg-slate-200">🧩 <span id="lbl-nav-bludiste">Bludiště</span></button>
-                    <button onclick="setTyp('omalovanky')" id="btn-omalovanky" class="px-5 py-2 rounded-full text-sm font-semibold text-slate-600 bg-slate-100 hover:bg-slate-200">🎨 <span id="lbl-nav-omalovanky">Omalovánky</span></button>
-                    <button onclick="setTyp('spojovacky')" id="btn-spojovacky" class="px-5 py-2 rounded-full text-sm font-semibold text-slate-600 bg-slate-100 hover:bg-slate-200">🔢 <span id="lbl-nav-spojovacky">Spojovačky</span></button>
-                </div>
-                <div class="flex flex-wrap items-center gap-1.5">
-                    <span id="lbl-filter-age-title" class="text-xs font-bold text-slate-400 uppercase tracking-wider mr-1">Věk:</span>
-                    <button onclick="setVek('vse')"  id="btn-vek-vse" class="px-4 py-1.5 text-xs font-bold rounded-full bg-slate-900 text-white">Vše</button>
-                    <button onclick="setVek('LV1')"  id="btn-vek-1"   class="px-4 py-1.5 text-xs font-bold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200">3–4</button>
-                    <button onclick="setVek('LV2')"  id="btn-vek-2"   class="px-4 py-1.5 text-xs font-bold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200">5–6</button>
-                    <button onclick="setVek('LV3')"  id="btn-vek-3"   class="px-4 py-1.5 text-xs font-bold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200">7–9</button>
-                    <button onclick="setVek('LV4')"  id="btn-vek-4"   class="px-4 py-1.5 text-xs font-bold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200">10+</button>
-                    <button onclick="setVek('LV5')"  id="btn-vek-5"   class="px-4 py-1.5 text-xs font-bold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200">Expert</button>
-                </div>
+
+            <!-- Řádek 1: Typ aktivity -->
+            <div class="flex flex-wrap items-center gap-2">
+                <button onclick="setTyp('vse')" id="btn-vse" class="px-5 py-2 rounded-full text-sm font-semibold bg-slate-900 text-white shadow-sm">Vše</button>
+                <button onclick="setTyp('bludiste')" id="btn-bludiste" class="px-5 py-2 rounded-full text-sm font-semibold text-slate-600 bg-slate-100 hover:bg-slate-200">🧩 <span id="lbl-nav-bludiste">Bludiště</span></button>
+                <button onclick="setTyp('omalovanky')" id="btn-omalovanky" class="px-5 py-2 rounded-full text-sm font-semibold text-slate-600 bg-slate-100 hover:bg-slate-200">🎨 <span id="lbl-nav-omalovanky">Omalovánky</span></button>
+                <button onclick="setTyp('spojovacky')" id="btn-spojovacky" class="px-5 py-2 rounded-full text-sm font-semibold text-slate-600 bg-slate-100 hover:bg-slate-200">🔢 <span id="lbl-nav-spojovacky">Spojovačky</span></button>
             </div>
-            <div class="pt-2 border-t border-slate-50">
+
+            <!-- Řádek 2: Věk -->
+            <div class="flex flex-wrap items-center gap-1.5 pt-1 border-t border-slate-50">
+                <span id="lbl-filter-age-title" class="text-xs font-bold text-slate-400 uppercase tracking-wider mr-1">Věk:</span>
+                <button onclick="setVek('vse')"  id="btn-vek-vse" class="px-4 py-1.5 text-xs font-bold rounded-full bg-slate-900 text-white">Vše</button>
+                <button onclick="setVek('LV1')"  id="btn-vek-1"   class="px-4 py-1.5 text-xs font-bold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200">3–4</button>
+                <button onclick="setVek('LV2')"  id="btn-vek-2"   class="px-4 py-1.5 text-xs font-bold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200">5–6</button>
+                <button onclick="setVek('LV3')"  id="btn-vek-3"   class="px-4 py-1.5 text-xs font-bold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200">7–9</button>
+                <button onclick="setVek('LV4')"  id="btn-vek-4"   class="px-4 py-1.5 text-xs font-bold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200">10+</button>
+                <button onclick="setVek('LV5')"  id="btn-vek-5"   class="px-4 py-1.5 text-xs font-bold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200">Expert</button>
+            </div>
+
+            <!-- Řádek 3: Kategorie + Rozšířené filtry -->
+            <div class="flex flex-wrap items-center gap-2 pt-1 border-t border-slate-50">
+                <span id="lbl-filter-kat-title" class="text-xs font-bold text-slate-400 uppercase tracking-wider">Téma:</span>
+                <select id="sel-kategorie" onchange="setKategorie(this.value)"
+                    class="px-3 py-1.5 text-xs font-bold rounded-xl border border-slate-200 bg-slate-50 text-slate-700 focus:outline-none focus:border-indigo-400 cursor-pointer">
+                    <option value="vse">— Vše —</option>
+                </select>
+
+                <span class="text-slate-200 font-normal hidden md:inline">|</span>
+
+                <select id="sel-rozsirene" onchange="setRozsirenyFiltr(this.value)"
+                    class="px-3 py-1.5 text-xs font-bold rounded-xl border border-slate-200 bg-slate-50 text-slate-700 focus:outline-none focus:border-indigo-400 cursor-pointer">
+                    <option value="vse" id="opt-rozsirene-vse">— Rozšířené filtry —</option>
+                    <optgroup id="optgrp-razeni" label="Řazení">
+                        <option value="sort:newest" id="opt-newest">Nejnovější</option>
+                        <option value="sort:oldest" id="opt-oldest">Nejstarší</option>
+                    </optgroup>
+                    <optgroup id="optgrp-sezona" label="Roční období a svátky">
+                    </optgroup>
+                    <optgroup id="optgrp-zamereni" label="Vzdělávací zaměření">
+                    </optgroup>
+                </select>
+
+                <!-- Reset tlačítko – zobrazí se jen když je aktivní nějaký filtr -->
+                <button id="btn-reset" onclick="resetFiltry()" class="hidden px-3 py-1.5 text-xs font-bold rounded-xl bg-red-50 text-red-500 border border-red-200 hover:bg-red-100 transition-all">
+                    ✕ <span id="lbl-reset">Zrušit filtry</span>
+                </button>
+            </div>
+
+            <!-- Řádek 4: Podkategorie (dynamicky) -->
+            <div id="podkat-row" class="hidden pt-1 border-t border-slate-50">
+                <div id="podkat-btns" class="flex flex-wrap items-center gap-1.5"></div>
+            </div>
+
+            <!-- Řádek 5: Hledání -->
+            <div class="pt-1 border-t border-slate-50">
                 <input type="text" id="search-input" oninput="filtrujData()" placeholder="Hledat podle názvu..."
                     class="w-full px-4 py-2 text-sm rounded-xl border border-slate-200 bg-slate-50 focus:outline-none focus:border-indigo-500 focus:bg-white transition-all font-sans">
             </div>
@@ -128,7 +246,21 @@ const slovnik = {
         footerCopyright:"© 2026 Vyrobeno s ❤️ pro skvělé tvoření", footerProjects:"Domů na VinMat.eu",
         footerPrivacy:"Zásady ochrany osobních údajů", footerTerms:"Podmínky užití",
         footerDisclaimer:"Všechna stahování jsou zdarma pro osobní a vzdělávací účely",
-        onlyBw:"◧ Pouze černobílé", scrollTop:"⬆️ NAHORU", searchPlaceholder:"Hledat podle názvu..."
+        onlyBw:"◧ Pouze černobílé", scrollTop:"⬆️ NAHORU", searchPlaceholder:"Hledat podle názvu...",
+        filtrTema:"Téma:", filtrRozsirene:"— Rozšířené filtry —", filtrVse:"— Vše —",
+        filtrRazeni:"Řazení", filtrNewest:"Nejnovější", filtrOldest:"Nejstarší",
+        filtrSezona:"Roční období a svátky", filtrZamereni:"Vzdělávací zaměření", filtrReset:"Zrušit filtry", navPruvodce:"Průvodce aktivitami", navUrovne:"Úrovně obtížnosti", navPribeh:"Náš příběh",
+        sezona:{ jaro:"Jaro", leto:"Léto", podzim:"Podzim", zima:"Zima", vanoce:"Vánoce", halloween:"Halloween" },
+        zamereni:{ "logicke-mysleni":"Logické myšlení", pocitani:"Počítání", pismena:"Písmena a abeceda", "jemna-motorika":"Jemná motorika" },
+        kategorie:{
+            zvirata:"🐾 Zvířátka", doprava:"🚗 Doprava a stroje", povolani:"👷 Povolání a rodina",
+            priroda:"🌿 Příroda", pohadky:"🧚 Pohádky a fantasy", jidlo:"🍎 Jídlo a ovoce",
+            sport:"⚽ Sport", hudba:"🎵 Hudba", vesmir:"🚀 Vesmír", mesto:"🏙️ Město a budovy"
+        },
+        podkategorie:{
+            hmyz:"🐛 Hmyz", "lesni-zvirata":"🦊 Lesní zvířátka", "domaci-zvirata":"🐕 Domácí zvířátka",
+            "morska-zvirata":"🐟 Mořská zvířátka", ptaci:"🐦 Ptáci"
+        }
     },
     en: {
         mainTitle:"VINMAT'S WORLD FOR KIDS", subTitle:"Verified mazes, coloring pages and dot-to-dots for instant fun",
@@ -141,7 +273,21 @@ const slovnik = {
         footerCopyright:"© 2026 Made with ❤️ for great crafting", footerProjects:"Home to VinMat.eu",
         footerPrivacy:"Privacy Policy", footerTerms:"Terms of Service",
         footerDisclaimer:"All downloads free for personal & educational use",
-        onlyBw:"◧ B&W only", scrollTop:"⬆️ TOP", searchPlaceholder:"Search by name..."
+        onlyBw:"◧ B&W only", scrollTop:"⬆️ TOP", searchPlaceholder:"Search by name...",
+        filtrTema:"Theme:", filtrRozsirene:"— Advanced filters —", filtrVse:"— All —",
+        filtrRazeni:"Sort by", filtrNewest:"Newest first", filtrOldest:"Oldest first",
+        filtrSezona:"Season & Holidays", filtrZamereni:"Educational focus", filtrReset:"Clear filters", navPruvodce:"Activity Guide", navUrovne:"Difficulty Levels", navPribeh:"Our Story",
+        sezona:{ jaro:"Spring", leto:"Summer", podzim:"Autumn", zima:"Winter", vanoce:"Christmas", halloween:"Halloween" },
+        zamereni:{ "logicke-mysleni":"Logical thinking", pocitani:"Counting", pismena:"Letters & ABC", "jemna-motorika":"Fine motor skills" },
+        kategorie:{
+            zvirata:"🐾 Animals", doprava:"🚗 Transport & Machines", povolani:"👷 Jobs & Family",
+            priroda:"🌿 Nature", pohadky:"🧚 Fairy Tales & Fantasy", jidlo:"🍎 Food & Fruit",
+            sport:"⚽ Sport", hudba:"🎵 Music", vesmir:"🚀 Space", mesto:"🏙️ City & Buildings"
+        },
+        podkategorie:{
+            hmyz:"🐛 Insects", "lesni-zvirata":"🦊 Forest Animals", "domaci-zvirata":"🐕 Pets",
+            "morska-zvirata":"🐟 Sea Animals", ptaci:"🐦 Birds"
+        }
     }
 };
 
@@ -158,6 +304,8 @@ const variantaBtn   = { colored:'btnColor',   coloring:'btnBw',   partly_colored
 // ─── STAV ────────────────────────────────────────────────────────────────────
 let jaz = 'cz';
 let aktualniTyp = 'vse', aktualniVek = 'vse';
+let aktualniKategorie = 'vse', aktualniPodkat = 'vse';
+let aktualniRozsireny = 'vse'; // sort:newest / sort:oldest / sezona:X / zamereni:X
 let aktivniKartyVerze = {}, aktivniModalPolozka = null, aktivniModalVerze = null;
 let zparsovanaData = [];
 
@@ -208,6 +356,11 @@ async function nactiCsvData(typ) {
                 souborZaklad: row.soubor,
                 typ: typ,
                 vek: vekKod,
+                kategorie: row.kategorie || '',
+                podkategorie: row.podkategorie || '',
+                sezona: row.sezona || '',
+                zamereni: row.zamereni || '',
+                datumPridani: row.datumPridani || '',
                 nazevCz: row.nazevCz || row.soubor,
                 nazevEn: row.nazevEn || row.soubor,
                 varianty: varianty,
@@ -233,12 +386,12 @@ function ziskejCestuBase(polozka, varianta) {
 
 // ─── OBRÁZEK HTML ────────────────────────────────────────────────────────────
 // Browser si sám vybere webp pokud existuje, jinak png – žádné extra requesty
-function obrazekHTML(cestaBase, alt, css, id) {
+function obrazekHTML(cestaBase, alt, css, id, lazy) {
     var idStr = id ? ' id="'+id+'"' : '';
-    // onerror: odstraní <source> aby browser přestal zkoušet webp a zkusil png přímo
+    var loadStr = lazy !== false ? ' loading="lazy"' : '';
     return '<picture class="max-w-full max-h-full flex items-center justify-center">'
         +'<source srcset="'+cestaBase+'.webp" type="image/webp">'
-        +'<img'+idStr+' src="'+cestaBase+'.png" alt="'+alt+'" class="'+css+'"'
+        +'<img'+idStr+loadStr+' src="'+cestaBase+'.png" alt="'+alt+'" class="'+css+'"'
         +' onerror="var s=this.previousElementSibling;if(s)s.remove();this.src=\''+cestaBase+'.png\'">'
         +'</picture>';
 }
@@ -293,6 +446,12 @@ function setJazyk(novyJaz) {
     document.getElementById('txt-footer-disclaimer').innerText= s.footerDisclaimer;
     document.getElementById('txt-footer-privacy').href = jaz==='cz' ? 'privacy-cz.html' : 'privacy.html';
     document.getElementById('txt-footer-terms').href   = jaz==='cz' ? 'terms-cz.html'   : 'terms.html';
+    document.getElementById('lbl-filter-kat-title').innerText = s.filtrTema;
+    document.getElementById('lbl-reset').innerText = s.filtrReset;
+    document.getElementById('nav-pruvodce').innerText = s.navPruvodce;
+    document.getElementById('nav-urovne').innerText   = s.navUrovne;
+    document.getElementById('nav-pribeh').innerText   = s.navPribeh;
+    if (zparsovanaData.length > 0) { naplnDropdownyZDat(); aktualizujPodkategorie(); }
 
     var about = document.getElementById('about-section');
     if (about) {
@@ -335,23 +494,219 @@ function setVek(vek) {
     filtrujData();
 }
 
+// ─── NAPLNĚNÍ DROPDOWNŮ Z DAT ────────────────────────────────────────────────
+function naplnDropdownyZDat() {
+    var s = slovnik[jaz];
+
+    // Kategorie – jen ty, které jsou v datech
+    var pouziteKat = {};
+    zparsovanaData.forEach(function(p) { if (p.kategorie) pouziteKat[p.kategorie] = true; });
+    var sel = document.getElementById('sel-kategorie');
+    sel.innerHTML = '<option value="vse">'+s.filtrVse+'</option>';
+    Object.keys(pouziteKat).sort().forEach(function(k) {
+        var label = (s.kategorie && s.kategorie[k]) ? s.kategorie[k] : k;
+        sel.innerHTML += '<option value="'+k+'">'+label+'</option>';
+    });
+    sel.value = aktualniKategorie;
+
+    // Rozšířené filtry – sezóna a zaměření jen pokud jsou v datech
+    var pouzeneSezona = {}, pouzeneZamereni = {};
+    zparsovanaData.forEach(function(p) {
+        if (p.sezona) p.sezona.split(',').forEach(function(z) { var t=z.trim(); if(t) pouzeneSezona[t]=true; });
+        if (p.zamereni) p.zamereni.split(',').forEach(function(z) { var t=z.trim(); if(t) pouzeneZamereni[t]=true; });
+    });
+
+    var selR = document.getElementById('sel-rozsirene');
+    selR.innerHTML = '<option value="vse">'+s.filtrRozsirene+'</option>';
+    // Řazení
+    selR.innerHTML += '<optgroup label="'+s.filtrRazeni+'">'
+        +'<option value="sort:newest">'+s.filtrNewest+'</option>'
+        +'<option value="sort:oldest">'+s.filtrOldest+'</option>'
+        +'</optgroup>';
+    // Sezóna
+    if (Object.keys(pouzeneSezona).length > 0) {
+        selR.innerHTML += '<optgroup label="'+s.filtrSezona+'">';
+        Object.keys(pouzeneSezona).sort().forEach(function(k) {
+            var label = (s.sezona && s.sezona[k]) ? s.sezona[k] : k;
+            selR.innerHTML += '<option value="sezona:'+k+'">'+label+'</option>';
+        });
+        selR.innerHTML += '</optgroup>';
+    }
+    // Zaměření
+    if (Object.keys(pouzeneZamereni).length > 0) {
+        selR.innerHTML += '<optgroup label="'+s.filtrZamereni+'">';
+        Object.keys(pouzeneZamereni).sort().forEach(function(k) {
+            var label = (s.zamereni && s.zamereni[k]) ? s.zamereni[k] : k;
+            selR.innerHTML += '<option value="zamereni:'+k+'">'+label+'</option>';
+        });
+        selR.innerHTML += '</optgroup>';
+    }
+    selR.value = aktualniRozsireny;
+}
+
+function setKategorie(val) {
+    aktualniKategorie = val;
+    aktualniPodkat = 'vse';
+    aktualizujPodkategorie();
+    aktualizujResetBtn();
+    filtrujData();
+}
+
+function setPodkat(val) {
+    aktualniPodkat = val;
+    // Aktualizuj styl tlačítek podkategorií
+    var btns = document.getElementById('podkat-btns');
+    if (btns) {
+        Array.from(btns.querySelectorAll('button[data-podkat]')).forEach(function(b) {
+            b.className = b.dataset.podkat === val
+                ? "px-3 py-1 text-xs font-bold rounded-full bg-slate-900 text-white"
+                : "px-3 py-1 text-xs font-bold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200";
+        });
+    }
+    aktualizujResetBtn();
+    filtrujData();
+}
+
+function setRozsirenyFiltr(val) {
+    aktualniRozsireny = val;
+    aktualizujResetBtn();
+    filtrujData();
+}
+
+function aktualizujPodkategorie() {
+    var row = document.getElementById('podkat-row');
+    var btns = document.getElementById('podkat-btns');
+    if (aktualniKategorie === 'vse') {
+        row.classList.add('hidden');
+        btns.innerHTML = '';
+        return;
+    }
+    // Najdi dostupné podkategorie pro aktuální kategorii a typ
+    var pouzite = {};
+    zparsovanaData.forEach(function(p) {
+        if (p.kategorie === aktualniKategorie
+            && (aktualniTyp === 'vse' || p.typ === aktualniTyp)
+            && p.podkategorie) {
+            pouzite[p.podkategorie] = true;
+        }
+    });
+    var klice = Object.keys(pouzite).sort();
+    if (klice.length <= 1) { row.classList.add('hidden'); btns.innerHTML = ''; return; }
+
+    var s = slovnik[jaz];
+    btns.innerHTML = '<button data-podkat="vse" onclick="setPodkat(\'vse\')" class="px-3 py-1 text-xs font-bold rounded-full '+(aktualniPodkat==='vse'?'bg-slate-900 text-white':'bg-slate-100 text-slate-600 hover:bg-slate-200')+'">'+(s.filtrVse.replace(/—/g,'').trim()||'Vše')+'</button>';
+    klice.forEach(function(k) {
+        var label = (s.podkategorie && s.podkategorie[k]) ? s.podkategorie[k] : k;
+        btns.innerHTML += '<button data-podkat="'+k+'" onclick="setPodkat(\''+k+'\')" class="px-3 py-1 text-xs font-bold rounded-full '+(aktualniPodkat===k?'bg-slate-900 text-white':'bg-slate-100 text-slate-600 hover:bg-slate-200')+'">'+label+'</button>';
+    });
+    row.classList.remove('hidden');
+}
+
+function aktualizujResetBtn() {
+    var aktivni = aktualniTyp!=='vse' || aktualniVek!=='vse' || aktualniKategorie!=='vse'
+        || aktualniPodkat!=='vse' || aktualniRozsireny!=='vse'
+        || document.getElementById('search-input').value.trim()!=='';
+    document.getElementById('btn-reset').classList.toggle('hidden', !aktivni);
+}
+
+function resetFiltry() {
+    aktualniTyp = 'vse'; aktualniVek = 'vse';
+    aktualniKategorie = 'vse'; aktualniPodkat = 'vse'; aktualniRozsireny = 'vse';
+    document.getElementById('search-input').value = '';
+    document.getElementById('sel-kategorie').value = 'vse';
+    document.getElementById('sel-rozsirene').value = 'vse';
+    // Reset tlačítek typ
+    ['vse','bludiste','omalovanky','spojovacky'].forEach(function(t) {
+        document.getElementById('btn-'+t).className = t==='vse'
+            ? "px-5 py-2 rounded-full text-sm font-bold bg-slate-900 text-white shadow-sm"
+            : "px-5 py-2 rounded-full text-sm font-bold text-slate-600 bg-slate-100 hover:bg-slate-200";
+    });
+    // Reset tlačítek věk
+    var m={'vse':'btn-vek-vse','LV1':'btn-vek-1','LV2':'btn-vek-2','LV3':'btn-vek-3','LV4':'btn-vek-4','LV5':'btn-vek-5'};
+    Object.keys(m).forEach(function(v) {
+        document.getElementById(m[v]).className = v==='vse'
+            ? "px-4 py-1.5 text-xs font-bold rounded-full bg-slate-900 text-white"
+            : "px-4 py-1.5 text-xs font-bold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200";
+    });
+    document.getElementById('podkat-row').classList.add('hidden');
+    document.getElementById('podkat-btns').innerHTML = '';
+    document.getElementById('btn-reset').classList.add('hidden');
+    filtrujData();
+}
+
 function filtrujData() {
     var q = document.getElementById('search-input').value.toLowerCase().trim();
     var filtered = zparsovanaData.filter(function(p) {
-        return (aktualniTyp==='vse' || p.typ===aktualniTyp)
-            && (aktualniVek==='vse'  || p.vek===aktualniVek)
-            && (q==='' || p.nazevCz.toLowerCase().includes(q) || p.nazevEn.toLowerCase().includes(q));
+        if (aktualniTyp!=='vse' && p.typ!==aktualniTyp) return false;
+        if (aktualniVek!=='vse'  && p.vek!==aktualniVek)  return false;
+        if (aktualniKategorie!=='vse' && p.kategorie!==aktualniKategorie) return false;
+        if (aktualniPodkat!=='vse' && p.podkategorie!==aktualniPodkat) return false;
+        if (aktualniRozsireny.startsWith('sezona:')) {
+            var hledanaSezona = aktualniRozsireny.replace('sezona:','');
+            if (!p.sezona || !p.sezona.split(',').map(function(x){return x.trim();}).includes(hledanaSezona)) return false;
+        }
+        if (aktualniRozsireny.startsWith('zamereni:')) {
+            var hledaneZam = aktualniRozsireny.replace('zamereni:','');
+            if (!p.zamereni || !p.zamereni.split(',').map(function(x){return x.trim();}).includes(hledaneZam)) return false;
+        }
+        if (q!=='' && !p.nazevCz.toLowerCase().includes(q) && !p.nazevEn.toLowerCase().includes(q)) return false;
+        return true;
     });
+
+    // Řazení
+    if (aktualniRozsireny === 'sort:newest') {
+        filtered.sort(function(a,b){ return (b.datumPridani||'').localeCompare(a.datumPridani||''); });
+    } else if (aktualniRozsireny === 'sort:oldest') {
+        filtered.sort(function(a,b){ return (a.datumPridani||'').localeCompare(b.datumPridani||''); });
+    }
+
+    aktualizujResetBtn();
     vykresliKnihovnu(filtered);
 
-    // Dynamický titulek
+    // ── URL parametry (pro SEO a sdílení) ──
+    var params = new URLSearchParams();
+    if (aktualniTyp !== 'vse')       params.set('typ', aktualniTyp);
+    if (aktualniVek !== 'vse')       params.set('vek', aktualniVek);
+    if (aktualniKategorie !== 'vse') params.set('kat', aktualniKategorie);
+    if (aktualniPodkat !== 'vse')    params.set('pod', aktualniPodkat);
+    if (aktualniRozsireny !== 'vse') params.set('filtr', aktualniRozsireny);
+    var qVal = document.getElementById('search-input').value.trim();
+    if (qVal) params.set('q', qVal);
+    var novaUrl = window.location.pathname + (params.toString() ? '?'+params.toString() : '');
+    history.replaceState(null, '', novaUrl);
+
+    // ── Dynamický titulek + SEO meta ──
     var tituly = {
-        cz:{ bludiste:'Dětská bludiště k vytisknutí', omalovanky:'Omalovánky pro děti k vytisknutí',
-             spojovacky:'Spojovačky k vytisknutí', vse:'VinMat | Bludiště, omalovánky a aktivity k vytisknutí' },
-        en:{ bludiste:'Free Printable Mazes for Kids', omalovanky:'Free Printable Coloring Pages',
-             spojovacky:'Free Printable Dot-to-Dot Sheets', vse:'VinMat | Free Printable Mazes, Coloring Pages & More' }
+        cz:{ bludiste:'Dětská bludiště k vytisknutí zdarma | VinMat',
+             omalovanky:'Omalovánky pro děti k vytisknutí zdarma | VinMat',
+             spojovacky:'Spojovačky a kreslení podle čísel zdarma | VinMat',
+             vse:'Bludiště, omalovánky a spojovačky k vytisknutí zdarma | VinMat' },
+        en:{ bludiste:'Free Printable Mazes for Kids | VinMat',
+             omalovanky:'Free Printable Coloring Pages for Kids | VinMat',
+             spojovacky:'Free Printable Dot-to-Dot Worksheets | VinMat',
+             vse:'Free Printable Mazes, Coloring Pages & Activities | VinMat' }
     };
-    document.title = tituly[jaz][aktualniTyp] || tituly[jaz].vse;
+    var descs = {
+        cz:{ bludiste:'Stáhněte zdarma dětská bludiště pro věkové skupiny 3–10 let. Barevné i černobílé verze k okamžitému tisku.',
+             omalovanky:'Zdarma omalovánky pro děti k vytisknutí. Seřazené podle věku od 3 do 10+ let.',
+             spojovacky:'Zdarma spojovačky a kreslení podle čísel pro děti. Tisknutelné pracovní listy.',
+             vse:'Stáhněte zdarma bludiště, omalovánky a spojovačky pro děti 3–10 let. Barevné i černobílé tisknutelné pracovní listy.' },
+        en:{ bludiste:'Free printable mazes for kids aged 3–10. Color and black & white versions ready to print.',
+             omalovanky:'Free printable coloring pages for kids. Sorted by age from 3 to 10+ years.',
+             spojovacky:'Free printable dot-to-dot worksheets for kids. Educational activity sheets.',
+             vse:'Download free mazes, coloring pages and dot-to-dot sheets for kids aged 3–10. Printable worksheets in color and B&W.' }
+    };
+    var titulek = tituly[jaz][aktualniTyp] || tituly[jaz].vse;
+    var desc    = descs[jaz][aktualniTyp]  || descs[jaz].vse;
+    document.title = titulek;
+    var md = document.getElementById('meta-desc');    if(md) md.content = desc;
+    var ot = document.getElementById('og-title');     if(ot) ot.content = titulek;
+    var od = document.getElementById('og-desc');      if(od) od.content = desc;
+    var ou = document.getElementById('og-url');       if(ou) ou.content = 'https://vinmat.eu/worldforkids/'+novaUrl;
+    var tt = document.getElementById('tw-title');     if(tt) tt.content = titulek;
+    var td = document.getElementById('tw-desc');      if(td) td.content = desc;
+    var lc = document.getElementById('link-canonical');if(lc) lc.href = 'https://vinmat.eu/worldforkids/'+novaUrl;
+    var hl = document.querySelector('html');          if(hl) hl.lang = jaz==='cz' ? 'cs' : 'en';
 }
 
 // ─── KARTA VERZE ─────────────────────────────────────────────────────────────
@@ -381,13 +736,14 @@ function vykresliKnihovnu(materialy) {
     if (materialy.length===0) { noResults.classList.remove('hidden'); return; }
     noResults.classList.add('hidden');
 
-    materialy.forEach(function(p) {
+    materialy.forEach(function(p, idx) {
         if (!aktivniKartyVerze[p.id]) aktivniKartyVerze[p.id] = p.vychozi;
         var verze    = aktivniKartyVerze[p.id];
         var cestaBase= ziskejCestuBase(p, verze);
         var nazev    = jaz==='cz' ? p.nazevCz : p.nazevEn;
         var alt      = (p.alty[verze]&&p.alty[verze][jaz]) || nazev;
         var vekText  = vekMapovani[p.vek] ? vekMapovani[p.vek][jaz] : p.vek;
+        var lazyLoad = idx >= 4; // první 4 karty načti hned, zbytek lazy
 
         // Tlačítka pro přepínání variant
         var btns = '';
@@ -406,7 +762,7 @@ function vykresliKnihovnu(materialy) {
         karta.className = "bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col";
         karta.innerHTML =
             '<div id="container-img-'+p.id+'" onclick="openModal(\''+p.id+'\')" class="bg-slate-50 aspect-[4/5] p-4 flex items-center justify-center cursor-pointer group">'
-                + obrazekHTML(cestaBase, alt, 'max-w-full max-h-full object-contain transition-transform duration-300 group-hover:scale-[1.02]', '')
+                + obrazekHTML(cestaBase, alt, 'max-w-full max-h-full object-contain transition-transform duration-300 group-hover:scale-[1.02]', '', lazyLoad)
             +'</div>'
             +'<div class="p-4 flex-grow flex flex-col justify-between border-t border-slate-50">'
                 +'<div class="mb-3">'
@@ -529,7 +885,19 @@ async function inicializujAplikaci() {
         var s = await nactiCsvData('spojovacky');
         zparsovanaData = b.concat(o).concat(s);
         jaz = localStorage.getItem('vinmat_main_lang') || localStorage.getItem('vinmat_lang') || 'cz';
+
+        // ── Načti stav z URL parametrů (sdílení, záložky) ──
+        var urlP = new URLSearchParams(window.location.search);
+        if (urlP.get('typ'))  aktualniTyp        = urlP.get('typ');
+        if (urlP.get('vek'))  aktualniVek        = urlP.get('vek');
+        if (urlP.get('kat'))  aktualniKategorie  = urlP.get('kat');
+        if (urlP.get('pod'))  aktualniPodkat     = urlP.get('pod');
+        if (urlP.get('filtr'))aktualniRozsireny  = urlP.get('filtr');
+        if (urlP.get('q'))    document.getElementById('search-input').value = urlP.get('q');
+        if (urlP.get('lang')) jaz = urlP.get('lang');
+
         setJazyk(jaz);
+        naplnDropdownyZDat();
     } catch(e) { console.error('Chyba inicializace:', e); }
 }
 
