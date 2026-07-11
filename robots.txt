@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vinmat.eu/worldforkids/sitemap.xml

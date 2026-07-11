@@ -31,6 +31,7 @@ const podkatPreklady = {
     'domaci-zvirata':   { en: '🐕 Pets',            cz: '🐕 Domácí zvířátka' },
     'lesni-zvirata':    { en: '🦊 Forest Animals',  cz: '🦊 Lesní zvířátka' },
     'hmyz':             { en: '🐛 Insects',          cz: '🐛 Hmyz' },
+    'lucni': { en: '🦋 Meadow Creatures', cz: '🦋 Luční zvířátka' },
   // 2000 – Doprava
     'vlaky':            { en: '🚂 Trains',           cz: '🚂 Vlaky' },
     'auta':             { en: '🚗 Cars',             cz: '🚗 Auta' },
@@ -41,6 +42,10 @@ const podkatPreklady = {
     'exoticka-zvirata': { en: '🦒 Exotic Animals',  cz: '🦒 Exotická zvířata' },
   // 6000 – Povolání a rodina
     'rodina':           { en: '👨‍👩‍👧 Family',          cz: '👨‍👩‍👧 Rodina' },
+	// 8000 – Vesmír a sci-fi
+    'mise': { en: '🚀 Space Missions',         cz: '🚀 Vesmírné mise' },
+    'astronomie':    { en: '🪐 Astronomy & Planets',    cz: '🪐 Astronomie a planety' },
+    'sci-fi':        { en: '👽 Sci-Fi & Aliens',        cz: '👽 Sci-Fi a mimozemšťané' },
   // SEM PŘIDÁVEJ DALŠÍ PODKATEGORIE
 };
 

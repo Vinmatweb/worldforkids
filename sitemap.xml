@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Hlavní stránka -->
+  <url>
+    <loc>https://vinmat.eu/worldforkids/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinmat.eu/worldforkids/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://vinmat.eu/worldforkids/?lang=cz"/>
+  </url>
+
+  <!-- EN stránky -->
+  <url><loc>https://vinmat.eu/worldforkids/activity-guide.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinmat.eu/worldforkids/activity-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://vinmat.eu/worldforkids/pruvodce-aktivitami.html"/>
+  </url>
+  <url><loc>https://vinmat.eu/worldforkids/maze-guide.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinmat.eu/worldforkids/maze-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://vinmat.eu/worldforkids/pruvodce-bludiste.html"/>
+  </url>
+  <url><loc>https://vinmat.eu/worldforkids/coloring-guide.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinmat.eu/worldforkids/coloring-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://vinmat.eu/worldforkids/pruvodce-omalovanky.html"/>
+  </url>
+  <url><loc>https://vinmat.eu/worldforkids/dot-to-dot-guide.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinmat.eu/worldforkids/dot-to-dot-guide.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://vinmat.eu/worldforkids/pruvodce-spojovacky.html"/>
+  </url>
+  <url><loc>https://vinmat.eu/worldforkids/difficulty-levels.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinmat.eu/worldforkids/difficulty-levels.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://vinmat.eu/worldforkids/urovne-obtiznosti.html"/>
+  </url>
+  <url><loc>https://vinmat.eu/worldforkids/our-story.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinmat.eu/worldforkids/our-story.html"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://vinmat.eu/worldforkids/nas-pribeh.html"/>
+  </url>
+  <url><loc>https://vinmat.eu/worldforkids/privacy.html</loc><lastmod>2026-07-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://vinmat.eu/worldforkids/terms.html</loc><lastmod>2026-07-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+
+  <!-- CZ stránky -->
+  <url><loc>https://vinmat.eu/worldforkids/pruvodce-aktivitami.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://vinmat.eu/worldforkids/pruvodce-aktivitami.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinmat.eu/worldforkids/activity-guide.html"/>
+  </url>
+  <url><loc>https://vinmat.eu/worldforkids/pruvodce-bludiste.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://vinmat.eu/worldforkids/pruvodce-bludiste.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinmat.eu/worldforkids/maze-guide.html"/>
+  </url>
+  <url><loc>https://vinmat.eu/worldforkids/pruvodce-omalovanky.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://vinmat.eu/worldforkids/pruvodce-omalovanky.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinmat.eu/worldforkids/coloring-guide.html"/>
+  </url>
+  <url><loc>https://vinmat.eu/worldforkids/pruvodce-spojovacky.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://vinmat.eu/worldforkids/pruvodce-spojovacky.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinmat.eu/worldforkids/dot-to-dot-guide.html"/>
+  </url>
+  <url><loc>https://vinmat.eu/worldforkids/urovne-obtiznosti.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://vinmat.eu/worldforkids/urovne-obtiznosti.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinmat.eu/worldforkids/difficulty-levels.html"/>
+  </url>
+  <url><loc>https://vinmat.eu/worldforkids/nas-pribeh.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://vinmat.eu/worldforkids/nas-pribeh.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vinmat.eu/worldforkids/our-story.html"/>
+  </url>
+  <url><loc>https://vinmat.eu/worldforkids/privacy-cz.html</loc><lastmod>2026-07-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://vinmat.eu/worldforkids/terms-cz.html</loc><lastmod>2026-07-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+
+</urlset>

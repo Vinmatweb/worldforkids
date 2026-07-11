@@ -14,6 +14,9 @@
     <meta id="meta-desc" name="description" content="Download free printable mazes, coloring pages and dot-to-dot worksheets for kids aged 3–10. Color and B&W versions, sorted by age and difficulty.">
     <meta name="robots" content="index, follow">
     <link id="link-canonical" rel="canonical" href="https://vinmat.eu/worldforkids/">
+    <link rel="alternate" hreflang="en" href="https://vinmat.eu/worldforkids/">
+    <link rel="alternate" hreflang="cs" href="https://vinmat.eu/worldforkids/?lang=cz">
+    <link rel="alternate" hreflang="x-default" href="https://vinmat.eu/worldforkids/">
     <meta name="author" content="VinMat">
     <meta name="keywords" content="free printable mazes for kids, coloring pages, dot-to-dot worksheets, printable activities, preschool worksheets">
 
@@ -52,7 +55,10 @@
     }
     </script>
 
-    <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="icon" type="image/svg+xml" href="/worldforkids/assets/favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="/worldforkids/assets/favicon/favicon-96x96.png">
+    <link rel="apple-touch-icon" href="/worldforkids/assets/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/worldforkids/assets/favicon/site.webmanifest">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="translations.js"></script>
     <style>
@@ -63,31 +69,40 @@
         .char-6{color:#f43f5e}.char-7{color:#2dd4bf}
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col pt-[36px]">
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col pt-[36px] opacity-0 transition-opacity duration-150">
 
 <!-- TOP BAR -->
 <div class="bg-slate-900 text-white text-xs py-2 px-4 fixed top-0 left-0 w-full z-50 shadow-md font-bold">
     <div class="max-w-7xl mx-auto w-full flex justify-between items-center px-6 md:px-8">
         <div class="flex items-center gap-6">
-            <button onclick="window.scrollTo({top:0,behavior:'smooth'})" id="btn-scroll-top" class="hover:text-amber-400 transition-colors uppercase whitespace-nowrap">⬆️ TOP</button>
-            <span class="text-slate-700">|</span>
+            <a href="index.html" id="nav-home" class="hover:text-amber-400 transition-colors uppercase flex items-center gap-1 whitespace-nowrap">
+                🏠 <span id="nav-home-label">Home</span>
+            </a>
+
+            <span class="text-slate-700 font-normal">|</span>
+
             <div class="flex items-center gap-4">
-                <a href="activity-guide.html" id="nav-pruvodce" class="hover:text-amber-400 transition-colors whitespace-nowrap">Activity Guide</a>
-                <span class="text-slate-700">|</span>
-                <a href="difficulty-levels.html" id="nav-urovne" class="hover:text-amber-400 transition-colors whitespace-nowrap">Difficulty Levels</a>
-                <span class="text-slate-700">|</span>
-                <a href="our-story.html" id="nav-pribeh" class="hover:text-amber-400 transition-colors whitespace-nowrap">Our Story</a>
+                <a href="activity-guide.html" id="nav-pruvodce" class="hover:text-amber-400 transition-colors tracking-wide whitespace-nowrap">Activity Guide</a>
+                <span class="text-slate-700 font-normal">|</span>
+
+                <a href="difficulty-levels.html" id="nav-urovne" class="hover:text-amber-400 transition-colors tracking-wide whitespace-nowrap">Difficulty Levels</a>
+                <span class="text-slate-700 font-normal">|</span>
+
+                <a href="our-story.html" id="nav-pribeh" class="hover:text-amber-400 transition-colors tracking-wide whitespace-nowrap">Our Story</a>
             </div>
         </div>
+
         <div class="flex items-center gap-4">
             <div class="flex items-center gap-2.5 border-r border-slate-700 pr-4">
                 <a href="https://www.youtube.com/@vinmat_worldforkids" target="_blank" rel="noopener noreferrer" class="text-white hover:text-amber-400 transition-colors" aria-label="YouTube">
                     <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                 </a>
+
                 <a href="https://www.instagram.com/vinmat_worldforkids/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-amber-400 transition-colors" aria-label="Instagram">
                     <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
                 </a>
             </div>
+
             <div class="flex gap-3">
                 <button onclick="setJazyk('en')" id="lang-to-en" class="hidden hover:text-amber-400 transition-colors font-bold">EN</button>
                 <button onclick="setJazyk('cz')" id="lang-to-cz" class="hover:text-amber-400 transition-colors font-bold">CZ</button>
@@ -142,30 +157,62 @@
             </button>
         </div>
 
-        <!-- Řádek 3: Theme dropdown + podkategorie tlačítka + Advanced filters -->
-        <div class="flex items-start gap-2 pt-2 border-t border-slate-50">
-            <!-- Theme label + dropdown -->
-            <div class="flex items-center gap-2 flex-shrink-0">
-                <span id="lbl-filter-kat-title" class="text-xs font-bold text-slate-400 uppercase tracking-wider">Theme:</span>
-                <select id="sel-kategorie" onchange="setKategorie(this.value)"
-                    class="px-3 py-1.5 text-xs font-bold rounded-xl border border-slate-200 bg-slate-50 text-slate-700 focus:outline-none focus:border-indigo-400 cursor-pointer">
-                    <option value="vse">— All —</option>
-                </select>
-            </div>
+<!-- Řádek 3 -->
+<div class="flex items-center justify-between gap-4 pt-2 border-t border-slate-50">
 
-            <!-- Podkategorie – dynamická tlačítka (skrytá dokud není zvolena kategorie) -->
-            <div id="podkat-row" class="flex flex-wrap items-center gap-1.5 flex-grow min-w-0">
-                <div id="podkat-btns" class="flex flex-wrap gap-1.5"></div>
-            </div>
+    <!-- Theme -->
+    <div class="flex items-center gap-2">
+        <span id="lbl-filter-kat-title"
+              class="text-xs font-bold text-slate-400 uppercase tracking-wider">
+            Theme:
+        </span>
 
-            <!-- Advanced filters – vpravo -->
-            <div class="flex-shrink-0 ml-auto">
-                <select id="sel-rozsirene" onchange="setRozsirenyFiltr(this.value)"
-                    class="px-3 py-1.5 text-xs font-bold rounded-xl border border-slate-200 bg-slate-50 text-slate-700 focus:outline-none focus:border-indigo-400 cursor-pointer">
-                    <option value="vse" id="opt-rozsirene-vse">— Advanced filters —</option>
-                </select>
-            </div>
-        </div>
+        <select id="sel-kategorie"
+                onchange="setKategorie(this.value)"
+                class="px-3 py-1.5 text-xs font-bold rounded-xl border border-slate-200 bg-slate-50 text-slate-700">
+
+            <option value="vse">— All —</option>
+
+        </select>
+    </div>
+
+    <!-- pravé filtry -->
+    <div class="flex items-center gap-2">
+
+        <select id="sel-sezona"
+                onchange="setSezona(this.value)"
+                class="px-3 py-1.5 text-xs font-bold rounded-xl border border-slate-200 bg-slate-50 text-slate-700">
+            <option value="vse">— Season —</option>
+        </select>
+
+        <select id="sel-zamereni"
+                onchange="setZamereni(this.value)"
+                class="px-3 py-1.5 text-xs font-bold rounded-xl border border-slate-200 bg-slate-50 text-slate-700">
+            <option value="vse">— Focus —</option>
+        </select>
+
+        <select id="sel-razeni"
+                onchange="setRazeni(this.value)"
+                class="px-3 py-1.5 text-xs font-bold rounded-xl border border-slate-200 bg-slate-50 text-slate-700">
+            <option value="newest">Newest</option>
+            <option value="oldest">Oldest</option>
+            <option value="popular">Most Popular</option>
+            <option value="az">A–Z</option>
+            <option value="za">Z–A</option>
+            <option value="random">Random</option>
+        </select>
+
+    </div>
+
+</div>
+
+<!-- Řádek 4 -->
+<div class="pt-2">
+
+    <div id="podkat-btns"
+         class="flex flex-wrap gap-1.5"></div>
+
+</div>
 
     </section>
 
@@ -208,14 +255,42 @@
 </div>
 
 <!-- FOOTER -->
-<footer class="text-center py-6 text-xs text-slate-400 bg-white border-t border-slate-100 mt-12 px-4">
-    <p class="leading-relaxed font-bold">
-        <span id="txt-footer-copyright">© 2026 Made with ❤️ for great crafting</span> ·
-        <a href="https://www.vinmat.eu" id="txt-footer-projects" class="underline">Home to VinMat.eu</a> ·
-        <a href="privacy.html" id="txt-footer-privacy" class="underline">Privacy Policy</a> ·
-        <a href="terms.html" id="txt-footer-terms" class="underline">Terms of Service</a> ·
-        <span id="txt-footer-disclaimer" class="text-slate-500">All downloads free for personal & educational use</span>
-    </p>
+<footer class="bg-slate-900 text-slate-400 text-[11px] py-4 px-6 border-t border-slate-800 font-semibold shadow-inner">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-center items-center gap-1 md:gap-2 whitespace-nowrap text-center">
+
+        <span id="txt-footer-copyright">© 2026 Made with ❤️ for Creative Kids</span>
+
+        <span class="hidden md:inline">·</span>
+
+        <span id="txt-footer-disclaimer">Free for Personal & Educational Use</span>
+
+        <span class="hidden md:inline">·</span>
+
+        <a href="privacy.html"
+           id="txt-footer-privacy"
+           class="hover:text-white transition-colors">
+            Privacy Policy
+        </a>
+
+        <span class="hidden md:inline">·</span>
+
+        <a href="terms.html"
+           id="txt-footer-terms"
+           class="hover:text-white transition-colors">
+            Terms of Use
+        </a>
+
+        <span class="hidden md:inline">·</span>
+
+        <button onclick="kopirujProjektovyEmail()"
+                class="text-amber-400 hover:text-amber-300 transition-colors font-bold uppercase tracking-wide flex items-center justify-center">
+            ✉️
+            <span id="txt-footer-contact">Contact</span>
+            <span id="kopirovan-status"
+                  class="text-emerald-400 lowercase font-normal ml-1 opacity-0 transition-opacity duration-300"></span>
+        </button>
+
+    </div>
 </footer>
 
 <script>
@@ -231,12 +306,12 @@ const slovnik = {
         bludisteLabel:"MAZES", omalovankyLabel:"COLORING", spojovackyLabel:"DOT-TO-DOTS",
         footerCopyright:"© 2026 Made with ❤️ for great crafting", footerProjects:"Home to VinMat.eu",
         footerPrivacy:"Privacy Policy", footerTerms:"Terms of Service",
-        footerDisclaimer:"All downloads free for personal & educational use",
+        footerDisclaimer:"All downloads free for personal & educational use", footerContact:"Contact",
         onlyBw:"◧ B&W only", scrollTop:"⬆️ TOP", searchPlaceholder:"Search by name...",
         filtrTema:"Theme:", filtrRozsirene:"— Advanced filters —", filtrVse:"— All —",
         filtrRazeni:"Sort by", filtrNewest:"Newest first", filtrOldest:"Oldest first",
         filtrSezona:"Season & Holidays", filtrZamereni:"Educational focus", filtrReset:"Clear filters",
-        navPruvodce:"Activity Guide", navUrovne:"Difficulty Levels", navPribeh:"Our Story",
+        navPruvodce:"Activity Guide", navUrovne:"Difficulty Levels", navPribeh:"Our Story", navHome:"Home",
         aboutTitle:"About VinMat's World for Kids",
         aboutText:"Welcome to our curated library of high-quality worksheets designed for parents, educators, and guardians. This platform provides free access to educational tools structured into clear difficulty levels, helping you find the perfect activity to support children's cognitive growth, fine motor skills, and spatial awareness.",
         aboutMazes:"🧩 Illustrated Mazes", aboutMazesText:"Great for practicing problem-solving, persistence, and logical planning. Available in both vibrant colors and printer-friendly variants.",
@@ -248,17 +323,17 @@ const slovnik = {
         vse:"Vše", bludiste:"Bludiště", omalovanky:"Omalovánky", spojovacky:"Spojovačky", ageTitle:"Věk:",
         noResults:"Pro tento výběr tu zatím nic nemáme.", variant:"Vyberte variantu",
         btnDownload:"📥 Stáhnout obrázek", btnPrint:"🖨️ Vytisknout rovnou",
-        btnColor:"🌈 Barevná", btnBw:"◧ Černobílá", btnPartly:"🌗 Pol. vybarvená",
+        btnColor:"🌈 Barevná", btnBw:"◧ Černobílá", btnPartly:"🌗 Část. barvená",
         labelColor:"Barevné", labelBw:"◧ Černobílé", labelPartly:"Částečné",
         bludisteLabel:"BLUDIŠTĚ", omalovankyLabel:"OMALOVÁNKY", spojovackyLabel:"SPOJOVAČKY",
         footerCopyright:"© 2026 Vyrobeno s ❤️ pro skvělé tvoření", footerProjects:"Domů na VinMat.eu",
         footerPrivacy:"Zásady ochrany osobních údajů", footerTerms:"Podmínky užití",
-        footerDisclaimer:"Všechna stahování jsou zdarma pro osobní a vzdělávací účely",
+        footerDisclaimer:"Všechna stahování jsou zdarma pro osobní a vzdělávací účely", footerContact:"Kontakt",
         onlyBw:"◧ Pouze černobílé", scrollTop:"⬆️ NAHORU", searchPlaceholder:"Hledat podle názvu...",
         filtrTema:"Téma:", filtrRozsirene:"— Rozšířené filtry —", filtrVse:"— Vše —",
         filtrRazeni:"Řazení", filtrNewest:"Nejnovější", filtrOldest:"Nejstarší",
         filtrSezona:"Roční období a svátky", filtrZamereni:"Vzdělávací zaměření", filtrReset:"Zrušit filtry",
-        navPruvodce:"Průvodce aktivitami", navUrovne:"Úrovně obtížnosti", navPribeh:"Náš příběh",
+        navPruvodce:"Průvodce aktivitami", navUrovne:"Úrovně obtížnosti", navPribeh:"Náš příběh", navHome:"Domů",
         aboutTitle:"O projektu VinMatův svět pro děti",
         aboutText:"Vítejte v naší vybrané knihovně vysoce kvalitních pracovních listů určených pro rodiče, pedagogy a pečovatele. Tato platforma poskytuje bezplatný přístup ke vzdělávacím nástrojům strukturovaným do jasných úrovní obtížnosti.",
         aboutMazes:"🧩 Ilustrovaná bludiště", aboutMazesText:"Skvělá pro procvičování řešení problémů, vytrvalosti a logického plánování.",
@@ -279,7 +354,9 @@ const variantaBtn   = { colored:'btnColor',   coloring:'btnBw',   partly_colored
 let jaz = 'en'; // PRIMÁRNÍ JAZYK = EN
 let aktualniTyp = 'vse', aktualniVek = 'vse';
 let aktualniKategorie = 'vse', aktualniPodkat = 'vse';
-let aktualniRozsireny = 'vse';
+let aktualniSezona = 'vse';
+let aktualniZamereni = 'vse';
+let aktualniRazeni = 'newest';
 let aktivniKartyVerze = {}, aktivniModalPolozka = null, aktivniModalVerze = null;
 let zparsovanaData = [];
 
@@ -364,8 +441,9 @@ function obrazekHTML(cestaBase, alt, css, id, lazy) {
     var lazStr = lazy !== false ? ' loading="lazy"' : '';
     return '<picture class="max-w-full max-h-full flex items-center justify-center">'
         +'<source srcset="'+cestaBase+'.webp" type="image/webp">'
-        +'<img'+idStr+lazStr+' src="'+cestaBase+'.png" alt="'+alt+'" class="'+css+'"'
-        +' onerror="var s=this.previousElementSibling;if(s)s.remove();this.src=\''+cestaBase+'.png\'">'
++'<img'+idStr+lazStr+' src="'+cestaBase+'.png" alt="'+alt+'" class="'+css+'"'
++' onload="scheduleGridImageEqualization()"'
++' onerror="var s=this.previousElementSibling;if(s)s.remove();this.src=\''+cestaBase+'.png\'">'
         +'</picture>';
 }
 
@@ -383,7 +461,6 @@ function setJazyk(novyJaz) {
     document.querySelector('html').lang = jaz==='cz' ? 'cs' : 'en';
     document.getElementById('lang-to-en').classList.toggle('hidden', jaz==='en');
     document.getElementById('lang-to-cz').classList.toggle('hidden', jaz==='cz');
-    document.getElementById('btn-scroll-top').innerText    = s.scrollTop;
     document.getElementById('search-input').placeholder   = s.searchPlaceholder;
     document.getElementById('txt-main-title').innerHTML   = generujBarevnyText(s.mainTitle);
     document.getElementById('txt-sub-title').innerText    = s.subTitle;
@@ -402,28 +479,113 @@ function setJazyk(novyJaz) {
     document.getElementById('nav-pruvodce').innerText     = s.navPruvodce;
     document.getElementById('nav-urovne').innerText       = s.navUrovne;
     document.getElementById('nav-pribeh').innerText       = s.navPribeh;
+	document.getElementById('nav-home-label').innerText = s.navHome;
+	document.getElementById('nav-pruvodce').href = jaz === 'cz' ? 'pruvodce-aktivitami.html' : 'activity-guide.html';
+	document.getElementById('nav-urovne').href   = jaz === 'cz' ? 'urovne-obtiznosti.html' : 'difficulty-levels.html';
+	document.getElementById('nav-pribeh').href   = jaz === 'cz' ? 'nas-pribeh.html' : 'our-story.html';
     document.getElementById('txt-footer-copyright').innerText = s.footerCopyright;
-    document.getElementById('txt-footer-projects').innerText  = s.footerProjects;
     document.getElementById('txt-footer-privacy').innerText   = s.footerPrivacy;
     document.getElementById('txt-footer-terms').innerText     = s.footerTerms;
     document.getElementById('txt-footer-disclaimer').innerText= s.footerDisclaimer;
+	document.getElementById('txt-footer-contact').innerText = s.footerContact;
     document.getElementById('txt-footer-privacy').href = jaz==='cz' ? 'privacy-cz.html' : 'privacy.html';
     document.getElementById('txt-footer-terms').href   = jaz==='cz' ? 'terms-cz.html'   : 'terms.html';
 
     // About sekce
     var about = document.getElementById('about-section');
     if (about) {
-        about.innerHTML = '<h2 class="text-lg font-bold text-slate-900 mb-3">'+s.aboutTitle+'</h2>'
-            +'<p class="mb-3">'+s.aboutText+'</p>'
-            +'<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 pt-4 border-t border-slate-50">'
-            +'<div><h3 class="font-bold text-slate-800 mb-1">'+s.aboutMazes+'</h3><p class="text-xs">'+s.aboutMazesText+'</p></div>'
-            +'<div><h3 class="font-bold text-slate-800 mb-1">'+s.aboutColoring+'</h3><p class="text-xs">'+s.aboutColoringText+'</p></div>'
-            +'<div><h3 class="font-bold text-slate-800 mb-1">'+s.aboutDots+'</h3><p class="text-xs">'+s.aboutDotsText+'</p></div>'
-            +'</div>';
+about.innerHTML =
+    '<h2 class="text-lg font-bold text-slate-900 mb-3">'+s.aboutTitle+'</h2>'
+    +'<p class="mb-3">'+s.aboutText+'</p>'
+
+    +'<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4 pt-4 border-t border-slate-50">'
+
+        +'<div class="flex flex-col">'
+            +'<div>'
+                +'<h3 class="font-bold text-slate-800 mb-1">'+s.aboutMazes+'</h3>'
+                +'<p class="text-xs">'+s.aboutMazesText+'</p>'
+            +'</div>'
+
+            +'<div class="mt-auto flex justify-end pt-4">'
+                +'<a href="'+(jaz==='cz'?'pruvodce-bludiste.html':'maze-guide.html')+'"'
+                +' class="inline-flex items-center gap-2 px-4 py-2 text-xs font-bold rounded-full bg-white border border-slate-200 text-slate-700 hover:bg-indigo-50 hover:border-indigo-300 hover:text-indigo-700 hover:shadow-sm transition-all">'
+                +'🧩 <span>'+(jaz==='cz'?'Průvodce bludišti':'Maze Guide')+'</span>'
+                +'<span class="transition-transform group-hover:translate-x-0.5">→</span>'
+                +'</a>'
+            +'</div>'
+        +'</div>'
+
+        +'<div class="flex flex-col">'
+            +'<div>'
+                +'<h3 class="font-bold text-slate-800 mb-1">'+s.aboutColoring+'</h3>'
+                +'<p class="text-xs">'+s.aboutColoringText+'</p>'
+            +'</div>'
+
+            +'<div class="mt-auto flex justify-end pt-4">'
+                +'<a href="'+(jaz==='cz'?'pruvodce-omalovanky.html':'coloring-guide.html')+'"'
+                +' class="inline-flex items-center gap-2 px-4 py-2 text-xs font-bold rounded-full bg-white border border-slate-200 text-slate-700 hover:bg-indigo-50 hover:border-indigo-300 hover:text-indigo-700 hover:shadow-sm transition-all">'
+                +'🎨 <span>'+(jaz==='cz'?'Průvodce omalovánkami':'Coloring Guide')+'</span>'
+                +'<span>→</span>'
+                +'</a>'
+            +'</div>'
+        +'</div>'
+
+        +'<div class="flex flex-col">'
+            +'<div>'
+                +'<h3 class="font-bold text-slate-800 mb-1">'+s.aboutDots+'</h3>'
+                +'<p class="text-xs">'+s.aboutDotsText+'</p>'
+            +'</div>'
+
+            +'<div class="mt-auto flex justify-end pt-4">'
+                +'<a href="'+(jaz==='cz'?'pruvodce-spojovacky.html':'dot-to-dot-guide.html')+'"'
+                +' class="inline-flex items-center gap-2 px-4 py-2 text-xs font-bold rounded-full bg-white border border-slate-200 text-slate-700 hover:bg-indigo-50 hover:border-indigo-300 hover:text-indigo-700 hover:shadow-sm transition-all">'
+                +'🔢 <span>'+(jaz==='cz'?'Průvodce spojovačkami':'Dot-to-Dot Guide')+'</span>'
+                +'<span>→</span>'
+                +'</a>'
+            +'</div>'
+        +'</div>'
+
+    +'</div>';
     }
 
     if (zparsovanaData.length > 0) { naplnDropdownyZDat(); aktualizujPodkategorie(); }
     filtrujData();
+	
+	    document.body.classList.remove('opacity-0');
+}
+
+function kopirujProjektovyEmail() {
+    const emailAdresa = "vinmatforkids@gmail.com";
+    const statusLabel = document.getElementById("kopirovan-status");
+
+    navigator.clipboard.writeText(emailAdresa).then(() => {
+        statusLabel.textContent = jaz === 'cz'
+            ? "(e-mail vinmatforkids@gmail.com zkopírován!)"
+            : "(vinmatforkids@gmail.com copied!)";
+
+        statusLabel.classList.remove("opacity-0");
+
+        setTimeout(() => {
+            statusLabel.classList.add("opacity-0");
+        }, 1800);
+    }).catch(() => {
+        const tempInput = document.createElement("input");
+        tempInput.value = emailAdresa;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
+
+        statusLabel.textContent = jaz === 'cz'
+            ? "(e-mail vinmatforkids@gmail.com zkopírován!)"
+            : "(vinmatforkids@gmail.com copied!)";
+
+        statusLabel.classList.remove("opacity-0");
+
+        setTimeout(() => {
+            statusLabel.classList.add("opacity-0");
+        }, 1800);
+    });
 }
 
 function generujBarevnyText(text) {
@@ -474,8 +636,22 @@ function setPodkat(val) {
     aktualizujResetBtn(); filtrujData();
 }
 
-function setRozsirenyFiltr(val) {
-    aktualniRozsireny = val; aktualizujResetBtn(); filtrujData();
+function setSezona(val) {
+    aktualniSezona = val;
+    aktualizujResetBtn();
+    filtrujData();
+}
+
+function setZamereni(val) {
+    aktualniZamereni = val;
+    aktualizujResetBtn();
+    filtrujData();
+}
+
+function setRazeni(val) {
+    aktualniRazeni = val;
+    aktualizujResetBtn();
+    filtrujData();
 }
 
 function naplnDropdownyZDat() {
@@ -490,60 +666,179 @@ function naplnDropdownyZDat() {
     });
     sel.value = aktualniKategorie;
 
-    // Advanced filters
-    var pouzeneSezona={}, pouzeneZam={};
-    zparsovanaData.forEach(function(p){
-        if(p.sezona) p.sezona.split(',').forEach(function(z){var t=z.trim();if(t)pouzeneSezona[t]=true;});
-        if(p.zamereni) p.zamereni.split(',').forEach(function(z){var t=z.trim();if(t)pouzeneZam[t]=true;});
+// Roční období a svátky + vzdělávací zaměření
+var pouzeneSezona = {};
+var pouzeneZamereni = {};
+
+zparsovanaData.forEach(function(p) {
+    if (p.sezona) {
+        p.sezona.split(',').forEach(function(hodnota) {
+            var sezona = hodnota.trim();
+
+            if (sezona) {
+                pouzeneSezona[sezona] = true;
+            }
+        });
+    }
+
+    if (p.zamereni) {
+        p.zamereni.split(',').forEach(function(hodnota) {
+            var zamereni = hodnota.trim();
+
+            if (zamereni) {
+                pouzeneZamereni[zamereni] = true;
+            }
+        });
+    }
+});
+
+// Roční období a svátky
+var selSezona = document.getElementById('sel-sezona');
+
+selSezona.innerHTML =
+    '<option value="vse">— ' +
+    (jaz === 'cz' ? 'Roční období a svátky' : 'Season & Holidays') +
+    ' —</option>';
+
+Object.keys(pouzeneSezona)
+    .sort()
+    .forEach(function(klic) {
+        selSezona.innerHTML +=
+            '<option value="' + klic + '">' +
+            prelozSezona(klic) +
+            '</option>';
     });
-    var selR = document.getElementById('sel-rozsirene');
-    selR.innerHTML = '<option value="vse">'+s.filtrRozsirene+'</option>'
-        +'<optgroup label="'+s.filtrRazeni+'">'
-        +'<option value="sort:newest">'+s.filtrNewest+'</option>'
-        +'<option value="sort:oldest">'+s.filtrOldest+'</option>'
-        +'</optgroup>';
-    if (Object.keys(pouzeneSezona).length>0) {
-        selR.innerHTML += '<optgroup label="'+s.filtrSezona+'">';
-        Object.keys(pouzeneSezona).sort().forEach(function(k){ selR.innerHTML+='<option value="sezona:'+k+'">'+prelozSezona(k)+'</option>'; });
-        selR.innerHTML += '</optgroup>';
-    }
-    if (Object.keys(pouzeneZam).length>0) {
-        selR.innerHTML += '<optgroup label="'+s.filtrZamereni+'">';
-        Object.keys(pouzeneZam).sort().forEach(function(k){ selR.innerHTML+='<option value="zamereni:'+k+'">'+prelozZamereni(k)+'</option>'; });
-        selR.innerHTML += '</optgroup>';
-    }
-    selR.value = aktualniRozsireny;
+
+selSezona.value = aktualniSezona;
+
+
+// Vzdělávací zaměření
+var selZamereni = document.getElementById('sel-zamereni');
+
+selZamereni.innerHTML =
+    '<option value="vse">— ' +
+    (jaz === 'cz' ? 'Vzdělávací zaměření' : 'Learning Focus') +
+    ' —</option>';
+
+Object.keys(pouzeneZamereni)
+    .sort()
+    .forEach(function(klic) {
+        selZamereni.innerHTML +=
+            '<option value="' + klic + '">' +
+            prelozZamereni(klic) +
+            '</option>';
+    });
+
+selZamereni.value = aktualniZamereni;
+
+
+// Seřadit podle
+var selRazeni = document.getElementById('sel-razeni');
+
+selRazeni.innerHTML =
+    '<option value="newest">' +
+        (jaz === 'cz' ? 'Nejnovější' : 'Newest') +
+    '</option>' +
+    '<option value="oldest">' +
+        (jaz === 'cz' ? 'Nejstarší' : 'Oldest') +
+    '</option>' +
+    '<option value="popular" disabled>' +
+        (jaz === 'cz' ? 'Nejoblíbenější – připravujeme' : 'Most Popular – coming soon') +
+    '</option>' +
+    '<option value="az">A–Z</option>' +
+    '<option value="za">Z–A</option>' +
+    '<option value="random">' +
+        (jaz === 'cz' ? 'Náhodně' : 'Random') +
+    '</option>';
+
+selRazeni.value = aktualniRazeni;
 }
 
 function aktualizujPodkategorie() {
     var btnsEl = document.getElementById('podkat-btns');
-    if (aktualniKategorie === 'vse') { btnsEl.innerHTML=''; return; }
-    var pouzite={};
-    zparsovanaData.forEach(function(p){
-        if (p.kategorie===aktualniKategorie && (aktualniTyp==='vse'||p.typ===aktualniTyp) && p.podkategorie)
-            pouzite[p.podkategorie]=true;
+
+    if (aktualniKategorie === 'vse') {
+        btnsEl.innerHTML = '';
+        return;
+    }
+
+    var pouzite = {};
+
+    zparsovanaData.forEach(function(p) {
+        if (
+            p.kategorie === aktualniKategorie &&
+            (aktualniTyp === 'vse' || p.typ === aktualniTyp) &&
+            p.podkategorie
+        ) {
+            p.podkategorie.split(',').forEach(function(hodnota) {
+                var podkat = hodnota.trim();
+
+                if (podkat) {
+                    pouzite[podkat] = true;
+                }
+            });
+        }
     });
+
     var klice = Object.keys(pouzite).sort();
-    if (klice.length<=1) { btnsEl.innerHTML=''; return; }
+
+    if (klice.length <= 1) {
+        btnsEl.innerHTML = '';
+        return;
+    }
+
     var s = slovnik[jaz];
-    btnsEl.innerHTML = '<button data-podkat="vse" onclick="setPodkat(\'vse\')" class="px-3 py-1 text-xs font-bold rounded-full '+(aktualniPodkat==='vse'?'bg-slate-900 text-white':'bg-slate-100 text-slate-600 hover:bg-slate-200')+'">'+s.vse+'</button>';
-    klice.forEach(function(k){
-        btnsEl.innerHTML += '<button data-podkat="'+k+'" onclick="setPodkat(\''+k+'\')" class="px-3 py-1 text-xs font-bold rounded-full '+(aktualniPodkat===k?'bg-slate-900 text-white':'bg-slate-100 text-slate-600 hover:bg-slate-200')+'">'+prelozPodkat(k)+'</button>';
+
+    btnsEl.innerHTML =
+        '<button data-podkat="vse" ' +
+        'onclick="setPodkat(\'vse\')" ' +
+        'class="px-3 py-1 text-xs font-bold rounded-full ' +
+        (aktualniPodkat === 'vse'
+            ? 'bg-slate-900 text-white'
+            : 'bg-slate-100 text-slate-600 hover:bg-slate-200') +
+        '">' + s.vse + '</button>';
+
+    klice.forEach(function(k) {
+        btnsEl.innerHTML +=
+            '<button data-podkat="' + k + '" ' +
+            'onclick="setPodkat(\'' + k + '\')" ' +
+            'class="px-3 py-1 text-xs font-bold rounded-full ' +
+            (aktualniPodkat === k
+                ? 'bg-slate-900 text-white'
+                : 'bg-slate-100 text-slate-600 hover:bg-slate-200') +
+            '">' + prelozPodkat(k) + '</button>';
     });
 }
 
 function aktualizujResetBtn() {
-    var aktivni = aktualniTyp!=='vse'||aktualniVek!=='vse'||aktualniKategorie!=='vse'
-        ||aktualniPodkat!=='vse'||aktualniRozsireny!=='vse'
-        ||document.getElementById('search-input').value.trim()!=='';
-    document.getElementById('btn-reset').classList.toggle('hidden',!aktivni);
+    var aktivni =
+        aktualniTyp !== 'vse' ||
+        aktualniVek !== 'vse' ||
+        aktualniKategorie !== 'vse' ||
+        aktualniPodkat !== 'vse' ||
+        aktualniSezona !== 'vse' ||
+        aktualniZamereni !== 'vse' ||
+        aktualniRazeni !== 'newest' ||
+        document.getElementById('search-input').value.trim() !== '';
+
+    document
+        .getElementById('btn-reset')
+        .classList.toggle('hidden', !aktivni);
 }
 
 function resetFiltry() {
-    aktualniTyp='vse'; aktualniVek='vse'; aktualniKategorie='vse'; aktualniPodkat='vse'; aktualniRozsireny='vse';
+    aktualniTyp = 'vse';
+aktualniVek = 'vse';
+aktualniKategorie = 'vse';
+aktualniPodkat = 'vse';
+aktualniSezona = 'vse';
+aktualniZamereni = 'vse';
+aktualniRazeni = 'newest';
     document.getElementById('search-input').value='';
     document.getElementById('sel-kategorie').value='vse';
-    document.getElementById('sel-rozsirene').value='vse';
+    document.getElementById('sel-sezona').value = 'vse';
+document.getElementById('sel-zamereni').value = 'vse';
+document.getElementById('sel-razeni').value = 'newest';
     ['vse','bludiste','omalovanky','spojovacky'].forEach(function(t){
         document.getElementById('btn-'+t).className = t==='vse'
             ? "px-5 py-2 rounded-full text-sm font-bold bg-slate-900 text-white shadow-sm"
@@ -558,27 +853,112 @@ function resetFiltry() {
     filtrujData();
 }
 
+function normalizujText(text) {
+    return String(text || '')
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .toLowerCase();
+}
+
 // ─── FILTROVÁNÍ ───────────────────────────────────────────────────────────────
 function filtrujData() {
-    var q = document.getElementById('search-input').value.toLowerCase().trim();
+    var q = normalizujText(
+    document.getElementById('search-input').value.trim()
+);
     var filtered = zparsovanaData.filter(function(p){
         if (aktualniTyp!=='vse' && p.typ!==aktualniTyp) return false;
         if (aktualniVek!=='vse' && p.vek!==aktualniVek) return false;
         if (aktualniKategorie!=='vse' && p.kategorie!==aktualniKategorie) return false;
-        if (aktualniPodkat!=='vse' && p.podkategorie!==aktualniPodkat) return false;
-        if (aktualniRozsireny.startsWith('sezona:')) {
-            var hz=aktualniRozsireny.replace('sezona:','');
-            if (!p.sezona||!p.sezona.split(',').map(function(x){return x.trim();}).includes(hz)) return false;
-        }
-        if (aktualniRozsireny.startsWith('zamereni:')) {
-            var hzam=aktualniRozsireny.replace('zamereni:','');
-            if (!p.zamereni||!p.zamereni.split(',').map(function(x){return x.trim();}).includes(hzam)) return false;
-        }
-        if (q!==''&&!p.nazevCz.toLowerCase().includes(q)&&!p.nazevEn.toLowerCase().includes(q)) return false;
+        if (aktualniPodkat !== 'vse') {
+    var podkategoriePolozky = p.podkategorie
+        ? p.podkategorie.split(',').map(function(x) {
+            return x.trim();
+        })
+        : [];
+
+    if (!podkategoriePolozky.includes(aktualniPodkat)) {
+        return false;
+    }
+}
+if (aktualniSezona !== 'vse') {
+    var sezonyPolozky = p.sezona
+        ? p.sezona.split(',').map(function(x) {
+            return x.trim();
+        })
+        : [];
+
+    if (!sezonyPolozky.includes(aktualniSezona)) {
+        return false;
+    }
+}
+
+if (aktualniZamereni !== 'vse') {
+    var zamereniPolozky = p.zamereni
+        ? p.zamereni.split(',').map(function(x) {
+            return x.trim();
+        })
+        : [];
+
+    if (!zamereniPolozky.includes(aktualniZamereni)) {
+        return false;
+    }
+}
+        if (
+    q !== '' &&
+    !normalizujText(p.nazevCz).includes(q) &&
+    !normalizujText(p.nazevEn).includes(q)
+) {
+    return false;
+}
         return true;
     });
-    if (aktualniRozsireny==='sort:newest') filtered.sort(function(a,b){return (b.datumPridani||'').localeCompare(a.datumPridani||'');});
-    else if (aktualniRozsireny==='sort:oldest') filtered.sort(function(a,b){return (a.datumPridani||'').localeCompare(b.datumPridani||'');});
+if (aktualniRazeni === 'newest') {
+    filtered.sort(function(a, b) {
+        return (b.datumPridani || '').localeCompare(a.datumPridani || '');
+    });
+}
+
+else if (aktualniRazeni === 'oldest') {
+    filtered.sort(function(a, b) {
+        return (a.datumPridani || '').localeCompare(b.datumPridani || '');
+    });
+}
+
+else if (aktualniRazeni === 'az') {
+    filtered.sort(function(a, b) {
+        var nazevA = jaz === 'cz' ? a.nazevCz : a.nazevEn;
+        var nazevB = jaz === 'cz' ? b.nazevCz : b.nazevEn;
+
+        return nazevA.localeCompare(
+            nazevB,
+            jaz === 'cz' ? 'cs' : 'en',
+            { sensitivity: 'base' }
+        );
+    });
+}
+
+else if (aktualniRazeni === 'za') {
+    filtered.sort(function(a, b) {
+        var nazevA = jaz === 'cz' ? a.nazevCz : a.nazevEn;
+        var nazevB = jaz === 'cz' ? b.nazevCz : b.nazevEn;
+
+        return nazevB.localeCompare(
+            nazevA,
+            jaz === 'cz' ? 'cs' : 'en',
+            { sensitivity: 'base' }
+        );
+    });
+}
+
+else if (aktualniRazeni === 'random') {
+    for (var i = filtered.length - 1; i > 0; i--) {
+        var randomIndex = Math.floor(Math.random() * (i + 1));
+
+        var temp = filtered[i];
+        filtered[i] = filtered[randomIndex];
+        filtered[randomIndex] = temp;
+    }
+}
 
     aktualizujResetBtn();
     vykresliKnihovnu(filtered);
@@ -589,7 +969,17 @@ function filtrujData() {
     if (aktualniVek!=='vse')        params.set('age',  aktualniVek);
     if (aktualniKategorie!=='vse')  params.set('cat',  aktualniKategorie);
     if (aktualniPodkat!=='vse')     params.set('sub',  aktualniPodkat);
-    if (aktualniRozsireny!=='vse')  params.set('filter',aktualniRozsireny);
+    if (aktualniSezona !== 'vse') {
+    params.set('season', aktualniSezona);
+}
+
+if (aktualniZamereni !== 'vse') {
+    params.set('focus', aktualniZamereni);
+}
+
+if (aktualniRazeni !== 'newest') {
+    params.set('sort', aktualniRazeni);
+}
     if (q) params.set('q', q);
     if (jaz!=='en') params.set('lang', jaz);
     history.replaceState(null,'',window.location.pathname+(params.toString()?'?'+params.toString():''));
@@ -617,6 +1007,86 @@ function filtrujData() {
     ['og-title','tw-title'].forEach(function(id){var el=document.getElementById(id);if(el)el.content=tl;});
 }
 
+// ─── VYROVNÁNÍ VÝŠKY NÁHLEDŮ V ŘÁDKU ─────────────────────────────────────────
+
+let equalizeGridTimer = null;
+
+function equalizeGridImageRows() {
+    if (!grid) return;
+
+    var cards = Array.from(grid.children);
+
+    // Nejprve zrušíme dříve nastavené výšky.
+    cards.forEach(function(card) {
+        var imageArea = card.querySelector('[id^="container-img-"]');
+
+        if (imageArea) {
+            imageArea.style.height = 'auto';
+        }
+    });
+
+    // Rozdělíme karty podle jejich skutečné pozice do řádků.
+    var rows = new Map();
+
+    cards.forEach(function(card) {
+        var rowPosition = Math.round(card.offsetTop);
+
+        if (!rows.has(rowPosition)) {
+            rows.set(rowPosition, []);
+        }
+
+        rows.get(rowPosition).push(card);
+    });
+
+    rows.forEach(function(rowCards) {
+        var tallestHeight = 0;
+
+        rowCards.forEach(function(card) {
+            var imageArea =
+                card.querySelector('[id^="container-img-"]');
+
+            var image = imageArea
+                ? imageArea.querySelector('img')
+                : null;
+
+            if (!imageArea || !image) return;
+
+            var requiredHeight =
+                image.getBoundingClientRect().height + 32;
+
+            tallestHeight = Math.max(
+                tallestHeight,
+                requiredHeight
+            );
+        });
+
+        if (tallestHeight > 0) {
+            rowCards.forEach(function(card) {
+                var imageArea =
+                    card.querySelector('[id^="container-img-"]');
+
+                if (imageArea) {
+                    imageArea.style.height =
+                        Math.ceil(tallestHeight) + 'px';
+                }
+            });
+        }
+    });
+}
+
+function scheduleGridImageEqualization() {
+    clearTimeout(equalizeGridTimer);
+
+    equalizeGridTimer = setTimeout(function() {
+        equalizeGridImageRows();
+    }, 100);
+}
+
+window.addEventListener(
+    'resize',
+    scheduleGridImageEqualization
+);
+
 // ─── KARTA VERZE ─────────────────────────────────────────────────────────────
 function setKartaVerze(id, verze) {
     var p=zparsovanaData.find(function(x){return x.id===id;}); if(!p) return;
@@ -628,6 +1098,7 @@ function setKartaVerze(id, verze) {
         var btn=document.getElementById('btn-'+v+'-'+id);
         if(btn) btn.className=v===verze?"flex-1 py-1 text-[11px] font-bold rounded-md bg-slate-900 text-white":"flex-1 py-1 text-[11px] font-bold rounded-md text-slate-500 hover:bg-slate-200";
     });
+	    scheduleGridImageEqualization();
 }
 
 // ─── GRID ─────────────────────────────────────────────────────────────────────
@@ -650,7 +1121,7 @@ function vykresliKnihovnu(materialy) {
         } else { btns='<div class="text-center bg-slate-100 py-1 rounded-lg text-[11px] font-bold text-slate-500">'+slovnik[jaz].onlyBw+'</div>'; }
         var karta=document.createElement('div');
         karta.className="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col";
-        karta.innerHTML='<div id="container-img-'+p.id+'" onclick="openModal(\''+p.id+'\')" class="bg-slate-50 aspect-[4/5] p-4 flex items-center justify-center cursor-pointer group">'+obrazekHTML(cb,alt,'max-w-full max-h-full object-contain transition-transform duration-300 group-hover:scale-[1.02]','',idx>=4)+'</div>'
+        karta.innerHTML='<div id="container-img-'+p.id+'" onclick="openModal(\''+p.id+'\')" class="bg-slate-50 p-4 flex items-center justify-center cursor-pointer group">'+obrazekHTML(cb,alt,'max-w-full max-h-full object-contain transition-transform duration-300 group-hover:scale-[1.02]','',idx>=4)+'</div>'
             +'<div class="p-4 flex-grow flex flex-col justify-between border-t border-slate-50"><div class="mb-3">'
             +'<div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">'+slovnik[jaz][p.typ+'Label']+'</span><span class="text-xs text-slate-400 font-bold">'+vekText+'</span></div>'
             +'<h3 onclick="openModal(\''+p.id+'\')" class="font-bold text-sm text-slate-900 leading-tight cursor-pointer hover:text-indigo-600 line-clamp-2 uppercase">'+nazev+'</h3>'
@@ -658,6 +1129,8 @@ function vykresliKnihovnu(materialy) {
         grid.appendChild(karta);
         setKartaVerze(p.id,verze);
     });
+
+    scheduleGridImageEqualization();
 }
 
 // ─── MODAL ────────────────────────────────────────────────────────────────────
@@ -717,14 +1190,73 @@ async function inicializujAplikaci(){
         if(urlP.get('age'))    aktualniVek         = urlP.get('age');
         if(urlP.get('cat'))    aktualniKategorie   = urlP.get('cat');
         if(urlP.get('sub'))    aktualniPodkat      = urlP.get('sub');
-        if(urlP.get('filter')) aktualniRozsireny   = urlP.get('filter');
+        if (urlP.get('season')) {
+    aktualniSezona = urlP.get('season');
+}
+
+if (urlP.get('focus')) {
+    aktualniZamereni = urlP.get('focus');
+}
+
+if (urlP.get('sort')) {
+    aktualniRazeni = urlP.get('sort');
+}
         if(urlP.get('q'))      document.getElementById('search-input').value=urlP.get('q');
-        setJazyk(jaz);
-        naplnDropdownyZDat();
+		// Automatické filtry z Difficulty Levels
+const autoTyp = localStorage.getItem('vinmat_auto_filter_typ');
+const autoLevel = localStorage.getItem('vinmat_auto_filter_level');
+
+if (autoTyp) {
+    aktualniTyp = autoTyp;
+    localStorage.removeItem('vinmat_auto_filter_typ');
+}
+
+if (autoLevel) {
+    aktualniVek = autoLevel;
+    localStorage.removeItem('vinmat_auto_filter_level');
+}
+setJazyk(jaz);
+setJazyk(jaz);
+naplnDropdownyZDat();
+
+document.getElementById('sel-sezona').value = aktualniSezona;
+document.getElementById('sel-zamereni').value = aktualniZamereni;
+document.getElementById('sel-razeni').value = aktualniRazeni;
+
+setTyp(aktualniTyp);
+setVek(aktualniVek);
+setKategorie(aktualniKategorie);
+
+if (aktualniPodkat !== 'vse') {
+    setPodkat(aktualniPodkat);
+}
     } catch(e){console.error('Chyba inicializace:',e);}
 }
 
 inicializujAplikaci();
 </script>
+
+<button id="backToTop"
+    onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+    class="fixed bottom-14 text-3xl hover:scale-110 transition-all duration-300 opacity-0 pointer-events-none z-50"
+    style="left: min(calc(50% + 40rem), calc(100vw - 60px));"
+    aria-label="Back to Top">
+    ⬆️
+</button>
+
+<script>
+const backToTop = document.getElementById('backToTop');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 500) {
+        backToTop.classList.remove('opacity-0','pointer-events-none');
+        backToTop.classList.add('opacity-100');
+    } else {
+        backToTop.classList.remove('opacity-100');
+        backToTop.classList.add('opacity-0','pointer-events-none');
+    }
+});
+</script>
+
 </body>
 </html>
