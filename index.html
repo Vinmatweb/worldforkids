@@ -139,7 +139,7 @@
     <section class="bg-white rounded-2xl shadow-sm px-6 pt-5 pb-4 mb-6 border border-slate-100 mt-4 space-y-3">
 
         <!-- Řádek 1: Typ aktivity + Vyhledávání -->
-        <div class="flex items-center justify-between gap-4">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4">
             <div class="flex flex-wrap items-center gap-2">
                 <button onclick="setTyp('vse')"        id="btn-vse"        class="px-5 py-2 rounded-full text-sm font-bold bg-slate-900 text-white shadow-sm">All</button>
                 <button onclick="setTyp('bludiste')"   id="btn-bludiste"   class="px-5 py-2 rounded-full text-sm font-bold text-slate-600 bg-slate-100 hover:bg-slate-200">🧩 <span id="lbl-nav-bludiste">Mazes</span></button>
@@ -147,11 +147,11 @@
                 <button onclick="setTyp('spojovacky')" id="btn-spojovacky" class="px-5 py-2 rounded-full text-sm font-bold text-slate-600 bg-slate-100 hover:bg-slate-200">🔢 <span id="lbl-nav-spojovacky">Dot-to-Dots</span></button>
             </div>
             <input type="text" id="search-input" oninput="filtrujData()" placeholder="Search by name..."
-                class="w-48 px-4 py-2 text-sm rounded-xl border border-slate-200 bg-slate-50 focus:outline-none focus:border-indigo-400 focus:bg-white transition-all font-sans flex-shrink-0">
+                class="w-full sm:w-48 px-4 py-2 text-sm rounded-xl border border-slate-200 bg-slate-50 focus:outline-none focus:border-indigo-400 focus:bg-white transition-all font-sans flex-shrink-0">
         </div>
 
         <!-- Řádek 2: Věk + Clear filters -->
-        <div class="flex items-center justify-between gap-2 pt-2 border-t border-slate-50">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pt-2 border-t border-slate-50">
             <div class="flex flex-wrap items-center gap-1.5">
                 <span id="lbl-filter-age-title" class="text-xs font-bold text-slate-400 uppercase tracking-wider mr-1">Age:</span>
                 <button onclick="setVek('vse')"  id="btn-vek-vse" class="px-4 py-1.5 text-xs font-bold rounded-full bg-slate-900 text-white">All</button>
@@ -167,7 +167,7 @@
         </div>
 
 <!-- Řádek 3 -->
-<div class="flex items-center justify-between gap-4 pt-2 border-t border-slate-50">
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3 lg:gap-4 pt-2 border-t border-slate-50">
 
     <!-- Theme -->
     <div class="flex items-center gap-2">
@@ -178,7 +178,7 @@
 
         <select id="sel-kategorie"
                 onchange="setKategorie(this.value)"
-                class="px-3 py-1.5 text-xs font-bold rounded-xl border border-slate-200 bg-slate-50 text-slate-700">
+                class="w-full sm:w-auto px-3 py-1.5 text-xs font-bold rounded-xl border border-slate-200 bg-slate-50 text-slate-700">
 
             <option value="vse">— All —</option>
 
@@ -186,23 +186,23 @@
     </div>
 
     <!-- pravé filtry -->
-    <div class="flex items-center gap-2">
+    <div class="flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-2 w-full lg:w-auto">
 
         <select id="sel-sezona"
                 onchange="setSezona(this.value)"
-                class="px-3 py-1.5 text-xs font-bold rounded-xl border border-slate-200 bg-slate-50 text-slate-700">
+                class="w-full sm:w-auto px-3 py-1.5 text-xs font-bold rounded-xl border border-slate-200 bg-slate-50 text-slate-700">
             <option value="vse">— Season —</option>
         </select>
 
         <select id="sel-zamereni"
                 onchange="setZamereni(this.value)"
-                class="px-3 py-1.5 text-xs font-bold rounded-xl border border-slate-200 bg-slate-50 text-slate-700">
+                class="w-full sm:w-auto px-3 py-1.5 text-xs font-bold rounded-xl border border-slate-200 bg-slate-50 text-slate-700">
             <option value="vse">— Focus —</option>
         </select>
 
         <select id="sel-razeni"
                 onchange="setRazeni(this.value)"
-                class="px-3 py-1.5 text-xs font-bold rounded-xl border border-slate-200 bg-slate-50 text-slate-700">
+                class="w-full sm:w-auto px-3 py-1.5 text-xs font-bold rounded-xl border border-slate-200 bg-slate-50 text-slate-700">
             <option value="newest">Newest</option>
             <option value="oldest">Oldest</option>
             <option value="popular">Most Popular</option>
@@ -311,7 +311,7 @@ const slovnik = {
         noResults:"Nothing found for this selection.", variant:"Select variant",
         btnDownload:"📥 Download Image", btnPrint:"🖨️ Print Directly",
         btnColor:"🌈 Colored", btnBw:"◧ B&W", btnPartly:"🌗 Partly Colored",
-        labelColor:"Colored", labelBw:"◧ B&W", labelPartly:"Partly",
+        llabelColor:"🌈 Colored", labelBw:"◧ B&W", labelPartly:"🌗 Partly Colored",
         bludisteLabel:"MAZES", omalovankyLabel:"COLORING", spojovackyLabel:"DOT-TO-DOTS",
         footerCopyright:"© 2026 Made with ❤️ for great crafting", footerProjects:"Home to VinMat.eu",
         footerPrivacy:"Privacy Policy", footerTerms:"Terms of Service",
@@ -333,7 +333,7 @@ const slovnik = {
         noResults:"Pro tento výběr tu zatím nic nemáme.", variant:"Vyberte variantu",
         btnDownload:"📥 Stáhnout obrázek", btnPrint:"🖨️ Vytisknout rovnou",
         btnColor:"🌈 Barevná", btnBw:"◧ Černobílá", btnPartly:"🌗 Část. barvená",
-        labelColor:"Barevné", labelBw:"◧ Černobílé", labelPartly:"Částečné",
+        labelColor:"🌈 Barevná", labelBw:"◧ Černobílá", labelPartly:"🌗 Částečně barevná",
         bludisteLabel:"BLUDIŠTĚ", omalovankyLabel:"OMALOVÁNKY", spojovackyLabel:"SPOJOVAČKY",
         footerCopyright:"© 2026 Vyrobeno s ❤️ pro skvělé tvoření", footerProjects:"Domů na VinMat.eu",
         footerPrivacy:"Zásady ochrany osobních údajů", footerTerms:"Podmínky užití",
@@ -417,9 +417,20 @@ async function nactiCsvData(typ) {
             if (!row.soubor) continue;
             var vekKod = row.soubor.split('_')[0].toUpperCase();
             var varianty = [];
-            if (row.altCz_colored         && row.altCz_colored         !== '0') varianty.push('colored');
-            if (row.altCz_coloring        && row.altCz_coloring        !== '0') varianty.push('coloring');
-            if (row.altCz_partly_colored  && row.altCz_partly_colored  !== '0') varianty.push('partly_colored');
+if (row.altCz_colored && row.altCz_colored !== '0') {
+    varianty.push('colored');
+}
+
+if (
+    row.altCz_partly_colored &&
+    row.altCz_partly_colored !== '0'
+) {
+    varianty.push('partly_colored');
+}
+
+if (row.altCz_coloring && row.altCz_coloring !== '0') {
+    varianty.push('coloring');
+}
             if (varianty.length === 0) varianty.push('coloring');
             var vychozi = varianty.includes('colored') ? 'colored' : varianty[0];
             data.push({
