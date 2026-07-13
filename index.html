@@ -549,6 +549,8 @@ function setJazyk(novyJaz) {
     localStorage.setItem('vinmat_lang', jaz);
     var s = slovnik[jaz];
     document.querySelector('html').lang = jaz==='cz' ? 'cs' : 'en';
+	document.getElementById('lang-to-en').classList.toggle('hidden', jaz === 'en');
+document.getElementById('lang-to-cz').classList.toggle('hidden', jaz === 'cz');
 document.getElementById('lang-to-en-desktop').classList.toggle('hidden', jaz === 'en');
 document.getElementById('lang-to-cz-desktop').classList.toggle('hidden', jaz === 'cz');
     document.getElementById('search-input').placeholder   = s.searchPlaceholder;
