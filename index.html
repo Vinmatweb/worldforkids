@@ -182,8 +182,8 @@
             </div>
 
             <div class="flex gap-3">
-                <button onclick="setJazyk('en')" class="hidden hover:text-amber-400 transition-colors font-bold">EN</button>
-                <button onclick="setJazyk('cz')" class="hover:text-amber-400 transition-colors font-bold">CZ</button>
+                <button onclick="setJazyk('en')" id="lang-to-en-desktop" class="hidden hover:text-amber-400 transition-colors font-bold">EN</button>
+<button onclick="setJazyk('cz')" id="lang-to-cz-desktop" class="hover:text-amber-400 transition-colors font-bold">CZ</button>
             </div>
         </div>
 
@@ -549,8 +549,8 @@ function setJazyk(novyJaz) {
     localStorage.setItem('vinmat_lang', jaz);
     var s = slovnik[jaz];
     document.querySelector('html').lang = jaz==='cz' ? 'cs' : 'en';
-    document.getElementById('lang-to-en').classList.toggle('hidden', jaz==='en');
-    document.getElementById('lang-to-cz').classList.toggle('hidden', jaz==='cz');
+document.getElementById('lang-to-en-desktop').classList.toggle('hidden', jaz === 'en');
+document.getElementById('lang-to-cz-desktop').classList.toggle('hidden', jaz === 'cz');
     document.getElementById('search-input').placeholder   = s.searchPlaceholder;
     document.getElementById('txt-main-title').innerHTML   = generujBarevnyText(s.mainTitle);
     document.getElementById('txt-sub-title').innerText    = s.subTitle;
