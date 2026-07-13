@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>VinMat Planner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+<header class="topbar">
+  <div><div class="eyebrow">VinMat's World for Kids</div><h1>VinMat Planner</h1><p>Plán nastavuješ ty. Skutečnost se počítá z publikovaných CSV.</p></div>
+  <div class="actions"><button id="exportBtn" class="btn secondary">Export zálohy</button><label class="btn secondary">Import zálohy<input id="importInput" type="file" accept=".json"></label></div>
+</header>
+<nav class="tabs"><button class="tab active" data-tab="planner">📅 Planner</button><button class="tab" data-tab="stats">📊 Statistiky</button></nav>
+
+<main>
+<section id="planner" class="panel active">
+  <section class="hero">
+    <div><div class="eyebrow" id="heroLabel">Aktuální období</div><h2 id="heroPct">—</h2><p id="heroMotivation">Nejprve nastav plán.</p><div class="mobile-progress"><div class="track big"><div id="heroBar" class="fill"></div></div></div></div>
+    <div id="donut" class="donut"><div><strong id="donutPct">—</strong><span>splněno</span></div></div>
+  </section>
+
+  <section class="planner-card">
+    <div class="period-switch" role="tablist">
+      <button class="period-btn active" data-kind="week">Týden</button>
+      <button class="period-btn" data-kind="month">Měsíc</button>
+      <button class="period-btn" data-kind="half">Půlrok</button>
+      <button class="period-btn" data-kind="year">Rok</button>
+    </div>
+    <div class="period-nav">
+      <button id="prevPeriod" class="icon-btn" aria-label="Předchozí období">‹</button>
+      <div><h2 id="periodTitle"></h2><p id="periodDates"></p></div>
+      <button id="nextPeriod" class="icon-btn" aria-label="Další období">›</button>
+    </div>
+    <div id="planStatus" class="status"></div>
+    <div class="table-scroll"><table class="planner-table"><thead><tr><th>Aktivita</th><th>Plán</th><th>Publikováno</th><th>Splnění</th></tr></thead><tbody id="plannerRows"></tbody></table></div>
+    <div class="plan-actions"><button id="savePlan" class="btn primary">Nastavit plán</button><button id="editPlan" class="btn secondary hidden">Upravit plán</button><button id="cancelEdit" class="btn secondary hidden">Zrušit úpravy</button></div>
+  </section>
+
+  <section class="archive-card">
+    <div class="section-head"><div><h2>Archiv plánů</h2><p>Uložené plány a období bez stanoveného plánu.</p></div><select id="archiveKind"><option value="week">Týdny</option><option value="month">Měsíce</option><option value="half">Půlroky</option><option value="year">Roky</option></select></div>
+    <div class="table-scroll"><table class="archive-table"><thead><tr><th>Období</th><th>Plán</th><th>Publikováno</th><th>Splnění</th><th>Stav</th></tr></thead><tbody id="archiveRows"></tbody></table></div>
+  </section>
+</section>
+
+<section id="stats" class="panel">
+  <section class="load-card"><div><div class="eyebrow">Data projektu</div><h2>Statistiky z CSV</h2><p>Na GitHub Pages se načtou automaticky. Lokálně je můžeš vybrat ručně.</p></div><label class="btn primary">Načíst CSV<input id="csvInput" type="file" accept=".csv" multiple></label></section>
+  <div id="statsEmpty" class="empty"><div>📂</div><h3>Zatím nejsou načtená žádná data</h3><p>Vyber CSV soubory nebo nastav automatické cesty v <code>app.js</code>.</p></div>
+  <div id="statsContent" class="hidden">
+    <section class="summary-grid"><article class="summary accent"><span>Pracovní listy</span><strong id="totalCount">0</strong></article><article class="summary"><span>Typy aktivit</span><strong id="typeCount">0</strong></article><article class="summary"><span>Motivy</span><strong id="motifCount">0</strong></article><article class="summary"><span>CSV soubory</span><strong id="csvCount">0</strong></article></section>
+    <section class="two-col"><article class="chart-card"><h3>Podle aktivit</h3><div id="activityBars" class="bars"></div></article><article class="chart-card"><h3>Podle Levelů</h3><div id="levelBars" class="bars"></div></article></section>
+    <section class="chart-card wide"><div class="chart-head"><div><h3>Publikované aktivity po týdnech</h3><p id="weeklyRange"></p></div><div><button id="weekBack" class="icon-btn">‹</button><button id="weekNow" class="btn secondary small">Dnes</button><button id="weekForward" class="icon-btn">›</button></div></div><div id="weeklyLegend" class="legend"></div><div id="weeklyScroll" class="canvas-scroll"><canvas id="weeklyChart" width="1900" height="430"></canvas></div></section>
+    <section class="chart-card wide"><div class="chart-head"><div><h3>Publikované aktivity po měsících</h3><p id="monthlyRange"></p></div><div><button id="monthBack" class="icon-btn">‹</button><button id="monthNow" class="btn secondary small">Dnes</button><button id="monthForward" class="icon-btn">›</button></div></div><div id="monthlyLegend" class="legend"></div><div id="monthlyScroll" class="canvas-scroll"><canvas id="monthlyChart" width="2400" height="430"></canvas></div></section>
+    <section class="table-card"><div class="section-head"><div><h3>Aktivity a Levely</h3><p>Level se čte ze začátku názvu souboru, například <code>lv3_…</code>.</p></div><button id="clearStats" class="btn secondary">Vymazat lokální data</button></div><div class="table-scroll"><table class="stats-table"><thead><tr><th>Aktivita</th><th>Celkem</th><th>L1</th><th>L2</th><th>L3</th><th>L4</th><th>L5</th></tr></thead><tbody id="statsRows"></tbody></table></div></section>
+  </div>
+</section>
+</main>
+<footer>VinMat Planner · lokální ukládání plánů · publikovaná data z CSV</footer>
+</div>
+<script src="app.js"></script>
+</body></html>
