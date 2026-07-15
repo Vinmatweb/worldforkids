@@ -359,6 +359,51 @@
         </p>
     </section>
 
+<!-- PUBLISHED ACTIVITIES STATISTICS START -->
+<section class="bg-white border border-slate-100 p-5 sm:p-8 rounded-3xl shadow-sm space-y-5">
+    <div class="text-center space-y-2">
+        <h2 class="text-xl font-bold text-slate-900 uppercase tracking-wide">
+            📊 Co jsme již vytvořili
+        </h2>
+
+        <p class="text-xs sm:text-sm text-slate-600 font-medium">
+            Aktuální počet bezplatných pracovních listů podle typu a úrovně.
+        </p>
+    </div>
+
+    <div class="overflow-x-auto rounded-2xl border border-slate-200">
+        <table class="w-full min-w-[620px] text-xs sm:text-sm text-center">
+            <thead class="bg-slate-900 text-white">
+                <tr>
+                    <th class="px-3 py-3 text-left">Úroveň</th>
+                    <th class="px-3 py-3">🧩 Bludiště</th>
+                    <th class="px-3 py-3">🎨 Omalovánky</th>
+                    <th class="px-3 py-3">🔢 Spojovačky</th>
+                    <th class="px-3 py-3 bg-slate-800">Celkem</th>
+                </tr>
+            </thead>
+
+            <tbody id="published-stats-body"
+                   class="divide-y divide-slate-100 bg-white">
+                <tr>
+                    <td colspan="5" class="px-4 py-8 text-slate-400 font-bold">
+                        Načítám aktuální statistiky…
+                    </td>
+                </tr>
+            </tbody>
+
+            <tfoot id="published-stats-footer"
+                   class="bg-slate-100 border-t-2 border-slate-200 font-extrabold">
+            </tfoot>
+        </table>
+    </div>
+
+    <p class="text-[10px] sm:text-xs text-slate-500 text-center font-medium">
+        Kliknutím na číslo zobrazíte příslušnou aktivitu a úroveň.
+    </p>
+</section>
+<!-- PUBLISHED ACTIVITIES STATISTICS END -->
+
 </main>
 
     <footer class="bg-slate-900 text-slate-400 text-[11px] py-4 px-6 border-t border-slate-800 font-semibold shadow-inner">
@@ -457,6 +502,235 @@
         }
     });
     </script>
+
+<!-- PUBLISHED ACTIVITIES STATISTICS - SCRIPT START -->
+<script>
+async function nactiStatistikyPublikovanychAktivit() {
+    const typy = [
+        {
+            klic: "bludiste",
+            csv: "assets/data/bludiste.csv"
+        },
+        {
+            klic: "omalovanky",
+            csv: "assets/data/omalovanky.csv"
+        },
+        {
+            klic: "spojovacky",
+            csv: "assets/data/spojovacky.csv"
+        }
+    ];
+
+    const levely = ["LV1", "LV2", "LV3", "LV4", "LV5"];
+
+    const statistiky = {
+        bludiste:   { LV1: 0, LV2: 0, LV3: 0, LV4: 0, LV5: 0 },
+        omalovanky: { LV1: 0, LV2: 0, LV3: 0, LV4: 0, LV5: 0 },
+        spojovacky: { LV1: 0, LV2: 0, LV3: 0, LV4: 0, LV5: 0 }
+    };
+
+    function rozsekajCsvRadek(text) {
+        const vysledek = [];
+        let bunka = "";
+        let uvnitrUvozovek = false;
+
+        for (let i = 0; i < text.length; i++) {
+            const znak = text[i];
+
+            if (znak === '"') {
+                if (uvnitrUvozovek && text[i + 1] === '"') {
+                    bunka += '"';
+                    i++;
+                } else {
+                    uvnitrUvozovek = !uvnitrUvozovek;
+                }
+            } else if (znak === "," && !uvnitrUvozovek) {
+                vysledek.push(bunka.trim());
+                bunka = "";
+            } else {
+                bunka += znak;
+            }
+        }
+
+        vysledek.push(bunka.trim());
+        return vysledek;
+    }
+
+    function vytvorOdkaz(hodnota, typ, level) {
+        if (hodnota === 0) {
+            return `
+                <span class="inline-block text-[10px] sm:text-xs
+                             text-slate-400 font-bold whitespace-nowrap">
+                    Již brzy
+                </span>
+            `;
+        }
+
+        const parametry = new URLSearchParams();
+
+        if (typ) {
+            parametry.set("type", typ);
+        }
+
+        if (level) {
+            parametry.set("age", level);
+        }
+
+        parametry.set("lang", "cz");
+
+        return `
+            <a href="index.html?${parametry.toString()}"
+               class="inline-flex min-w-8 h-8 items-center justify-center
+                      rounded-lg bg-indigo-50 text-indigo-700 font-extrabold
+                      hover:bg-indigo-600 hover:text-white
+                      transition-colors"
+               aria-label="Zobrazit odpovídající pracovní listy">
+                ${hodnota}
+            </a>
+        `;
+    }
+
+    try {
+        await Promise.all(
+            typy.map(async function(typ) {
+                const response = await fetch(typ.csv + "?v=" + Date.now());
+
+                if (!response.ok) {
+                    throw new Error("Nepodařilo se načíst " + typ.csv);
+                }
+
+                const text = await response.text();
+                const radky = text
+                    .split(/\r?\n/)
+                    .filter(function(radek) {
+                        return radek.trim() !== "";
+                    });
+
+                if (radky.length < 2) {
+                    return;
+                }
+
+                const hlavicka = rozsekajCsvRadek(radky[0]);
+                const indexSouboru = hlavicka.indexOf("soubor");
+
+                if (indexSouboru === -1) {
+                    throw new Error(
+                        'V souboru ' + typ.csv + ' chybí sloupec "soubor".'
+                    );
+                }
+
+                radky.slice(1).forEach(function(radek) {
+                    const bunky = rozsekajCsvRadek(radek);
+                    const soubor = (bunky[indexSouboru] || "")
+                        .trim()
+                        .toUpperCase();
+
+                    const shoda = soubor.match(/^LV([1-5])(?:_|-|$)/);
+
+                    if (!shoda) {
+                        return;
+                    }
+
+                    const level = "LV" + shoda[1];
+                    statistiky[typ.klic][level]++;
+                });
+            })
+        );
+
+        const telo = document.getElementById("published-stats-body");
+        const pata = document.getElementById("published-stats-footer");
+
+        telo.innerHTML = levely.map(function(level, index) {
+            const bludiste = statistiky.bludiste[level];
+            const omalovanky = statistiky.omalovanky[level];
+            const spojovacky = statistiky.spojovacky[level];
+            const celkem = bludiste + omalovanky + spojovacky;
+
+            return `
+                <tr class="hover:bg-slate-50 transition-colors">
+                    <th scope="row"
+                        class="px-3 py-3 text-left text-slate-800 font-bold">
+                        Úroveň ${index + 1}
+                    </th>
+
+                    <td class="px-3 py-3">
+                        ${vytvorOdkaz(bludiste, "bludiste", level)}
+                    </td>
+
+                    <td class="px-3 py-3">
+                        ${vytvorOdkaz(omalovanky, "omalovanky", level)}
+                    </td>
+
+                    <td class="px-3 py-3">
+                        ${vytvorOdkaz(spojovacky, "spojovacky", level)}
+                    </td>
+
+                    <td class="px-3 py-3 bg-slate-50">
+                        ${vytvorOdkaz(celkem, null, level)}
+                    </td>
+                </tr>
+            `;
+        }).join("");
+
+        const celkemBludiste = levely.reduce(function(soucet, level) {
+            return soucet + statistiky.bludiste[level];
+        }, 0);
+
+        const celkemOmalovanky = levely.reduce(function(soucet, level) {
+            return soucet + statistiky.omalovanky[level];
+        }, 0);
+
+        const celkemSpojovacky = levely.reduce(function(soucet, level) {
+            return soucet + statistiky.spojovacky[level];
+        }, 0);
+
+        const celkemVse =
+            celkemBludiste +
+            celkemOmalovanky +
+            celkemSpojovacky;
+
+        pata.innerHTML = `
+            <tr>
+                <th scope="row"
+                    class="px-3 py-4 text-left text-slate-900">
+                    Celkem
+                </th>
+
+                <td class="px-3 py-4">
+                    ${vytvorOdkaz(celkemBludiste, "bludiste", null)}
+                </td>
+
+                <td class="px-3 py-4">
+                    ${vytvorOdkaz(celkemOmalovanky, "omalovanky", null)}
+                </td>
+
+                <td class="px-3 py-4">
+                    ${vytvorOdkaz(celkemSpojovacky, "spojovacky", null)}
+                </td>
+
+                <td class="px-3 py-4 bg-indigo-50">
+                    ${vytvorOdkaz(celkemVse, null, null)}
+                </td>
+            </tr>
+        `;
+
+    } catch (chyba) {
+        console.error("Chyba statistik:", chyba);
+
+        document.getElementById("published-stats-body").innerHTML = `
+            <tr>
+                <td colspan="5"
+                    class="px-4 py-8 text-rose-600 font-bold">
+                    Statistiky se nyní nepodařilo načíst.
+                </td>
+            </tr>
+        `;
+    }
+}
+
+nactiStatistikyPublikovanychAktivit();
+</script>
+<!-- PUBLISHED ACTIVITIES STATISTICS - SCRIPT END -->
 
 </body>
 </html>
