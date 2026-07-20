@@ -361,6 +361,9 @@ async function copyCzechGuides(sitemapUrls) {
             html = updateGuideSeo(html, page, 'cs');
             html = setGuideLanguageLink(html, page, 'cs');
             html = setBodyData(html, 'cs', page.key);
+            // Původní česká URL zůstane návštěvníkům funkční, ale pro Google
+            // je jedinou hlavní verzí nová adresa v /cs/.
+            await writeFile(source, injectNavigation(html, ''));
             html = injectNavigation(html, '../');
             await mkdir(path.join(root, 'cs'), { recursive: true });
             await writeFile(path.join(root, 'cs', page.cs), html);
