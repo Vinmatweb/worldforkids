@@ -511,19 +511,19 @@ async function nactiStatistikyPublikovanychAktivit() {
     const typy = [
         {
             klic: "bludiste",
-            csv: "assets/data/bludiste.csv"
+            csv: "../assets/data/bludiste.csv"
         },
         {
             klic: "omalovanky",
-            csv: "assets/data/omalovanky.csv"
+            csv: "../assets/data/omalovanky.csv"
         },
         {
             klic: "spojovacky",
-            csv: "assets/data/spojovacky.csv"
+            csv: "../assets/data/spojovacky.csv"
         },
         {
             klic: "obtahovacky",
-            csv: "assets/data/obtahovacky.csv"
+            csv: "../assets/data/obtahovacky.csv"
         }
     ];
 
@@ -603,7 +603,8 @@ async function nactiStatistikyPublikovanychAktivit() {
                 const response = await fetch(typ.csv + "?v=" + Date.now());
 
                 if (!response.ok) {
-                    throw new Error("Nepodařilo se načíst " + typ.csv);
+                    console.warn("Nepodařilo se načíst " + typ.csv);
+                    return;
                 }
 
                 const text = await response.text();

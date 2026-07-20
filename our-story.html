@@ -689,7 +689,8 @@ async function nactiStatistikyPublikovanychAktivit() {
                 const response = await fetch(typ.csv + "?v=" + Date.now());
 
                 if (!response.ok) {
-                    throw new Error("Nepodařilo se načíst " + typ.csv);
+                    console.warn("Unable to load " + typ.csv);
+                    return;
                 }
 
                 const text = await response.text();
