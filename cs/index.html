@@ -1364,7 +1364,6 @@ if (aktualniRazeni !== 'newest') {
     params.set('sort', aktualniRazeni);
 }
     if (q) params.set('q', q);
-    if (jaz!=='en') params.set('lang', jaz);
     history.replaceState(null,'',window.location.pathname+(params.toString()?'?'+params.toString():''));
 
     // Dynamický titulek + meta
@@ -1569,7 +1568,7 @@ async function inicializujAplikaci(){
         zparsovanaData=b.concat(o).concat(s);
         // Jazyk: URL param > localStorage > default EN
         var urlP=new URLSearchParams(window.location.search);
-        jaz=urlP.get('lang')||localStorage.getItem('vinmat_lang')||'en';
+        jaz='cz';
         // Obnov stav z URL
         if(urlP.get('type'))   aktualniTyp        = urlP.get('type');
         if(urlP.get('age'))    aktualniVek         = urlP.get('age');

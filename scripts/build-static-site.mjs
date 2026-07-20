@@ -262,6 +262,17 @@ function localizeIndexPaths(html) {
         .replaceAll('url("assets/', 'url("../assets/');
 }
 
+function setIndexLocale(html, locale) {
+    return html
+        // Jazyk určuje URL, ne dřívější volba uložená v prohlížeči.
+        .replace(
+            /jaz=(?:urlP\.get\('lang'\)\|\|localStorage\.getItem\('vinmat_lang'\)\|\|'en'|'(?:en|cz)');/,
+            `jaz='${locale}';`
+        )
+        // Lokalizovaná adresa už nepotřebuje ani nesmí znovu vytvářet ?lang=cz.
+        .replace("    if (jaz!=='en') params.set('lang', jaz);\n", '');
+}
+
 function activityPage(activity, locale) {
     const config = languages[locale];
     const variant = primaryVariant(activity);
@@ -393,12 +404,14 @@ async function build() {
     let englishIndex = await readFile(path.join(root, 'index.html'), 'utf8');
     englishIndex = setCatalog(englishIndex, staticCatalog(activities, 'en'));
     englishIndex = setIndexSeo(englishIndex, 'en');
+    englishIndex = setIndexLocale(englishIndex, 'en');
     englishIndex = setBodyData(englishIndex, 'en', 'home');
     englishIndex = injectNavigation(englishIndex, '');
     await writeFile(path.join(root, 'index.html'), englishIndex);
 
     let czechIndex = setCatalog(englishIndex, staticCatalog(activities, 'cs'));
     czechIndex = setIndexSeo(czechIndex, 'cs');
+    czechIndex = setIndexLocale(czechIndex, 'cz');
     czechIndex = setBodyData(czechIndex, 'cs', 'home');
     czechIndex = localizeIndexPaths(czechIndex);
     czechIndex = injectNavigation(czechIndex, '../');
