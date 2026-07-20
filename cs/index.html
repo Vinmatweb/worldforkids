@@ -234,7 +234,7 @@
                 <button onclick="setVek('LV2')"  id="btn-vek-2"   class="px-4 py-1.5 text-xs font-bold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200">5–6</button>
                 <button onclick="setVek('LV3')"  id="btn-vek-3"   class="px-4 py-1.5 text-xs font-bold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200">7–9</button>
                 <button onclick="setVek('LV4')"  id="btn-vek-4"   class="px-4 py-1.5 text-xs font-bold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200">10+</button>
-                <button onclick="setVek('LV5')"  id="btn-vek-5"   class="px-4 py-1.5 text-xs font-bold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200">Expert</button>
+                <button onclick="setVek('LV5')"  id="btn-vek-5"   class="px-4 py-1.5 text-xs font-bold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200">12+ &amp; Adults</button>
             </div>
             <button id="btn-reset" onclick="resetFiltry()" class="hidden px-3 py-1.5 text-xs font-bold rounded-xl bg-red-50 text-red-500 border border-red-200 hover:bg-red-100 transition-all whitespace-nowrap flex-shrink-0">
                 ✕ <span id="lbl-reset">Clear filters</span>
@@ -669,7 +669,7 @@
 const slovnik = {
     en: {
         mainTitle:"VINMAT'S WORLD FOR KIDS", subTitle:"Verified mazes, coloring pages and dot-to-dots for instant fun",
-        vse:"All", bludiste:"Mazes", omalovanky:"Coloring", spojovacky:"Dot-to-Dots", obtahovacky:"Tracing", ageTitle:"Age:",
+        vse:"All", bludiste:"Mazes", omalovanky:"Coloring", spojovacky:"Dot-to-Dots", obtahovacky:"Tracing", ageTitle:"Age:", ageLv5:"12+ & Adults",
         noResults:"Nothing found for this selection.", variant:"Select variant",
         btnDownload:"📥 Download Image", btnPrint:"🖨️ Print Directly",
         btnColor:"🌈 Colored", btnBw:"◧ B&W", btnPartly:"🌗 Partly Colored",
@@ -692,7 +692,7 @@ const slovnik = {
     },
     cz: {
         mainTitle:"VINMATŮV SVĚT PRO DĚTI", subTitle:"Ověřená bludiště, omalovánky a spojovačky pro okamžitou zábavu",
-        vse:"Vše", bludiste:"Bludiště", omalovanky:"Omalovánky", spojovacky:"Spojovačky", obtahovacky:"Obtahovačky", ageTitle:"Věk:",
+        vse:"Vše", bludiste:"Bludiště", omalovanky:"Omalovánky", spojovacky:"Spojovačky", obtahovacky:"Obtahovačky", ageTitle:"Věk:", ageLv5:"12+ a dospělí",
         noResults:"Pro tento výběr tu zatím nic nemáme.", variant:"Vyberte variantu",
         btnDownload:"📥 Stáhnout obrázek", btnPrint:"🖨️ Vytisknout rovnou",
         btnColor:"🌈 Barevná", btnBw:"◧ Černobílá", btnPartly:"🌗 Část. barvená",
@@ -857,6 +857,7 @@ document.getElementById('lang-to-cz-desktop').classList.toggle('hidden', jaz ===
     document.getElementById('lbl-nav-obtahovacky').innerText= s.obtahovacky;
     document.getElementById('lbl-filter-age-title').innerText = s.ageTitle;
     document.getElementById('btn-vek-vse').innerText      = s.vse;
+    document.getElementById('btn-vek-5').innerText        = s.ageLv5;
     document.getElementById('txt-no-results').innerText   = s.noResults;
     document.getElementById('lbl-modal-variant').innerText= s.variant;
     document.getElementById('modal-download-btn').innerText= s.btnDownload;
