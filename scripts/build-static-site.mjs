@@ -266,6 +266,12 @@ function localizeIndexPaths(html) {
         .replace('src="translations.js"', 'src="../translations.js"')
         .replaceAll("fetch('assets/", "fetch('../assets/")
         .replaceAll("'public/", "'../public/")
+        // Česká stránka musí mít funkční patičku i bez JavaScriptu.
+        .replaceAll('href="privacy.html"', 'href="zasady-ochrany-osobnich-udaju.html"')
+        .replaceAll('href="terms.html"', 'href="podminky-uziti.html"')
+        .replaceAll('href="guide-activities.html"', 'href="pruvodce-aktivitami.html"')
+        .replaceAll('href="difficulty-levels.html"', 'href="urovne-obtiznosti.html"')
+        .replaceAll('href="our-story.html"', 'href="nas-pribeh.html"')
         .replaceAll("url('assets/", "url('../assets/")
         .replaceAll('url("assets/', 'url("../assets/');
 }
