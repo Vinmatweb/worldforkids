@@ -10,6 +10,7 @@ const languages = {
         htmlLang: 'en',
         ogLocale: 'en_US',
         output: '',
+        assetDirectory: 'en',
         activityDirectory: 'activities',
         activityType: { bludiste: 'maze', omalovanky: 'coloring', spojovacky: 'dot-to-dot' },
         cardType: { bludiste: 'Maze', omalovanky: 'Coloring', spojovacky: 'Dot-to-Dot' },
@@ -27,6 +28,7 @@ const languages = {
         htmlLang: 'cs',
         ogLocale: 'cs_CZ',
         output: 'cs',
+        assetDirectory: 'cs',
         activityDirectory: 'aktivity',
         activityType: { bludiste: 'bludiste', omalovanky: 'omalovanka', spojovacky: 'spojovacka' },
         cardType: { bludiste: 'Bludiště', omalovanky: 'Omalovánka', spojovacky: 'Spojovačka' },
@@ -50,8 +52,8 @@ const guidePages = [
     { key: 'coloringGuide', en: 'coloring-guide.html', cs: 'pruvodce-omalovanky.html' },
     { key: 'dotToDotGuide', en: 'dot-to-dot-guide.html', cs: 'pruvodce-spojovacky.html' },
     { key: 'tracingGuide', en: 'tracing-guide.html', cs: 'pruvodce-obtahovacky.html' },
-    { key: 'privacy', en: 'privacy.html', cs: 'privacy-cz.html' },
-    { key: 'terms', en: 'terms.html', cs: 'terms-cz.html' }
+    { key: 'privacy', en: 'privacy.html', cs: 'zasady-ochrany-osobnich-udaju.html' },
+    { key: 'terms', en: 'terms.html', cs: 'podminky-uziti.html' }
 ];
 
 const csvTypes = ['bludiste', 'omalovanky', 'spojovacky'];
@@ -262,6 +264,14 @@ function localizeIndexPaths(html) {
         .replaceAll('url("assets/', 'url("../assets/');
 }
 
+function updateCzechInternalLinks(html) {
+    return html
+        .replaceAll('href="privacy-cz.html"', 'href="zasady-ochrany-osobnich-udaju.html"')
+        .replaceAll('href="terms-cz.html"', 'href="podminky-uziti.html"')
+        .replaceAll("jaz==='cz' ? 'privacy-cz.html'", "jaz==='cz' ? 'zasady-ochrany-osobnich-udaju.html'")
+        .replaceAll("jaz==='cz' ? 'terms-cz.html'", "jaz==='cz' ? 'podminky-uziti.html'");
+}
+
 function setIndexLocale(html, locale) {
     return html
         // Jazyk určuje URL, ne dřívější volba uložená v prohlížeči.
@@ -334,43 +344,49 @@ function activityPage(activity, locale) {
 
 function updateGuideSeo(html, page, locale) {
     const ownRelative = locale === 'en' ? page.en : `cs/${page.cs}`;
+    const ownUrl = `${siteUrl}${ownRelative}`;
     const enUrl = `${siteUrl}${page.en}`;
     const csUrl = `${siteUrl}cs/${page.cs}`;
     html = html.replace(/<html lang="[^"]*">/i, `<html lang="${languages[locale].htmlLang}">`);
-    html = html.replace(/<link rel="canonical" href="[^"]*">/i, `<link rel="canonical" href="${siteUrl}${ownRelative}">`);
+    html = html.replace(/<link rel="canonical" href="[^"]*">/i, `<link rel="canonical" href="${ownUrl}">`);
     html = html.replace(/<link rel="alternate" hreflang="en" href="[^"]*">/i, `<link rel="alternate" hreflang="en" href="${enUrl}">`);
     html = html.replace(/<link rel="alternate" hreflang="cs" href="[^"]*">/i, `<link rel="alternate" hreflang="cs" href="${csUrl}">`);
     html = html.replace(/<link rel="alternate" hreflang="x-default" href="[^"]*">/i, `<link rel="alternate" hreflang="x-default" href="${enUrl}">`);
-    html = html.replace(/(<meta property="og:url" content=")[^"]*(">)/i, `$1${siteUrl}${ownRelative}$2`);
+    html = html.replace(/(<meta property="og:url" content=")[^"]*(">)/i, `$1${ownUrl}$2`);
+    html = html.replace(/("url":\s*")[^"]*(")/i, `$1${ownUrl}$2`);
     return html;
 }
 
 function setGuideLanguageLink(html, page, locale) {
     const current = locale === 'en' ? page.cs : page.en;
+    const legacyCzechPath = {
+        'zasady-ochrany-osobnich-udaju.html': 'privacy-cz.html',
+        'podminky-uziti.html': 'terms-cz.html'
+    }[page.cs];
     const target = locale === 'en'
         ? `${basePath}cs/${page.cs}`
         : `${basePath}${page.en}`;
-    return html.replaceAll(`href="${current}"`, `href="${target}"`);
+    return html
+        .replaceAll(`href="${current}"`, `href="${target}"`)
+        .replaceAll(`href="${basePath}cs/${current}"`, `href="${target}"`)
+        .replaceAll(`href="${basePath}cs/${legacyCzechPath}"`, `href="${target}"`);
 }
 
 async function copyCzechGuides(sitemapUrls) {
     for (const page of guidePages) {
-        const source = path.join(root, page.cs);
+        const source = path.join(root, 'cs', page.cs);
         try {
             let html = await readFile(source, 'utf8');
             html = updateGuideSeo(html, page, 'cs');
             html = setGuideLanguageLink(html, page, 'cs');
+            html = updateCzechInternalLinks(html);
             html = setBodyData(html, 'cs', page.key);
-            // Původní česká URL zůstane návštěvníkům funkční, ale pro Google
-            // je jedinou hlavní verzí nová adresa v /cs/.
-            await writeFile(source, injectNavigation(html, ''));
             html = injectNavigation(html, '../');
-            await mkdir(path.join(root, 'cs'), { recursive: true });
-            await writeFile(path.join(root, 'cs', page.cs), html);
+            await writeFile(source, html);
             sitemapUrls.add(`${siteUrl}cs/${page.cs}`);
         } catch (error) {
             if (error.code !== 'ENOENT') throw error;
-            console.warn(`Czech source page not found, skipped: ${page.cs}`);
+            console.warn(`Czech guide page not found, skipped: cs/${page.cs}`);
         }
     }
 }
@@ -408,6 +424,7 @@ async function build() {
     englishIndex = setCatalog(englishIndex, staticCatalog(activities, 'en'));
     englishIndex = setIndexSeo(englishIndex, 'en');
     englishIndex = setIndexLocale(englishIndex, 'en');
+    englishIndex = updateCzechInternalLinks(englishIndex);
     englishIndex = setBodyData(englishIndex, 'en', 'home');
     englishIndex = injectNavigation(englishIndex, '');
     await writeFile(path.join(root, 'index.html'), englishIndex);
@@ -417,6 +434,7 @@ async function build() {
     czechIndex = setIndexLocale(czechIndex, 'cz');
     czechIndex = setBodyData(czechIndex, 'cs', 'home');
     czechIndex = localizeIndexPaths(czechIndex);
+    czechIndex = updateCzechInternalLinks(czechIndex);
     czechIndex = injectNavigation(czechIndex, '../');
     await mkdir(path.join(root, 'cs'), { recursive: true });
     await writeFile(path.join(root, 'cs', 'index.html'), czechIndex);

@@ -5,8 +5,8 @@
     var basePath = '/worldforkids/';
 
     var languages = {
-        en: { code: 'en', label: 'EN', nativeName: 'English', path: '', htmlLang: 'en', ogLocale: 'en_US' },
-        cs: { code: 'cs', label: 'CZ', nativeName: 'Čeština', path: 'cs/', htmlLang: 'cs', ogLocale: 'cs_CZ' }
+        en: { code: 'en', label: 'EN', nativeName: 'English', path: '', assetDirectory: 'en', htmlLang: 'en', ogLocale: 'en_US' },
+        cs: { code: 'cs', label: 'CZ', nativeName: 'Čeština', path: 'cs/', assetDirectory: 'cs', htmlLang: 'cs', ogLocale: 'cs_CZ' }
     };
 
     var routes = {
@@ -18,8 +18,8 @@
         coloringGuide: { en: 'coloring-guide.html', cs: 'pruvodce-omalovanky.html' },
         dotToDotGuide: { en: 'dot-to-dot-guide.html', cs: 'pruvodce-spojovacky.html' },
         tracingGuide: { en: 'tracing-guide.html', cs: 'pruvodce-obtahovacky.html' },
-        privacy: { en: 'privacy.html', cs: 'privacy-cz.html' },
-        terms: { en: 'terms.html', cs: 'terms-cz.html' }
+        privacy: { en: 'privacy.html', cs: 'zasady-ochrany-osobnich-udaju.html' },
+        terms: { en: 'terms.html', cs: 'podminky-uziti.html' }
     };
 
     function localeUrl(locale, routeKey, search) {
