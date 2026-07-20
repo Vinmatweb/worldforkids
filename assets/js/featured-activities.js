@@ -12,18 +12,46 @@
 let GUIDE_ACTIVITY_CONFIG = {};
 
 const guideAgeLabels = {
-    LV1: '👶 Ages 3–4',
-    LV2: '👧👦 Ages 5–6',
-    LV3: '👧👦 Ages 7–9',
-    LV4: '🧑 Ages 10+',
-    LV5: '👨 Ages 12+ & Adults'
+    en: {
+        LV1: '👶 Ages 3–4',
+        LV2: '👧👦 Ages 5–6',
+        LV3: '👧👦 Ages 7–9',
+        LV4: '🧑 Ages 10+',
+        LV5: '👨 Ages 12+ & Adults'
+    },
+    cz: {
+        LV1: '👶 Věk 3–4',
+        LV2: '👧👦 Věk 5–6',
+        LV3: '👧👦 Věk 7–9',
+        LV4: '🧑 Věk 10+',
+        LV5: '👨 Věk 12+ a dospělí'
+    }
 };
 
 const guideVariantLabels = {
-    colored: '🌈 Colored',
-    coloring: '◧ B&W',
-    partly_colored: '🌗 Partly Colored'
+    en: {
+        colored: '🌈 Colored',
+        coloring: '◧ B&W',
+        partly_colored: '🌗 Partly Colored'
+    },
+    cz: {
+        colored: '🌈 Barevná',
+        coloring: '◧ Černobílá',
+        partly_colored: '🌗 Částečně barevná'
+    }
 };
+
+function guideLanguage() {
+    return GUIDE_ACTIVITY_CONFIG.language === 'cz' ? 'cz' : 'en';
+}
+
+function guideAgeLabel(level) {
+    return guideAgeLabels[guideLanguage()][level] || level;
+}
+
+function guideVariantLabel(variant) {
+    return guideVariantLabels[guideLanguage()][variant] || variant;
+}
 
 let guideActivities = [];
 let guideActiveVariants = {};
@@ -85,6 +113,9 @@ async function guideLoadCsv() {
 
         const headers = guideParseCsvRow(rows[0]);
         const activities = [];
+        const language = guideLanguage();
+        const nameColumn = language === 'cz' ? 'nazevCz' : 'nazevEn';
+        const altPrefix = language === 'cz' ? 'altCz' : 'altEn';
 
         for (let i = 1; i < rows.length; i++) {
             const cells = guideParseCsvRow(rows[i]);
@@ -101,18 +132,18 @@ async function guideLoadCsv() {
             const level = row.soubor.split('_')[0].toUpperCase();
             const variants = [];
 
-if (row.altEn_colored && row.altEn_colored !== '0') {
+if (row[altPrefix + '_colored'] && row[altPrefix + '_colored'] !== '0') {
     variants.push('colored');
 }
 
 if (
-    row.altEn_partly_colored &&
-    row.altEn_partly_colored !== '0'
+    row[altPrefix + '_partly_colored'] &&
+    row[altPrefix + '_partly_colored'] !== '0'
 ) {
     variants.push('partly_colored');
 }
 
-if (row.altEn_coloring && row.altEn_coloring !== '0') {
+if (row[altPrefix + '_coloring'] && row[altPrefix + '_coloring'] !== '0') {
     variants.push('coloring');
 }
 
@@ -133,14 +164,14 @@ if (row.altEn_coloring && row.altEn_coloring !== '0') {
                 fileBase: row.soubor,
                 level: level,
                 dateAdded: row.datumPridani || '',
-                name: row.nazevEn || row.soubor,
+                name: row[nameColumn] || row.soubor,
                 variants: variants,
                 defaultVariant: defaultVariant,
 
                 altTexts: {
-                    colored: row.altEn_colored || '',
-                    coloring: row.altEn_coloring || '',
-                    partly_colored: row.altEn_partly_colored || ''
+                    colored: row[altPrefix + '_colored'] || '',
+                    coloring: row[altPrefix + '_coloring'] || '',
+                    partly_colored: row[altPrefix + '_partly_colored'] || ''
                 }
             });
         }
@@ -363,7 +394,7 @@ function guideOpenActivity(activityId) {
         activity.name;
 
     document.getElementById('guide-modal-age').textContent =
-        guideAgeLabels[activity.level] || activity.level;
+        guideAgeLabel(activity.level);
 
     guideBuildModalVariantButtons();
     guideUpdateModalImage();
@@ -426,7 +457,7 @@ function guideBuildModalVariantButtons() {
 
         button.type = 'button';
         button.textContent =
-            guideVariantLabels[variant] || variant;
+            guideVariantLabel(variant);
 
         button.onclick = function () {
             guideSetModalVariant(variant);
@@ -676,7 +707,7 @@ function guideCreateCard(activity) {
     guideActiveVariants[activity.id] = variant;
 
     const ageLabel =
-        guideAgeLabels[activity.level] ||
+        guideAgeLabel(activity.level) ||
         activity.level;
 
     let variantControls = '';
@@ -696,7 +727,7 @@ function guideCreateCard(activity) {
                        rounded-md text-slate-500 hover:bg-slate-200
                        transition-colors"
             >
-                ${guideVariantLabels[activityVariant] || activityVariant}
+                ${guideVariantLabel(activityVariant)}
             </button>
         `).join('');
 
@@ -709,7 +740,7 @@ function guideCreateCard(activity) {
         variantControls = `
             <div class="text-center bg-slate-100 py-1 rounded-lg
                         text-[10px] font-bold text-slate-500">
-                ◧ B&amp;W only
+                ${guideLanguage() === 'cz' ? '◧ Pouze černobílé' : '◧ B&amp;W only'}
             </div>
         `;
     }
@@ -727,7 +758,7 @@ function guideCreateCard(activity) {
             onclick="guideOpenActivity('${guideEscapeHtml(activity.id)}')"
 class="bg-slate-50 p-3 flex items-center
        justify-center cursor-pointer group"
-            title="Open ${guideEscapeHtml(activity.name)}"
+            title="${guideLanguage() === 'cz' ? 'Otevřít' : 'Open'} ${guideEscapeHtml(activity.name)}"
         >
             ${guideCreatePicture(activity, variant)}
         </div>
