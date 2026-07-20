@@ -941,10 +941,11 @@ async function guideInitializeActivities() {
 }
 
 function loadFeaturedActivities(options) {
+    const assetPrefix = options.assetPrefix || '';
     GUIDE_ACTIVITY_CONFIG = {
         type: options.type,
-        csvFile: 'assets/data/' + options.type + '.csv',
-        imageFolder: 'public/' + options.type,
+        csvFile: assetPrefix + 'assets/data/' + options.type + '.csv',
+        imageFolder: assetPrefix + 'public/' + options.type,
         topContainerId: options.topContainer,
         bottomContainerId: options.bottomContainer,
         language: options.language || 'en',

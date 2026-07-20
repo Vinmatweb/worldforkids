@@ -12,8 +12,8 @@ const languages = {
         output: '',
         assetDirectory: 'en',
         activityDirectory: 'activities',
-        activityType: { bludiste: 'maze', omalovanky: 'coloring', spojovacky: 'dot-to-dot' },
-        cardType: { bludiste: 'Maze', omalovanky: 'Coloring', spojovacky: 'Dot-to-Dot' },
+        activityType: { bludiste: 'maze', omalovanky: 'coloring', spojovacky: 'dot-to-dot', obtahovacky: 'tracing' },
+        cardType: { bludiste: 'Maze', omalovanky: 'Coloring', spojovacky: 'Dot-to-Dot', obtahovacky: 'Tracing' },
         indexTitle: 'Free Printable Mazes, Coloring Pages & Dot-to-Dots for Kids | VinMat',
         indexDescription: 'Download free printable mazes, coloring pages and dot-to-dot worksheets for kids aged 3–10. Color and B&W versions, sorted by age and difficulty.',
         indexHeading: 'Free Printable Activities for Kids',
@@ -30,8 +30,8 @@ const languages = {
         output: 'cs',
         assetDirectory: 'cs',
         activityDirectory: 'aktivity',
-        activityType: { bludiste: 'bludiste', omalovanky: 'omalovanka', spojovacky: 'spojovacka' },
-        cardType: { bludiste: 'Bludiště', omalovanky: 'Omalovánka', spojovacky: 'Spojovačka' },
+        activityType: { bludiste: 'bludiste', omalovanky: 'omalovanka', spojovacky: 'spojovacka', obtahovacky: 'obtahovacka' },
+        cardType: { bludiste: 'Bludiště', omalovanky: 'Omalovánka', spojovacky: 'Spojovačka', obtahovacky: 'Obtahovačka' },
         indexTitle: 'Bludiště, omalovánky a spojovačky zdarma | VinMat',
         indexDescription: 'Stáhněte zdarma dětská bludiště, omalovánky a spojovačky k vytisknutí pro děti ve věku 3–10 let.',
         indexHeading: 'Pracovní listy pro děti zdarma',
@@ -57,7 +57,7 @@ const guidePages = [
     { key: 'terms', en: 'terms.html', cs: 'podminky-uziti.html' }
 ];
 
-const csvTypes = ['bludiste', 'omalovanky', 'spojovacky'];
+const csvTypes = ['bludiste', 'omalovanky', 'spojovacky', 'obtahovacky'];
 
 function escapeHtml(value) {
     return String(value ?? '')

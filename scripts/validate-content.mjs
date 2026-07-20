@@ -4,7 +4,7 @@ import vm from 'node:vm';
 
 const root = process.cwd();
 const publicRoot = path.join(root, 'public');
-const csvTypes = ['bludiste', 'omalovanky', 'spojovacky'];
+const csvTypes = ['bludiste', 'omalovanky', 'spojovacky', 'obtahovacky'];
 const baseColumns = ['ID', 'soubor', 'kategorie', 'podkategorie', 'datumPridani', 'sezona', 'zamereni'];
 const locales = [
     { code: 'en', column: 'En', dictionaryCode: 'en', state: 'active', label: 'EN' },
@@ -18,7 +18,7 @@ const dictionaryFields = [
     ['sezona', 'sezonaPreklady', 'Sezóna'],
     ['zamereni', 'zamereniPreklady', 'Zaměření']
 ];
-const productTypes = { maze: 'bludiste', 'multi-maze': 'bludiste', 'coloring-page': 'omalovanky', 'dot-to-dot': 'spojovacky' };
+const productTypes = { maze: 'bludiste', 'multi-maze': 'bludiste', 'coloring-page': 'omalovanky', 'dot-to-dot': 'spojovacky', tracing: 'obtahovacky' };
 const variantColumns = { colored: 'colored', coloring: 'coloring', 'partly-colored': 'partly_colored' };
 
 function escapeHtml(value) {
@@ -97,7 +97,7 @@ async function walk(directory) {
 
 function parseLocalizedImage(relative) {
     const basename = path.basename(relative);
-    const match = basename.match(/^(?<identity>lv[1-5]_[a-z0-9]+_\d+(?:_\d+)?)_(?<locale>en|cs|de|es)-(?<subject>.+)-(?<product>multi-maze|maze|coloring-page|dot-to-dot)(?:-(?<variant>colored|coloring|partly-colored))?\.(?<extension>png|webp)$/i);
+    const match = basename.match(/^(?<identity>lv[1-5]_[a-z0-9]+_\d+(?:_\d+)?)_(?<locale>en|cs|de|es)-(?<subject>.+)-(?<product>multi-maze|maze|coloring-page|dot-to-dot|tracing)(?:-(?<variant>colored|coloring|partly-colored))?\.(?<extension>png|webp)$/i);
     if (!match) return null;
     const { identity, locale, product, variant, extension } = match.groups;
     return { identity, locale: locale.toLowerCase(), product, variant: variant || 'coloring', extension: extension.toLowerCase() };

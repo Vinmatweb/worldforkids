@@ -427,13 +427,14 @@
     </div>
 
     <div class="overflow-x-auto rounded-2xl border border-slate-200">
-        <table class="w-full min-w-[620px] text-xs sm:text-sm text-center">
+        <table class="w-full min-w-[720px] text-xs sm:text-sm text-center">
             <thead class="bg-slate-900 text-white">
                 <tr>
                     <th class="px-3 py-3 text-left">Level</th>
                     <th class="px-3 py-3">🧩 Mazes</th>
                     <th class="px-3 py-3">🎨 Coloring Pages</th>
                     <th class="px-3 py-3">🔢 Dot-to-Dot</th>
+                    <th class="px-3 py-3">✏️ Tracing</th>
                     <th class="px-3 py-3 bg-slate-800">Total</th>
                 </tr>
             </thead>
@@ -441,7 +442,7 @@
             <tbody id="published-stats-body"
                    class="divide-y divide-slate-100 bg-white">
                 <tr>
-                    <td colspan="5" class="px-4 py-8 text-slate-400 font-bold">
+                    <td colspan="6" class="px-4 py-8 text-slate-400 font-bold">
                         Loading current statistics...
                     </td>
                 </tr>
@@ -605,6 +606,10 @@ async function nactiStatistikyPublikovanychAktivit() {
         {
             klic: "spojovacky",
             csv: "assets/data/spojovacky.csv"
+        },
+        {
+            klic: "obtahovacky",
+            csv: "assets/data/obtahovacky.csv"
         }
     ];
 
@@ -613,7 +618,8 @@ async function nactiStatistikyPublikovanychAktivit() {
     const statistiky = {
         bludiste:   { LV1: 0, LV2: 0, LV3: 0, LV4: 0, LV5: 0 },
         omalovanky: { LV1: 0, LV2: 0, LV3: 0, LV4: 0, LV5: 0 },
-        spojovacky: { LV1: 0, LV2: 0, LV3: 0, LV4: 0, LV5: 0 }
+        spojovacky: { LV1: 0, LV2: 0, LV3: 0, LV4: 0, LV5: 0 },
+        obtahovacky: { LV1: 0, LV2: 0, LV3: 0, LV4: 0, LV5: 0 }
     };
 
     function rozsekajCsvRadek(text) {
@@ -731,7 +737,8 @@ async function nactiStatistikyPublikovanychAktivit() {
             const bludiste = statistiky.bludiste[level];
             const omalovanky = statistiky.omalovanky[level];
             const spojovacky = statistiky.spojovacky[level];
-            const celkem = bludiste + omalovanky + spojovacky;
+            const obtahovacky = statistiky.obtahovacky[level];
+            const celkem = bludiste + omalovanky + spojovacky + obtahovacky;
 
             return `
                 <tr class="hover:bg-slate-50 transition-colors">
@@ -750,6 +757,10 @@ async function nactiStatistikyPublikovanychAktivit() {
 
                     <td class="px-3 py-3">
                         ${vytvorOdkaz(spojovacky, "spojovacky", level)}
+                    </td>
+
+                    <td class="px-3 py-3">
+                        ${vytvorOdkaz(obtahovacky, "obtahovacky", level)}
                     </td>
 
                     <td class="px-3 py-3 bg-slate-50">
@@ -771,10 +782,15 @@ async function nactiStatistikyPublikovanychAktivit() {
             return soucet + statistiky.spojovacky[level];
         }, 0);
 
+        const celkemObtahovacky = levely.reduce(function(soucet, level) {
+            return soucet + statistiky.obtahovacky[level];
+        }, 0);
+
         const celkemVse =
             celkemBludiste +
             celkemOmalovanky +
-            celkemSpojovacky;
+            celkemSpojovacky +
+            celkemObtahovacky;
 
         pata.innerHTML = `
             <tr>
@@ -795,6 +811,10 @@ async function nactiStatistikyPublikovanychAktivit() {
                     ${vytvorOdkaz(celkemSpojovacky, "spojovacky", null)}
                 </td>
 
+                <td class="px-3 py-4">
+                    ${vytvorOdkaz(celkemObtahovacky, "obtahovacky", null)}
+                </td>
+
                 <td class="px-3 py-4 bg-indigo-50">
                     ${vytvorOdkaz(celkemVse, null, null)}
                 </td>
@@ -806,7 +826,7 @@ async function nactiStatistikyPublikovanychAktivit() {
 
         document.getElementById("published-stats-body").innerHTML = `
             <tr>
-                <td colspan="5"
+                <td colspan="6"
                     class="px-4 py-8 text-rose-600 font-bold">
                     Unable to load statistics.
                 </td>

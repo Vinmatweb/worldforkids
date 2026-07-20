@@ -219,6 +219,7 @@
                 <button onclick="setTyp('bludiste')"   id="btn-bludiste"   class="px-5 py-2 rounded-full text-sm font-bold text-slate-600 bg-slate-100 hover:bg-slate-200">🧩 <span id="lbl-nav-bludiste">Mazes</span></button>
                 <button onclick="setTyp('omalovanky')" id="btn-omalovanky" class="px-5 py-2 rounded-full text-sm font-bold text-slate-600 bg-slate-100 hover:bg-slate-200">🎨 <span id="lbl-nav-omalovanky">Coloring</span></button>
                 <button onclick="setTyp('spojovacky')" id="btn-spojovacky" class="px-5 py-2 rounded-full text-sm font-bold text-slate-600 bg-slate-100 hover:bg-slate-200">🔢 <span id="lbl-nav-spojovacky">Dot-to-Dots</span></button>
+                <button onclick="setTyp('obtahovacky')" id="btn-obtahovacky" class="px-5 py-2 rounded-full text-sm font-bold text-slate-600 bg-slate-100 hover:bg-slate-200">✏️ <span id="lbl-nav-obtahovacky">Tracing</span></button>
             </div>
             <input type="text" id="search-input" oninput="filtrujData()" placeholder="Search by name..."
                 class="w-full sm:w-48 px-4 py-2 text-sm rounded-xl border border-slate-200 bg-slate-50 focus:outline-none focus:border-indigo-400 focus:bg-white transition-all font-sans flex-shrink-0">
@@ -668,12 +669,12 @@
 const slovnik = {
     en: {
         mainTitle:"VINMAT'S WORLD FOR KIDS", subTitle:"Verified mazes, coloring pages and dot-to-dots for instant fun",
-        vse:"All", bludiste:"Mazes", omalovanky:"Coloring", spojovacky:"Dot-to-Dots", ageTitle:"Age:",
+        vse:"All", bludiste:"Mazes", omalovanky:"Coloring", spojovacky:"Dot-to-Dots", obtahovacky:"Tracing", ageTitle:"Age:",
         noResults:"Nothing found for this selection.", variant:"Select variant",
         btnDownload:"📥 Download Image", btnPrint:"🖨️ Print Directly",
         btnColor:"🌈 Colored", btnBw:"◧ B&W", btnPartly:"🌗 Partly Colored",
         labelColor:"🌈 Colored", labelBw:"◧ B&W", labelPartly:"🌗 Partly Colored",
-        bludisteLabel:"MAZES", omalovankyLabel:"COLORING", spojovackyLabel:"DOT-TO-DOTS",
+        bludisteLabel:"MAZES", omalovankyLabel:"COLORING", spojovackyLabel:"DOT-TO-DOTS", obtahovackyLabel:"TRACING",
         footerCopyright:"© 2026 Made with ❤️ for great crafting", footerProjects:"Home to VinMat.eu",
         footerPrivacy:"Privacy Policy", footerTerms:"Terms of Service",
         footerDisclaimer:"All downloads free for personal & educational use", footerContact:"Contact",
@@ -690,12 +691,12 @@ const slovnik = {
     },
     cz: {
         mainTitle:"VINMATŮV SVĚT PRO DĚTI", subTitle:"Ověřená bludiště, omalovánky a spojovačky pro okamžitou zábavu",
-        vse:"Vše", bludiste:"Bludiště", omalovanky:"Omalovánky", spojovacky:"Spojovačky", ageTitle:"Věk:",
+        vse:"Vše", bludiste:"Bludiště", omalovanky:"Omalovánky", spojovacky:"Spojovačky", obtahovacky:"Obtahovačky", ageTitle:"Věk:",
         noResults:"Pro tento výběr tu zatím nic nemáme.", variant:"Vyberte variantu",
         btnDownload:"📥 Stáhnout obrázek", btnPrint:"🖨️ Vytisknout rovnou",
         btnColor:"🌈 Barevná", btnBw:"◧ Černobílá", btnPartly:"🌗 Část. barvená",
         labelColor:"🌈 Barevná", labelBw:"◧ Černobílá", labelPartly:"🌗 Částečně barevná",
-        bludisteLabel:"BLUDIŠTĚ", omalovankyLabel:"OMALOVÁNKY", spojovackyLabel:"SPOJOVAČKY",
+        bludisteLabel:"BLUDIŠTĚ", omalovankyLabel:"OMALOVÁNKY", spojovackyLabel:"SPOJOVAČKY", obtahovackyLabel:"OBTAHOVAČKY",
         footerCopyright:"© 2026 Vyrobeno s ❤️ pro skvělé tvoření", footerProjects:"Domů na VinMat.eu",
         footerPrivacy:"Zásady ochrany osobních údajů", footerTerms:"Podmínky užití",
         footerDisclaimer:"Všechna stahování jsou zdarma pro osobní a vzdělávací účely", footerContact:"Kontakt",
@@ -851,6 +852,7 @@ document.getElementById('lang-to-cz-desktop').classList.toggle('hidden', jaz ===
     document.getElementById('lbl-nav-bludiste').innerText = s.bludiste;
     document.getElementById('lbl-nav-omalovanky').innerText= s.omalovanky;
     document.getElementById('lbl-nav-spojovacky').innerText= s.spojovacky;
+    document.getElementById('lbl-nav-obtahovacky').innerText= s.obtahovacky;
     document.getElementById('lbl-filter-age-title').innerText = s.ageTitle;
     document.getElementById('btn-vek-vse').innerText      = s.vse;
     document.getElementById('txt-no-results').innerText   = s.noResults;
@@ -983,7 +985,7 @@ function generujBarevnyText(text) {
 // ─── FILTRY ───────────────────────────────────────────────────────────────────
 function setTyp(typ) {
     aktualniTyp = typ;
-    ['vse','bludiste','omalovanky','spojovacky'].forEach(function(t) {
+    ['vse','bludiste','omalovanky','spojovacky','obtahovacky'].forEach(function(t) {
         document.getElementById('btn-'+t).className = t===typ
             ? "px-5 py-2 rounded-full text-sm font-bold bg-slate-900 text-white shadow-sm"
             : "px-5 py-2 rounded-full text-sm font-bold text-slate-600 bg-slate-100 hover:bg-slate-200";
@@ -1564,8 +1566,8 @@ async function tiskniAktualni(){
 // ─── INICIALIZACE ─────────────────────────────────────────────────────────────
 async function inicializujAplikaci(){
     try {
-        var b=await nactiCsvData('bludiste'), o=await nactiCsvData('omalovanky'), s=await nactiCsvData('spojovacky');
-        zparsovanaData=b.concat(o).concat(s);
+        var b=await nactiCsvData('bludiste'), o=await nactiCsvData('omalovanky'), s=await nactiCsvData('spojovacky'), t=await nactiCsvData('obtahovacky');
+        zparsovanaData=b.concat(o).concat(s).concat(t);
         // Jazyk: URL param > localStorage > default EN
         var urlP=new URLSearchParams(window.location.search);
         jaz='cz';
