@@ -344,6 +344,7 @@ function activityPage(activity, locale) {
             <div class="flex flex-col justify-between gap-6"><div><p class="text-xs font-bold text-slate-400 uppercase tracking-wider">${escapeHtml(config.cardType[activity.type])} · ${escapeHtml(activity.level)}</p><h1 class="mt-2 text-3xl font-extrabold text-slate-900">${escapeHtml(activity.names[locale])}</h1><p class="mt-4 text-slate-600 leading-relaxed">${escapeHtml(description)}</p></div><div class="space-y-3"><a class="block text-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-xl" href="${escapeHtml(imageBase(activity, variant))}.png" download>${escapeHtml(config.detailCta)}</a><button class="w-full bg-slate-800 hover:bg-slate-900 text-white font-bold py-3 px-4 rounded-xl" onclick="window.print()">${escapeHtml(config.detailPrint)}</button></div></div>
         </article>
     </main>
+    <script src="../../assets/js/site-navigation.js"></script>
 </body>
 </html>`;
 }
