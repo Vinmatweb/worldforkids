@@ -334,12 +334,21 @@ function updateGuideSeo(html, page, locale) {
     return html;
 }
 
+function setGuideLanguageLink(html, page, locale) {
+    const current = locale === 'en' ? page.cs : page.en;
+    const target = locale === 'en'
+        ? `${basePath}cs/${page.cs}`
+        : `${basePath}${page.en}`;
+    return html.replaceAll(`href="${current}"`, `href="${target}"`);
+}
+
 async function copyCzechGuides(sitemapUrls) {
     for (const page of guidePages) {
         const source = path.join(root, page.cs);
         try {
             let html = await readFile(source, 'utf8');
             html = updateGuideSeo(html, page, 'cs');
+            html = setGuideLanguageLink(html, page, 'cs');
             html = setBodyData(html, 'cs', page.key);
             html = injectNavigation(html, '../');
             await mkdir(path.join(root, 'cs'), { recursive: true });
@@ -358,6 +367,7 @@ async function updateEnglishGuides(sitemapUrls) {
         try {
             let html = await readFile(source, 'utf8');
             html = updateGuideSeo(html, page, 'en');
+            html = setGuideLanguageLink(html, page, 'en');
             html = setBodyData(html, 'en', page.key);
             html = injectNavigation(html, '');
             await writeFile(source, html);
