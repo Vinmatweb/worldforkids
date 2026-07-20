@@ -1,71 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
-  <!-- Hlavní stránka -->
-  <url>
-    <loc>https://vinmat.eu/worldforkids/</loc>
-    <lastmod>2026-07-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vinmat.eu/worldforkids/"/>
-    <xhtml:link rel="alternate" hreflang="cs" href="https://vinmat.eu/worldforkids/?lang=cz"/>
-  </url>
-
-  <!-- EN stránky -->
-  <url><loc>https://vinmat.eu/worldforkids/activity-guide.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vinmat.eu/worldforkids/activity-guide.html"/>
-    <xhtml:link rel="alternate" hreflang="cs" href="https://vinmat.eu/worldforkids/pruvodce-aktivitami.html"/>
-  </url>
-  <url><loc>https://vinmat.eu/worldforkids/maze-guide.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vinmat.eu/worldforkids/maze-guide.html"/>
-    <xhtml:link rel="alternate" hreflang="cs" href="https://vinmat.eu/worldforkids/pruvodce-bludiste.html"/>
-  </url>
-  <url><loc>https://vinmat.eu/worldforkids/coloring-guide.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vinmat.eu/worldforkids/coloring-guide.html"/>
-    <xhtml:link rel="alternate" hreflang="cs" href="https://vinmat.eu/worldforkids/pruvodce-omalovanky.html"/>
-  </url>
-  <url><loc>https://vinmat.eu/worldforkids/dot-to-dot-guide.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vinmat.eu/worldforkids/dot-to-dot-guide.html"/>
-    <xhtml:link rel="alternate" hreflang="cs" href="https://vinmat.eu/worldforkids/pruvodce-spojovacky.html"/>
-  </url>
-  <url><loc>https://vinmat.eu/worldforkids/difficulty-levels.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vinmat.eu/worldforkids/difficulty-levels.html"/>
-    <xhtml:link rel="alternate" hreflang="cs" href="https://vinmat.eu/worldforkids/urovne-obtiznosti.html"/>
-  </url>
-  <url><loc>https://vinmat.eu/worldforkids/our-story.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vinmat.eu/worldforkids/our-story.html"/>
-    <xhtml:link rel="alternate" hreflang="cs" href="https://vinmat.eu/worldforkids/nas-pribeh.html"/>
-  </url>
-  <url><loc>https://vinmat.eu/worldforkids/privacy.html</loc><lastmod>2026-07-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://vinmat.eu/worldforkids/terms.html</loc><lastmod>2026-07-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-
-  <!-- CZ stránky -->
-  <url><loc>https://vinmat.eu/worldforkids/pruvodce-aktivitami.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="cs" href="https://vinmat.eu/worldforkids/pruvodce-aktivitami.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vinmat.eu/worldforkids/activity-guide.html"/>
-  </url>
-  <url><loc>https://vinmat.eu/worldforkids/pruvodce-bludiste.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="cs" href="https://vinmat.eu/worldforkids/pruvodce-bludiste.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vinmat.eu/worldforkids/maze-guide.html"/>
-  </url>
-  <url><loc>https://vinmat.eu/worldforkids/pruvodce-omalovanky.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="cs" href="https://vinmat.eu/worldforkids/pruvodce-omalovanky.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vinmat.eu/worldforkids/coloring-guide.html"/>
-  </url>
-  <url><loc>https://vinmat.eu/worldforkids/pruvodce-spojovacky.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="cs" href="https://vinmat.eu/worldforkids/pruvodce-spojovacky.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vinmat.eu/worldforkids/dot-to-dot-guide.html"/>
-  </url>
-  <url><loc>https://vinmat.eu/worldforkids/urovne-obtiznosti.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="cs" href="https://vinmat.eu/worldforkids/urovne-obtiznosti.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vinmat.eu/worldforkids/difficulty-levels.html"/>
-  </url>
-  <url><loc>https://vinmat.eu/worldforkids/nas-pribeh.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="cs" href="https://vinmat.eu/worldforkids/nas-pribeh.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://vinmat.eu/worldforkids/our-story.html"/>
-  </url>
-  <url><loc>https://vinmat.eu/worldforkids/privacy-cz.html</loc><lastmod>2026-07-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://vinmat.eu/worldforkids/terms-cz.html</loc><lastmod>2026-07-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://vinmat.eu/worldforkids/</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/activities/coloring-baby-in-stroller-lv2.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/activities/coloring-baby-in-stroller.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/activities/coloring-dog-in-front-of-the-doghouse-lv2.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/activities/coloring-dog-in-front-of-the-doghouse.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/activities/coloring-freight-train.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/activities/coloring-hedgehog-under-an-apple-tree.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/activities/coloring-hedgehog.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/activities/coloring-snail.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/activities/coloring-space-rocket.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/activities/coloring-teddy-bear-lv2.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/activities/coloring-teddy-bear-lv3.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/activities/coloring-teddy-bear-lv4.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/activities/coloring-teddy-bear-lv5.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/activities/coloring-teddy-bear.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/activities/dot-to-dot-dog-in-front-of-the-doghouse-lv1.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/activities/dot-to-dot-dog-in-front-of-the-doghouse-lv2.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/activities/dot-to-dot-dog-in-front-of-the-doghouse.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/activities/dot-to-dot-hedgehog-under-an-apple-tree.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/activities/dot-to-dot-hedgehog.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/activities/dot-to-dot-snail.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/activities/dot-to-dot-space-rocket.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/activities/dot-to-dot-teddy-bear.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/activities/maze-ant.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/activities/maze-bee.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/activities/maze-bunny.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/activities/maze-piglet-looking-for-an-acorn-in-the-deep-forest.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/activities/maze-piglet-looking-for-an-acorn-in-the-forest.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/activities/maze-piglet-looking-for-an-acorn.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/activity-guide.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/coloring-guide.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/aktivity/bludiste-mravenec.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/aktivity/bludiste-prasatko-hleda-zalud-v-hlubokem-lese.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/aktivity/bludiste-prasatko-hleda-zalud-v-lese.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/aktivity/bludiste-prasatko-hleda-zalud.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/aktivity/bludiste-vcelka.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/aktivity/bludiste-zajicek.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/aktivity/omalovanka-jezek-pod-jabloni.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/aktivity/omalovanka-jezek.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/aktivity/omalovanka-medvidek-lv2.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/aktivity/omalovanka-medvidek-lv3.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/aktivity/omalovanka-medvidek-lv4.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/aktivity/omalovanka-medvidek-lv5.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/aktivity/omalovanka-medvidek.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/aktivity/omalovanka-miminko-v-kocarku-lv2.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/aktivity/omalovanka-miminko-v-kocarku.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/aktivity/omalovanka-nakladni-vlacek.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/aktivity/omalovanka-pejsek-pred-boudou-lv2.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/aktivity/omalovanka-pejsek-pred-boudou.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/aktivity/omalovanka-snek.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/aktivity/omalovanka-vesmirna-raketa.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/aktivity/spojovacka-jezek-pod-jabloni.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/aktivity/spojovacka-jezek.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/aktivity/spojovacka-medvidek.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/aktivity/spojovacka-pejsek-pred-boudou-lv1.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/aktivity/spojovacka-pejsek-pred-boudou-lv2.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/aktivity/spojovacka-pejsek-pred-boudou.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/aktivity/spojovacka-snek.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/aktivity/spojovacka-vesmirna-raketa.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/nas-pribeh.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/privacy-cz.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/pruvodce-aktivitami.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/pruvodce-bludiste.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/pruvodce-obtahovacky.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/pruvodce-omalovanky.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/pruvodce-spojovacky.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/terms-cz.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/cs/urovne-obtiznosti.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/difficulty-levels.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/dot-to-dot-guide.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/maze-guide.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/our-story.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/privacy.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/terms.html</loc></url>
+  <url><loc>https://vinmat.eu/worldforkids/tracing-guide.html</loc></url>
 </urlset>

@@ -230,8 +230,12 @@ function setBodyData(html, locale, routeKey) {
 function injectNavigation(html, assetPrefix) {
     const configScript = `<script src="${assetPrefix}assets/js/site-config.js"></script>`;
     const navigationScript = `<script src="${assetPrefix}assets/js/site-navigation.js"></script>`;
-    if (!html.includes('site-config.js')) html = html.replace('</head>', `    ${configScript}\n</head>`);
-    if (!html.includes('site-navigation.js')) html = html.replace('</body>', `    ${navigationScript}\n</body>`);
+    // Při výrobě lokalizované kopie se nesmí převzít relativní cesta EN verze.
+    html = html
+        .replace(/\s*<script src="(?:\.\.\/)?assets\/js\/site-config\.js"><\/script>/g, '')
+        .replace(/\s*<script src="(?:\.\.\/)?assets\/js\/site-navigation\.js"><\/script>/g, '');
+    html = html.replace('</head>', `    ${configScript}\n</head>`);
+    html = html.replace('</body>', `    ${navigationScript}\n</body>`);
     return html;
 }
 
