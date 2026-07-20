@@ -230,6 +230,12 @@ function setBodyData(html, locale, routeKey) {
     });
 }
 
+function insertBeforeFinalBodyClose(html, content) {
+    const position = html.toLowerCase().lastIndexOf('</body>');
+    if (position === -1) throw new Error('Closing body tag was not found.');
+    return `${html.slice(0, position)}${content}${html.slice(position)}`;
+}
+
 function injectNavigation(html, assetPrefix) {
     const configScript = `<script src="${assetPrefix}assets/js/site-config.js"></script>`;
     const navigationScript = `<script src="${assetPrefix}assets/js/site-navigation.js"></script>`;
@@ -238,8 +244,7 @@ function injectNavigation(html, assetPrefix) {
         .replace(/\s*<script src="(?:\.\.\/)?assets\/js\/site-config\.js"><\/script>/g, '')
         .replace(/\s*<script src="(?:\.\.\/)?assets\/js\/site-navigation\.js"><\/script>/g, '');
     html = html.replace('</head>', `    ${configScript}\n</head>`);
-    html = html.replace('</body>', `    ${navigationScript}\n</body>`);
-    return html;
+    return insertBeforeFinalBodyClose(html, `    ${navigationScript}\n`);
 }
 
 function setIndexSeo(html, locale) {
@@ -418,7 +423,7 @@ function setGuideLanguageLink(html, page, locale) {
 function ensureContactHelper(html) {
     if (!html.includes('onclick="kopirujProjektovyEmail()"') || /function\s+kopirujProjektovyEmail\s*\(/.test(html)) return html;
     const helper = `<script>function kopirujProjektovyEmail(){const emailAdresa='vinmatforkids@gmail.com';const statusLabel=document.getElementById('kopirovan-status');navigator.clipboard.writeText(emailAdresa).then(()=>{if(!statusLabel)return;statusLabel.textContent='(e-mail zkopírován)';statusLabel.classList.remove('opacity-0');setTimeout(()=>statusLabel.classList.add('opacity-0'),1800);});}</script>`;
-    return html.replace('</body>', `    ${helper}\n</body>`);
+    return insertBeforeFinalBodyClose(html, `    ${helper}\n`);
 }
 
 async function copyCzechGuides(sitemapUrls) {
