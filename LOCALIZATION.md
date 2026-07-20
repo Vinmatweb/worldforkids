@@ -25,6 +25,14 @@ Skript automaticky vytvoří nebo aktualizuje:
 
 GitHub Actions provede stejný krok automaticky po změně CSV nebo generátoru.
 
+## Kontrola obsahu
+
+Příkaz `npm run validate:content` vytvoří v kořeni `content-check.html`.
+Stránka je označená `noindex` a po každém nahrání CSV nebo obrázků ji GitHub
+Actions automaticky obnoví. Kontroluje strukturu CSV, překlady slovníků,
+pojmenování nových jazykových obrázků, jejich PNG/WebP dvojice a metadata
+vyžadovaná pro jazyk a variantu konkrétního obrázku.
+
 ## Připravená struktura obrázků
 
 Jazykové složky jsou už založené pro `en`, `cs`, `de` a `es` v každé kategorii.

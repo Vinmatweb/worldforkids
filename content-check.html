@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Kontrola obsahu | VinMat’s World for Kids</title>
+  <style>
+    :root { color-scheme: light; --ink:#172033; --muted:#667085; --line:#e5e7eb; --bg:#f7f8fc; }
+    * { box-sizing:border-box; } body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    main { max-width:1040px; margin:0 auto; padding:40px 20px 72px; } h1 { margin:0; font-size:clamp(28px,5vw,44px); line-height:1.1; } .intro { color:var(--muted); margin:12px 0 28px; max-width:760px; }
+    .counts { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-bottom:28px; } .count { border-radius:16px; padding:18px; background:white; border:1px solid var(--line); display:flex; gap:9px; align-items:baseline; } .count strong { font-size:28px; } .count span { color:var(--muted); text-transform:uppercase; font-size:11px; font-weight:800; letter-spacing:.06em; }
+    .count.error { border-color:#fecaca; } .count.warning { border-color:#fde68a; } .count.info { border-color:#bfdbfe; }
+    .item,.empty { display:flex; gap:14px; background:white; border:1px solid var(--line); border-left-width:5px; border-radius:12px; padding:16px 18px; margin:10px 0; } .item.error { border-left-color:#ef4444; } .item.warning { border-left-color:#f59e0b; } .item.info { border-left-color:#3b82f6; } .badge { flex:0 0 auto; height:max-content; border-radius:99px; padding:3px 8px; background:#eef2ff; color:#3730a3; font-size:11px; font-weight:800; text-transform:uppercase; } h2 { margin:0; font-size:16px; } p { margin:4px 0 0; color:#475467; white-space:pre-wrap; } footer { color:var(--muted); font-size:13px; margin-top:28px; }
+    @media (max-width:560px) { .counts { grid-template-columns:1fr; } main { padding-top:28px; } }
+  </style>
+</head>
+<body><main>
+  <h1>Kontrola obsahu</h1>
+  <p class="intro">Automaticky vytvořeno z aktuální verze obsahu. Kontrola neblokuje zveřejnění webu; ukazuje, co je potřeba doplnit.</p>
+  <section class="counts" aria-label="Souhrn"><div class="count error"><strong>0</strong><span>chyb</span></div><div class="count warning"><strong>0</strong><span>upozornění</span></div><div class="count info"><strong>1</strong><span>informací</span></div></section>
+  <section aria-label="Výsledky"><article class="item info"><span class="badge">Informace</span><div><h2>Dosavadní obrázky</h2><p>70 souborů ještě používá původní strukturu bez jazykového kódu. Nejde o chybu; budou převedeny při vytváření lokalizovaných verzí.</p></div></article></section>
+  <footer>Kontroluje CSV, slovníky, nové lokalizované PNG/WebP soubory a jejich metadata. Stávající soubory bez jazykového kódu jsou vedeny jako dosavadní struktura, nikoli jako chyba.</footer>
+</main></body></html>

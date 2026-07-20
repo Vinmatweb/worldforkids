@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build:static": "node scripts/build-static-site.mjs"
+    "build:static": "node scripts/build-static-site.mjs",
+    "validate:content": "node scripts/validate-content.mjs"
   }
 }
