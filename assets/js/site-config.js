@@ -11,13 +11,14 @@
 
     var routes = {
         home: { en: '', cs: '' },
-        activityGuide: { en: 'activity-guide.html', cs: 'pruvodce-aktivitami.html' },
+        activityGuide: { en: 'guide-activities.html', cs: 'pruvodce-aktivitami.html' },
         difficultyLevels: { en: 'difficulty-levels.html', cs: 'urovne-obtiznosti.html' },
         ourStory: { en: 'our-story.html', cs: 'nas-pribeh.html' },
-        mazeGuide: { en: 'maze-guide.html', cs: 'pruvodce-bludiste.html' },
-        coloringGuide: { en: 'coloring-guide.html', cs: 'pruvodce-omalovanky.html' },
-        dotToDotGuide: { en: 'dot-to-dot-guide.html', cs: 'pruvodce-spojovacky.html' },
-        tracingGuide: { en: 'tracing-guide.html', cs: 'pruvodce-obtahovacky.html' },
+        mazeGuide: { en: 'guide-mazes.html', cs: 'pruvodce-bludiste.html' },
+        coloringGuide: { en: 'guide-coloring.html', cs: 'pruvodce-omalovanky.html' },
+        dotToDotGuide: { en: 'guide-dot-to-dot.html', cs: 'pruvodce-spojovacky.html' },
+        tracingGuide: { en: 'guide-tracing.html', cs: 'pruvodce-obtahovacky.html' },
+        tracingHistory: { en: 'history-tracing.html', cs: 'historie-obkreslovani.html' },
         privacy: { en: 'privacy.html', cs: 'zasady-ochrany-osobnich-udaju.html' },
         terms: { en: 'terms.html', cs: 'podminky-uziti.html' }
     };

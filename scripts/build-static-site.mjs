@@ -45,13 +45,14 @@ const languages = {
 };
 
 const guidePages = [
-    { key: 'activityGuide', en: 'activity-guide.html', cs: 'pruvodce-aktivitami.html' },
+    { key: 'activityGuide', en: 'guide-activities.html', cs: 'pruvodce-aktivitami.html' },
     { key: 'difficultyLevels', en: 'difficulty-levels.html', cs: 'urovne-obtiznosti.html' },
     { key: 'ourStory', en: 'our-story.html', cs: 'nas-pribeh.html' },
-    { key: 'mazeGuide', en: 'maze-guide.html', cs: 'pruvodce-bludiste.html' },
-    { key: 'coloringGuide', en: 'coloring-guide.html', cs: 'pruvodce-omalovanky.html' },
-    { key: 'dotToDotGuide', en: 'dot-to-dot-guide.html', cs: 'pruvodce-spojovacky.html' },
-    { key: 'tracingGuide', en: 'tracing-guide.html', cs: 'pruvodce-obtahovacky.html' },
+    { key: 'mazeGuide', en: 'guide-mazes.html', cs: 'pruvodce-bludiste.html' },
+    { key: 'coloringGuide', en: 'guide-coloring.html', cs: 'pruvodce-omalovanky.html' },
+    { key: 'dotToDotGuide', en: 'guide-dot-to-dot.html', cs: 'pruvodce-spojovacky.html' },
+    { key: 'tracingGuide', en: 'guide-tracing.html', cs: 'pruvodce-obtahovacky.html' },
+    { key: 'tracingHistory', en: 'history-tracing.html', cs: 'historie-obkreslovani.html' },
     { key: 'privacy', en: 'privacy.html', cs: 'zasady-ochrany-osobnich-udaju.html' },
     { key: 'terms', en: 'terms.html', cs: 'podminky-uziti.html' }
 ];
@@ -348,12 +349,53 @@ function updateGuideSeo(html, page, locale) {
     const enUrl = `${siteUrl}${page.en}`;
     const csUrl = `${siteUrl}cs/${page.cs}`;
     html = html.replace(/<html lang="[^"]*">/i, `<html lang="${languages[locale].htmlLang}">`);
-    html = html.replace(/<link rel="canonical" href="[^"]*">/i, `<link rel="canonical" href="${ownUrl}">`);
-    html = html.replace(/<link rel="alternate" hreflang="en" href="[^"]*">/i, `<link rel="alternate" hreflang="en" href="${enUrl}">`);
-    html = html.replace(/<link rel="alternate" hreflang="cs" href="[^"]*">/i, `<link rel="alternate" hreflang="cs" href="${csUrl}">`);
-    html = html.replace(/<link rel="alternate" hreflang="x-default" href="[^"]*">/i, `<link rel="alternate" hreflang="x-default" href="${enUrl}">`);
-    html = html.replace(/(<meta property="og:url" content=")[^"]*(">)/i, `$1${ownUrl}$2`);
+    const setHeadTag = (pattern, tag) => pattern.test(html)
+        ? html.replace(pattern, tag)
+        : html.replace('</head>', `    ${tag}\n</head>`);
+    html = setHeadTag(/<link\s+rel="canonical"\s+href="[^"]*"\s*\/?\s*>/i, `<link rel="canonical" href="${ownUrl}">`);
+    html = setHeadTag(/<link\s+rel="alternate"\s+hreflang="en"\s+href="[^"]*"\s*\/?\s*>/i, `<link rel="alternate" hreflang="en" href="${enUrl}">`);
+    html = setHeadTag(/<link\s+rel="alternate"\s+hreflang="cs"\s+href="[^"]*"\s*\/?\s*>/i, `<link rel="alternate" hreflang="cs" href="${csUrl}">`);
+    html = setHeadTag(/<link\s+rel="alternate"\s+hreflang="x-default"\s+href="[^"]*"\s*\/?\s*>/i, `<link rel="alternate" hreflang="x-default" href="${enUrl}">`);
+    const title = html.match(/<title>([\s\S]*?)<\/title>/i)?.[1] || "VinMat's World for Kids";
+    const description = html.match(/<meta\s+name="description"\s+content="([^"]*)"\s*\/?\s*>/i)?.[1] || '';
+    const ogType = ['privacy', 'terms'].includes(page.key) ? 'website' : 'article';
+    html = setHeadTag(/<meta\s+property="og:title"\s+content="[^"]*"\s*\/?\s*>/i, `<meta property="og:title" content="${title}">`);
+    html = setHeadTag(/<meta\s+property="og:description"\s+content="[^"]*"\s*\/?\s*>/i, `<meta property="og:description" content="${description}">`);
+    html = setHeadTag(/<meta\s+property="og:type"\s+content="[^"]*"\s*\/?\s*>/i, `<meta property="og:type" content="${ogType}">`);
+    html = setHeadTag(/<meta\s+property="og:url"\s+content="[^"]*"\s*\/?\s*>/i, `<meta property="og:url" content="${ownUrl}">`);
+    html = setHeadTag(/<meta\s+property="og:locale"\s+content="[^"]*"\s*\/?\s*>/i, `<meta property="og:locale" content="${languages[locale].ogLocale}">`);
+    if (!html.includes('assets/favicon/favicon.svg')) {
+        html = html.replace('</head>', `    <link rel="icon" type="image/svg+xml" href="${basePath}assets/favicon/favicon.svg">\n    <link rel="icon" type="image/png" sizes="96x96" href="${basePath}assets/favicon/favicon-96x96.png">\n    <link rel="apple-touch-icon" href="${basePath}assets/favicon/apple-touch-icon.png">\n    <link rel="manifest" href="${basePath}assets/favicon/site.webmanifest">\n</head>`);
+    }
     html = html.replace(/("url":\s*")[^"]*(")/i, `$1${ownUrl}$2`);
+    return html;
+}
+
+function deduplicateTrackingScripts(html) {
+    const keepFirst = (pattern) => {
+        let found = false;
+        return html.replace(pattern, (match) => {
+            if (found) return '';
+            found = true;
+            return match;
+        });
+    };
+    html = keepFirst(/<script\b[^>]*\bsrc="https:\/\/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js[^\"]*"[^>]*>\s*<\/script>/gi);
+    html = keepFirst(/<script\b[^>]*\bsrc="https:\/\/www\.googletagmanager\.com\/gtag\/js\?id=[^\"]+"[^>]*>\s*<\/script>/gi);
+    return keepFirst(/<script>\s*window\.dataLayer = window\.dataLayer \|\| \[\];\s*function gtag\(\)\{dataLayer\.push\(arguments\);\}\s*gtag\('js', new Date\(\)\);\s*gtag\('config', '[^']+'\);\s*<\/script>/gi);
+}
+
+function setGuideRouteLinks(html) {
+    const renamedEnglishGuides = {
+        'activity-guide.html': 'guide-activities.html',
+        'maze-guide.html': 'guide-mazes.html',
+        'coloring-guide.html': 'guide-coloring.html',
+        'dot-to-dot-guide.html': 'guide-dot-to-dot.html',
+        'tracing-guide.html': 'guide-tracing.html'
+    };
+    for (const [oldRoute, newRoute] of Object.entries(renamedEnglishGuides)) {
+        html = html.replaceAll(oldRoute, newRoute);
+    }
     return html;
 }
 
@@ -366,10 +408,17 @@ function setGuideLanguageLink(html, page, locale) {
     const target = locale === 'en'
         ? `${basePath}cs/${page.cs}`
         : `${basePath}${page.en}`;
-    return html
+    html = html
         .replaceAll(`href="${current}"`, `href="${target}"`)
         .replaceAll(`href="${basePath}cs/${current}"`, `href="${target}"`)
         .replaceAll(`href="${basePath}cs/${legacyCzechPath}"`, `href="${target}"`);
+    return html.replace(/(<a\b[^>]*\bhref=")[^"]*("[^>]*>\s*(?:CZ|EN)\s*<\/a>)/gi, `$1${target}$2`);
+}
+
+function ensureContactHelper(html) {
+    if (!html.includes('onclick="kopirujProjektovyEmail()"') || /function\s+kopirujProjektovyEmail\s*\(/.test(html)) return html;
+    const helper = `<script>function kopirujProjektovyEmail(){const emailAdresa='vinmatforkids@gmail.com';const statusLabel=document.getElementById('kopirovan-status');navigator.clipboard.writeText(emailAdresa).then(()=>{if(!statusLabel)return;statusLabel.textContent='(e-mail zkopírován)';statusLabel.classList.remove('opacity-0');setTimeout(()=>statusLabel.classList.add('opacity-0'),1800);});}</script>`;
+    return html.replace('</body>', `    ${helper}\n</body>`);
 }
 
 async function copyCzechGuides(sitemapUrls) {
@@ -377,11 +426,14 @@ async function copyCzechGuides(sitemapUrls) {
         const source = path.join(root, 'cs', page.cs);
         try {
             let html = await readFile(source, 'utf8');
+            html = deduplicateTrackingScripts(html);
             html = updateGuideSeo(html, page, 'cs');
+            html = setGuideRouteLinks(html);
             html = setGuideLanguageLink(html, page, 'cs');
             html = updateCzechInternalLinks(html);
             html = setBodyData(html, 'cs', page.key);
             html = injectNavigation(html, '../');
+            html = ensureContactHelper(html);
             await writeFile(source, html);
             sitemapUrls.add(`${siteUrl}cs/${page.cs}`);
         } catch (error) {
@@ -396,10 +448,13 @@ async function updateEnglishGuides(sitemapUrls) {
         const source = path.join(root, page.en);
         try {
             let html = await readFile(source, 'utf8');
+            html = deduplicateTrackingScripts(html);
             html = updateGuideSeo(html, page, 'en');
+            html = setGuideRouteLinks(html);
             html = setGuideLanguageLink(html, page, 'en');
             html = setBodyData(html, 'en', page.key);
             html = injectNavigation(html, '');
+            html = ensureContactHelper(html);
             await writeFile(source, html);
             sitemapUrls.add(`${siteUrl}${page.en}`);
         } catch (error) {
@@ -424,6 +479,7 @@ async function build() {
     englishIndex = setCatalog(englishIndex, staticCatalog(activities, 'en'));
     englishIndex = setIndexSeo(englishIndex, 'en');
     englishIndex = setIndexLocale(englishIndex, 'en');
+    englishIndex = setGuideRouteLinks(englishIndex);
     englishIndex = updateCzechInternalLinks(englishIndex);
     englishIndex = setBodyData(englishIndex, 'en', 'home');
     englishIndex = injectNavigation(englishIndex, '');

@@ -6,8 +6,8 @@ Skript sjednotí hlavičky všech EN a CZ stránek.
 
 ### Aktuální vzorové soubory
 
-- EN hlavička: `dot-to-dot-guide.html`
-- CZ hlavička: `pruvodce-spojovacky.html`
+- EN hlavička: `guide-dot-to-dot.html`
+- CZ hlavička: `cs/pruvodce-spojovacky.html`
 
 Skript kopíruje pouze blok mezi:
 
@@ -46,30 +46,30 @@ V souboru `update-headers.ps1` doplň stejnou dvojici do obou map:
 
 ```powershell
 $enTargets = @{
-    "tracing-guide.html" = "pruvodce-obtahovacky.html"
+    "guide-tracing.html" = "/worldforkids/cs/pruvodce-obtahovacky.html"
 }
 
 $czTargets = @{
-    "pruvodce-obtahovacky.html" = "tracing-guide.html"
+    "cs/pruvodce-obtahovacky.html" = "/worldforkids/guide-tracing.html"
 }
 ```
 
-Aktuálně je dvojice obtahovaček už ve skriptu připravená. Pokud `tracing-guide.html` ještě neexistuje, skript jej pouze přeskočí.
+Aktuálně je dvojice obtahovaček už ve skriptu připravená. Pokud `guide-tracing.html` ještě neexistuje, skript jej pouze přeskočí.
 
 ### Budoucí změna vzorových souborů
 
 Až budou jako vzor sloužit průvodci aktivitami, změň nahoře pouze:
 
 ```powershell
-$enSource = "activity-guide.html"
-$czSource = "pruvodce-aktivitami.html"
+$enSource = "guide-activities.html"
+$czSource = "cs/pruvodce-aktivitami.html"
 ```
 
 Současně změň odkazy ve dvou voláních `Update-HeaderGroup`:
 
 ```powershell
 -SourceLanguageLink "pruvodce-aktivitami.html"
--SourceLanguageLink "activity-guide.html"
+-SourceLanguageLink "/worldforkids/guide-activities.html"
 ```
 
 ### Doporučený postup

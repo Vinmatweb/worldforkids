@@ -2,29 +2,31 @@ $ErrorActionPreference = "Stop"
 
 $projectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
 
-$enSource = "dot-to-dot-guide.html"
-$czSource = "pruvodce-spojovacky.html"
+$enSource = "guide-dot-to-dot.html"
+$czSource = "cs/pruvodce-spojovacky.html"
 
 $enTargets = @{
-    "activity-guide.html"    = "pruvodce-aktivitami.html"
-    "maze-guide.html"        = "pruvodce-bludiste.html"
-    "coloring-guide.html"    = "pruvodce-omalovanky.html"
-    "difficulty-levels.html" = "urovne-obtiznosti.html"
-    "our-story.html"         = "nas-pribeh.html"
-    "privacy.html"           = "privacy-cz.html"
-    "terms.html"             = "terms-cz.html"
-    "tracing-guide.html"     = "pruvodce-obtahovacky.html"
+    "guide-activities.html"  = "/worldforkids/cs/pruvodce-aktivitami.html"
+    "guide-mazes.html"       = "/worldforkids/cs/pruvodce-bludiste.html"
+    "guide-coloring.html"    = "/worldforkids/cs/pruvodce-omalovanky.html"
+    "difficulty-levels.html" = "/worldforkids/cs/urovne-obtiznosti.html"
+    "our-story.html"         = "/worldforkids/cs/nas-pribeh.html"
+    "privacy.html"           = "/worldforkids/cs/zasady-ochrany-osobnich-udaju.html"
+    "terms.html"             = "/worldforkids/cs/podminky-uziti.html"
+    "guide-tracing.html"     = "/worldforkids/cs/pruvodce-obtahovacky.html"
+    "history-tracing.html"   = "/worldforkids/cs/historie-obkreslovani.html"
 }
 
 $czTargets = @{
-    "pruvodce-aktivitami.html"  = "activity-guide.html"
-    "pruvodce-bludiste.html"    = "maze-guide.html"
-    "pruvodce-omalovanky.html"  = "coloring-guide.html"
-    "urovne-obtiznosti.html"    = "difficulty-levels.html"
-    "nas-pribeh.html"           = "our-story.html"
-    "privacy-cz.html"           = "privacy.html"
-    "terms-cz.html"             = "terms.html"
-    "pruvodce-obtahovacky.html" = "tracing-guide.html"
+    "cs/pruvodce-aktivitami.html"          = "/worldforkids/guide-activities.html"
+    "cs/pruvodce-bludiste.html"            = "/worldforkids/guide-mazes.html"
+    "cs/pruvodce-omalovanky.html"          = "/worldforkids/guide-coloring.html"
+    "cs/urovne-obtiznosti.html"            = "/worldforkids/difficulty-levels.html"
+    "cs/nas-pribeh.html"                   = "/worldforkids/our-story.html"
+    "cs/zasady-ochrany-osobnich-udaju.html" = "/worldforkids/privacy.html"
+    "cs/podminky-uziti.html"               = "/worldforkids/terms.html"
+    "cs/pruvodce-obtahovacky.html"         = "/worldforkids/guide-tracing.html"
+    "cs/historie-obkreslovani.html"        = "/worldforkids/history-tracing.html"
 }
 
 $startMarker = "<!-- HEADER START -->"
@@ -112,7 +114,9 @@ function Update-HeaderGroup {
             $languageTarget
         )
 
-        Copy-Item $targetPath (Join-Path $BackupDir $targetName) -Force
+        $backupPath = Join-Path $BackupDir $targetName
+        New-Item -ItemType Directory -Path (Split-Path $backupPath -Parent) -Force | Out-Null
+        Copy-Item $targetPath $backupPath -Force
 
         $newContent =
             $content.Substring(0, $start) +
@@ -137,14 +141,14 @@ New-Item -ItemType Directory -Path $backupDir | Out-Null
 Update-HeaderGroup `
     -SourceName $enSource `
     -Targets $enTargets `
-    -SourceLanguageLink "pruvodce-spojovacky.html" `
+    -SourceLanguageLink "/worldforkids/cs/pruvodce-spojovacky.html" `
     -GroupLabel "EN" `
     -BackupDir $backupDir
 
 Update-HeaderGroup `
     -SourceName $czSource `
     -Targets $czTargets `
-    -SourceLanguageLink "dot-to-dot-guide.html" `
+    -SourceLanguageLink "/worldforkids/guide-dot-to-dot.html" `
     -GroupLabel "CZ" `
     -BackupDir $backupDir
 
