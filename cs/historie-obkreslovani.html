@@ -170,268 +170,190 @@
             </div>
 
             <a href="/worldforkids/history-tracing.html"
-               class="hover:text-ambgm�ۛh��춻�q�^wcontent=")[^"]*(">)/i, `$1${canonical}$2`);
-    html = html.replace(/(<meta\s+property="og:locale"\s+content=")[^"]*(">)/i, `$1${config.ogLocale}$2`);
-    return html;
-}
+               class="hover:text-amber-400 transition-colors font-bold">
+                EN
+            </a>
+        </div>
 
-function localizeIndexPaths(html) {
-    return html
-        .replace('src="translations.js"', 'src="../translations.js"')
-        .replaceAll("fetch('assets/", "fetch('../assets/")
-        .replaceAll("'public/", "'../public/")
-        .replaceAll("url('assets/", "url('../assets/")
-        .replaceAll('url("assets/', 'url("../assets/');
-}
+    </div>
+</div>
+<!-- HEADER END -->
 
-function updateCzechInternalLinks(html) {
-    return html
-        .replaceAll('href="privacy-cz.html"', 'href="zasady-ochrany-osobnich-udaju.html"')
-        .replaceAll('href="terms-cz.html"', 'href="podminky-uziti.html"')
-        .replaceAll("jaz==='cz' ? 'privacy-cz.html'", "jaz==='cz' ? 'zasady-ochrany-osobnich-udaju.html'")
-        .replaceAll("jaz==='cz' ? 'terms-cz.html'", "jaz==='cz' ? 'podminky-uziti.html'");
-}
+<main class="max-w-4xl w-full mx-auto px-4 py-12 flex-grow space-y-12">
 
-function setIndexLocale(html, locale) {
-    return html
-        // Jazyk určuje URL, ne dřívější volba uložená v prohlížeči.
-        .replace(
-            /jaz=(?:urlP\.get\('lang'\)\|\|localStorage\.getItem\('vinmat_lang'\)\|\|'en'|'(?:en|cz)');/,
-            `jaz='${locale}';`
-        )
-        // Lokalizovaná adresa už nepotřebuje ani nesmí znovu vytvářet ?lang=cz.
-        .replace("    if (jaz!=='en') params.set('lang', jaz);\n", '');
-}
+  <!-- Nadpis -->
+  <section class="text-center space-y-3">
+	<div class="text-xs font-bold text-slate-400 uppercase tracking-widest"><a href="pruvodce-obtahovacky.html" class="hover:text-indigo-500 transition-colors">Průvodce obtahovačkami →</a></div>
+    <h1 class="text-4xl font-extrabold text-slate-900 uppercase tracking-tight">Historie obkreslování</h1>
+    <p class="text-sm text-slate-600 max-w-2xl mx-auto leading-relaxed font-medium">Od egyptských přípravných kreseb přes renesanční kartony Michelangela a Raffaela, průhledný papír 19. století až po dnešní tisknutelné pracovní listy — jak se technika vedení čáry podle předlohy dostala k dětem domů.</p>
+  </section>
 
-function activityPage(activity, locale) {
-    const config = languages[locale];
-    const variant = primaryVariant(activity);
-    const title = `${config.detailPrefix}: ${activity.names[locale]} | VinMat`;
-    const description = activity.alt[locale][variant] || activity.names[locale];
-    const canonical = activityUrl(activity, locale);
-    const alternateLocale = locale === 'en' ? 'cs' : 'en';
-    const alternate = activityUrl(activity, alternateLocale);
-    // Open Graph a schema vyžadují plnou veřejnou URL, ne relativní cestu.
-    const image = absoluteUrl(`${imageBase(activity, variant)}.webp`);
-    const home = `${basePath}${languages[locale].output ? `${languages[locale].output}/` : ''}`;
-    const jsonLd = {
-        '@context': 'https://schema.org',
-        '@type': 'LearningResource',
-        name: activity.names[locale],
-        description,
-        url: canonical,
-        image,
-        inLanguage: config.activitySchemaLanguage,
-        isAccessibleForFree: true,
-        learningResourceType: config.cardType[activity.type],
-        educationalLevel: activity.level
-    };
+  <!-- Obsah -->
+  <section class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm">
+    <h2 class="text-md font-extrabold text-slate-900 uppercase tracking-tight border-b border-slate-100 pb-2 mb-4">Obsah článku</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-bold">
+      <a href="#egypt" class="bg-slate-50 px-4 py-2.5 rounded-xl border border-slate-100 text-slate-700 hover:bg-indigo-50 hover:text-indigo-600 transition-colors">🏛️ Starověký Egypt a mřížkování</a>
+      <a href="#renesance" class="bg-slate-50 px-4 py-2.5 rounded-xl border border-slate-100 text-slate-700 hover:bg-indigo-50 hover:text-indigo-600 transition-colors">🎨 Renesanční kartony a propichování</a>
+      <a href="#pruhledny-papir" class="bg-slate-50 px-4 py-2.5 rounded-xl border border-slate-100 text-slate-700 hover:bg-indigo-50 hover:text-indigo-600 transition-colors">📄 Vznik průhledného papíru (1809)</a>
+      <a href="#19-stoleti" class="bg-slate-50 px-4 py-2.5 rounded-xl border border-slate-100 text-slate-700 hover:bg-indigo-50 hover:text-indigo-600 transition-colors">🏗️ Architekti a průmyslové využití</a>
+      <a href="#deti" class="bg-slate-50 px-4 py-2.5 rounded-xl border border-slate-100 text-slate-700 hover:bg-indigo-50 hover:text-indigo-600 transition-colors">👶 Cesta ke školním pracovním listům</a>
+      <a href="#dnes" class="bg-slate-50 px-4 py-2.5 rounded-xl border border-slate-100 text-slate-700 hover:bg-indigo-50 hover:text-indigo-600 transition-colors">💻 Digitální tisknutelné listy dnes</a>
+      <a href="#zdroje" class="bg-slate-50 px-4 py-2.5 rounded-xl border border-slate-100 text-slate-700 hover:bg-indigo-50 hover:text-indigo-600 transition-colors">📚 Zdroje a literatura</a>
+    </div>
+  </section>
 
-    return `<!doctype html>
-<html lang="${config.htmlLang}">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${escapeHtml(title)}</title>
-    <meta name="description" content="${escapeHtml(description)}">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="${canonical}">
-    <link rel="alternate" hreflang="en" href="${activityUrl(activity, 'en')}">
-    <link rel="alternate" hreflang="cs" href="${activityUrl(activity, 'cs')}">
-    <link rel="alternate" hreflang="x-default" href="${activityUrl(activity, 'en')}">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="${escapeHtml(title)}">
-    <meta property="og:description" content="${escapeHtml(description)}">
-    <meta property="og:url" content="${canonical}">
-    <meta property="og:image" content="${escapeHtml(image)}">
-    <meta property="og:locale" content="${config.ogLocale}">
-    <link rel="icon" type="image/svg+xml" href="${basePath}assets/favicon/favicon.svg">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
-</head>
-<body class="bg-slate-50 text-slate-800 min-h-screen" data-locale="${locale}" data-route-key="activity">
-    <header class="bg-slate-900 text-white text-sm py-3 px-4"><div class="max-w-5xl mx-auto flex items-center justify-between gap-3"><a class="font-bold hover:text-amber-300" href="${home}">VinMat's World for Kids</a><nav class="flex gap-3"><a href="${activityUrl(activity, 'en')}" ${locale === 'en' ? 'aria-current="page"' : ''}>EN</a><a href="${activityUrl(activity, 'cs')}" ${locale === 'cs' ? 'aria-current="page"' : ''}>CZ</a></nav></div></header>
-    <main class="max-w-5xl mx-auto px-4 py-8">
-        <a class="text-sm font-bold text-indigo-700 hover:underline" href="${home}">${escapeHtml(config.detailBack)}</a>
-        <article class="mt-5 grid gap-7 md:grid-cols-[minmax(0,3fr)_minmax(240px,2fr)] bg-white rounded-3xl border border-slate-100 shadow-sm p-5 md:p-8">
-            <div class="bg-slate-50 rounded-2xl p-4 flex items-center justify-center">${picture(activity, locale, variant, 'max-w-full max-h-[70vh] object-contain')}</div>
-            <div class="flex flex-col justify-between gap-6"><div><p class="text-xs font-bold text-slate-400 uppercase tracking-wider">${escapeHtml(config.cardType[activity.type])} · ${escapeHtml(activity.level)}</p><h1 class="mt-2 text-3xl font-extrabold text-slate-900">${escapeHtml(activity.names[locale])}</h1><p class="mt-4 text-slate-600 leading-relaxed">${escapeHtml(description)}</p></div><div class="space-y-3"><a class="block text-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-xl" href="${escapeHtml(imageBase(activity, variant))}.png" download>${escapeHtml(config.detailCta)}</a><button class="w-full bg-slate-800 hover:bg-slate-900 text-white font-bold py-3 px-4 rounded-xl" onclick="window.print()">${escapeHtml(config.detailPrint)}</button></div></div>
-        </article>
-    </main>
-    <script src="../../assets/js/site-navigation.js"></script>
+  <!-- 1. Egypt -->
+  <section id="egypt" class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm space-y-4 text-sm text-slate-600 leading-relaxed font-medium">
+    <h2 class="text-2xl font-bold text-slate-900 uppercase tracking-wide">🏛️ Starověký Egypt: mřížkování před 5 000 lety</h2>
+    <p>Přesné vedení linie podle předlohy není moderní vynález. Historici doložili, že technika zvaná <strong>„squaring up" (mřížkování)</strong> byla v Egyptě používána minimálně před 5 000 lety. Umělci nejprve nakreslili malou předlohu, tu překryli pravidelnou mřížkou a stejnou mřížku — zvětšenou v požadovaném poměru — nanesli na stěnu. Výsledná freska nebo reliéf tak přesně odpovídala původnímu návrhu.</p>
+    <p>Tato metoda nevyžaduje průhledný materiál ani komplikované pomůcky — stačí tužka, pravítko a základní počítání. Přesto jde o přímého předchůdce moderního obkreslování: tvůrce sleduje předlohu a ruku vede přesně definovanou trasou.</p>
+    <div class="bg-amber-50 border border-amber-100 rounded-2xl p-5">
+      <h3 class="font-bold text-amber-950 mb-1">📌 Ověřený fakt</h3>
+      <p class="text-xs text-amber-900">Techniku mřížkování popisuje Royal Academy of Arts jako jednu z nejstarších přenosových metod v historii umění, doloženou nejméně 5 000 let zpátky. Egyptské malby, zejména v hrobkách, vykazují pravidelné rastry, které svědčí o systematickém přenášení kompozice ve zvoleném měřítku.</p>
+      <p class="text-xs text-amber-700 mt-2">Zdroj: Royal Academy of Arts — <em>Art history 101: what is a cartoon?</em> <a href="https://www.royalacademy.org.uk/article/daniel-maclise-what-is-a-cartoon" target="_blank" rel="noopener" class="underline">royalacademy.org.uk</a></p>
+    </div>
+  </section>
+
+  <!-- 2. Renesance -->
+  <section id="renesance" class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm space-y-4 text-sm text-slate-600 leading-relaxed font-medium">
+    <h2 class="text-2xl font-bold text-slate-900 uppercase tracking-wide">🎨 Renesance: kartony, propichování a Sixtinská kaple</h2>
+    <p>Italská renesance přinesla sofistikovanější přenosové techniky. Umělci začali pracovat s takzvanými <strong>kartony</strong> (z italského <em>cartone</em> — velký arch papíru) — přípravnými kresbami v plné velikosti budoucího díla. Kartony sloužily jako přesný plán pro fresky, tapisérie i olejomalby.</p>
+    <p>Nejrozšířenější metodou přenosu bylo <strong>propichování</strong> (<em>pouncing</em>): umělec jemně propíchl kontury kresby jehlou, přiložil karton na omítku nebo plátno a přetřel ho uhlíkem nebo jiným práškem. Na podkladu se tak objevila přesná série teček, které stačilo spojit. Michelangelo tuto metodu použil při přípravě výzdoby Sixtinské kaple a Raffael při přípravě fresky <em>Athénská škola</em> ve Vatikánu.</p>
+    <p>Průhledný papír ještě neexistoval — přesto technika principiálně fungovala stejně: tvůrce sleduje předem vyznačený tvar a vede nástroj přesně po jeho obrysu.</p>
+    <div class="bg-indigo-50 border border-indigo-100 rounded-2xl p-5 space-y-2">
+      <h3 class="font-bold text-indigo-950 mb-1">📌 Ověřené fakty</h3>
+      <p class="text-xs text-indigo-900">Giorgio Vasari ve svých <em>Životopisech umělců</em> (16. století) podrobně popisuje výrobu kartonů a postup přenosu kresby na omítku, včetně připevňování papíru pastou z mouky a vody a obtahování pomocí dlouhé tyče s uhlíkem na konci.</p>
+      <p class="text-xs text-indigo-700">Zdroj: Ars Pictoria: Renaissance Art Techniques — <em>Cartoon and its Transferring</em> <a href="https://arspictoria.com/techniques/transferring-the-cartoon/" target="_blank" rel="noopener" class="underline">arspictoria.com</a></p>
+      <p class="text-xs text-indigo-900 mt-2">Royal Academy of Arts potvrzuje, že technika propichování kontur a přenášení práškem je zdokumentována u renesančních mistrů jako Michelangelo a Raffael.</p>
+      <p class="text-xs text-indigo-700">Zdroj: Royal Academy of Arts — <em>Art history 101: what is a cartoon?</em> <a href="https://www.royalacademy.org.uk/article/daniel-maclise-what-is-a-cartoon" target="_blank" rel="noopener" class="underline">royalacademy.org.uk</a></p>
+    </div>
+  </section>
+
+  <!-- 3. Průhledný papír -->
+  <section id="pruhledny-papir" class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm space-y-4 text-sm text-slate-600 leading-relaxed font-medium">
+    <h2 class="text-2xl font-bold text-slate-900 uppercase tracking-wide">📄 Rok 1809: vznik průhledného papíru</h2>
+    <p>Průlomový moment nastal v roce <strong>1809</strong>, kdy francouzská firma Canson (tehdy vedená rodinou Montgolfier-Canson) v přísném utajení vyvinula průhledný papír — <em>papier calque</em>. Záměrem bylo vyřešit konkrétní praktický problém: architekti museli při každé změně projektu celý výkres překreslovat znovu. Průhledný papír to změnil: přiložili ho na existující výkres, obkreslili a upravili jen potřebné části.</p>
+    <p>Tato inovace neměla zpočátku nic společného s uměním nebo s dětmi — šlo o ryze profesionální nástroj architektů, inženýrů a technických kreslířů. Přesto šlo o přímý technologický předchůdce dnešního obkreslování: průhledný podklad umožňuje přesně sledovat linii předlohy a vést nástroj po jejím tvaru.</p>
+    <div class="bg-emerald-50 border border-emerald-100 rounded-2xl p-5 space-y-2">
+      <h3 class="font-bold text-emerald-950 mb-1">📌 Ověřené fakty</h3>
+      <p class="text-xs text-emerald-900">Canson na svých stránkách potvrzuje rok 1809 jako datum vynálezu průhledného papíru: <em>„v největším utajení vynalezli průhledný papír, který zbavil architekty nutnosti kreslit stejný plán znovu a znovu."</em></p>
+      <p class="text-xs text-emerald-700">Zdroj: Canson — <em>1809: Transparency and colour, the papermaker's innovation</em> <a href="https://www.canson-infinity.com/en/150-years-history/1809" target="_blank" rel="noopener" class="underline">canson-infinity.com</a></p>
+      <p class="text-xs text-emerald-900 mt-2">Wikipedie (anglická verze, heslo <em>Tracing paper</em>) uvádí, že průhledný papír byl používán umělci italské renesance již od 14. století, přičemž průmyslová výroba nastoupila ve velkém v 80. letech 19. století.</p>
+      <p class="text-xs text-emerald-700">Zdroj: Wikipedia — <em>Tracing paper</em> <a href="https://en.wikipedia.org/wiki/Tracing_paper" target="_blank" rel="noopener" class="underline">en.wikipedia.org</a></p>
+    </div>
+    <div class="bg-rose-50 border border-rose-100 rounded-2xl p-4">
+      <h3 class="font-bold text-rose-950 mb-1 text-xs">⚠️ Poznámka ke zdrojům</h3>
+      <p class="text-xs text-rose-900">Různé zdroje uvádějí různá data: Canson hovoří o roce 1809 jako o vynálezu, Dard Hunter (historik papíru) cituje rok 1862 jako datum, kdy se průhledný papír stal definitivně komerčně dostupným zbožím, Národní archiv USA má dochované výkresy na průhledném papíru již z 20. let 19. století. Pravděpodobný výklad: papír existoval dříve, průmyslová masová výroba nastoupila kolem roku 1862.</p>
+      <p class="text-xs text-rose-700 mt-1">Zdroj: AIC Book and Paper Group Annual, Susan Page — <em>Conservation of Nineteenth-Century Tracing Paper</em> <a href="https://cool.culturalheritage.org/coolaic/sg/bpg/annual/v16/bp16-09.html" target="_blank" rel="noopener" class="underline">culturalheritage.org</a></p>
+    </div>
+  </section>
+
+  <!-- 4. 19. století -->
+  <section id="19-stoleti" class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm space-y-4 text-sm text-slate-600 leading-relaxed font-medium">
+    <h2 class="text-2xl font-bold text-slate-900 uppercase tracking-wide">🏗️ 19. století: architekti, umělci a průmyslová výroba</h2>
+    <p>S industrializací a rozvojem strojní výroby papíru se průhledný papír stal v 19. století stále dostupnějším. Začal ho používat nejen technický svět, ale i výtvarní umělci. Francouzský malíř <strong>Eugène Delacroix</strong> (1798–1863) ho používal při přípravě litografií, dřevorytů i rozsáhlých nástěnných kompozic — například při výzdobě knihovny Palais Bourbon v Paříži ve 40. letech 19. století.</p>
+    <p>Podobně pracoval i jeho soupeř <strong>Jean-Auguste-Dominique Ingres</strong> (1780–1867). Průhledný papír jim umožňoval vrstvit návrhy, přenášet osvědčené kompoziční prvky a zpřesňovat detaily bez nutnosti celé dílo překreslovat od začátku.</p>
+    <p>Zajímavé je, že na aukci Delacroixovy pozůstalosti v roce 1864 většina sběratelů kresby na průhledném papíru přehlédla nebo podceňovala — jen sami výtvarníci rozuměli jejich hodnotě jako dokladu tvůrčího procesu. Tento postřeh zaznamenal kritik Alfred Robaut, sám jeden z mála kupců těchto prací.</p>
+    <div class="bg-indigo-50 border border-indigo-100 rounded-2xl p-5 space-y-2">
+      <h3 class="font-bold text-indigo-950 mb-1">📌 Ověřené fakty</h3>
+      <p class="text-xs text-indigo-900">Odborný článek Ashley E. Dunn v recenzovaném časopise <em>Nineteenth-Century Art Worldwide</em> (léto 2022) dokumentuje Delacroixovo používání průhledného papíru pro přípravu grafických listů a nástěnných maleb a cituje Robautův výrok o aukci z roku 1864.</p>
+      <p class="text-xs text-indigo-700">Zdroj: Nineteenth-Century Art Worldwide — <em>"Only Artists Were Not Fooled": Delacroix's Preparatory Drawings on Tracing Paper</em> <a href="https://www.19thc-artworldwide.org/summer22/dunn-on-delacroixs-preparatory-drawings-on-tracing-paper" target="_blank" rel="noopener" class="underline">19thc-artworldwide.org</a></p>
+    </div>
+  </section>
+
+  <!-- 5. Cesta ke školním listům -->
+  <section id="deti" class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm space-y-4 text-sm text-slate-600 leading-relaxed font-medium">
+    <h2 class="text-2xl font-bold text-slate-900 uppercase tracking-wide">👶 Cesta ke školním pracovním listům</h2>
+    <p>Přechod od profesionálního nástroje k pomůcce pro děti probíhal postupně ve 20. století, ruku v ruce s rozvojem předškolní a primární pedagogiky. Klíčovým impulzem bylo rozrůstající se výzkumné pole <strong>grafomotoriky</strong> — souboru dovedností potřebných pro psaní, které zahrnují koordinaci oka a ruky, jemnou motoriku a kontrolu pohybu.</p>
+    <p>Pedagogové zjistili, že děti, které před nástupem do školy procvičují vedení čáry po předloze, snadněji zvládají nácvik písmen. Pracovní listy s předtištěnými liniemi — od jednoduchých tahů přes geometrické tvary až po obrázky — se tak staly standardní součástí předškolní přípravy v celé Evropě i Severní Americe.</p>
+    <p>Zásadní bylo, že s nástupem domácích tiskáren v 80. a 90. letech 20. století přestal být přístup k těmto materiálům vázán na školu nebo na nákup tištěných sešitů. Kdokoli mohl stáhnout list a vytisknout ho doma.</p>
+    <div class="bg-slate-50 border border-slate-100 rounded-2xl p-5">
+      <h3 class="font-bold text-slate-900 mb-2">Typický vývoj dovedností podle věku (grafomotorika)</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs font-medium">
+        <div class="bg-white border border-slate-100 rounded-xl p-3"><strong class="text-slate-900">3–4 roky</strong><br/>Jednoduchá přímá a zakřivená linie, silná vodicí čára, velký formát</div>
+        <div class="bg-white border border-slate-100 rounded-xl p-3"><strong class="text-slate-900">5–6 let</strong><br/>Kombinované tvary, změna směru, menší detaily, přechod k tenkým linkám</div>
+        <div class="bg-white border border-slate-100 rounded-xl p-3"><strong class="text-slate-900">7+ let</strong><br/>Složité kompozice, jemné detaily, kombinace plných a přerušovaných linií</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Dnes -->
+  <section id="dnes" class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm space-y-4 text-sm text-slate-600 leading-relaxed font-medium">
+    <h2 class="text-2xl font-bold text-slate-900 uppercase tracking-wide">💻 Digitální tisknutelné listy dnes</h2>
+    <p>Moderní obtahovačky jsou přímým potomkem všech výše popsaných technik. Místo průhledného papíru přiloženého na předlohu jsou vodicí linie vytištěny přímo v obrázku — výsledek je stejný, ale celý proces je jednodušší, dostupnější a lépe přizpůsobitelný věku a dovednostem konkrétního dítěte.</p>
+    <p>Tloušťka, typ (plná, přerušovaná, tečkovaná linka) a hustota vodicích linií nahrazují dřívější fyzický průhledný materiál. Dítě sleduje tvar a vede nástroj — stejně jako Michelangelo sledoval tvar kartonu a vedl stylus po vypíchnutých bodech, stejně jako Delacroix přikládal průhledný arch na předchozí kresbu a zpřesňoval kompozici.</p>
+    <div class="bg-emerald-50 border border-emerald-100 rounded-2xl p-5 text-xs text-emerald-950 font-bold">✅ Obtahovačky na VinMatově světě pro děti jsou k dispozici zdarma, bez registrace, připravené k domácímu tisku — a navazují na tradici, která sahá pět tisíc let do minulosti.</div>
+    <div class="text-center pt-2">
+      <a href="pruvodce-obtahovacky.html" class="inline-block bg-indigo-200 border border-indigo-300 rounded-full px-7 py-2.5 text-xs font-extrabold text-indigo-900 uppercase tracking-wider shadow-xs hover:bg-indigo-300 hover:scale-[1.02] transition-all">✏️ Průvodce obtahovačkami →</a>
+    </div>
+  </section>
+
+  <!-- Zdroje -->
+  <section id="zdroje" class="bg-slate-900 text-slate-300 p-8 rounded-3xl space-y-4">
+    <h2 class="text-xl font-bold text-white uppercase tracking-wide">📚 Zdroje a literatura</h2>
+    <p class="text-xs text-slate-400 leading-relaxed">Všechny níže uvedené zdroje jsou veřejně dostupné a ověřitelné. Informace, které nebylo možné spolehlivě doložit, do článku záměrně nezařazujeme.</p>
+    <div class="space-y-3 text-xs font-medium leading-relaxed">
+      <div class="bg-slate-800 rounded-xl p-4 space-y-1">
+        <div class="text-white font-bold">Royal Academy of Arts</div>
+        <div><em>Art history 101: what is a cartoon?</em> — techniky přenosu kresby od Egypta po renesanci</div>
+        <a href="https://www.royalacademy.org.uk/article/daniel-maclise-what-is-a-cartoon" target="_blank" rel="noopener" class="text-amber-400 underline break-all">royalacademy.org.uk</a>
+      </div>
+      <div class="bg-slate-800 rounded-xl p-4 space-y-1">
+        <div class="text-white font-bold">Canson (výrobce papíru)</div>
+        <div><em>1809: Transparency and colour, the papermaker's innovation</em> — historia vynálezu průhledného papíru</div>
+        <a href="https://www.canson-infinity.com/en/150-years-history/1809" target="_blank" rel="noopener" class="text-amber-400 underline break-all">canson-infinity.com</a>
+      </div>
+      <div class="bg-slate-800 rounded-xl p-4 space-y-1">
+        <div class="text-white font-bold">Nineteenth-Century Art Worldwide (recenzovaný časopis)</div>
+        <div>Ashley E. Dunn: <em>"Only Artists Were Not Fooled": Delacroix's Preparatory Drawings on Tracing Paper</em> — léto 2022, ročník 21, číslo 2</div>
+        <a href="https://www.19thc-artworldwide.org/summer22/dunn-on-delacroixs-preparatory-drawings-on-tracing-paper" target="_blank" rel="noopener" class="text-amber-400 underline break-all">19thc-artworldwide.org</a>
+      </div>
+      <div class="bg-slate-800 rounded-xl p-4 space-y-1">
+        <div class="text-white font-bold">AIC Book and Paper Group Annual</div>
+        <div>Susan Page: <em>Conservation of Nineteenth-Century Tracing Paper: A Quick Practical Approach</em> — datování průhledného papíru, citace Dard Hunter</div>
+        <a href="https://cool.culturalheritage.org/coolaic/sg/bpg/annual/v16/bp16-09.html" target="_blank" rel="noopener" class="text-amber-400 underline break-all">culturalheritage.org</a>
+      </div>
+      <div class="bg-slate-800 rounded-xl p-4 space-y-1">
+        <div class="text-white font-bold">Ars Pictoria: Renaissance Art Techniques</div>
+        <div><em>Cartoon and its Transferring</em> — podrobný popis renesančních přenosových technik, citace Vasariho životopisů</div>
+        <a href="https://arspictoria.com/techniques/transferring-the-cartoon/" target="_blank" rel="noopener" class="text-amber-400 underline break-all">arspictoria.com</a>
+      </div>
+      <div class="bg-slate-800 rounded-xl p-4 space-y-1">
+        <div class="text-white font-bold">Wikipedia (anglická verze)</div>
+        <div><em>Tracing paper</em> — přehled historie a vlastností průhledného papíru</div>
+        <a href="https://en.wikipedia.org/wiki/Tracing_paper" target="_blank" rel="noopener" class="text-amber-400 underline break-all">en.wikipedia.org/wiki/Tracing_paper</a>
+      </div>
+      <div class="bg-slate-800 rounded-xl p-4 space-y-1">
+        <div class="text-white font-bold">MFA Cameo (Museum of Fine Arts Boston)</div>
+        <div><em>Tracing paper</em> — materiálové vlastnosti, datování, bibliografie</div>
+        <a href="https://cameo.mfa.org/wiki/Tracing_paper" target="_blank" rel="noopener" class="text-amber-400 underline break-all">cameo.mfa.org/wiki/Tracing_paper</a>
+      </div>
+      <div class="bg-slate-800 rounded-xl p-4 space-y-1">
+        <div class="text-white font-bold">J. Paul Getty Museum</div>
+        <div><em>The Cartoon Transfer Process Revealed</em> — video a text o renesanční technice kartonů (prostřednictvím Gallery Systems)</div>
+        <a href="https://www.gallerysystems.com/the-cartoon-transfer-process-revealed/" target="_blank" rel="noopener" class="text-amber-400 underline break-all">gallerysystems.com</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+    <footer class="bg-slate-900 text-slate-400 text-[11px] py-4 px-6 border-t border-slate-800 font-semibold shadow-inner">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-center items-center gap-1 md:gap-2 whitespace-nowrap text-center">
+            <span>© 2026 Vyrobeno s ❤️ pro zábavné učení</span>
+            <span class="hidden md:inline">·</span>
+            <span>Zdarma pro osobní a vzdělávací účely</span>
+            <span class="hidden md:inline">·</span>
+            <a href="zasady-ochrany-osobnich-udaju.html" class="hover:text-white transition-colors">Zásady ochrany osobních údajů</a>
+            <span class="hidden md:inline">·</span>
+            <a href="podminky-uziti.html" class="hover:text-white transition-colors">Podmínky užití</a>
+            <span class="hidden md:inline">·</span>
+            <button onclick="kopirujProjektovyEmail()" class="text-amber-400 hover:text-amber-300 transition-colors font-bold uppercase tracking-wide flex items-center justify-center">
+                ✉️ Kontakt <span id="kopirovan-status" class="text-emerald-400 lowercase font-normal ml-1 opacity-0 transition-opacity duration-300"></span>
+            </button>
+        </div>
+    </footer>
+    <script>function kopirujProjektovyEmail(){const emailAdresa='vinmatforkids@gmail.com';const statusLabel=document.getElementById('kopirovan-status');navigator.clipboard.writeText(emailAdresa).then(()=>{if(!statusLabel)return;statusLabel.textContent='(e-mail zkopírován)';statusLabel.classList.remove('opacity-0');setTimeout(()=>statusLabel.classList.add('opacity-0'),1800);});}</script>
+    <script src="../assets/js/site-navigation.js"></script>
 </body>
-</html>`;
-}
-
-function updateGuideSeo(html, page, locale) {
-    const ownRelative = locale === 'en' ? page.en : `cs/${page.cs}`;
-    const ownUrl = `${siteUrl}${ownRelative}`;
-    const enUrl = `${siteUrl}${page.en}`;
-    const csUrl = `${siteUrl}cs/${page.cs}`;
-    html = html.replace(/<html lang="[^"]*">/i, `<html lang="${languages[locale].htmlLang}">`);
-    const setHeadTag = (pattern, tag) => pattern.test(html)
-        ? html.replace(pattern, tag)
-        : html.replace('</head>', `    ${tag}\n</head>`);
-    html = setHeadTag(/<link\s+rel="canonical"\s+href="[^"]*"\s*\/?\s*>/i, `<link rel="canonical" href="${ownUrl}">`);
-    html = setHeadTag(/<link\s+rel="alternate"\s+hreflang="en"\s+href="[^"]*"\s*\/?\s*>/i, `<link rel="alternate" hreflang="en" href="${enUrl}">`);
-    html = setHeadTag(/<link\s+rel="alternate"\s+hreflang="cs"\s+href="[^"]*"\s*\/?\s*>/i, `<link rel="alternate" hreflang="cs" href="${csUrl}">`);
-    html = setHeadTag(/<link\s+rel="alternate"\s+hreflang="x-default"\s+href="[^"]*"\s*\/?\s*>/i, `<link rel="alternate" hreflang="x-default" href="${enUrl}">`);
-    const title = html.match(/<title>([\s\S]*?)<\/title>/i)?.[1] || "VinMat's World for Kids";
-    const description = html.match(/<meta\s+name="description"\s+content="([^"]*)"\s*\/?\s*>/i)?.[1] || '';
-    const ogType = ['privacy', 'terms'].includes(page.key) ? 'website' : 'article';
-    html = setHeadTag(/<meta\s+property="og:title"\s+content="[^"]*"\s*\/?\s*>/i, `<meta property="og:title" content="${title}">`);
-    html = setHeadTag(/<meta\s+property="og:description"\s+content="[^"]*"\s*\/?\s*>/i, `<meta property="og:description" content="${description}">`);
-    html = setHeadTag(/<meta\s+property="og:type"\s+content="[^"]*"\s*\/?\s*>/i, `<meta property="og:type" content="${ogType}">`);
-    html = setHeadTag(/<meta\s+property="og:url"\s+content="[^"]*"\s*\/?\s*>/i, `<meta property="og:url" content="${ownUrl}">`);
-    html = setHeadTag(/<meta\s+property="og:locale"\s+content="[^"]*"\s*\/?\s*>/i, `<meta property="og:locale" content="${languages[locale].ogLocale}">`);
-    if (!html.includes('assets/favicon/favicon.svg')) {
-        html = html.replace('</head>', `    <link rel="icon" type="image/svg+xml" href="${basePath}assets/favicon/favicon.svg">\n    <link rel="icon" type="image/png" sizes="96x96" href="${basePath}assets/favicon/favicon-96x96.png">\n    <link rel="apple-touch-icon" href="${basePath}assets/favicon/apple-touch-icon.png">\n    <link rel="manifest" href="${basePath}assets/favicon/site.webmanifest">\n</head>`);
-    }
-    html = html.replace(/("url":\s*")[^"]*(")/i, `$1${ownUrl}$2`);
-    return html;
-}
-
-function deduplicateTrackingScripts(html) {
-    const keepFirst = (pattern) => {
-        let found = false;
-        return html.replace(pattern, (match) => {
-            if (found) return '';
-            found = true;
-            return match;
-        });
-    };
-    html = keepFirst(/<script\b[^>]*\bsrc="https:\/\/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js[^\"]*"[^>]*>\s*<\/script>/gi);
-    html = keepFirst(/<script\b[^>]*\bsrc="https:\/\/www\.googletagmanager\.com\/gtag\/js\?id=[^\"]+"[^>]*>\s*<\/script>/gi);
-    return keepFirst(/<script>\s*window\.dataLayer = window\.dataLayer \|\| \[\];\s*function gtag\(\)\{dataLayer\.push\(arguments\);\}\s*gtag\('js', new Date\(\)\);\s*gtag\('config', '[^']+'\);\s*<\/script>/gi);
-}
-
-function setGuideRouteLinks(html) {
-    const renamedEnglishGuides = {
-        'activity-guide.html': 'guide-activities.html',
-        'maze-guide.html': 'guide-mazes.html',
-        'coloring-guide.html': 'guide-coloring.html',
-        'dot-to-dot-guide.html': 'guide-dot-to-dot.html',
-        'tracing-guide.html': 'guide-tracing.html'
-    };
-    for (const [oldRoute, newRoute] of Object.entries(renamedEnglishGuides)) {
-        html = html.replaceAll(oldRoute, newRoute);
-    }
-    return html;
-}
-
-function setGuideLanguageLink(html, page, locale) {
-    const current = locale === 'en' ? page.cs : page.en;
-    const legacyCzechPath = {
-        'zasady-ochrany-osobnich-udaju.html': 'privacy-cz.html',
-        'podminky-uziti.html': 'terms-cz.html'
-    }[page.cs];
-    const target = locale === 'en'
-        ? `${basePath}cs/${page.cs}`
-        : `${basePath}${page.en}`;
-    html = html
-        .replaceAll(`href="${current}"`, `href="${target}"`)
-        .replaceAll(`href="${basePath}cs/${current}"`, `href="${target}"`)
-        .replaceAll(`href="${basePath}cs/${legacyCzechPath}"`, `href="${target}"`);
-    return html.replace(/(<a\b[^>]*\bhref=")[^"]*("[^>]*>\s*(?:CZ|EN)\s*<\/a>)/gi, `$1${target}$2`);
-}
-
-function ensureContactHelper(html) {
-    if (!html.includes('onclick="kopirujProjektovyEmail()"') || /function\s+kopirujProjektovyEmail\s*\(/.test(html)) return html;
-    const helper = `<script>function kopirujProjektovyEmail(){const emailAdresa='vinmatforkids@gmail.com';const statusLabel=document.getElementById('kopirovan-status');navigator.clipboard.writeText(emailAdresa).then(()=>{if(!statusLabel)return;statusLabel.textContent='(e-mail zkopírován)';statusLabel.classList.remove('opacity-0');setTimeout(()=>statusLabel.classList.add('opacity-0'),1800);});}</script>`;
-    return insertBeforeFinalBodyClose(html, `    ${helper}\n`);
-}
-
-async function copyCzechGuides(sitemapUrls) {
-    for (const page of guidePages) {
-        const source = path.join(root, 'cs', page.cs);
-        try {
-            let html = await readFile(source, 'utf8');
-            html = deduplicateTrackingScripts(html);
-            html = updateGuideSeo(html, page, 'cs');
-            html = setGuideRouteLinks(html);
-            html = setGuideLanguageLink(html, page, 'cs');
-            html = updateCzechInternalLinks(html);
-            html = setBodyData(html, 'cs', page.key);
-            html = injectNavigation(html, '../');
-            html = ensureContactHelper(html);
-            await writeFile(source, html);
-            sitemapUrls.add(`${siteUrl}cs/${page.cs}`);
-        } catch (error) {
-            if (error.code !== 'ENOENT') throw error;
-            console.warn(`Czech guide page not found, skipped: cs/${page.cs}`);
-        }
-    }
-}
-
-async function updateEnglishGuides(sitemapUrls) {
-    for (const page of guidePages) {
-        const source = path.join(root, page.en);
-        try {
-            let html = await readFile(source, 'utf8');
-            html = deduplicateTrackingScripts(html);
-            html = updateGuideSeo(html, page, 'en');
-            html = setGuideRouteLinks(html);
-            html = setGuideLanguageLink(html, page, 'en');
-            html = setBodyData(html, 'en', page.key);
-            html = injectNavigation(html, '');
-            html = ensureContactHelper(html);
-            await writeFile(source, html);
-            sitemapUrls.add(`${siteUrl}${page.en}`);
-        } catch (error) {
-            if (error.code !== 'ENOENT') throw error;
-            console.warn(`English source page not found, skipped: ${page.en}`);
-        }
-    }
-}
-
-function sitemap(urls) {
-    const entries = [...urls].sort().map((url) => `  <url><loc>${escapeHtml(url)}</loc></url>`).join('\n');
-    return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries}\n</urlset>\n`;
-}
-
-async function build() {
-    const activities = await readActivities();
-    assignSlugs(activities, 'en');
-    assignSlugs(activities, 'cs');
-
-    const sitemapUrls = new Set([siteUrl, `${siteUrl}cs/`]);
-    let englishIndex = await readFile(path.join(root, 'index.html'), 'utf8');
-    englishIndex = setCatalog(englishIndex, staticCatalog(activities, 'en'));
-    englishIndex = setIndexSeo(englishIndex, 'en');
-    englishIndex = setIndexLocale(englishIndex, 'en');
-    englishIndex = setGuideRouteLinks(englishIndex);
-    englishIndex = updateCzechInternalLinks(englishIndex);
-    englishIndex = setBodyData(englishIndex, 'en', 'home');
-    englishIndex = injectNavigation(englishIndex, '');
-    await writeFile(path.join(root, 'index.html'), englishIndex);
-
-    let czechIndex = setCatalog(englishIndex, staticCatalog(activities, 'cs'));
-    czechIndex = setIndexSeo(czechIndex, 'cs');
-    czechIndex = setIndexLocale(czechIndex, 'cz');
-    czechIndex = setBodyData(czechIndex, 'cs', 'home');
-    czechIndex = localizeIndexPaths(czechIndex);
-    czechIndex = updateCzechInternalLinks(czechIndex);
-    czechIndex = injectNavigation(czechIndex, '../');
-    await mkdir(path.join(root, 'cs'), { recursive: true });
-    await writeFile(path.join(root, 'cs', 'index.html'), czechIndex);
-
-    for (const locale of Object.keys(languages)) {
-        for (const activity of activities) {
-            const relative = activityRelativeUrl(activity, locale);
-            await mkdir(path.dirname(path.join(root, relative)), { recursive: true });
-            await writeFile(path.join(root, relative), activityPage(activity, locale));
-            sitemapUrls.add(activityUrl(activity, locale));
-        }
-    }
-
-    await updateEnglishGuides(sitemapUrls);
-    await copyCzechGuides(sitemapUrls);
-    await writeFile(path.join(root, 'sitemap.xml'), sitemap(sitemapUrls));
-
-    console.log(`Generated ${activities.length * Object.keys(languages).length} activity pages and ${sitemapUrls.size} sitemap URLs.`);
-}
-
-build().catch((error) => {
-    console.error(error);
-    process.exitCode = 1;
-});
+</html>
