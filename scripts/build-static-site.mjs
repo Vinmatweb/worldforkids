@@ -270,7 +270,8 @@ function activityPage(activity, locale) {
     const canonical = activityUrl(activity, locale);
     const alternateLocale = locale === 'en' ? 'cs' : 'en';
     const alternate = activityUrl(activity, alternateLocale);
-    const image = `${imageBase(activity, variant)}.webp`;
+    // Open Graph a schema vyžadují plnou veřejnou URL, ne relativní cestu.
+    const image = absoluteUrl(`${imageBase(activity, variant)}.webp`);
     const home = `${basePath}${languages[locale].output ? `${languages[locale].output}/` : ''}`;
     const jsonLd = {
         '@context': 'https://schema.org',
