@@ -18,9 +18,11 @@ const languages = {
         indexDescription: 'Download free printable mazes, coloring pages and dot-to-dot worksheets for kids aged 3–10. Color and B&W versions, sorted by age and difficulty.',
         indexHeading: 'Free Printable Activities for Kids',
         indexIntro: 'Browse free printable mazes, coloring pages and dot-to-dot worksheets. Choose an activity to view, download or print it.',
+        siteName: "VinMat's World for Kids",
+        levelLabel: 'Level',
         detailPrefix: 'Free Printable',
-        detailCta: 'Open printable',
-        detailPrint: 'Print this activity',
+        detailCta: 'Download printable',
+        detailPrint: 'Print worksheet',
         detailBack: '← All activities',
         activitySchemaLanguage: 'en'
     },
@@ -36,9 +38,11 @@ const languages = {
         indexDescription: 'Stáhněte zdarma dětská bludiště, omalovánky a spojovačky k vytisknutí pro děti ve věku 3–10 let.',
         indexHeading: 'Pracovní listy pro děti zdarma',
         indexIntro: 'Prohlédněte si bludiště, omalovánky a spojovačky zdarma. Vyberte aktivitu, kterou si můžete otevřít, stáhnout nebo vytisknout.',
+        siteName: 'Vinmatův svět pro děti',
+        levelLabel: 'Úroveň',
         detailPrefix: 'Pracovní list zdarma',
-        detailCta: 'Otevřít pracovní list',
-        detailPrint: 'Vytisknout aktivitu',
+        detailCta: 'Stáhnout pracovní list',
+        detailPrint: 'Vytisknout pracovní list',
         detailBack: '← Všechny aktivity',
         activitySchemaLanguage: 'cs'
     }
@@ -306,6 +310,8 @@ function activityPage(activity, locale) {
     // Open Graph a schema vyžadují plnou veřejnou URL, ne relativní cestu.
     const image = absoluteUrl(`${imageBase(activity, variant)}.webp`);
     const home = `${basePath}${languages[locale].output ? `${languages[locale].output}/` : ''}`;
+    const levelNumber = activity.level.replace(/^LV/, '');
+    const alternateLanguageLabel = alternateLocale === 'cs' ? 'CZ' : 'EN';
     const jsonLd = {
         '@context': 'https://schema.org',
         '@type': 'LearningResource',
@@ -339,15 +345,28 @@ function activityPage(activity, locale) {
     <meta property="og:locale" content="${config.ogLocale}">
     <link rel="icon" type="image/svg+xml" href="${basePath}assets/favicon/favicon.svg">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @media print {
+            @page { margin: 0; }
+            body { background: #fff !important; }
+            body > * { display: none !important; }
+            body > main { display: block !important; max-width: none !important; margin: 0 !important; padding: 0 !important; }
+            body > main > :not(.activity-print-card) { display: none !important; }
+            .activity-print-card { display: block !important; margin: 0 !important; padding: 0 !important; border: 0 !important; box-shadow: none !important; }
+            .activity-print-card > :not(.activity-print-image) { display: none !important; }
+            .activity-print-image { display: flex !important; padding: 0 !important; background: transparent !important; }
+            .activity-print-image picture, .activity-print-image img { display: block !important; max-width: 100% !important; max-height: none !important; margin: 0 auto !important; }
+        }
+    </style>
     <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen" data-locale="${locale}" data-route-key="activity">
-    <header class="bg-slate-900 text-white text-sm py-3 px-4"><div class="max-w-5xl mx-auto flex items-center justify-between gap-3"><a class="font-bold hover:text-amber-300" href="${home}">VinMat's World for Kids</a><nav class="flex gap-3"><a href="${activityUrl(activity, 'en')}" ${locale === 'en' ? 'aria-current="page"' : ''}>EN</a><a href="${activityUrl(activity, 'cs')}" ${locale === 'cs' ? 'aria-current="page"' : ''}>CZ</a></nav></div></header>
+    <header class="bg-slate-900 text-white text-sm py-3 px-4"><div class="max-w-5xl mx-auto flex items-center justify-between gap-3"><a class="font-bold hover:text-amber-300" href="${home}">${escapeHtml(config.siteName)}</a><nav class="flex gap-3"><a href="${activityUrl(activity, alternateLocale)}">${alternateLanguageLabel}</a></nav></div></header>
     <main class="max-w-5xl mx-auto px-4 py-8">
         <a class="text-sm font-bold text-indigo-700 hover:underline" href="${home}">${escapeHtml(config.detailBack)}</a>
-        <article class="mt-5 grid gap-7 md:grid-cols-[minmax(0,3fr)_minmax(240px,2fr)] bg-white rounded-3xl border border-slate-100 shadow-sm p-5 md:p-8">
-            <div class="bg-slate-50 rounded-2xl p-4 flex items-center justify-center">${picture(activity, locale, variant, 'max-w-full max-h-[70vh] object-contain')}</div>
-            <div class="flex flex-col justify-between gap-6"><div><p class="text-xs font-bold text-slate-400 uppercase tracking-wider">${escapeHtml(config.cardType[activity.type])} · ${escapeHtml(activity.level)}</p><h1 class="mt-2 text-3xl font-extrabold text-slate-900">${escapeHtml(activity.names[locale])}</h1><p class="mt-4 text-slate-600 leading-relaxed">${escapeHtml(description)}</p></div><div class="space-y-3"><a class="block text-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-xl" href="${escapeHtml(imageBase(activity, variant))}.png" download>${escapeHtml(config.detailCta)}</a><button class="w-full bg-slate-800 hover:bg-slate-900 text-white font-bold py-3 px-4 rounded-xl" onclick="window.print()">${escapeHtml(config.detailPrint)}</button></div></div>
+        <article class="activity-print-card mt-5 grid gap-7 md:grid-cols-[minmax(0,3fr)_minmax(240px,2fr)] bg-white rounded-3xl border border-slate-100 shadow-sm p-5 md:p-8">
+            <div class="activity-print-image bg-slate-50 rounded-2xl p-4 flex items-center justify-center">${picture(activity, locale, variant, 'max-w-full max-h-[70vh] object-contain')}</div>
+            <div class="flex flex-col justify-between gap-6"><div><p class="text-xs font-bold text-slate-400 uppercase tracking-wider">${escapeHtml(config.cardType[activity.type])} · ${escapeHtml(config.levelLabel)} ${escapeHtml(levelNumber)}</p><h1 class="mt-2 text-3xl font-extrabold text-slate-900">${escapeHtml(activity.names[locale])}</h1><p class="mt-4 text-slate-600 leading-relaxed">${escapeHtml(description)}</p></div><div class="space-y-3"><a class="block text-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-xl" href="${escapeHtml(imageBase(activity, variant))}.png" download>${escapeHtml(config.detailCta)}</a><button class="w-full bg-slate-800 hover:bg-slate-900 text-white font-bold py-3 px-4 rounded-xl" onclick="window.print()">${escapeHtml(config.detailPrint)}</button></div></div>
         </article>
     </main>
     <script src="../../assets/js/site-navigation.js"></script>
