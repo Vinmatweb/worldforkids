@@ -881,11 +881,14 @@ function guideRenderActivities(containerId, activities) {
     container.innerHTML = '';
 
     if (activities.length === 0) {
+        const emptyMessage = GUIDE_ACTIVITY_CONFIG.language === 'cz'
+            ? 'Zatím tu nejsou žádné pracovní listy.'
+            : 'No printable activities are available yet.';
         container.innerHTML = `
             <div class="bg-white p-8 text-center rounded-2xl
                         border border-slate-100 text-xs text-slate-400
                         font-bold py-12 sm:col-span-3">
-                No printable activities are available yet.
+                ${emptyMessage}
             </div>
         `;
         return;
