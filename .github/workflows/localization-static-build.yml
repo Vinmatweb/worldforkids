@@ -34,6 +34,7 @@ jobs:
         run: |
           node --check scripts/optimize-localized-index-seo.mjs
           node --check scripts/polish-activity-localization.mjs
+          node --check scripts/polish-activity-guides.mjs
           node --check scripts/build-static-site.mjs
           node --check scripts/normalize-guide-headers.mjs
           node --check scripts/finalize-localized-indexes.mjs
@@ -49,6 +50,9 @@ jobs:
 
       - name: Generate localized static site
         run: node scripts/build-static-site.mjs
+
+      - name: Polish localized activity guides
+        run: node scripts/polish-activity-guides.mjs
 
       - name: Normalize localized guide headers
         run: node scripts/normalize-guide-headers.mjs
