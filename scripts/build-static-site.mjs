@@ -335,6 +335,29 @@ function setIndexSeo(html, locale) {
     html = html.replace('</head>', `${hreflangTags}\n</head>`);
     html = html.replace(/(<meta id="og-url"\s+property="og:url"\s+content=")[^"]*(">)/i, `$1${canonical}$2`);
     html = html.replace(/(<meta\s+property="og:locale"\s+content=")[^"]*(">)/i, `$1${config.ogLocale}$2`);
+    // LOCALIZED_INDEX_SEO
+    html = html.replace(/<meta id="og-title"[^>]*>/i, '<meta id="og-title" property="og:title" content="' + escapeHtml(config.indexTitle) + '">');
+    html = html.replace(/<meta id="og-desc"[^>]*>/i, '<meta id="og-desc" property="og:description" content="' + escapeHtml(config.indexDescription) + '">');
+    html = html.replace(/<meta id="tw-title"[^>]*>/i, '<meta id="tw-title" name="twitter:title" content="' + escapeHtml(config.indexTitle) + '">');
+    html = html.replace(/<meta id="tw-desc"[^>]*>/i, '<meta id="tw-desc" name="twitter:description" content="' + escapeHtml(config.indexDescription) + '">');
+    html = html.replace(/<meta\s+property="og:site_name"[^>]*>/i, '<meta property="og:site_name" content="' + escapeHtml(config.siteName) + '">');
+    html = html.replace(/\s*<meta\s+name="keywords"[^>]*>/i, '');
+    html = html.replace(/<h1 class="sr-only">[\s\S]*?<\/h1>/i, '<h1 class="sr-only">' + escapeHtml(config.indexHeading) + '</h1>');
+    html = html.replace(/\s*<meta\s+property="og:locale:alternate"[^>]*>/gi, '');
+    const alternateLocales = Object.values(languages)
+        .filter((language) => language.ogLocale !== config.ogLocale)
+        .map((language) => `    <meta property="og:locale:alternate" content="${language.ogLocale}">`)
+        .join('\n');
+    html = html.replace(/(<meta\s+property="og:locale"[^>]*>)/i, `$1\n${alternateLocales}`);
+    const websiteSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: config.siteName,
+        url: canonical,
+        description: config.indexDescription,
+        inLanguage: config.htmlLang
+    };
+    html = html.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/i, '<script type="application/ld+json">\n' + JSON.stringify(websiteSchema, null, 4) + '\n    </script>');
     return html;
 }
 
