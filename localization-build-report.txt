@@ -2,15 +2,50 @@
 Exit code: 0
 
 ## Optimize localized index SEO
-file:///home/runner/work/worldforkids/worldforkids/scripts/optimize-localized-index-seo.mjs:12
-            throw new Error(`Expected text was not found in ${file.pathname}: ${from}`);
-                  ^
+Optimized localized index SEO and copy.
+Exit code: 0
 
-Error: Expected text was not found in /home/runner/work/worldforkids/worldforkids/index.html: vse:'Kostenlose Labyrinthe, Ausmalbilder, Punkt-zu-Punkt-Bilder und Nachspurübungen für Kinder.'
-    at replaceInFile (file:///home/runner/work/worldforkids/worldforkids/scripts/optimize-localized-index-seo.mjs:12:19)
-    at async file:///home/runner/work/worldforkids/worldforkids/scripts/optimize-localized-index-seo.mjs:46:1
+## Polish activity metadata
+Polished localized activity metadata.
+Exit code: 0
 
-Node.js v22.23.1
+## Polish DE ES content
+Polished final German and Spanish copy.
+Exit code: 0
+
+## Generate localized static site
+Generated 112 activity pages and 152 sitemap URLs.
+Exit code: 0
+
+## Finalize generated activity pages
+Finalized generated activity pages.
+Exit code: 0
+
+## Normalize guide headers
+Header markers not found: de/schwierigkeitsstufen.html
+Header markers not found: es/niveles-dificultad.html
+Header markers not found: de/unsere-geschichte.html
+Header markers not found: es/nuestra-historia.html
+Header markers not found: de/anleitung-labyrinthe.html
+Header markers not found: es/guia-laberintos.html
+Header markers not found: de/anleitung-ausmalbilder.html
+Header markers not found: es/guia-dibujos.html
+Header markers not found: de/anleitung-punkte-verbinden.html
+Header markers not found: es/guia-unir-puntos.html
+Header markers not found: de/anleitung-nachzeichnen.html
+Header markers not found: es/guia-trazado.html
+Header markers not found: de/geschichte-nachzeichnen.html
+Header markers not found: es/historia-trazado.html
+Normalized 2 localized guide headers.
+Exit code: 0
+
+## Finalize localized indexes
+Finalized localized indexes.
+Exit code: 0
+
+## Validate base localization
+Localization validation failed with 1 error(s):
+- es/guia-actividades.html: missing Nivel 5 (12+)
 Exit code: 1
 
 BUILD RESULT: FAILED
