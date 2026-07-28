@@ -1,0 +1,16 @@
+## Check build scripts
+Exit code: 0
+
+## Optimize localized index SEO
+file:///home/runner/work/worldforkids/worldforkids/scripts/optimize-localized-index-seo.mjs:12
+            throw new Error(`Expected text was not found in ${file.pathname}: ${from}`);
+                  ^
+
+Error: Expected text was not found in /home/runner/work/worldforkids/worldforkids/index.html: vse:'Kostenlose Labyrinthe, Ausmalbilder, Punkt-zu-Punkt-Bilder und Nachspurübungen für Kinder.'
+    at replaceInFile (file:///home/runner/work/worldforkids/worldforkids/scripts/optimize-localized-index-seo.mjs:12:19)
+    at async file:///home/runner/work/worldforkids/worldforkids/scripts/optimize-localized-index-seo.mjs:46:1
+
+Node.js v22.23.1
+Exit code: 1
+
+BUILD RESULT: FAILED
