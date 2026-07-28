@@ -33,15 +33,20 @@ jobs:
       - name: Check build scripts
         run: |
           node --check scripts/prepare-localization-build.mjs
+          node --check scripts/optimize-localized-index-seo.mjs
           node --check scripts/polish-activity-localization.mjs
           node --check scripts/build-static-site.mjs
           node --check scripts/normalize-guide-headers.mjs
           node --check scripts/finalize-localized-indexes.mjs
           node --check scripts/validate-localized-site.mjs
+          node --check assets/js/site-config.js
           node --check assets/js/site-navigation.js
 
       - name: Prepare generator
         run: node scripts/prepare-localization-build.mjs
+
+      - name: Optimize localized index SEO
+        run: node scripts/optimize-localized-index-seo.mjs
 
       - name: Polish activity metadata
         run: node scripts/polish-activity-localization.mjs
