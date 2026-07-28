@@ -59,7 +59,31 @@ await replaceInFile(new URL('../index.html', import.meta.url), [
     [
         "vse:'Laberintos, dibujos para colorear, fichas de unir puntos y trazado gratis para niños.'",
         "vse:'Laberintos, dibujos para colorear y fichas de unir puntos gratis para niños.'"
+    ],
+    [
+        "filtrSezona:\"Jahreszeit & Feiertage\"",
+        "filtrSezona:\"Jahreszeiten und Feiertage\""
+    ],
+    [
+        "aboutMazesText:\"Ideal zum Üben von Problemlösung, Ausdauer und logischem Denken. Erhältlich in bunten und druckerfreundlichen Varianten.\"",
+        "aboutMazesText:\"Ideal zum Üben von Problemlösung, Ausdauer und logischem Denken. Erhältlich in Farbe und Schwarz-Weiß.\""
+    ],
+    [
+        "aboutColoringText:\"Perfekt für künstlerischen Ausdruck, Farberkennung und die Stärkung der Handmuskulatur, die für erste Schreibversuche wichtig ist.\"",
+        "aboutColoringText:\"Sie fördern Kreativität, Farberkennung und Feinmotorik.\""
+    ],
+    [
+        "Parcialmente coloreado",
+        "Parcialmente coloreada"
+    ],
+    [
+        "aboutMazesText:\"Ideales para practicar la resolución de problemas, la constancia y el pensamiento lógico. Disponibles en versiones a color y aptas para imprimir.\"",
+        "aboutMazesText:\"Ideales para practicar la resolución de problemas, la constancia y el pensamiento lógico. Disponibles en color y en blanco y negro.\""
+    ],
+    [
+        "aboutColoringText:\"Perfectos para la expresión artística, el reconocimiento de colores y el fortalecimiento de los músculos de la mano, esenciales para la escritura.\"",
+        "aboutColoringText:\"Ayudan a desarrollar la creatividad, reconocer los colores y practicar la motricidad fina.\""
     ]
 ]);
 
-console.log('Optimized localized index SEO.');
+console.log('Optimized localized index SEO and copy.');
