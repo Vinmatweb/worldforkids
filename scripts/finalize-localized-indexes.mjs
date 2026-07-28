@@ -37,9 +37,22 @@ function improveInitialization(html) {
     return html;
 }
 
-function addNoScriptFallback(html, message) {
-    if (html.includes('data-vinmat-noscript')) return html;
-    const block = `<noscript data-vinmat-noscript><style>body{opacity:1!important}</style><div style="margin:0;padding:.65rem 1rem;background:#fff7ed;color:#7c2d12;text-align:center;font:600 13px/1.4 system-ui,sans-serif">${message}</div></noscript>`;
+function noScriptBlock(message) {
+    const styles = [
+        'body{opacity:1!important;padding-top:0!important}',
+        'body>div{display:none!important}',
+        'body>footer{display:none!important}',
+        'main>section:not(:nth-of-type(2)){display:none!important}',
+        '#no-results{display:none!important}'
+    ].join('');
+    return `<noscript data-vinmat-noscript><style>${styles}</style><div style="margin:0;padding:.65rem 1rem;background:#fff7ed;color:#7c2d12;text-align:center;font:600 13px/1.4 system-ui,sans-serif">${message}</div></noscript>`;
+}
+
+function setNoScriptFallback(html, message) {
+    const block = noScriptBlock(message);
+    if (html.includes('data-vinmat-noscript')) {
+        return html.replace(/<noscript data-vinmat-noscript>[\s\S]*?<\/noscript>/i, block);
+    }
     return html.replace(/(<body\b[^>]*>)/i, `$1\n${block}`);
 }
 
@@ -49,7 +62,7 @@ for (const entry of indexes) {
     const original = html;
     html = deduplicateHeadLinks(html);
     html = improveInitialization(html);
-    html = addNoScriptFallback(html, entry.noScript);
+    html = setNoScriptFallback(html, entry.noScript);
     if (html !== original) await writeFile(file, html);
 }
 
