@@ -263,7 +263,7 @@ function activityCard(activity, locale) {
             </a>
             <div class="p-4 flex-grow">
                 <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">${escapeHtml(config.cardType[activity.type])}</span><span class="text-xs text-slate-400 font-bold">${escapeHtml(activity.level)}</span></div>
-                <h2 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="${escapeHtml(href)}" class="hover:text-indigo-600">${escapeHtml(activity.names[locale])}</a></h2>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="${escapeHtml(href)}" class="hover:text-indigo-600">${escapeHtml(activity.names[locale])}</a></h3>
             </div>
         </article>`;
 }
@@ -556,6 +556,7 @@ async function syncTranslatedGuides(locale, sitemapUrls) {
         html = deduplicateTrackingScripts(html);
         html = updateGuideSeo(html, page, locale);
         html = setBodyData(html, locale, page.key);
+        html = injectNavigation(html, '../');
         html = ensureContactHelper(html);
         await writeFile(source, html);
         sitemapUrls.add(`${siteUrl}${config.output}/${page[locale]}`);
