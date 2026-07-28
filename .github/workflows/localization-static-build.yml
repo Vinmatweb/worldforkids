@@ -32,6 +32,9 @@ jobs:
       - name: Generate localized static site
         run: node scripts/build-static-site.mjs
 
+      - name: Normalize localized guide headers
+        run: node scripts/normalize-guide-headers.mjs
+
       - name: Commit generated files
         shell: bash
         run: |
