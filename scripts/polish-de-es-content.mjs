@@ -11,6 +11,10 @@ await replace(new URL('../de/anleitung-ausmalbilder.html', import.meta.url), [
     ['Detailreichere motivy a jemnější plochy pro pečlivou práci.', 'Detailreichere Motive und kleinere Flächen für sorgfältiges Arbeiten.']
 ]);
 
+await replace(new URL('../es/guia-actividades.html', import.meta.url), [
+    ['• Nivel 4 (10+) y nivel 5 (12+):', '• Nivel 4 (10+) y Nivel 5 (12+):']
+]);
+
 await replace(new URL('../assets/data/omalovanky.csv', import.meta.url), [
     [
         'Schwieriges Anti-Stress-Ausmalbild in Schwarz-Weiß mit einem Teddybären für Experten und Erwachsene kostenlos zum Ausdrucken',
