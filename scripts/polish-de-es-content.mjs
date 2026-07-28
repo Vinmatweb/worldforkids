@@ -22,4 +22,17 @@ await replace(new URL('../assets/data/omalovanky.csv', import.meta.url), [
     ]
 ]);
 
+await replace(new URL('../index.html', import.meta.url), [
+    [
+        '// Poznámka: pro DE/ES zatím odkazujeme na absolutní cesty k EN verzím podstránek\n// (guide-activities.html, privacy.html…), dokud nevytvoříme jejich DE/ES překlady.',
+        '// DE a ES mají vlastní hlavní průvodce. Na EN verzi zatím odkazují pouze právní stránky.'
+    ],
+    ['footerProjects:"Zuhause von VinMat.eu"', 'footerProjects:"Startseite von VinMat.eu"'],
+    ['footerPrivacy:"Datenschutzerklärung", footerTerms:"Nutzungsbedingungen"', 'footerPrivacy:"Datenschutz (Englisch)", footerTerms:"Nutzungsbedingungen (Englisch)"'],
+    ['filtrRazeni:"Sortieren"', 'filtrRazeni:"Sortieren nach"'],
+    ['aboutTracing:"✏️ Arbeitsblätter zum Nachspuren", aboutTracingText:"Sie fördern Stiftführung, Hand-Augen-Koordination, Feinmotorik und die Vorbereitung auf das Schreiben."', 'aboutTracing:"✏️ Nachspuren (in Vorbereitung)", aboutTracingText:"Die Kategorie wird derzeit für zuverlässige Linienstärke und Druckqualität getestet."'],
+    ['footerPrivacy:"Política de privacidad", footerTerms:"Términos de uso"', 'footerPrivacy:"Privacidad (en inglés)", footerTerms:"Términos de uso (en inglés)"'],
+    ['aboutTracing:"✏️ Fichas de trazado", aboutTracingText:"Útiles para el control del lápiz, la coordinación mano-ojo, la motricidad fina y la práctica temprana de la escritura."', 'aboutTracing:"✏️ Trazado (en preparación)", aboutTracingText:"La categoría se está probando para asegurar el grosor de línea y la calidad de impresión."']
+]);
+
 console.log('Polished final German and Spanish copy.');
