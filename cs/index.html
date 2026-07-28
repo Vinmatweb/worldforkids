@@ -14,11 +14,11 @@
 
     <!-- ═══ SEO ═══ -->
     <title id="page-title">Bludiště, omalovánky a spojovačky zdarma | VinMat</title>
-    <link rel="icon" type="image/svg+xml" href="/worldforkids/assets/favicon/favicon.svg">
-    <link rel="icon" type="image/png" sizes="96x96" href="/worldforkids/assets/favicon/favicon-96x96.png">
-    <link rel="icon" href="/worldforkids/assets/favicon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/worldforkids/assets/favicon/apple-touch-icon.png">
-    <link rel="manifest" href="/worldforkids/assets/favicon/site.webmanifest">
+<link rel="icon" type="image/svg+xml" href="/worldforkids/assets/favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="96x96" href="/worldforkids/assets/favicon/favicon-96x96.png">
+<link rel="icon" href="/worldforkids/assets/favicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/worldforkids/assets/favicon/apple-touch-icon.png">
+<link rel="manifest" href="/worldforkids/assets/favicon/site.webmanifest">
     <meta id="meta-desc" name="description" content="Stáhněte zdarma dětská bludiště, omalovánky a spojovačky k vytisknutí pro děti ve věku 3–10 let.">
     <meta name="robots" content="index, follow">
     <link id="link-canonical" rel="canonical" href="https://vinmat.eu/worldforkids/cs/">
@@ -55,11 +55,6 @@
     "inLanguage": "cs"
 }
     </script>
-
-        <link rel="icon" type="image/svg+xml" href="/worldforkids/assets/favicon/favicon.svg">
-    <link rel="icon" type="image/png" sizes="96x96" href="/worldforkids/assets/favicon/favicon-96x96.png">
-    <link rel="apple-touch-icon" href="/worldforkids/assets/favicon/apple-touch-icon.png">
-    <link rel="manifest" href="/worldforkids/assets/favicon/site.webmanifest">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="../translations.js"></script>
     <style>
@@ -78,6 +73,7 @@
 </head>
 
 <body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col pt-[36px] opacity-0 transition-opacity duration-150" data-locale="cs" data-route-key="home">
+<noscript data-vinmat-noscript><style>body{opacity:1!important}</style><div style="margin:0;padding:.65rem 1rem;background:#fff7ed;color:#7c2d12;text-align:center;font:600 13px/1.4 system-ui,sans-serif">JavaScript je vypnutý. Odkazy na pracovní listy níže jsou stále dostupné.</div></noscript>
 
 <!-- HEADER START -->
 <!-- TOP BAR -->
@@ -1684,8 +1680,6 @@ async function tiskniAktualni(){
 // ─── INICIALIZACE ─────────────────────────────────────────────────────────────
 async function inicializujAplikaci(){
     try {
-        var b=await nactiCsvData('bludiste'), o=await nactiCsvData('omalovanky'), s=await nactiCsvData('spojovacky'), t=await nactiCsvData('obtahovacky');
-        zparsovanaData=b.concat(o).concat(s).concat(t);
         // Jazyk: URL param > localStorage > default EN
         var urlP=new URLSearchParams(window.location.search);
         jaz='cz';
@@ -1720,8 +1714,10 @@ if (autoLevel) {
     localStorage.removeItem('vinmat_auto_filter_level');
 }
 setJazyk(jaz);
+
+var b=await nactiCsvData('bludiste'), o=await nactiCsvData('omalovanky'), s=await nactiCsvData('spojovacky'), t=await nactiCsvData('obtahovacky');
+zparsovanaData=b.concat(o).concat(s).concat(t);
 setJazyk(jaz);
-naplnDropdownyZDat();
 
 document.getElementById('sel-sezona').value = aktualniSezona;
 document.getElementById('sel-zamereni').value = aktualniZamereni;
