@@ -32,6 +32,17 @@ function validateInlineScripts(html, file) {
     });
 }
 
+function validateJsonLd(html, file) {
+    const blocks = [...html.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/gi)];
+    blocks.forEach((match, index) => {
+        try {
+            JSON.parse(match[1]);
+        } catch (error) {
+            errors.push(`${file}: JSON-LD block ${index + 1} is invalid: ${error.message}`);
+        }
+    });
+}
+
 const indexExpectations = {
     'index.html': {
         locale: 'en', canonical: 'https://vinmat.eu/worldforkids/', title: 'Free Printable', cardLabel: 'Coloring',
@@ -82,6 +93,7 @@ for (const [file, expected] of Object.entries(indexExpectations)) {
         assert(count(html, `href="${href}"`) === 1, `${file}: duplicate or missing head link ${href}`);
     }
     validateInlineScripts(html, file);
+    validateJsonLd(html, file);
 }
 
 const historyChecks = [
@@ -106,6 +118,86 @@ for (const check of historyChecks) {
         assert(html.includes(`hreflang="${lang}"`), `${check.file}: missing hreflang ${lang}`);
     }
     validateInlineScripts(html, check.file);
+    validateJsonLd(html, check.file);
+}
+
+const activityGuideChecks = [
+    {
+        file: 'de/anleitung-aktivitaeten.html',
+        locale: 'de',
+        canonical: 'https://vinmat.eu/worldforkids/de/anleitung-aktivitaeten.html',
+        required: [
+            '<title>Aktivitäten für Kinder auswählen | VinMat</title>',
+            'Welche Aktivität passt zu welchem Alter?',
+            '>Aktivitäten für Kinder auswählen</h1>',
+            'href="anleitung-labyrinthe.html"',
+            'href="anleitung-ausmalbilder.html"',
+            'href="anleitung-punkte-verbinden.html"',
+            'href="anleitung-nachzeichnen.html"',
+            'href="schwierigkeitsstufen.html"',
+            'Punkt-zu-Punkt-Bilder',
+            'Nachspuren',
+            'Stufe 5 (12+)',
+            'Datenschutz (Englisch)',
+            'Nutzungsbedingungen (Englisch)',
+            'content="es_ES"'
+        ],
+        forbidden: [
+            'href="pruvodce-',
+            'href="urovne-obtiznosti.html"',
+            'Punkte-verbinden-Vorlagen',
+            '>Nachzeichnen</',
+            'ab 2 Jahren',
+            '<td class="p-3">3+ *</td>',
+            'whitespace-nowrap text-center',
+            'https://www.vinmat.eu/worldforkids"'
+        ]
+    },
+    {
+        file: 'es/guia-actividades.html',
+        locale: 'es',
+        canonical: 'https://vinmat.eu/worldforkids/es/guia-actividades.html',
+        required: [
+            '<title>Guía de actividades para niños | VinMat</title>',
+            '¿Qué actividad es adecuada para cada edad?',
+            '>Guía de actividades</h1>',
+            'href="guia-laberintos.html"',
+            'href="guia-dibujos.html"',
+            'href="guia-unir-puntos.html"',
+            'href="guia-trazado.html"',
+            'href="niveles-dificultad.html"',
+            'Nivel 5 (12+)',
+            'Privacidad (en inglés)',
+            'Términos de uso (en inglés)',
+            'content="de_DE"'
+        ],
+        forbidden: [
+            'href="pruvodce-',
+            'href="urovne-obtiznosti.html"',
+            'Aparta a tus hijos',
+            'pinturita',
+            'Solo después coged',
+            'desde los 2 años',
+            '<td class="p-3">3+ *</td>',
+            'whitespace-nowrap text-center',
+            'https://www.vinmat.eu/worldforkids"'
+        ]
+    }
+];
+
+for (const check of activityGuideChecks) {
+    const html = await text(check.file);
+    assert(html.includes(`<html lang="${check.locale}">`), `${check.file}: wrong html lang`);
+    assert(html.includes(`data-locale="${check.locale}"`), `${check.file}: wrong data-locale`);
+    assert(html.includes(`rel="canonical" href="${check.canonical}"`), `${check.file}: wrong canonical`);
+    assert(html.includes('name="robots" content="index, follow"'), `${check.file}: robots meta is missing`);
+    for (const lang of ['en', 'cs', 'de', 'es', 'x-default']) {
+        assert(html.includes(`hreflang="${lang}"`), `${check.file}: missing hreflang ${lang}`);
+    }
+    for (const value of check.required) assert(html.includes(value), `${check.file}: missing ${value}`);
+    for (const value of check.forbidden) assert(!html.includes(value), `${check.file}: forbidden old value remains: ${value}`);
+    validateInlineScripts(html, check.file);
+    validateJsonLd(html, check.file);
 }
 
 const siteNavigation = await text('assets/js/site-navigation.js');
@@ -127,6 +219,8 @@ for (const url of [
     'https://vinmat.eu/worldforkids/cs/',
     'https://vinmat.eu/worldforkids/de/',
     'https://vinmat.eu/worldforkids/es/',
+    'https://vinmat.eu/worldforkids/de/anleitung-aktivitaeten.html',
+    'https://vinmat.eu/worldforkids/es/guia-actividades.html',
     'https://vinmat.eu/worldforkids/de/geschichte-nachzeichnen.html',
     'https://vinmat.eu/worldforkids/es/historia-trazado.html'
 ]) {
