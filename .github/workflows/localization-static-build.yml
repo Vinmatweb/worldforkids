@@ -30,22 +30,30 @@ jobs:
         run: |
           node --check scripts/optimize-localized-index-seo.mjs
           node --check scripts/polish-activity-localization.mjs
+          node --check scripts/polish-de-es-content.mjs
           node --check scripts/build-static-site.mjs
+          node --check scripts/finalize-activity-pages.mjs
           node --check scripts/normalize-guide-headers.mjs
           node --check scripts/finalize-localized-indexes.mjs
           node --check scripts/validate-localized-site.mjs
           node --check scripts/validate-difficulty-localization.mjs
+          node --check scripts/validate-de-es-content.mjs
           node --check assets/js/site-config.js
           node --check assets/js/site-navigation.js
 
       - name: Optimize localized index SEO
         run: node scripts/optimize-localized-index-seo.mjs
 
-      - name: Polish activity metadata
-        run: node scripts/polish-activity-localization.mjs
+      - name: Polish localized source content
+        run: |
+          node scripts/polish-activity-localization.mjs
+          node scripts/polish-de-es-content.mjs
 
       - name: Generate localized static site
         run: node scripts/build-static-site.mjs
+
+      - name: Finalize generated activity pages
+        run: node scripts/finalize-activity-pages.mjs
 
       - name: Normalize localized guide headers
         run: node scripts/normalize-guide-headers.mjs
@@ -57,6 +65,7 @@ jobs:
         run: |
           node scripts/validate-localized-site.mjs
           node scripts/validate-difficulty-localization.mjs
+          node scripts/validate-de-es-content.mjs
 
       - name: Commit generated files
         shell: bash
