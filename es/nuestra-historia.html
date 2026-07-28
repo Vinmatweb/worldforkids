@@ -55,17 +55,16 @@
     }
     </script>
 
-    <link rel="alternate" hreflang="en" href="https://vinmat.eu/worldforkids/our-story.html">
-    <link rel="alternate" hreflang="cs" href="https://vinmat.eu/worldforkids/cs/nas-pribeh.html">
-    <link rel="alternate" hreflang="de" href="https://vinmat.eu/worldforkids/de/unsere-geschichte.html">
-    <link rel="alternate" hreflang="es" href="https://vinmat.eu/worldforkids/es/nuestra-historia.html">
-    <link rel="alternate" hreflang="x-default" href="https://vinmat.eu/worldforkids/our-story.html">
-
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { font-family:'Comic Sans MS','Chalkboard SE','Comic Neue',sans-serif; scroll-behavior:smooth; }
         html { scroll-padding-top:90px; }
     </style>
+    <link rel="alternate" hreflang="en" href="https://vinmat.eu/worldforkids/our-story.html">
+    <link rel="alternate" hreflang="cs" href="https://vinmat.eu/worldforkids/cs/nas-pribeh.html">
+    <link rel="alternate" hreflang="de" href="https://vinmat.eu/worldforkids/de/unsere-geschichte.html">
+    <link rel="alternate" hreflang="es" href="https://vinmat.eu/worldforkids/es/nuestra-historia.html">
+    <link rel="alternate" hreflang="x-default" href="https://vinmat.eu/worldforkids/our-story.html">
     <script src="../assets/js/site-config.js"></script>
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col pt-[36px]" data-locale="es" data-route-key="ourStory">
@@ -299,6 +298,6 @@
     const backToTop=document.getElementById('backToTop');
     window.addEventListener('scroll',()=>{const visible=window.scrollY>500;backToTop.classList.toggle('opacity-100',visible);backToTop.classList.toggle('opacity-0',!visible);backToTop.classList.toggle('pointer-events-none',!visible);},{passive:true});
 </script>
-<script src="../assets/js/site-navigation.js"></script>
+    <script src="../assets/js/site-navigation.js"></script>
 </body>
 </html>

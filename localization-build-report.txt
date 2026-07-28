@@ -44,8 +44,18 @@ Finalized localized indexes.
 Exit code: 0
 
 ## Validate base localization
-Localization validation failed with 1 error(s):
-- es/guia-actividades.html: missing Nivel 5 (12+)
-Exit code: 1
+Localization validation passed.
+Exit code: 0
 
-BUILD RESULT: FAILED
+## Validate difficulty pages
+Difficulty localization validation passed.
+Exit code: 0
+
+## Validate complete DE ES content
+DE/ES validation warnings (2):
+- Duplicate visible activity name spojovacky:LV1:De:Hund vor der Hundehütte: lv1_gem_1001-dog-doghouse-dot-to-dot, lv1_gem_1001_1-dog-doghouse-dot-to-dot
+- Duplicate visible activity name spojovacky:LV1:Es:Perro frente a la caseta: lv1_gem_1001-dog-doghouse-dot-to-dot, lv1_gem_1001_1-dog-doghouse-dot-to-dot
+Complete German and Spanish localization validation passed.
+Exit code: 0
+
+BUILD RESULT: PASSED

@@ -17,8 +17,8 @@
     <link rel="apple-touch-icon" href="/worldforkids/assets/favicon/apple-touch-icon.png">
     <link rel="manifest" href="/worldforkids/assets/favicon/site.webmanifest">
 
-    <meta property="og:title" content="Historia del trazado | VinMat">
-    <meta property="og:description" content="De las plantillas y la transferencia de dibujos al papel de calco y las fichas modernas.">
+    <meta property="og:title" content="Historia del trazado: de las plantillas a las fichas | VinMat">
+    <meta property="og:description" content="Cómo evolucionó el trazado desde las plantillas y la transferencia de dibujos hasta el papel de calco, los cuadernos escolares y las fichas infantiles modernas.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://vinmat.eu/worldforkids/es/historia-trazado.html">
     <meta property="og:image" content="https://vinmat.eu/worldforkids/assets/images/og-image.png">
@@ -46,14 +46,13 @@
     }
     </script>
 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>body{font-family:'Comic Sans MS','Chalkboard SE','Comic Neue',sans-serif;scroll-behavior:smooth}html{scroll-padding-top:90px}.timeline-card{background:#fff;border:1px solid #f1f5f9;border-radius:1.5rem;padding:1.5rem}</style>
     <link rel="alternate" hreflang="en" href="https://vinmat.eu/worldforkids/history-tracing.html">
     <link rel="alternate" hreflang="cs" href="https://vinmat.eu/worldforkids/cs/historie-obkreslovani.html">
     <link rel="alternate" hreflang="de" href="https://vinmat.eu/worldforkids/de/geschichte-nachzeichnen.html">
     <link rel="alternate" hreflang="es" href="https://vinmat.eu/worldforkids/es/historia-trazado.html">
     <link rel="alternate" hreflang="x-default" href="https://vinmat.eu/worldforkids/history-tracing.html">
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>body{font-family:'Comic Sans MS','Chalkboard SE','Comic Neue',sans-serif;scroll-behavior:smooth}html{scroll-padding-top:90px}.timeline-card{background:#fff;border:1px solid #f1f5f9;border-radius:1.5rem;padding:1.5rem}</style>
     <script src="../assets/js/site-config.js"></script>
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col pt-[36px]" data-locale="es" data-route-key="tracingHistory">
@@ -132,6 +131,6 @@
 <footer class="bg-slate-900 text-slate-400 text-[11px] py-4 px-6 border-t border-slate-800 font-semibold shadow-inner"><div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-center items-center gap-1 md:gap-2 flex-wrap text-center"><span>© 2026 Hecho con ❤️ para aprender y crear</span><span class="hidden md:inline">·</span><span>Gratis para uso personal y educativo</span><span class="hidden md:inline">·</span><a href="https://vinmat.eu/worldforkids/privacy.html" class="hover:text-white">Privacidad (en inglés)</a><span class="hidden md:inline">·</span><a href="https://vinmat.eu/worldforkids/terms.html" class="hover:text-white">Términos de uso (en inglés)</a><span class="hidden md:inline">·</span><button onclick="copyProjectEmail()" class="text-amber-400 hover:text-amber-300 font-bold uppercase">✉️ Contacto <span id="copy-status" class="text-emerald-400 lowercase font-normal ml-1 opacity-0"></span></button></div></footer>
 <script>localStorage.setItem('vinmat_main_lang','es');localStorage.setItem('vinmat_lang','es');function copyProjectEmail(){const value='vinmatforkids@gmail.com';const status=document.getElementById('copy-status');const done=()=>{status.textContent='(¡Correo copiado!)';status.classList.remove('opacity-0');setTimeout(()=>status.classList.add('opacity-0'),1800)};if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(value).then(done).catch(()=>fallback(value,done));else fallback(value,done)}function fallback(value,done){const input=document.createElement('input');input.value=value;document.body.appendChild(input);input.select();document.execCommand('copy');input.remove();done()}</script>
 <button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" class="fixed bottom-14 text-3xl opacity-0 pointer-events-none z-50" style="left:min(calc(50% + 30rem),calc(100vw - 60px));" aria-label="Volver arriba">⬆️</button><script>const backToTop=document.getElementById('backToTop');window.addEventListener('scroll',()=>{const v=window.scrollY>500;backToTop.classList.toggle('opacity-100',v);backToTop.classList.toggle('opacity-0',!v);backToTop.classList.toggle('pointer-events-none',!v)},{passive:true});</script>
-<script src="../assets/js/site-navigation.js"></script>
+    <script src="../assets/js/site-navigation.js"></script>
 </body>
 </html>

@@ -670,8 +670,7 @@ const LANG_META = {
     de: { htmlLang:'de', label:'DE' },
     es: { htmlLang:'es', label:'ES' }
 };
-// Poznámka: pro DE/ES zatím odkazujeme na absolutní cesty k EN verzím podstránek
-// (guide-activities.html, privacy.html…), dokud nevytvoříme jejich DE/ES překlady.
+// DE a ES mají vlastní hlavní průvodce. Na EN verzi zatím odkazují pouze právní stránky.
 const PAGE_SLUGS = {
     guideActivities:  { cz:'/worldforkids/cs/pruvodce-aktivitami.html',      en:'/worldforkids/guide-activities.html',  de:'/worldforkids/de/anleitung-aktivitaeten.html', es:'/worldforkids/es/guia-actividades.html' },
     difficultyLevels: { cz:'/worldforkids/cs/urovne-obtiznosti.html',        en:'/worldforkids/difficulty-levels.html', de:'/worldforkids/de/schwierigkeitsstufen.html', es:'/worldforkids/es/niveles-dificultad.html' },
@@ -746,34 +745,34 @@ const slovnik = {
         btnColor:"🌈 Farbig", btnBw:"◧ Schwarz-Weiß", btnPartly:"🌗 Teilweise farbig",
         labelColor:"🌈 Farbig", labelBw:"◧ Schwarz-Weiß", labelPartly:"🌗 Teilweise farbig",
         bludisteLabel:"LABYRINTHE", omalovankyLabel:"AUSMALBILDER", spojovackyLabel:"PUNKT ZU PUNKT", obtahovackyLabel:"NACHSPUREN",
-        footerCopyright:"© 2026 Mit ❤️ gemacht für kreative Kinder", footerProjects:"Zuhause von VinMat.eu",
-        footerPrivacy:"Datenschutzerklärung", footerTerms:"Nutzungsbedingungen",
+        footerCopyright:"© 2026 Mit ❤️ gemacht für kreative Kinder", footerProjects:"Startseite von VinMat.eu",
+        footerPrivacy:"Datenschutz (Englisch)", footerTerms:"Nutzungsbedingungen (Englisch)",
         footerDisclaimer:"Alle Downloads sind für die private und pädagogische Nutzung kostenlos", footerContact:"Kontakt",
         emailCopied:"(vinmatforkids@gmail.com kopiert!)",
         onlyBw:"◧ Nur Schwarz-Weiß", scrollTop:"⬆️ NACH OBEN", searchPlaceholder:"Nach Namen suchen...",
         filtrTema:"Thema:", filtrRozsirene:"— Erweiterte Filter —", filtrVse:"— Alle —",
-        filtrRazeni:"Sortieren", filtrNewest:"Neueste zuerst", filtrOldest:"Älteste zuerst",
+        filtrRazeni:"Sortieren nach", filtrNewest:"Neueste zuerst", filtrOldest:"Älteste zuerst",
         sortNewest:"Neueste", sortOldest:"Älteste", sortPopular:"Beliebteste – bald verfügbar", sortAZ:"A–Z", sortZA:"Z–A", sortRandom:"Zufällig",
-        filtrSezona:"Jahreszeit & Feiertage", filtrZamereni:"Lernschwerpunkt", filtrReset:"Filter zurücksetzen",
+        filtrSezona:"Jahreszeiten und Feiertage", filtrZamereni:"Lernschwerpunkt", filtrReset:"Filter zurücksetzen",
         navPruvodce:"Aktivitäten-Guide", navUrovne:"Schwierigkeitsstufen", navPribeh:"Unsere Geschichte", navHome:"Startseite",
         guideMazesLabel:"Labyrinth-Ratgeber", guideColoringLabel:"Ausmalbilder-Ratgeber", guideDotsLabel:"Punkt-zu-Punkt-Ratgeber", guideTracingLabel:"Nachspuren-Ratgeber",
         aboutTitle:"Über VinMats Welt für Kinder",
         aboutText:"Hier findest du hochwertige, kostenlose Arbeitsblätter für zu Hause, die Kita und die Schule. Klare Schwierigkeitsstufen helfen dir, eine passende Aktivität für das Alter und die Fähigkeiten des Kindes auszuwählen.",
-        aboutMazes:"🧩 Illustrierte Labyrinthe", aboutMazesText:"Ideal zum Üben von Problemlösung, Ausdauer und logischem Denken. Erhältlich in bunten und druckerfreundlichen Varianten.",
-        aboutColoring:"🎨 Kreatives Ausmalen", aboutColoringText:"Perfekt für künstlerischen Ausdruck, Farberkennung und die Stärkung der Handmuskulatur, die für erste Schreibversuche wichtig ist.",
+        aboutMazes:"🧩 Illustrierte Labyrinthe", aboutMazesText:"Ideal zum Üben von Problemlösung, Ausdauer und logischem Denken. Erhältlich in Farbe und Schwarz-Weiß.",
+        aboutColoring:"🎨 Kreatives Ausmalen", aboutColoringText:"Sie fördern Kreativität, Farberkennung und Feinmotorik.",
         aboutDots:"🔢 Punkt-zu-Punkt-Bilder", aboutDotsText:"Spielerische Aufgaben zum Üben von Zahlenfolgen, Konzentration und genauer Linienführung.",
-        aboutTracing:"✏️ Arbeitsblätter zum Nachspuren", aboutTracingText:"Sie fördern Stiftführung, Hand-Augen-Koordination, Feinmotorik und die Vorbereitung auf das Schreiben."
+        aboutTracing:"✏️ Nachspuren (in Vorbereitung)", aboutTracingText:"Die Kategorie wird derzeit für zuverlässige Linienstärke und Druckqualität getestet."
     },
     es: {
         mainTitle:"EL MUNDO DE VINMAT PARA NIÑOS", subTitle:"Laberintos, dibujos para colorear y fichas de unir puntos, listos para imprimir",
         vse:"Todo", bludiste:"Laberintos", omalovanky:"Colorear", spojovacky:"Une los puntos", obtahovacky:"Trazado", ageTitle:"Edad:", ageLv5:"12+ y adultos",
         noResults:"Todavía no tenemos nada para esta selección.", variant:"Elige una variante",
         btnDownload:"📥 Descargar imagen", btnPrint:"🖨️ Imprimir directamente",
-        btnColor:"🌈 A color", btnBw:"◧ Blanco y negro", btnPartly:"🌗 Parcialmente coloreado",
-        labelColor:"🌈 A color", labelBw:"◧ Blanco y negro", labelPartly:"🌗 Parcialmente coloreado",
+        btnColor:"🌈 A color", btnBw:"◧ Blanco y negro", btnPartly:"🌗 Parcialmente coloreada",
+        labelColor:"🌈 A color", labelBw:"◧ Blanco y negro", labelPartly:"🌗 Parcialmente coloreada",
         bludisteLabel:"LABERINTOS", omalovankyLabel:"DIBUJOS", spojovackyLabel:"UNE LOS PUNTOS", obtahovackyLabel:"TRAZADO",
         footerCopyright:"© 2026 Hecho con ❤️ para niños creativos", footerProjects:"Página de inicio de VinMat.eu",
-        footerPrivacy:"Política de privacidad", footerTerms:"Términos de uso",
+        footerPrivacy:"Privacidad (en inglés)", footerTerms:"Términos de uso (en inglés)",
         footerDisclaimer:"Todas las descargas son gratuitas para uso personal y educativo", footerContact:"Contacto",
         emailCopied:"(¡vinmatforkids@gmail.com copiado!)",
         onlyBw:"◧ Solo blanco y negro", scrollTop:"⬆️ ARRIBA", searchPlaceholder:"Buscar por nombre...",
@@ -785,10 +784,10 @@ const slovnik = {
         guideMazesLabel:"Guía de laberintos", guideColoringLabel:"Guía de dibujos para colorear", guideDotsLabel:"Guía de unir puntos", guideTracingLabel:"Guía de trazado",
         aboutTitle:"Sobre El mundo de VinMat para niños",
         aboutText:"Aquí encontrarás fichas educativas gratuitas para casa, infantil y primaria. Los niveles de dificultad te ayudan a elegir una actividad adecuada para la edad y las habilidades de cada niño.",
-        aboutMazes:"🧩 Laberintos ilustrados", aboutMazesText:"Ideales para practicar la resolución de problemas, la constancia y el pensamiento lógico. Disponibles en versiones a color y aptas para imprimir.",
-        aboutColoring:"🎨 Dibujos para colorear", aboutColoringText:"Perfectos para la expresión artística, el reconocimiento de colores y el fortalecimiento de los músculos de la mano, esenciales para la escritura.",
+        aboutMazes:"🧩 Laberintos ilustrados", aboutMazesText:"Ideales para practicar la resolución de problemas, la constancia y el pensamiento lógico. Disponibles en color y en blanco y negro.",
+        aboutColoring:"🎨 Dibujos para colorear", aboutColoringText:"Ayudan a desarrollar la creatividad, reconocer los colores y practicar la motricidad fina.",
         aboutDots:"🔢 Fichas de unir puntos", aboutDotsText:"Actividades divertidas para practicar las secuencias numéricas, la concentración y la precisión al trazar líneas.",
-        aboutTracing:"✏️ Fichas de trazado", aboutTracingText:"Útiles para el control del lápiz, la coordinación mano-ojo, la motricidad fina y la práctica temprana de la escritura."
+        aboutTracing:"✏️ Trazado (en preparación)", aboutTracingText:"La categoría se está probando para asegurar el grosor de línea y la calidad de impresión."
     }
 };
 
