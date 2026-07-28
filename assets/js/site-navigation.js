@@ -133,10 +133,15 @@
     }
 
     function addBackToTopButton() {
-        if (document.getElementById('backToTop')) return;
-
         var locale = currentLocale();
         var labels = navLabels[locale] || navLabels.en;
+        var existingButton = document.getElementById('backToTop');
+
+        if (existingButton) {
+            existingButton.setAttribute('aria-label', labels.backToTop);
+            return;
+        }
+
         var button = document.createElement('button');
         button.id = 'backToTop';
         button.type = 'button';
