@@ -1,25 +1,147 @@
-/* Shared language switcher. Loaded after a page's inline scripts. */
+/* Shared navigation, language switcher and small page-wide helpers. */
 (function () {
     'use strict';
 
+    var languageOrder = ['cs', 'en', 'de', 'es'];
+    var languageLabels = { cs: 'CZ', en: 'EN', de: 'DE', es: 'ES' };
+    var navLabels = {
+        en: {
+            home: 'Home',
+            activityGuide: 'Activity Guide',
+            difficultyLevels: 'Difficulty Levels',
+            ourStory: 'Our Story',
+            backToTop: 'Back to top'
+        },
+        cs: {
+            home: 'Domů',
+            activityGuide: 'Průvodce aktivitami',
+            difficultyLevels: 'Úrovně obtížnosti',
+            ourStory: 'Náš příběh',
+            backToTop: 'Zpět nahoru'
+        },
+        de: {
+            home: 'Startseite',
+            activityGuide: 'Aktivitäten-Guide',
+            difficultyLevels: 'Schwierigkeitsstufen',
+            ourStory: 'Unsere Geschichte',
+            backToTop: 'Nach oben'
+        },
+        es: {
+            home: 'Inicio',
+            activityGuide: 'Guía de actividades',
+            difficultyLevels: 'Niveles de dificultad',
+            ourStory: 'Nuestra historia',
+            backToTop: 'Volver arriba'
+        }
+    };
+
+    function currentLocale() {
+        var locale = document.body && document.body.getAttribute('data-locale');
+        return window.VinMatSite && VinMatSite.languages[locale] ? locale : 'en';
+    }
+
+    function currentRouteKey() {
+        return (document.body && document.body.getAttribute('data-route-key')) || 'home';
+    }
+
+    function currentSearch() {
+        var query = new URLSearchParams(window.location.search);
+        query.delete('lang');
+        return query.toString() ? '?' + query.toString() : '';
+    }
+
     function targetLocale(button) {
+        var explicitTarget = button.getAttribute('data-language-target');
+        if (explicitTarget) return explicitTarget;
+
         var id = button.id || '';
         if (id.indexOf('cz') !== -1 || id.indexOf('cs') !== -1) return 'cs';
         if (id.indexOf('en') !== -1) return 'en';
+        if (id.indexOf('de') !== -1) return 'de';
+        if (id.indexOf('es') !== -1) return 'es';
         return null;
     }
 
+    function isLanguageControl(element) {
+        if (!element || !/^(A|BUTTON)$/.test(element.tagName)) return false;
+        if (element.hasAttribute('data-language-target')) return true;
+        if (/^lang-to-(cz|cs|en|de|es)(-desktop)?$/.test(element.id || '')) return true;
+        return Object.values(languageLabels).indexOf(element.textContent.trim()) !== -1;
+    }
+
+    function normalizeMainNavigation(topBar, locale) {
+        if (!topBar || !window.VinMatSite || currentRouteKey() === 'home') return;
+
+        var links = Array.from(topBar.querySelectorAll('a')).filter(function (link) {
+            if (link.target === '_blank' || link.hasAttribute('aria-label')) return false;
+            if (isLanguageControl(link)) return false;
+            return true;
+        });
+
+        var routeKeys = ['home', 'activityGuide', 'difficultyLevels', 'ourStory'];
+        var labels = navLabels[locale] || navLabels.en;
+
+        routeKeys.forEach(function (routeKey, index) {
+            var link = links[index];
+            if (!link) return;
+
+            link.href = VinMatSite.localeUrl(locale, routeKey, '');
+
+            if (routeKey === 'home') {
+                var span = link.querySelector('span');
+                if (span) span.textContent = labels.home;
+            } else {
+                link.textContent = labels[routeKey];
+            }
+        });
+    }
+
+    function normalizeLanguageSwitchers(topBar, locale) {
+        if (!topBar || !window.VinMatSite || currentRouteKey() === 'home') return;
+
+        var controls = Array.from(topBar.querySelectorAll('a, button')).filter(isLanguageControl);
+        var groups = [];
+
+        controls.forEach(function (control) {
+            var parent = control.parentElement;
+            if (parent && groups.indexOf(parent) === -1) groups.push(parent);
+        });
+
+        groups.forEach(function (group) {
+            Array.from(group.children).forEach(function (child) {
+                if (isLanguageControl(child)) child.remove();
+            });
+
+            languageOrder.forEach(function (target) {
+                if (target === locale) return;
+
+                var link = document.createElement('a');
+                link.href = VinMatSite.localeUrl(target, currentRouteKey(), currentSearch());
+                link.setAttribute('data-language-target', target);
+                link.className = 'hover:text-amber-400 transition-colors font-bold';
+                link.textContent = languageLabels[target];
+                group.appendChild(link);
+            });
+        });
+    }
+
+    function normalizeHeader() {
+        var topBar = document.querySelector('body > div.fixed.top-0, body > div[class*="fixed"][class*="top-0"]');
+        var locale = currentLocale();
+        normalizeMainNavigation(topBar, locale);
+        normalizeLanguageSwitchers(topBar, locale);
+    }
+
     function addBackToTopButton() {
-        // Některé starší stránky tlačítko již obsahují přímo v HTML. Nové a
-        // generované stránky jej dostanou jednotně odsud, bez kopírování kódu.
         if (document.getElementById('backToTop')) return;
 
+        var locale = currentLocale();
+        var labels = navLabels[locale] || navLabels.en;
         var button = document.createElement('button');
-        var isCzech = document.body.getAttribute('data-locale') === 'cs';
         button.id = 'backToTop';
         button.type = 'button';
         button.textContent = '⬆️';
-        button.setAttribute('aria-label', isCzech ? 'Zpět nahoru' : 'Back to top');
+        button.setAttribute('aria-label', labels.backToTop);
         button.style.cssText = [
             'position:fixed',
             'bottom:3.5rem',
@@ -52,21 +174,17 @@
     }
 
     document.addEventListener('click', function (event) {
-        var button = event.target.closest('[data-language-target], #lang-to-en, #lang-to-cz, #lang-to-en-desktop, #lang-to-cz-desktop');
+        var button = event.target.closest('[data-language-target], [id^="lang-to-"]');
         if (!button || !window.VinMatSite) return;
 
-        var locale = button.getAttribute('data-language-target') || targetLocale(button);
+        var locale = targetLocale(button);
         if (!locale || !VinMatSite.languages[locale]) return;
-
-        var routeKey = document.body.getAttribute('data-route-key') || 'home';
-        var query = new URLSearchParams(window.location.search);
-        query.delete('lang');
-        var search = query.toString() ? '?' + query.toString() : '';
 
         event.preventDefault();
         event.stopImmediatePropagation();
-        window.location.assign(VinMatSite.localeUrl(locale, routeKey, search));
+        window.location.assign(VinMatSite.localeUrl(locale, currentRouteKey(), currentSearch()));
     }, true);
 
+    normalizeHeader();
     addBackToTopButton();
 }());
