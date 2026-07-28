@@ -6,21 +6,23 @@
 
     var languages = {
         en: { code: 'en', label: 'EN', nativeName: 'English', path: '', assetDirectory: 'en', htmlLang: 'en', ogLocale: 'en_US' },
-        cs: { code: 'cs', label: 'CZ', nativeName: 'Čeština', path: 'cs/', assetDirectory: 'cs', htmlLang: 'cs', ogLocale: 'cs_CZ' }
+        cs: { code: 'cs', label: 'CZ', nativeName: 'Čeština', path: 'cs/', assetDirectory: 'cs', htmlLang: 'cs', ogLocale: 'cs_CZ' },
+        de: { code: 'de', label: 'DE', nativeName: 'Deutsch', path: 'de/', assetDirectory: 'de', htmlLang: 'de', ogLocale: 'de_DE' },
+        es: { code: 'es', label: 'ES', nativeName: 'Español', path: 'es/', assetDirectory: 'es', htmlLang: 'es', ogLocale: 'es_ES' }
     };
 
     var routes = {
-        home: { en: '', cs: '' },
-        activityGuide: { en: 'guide-activities.html', cs: 'pruvodce-aktivitami.html' },
-        difficultyLevels: { en: 'difficulty-levels.html', cs: 'urovne-obtiznosti.html' },
-        ourStory: { en: 'our-story.html', cs: 'nas-pribeh.html' },
-        mazeGuide: { en: 'guide-mazes.html', cs: 'pruvodce-bludiste.html' },
-        coloringGuide: { en: 'guide-coloring.html', cs: 'pruvodce-omalovanky.html' },
-        dotToDotGuide: { en: 'guide-dot-to-dot.html', cs: 'pruvodce-spojovacky.html' },
-        tracingGuide: { en: 'guide-tracing.html', cs: 'pruvodce-obtahovacky.html' },
-        tracingHistory: { en: 'history-tracing.html', cs: 'historie-obkreslovani.html' },
-        privacy: { en: 'privacy.html', cs: 'zasady-ochrany-osobnich-udaju.html' },
-        terms: { en: 'terms.html', cs: 'podminky-uziti.html' }
+        home: { en: '', cs: '', de: '', es: '' },
+        activityGuide: { en: 'guide-activities.html', cs: 'pruvodce-aktivitami.html', de: 'anleitung-aktivitaeten.html', es: 'guia-actividades.html' },
+        difficultyLevels: { en: 'difficulty-levels.html', cs: 'urovne-obtiznosti.html', de: 'schwierigkeitsstufen.html', es: 'niveles-dificultad.html' },
+        ourStory: { en: 'our-story.html', cs: 'nas-pribeh.html', de: 'unsere-geschichte.html', es: 'nuestra-historia.html' },
+        mazeGuide: { en: 'guide-mazes.html', cs: 'pruvodce-bludiste.html', de: 'anleitung-labyrinthe.html', es: 'guia-laberintos.html' },
+        coloringGuide: { en: 'guide-coloring.html', cs: 'pruvodce-omalovanky.html', de: 'anleitung-ausmalbilder.html', es: 'guia-dibujos.html' },
+        dotToDotGuide: { en: 'guide-dot-to-dot.html', cs: 'pruvodce-spojovacky.html', de: 'anleitung-punkte-verbinden.html', es: 'guia-unir-puntos.html' },
+        tracingGuide: { en: 'guide-tracing.html', cs: 'pruvodce-obtahovacky.html', de: 'anleitung-nachzeichnen.html', es: 'guia-trazado.html' },
+        tracingHistory: { en: 'history-tracing.html', cs: 'historie-obkreslovani.html', de: 'geschichte-nachzeichnen.html', es: 'historia-trazado.html' },
+        privacy: { en: 'privacy.html', cs: 'zasady-ochrany-osobnich-udaju.html', de: 'datenschutz.html', es: 'privacidad.html' },
+        terms: { en: 'terms.html', cs: 'podminky-uziti.html', de: 'nutzungsbedingungen.html', es: 'terminos.html' }
     };
 
     function localeUrl(locale, routeKey, search) {
