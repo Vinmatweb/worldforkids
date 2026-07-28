@@ -26,6 +26,15 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Check build scripts
+        run: |
+          node --check scripts/prepare-localization-build.mjs
+          node --check scripts/build-static-site.mjs
+          node --check scripts/normalize-guide-headers.mjs
+          node --check scripts/finalize-localized-indexes.mjs
+          node --check scripts/validate-localized-site.mjs
+          node --check assets/js/site-navigation.js
+
       - name: Prepare generator
         run: node scripts/prepare-localization-build.mjs
 
@@ -34,6 +43,12 @@ jobs:
 
       - name: Normalize localized guide headers
         run: node scripts/normalize-guide-headers.mjs
+
+      - name: Finalize localized indexes
+        run: node scripts/finalize-localized-indexes.mjs
+
+      - name: Validate generated localization
+        run: node scripts/validate-localized-site.mjs
 
       - name: Commit generated files
         shell: bash
