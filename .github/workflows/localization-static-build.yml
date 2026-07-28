@@ -6,6 +6,10 @@ on:
       - de-es-localization
   workflow_dispatch:
 
+concurrency:
+  group: localization-static-build
+  cancel-in-progress: true
+
 permissions:
   contents: write
 
