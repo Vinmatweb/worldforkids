@@ -33,10 +33,22 @@ function validateInlineScripts(html, file) {
 }
 
 const indexExpectations = {
-    'index.html': { locale: 'en', canonical: 'https://vinmat.eu/worldforkids/', title: 'Free Printable', cardLabel: 'Coloring' },
-    'cs/index.html': { locale: 'cs', canonical: 'https://vinmat.eu/worldforkids/cs/', title: 'Bludiště', cardLabel: 'Omalovánka' },
-    'de/index.html': { locale: 'de', canonical: 'https://vinmat.eu/worldforkids/de/', title: 'Punkt-zu-Punkt-Bilder', cardLabel: 'Punkt zu Punkt' },
-    'es/index.html': { locale: 'es', canonical: 'https://vinmat.eu/worldforkids/es/', title: 'dibujos para colorear', cardLabel: 'Dibujo para colorear' }
+    'index.html': {
+        locale: 'en', canonical: 'https://vinmat.eu/worldforkids/', title: 'Free Printable', cardLabel: 'Coloring',
+        noScript: 'JavaScript is disabled.'
+    },
+    'cs/index.html': {
+        locale: 'cs', canonical: 'https://vinmat.eu/worldforkids/cs/', title: 'Bludiště', cardLabel: 'Omalovánka',
+        noScript: 'JavaScript je vypnutý.'
+    },
+    'de/index.html': {
+        locale: 'de', canonical: 'https://vinmat.eu/worldforkids/de/', title: 'Punkt-zu-Punkt-Bilder', cardLabel: 'Punkt zu Punkt',
+        noScript: 'JavaScript ist deaktiviert.'
+    },
+    'es/index.html': {
+        locale: 'es', canonical: 'https://vinmat.eu/worldforkids/es/', title: 'dibujos para colorear', cardLabel: 'Dibujo para colorear',
+        noScript: 'JavaScript está desactivado.'
+    }
 };
 
 for (const [file, expected] of Object.entries(indexExpectations)) {
@@ -60,6 +72,7 @@ for (const [file, expected] of Object.entries(indexExpectations)) {
     assert(!/<article[\s\S]*?<h2\b/.test(catalog), `${file}: a static card still uses h2`);
     assert(count(html, 'setJazyk(jaz);\nsetJazyk(jaz);') === 0, `${file}: duplicate setJazyk call remains`);
     assert(html.includes('data-vinmat-noscript'), `${file}: no-JavaScript fallback is missing`);
+    assert(html.includes(expected.noScript), `${file}: no-JavaScript fallback is not localized`);
     for (const href of [
         '/worldforkids/assets/favicon/favicon.svg',
         '/worldforkids/assets/favicon/favicon-96x96.png',
@@ -99,6 +112,14 @@ const siteNavigation = await text('assets/js/site-navigation.js');
 try { new Function(siteNavigation); } catch (error) { errors.push(`assets/js/site-navigation.js: ${error.message}`); }
 assert(siteNavigation.includes("de: 'DE'"), 'site-navigation.js: DE language is missing');
 assert(siteNavigation.includes("es: 'ES'"), 'site-navigation.js: ES language is missing');
+assert(siteNavigation.includes("existingButton.setAttribute('aria-label', labels.backToTop)"), 'site-navigation.js: existing back-to-top labels are not localized');
+
+const dotData = await text('assets/data/spojovacky.csv');
+assert(!dotData.includes('Punkte-verbinden-Vorlage'), 'spojovacky.csv: machine-like German terminology remains');
+assert(dotData.includes('Punkt-zu-Punkt-Bild'), 'spojovacky.csv: natural German dot-to-dot terminology is missing');
+const teddyRow = dotData.split(/\r?\n/).find((line) => line.includes('lv2_gem_1004-bear-dot-to-dot')) || '';
+assert(teddyRow.includes('5–6'), 'spojovacky.csv: LV2 teddy bear row does not contain age 5–6');
+assert(!teddyRow.includes('3–4'), 'spojovacky.csv: LV2 teddy bear row still contains age 3–4');
 
 const sitemap = await text('sitemap.xml');
 for (const url of [
