@@ -38,6 +38,7 @@ jobs:
           node --check scripts/normalize-guide-headers.mjs
           node --check scripts/finalize-localized-indexes.mjs
           node --check scripts/validate-localized-site.mjs
+          node --check scripts/validate-difficulty-localization.mjs
           node --check assets/js/site-config.js
           node --check assets/js/site-navigation.js
 
@@ -57,7 +58,9 @@ jobs:
         run: node scripts/finalize-localized-indexes.mjs
 
       - name: Validate generated localization
-        run: node scripts/validate-localized-site.mjs
+        run: |
+          node scripts/validate-localized-site.mjs
+          node scripts/validate-difficulty-localization.mjs
 
       - name: Commit generated files
         shell: bash
