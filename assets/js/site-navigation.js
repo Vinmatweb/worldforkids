@@ -69,6 +69,13 @@
         return Object.values(languageLabels).indexOf(element.textContent.trim()) !== -1;
     }
 
+    function routeAvailable(locale) {
+        if (!window.VinMatSite) return false;
+        return typeof VinMatSite.hasRoute === 'function'
+            ? VinMatSite.hasRoute(locale, currentRouteKey())
+            : Boolean(VinMatSite.localeUrl(locale, currentRouteKey(), ''));
+    }
+
     function normalizeMainNavigation(topBar, locale) {
         if (!topBar || !window.VinMatSite || currentRouteKey() === 'home') return;
 
@@ -85,7 +92,8 @@
             var link = links[index];
             if (!link) return;
 
-            link.href = VinMatSite.localeUrl(locale, routeKey, '');
+            var url = VinMatSite.localeUrl(locale, routeKey, '');
+            if (url) link.href = url;
 
             if (routeKey === 'home') {
                 var span = link.querySelector('span');
@@ -113,10 +121,13 @@
             });
 
             languageOrder.forEach(function (target) {
-                if (target === locale) return;
+                if (target === locale || !routeAvailable(target)) return;
+
+                var url = VinMatSite.localeUrl(target, currentRouteKey(), currentSearch());
+                if (!url) return;
 
                 var link = document.createElement('a');
-                link.href = VinMatSite.localeUrl(target, currentRouteKey(), currentSearch());
+                link.href = url;
                 link.setAttribute('data-language-target', target);
                 link.className = 'hover:text-amber-400 transition-colors font-bold';
                 link.textContent = languageLabels[target];
@@ -221,9 +232,12 @@
         var locale = targetLocale(button);
         if (!locale || !VinMatSite.languages[locale]) return;
 
+        var url = VinMatSite.localeUrl(locale, currentRouteKey(), currentSearch());
+        if (!url) return;
+
         event.preventDefault();
         event.stopImmediatePropagation();
-        window.location.assign(VinMatSite.localeUrl(locale, currentRouteKey(), currentSearch()));
+        window.location.assign(url);
     }, true);
 
     normalizeHeader();
