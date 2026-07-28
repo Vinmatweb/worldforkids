@@ -1,6 +1,9 @@
 name: Localization static build
 
 on:
+  push:
+    branches:
+      - de-es-localization
   workflow_dispatch:
 
 concurrency:
@@ -12,6 +15,7 @@ permissions:
 
 jobs:
   build:
+    if: ${{ !contains(github.event.head_commit.message || '', '[skip localization build]') }}
     runs-on: ubuntu-latest
 
     steps:
