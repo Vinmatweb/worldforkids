@@ -5,6 +5,9 @@ on:
   push:
     branches:
       - de-es-localization
+  pull_request:
+    branches:
+      - de-es-localization
 
 concurrency:
   group: localization-static-build
