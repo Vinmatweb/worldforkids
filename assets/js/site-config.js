@@ -21,8 +21,8 @@
         dotToDotGuide: { en: 'guide-dot-to-dot.html', cs: 'pruvodce-spojovacky.html', de: 'anleitung-punkte-verbinden.html', es: 'guia-unir-puntos.html' },
         tracingGuide: { en: 'guide-tracing.html', cs: 'pruvodce-obtahovacky.html', de: 'anleitung-nachzeichnen.html', es: 'guia-trazado.html' },
         tracingHistory: { en: 'history-tracing.html', cs: 'historie-obkreslovani.html', de: 'geschichte-nachzeichnen.html', es: 'historia-trazado.html' },
-        privacy: { en: 'privacy.html', cs: 'zasady-ochrany-osobnich-udaju.html', de: null, es: null },
-        terms: { en: 'terms.html', cs: 'podminky-uziti.html', de: null, es: null }
+        privacy: { en: 'privacy.html', cs: 'zasady-ochrany-osobnich-udaju.html', de: 'datenschutz.html', es: 'privacidad.html' },
+        terms: { en: 'terms.html', cs: 'podminky-uziti.html', de: 'nutzungsbedingungen.html', es: 'terminos-de-uso.html' }
     };
 
     function hasRoute(locale, routeKey) {
