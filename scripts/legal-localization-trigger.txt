@@ -1,1 +1,1 @@
-Triggers the DE/ES legal localization build after the legal routes and shared navigation have been updated.
+Triggers the final tracked DE/ES legal localization build after aligning the Spanish privacy validator.
