@@ -1,0 +1,1 @@
+Triggers the DE/ES legal localization build after the legal routes and shared navigation have been updated.
