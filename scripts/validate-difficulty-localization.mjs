@@ -9,8 +9,8 @@ const pages = [
         ages: ['3–4 Jahre', '5–6 Jahre', '7–9 Jahre', '10+ Jahre', '12+ und Erwachsene'],
         levels: ['Stufe 1: Erste Schritte', 'Stufe 2: Vorschule', 'Stufe 3: Mehr Ausdauer', 'Stufe 4: Fortgeschritten', 'Stufe 5: Experte'],
         pending: 'Nachspuren – bald',
-        legal: ['Datenschutz (Englisch)', 'Nutzungsbedingungen (Englisch)'],
-        forbidden: ['Punkte-verbinden-Vorlage', '>Nachzeichnen<', "'obtahovacky'", '${']
+        legal: ['Datenschutz', 'Nutzungsbedingungen'],
+        forbidden: ['Punkte-verbinden-Vorlage', '>Nachzeichnen<', "'obtahovacky'", '${', 'Datenschutz (Englisch)', 'Nutzungsbedingungen (Englisch)']
     },
     {
         file: new URL('../es/niveles-dificultad.html', import.meta.url),
@@ -20,8 +20,8 @@ const pages = [
         ages: ['3–4 años', '5–6 años', '7–9 años', '10+ años', '12+ y adultos'],
         levels: ['Nivel 1: Primeros pasos', 'Nivel 2: Educación infantil', 'Nivel 3: Más autonomía', 'Nivel 4: Avanzado', 'Nivel 5: Experto'],
         pending: 'Trazado – próximamente',
-        legal: ['Privacidad (en inglés)', 'Términos de uso (en inglés)'],
-        forbidden: ['Escolar joven', 'resolutores', "'obtahovacky'", '${']
+        legal: ['Privacidad', 'Términos de uso'],
+        forbidden: ['Escolar joven', 'resolutores', "'obtahovacky'", '${', 'Privacidad (en inglés)', 'Términos de uso (en inglés)']
     }
 ];
 
