@@ -35,6 +35,19 @@ jobs:
       - name: Install legal localization integration
         run: node scripts/legal-localization.mjs install
 
+      - name: Align Spanish privacy validation terminology
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          file = Path('scripts/legal-localization.mjs')
+          text = file.read_text(encoding='utf-8')
+          text = text.replace(
+              "title: 'Privacidad | El mundo de VinMat para niños', h1: 'Privacidad', h2: 7",
+              "title: 'Política de privacidad | El mundo de VinMat para niños', h1: 'Política de privacidad', h2: 7"
+          )
+          file.write_text(text, encoding='utf-8')
+          PY
+
       - name: Check build scripts
         run: |
           node --check scripts/optimize-localized-index-seo.mjs
