@@ -21,13 +21,21 @@
         dotToDotGuide: { en: 'guide-dot-to-dot.html', cs: 'pruvodce-spojovacky.html', de: 'anleitung-punkte-verbinden.html', es: 'guia-unir-puntos.html' },
         tracingGuide: { en: 'guide-tracing.html', cs: 'pruvodce-obtahovacky.html', de: 'anleitung-nachzeichnen.html', es: 'guia-trazado.html' },
         tracingHistory: { en: 'history-tracing.html', cs: 'historie-obkreslovani.html', de: 'geschichte-nachzeichnen.html', es: 'historia-trazado.html' },
-        privacy: { en: 'privacy.html', cs: 'zasady-ochrany-osobnich-udaju.html', de: 'datenschutz.html', es: 'privacidad.html' },
-        terms: { en: 'terms.html', cs: 'podminky-uziti.html', de: 'nutzungsbedingungen.html', es: 'terminos.html' }
+        privacy: { en: 'privacy.html', cs: 'zasady-ochrany-osobnich-udaju.html', de: null, es: null },
+        terms: { en: 'terms.html', cs: 'podminky-uziti.html', de: null, es: null }
     };
+
+    function hasRoute(locale, routeKey) {
+        var language = languages[locale];
+        if (!language || !routes[routeKey]) return false;
+        if (routeKey === 'home') return true;
+        return typeof routes[routeKey][language.code] === 'string' && routes[routeKey][language.code] !== '';
+    }
 
     function localeUrl(locale, routeKey, search) {
         var language = languages[locale] || languages.en;
-        var route = (routes[routeKey] && routes[routeKey][language.code]) || routes.home[language.code];
+        if (!hasRoute(language.code, routeKey)) return null;
+        var route = routes[routeKey][language.code];
         return basePath + language.path + route + (search || '');
     }
 
@@ -35,6 +43,7 @@
         basePath: basePath,
         languages: languages,
         routes: routes,
+        hasRoute: hasRoute,
         localeUrl: localeUrl
     };
 }());

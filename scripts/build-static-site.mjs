@@ -57,11 +57,11 @@ const languages = {
         csvColumn: 'De',
         activityDirectory: 'aktivitaeten',
         activityType: { bludiste: 'labyrinth', omalovanky: 'ausmalbild', spojovacky: 'punkte-verbinden', obtahovacky: 'nachzeichnen' },
-        cardType: { bludiste: 'Labyrinth', omalovanky: 'Ausmalbild', spojovacky: 'Punkte verbinden', obtahovacky: 'Nachzeichnen' },
-        indexTitle: 'Kostenlose Labyrinthe, Ausmalbilder & Punkte-verbinden-Vorlagen für Kinder | VinMat',
-        indexDescription: 'Kostenlose Labyrinthe, Ausmalbilder und Punkte-verbinden-Arbeitsblätter für Kinder von 3–10 Jahren zum Ausdrucken. Farbige und Schwarz-Weiß-Versionen, sortiert nach Alter und Schwierigkeit.',
-        indexHeading: 'Kostenlose Druckvorlagen für Kinder',
-        indexIntro: 'Entdecke kostenlose Labyrinthe, Ausmalbilder und Punkte-verbinden-Vorlagen zum Ausdrucken. Wähle eine Aktivität aus, um sie anzusehen, herunterzuladen oder zu drucken.',
+        cardType: { bludiste: 'Labyrinth', omalovanky: 'Ausmalbild', spojovacky: 'Punkt zu Punkt', obtahovacky: 'Nachspuren' },
+        indexTitle: 'Kostenlose Ausmalbilder & Labyrinthe für Kinder | VinMat',
+        indexDescription: 'Kostenlose Labyrinthe, Ausmalbilder und Punkt-zu-Punkt-Bilder für Kinder von 3 bis 10 Jahren. Direkt als A4-Arbeitsblätter ausdrucken.',
+        indexHeading: 'Kostenlose Aktivitäten für Kinder zum Ausdrucken',
+        indexIntro: 'Entdecke kostenlose Labyrinthe, Ausmalbilder und Punkt-zu-Punkt-Bilder. Öffne eine Aktivität, lade sie herunter oder drucke sie direkt aus.',
         siteName: "VinMats Welt für Kinder",
         levelLabel: 'Stufe',
         detailPrefix: 'Kostenlose Druckvorlage',
@@ -78,12 +78,12 @@ const languages = {
         csvColumn: 'Es',
         activityDirectory: 'actividades',
         activityType: { bludiste: 'laberinto', omalovanky: 'dibujo', spojovacky: 'une-puntos', obtahovacky: 'trazado' },
-        cardType: { bludiste: 'Laberinto', omalovanky: 'Dibujo', spojovacky: 'Une los puntos', obtahovacky: 'Trazado' },
-        indexTitle: 'Laberintos, Dibujos para Colorear y Fichas de Unir Puntos Gratis para Niños | VinMat',
-        indexDescription: 'Descarga gratis laberintos, dibujos para colorear y fichas de unir puntos para niños de 3 a 10 años. Versiones a color y en blanco y negro, ordenadas por edad y dificultad.',
-        indexHeading: 'Actividades gratuitas para imprimir para niños',
-        indexIntro: 'Explora laberintos, dibujos para colorear y fichas de unir puntos gratis para imprimir. Elige una actividad para verla, descargarla o imprimirla.',
-        siteName: 'El Mundo de VinMat para Niños',
+        cardType: { bludiste: 'Laberinto', omalovanky: 'Dibujo para colorear', spojovacky: 'Une los puntos', obtahovacky: 'Trazado' },
+        indexTitle: 'Dibujos para colorear y laberintos gratis | VinMat',
+        indexDescription: 'Descarga gratis laberintos, dibujos para colorear y fichas de unir puntos para niños de 3 a 10 años. Actividades A4 listas para imprimir.',
+        indexHeading: 'Actividades gratis para imprimir',
+        indexIntro: 'Explora laberintos, dibujos para colorear y fichas de unir puntos. Abre una actividad, descárgala o imprímela directamente.',
+        siteName: 'El mundo de VinMat para niños',
         levelLabel: 'Nivel',
         detailPrefix: 'Ficha gratuita para imprimir',
         detailCta: 'Descargar ficha',
@@ -263,7 +263,7 @@ function activityCard(activity, locale) {
             </a>
             <div class="p-4 flex-grow">
                 <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">${escapeHtml(config.cardType[activity.type])}</span><span class="text-xs text-slate-400 font-bold">${escapeHtml(activity.level)}</span></div>
-                <h2 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="${escapeHtml(href)}" class="hover:text-indigo-600">${escapeHtml(activity.names[locale])}</a></h2>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="${escapeHtml(href)}" class="hover:text-indigo-600">${escapeHtml(activity.names[locale])}</a></h3>
             </div>
         </article>`;
 }
@@ -335,6 +335,29 @@ function setIndexSeo(html, locale) {
     html = html.replace('</head>', `${hreflangTags}\n</head>`);
     html = html.replace(/(<meta id="og-url"\s+property="og:url"\s+content=")[^"]*(">)/i, `$1${canonical}$2`);
     html = html.replace(/(<meta\s+property="og:locale"\s+content=")[^"]*(">)/i, `$1${config.ogLocale}$2`);
+    // LOCALIZED_INDEX_SEO
+    html = html.replace(/<meta id="og-title"[^>]*>/i, '<meta id="og-title" property="og:title" content="' + escapeHtml(config.indexTitle) + '">');
+    html = html.replace(/<meta id="og-desc"[^>]*>/i, '<meta id="og-desc" property="og:description" content="' + escapeHtml(config.indexDescription) + '">');
+    html = html.replace(/<meta id="tw-title"[^>]*>/i, '<meta id="tw-title" name="twitter:title" content="' + escapeHtml(config.indexTitle) + '">');
+    html = html.replace(/<meta id="tw-desc"[^>]*>/i, '<meta id="tw-desc" name="twitter:description" content="' + escapeHtml(config.indexDescription) + '">');
+    html = html.replace(/<meta\s+property="og:site_name"[^>]*>/i, '<meta property="og:site_name" content="' + escapeHtml(config.siteName) + '">');
+    html = html.replace(/\s*<meta\s+name="keywords"[^>]*>/i, '');
+    html = html.replace(/<h1 class="sr-only">[\s\S]*?<\/h1>/i, '<h1 class="sr-only">' + escapeHtml(config.indexHeading) + '</h1>');
+    html = html.replace(/\s*<meta\s+property="og:locale:alternate"[^>]*>/gi, '');
+    const alternateLocales = Object.values(languages)
+        .filter((language) => language.ogLocale !== config.ogLocale)
+        .map((language) => `    <meta property="og:locale:alternate" content="${language.ogLocale}">`)
+        .join('\n');
+    html = html.replace(/(<meta\s+property="og:locale"[^>]*>)/i, `$1\n${alternateLocales}`);
+    const websiteSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: config.siteName,
+        url: canonical,
+        description: config.indexDescription,
+        inLanguage: config.htmlLang
+    };
+    html = html.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/i, '<script type="application/ld+json">\n' + JSON.stringify(websiteSchema, null, 4) + '\n    </script>');
     return html;
 }
 
@@ -556,6 +579,7 @@ async function syncTranslatedGuides(locale, sitemapUrls) {
         html = deduplicateTrackingScripts(html);
         html = updateGuideSeo(html, page, locale);
         html = setBodyData(html, locale, page.key);
+        html = injectNavigation(html, '../');
         html = ensureContactHelper(html);
         await writeFile(source, html);
         sitemapUrls.add(`${siteUrl}${config.output}/${page[locale]}`);
