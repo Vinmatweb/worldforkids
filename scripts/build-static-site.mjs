@@ -116,7 +116,7 @@ const guidePages = [
     { key: 'tracingGuide', en: 'guide-tracing.html', cs: 'pruvodce-obtahovacky.html', de: 'anleitung-nachzeichnen.html', es: 'guia-trazado.html' },
     { key: 'tracingHistory', en: 'history-tracing.html', cs: 'historie-obkreslovani.html', de: 'geschichte-nachzeichnen.html', es: 'historia-trazado.html' },
     { key: 'privacy', en: 'privacy.html', cs: 'zasady-ochrany-osobnich-udaju.html', de: 'datenschutz.html', es: 'privacidad.html' },
-    { key: 'terms', en: 'terms.html', cs: 'podminky-uziti.html', de: 'nutzungsbedingungen.html', es: 'terminos.html' }
+    { key: 'terms', en: 'terms.html', cs: 'podminky-uziti.html', de: 'nutzungsbedingungen.html', es: 'terminos-de-uso.html' }
 ];
 
 const csvTypes = ['bludiste', 'omalovanky', 'spojovacky', 'obtahovacky'];
@@ -695,6 +695,8 @@ async function build() {
         await syncTranslatedGuides(locale, sitemapUrls);
     }
     await writeFile(path.join(root, 'sitemap.xml'), sitemap(sitemapUrls));
+    const { finalizeLegalLocalization } = await import('./legal-localization.mjs');
+    await finalizeLegalLocalization();
 
     console.log(`Generated ${activities.length * Object.keys(languages).length} activity pages and ${sitemapUrls.size} sitemap URLs.`);
 }

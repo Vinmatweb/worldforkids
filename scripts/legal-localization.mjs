@@ -23,7 +23,7 @@ const legal = {
 const legalPages = [
     { file: 'de/datenschutz.html', locale: 'de', route: 'privacy', canonical: `${siteUrl}de/datenschutz.html`, title: 'Datenschutz | VinMats Welt für Kinder', h1: 'Datenschutz', h2: 7, ogLocale: 'de_DE', siteName: 'VinMats Welt für Kinder' },
     { file: 'de/nutzungsbedingungen.html', locale: 'de', route: 'terms', canonical: `${siteUrl}de/nutzungsbedingungen.html`, title: 'Nutzungsbedingungen | VinMats Welt für Kinder', h1: 'Nutzungsbedingungen', h2: 9, ogLocale: 'de_DE', siteName: 'VinMats Welt für Kinder' },
-    { file: 'es/privacidad.html', locale: 'es', route: 'privacy', canonical: `${siteUrl}es/privacidad.html`, title: 'Privacidad | El mundo de VinMat para niños', h1: 'Privacidad', h2: 7, ogLocale: 'es_ES', siteName: 'El mundo de VinMat para niños' },
+    { file: 'es/privacidad.html', locale: 'es', route: 'privacy', canonical: `${siteUrl}es/privacidad.html`, title: 'Política de privacidad | El mundo de VinMat para niños', h1: 'Política de privacidad', h2: 7, ogLocale: 'es_ES', siteName: 'El mundo de VinMat para niños' },
     { file: 'es/terminos-de-uso.html', locale: 'es', route: 'terms', canonical: `${siteUrl}es/terminos-de-uso.html`, title: 'Términos de uso | El mundo de VinMat para niños', h1: 'Términos de uso', h2: 9, ogLocale: 'es_ES', siteName: 'El mundo de VinMat para niños' }
 ];
 

@@ -20,13 +20,13 @@ const locales = {
     de: {
         directory: 'de/aktivitaeten', htmlLang: 'de', ogLocale: 'de_DE', siteName: 'VinMats Welt für Kinder',
         home: '/worldforkids/de/', guide: '/worldforkids/de/anleitung-aktivitaeten.html', levels: '/worldforkids/de/schwierigkeitsstufen.html', story: '/worldforkids/de/unsere-geschichte.html',
-        labels: { home: 'Startseite', guide: 'Aktivitäten-Guide', levels: 'Schwierigkeitsstufen', story: 'Unsere Geschichte', privacy: 'Datenschutz (Englisch)', terms: 'Nutzungsbedingungen (Englisch)', contact: 'Kontakt', made: 'Mit ❤️ gemacht für kreatives Gestalten', use: 'Kostenlos für private und pädagogische Nutzung', copied: '(E-Mail kopiert!)' },
+        labels: { home: 'Startseite', guide: 'Aktivitäten-Guide', levels: 'Schwierigkeitsstufen', story: 'Unsere Geschichte', privacy: 'Datenschutz', terms: 'Nutzungsbedingungen', contact: 'Kontakt', made: 'Mit ❤️ gemacht für kreatives Gestalten', use: 'Kostenlos für private und pädagogische Nutzung', copied: '(E-Mail kopiert!)' },
         title: (name, type) => `${name} – ${type} kostenlos | VinMat`
     },
     es: {
         directory: 'es/actividades', htmlLang: 'es', ogLocale: 'es_ES', siteName: 'El mundo de VinMat para niños',
         home: '/worldforkids/es/', guide: '/worldforkids/es/guia-actividades.html', levels: '/worldforkids/es/niveles-dificultad.html', story: '/worldforkids/es/nuestra-historia.html',
-        labels: { home: 'Inicio', guide: 'Guía de actividades', levels: 'Niveles de dificultad', story: 'Nuestra historia', privacy: 'Privacidad (en inglés)', terms: 'Términos de uso (en inglés)', contact: 'Contacto', made: 'Hecho con ❤️ para aprender y crear', use: 'Gratis para uso personal y educativo', copied: '(¡Correo copiado!)' },
+        labels: { home: 'Inicio', guide: 'Guía de actividades', levels: 'Niveles de dificultad', story: 'Nuestra historia', privacy: 'Privacidad', terms: 'Términos de uso', contact: 'Contacto', made: 'Hecho con ❤️ para aprender y crear', use: 'Gratis para uso personal y educativo', copied: '(¡Correo copiado!)' },
         title: (name, type) => `${name} – ${type} gratis | VinMat`
     }
 };
@@ -36,8 +36,8 @@ const localeLabels = { en: 'EN', cs: 'CZ', de: 'DE', es: 'ES' };
 const legalUrls = {
     en: { privacy: '/worldforkids/privacy.html', terms: '/worldforkids/terms.html' },
     cs: { privacy: '/worldforkids/cs/zasady-ochrany-osobnich-udaju.html', terms: '/worldforkids/cs/podminky-uziti.html' },
-    de: { privacy: '/worldforkids/privacy.html', terms: '/worldforkids/terms.html' },
-    es: { privacy: '/worldforkids/privacy.html', terms: '/worldforkids/terms.html' }
+    de: { privacy: '/worldforkids/de/datenschutz.html', terms: '/worldforkids/de/nutzungsbedingungen.html' },
+    es: { privacy: '/worldforkids/es/privacidad.html', terms: '/worldforkids/es/terminos-de-uso.html' }
 };
 
 function setTag(html, pattern, tag) {

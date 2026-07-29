@@ -42,10 +42,6 @@ function validateCommonPage(html, file, locale, canonical) {
     for (const lang of ['en', 'cs', 'de', 'es', 'x-default']) assert(html.includes(`hreflang="${lang}"`), `${file}: missing hreflang ${lang}`);
     assert(html.includes('assets/js/site-config.js'), `${file}: missing site-config.js`);
     assert(html.includes('assets/js/site-navigation.js'), `${file}: missing site-navigation.js`);
-    assert(!html.includes('href="datenschutz.html"'), `${file}: links to nonexistent German privacy page`);
-    assert(!html.includes('href="privacidad.html"'), `${file}: links to nonexistent Spanish privacy page`);
-    assert(!html.includes('href="nutzungsbedingungen.html"'), `${file}: links to nonexistent German terms page`);
-    assert(!html.includes('href="terminos.html"'), `${file}: links to nonexistent Spanish terms page`);
     validateScripts(html, file);
 }
 
@@ -53,12 +49,14 @@ const staticPages = {
     de: [
         ['anleitung-aktivitaeten.html', 'activityGuide'], ['schwierigkeitsstufen.html', 'difficultyLevels'], ['unsere-geschichte.html', 'ourStory'],
         ['anleitung-labyrinthe.html', 'mazeGuide'], ['anleitung-ausmalbilder.html', 'coloringGuide'], ['anleitung-punkte-verbinden.html', 'dotToDotGuide'],
-        ['anleitung-nachzeichnen.html', 'tracingGuide'], ['geschichte-nachzeichnen.html', 'tracingHistory']
+        ['anleitung-nachzeichnen.html', 'tracingGuide'], ['geschichte-nachzeichnen.html', 'tracingHistory'],
+        ['datenschutz.html', 'privacy'], ['nutzungsbedingungen.html', 'terms']
     ],
     es: [
         ['guia-actividades.html', 'activityGuide'], ['niveles-dificultad.html', 'difficultyLevels'], ['nuestra-historia.html', 'ourStory'],
         ['guia-laberintos.html', 'mazeGuide'], ['guia-dibujos.html', 'coloringGuide'], ['guia-unir-puntos.html', 'dotToDotGuide'],
-        ['guia-trazado.html', 'tracingGuide'], ['historia-trazado.html', 'tracingHistory']
+        ['guia-trazado.html', 'tracingGuide'], ['historia-trazado.html', 'tracingHistory'],
+        ['privacidad.html', 'privacy'], ['terminos-de-uso.html', 'terms']
     ]
 };
 
@@ -68,7 +66,7 @@ for (const [locale, pages] of Object.entries(staticPages)) {
         const html = await read(file);
         validateCommonPage(html, file, locale, `https://vinmat.eu/worldforkids/${locale}/${name}`);
         assert(html.includes(`data-route-key="${routeKey}"`), `${file}: wrong route key`);
-        const legal = locale === 'de' ? ['Datenschutz (Englisch)', 'Nutzungsbedingungen (Englisch)'] : ['Privacidad (en inglés)', 'Términos de uso (en inglés)'];
+        const legal = locale === 'de' ? ['Datenschutz', 'Nutzungsbedingungen'] : ['Privacidad', 'Términos de uso'];
         for (const label of legal) assert(html.includes(label), `${file}: missing legal-language label ${label}`);
         assert(!html.includes("VinMat's World for Kids"), `${file}: English site name remains`);
         assert(!html.includes('whitespace-nowrap text-center'), `${file}: footer cannot wrap on mobile`);
@@ -178,8 +176,8 @@ for (const row of allRows) {
 }
 
 const activityLocales = {
-    de: { directory: 'de/aktivitaeten', siteName: 'VinMats Welt für Kinder', nav: ['Startseite', 'Aktivitäten-Guide', 'Schwierigkeitsstufen', 'Unsere Geschichte'], legal: ['Datenschutz (Englisch)', 'Nutzungsbedingungen (Englisch)'] },
-    es: { directory: 'es/actividades', siteName: 'El mundo de VinMat para niños', nav: ['Inicio', 'Guía de actividades', 'Niveles de dificultad', 'Nuestra historia'], legal: ['Privacidad (en inglés)', 'Términos de uso (en inglés)'] }
+    de: { directory: 'de/aktivitaeten', siteName: 'VinMats Welt für Kinder', nav: ['Startseite', 'Aktivitäten-Guide', 'Schwierigkeitsstufen', 'Unsere Geschichte'], legal: ['Datenschutz', 'Nutzungsbedingungen'] },
+    es: { directory: 'es/actividades', siteName: 'El mundo de VinMat para niños', nav: ['Inicio', 'Guía de actividades', 'Niveles de dificultad', 'Nuestra historia'], legal: ['Privacidad', 'Términos de uso'] }
 };
 
 for (const [locale, config] of Object.entries(activityLocales)) {
@@ -213,6 +211,10 @@ for (const [locale, config] of Object.entries(activityLocales)) {
 const sitemap = await read('sitemap.xml');
 assert(count(sitemap, '<loc>https://vinmat.eu/worldforkids/de/aktivitaeten/') === 28, 'sitemap.xml: expected 28 German activity URLs');
 assert(count(sitemap, '<loc>https://vinmat.eu/worldforkids/es/actividades/') === 28, 'sitemap.xml: expected 28 Spanish activity URLs');
+assert(sitemap.includes('<loc>https://vinmat.eu/worldforkids/de/datenschutz.html</loc>'), 'sitemap.xml: missing German privacy page');
+assert(sitemap.includes('<loc>https://vinmat.eu/worldforkids/de/nutzungsbedingungen.html</loc>'), 'sitemap.xml: missing German terms page');
+assert(sitemap.includes('<loc>https://vinmat.eu/worldforkids/es/privacidad.html</loc>'), 'sitemap.xml: missing Spanish privacy page');
+assert(sitemap.includes('<loc>https://vinmat.eu/worldforkids/es/terminos-de-uso.html</loc>'), 'sitemap.xml: missing Spanish terms page');
 
 if (warnings.length) {
     console.warn(`DE/ES validation warnings (${warnings.length}):`);

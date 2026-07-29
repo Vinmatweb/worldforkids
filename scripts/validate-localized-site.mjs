@@ -138,8 +138,8 @@ const activityGuideChecks = [
             'Punkt-zu-Punkt-Bilder',
             'Nachspuren',
             'Stufe 5 (12+)',
-            'Datenschutz (Englisch)',
-            'Nutzungsbedingungen (Englisch)',
+            'Datenschutz',
+            'Nutzungsbedingungen',
             'content="es_ES"'
         ],
         forbidden: [
@@ -167,8 +167,8 @@ const activityGuideChecks = [
             'href="guia-trazado.html"',
             'href="niveles-dificultad.html"',
             'Nivel 5 (12+)',
-            'Privacidad (en inglés)',
-            'Términos de uso (en inglés)',
+            'Privacidad',
+            'Términos de uso',
             'content="de_DE"'
         ],
         forbidden: [
@@ -222,7 +222,11 @@ for (const url of [
     'https://vinmat.eu/worldforkids/de/anleitung-aktivitaeten.html',
     'https://vinmat.eu/worldforkids/es/guia-actividades.html',
     'https://vinmat.eu/worldforkids/de/geschichte-nachzeichnen.html',
-    'https://vinmat.eu/worldforkids/es/historia-trazado.html'
+    'https://vinmat.eu/worldforkids/es/historia-trazado.html',
+    'https://vinmat.eu/worldforkids/de/datenschutz.html',
+    'https://vinmat.eu/worldforkids/de/nutzungsbedingungen.html',
+    'https://vinmat.eu/worldforkids/es/privacidad.html',
+    'https://vinmat.eu/worldforkids/es/terminos-de-uso.html'
 ]) {
     assert(sitemap.includes(`<loc>${url}</loc>`), `sitemap.xml: missing ${url}`);
 }
