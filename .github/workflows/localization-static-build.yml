@@ -58,6 +58,7 @@ jobs:
           node --check scripts/normalize-guide-headers.mjs
           node --check scripts/finalize-localized-indexes.mjs
           node --check scripts/legal-localization.mjs
+          node --check scripts/postbuild-adsense-audit.mjs
           node --check scripts/validate-localized-site.mjs
           node --check scripts/validate-difficulty-localization.mjs
           node --check scripts/validate-de-es-content.mjs
@@ -87,6 +88,9 @@ jobs:
       - name: Finalize legal localization
         run: node scripts/legal-localization.mjs finalize
 
+      - name: Apply AdSense audit safeguards
+        run: node scripts/postbuild-adsense-audit.mjs
+
       - name: Validate generated localization
         run: |
           node scripts/validate-localized-site.mjs
@@ -103,6 +107,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add .github/workflows/localization-static-build.yml assets/data assets/js/site-config.js scripts index.html cs/index.html de/index.html es/index.html sitemap.xml activities cs/aktivity de/aktivitaeten es/actividades guide-*.html history-tracing.html difficulty-levels.html our-story.html privacy.html terms.html cs/*.html de/*.html es/*.html
+          git add .github/workflows/localization-static-build.yml assets/data assets/js/site-config.js scripts index.html cs/index.html de/index.html es/index.html sitemap.xml activities cs/aktivity de/aktivitaeten es/actividades guide-*.html history-tracing.html difficulty-levels.html our-story.html privacy.html terms.html cs/*.html de/*.html es/*.html vinmat-planner
           git commit -m "Build localized static pages"
           git push origin HEAD:de-es-localization
