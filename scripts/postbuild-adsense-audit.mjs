@@ -35,6 +35,14 @@ function replaceMissingOgImage(html) {
     .replaceAll('assets/images/og-image.png', 'assets/images/banner.png');
 }
 
+function normalizeDoubleEscapedEntities(html) {
+  return html
+    .replaceAll('&amp;#039;', '&#039;')
+    .replaceAll('&amp;quot;', '&quot;')
+    .replaceAll('&amp;lt;', '&lt;')
+    .replaceAll('&amp;gt;', '&gt;');
+}
+
 function stripConsentSensitiveTracking(html) {
   return html
     .replace(/\s*<!--\s*Google AdSense\s*-->\s*/gi, '\n')
@@ -60,6 +68,7 @@ for (const file of files) {
   const original = html;
 
   html = replaceMissingOgImage(html);
+  html = normalizeDoubleEscapedEntities(html);
   html = ensurePlannerNoindex(html, file.relative);
   if (legalPages.has(file.relative)) html = stripConsentSensitiveTracking(html);
 
