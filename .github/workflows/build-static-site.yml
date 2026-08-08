@@ -6,17 +6,18 @@ on:
     branches:
       - main
       - feature/static-localization-adsense
+      - de-es-localization
     paths:
       - 'assets/data/**'
       - 'public/**'
       - 'assets/js/site-config.js'
       - 'assets/js/site-navigation.js'
-      - 'scripts/build-static-site.mjs'
-      - 'scripts/validate-content.mjs'
+      - 'scripts/**'
       - 'translations.js'
       - 'index.html'
       - '*.html'
       - 'package.json'
+      - 'vinmat-planner/**'
 
 permissions:
   contents: write
@@ -36,6 +37,9 @@ jobs:
       - name: Generate static pages and sitemap
         run: npm run build:static
 
+      - name: Apply AdSense audit safeguards
+        run: node scripts/postbuild-adsense-audit.mjs
+
       - name: Generate content validation report
         run: npm run validate:content
 
@@ -47,6 +51,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html cs sitemap.xml activities assets/js scripts .github/workflows package.json content-check.html
+          git add index.html *.html cs de es sitemap.xml activities assets/js scripts .github/workflows package.json content-check.html vinmat-planner
           git commit -m "build: generate localized static pages"
           git push
