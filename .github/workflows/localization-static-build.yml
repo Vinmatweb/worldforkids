@@ -35,7 +35,7 @@ jobs:
       - name: Install legal localization integration
         run: node scripts/legal-localization.mjs install
 
-      - name: Align Spanish privacy validation terminology
+      - name: Align legal localization validation
         run: |
           python - <<'PY'
           from pathlib import Path
@@ -44,6 +44,14 @@ jobs:
           text = text.replace(
               "title: 'Privacidad | El mundo de VinMat para niños', h1: 'Privacidad', h2: 7",
               "title: 'Política de privacidad | El mundo de VinMat para niños', h1: 'Política de privacidad', h2: 7"
+          )
+          text = text.replace(
+              "assert(count(html, 'pagead2.googlesyndication.com') === 1, `${page.file}: AdSense count is not one`);",
+              "assert(count(html, 'pagead2.googlesyndication.com') === 0, `${page.file}: AdSense must not load on legal pages`);"
+          )
+          text = text.replace(
+              "assert(count(html, 'googletagmanager.com/gtag/js') === 1, `${page.file}: Analytics count is not one`);",
+              "assert(count(html, 'googletagmanager.com/gtag/js') === 0, `${page.file}: Analytics must not load on legal pages`);"
           )
           file.write_text(text, encoding='utf-8')
           PY
