@@ -281,8 +281,8 @@ export async function validateLegalLocalization() {
         assert(count(html, 'property="og:locale:alternate"') === 3, `${page.file}: wrong alternate OG locale count`);
         assert(count(html, '<h1') === 1 && html.includes(`>${page.h1}</h1>`), `${page.file}: wrong h1`);
         assert(count(html, '<h2') === page.h2, `${page.file}: wrong h2 count`);
-        assert(count(html, 'pagead2.googlesyndication.com') === 1, `${page.file}: AdSense count is not one`);
-        assert(count(html, 'googletagmanager.com/gtag/js') === 1, `${page.file}: Analytics count is not one`);
+        assert(count(html, 'pagead2.googlesyndication.com') === 0, `${page.file}: AdSense must not load on legal pages`);
+        assert(count(html, 'googletagmanager.com/gtag/js') === 0, `${page.file}: Analytics must not load on legal pages`);
         const json = html.match(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/i)?.[1];
         try {
             const data = JSON.parse(json || '');
