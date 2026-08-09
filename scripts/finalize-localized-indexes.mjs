@@ -56,6 +56,16 @@ function setNoScriptFallback(html, message) {
     return html.replace(/(<body\b[^>]*>)/i, `$1\n${block}`);
 }
 
+function ensureVisibleBody(html) {
+    return html.replace(/<body\b[^>]*>/i, (tag) => tag.replace(/\s+opacity-0\b/g, ''));
+}
+
+function ensureResponsiveNavigation(html) {
+    if (/site-navigation\.js/i.test(html)) return html;
+    const script = '<script src="/worldforkids/assets/js/site-navigation.js"></script>';
+    return html.replace(/<\/body>/i, `${script}\n</body>`);
+}
+
 function countCsvRows(csv) {
     return csv.split(/\r?\n/).map((line) => line.trim()).filter(Boolean).length - 1;
 }
@@ -80,8 +90,10 @@ for (const entry of indexes) {
     html = deduplicateHeadLinks(html);
     html = improveInitialization(html);
     html = setNoScriptFallback(html, entry.noScript);
+    html = ensureVisibleBody(html);
+    html = ensureResponsiveNavigation(html);
     html = setEmptyTracingState(html, tracingIsEmpty);
     if (html !== original) await writeFile(file, html);
 }
 
-console.log(`Finalized localized indexes. Tracing category ${tracingIsEmpty ? 'removed (no worksheets)' : 'visible'}.`);
+console.log(`Finalized localized indexes. Mobile visibility ensured. Tracing category ${tracingIsEmpty ? 'removed (no worksheets)' : 'visible'}.`);
