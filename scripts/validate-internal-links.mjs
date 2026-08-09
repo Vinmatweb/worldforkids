@@ -25,7 +25,6 @@ function cleanUrl(value) {
 function localTarget(sourceFile, rawValue) {
     const value = cleanUrl(rawValue);
     if (!value || value.startsWith('#')) return null;
-    if (/^(mailto:|tel:|javascript:|data:|blob:)/i.test(value)) return null;
     if (value.includes('${') || value.includes("'+") || value.includes('+\"')) return null;
 
     if (/^https?:\/\//i.test(value)) {
@@ -36,7 +35,11 @@ function localTarget(sourceFile, rawValue) {
         return path.join(root, relative || 'index.html');
     }
 
+    // mailto:, tel:, lightning:, data:, blob: and any other non-HTTP URI scheme
+    // are actions, not local files and therefore must not be treated as broken links.
+    if (/^[a-z][a-z0-9+.-]*:/i.test(value)) return null;
     if (value.startsWith('//')) return null;
+
     if (value.startsWith('/')) {
         if (!value.startsWith(siteBase)) return null;
         const relative = decodeURIComponent(value.slice(siteBase.length));
