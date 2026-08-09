@@ -2,6 +2,8 @@ import { readFile, readdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 
 const root = process.cwd();
+const publisherId = 'ca-pub-4310805868565928';
+const homepagePaths = new Set(['index.html', 'cs/index.html', 'de/index.html', 'es/index.html']);
 const legalPages = new Set([
   'privacy.html',
   'terms.html',
@@ -12,6 +14,7 @@ const legalPages = new Set([
   'es/privacidad.html',
   'es/terminos-de-uso.html'
 ]);
+const activityPrefixes = ['activities/', 'cs/aktivity/', 'de/aktivitaeten/', 'es/actividades/'];
 
 async function collectHtmlFiles(directory, prefix = '') {
   const entries = await readdir(directory, { withFileTypes: true });
@@ -53,13 +56,25 @@ function normalizeSharedScriptPaths(html, relative) {
     .replaceAll('../../assets/js/site-navigation.js', '../assets/js/site-navigation.js');
 }
 
-function stripConsentSensitiveTracking(html) {
+function stripAdsense(html) {
   return html
     .replace(/\s*<!--\s*Google AdSense\s*-->\s*/gi, '\n')
+    .replace(/\s*<script\b[^>]*src=["']https:\/\/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js[^"']*["'][^>]*>\s*<\/script>\s*/gi, '\n');
+}
+
+function stripConsentSensitiveTracking(html) {
+  return stripAdsense(html)
     .replace(/\s*<!--\s*Google tag \(gtag\.js\)\s*-->\s*/gi, '\n')
-    .replace(/\s*<script\b[^>]*src=["']https:\/\/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js[^"']*["'][^>]*>\s*<\/script>\s*/gi, '\n')
     .replace(/\s*<script\b[^>]*src=["']https:\/\/www\.googletagmanager\.com\/gtag\/js\?id=[^"']+["'][^>]*>\s*<\/script>\s*/gi, '\n')
     .replace(/\s*<script>\s*window\.dataLayer\s*=\s*window\.dataLayer\s*\|\|\s*\[\];[\s\S]*?gtag\(['"]config['"],\s*['"]G-[^'"]+['"]\);\s*<\/script>\s*/gi, '\n');
+}
+
+function ensureHomepageAdsense(html, relative) {
+  if (!homepagePaths.has(relative)) return html;
+  html = stripAdsense(html);
+  const loader = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${publisherId}" crossorigin="anonymous"></script>`;
+  if (/<meta\s+charset=/i.test(html)) return html.replace(/(<meta\s+charset=[^>]+>)/i, `${loader}\n    $1`);
+  return html.replace('</head>', `    ${loader}\n</head>`);
 }
 
 function ensurePlannerNoindex(html, relative) {
@@ -68,6 +83,10 @@ function ensurePlannerNoindex(html, relative) {
     return html.replace(/<meta\s+name=["']robots["'][^>]*>/i, '<meta name="robots" content="noindex, nofollow">');
   }
   return html.replace(/(<meta\s+name=["']viewport["'][^>]*>)/i, '$1\n  <meta name="robots" content="noindex, nofollow">');
+}
+
+function isActivityPage(relative) {
+  return activityPrefixes.some((prefix) => relative.startsWith(prefix));
 }
 
 const files = await collectHtmlFiles(root);
@@ -81,6 +100,11 @@ for (const file of files) {
   html = normalizeDoubleEscapedEntities(html);
   html = normalizeSharedScriptPaths(html, file.relative);
   html = ensurePlannerNoindex(html, file.relative);
+
+  // Ads live on the four catalog homepages. Activity detail pages are kept
+  // focused on the printable itself and search/internal navigation.
+  if (isActivityPage(file.relative)) html = stripAdsense(html);
+  if (homepagePaths.has(file.relative)) html = ensureHomepageAdsense(html, file.relative);
   if (legalPages.has(file.relative)) html = stripConsentSensitiveTracking(html);
 
   if (html !== original) {
