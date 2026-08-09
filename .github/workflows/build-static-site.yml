@@ -83,6 +83,7 @@ jobs:
           node --check scripts/validate-localized-site.mjs
           node --check scripts/validate-difficulty-localization.mjs
           node --check scripts/validate-de-es-content.mjs
+          node --check scripts/validate-internal-links.mjs
           node --check assets/js/site-config.js
           node --check assets/js/site-navigation.js
 
@@ -121,6 +122,7 @@ jobs:
           node scripts/validate-difficulty-localization.mjs
           node scripts/validate-de-es-content.mjs
           node scripts/legal-localization.mjs validate
+          node scripts/validate-internal-links.mjs
           npm run validate:content
 
       - name: Commit generated site files
