@@ -70,6 +70,11 @@
     <link rel="alternate" hreflang="es" href="https://vinmat.eu/worldforkids/es/">
     <link rel="alternate" hreflang="x-default" href="https://vinmat.eu/worldforkids/">
     <script src="assets/js/site-config.js"></script>
+<style data-empty-tracing-category>
+#btn-obtahovacky{display:none!important}
+#about-section .grid>div:nth-child(4){display:none!important}
+@media(min-width:768px){#about-section .grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+</style>
 </head>
 
 <body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col pt-[36px] transition-opacity duration-150" data-locale="en" data-route-key="home">
@@ -938,7 +943,7 @@ function setJazyk(novyJaz) {
     document.getElementById('lbl-nav-bludiste').innerText = s.bludiste;
     document.getElementById('lbl-nav-omalovanky').innerText= s.omalovanky;
     document.getElementById('lbl-nav-spojovacky').innerText= s.spojovacky;
-    document.getElementById('lbl-nav-obtahovacky').innerText= s.obtahovacky;
+    var tracingLabel=document.getElementById('lbl-nav-obtahovacky'); if(tracingLabel) tracingLabel.innerText=s.obtahovacky;
     document.getElementById('lbl-filter-age-title').innerText = s.ageTitle;
     document.getElementById('btn-vek-vse').innerText      = s.vse;
     document.getElementById('btn-vek-5').innerText        = s.ageLv5;
@@ -1084,7 +1089,8 @@ function generujBarevnyText(text) {
 function setTyp(typ) {
     aktualniTyp = typ;
     ['vse','bludiste','omalovanky','spojovacky','obtahovacky'].forEach(function(t) {
-        document.getElementById('btn-'+t).className = t===typ
+        var typeButton=document.getElementById('btn-'+t); if(!typeButton)return;
+        typeButton.className = t===typ
             ? "px-5 py-2 rounded-full text-sm font-bold bg-slate-900 text-white shadow-sm"
             : "px-5 py-2 rounded-full text-sm font-bold text-slate-600 bg-slate-100 hover:bg-slate-200";
     });
