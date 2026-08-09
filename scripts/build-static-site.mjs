@@ -1,4 +1,5 @@
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
 import path from 'node:path';
 
 const root = process.cwd();
@@ -11,6 +12,7 @@ const languages = {
         ogLocale: 'en_US',
         output: '',
         assetDirectory: 'en',
+        csvColumn: 'En',
         activityDirectory: 'activities',
         activityType: { bludiste: 'maze', omalovanky: 'coloring', spojovacky: 'dot-to-dot', obtahovacky: 'tracing' },
         cardType: { bludiste: 'Maze', omalovanky: 'Coloring', spojovacky: 'Dot-to-Dot', obtahovacky: 'Tracing' },
@@ -31,6 +33,7 @@ const languages = {
         ogLocale: 'cs_CZ',
         output: 'cs',
         assetDirectory: 'cs',
+        csvColumn: 'Cz',
         activityDirectory: 'aktivity',
         activityType: { bludiste: 'bludiste', omalovanky: 'omalovanka', spojovacky: 'spojovacka', obtahovacky: 'obtahovacka' },
         cardType: { bludiste: 'Bludiště', omalovanky: 'Omalovánka', spojovacky: 'Spojovačka', obtahovacky: 'Obtahovačka' },
@@ -45,20 +48,75 @@ const languages = {
         detailPrint: 'Vytisknout pracovní list',
         detailBack: '← Všechny aktivity',
         activitySchemaLanguage: 'cs'
+    },
+    de: {
+        htmlLang: 'de',
+        ogLocale: 'de_DE',
+        output: 'de',
+        assetDirectory: 'de',
+        csvColumn: 'De',
+        activityDirectory: 'aktivitaeten',
+        activityType: { bludiste: 'labyrinth', omalovanky: 'ausmalbild', spojovacky: 'punkte-verbinden', obtahovacky: 'nachzeichnen' },
+        cardType: { bludiste: 'Labyrinth', omalovanky: 'Ausmalbild', spojovacky: 'Punkt zu Punkt', obtahovacky: 'Nachspuren' },
+        indexTitle: 'Kostenlose Ausmalbilder & Labyrinthe für Kinder | VinMat',
+        indexDescription: 'Kostenlose Labyrinthe, Ausmalbilder und Punkt-zu-Punkt-Bilder für Kinder von 3 bis 10 Jahren. Direkt als A4-Arbeitsblätter ausdrucken.',
+        indexHeading: 'Kostenlose Aktivitäten für Kinder zum Ausdrucken',
+        indexIntro: 'Entdecke kostenlose Labyrinthe, Ausmalbilder und Punkt-zu-Punkt-Bilder. Öffne eine Aktivität, lade sie herunter oder drucke sie direkt aus.',
+        siteName: "VinMats Welt für Kinder",
+        levelLabel: 'Stufe',
+        detailPrefix: 'Kostenlose Druckvorlage',
+        detailCta: 'Vorlage herunterladen',
+        detailPrint: 'Arbeitsblatt drucken',
+        detailBack: '← Alle Aktivitäten',
+        activitySchemaLanguage: 'de'
+    },
+    es: {
+        htmlLang: 'es',
+        ogLocale: 'es_ES',
+        output: 'es',
+        assetDirectory: 'es',
+        csvColumn: 'Es',
+        activityDirectory: 'actividades',
+        activityType: { bludiste: 'laberinto', omalovanky: 'dibujo', spojovacky: 'une-puntos', obtahovacky: 'trazado' },
+        cardType: { bludiste: 'Laberinto', omalovanky: 'Dibujo para colorear', spojovacky: 'Une los puntos', obtahovacky: 'Trazado' },
+        indexTitle: 'Dibujos para colorear y laberintos gratis | VinMat',
+        indexDescription: 'Descarga gratis laberintos, dibujos para colorear y fichas de unir puntos para niños de 3 a 10 años. Actividades A4 listas para imprimir.',
+        indexHeading: 'Actividades gratis para imprimir',
+        indexIntro: 'Explora laberintos, dibujos para colorear y fichas de unir puntos. Abre una actividad, descárgala o imprímela directamente.',
+        siteName: 'El mundo de VinMat para niños',
+        levelLabel: 'Nivel',
+        detailPrefix: 'Ficha gratuita para imprimir',
+        detailCta: 'Descargar ficha',
+        detailPrint: 'Imprimir ficha',
+        detailBack: '← Todas las actividades',
+        activitySchemaLanguage: 'es'
     }
 };
 
+// Jazyky, pro které už existuje přeložený zdrojový obsah guide stránek
+// (ve složce podle `output`). Dokud pro de/es nejsou tyto stránky přeložené,
+// generátor je pro ně přeskočí (viz copyGuidePages) a nebude litovat 404.
+// Jestli je pro konkrétní guide stránku a jazyk už hotový přeložený zdroj,
+// zjišťujeme přímo podle existence souboru na disku – ne podle pevného
+// seznamu. Díky tomu funguje postupné dopřekládání stránka po stránce:
+// jakmile přidáš např. de/unsere-geschichte.html, další build ji rovnou
+// propojí (hreflang, patička, jazykový přepínač) bez úpravy kódu.
+function guidePageExists(locale, page) {
+    if (locale === 'en') return true;
+    return existsSync(path.join(root, languages[locale].output, page[locale]));
+}
+
 const guidePages = [
-    { key: 'activityGuide', en: 'guide-activities.html', cs: 'pruvodce-aktivitami.html' },
-    { key: 'difficultyLevels', en: 'difficulty-levels.html', cs: 'urovne-obtiznosti.html' },
-    { key: 'ourStory', en: 'our-story.html', cs: 'nas-pribeh.html' },
-    { key: 'mazeGuide', en: 'guide-mazes.html', cs: 'pruvodce-bludiste.html' },
-    { key: 'coloringGuide', en: 'guide-coloring.html', cs: 'pruvodce-omalovanky.html' },
-    { key: 'dotToDotGuide', en: 'guide-dot-to-dot.html', cs: 'pruvodce-spojovacky.html' },
-    { key: 'tracingGuide', en: 'guide-tracing.html', cs: 'pruvodce-obtahovacky.html' },
-    { key: 'tracingHistory', en: 'history-tracing.html', cs: 'historie-obkreslovani.html' },
-    { key: 'privacy', en: 'privacy.html', cs: 'zasady-ochrany-osobnich-udaju.html' },
-    { key: 'terms', en: 'terms.html', cs: 'podminky-uziti.html' }
+    { key: 'activityGuide', en: 'guide-activities.html', cs: 'pruvodce-aktivitami.html', de: 'anleitung-aktivitaeten.html', es: 'guia-actividades.html' },
+    { key: 'difficultyLevels', en: 'difficulty-levels.html', cs: 'urovne-obtiznosti.html', de: 'schwierigkeitsstufen.html', es: 'niveles-dificultad.html' },
+    { key: 'ourStory', en: 'our-story.html', cs: 'nas-pribeh.html', de: 'unsere-geschichte.html', es: 'nuestra-historia.html' },
+    { key: 'mazeGuide', en: 'guide-mazes.html', cs: 'pruvodce-bludiste.html', de: 'anleitung-labyrinthe.html', es: 'guia-laberintos.html' },
+    { key: 'coloringGuide', en: 'guide-coloring.html', cs: 'pruvodce-omalovanky.html', de: 'anleitung-ausmalbilder.html', es: 'guia-dibujos.html' },
+    { key: 'dotToDotGuide', en: 'guide-dot-to-dot.html', cs: 'pruvodce-spojovacky.html', de: 'anleitung-punkte-verbinden.html', es: 'guia-unir-puntos.html' },
+    { key: 'tracingGuide', en: 'guide-tracing.html', cs: 'pruvodce-obtahovacky.html', de: 'anleitung-nachzeichnen.html', es: 'guia-trazado.html' },
+    { key: 'tracingHistory', en: 'history-tracing.html', cs: 'historie-obkreslovani.html', de: 'geschichte-nachzeichnen.html', es: 'historia-trazado.html' },
+    { key: 'privacy', en: 'privacy.html', cs: 'zasady-ochrany-osobnich-udaju.html', de: 'datenschutz.html', es: 'privacidad.html' },
+    { key: 'terms', en: 'terms.html', cs: 'podminky-uziti.html', de: 'nutzungsbedingungen.html', es: 'terminos-de-uso.html' }
 ];
 
 const csvTypes = ['bludiste', 'omalovanky', 'spojovacky', 'obtahovacky'];
@@ -123,17 +181,25 @@ async function readActivities() {
             const variants = ['colored', 'partly_colored', 'coloring']
                 .filter((variant) => row[`altEn_${variant}`] && row[`altEn_${variant}`] !== '0');
 
+            const names = {};
+            const alt = {};
+            for (const [locale, config] of Object.entries(languages)) {
+                const col = config.csvColumn;
+                names[locale] = row[`nazev${col}`] || row.nazevEn || row.soubor;
+                alt[locale] = Object.fromEntries(['colored', 'partly_colored', 'coloring'].map((variant) => [
+                    variant,
+                    row[`alt${col}_${variant}`] || row[`altEn_${variant}`] || ''
+                ]));
+            }
+
             activities.push({
                 id: `${type}-${row.soubor}`,
                 type,
                 fileBase: row.soubor,
                 level: row.soubor.split('_')[0].toUpperCase(),
                 date: row.datumPridani || '',
-                names: { en: row.nazevEn || row.soubor, cs: row.nazevCz || row.soubor },
-                alt: {
-                    en: Object.fromEntries(['colored', 'partly_colored', 'coloring'].map((variant) => [variant, row[`altEn_${variant}`] || ''])),
-                    cs: Object.fromEntries(['colored', 'partly_colored', 'coloring'].map((variant) => [variant, row[`altCz_${variant}`] || '']))
-                },
+                names,
+                alt,
                 variants: variants.length ? variants : ['coloring']
             });
         }
@@ -197,7 +263,7 @@ function activityCard(activity, locale) {
             </a>
             <div class="p-4 flex-grow">
                 <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">${escapeHtml(config.cardType[activity.type])}</span><span class="text-xs text-slate-400 font-bold">${escapeHtml(activity.level)}</span></div>
-                <h2 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="${escapeHtml(href)}" class="hover:text-indigo-600">${escapeHtml(activity.names[locale])}</a></h2>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="${escapeHtml(href)}" class="hover:text-indigo-600">${escapeHtml(activity.names[locale])}</a></h3>
             </div>
         </article>`;
 }
@@ -253,31 +319,71 @@ function injectNavigation(html, assetPrefix) {
 
 function setIndexSeo(html, locale) {
     const config = languages[locale];
-    const canonical = locale === 'en' ? siteUrl : `${siteUrl}cs/`;
+    const canonical = locale === 'en' ? siteUrl : `${siteUrl}${config.output}/`;
     html = html.replace(/<html lang="[^"]*">/i, `<html lang="${config.htmlLang}">`);
     html = html.replace(/<title id="page-title">[\s\S]*?<\/title>/i, `<title id="page-title">${escapeHtml(config.indexTitle)}</title>`);
     html = html.replace(/(<meta id="meta-desc" name="description" content=")[^"]*(">)/i, `$1${escapeHtml(config.indexDescription)}$2`);
     html = html.replace(/(<link id="link-canonical" rel="canonical" href=")[^"]*(">)/i, `$1${canonical}$2`);
-    html = html.replace(/<link rel="alternate" hreflang="en" href="[^"]*">/i, `<link rel="alternate" hreflang="en" href="${siteUrl}">`);
-    html = html.replace(/<link rel="alternate" hreflang="cs" href="[^"]*">/i, `<link rel="alternate" hreflang="cs" href="${siteUrl}cs/">`);
+    // Odstraníme všechny existující hreflang tagy a znovu je zapíšeme pro
+    // všechny aktivní jazyky najednou (aby DE/ES přibyly automaticky
+    // i do EN/CS hlavičky, ne jen do svých vlastních souborů).
+    html = html.replace(/\s*<link rel="alternate" hreflang="[^"]*" href="[^"]*">/g, '');
+    const hreflangTags = Object.entries(languages)
+        .map(([code, cfg]) => `    <link rel="alternate" hreflang="${cfg.htmlLang}" href="${siteUrl}${cfg.output ? `${cfg.output}/` : ''}">`)
+        .concat(`    <link rel="alternate" hreflang="x-default" href="${siteUrl}">`)
+        .join('\n');
+    html = html.replace('</head>', `${hreflangTags}\n</head>`);
     html = html.replace(/(<meta id="og-url"\s+property="og:url"\s+content=")[^"]*(">)/i, `$1${canonical}$2`);
     html = html.replace(/(<meta\s+property="og:locale"\s+content=")[^"]*(">)/i, `$1${config.ogLocale}$2`);
+    // LOCALIZED_INDEX_SEO
+    html = html.replace(/<meta id="og-title"[^>]*>/i, '<meta id="og-title" property="og:title" content="' + escapeHtml(config.indexTitle) + '">');
+    html = html.replace(/<meta id="og-desc"[^>]*>/i, '<meta id="og-desc" property="og:description" content="' + escapeHtml(config.indexDescription) + '">');
+    html = html.replace(/<meta id="tw-title"[^>]*>/i, '<meta id="tw-title" name="twitter:title" content="' + escapeHtml(config.indexTitle) + '">');
+    html = html.replace(/<meta id="tw-desc"[^>]*>/i, '<meta id="tw-desc" name="twitter:description" content="' + escapeHtml(config.indexDescription) + '">');
+    html = html.replace(/<meta\s+property="og:site_name"[^>]*>/i, '<meta property="og:site_name" content="' + escapeHtml(config.siteName) + '">');
+    html = html.replace(/\s*<meta\s+name="keywords"[^>]*>/i, '');
+    html = html.replace(/<h1 class="sr-only">[\s\S]*?<\/h1>/i, '<h1 class="sr-only">' + escapeHtml(config.indexHeading) + '</h1>');
+    html = html.replace(/\s*<meta\s+property="og:locale:alternate"[^>]*>/gi, '');
+    const alternateLocales = Object.values(languages)
+        .filter((language) => language.ogLocale !== config.ogLocale)
+        .map((language) => `    <meta property="og:locale:alternate" content="${language.ogLocale}">`)
+        .join('\n');
+    html = html.replace(/(<meta\s+property="og:locale"[^>]*>)/i, `$1\n${alternateLocales}`);
+    const websiteSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: config.siteName,
+        url: canonical,
+        description: config.indexDescription,
+        inLanguage: config.htmlLang
+    };
+    html = html.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/i, '<script type="application/ld+json">\n' + JSON.stringify(websiteSchema, null, 4) + '\n    </script>');
     return html;
 }
 
-function localizeIndexPaths(html) {
-    return html
+function localizeIndexPaths(html, locale) {
+    html = html
         .replace('src="translations.js"', 'src="../translations.js"')
         .replaceAll("fetch('assets/", "fetch('../assets/")
         .replaceAll("'public/", "'../public/")
-        // Česká stránka musí mít funkční patičku i bez JavaScriptu.
-        .replaceAll('href="privacy.html"', 'href="zasady-ochrany-osobnich-udaju.html"')
-        .replaceAll('href="terms.html"', 'href="podminky-uziti.html"')
-        .replaceAll('href="guide-activities.html"', 'href="pruvodce-aktivitami.html"')
-        .replaceAll('href="difficulty-levels.html"', 'href="urovne-obtiznosti.html"')
-        .replaceAll('href="our-story.html"', 'href="nas-pribeh.html"')
         .replaceAll("url('assets/", "url('../assets/")
         .replaceAll('url("assets/', 'url("../assets/');
+    // Odkazy na "guide" podstránky v patičce/navigaci: pokud pro daný jazyk
+    // už existuje přeložená stránka, odkaž na ni. Pokud ještě ne, odkaž
+    // absolutní cestou na EN verzi, ať web nikdy neukazuje na 404.
+    const guideRouteToKey = {
+        'privacy.html': 'privacy',
+        'terms.html': 'terms',
+        'guide-activities.html': 'activityGuide',
+        'difficulty-levels.html': 'difficultyLevels',
+        'our-story.html': 'ourStory'
+    };
+    for (const [enRoute, key] of Object.entries(guideRouteToKey)) {
+        const page = guidePages.find((p) => p.key === key);
+        const target = guidePageExists(locale, page) ? page[locale] : `${siteUrl}${page.en}`;
+        html = html.replaceAll(`href="${enRoute}"`, `href="${target}"`);
+    }
+    return html;
 }
 
 function updateCzechInternalLinks(html) {
@@ -305,13 +411,18 @@ function activityPage(activity, locale) {
     const title = `${config.detailPrefix}: ${activity.names[locale]} | VinMat`;
     const description = activity.alt[locale][variant] || activity.names[locale];
     const canonical = activityUrl(activity, locale);
-    const alternateLocale = locale === 'en' ? 'cs' : 'en';
-    const alternate = activityUrl(activity, alternateLocale);
     // Open Graph a schema vyžadují plnou veřejnou URL, ne relativní cestu.
     const image = absoluteUrl(`${imageBase(activity, variant)}.webp`);
     const home = `${basePath}${languages[locale].output ? `${languages[locale].output}/` : ''}`;
     const levelNumber = activity.level.replace(/^LV/, '');
-    const alternateLanguageLabel = alternateLocale === 'cs' ? 'CZ' : 'EN';
+    const otherLocales = Object.keys(languages).filter((code) => code !== locale);
+    const languageNav = otherLocales
+        .map((code) => `<a href="${activityUrl(activity, code)}">${languages[code].htmlLang.toUpperCase()}</a>`)
+        .join('');
+    const hreflangTags = Object.keys(languages)
+        .map((code) => `    <link rel="alternate" hreflang="${languages[code].htmlLang}" href="${activityUrl(activity, code)}">`)
+        .concat(`    <link rel="alternate" hreflang="x-default" href="${activityUrl(activity, 'en')}">`)
+        .join('\n');
     const jsonLd = {
         '@context': 'https://schema.org',
         '@type': 'LearningResource',
@@ -334,9 +445,7 @@ function activityPage(activity, locale) {
     <meta name="description" content="${escapeHtml(description)}">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="${canonical}">
-    <link rel="alternate" hreflang="en" href="${activityUrl(activity, 'en')}">
-    <link rel="alternate" hreflang="cs" href="${activityUrl(activity, 'cs')}">
-    <link rel="alternate" hreflang="x-default" href="${activityUrl(activity, 'en')}">
+${hreflangTags}
     <meta property="og:type" content="website">
     <meta property="og:title" content="${escapeHtml(title)}">
     <meta property="og:description" content="${escapeHtml(description)}">
@@ -361,7 +470,7 @@ function activityPage(activity, locale) {
     <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen" data-locale="${locale}" data-route-key="activity">
-    <header class="bg-slate-900 text-white text-sm py-3 px-4"><div class="max-w-5xl mx-auto flex items-center justify-between gap-3"><a class="font-bold hover:text-amber-300" href="${home}">${escapeHtml(config.siteName)}</a><nav class="flex gap-3"><a href="${activityUrl(activity, alternateLocale)}">${alternateLanguageLabel}</a></nav></div></header>
+    <header class="bg-slate-900 text-white text-sm py-3 px-4"><div class="max-w-5xl mx-auto flex items-center justify-between gap-3"><a class="font-bold hover:text-amber-300" href="${home}">${escapeHtml(config.siteName)}</a><nav class="flex gap-3">${languageNav}</nav></div></header>
     <main class="max-w-5xl mx-auto px-4 py-8">
         <a class="text-sm font-bold text-indigo-700 hover:underline" href="${home}">${escapeHtml(config.detailBack)}</a>
         <article class="activity-print-card mt-5 grid gap-7 md:grid-cols-[minmax(0,3fr)_minmax(240px,2fr)] bg-white rounded-3xl border border-slate-100 shadow-sm p-5 md:p-8">
@@ -375,18 +484,26 @@ function activityPage(activity, locale) {
 }
 
 function updateGuideSeo(html, page, locale) {
-    const ownRelative = locale === 'en' ? page.en : `cs/${page.cs}`;
+    const ownRelative = locale === 'en' ? page.en : `${languages[locale].output}/${page[locale]}`;
     const ownUrl = `${siteUrl}${ownRelative}`;
     const enUrl = `${siteUrl}${page.en}`;
-    const csUrl = `${siteUrl}cs/${page.cs}`;
     html = html.replace(/<html lang="[^"]*">/i, `<html lang="${languages[locale].htmlLang}">`);
     const setHeadTag = (pattern, tag) => pattern.test(html)
         ? html.replace(pattern, tag)
         : html.replace('</head>', `    ${tag}\n</head>`);
     html = setHeadTag(/<link\s+rel="canonical"\s+href="[^"]*"\s*\/?\s*>/i, `<link rel="canonical" href="${ownUrl}">`);
-    html = setHeadTag(/<link\s+rel="alternate"\s+hreflang="en"\s+href="[^"]*"\s*\/?\s*>/i, `<link rel="alternate" hreflang="en" href="${enUrl}">`);
-    html = setHeadTag(/<link\s+rel="alternate"\s+hreflang="cs"\s+href="[^"]*"\s*\/?\s*>/i, `<link rel="alternate" hreflang="cs" href="${csUrl}">`);
-    html = setHeadTag(/<link\s+rel="alternate"\s+hreflang="x-default"\s+href="[^"]*"\s*\/?\s*>/i, `<link rel="alternate" hreflang="x-default" href="${enUrl}">`);
+    // Odstraníme staré hreflang tagy a zapíšeme je znovu pro všechny jazyky,
+    // které pro tuto guide stránku už mají přeložený zdroj (viz guidePageExists).
+    html = html.replace(/\s*<link\s+rel="alternate"\s+hreflang="[^"]*"\s+href="[^"]*"\s*\/?\s*>/gi, '');
+    const hreflangTags = Object.keys(languages)
+        .filter((code) => guidePageExists(code, page))
+        .map((code) => {
+            const relative = code === 'en' ? page.en : `${languages[code].output}/${page[code]}`;
+            return `    <link rel="alternate" hreflang="${languages[code].htmlLang}" href="${siteUrl}${relative}">`;
+        })
+        .concat(`    <link rel="alternate" hreflang="x-default" href="${enUrl}">`)
+        .join('\n');
+    html = html.replace('</head>', `${hreflangTags}\n</head>`);
     const title = html.match(/<title>([\s\S]*?)<\/title>/i)?.[1] || "VinMat's World for Kids";
     const description = html.match(/<meta\s+name="description"\s+content="([^"]*)"\s*\/?\s*>/i)?.[1] || '';
     const ogType = ['privacy', 'terms'].includes(page.key) ? 'website' : 'article';
@@ -452,6 +569,23 @@ function ensureContactHelper(html) {
     return insertBeforeFinalBodyClose(html, `    ${helper}\n`);
 }
 
+async function syncTranslatedGuides(locale, sitemapUrls) {
+    const config = languages[locale];
+    for (const page of guidePages) {
+        const relativePath = path.join(config.output, page[locale]);
+        const source = path.join(root, relativePath);
+        if (!existsSync(source)) continue;
+        let html = await readFile(source, 'utf8');
+        html = deduplicateTrackingScripts(html);
+        html = updateGuideSeo(html, page, locale);
+        html = setBodyData(html, locale, page.key);
+        html = injectNavigation(html, '../');
+        html = ensureContactHelper(html);
+        await writeFile(source, html);
+        sitemapUrls.add(`${siteUrl}${config.output}/${page[locale]}`);
+    }
+}
+
 async function copyCzechGuides(sitemapUrls) {
     for (const page of guidePages) {
         const source = path.join(root, 'cs', page.cs);
@@ -502,10 +636,13 @@ function sitemap(urls) {
 
 async function build() {
     const activities = await readActivities();
-    assignSlugs(activities, 'en');
-    assignSlugs(activities, 'cs');
+    for (const locale of Object.keys(languages)) {
+        assignSlugs(activities, locale);
+    }
 
-    const sitemapUrls = new Set([siteUrl, `${siteUrl}cs/`]);
+    const sitemapUrls = new Set(
+        Object.values(languages).map((cfg) => `${siteUrl}${cfg.output ? `${cfg.output}/` : ''}`)
+    );
     let englishIndex = await readFile(path.join(root, 'index.html'), 'utf8');
     englishIndex = setCatalog(englishIndex, staticCatalog(activities, 'en'));
     englishIndex = setIndexSeo(englishIndex, 'en');
@@ -520,11 +657,27 @@ async function build() {
     czechIndex = setIndexSeo(czechIndex, 'cs');
     czechIndex = setIndexLocale(czechIndex, 'cz');
     czechIndex = setBodyData(czechIndex, 'cs', 'home');
-    czechIndex = localizeIndexPaths(czechIndex);
+    czechIndex = localizeIndexPaths(czechIndex, 'cs');
     czechIndex = updateCzechInternalLinks(czechIndex);
     czechIndex = injectNavigation(czechIndex, '../');
     await mkdir(path.join(root, 'cs'), { recursive: true });
     await writeFile(path.join(root, 'cs', 'index.html'), czechIndex);
+
+    // Další jazyky (DE, ES, …) se odvozují stejným způsobem jako CS verze,
+    // ze stejné anglické šablony. Guide odkazy v patičce automaticky ukazují
+    // na EN fallback, dokud pro daný jazyk nejsou přeložené (viz activeGuideLocales).
+    for (const locale of Object.keys(languages)) {
+        if (locale === 'en' || locale === 'cs') continue;
+        const config = languages[locale];
+        let localeIndex = setCatalog(englishIndex, staticCatalog(activities, locale));
+        localeIndex = setIndexSeo(localeIndex, locale);
+        localeIndex = setIndexLocale(localeIndex, locale);
+        localeIndex = setBodyData(localeIndex, locale, 'home');
+        localeIndex = localizeIndexPaths(localeIndex, locale);
+        localeIndex = injectNavigation(localeIndex, '../');
+        await mkdir(path.join(root, config.output), { recursive: true });
+        await writeFile(path.join(root, config.output, 'index.html'), localeIndex);
+    }
 
     for (const locale of Object.keys(languages)) {
         for (const activity of activities) {
@@ -537,7 +690,13 @@ async function build() {
 
     await updateEnglishGuides(sitemapUrls);
     await copyCzechGuides(sitemapUrls);
+    for (const locale of Object.keys(languages)) {
+        if (locale === 'en' || locale === 'cs') continue;
+        await syncTranslatedGuides(locale, sitemapUrls);
+    }
     await writeFile(path.join(root, 'sitemap.xml'), sitemap(sitemapUrls));
+    const { finalizeLegalLocalization } = await import('./legal-localization.mjs');
+    await finalizeLegalLocalization();
 
     console.log(`Generated ${activities.length * Object.keys(languages).length} activity pages and ${sitemapUrls.size} sitemap URLs.`);
 }

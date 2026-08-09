@@ -1,0 +1,120 @@
+name: Localization static build
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - de-es-localization
+  pull_request:
+    branches:
+      - de-es-localization
+
+concurrency:
+  group: localization-static-build
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out localization branch
+        uses: actions/checkout@v4
+        with:
+          ref: de-es-localization
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install legal localization integration
+        run: node scripts/legal-localization.mjs install
+
+      - name: Align legal localization validation
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          file = Path('scripts/legal-localization.mjs')
+          text = file.read_text(encoding='utf-8')
+          text = text.replace(
+              "title: 'Privacidad | El mundo de VinMat para niños', h1: 'Privacidad', h2: 7",
+              "title: 'Política de privacidad | El mundo de VinMat para niños', h1: 'Política de privacidad', h2: 7"
+          )
+          text = text.replace(
+              "assert(count(html, 'pagead2.googlesyndication.com') === 1, `${page.file}: AdSense count is not one`);",
+              "assert(count(html, 'pagead2.googlesyndication.com') === 0, `${page.file}: AdSense must not load on legal pages`);"
+          )
+          text = text.replace(
+              "assert(count(html, 'googletagmanager.com/gtag/js') === 1, `${page.file}: Analytics count is not one`);",
+              "assert(count(html, 'googletagmanager.com/gtag/js') === 0, `${page.file}: Analytics must not load on legal pages`);"
+          )
+          file.write_text(text, encoding='utf-8')
+          PY
+
+      - name: Check build scripts
+        run: |
+          node --check scripts/optimize-localized-index-seo.mjs
+          node --check scripts/polish-activity-localization.mjs
+          node --check scripts/polish-de-es-content.mjs
+          node --check scripts/build-static-site.mjs
+          node --check scripts/finalize-activity-pages.mjs
+          node --check scripts/normalize-guide-headers.mjs
+          node --check scripts/finalize-localized-indexes.mjs
+          node --check scripts/legal-localization.mjs
+          node --check scripts/postbuild-adsense-audit.mjs
+          node --check scripts/validate-localized-site.mjs
+          node --check scripts/validate-difficulty-localization.mjs
+          node --check scripts/validate-de-es-content.mjs
+          node --check assets/js/site-config.js
+          node --check assets/js/site-navigation.js
+
+      - name: Optimize localized index SEO
+        run: node scripts/optimize-localized-index-seo.mjs
+
+      - name: Polish localized source content
+        run: |
+          node scripts/polish-activity-localization.mjs
+          node scripts/polish-de-es-content.mjs
+
+      - name: Generate localized static site
+        run: node scripts/build-static-site.mjs
+
+      - name: Finalize generated activity pages
+        run: node scripts/finalize-activity-pages.mjs
+
+      - name: Normalize localized guide headers
+        run: node scripts/normalize-guide-headers.mjs
+
+      - name: Finalize localized indexes
+        run: node scripts/finalize-localized-indexes.mjs
+
+      - name: Finalize legal localization
+        run: node scripts/legal-localization.mjs finalize
+
+      - name: Apply AdSense audit safeguards
+        run: node scripts/postbuild-adsense-audit.mjs
+
+      - name: Validate generated localization
+        run: |
+          node scripts/validate-localized-site.mjs
+          node scripts/validate-difficulty-localization.mjs
+          node scripts/validate-de-es-content.mjs
+          node scripts/legal-localization.mjs validate
+
+      - name: Commit generated files
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            echo "No generated changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/workflows/localization-static-build.yml assets/data assets/js/site-config.js scripts index.html cs/index.html de/index.html es/index.html sitemap.xml activities cs/aktivity de/aktivitaeten es/actividades guide-*.html history-tracing.html difficulty-levels.html our-story.html privacy.html terms.html cs/*.html de/*.html es/*.html vinmat-planner
+          git commit -m "Build localized static pages"
+          git push origin HEAD:de-es-localization

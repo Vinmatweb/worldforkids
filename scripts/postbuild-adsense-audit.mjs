@@ -6,7 +6,11 @@ const legalPages = new Set([
   'privacy.html',
   'terms.html',
   'cs/zasady-ochrany-osobnich-udaju.html',
-  'cs/podminky-uziti.html'
+  'cs/podminky-uziti.html',
+  'de/datenschutz.html',
+  'de/nutzungsbedingungen.html',
+  'es/privacidad.html',
+  'es/terminos-de-uso.html'
 ]);
 
 async function collectHtmlFiles(directory, prefix = '') {
@@ -29,6 +33,14 @@ function replaceMissingOgImage(html) {
     .replaceAll('https://vinmat.eu/worldforkids/assets/images/og-image.png', 'https://vinmat.eu/worldforkids/assets/images/banner.png')
     .replaceAll('/worldforkids/assets/images/og-image.png', '/worldforkids/assets/images/banner.png')
     .replaceAll('assets/images/og-image.png', 'assets/images/banner.png');
+}
+
+function normalizeDoubleEscapedEntities(html) {
+  return html
+    .replaceAll('&amp;#039;', '&#039;')
+    .replaceAll('&amp;quot;', '&quot;')
+    .replaceAll('&amp;lt;', '&lt;')
+    .replaceAll('&amp;gt;', '&gt;');
 }
 
 function stripConsentSensitiveTracking(html) {
@@ -56,6 +68,7 @@ for (const file of files) {
   const original = html;
 
   html = replaceMissingOgImage(html);
+  html = normalizeDoubleEscapedEntities(html);
   html = ensurePlannerNoindex(html, file.relative);
   if (legalPages.has(file.relative)) html = stripConsentSensitiveTracking(html);
 

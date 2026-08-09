@@ -25,6 +25,20 @@ const guideAgeLabels = {
         LV3: '👧👦 Věk 7–9',
         LV4: '🧑 Věk 10+',
         LV5: '👨 Věk 12+ a dospělí'
+    },
+    de: {
+        LV1: '👶 Alter 3–4',
+        LV2: '👧👦 Alter 5–6',
+        LV3: '👧👦 Alter 7–9',
+        LV4: '🧑 Alter 10+',
+        LV5: '👨 12+ & Erwachsene'
+    },
+    es: {
+        LV1: '👶 Edad 3–4',
+        LV2: '👧👦 Edad 5–6',
+        LV3: '👧👦 Edad 7–9',
+        LV4: '🧑 Edad 10+',
+        LV5: '👨 12+ y adultos'
     }
 };
 
@@ -38,11 +52,32 @@ const guideVariantLabels = {
         colored: '🌈 Barevná',
         coloring: '◧ Černobílá',
         partly_colored: '🌗 Částečně barevná'
+    },
+    de: {
+        colored: '🌈 Farbig',
+        coloring: '◧ Schwarz-Weiß',
+        partly_colored: '🌗 Teilweise farbig'
+    },
+    es: {
+        colored: '🌈 A color',
+        coloring: '◧ Blanco y negro',
+        partly_colored: '🌗 Parcialmente coloreado'
     }
 };
 
+// Doplňkové texty, které v původní verzi byly natvrdo binární (cz/en).
+// Klíč `bwOnly` = "pouze černobílé", `open` = titulek u náhledu, `empty` = prázdný stav.
+const guideMiscLabels = {
+    en: { bwOnly: '◧ B&amp;W only', open: 'Open', empty: 'No printable activities are available yet.' },
+    cz: { bwOnly: '◧ Pouze černobílé', open: 'Otevřít', empty: 'Zatím tu nejsou žádné pracovní listy.' },
+    de: { bwOnly: '◧ Nur Schwarz-Weiß', open: 'Öffnen', empty: 'Hier gibt es noch keine Arbeitsblätter.' },
+    es: { bwOnly: '◧ Solo blanco y negro', open: 'Abrir', empty: 'Todavía no hay fichas disponibles aquí.' }
+};
+
+const guideCsvColumn = { en: 'En', cz: 'Cz', de: 'De', es: 'Es' };
+
 function guideLanguage() {
-    return GUIDE_ACTIVITY_CONFIG.language === 'cz' ? 'cz' : 'en';
+    return guideCsvColumn[GUIDE_ACTIVITY_CONFIG.language] ? GUIDE_ACTIVITY_CONFIG.language : 'en';
 }
 
 function guideAgeLabel(level) {
@@ -114,8 +149,8 @@ async function guideLoadCsv() {
         const headers = guideParseCsvRow(rows[0]);
         const activities = [];
         const language = guideLanguage();
-        const nameColumn = language === 'cz' ? 'nazevCz' : 'nazevEn';
-        const altPrefix = language === 'cz' ? 'altCz' : 'altEn';
+        const nameColumn = 'nazev' + guideCsvColumn[language];
+        const altPrefix = 'alt' + guideCsvColumn[language];
 
         for (let i = 1; i < rows.length; i++) {
             const cells = guideParseCsvRow(rows[i]);
@@ -740,7 +775,7 @@ function guideCreateCard(activity) {
         variantControls = `
             <div class="text-center bg-slate-100 py-1 rounded-lg
                         text-[10px] font-bold text-slate-500">
-                ${guideLanguage() === 'cz' ? '◧ Pouze černobílé' : '◧ B&amp;W only'}
+                ${guideMiscLabels[guideLanguage()].bwOnly}
             </div>
         `;
     }
@@ -758,7 +793,7 @@ function guideCreateCard(activity) {
             onclick="guideOpenActivity('${guideEscapeHtml(activity.id)}')"
 class="bg-slate-50 p-3 flex items-center
        justify-center cursor-pointer group"
-            title="${guideLanguage() === 'cz' ? 'Otevřít' : 'Open'} ${guideEscapeHtml(activity.name)}"
+            title="${guideMiscLabels[guideLanguage()].open} ${guideEscapeHtml(activity.name)}"
         >
             ${guideCreatePicture(activity, variant)}
         </div>
@@ -912,9 +947,7 @@ function guideRenderActivities(containerId, activities) {
     container.innerHTML = '';
 
     if (activities.length === 0) {
-        const emptyMessage = GUIDE_ACTIVITY_CONFIG.language === 'cz'
-            ? 'Zatím tu nejsou žádné pracovní listy.'
-            : 'No printable activities are available yet.';
+        const emptyMessage = guideMiscLabels[guideLanguage()].empty;
         container.innerHTML = `
             <div class="bg-white p-8 text-center rounded-2xl
                         border border-slate-100 text-xs text-slate-400
