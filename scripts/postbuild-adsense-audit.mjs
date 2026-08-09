@@ -43,6 +43,16 @@ function normalizeDoubleEscapedEntities(html) {
     .replaceAll('&amp;gt;', '&gt;');
 }
 
+function normalizeSharedScriptPaths(html, relative) {
+  // EN activity pages live directly under /activities/, so one ".." reaches
+  // the World for Kids root. Localized activity pages are one level deeper
+  // (e.g. /cs/aktivity/) and correctly need two ".." segments.
+  if (!relative.startsWith('activities/')) return html;
+  return html
+    .replaceAll('../../assets/js/site-config.js', '../assets/js/site-config.js')
+    .replaceAll('../../assets/js/site-navigation.js', '../assets/js/site-navigation.js');
+}
+
 function stripConsentSensitiveTracking(html) {
   return html
     .replace(/\s*<!--\s*Google AdSense\s*-->\s*/gi, '\n')
@@ -69,6 +79,7 @@ for (const file of files) {
 
   html = replaceMissingOgImage(html);
   html = normalizeDoubleEscapedEntities(html);
+  html = normalizeSharedScriptPaths(html, file.relative);
   html = ensurePlannerNoindex(html, file.relative);
   if (legalPages.has(file.relative)) html = stripConsentSensitiveTracking(html);
 
