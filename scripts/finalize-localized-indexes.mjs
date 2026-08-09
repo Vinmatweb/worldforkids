@@ -56,6 +56,26 @@ function setNoScriptFallback(html, message) {
     return html.replace(/(<body\b[^>]*>)/i, `$1\n${block}`);
 }
 
+function countCsvRows(csv) {
+    return csv.split(/\r?\n/).map((line) => line.trim()).filter(Boolean).length - 1;
+}
+
+function setEmptyTracingState(html, isEmpty) {
+    const marker = 'data-empty-tracing-category';
+    html = html.replace(new RegExp(`\\s*<style ${marker}>[\\s\\S]*?<\\/style>`, 'i'), '');
+    if (!isEmpty) return html;
+
+    const style = `<style ${marker}>
+#btn-obtahovacky{display:none!important}
+#about-section .grid>div:nth-child(4){display:none!important}
+@media(min-width:768px){#about-section .grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+</style>`;
+    return html.replace(/<\/head>/i, `${style}\n</head>`);
+}
+
+const tracingCsv = await readFile(path.join(root, 'assets/data/obtahovacky.csv'), 'utf8');
+const tracingIsEmpty = countCsvRows(tracingCsv) <= 0;
+
 for (const entry of indexes) {
     const file = path.join(root, entry.file);
     let html = await readFile(file, 'utf8');
@@ -63,7 +83,8 @@ for (const entry of indexes) {
     html = deduplicateHeadLinks(html);
     html = improveInitialization(html);
     html = setNoScriptFallback(html, entry.noScript);
+    html = setEmptyTracingState(html, tracingIsEmpty);
     if (html !== original) await writeFile(file, html);
 }
 
-console.log('Finalized localized indexes.');
+console.log(`Finalized localized indexes. Tracing category ${tracingIsEmpty ? 'hidden (no worksheets)' : 'visible'}.`);
