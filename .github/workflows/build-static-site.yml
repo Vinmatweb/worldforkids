@@ -9,6 +9,7 @@ on:
     paths:
       - 'assets/data/**'
       - 'public/**'
+      - 'assets/images/banner.png'
       - 'assets/js/site-config.js'
       - 'assets/js/site-navigation.js'
       - 'scripts/**'
@@ -84,6 +85,8 @@ jobs:
           node --check scripts/validate-difficulty-localization.mjs
           node --check scripts/validate-de-es-content.mjs
           node --check scripts/validate-internal-links.mjs
+          node --check scripts/validate-adsense-preflight.mjs
+          python -m py_compile scripts/optimize-banner.py
           node --check assets/js/site-config.js
           node --check assets/js/site-navigation.js
 
@@ -110,6 +113,12 @@ jobs:
       - name: Generate localized category pages
         run: node scripts/generate-category-pages.mjs
 
+      - name: Install image optimizer
+        run: python3 -m pip install --disable-pip-version-check --quiet pillow
+
+      - name: Optimize homepage banner
+        run: python3 scripts/optimize-banner.py
+
       - name: Finalize legal localization
         run: node scripts/legal-localization.mjs finalize
 
@@ -123,6 +132,7 @@ jobs:
           node scripts/validate-de-es-content.mjs
           node scripts/legal-localization.mjs validate
           node scripts/validate-internal-links.mjs
+          node scripts/validate-adsense-preflight.mjs
           npm run validate:content
 
       - name: Commit generated site files
@@ -134,6 +144,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add .github/workflows/build-static-site.yml assets/data assets/js scripts index.html *.html cs de es sitemap.xml activities content-check.html vinmat-planner package.json
+          git add .github/workflows/build-static-site.yml assets/data assets/images/banner.webp assets/js scripts index.html *.html cs de es sitemap.xml activities content-check.html vinmat-planner package.json
           git commit -m "build: generate AdSense-ready localized site"
           git push origin HEAD:${{ github.ref_name }}
