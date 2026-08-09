@@ -96,14 +96,14 @@ async function collect(locale, category) {
   return items;
 }
 
-function langLinks(category, locale) {
+function langLinks(category) {
   const cat = categories[category];
   const tags = { en:'en', cs:'cs', de:'de', es:'es' };
   return Object.entries(tags).map(([loc, tag]) => `<link rel="alternate" hreflang="${tag}" href="${absolute(cat.files[loc])}">`).join('\n') + `\n<link rel="alternate" hreflang="x-default" href="${absolute(cat.files.en)}">`;
 }
 
 function cards(items, cfg) {
-  return items.map((item) => `<a href="${item.href}" class="group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md hover:border-indigo-300 transition-all">
+  return items.map((item) => `<a href="${base}${item.href}" class="group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md hover:border-indigo-300 transition-all">
     <div class="bg-slate-50 aspect-[4/5] flex items-center justify-center overflow-hidden"><img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.title)}" loading="lazy" width="480" height="600" class="w-full h-full object-contain group-hover:scale-[1.02] transition-transform"></div>
     <div class="p-4"><div class="text-[11px] uppercase tracking-wider font-bold text-indigo-600">${escapeHtml(item.level || cfg.free)}</div><h2 class="mt-1 text-base font-extrabold text-slate-900 leading-tight">${escapeHtml(item.title)}</h2><p class="mt-2 text-xs text-slate-500 leading-relaxed line-clamp-3">${escapeHtml(item.meta)}</p></div>
   </a>`).join('\n');
@@ -123,7 +123,7 @@ function page(locale, category, items) {
 <title>${escapeHtml(cat.title[locale])} | VinMat</title>
 <meta name="description" content="${escapeHtml(cat.desc[locale])}"><meta name="robots" content="index, follow">
 <link rel="canonical" href="${current}">
-${langLinks(category, locale)}
+${langLinks(category)}
 <meta property="og:type" content="website"><meta property="og:title" content="${escapeHtml(cat.title[locale])} | VinMat"><meta property="og:description" content="${escapeHtml(cat.desc[locale])}"><meta property="og:url" content="${current}"><meta property="og:image" content="${base}/assets/images/banner.png">
 <script type="application/ld+json">${jsonLd}</script>
 <script src="https://cdn.tailwindcss.com"></script>
@@ -142,12 +142,11 @@ ${langLinks(category, locale)}
 
 function categoryNav(locale) {
   const cfg = locales[locale];
-  const cards = Object.values(categories).map((cat) => `<a href="/${cat.files[locale]}" class="bg-white border border-slate-200 rounded-2xl p-5 hover:border-indigo-300 hover:shadow-sm transition-all"><div class="text-2xl">${cat.icon}</div><div class="mt-2 font-extrabold text-slate-900">${escapeHtml(cat.title[locale])}</div></a>`).join('');
-  return `<!-- CATEGORY_NAV_START --><section class="mb-8"><div class="mb-4"><h2 class="text-xl font-extrabold text-slate-900">${cfg.browseTitle}</h2><p class="text-sm text-slate-500 mt-1">${cfg.intro}</p></div><div class="grid grid-cols-1 md:grid-cols-3 gap-4">${cards}</div></section><!-- CATEGORY_NAV_END -->`;
+  const navCards = Object.values(categories).map((cat) => `<a href="${base}/${cat.files[locale]}" class="bg-white border border-slate-200 rounded-2xl p-5 hover:border-indigo-300 hover:shadow-sm transition-all"><div class="text-2xl">${cat.icon}</div><div class="mt-2 font-extrabold text-slate-900">${escapeHtml(cat.title[locale])}</div></a>`).join('');
+  return `<!-- CATEGORY_NAV_START --><section class="mb-8"><div class="mb-4"><h2 class="text-xl font-extrabold text-slate-900">${cfg.browseTitle}</h2><p class="text-sm text-slate-500 mt-1">${cfg.intro}</p></div><div class="grid grid-cols-1 md:grid-cols-3 gap-4">${navCards}</div></section><!-- CATEGORY_NAV_END -->`;
 }
 
 async function injectHome(locale) {
-  const cfg = locales[locale];
   const file = path.join(root, locale === 'en' ? 'index.html' : `${locale}/index.html`);
   let html = await readFile(file, 'utf8');
   const block = categoryNav(locale);
