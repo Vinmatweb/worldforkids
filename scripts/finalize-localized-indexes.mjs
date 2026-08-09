@@ -9,6 +9,53 @@ const indexes = [
     { locale: 'es', file: 'es/index.html', noScript: 'JavaScript está desactivado. Los enlaces a las actividades imprimibles siguen disponibles abajo.' }
 ];
 
+const chrome = {
+    en: {
+        home: ['Home', '/worldforkids/'],
+        guide: ['Activity Guide', '/worldforkids/guide-activities.html'],
+        levels: ['Difficulty Levels', '/worldforkids/difficulty-levels.html'],
+        story: ['Our Story', '/worldforkids/our-story.html'],
+        copyright: '© 2026 Made with ❤️ for great crafting',
+        disclaimer: 'All downloads free for personal & educational use',
+        privacy: ['Privacy Policy', '/worldforkids/privacy.html'],
+        terms: ['Terms of Service', '/worldforkids/terms.html'],
+        contact: 'Contact'
+    },
+    cs: {
+        home: ['Domů', '/worldforkids/cs/'],
+        guide: ['Průvodce aktivitami', '/worldforkids/cs/pruvodce-aktivitami.html'],
+        levels: ['Úrovně obtížnosti', '/worldforkids/cs/urovne-obtiznosti.html'],
+        story: ['Náš příběh', '/worldforkids/cs/nas-pribeh.html'],
+        copyright: '© 2026 Vyrobeno s ❤️ pro skvělé tvoření',
+        disclaimer: 'Všechna stahování jsou zdarma pro osobní a vzdělávací účely',
+        privacy: ['Zásady ochrany osobních údajů', '/worldforkids/cs/zasady-ochrany-osobnich-udaju.html'],
+        terms: ['Podmínky užití', '/worldforkids/cs/podminky-uziti.html'],
+        contact: 'Kontakt'
+    },
+    de: {
+        home: ['Startseite', '/worldforkids/de/'],
+        guide: ['Aktivitäten-Guide', '/worldforkids/de/anleitung-aktivitaeten.html'],
+        levels: ['Schwierigkeitsstufen', '/worldforkids/de/schwierigkeitsstufen.html'],
+        story: ['Unsere Geschichte', '/worldforkids/de/unsere-geschichte.html'],
+        copyright: '© 2026 Mit ❤️ gemacht für kreative Kinder',
+        disclaimer: 'Alle Downloads sind für die private und pädagogische Nutzung kostenlos',
+        privacy: ['Datenschutz', '/worldforkids/de/datenschutz.html'],
+        terms: ['Nutzungsbedingungen', '/worldforkids/de/nutzungsbedingungen.html'],
+        contact: 'Kontakt'
+    },
+    es: {
+        home: ['Inicio', '/worldforkids/es/'],
+        guide: ['Guía de actividades', '/worldforkids/es/guia-actividades.html'],
+        levels: ['Niveles de dificultad', '/worldforkids/es/niveles-dificultad.html'],
+        story: ['Nuestra historia', '/worldforkids/es/nuestra-historia.html'],
+        copyright: '© 2026 Hecho con ❤️ para niños creativos',
+        disclaimer: 'Todas las descargas son gratuitas para uso personal y educativo',
+        privacy: ['Privacidad', '/worldforkids/es/privacidad.html'],
+        terms: ['Términos de uso', '/worldforkids/es/terminos-de-uso.html'],
+        contact: 'Contacto'
+    }
+};
+
 function deduplicateHeadLinks(html) {
     const seen = new Set();
     return html.replace(/\s*<link\b[^>]*\b(?:rel="(?:icon|apple-touch-icon|manifest)")[^>]*>/gi, (tag) => {
@@ -80,6 +127,36 @@ function makeOptionalTracingSafe(html) {
     return html;
 }
 
+function replaceAnchor(html, id, href, label, home = false) {
+    const expression = new RegExp(`<a\\b([^>]*\\bid="${id}"[^>]*)>[\\s\\S]*?<\\/a>`, 'i');
+    return html.replace(expression, (_match, attributes) => {
+        let attrs = attributes;
+        if (/\bhref="[^"]*"/i.test(attrs)) attrs = attrs.replace(/\bhref="[^"]*"/i, `href="${href}"`);
+        else attrs = ` href="${href}"${attrs}`;
+        const content = home ? `\n                    🏠 <span id="nav-home-label">${label}</span>\n                ` : `\n                    ${label}\n                `;
+        return `<a${attrs}>${content}</a>`;
+    });
+}
+
+function replaceTextById(html, tag, id, text) {
+    const expression = new RegExp(`<${tag}\\b([^>]*\\bid="${id}"[^>]*)>[\\s\\S]*?<\\/${tag}>`, 'i');
+    return html.replace(expression, `<${tag}$1>${text}</${tag}>`);
+}
+
+function localizeStaticChrome(html, locale) {
+    const copy = chrome[locale] || chrome.en;
+    html = replaceAnchor(html, 'nav-home', copy.home[1], copy.home[0], true);
+    html = replaceAnchor(html, 'nav-pruvodce', copy.guide[1], copy.guide[0]);
+    html = replaceAnchor(html, 'nav-urovne', copy.levels[1], copy.levels[0]);
+    html = replaceAnchor(html, 'nav-pribeh', copy.story[1], copy.story[0]);
+    html = replaceTextById(html, 'span', 'txt-footer-copyright', copy.copyright);
+    html = replaceTextById(html, 'span', 'txt-footer-disclaimer', copy.disclaimer);
+    html = replaceAnchor(html, 'txt-footer-privacy', copy.privacy[1], copy.privacy[0]);
+    html = replaceAnchor(html, 'txt-footer-terms', copy.terms[1], copy.terms[0]);
+    html = replaceTextById(html, 'span', 'txt-footer-contact', copy.contact);
+    return html;
+}
+
 function countCsvRows(csv) {
     return csv.split(/\r?\n/).map((line) => line.trim()).filter(Boolean).length - 1;
 }
@@ -109,8 +186,9 @@ for (const entry of indexes) {
     html = ensureVisibleBody(html);
     html = ensureResponsiveNavigation(html);
     html = makeOptionalTracingSafe(html);
+    html = localizeStaticChrome(html, entry.locale);
     html = setEmptyTracingState(html, tracingIsEmpty);
     if (html !== original) await writeFile(file, html);
 }
 
-console.log(`Finalized localized indexes. Mobile visibility and localization safety ensured. Tracing category ${tracingIsEmpty ? 'hidden (no worksheets)' : 'visible'}.`);
+console.log(`Finalized localized indexes. Header/footer localization, mobile visibility and optional tracing safety ensured. Tracing category ${tracingIsEmpty ? 'hidden (no worksheets)' : 'visible'}.`);
