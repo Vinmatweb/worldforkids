@@ -49,7 +49,7 @@
     <link rel="icon" type="image/png" sizes="96x96" href="/worldforkids/assets/favicon/favicon-96x96.png">
     <link rel="apple-touch-icon" href="/worldforkids/assets/favicon/apple-touch-icon.png">
     <link rel="manifest" href="/worldforkids/assets/favicon/site.webmanifest">
-    <script src="../../assets/js/site-config.js"></script>
+    <script src="../assets/js/site-config.js"></script>
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen pt-[36px]" data-locale="en" data-route-key="activity">
     <div class="bg-slate-900 text-white text-xs py-2 px-3 fixed top-0 left-0 w-full z-50 shadow-md font-bold">
@@ -122,6 +122,6 @@
 function copyActivityEmail(){const value='vinmatforkids@gmail.com';const status=document.getElementById('activity-copy-status');const done=()=>{if(!status)return;status.textContent="(Email copied!)";status.classList.remove('opacity-0');setTimeout(()=>status.classList.add('opacity-0'),1800)};if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(value).then(done).catch(()=>activityFallbackCopy(value,done));else activityFallbackCopy(value,done)}
 function activityFallbackCopy(value,done){const input=document.createElement('input');input.value=value;document.body.appendChild(input);input.select();document.execCommand('copy');input.remove();done()}
 </script>
-    <script src="../../assets/js/site-navigation.js"></script>
+    <script src="../assets/js/site-navigation.js"></script>
 </body>
 </html>
