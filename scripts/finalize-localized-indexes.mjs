@@ -66,6 +66,20 @@ function ensureResponsiveNavigation(html) {
     return html.replace(/<\/body>/i, `${script}\n</body>`);
 }
 
+function makeOptionalTracingSafe(html) {
+    html = html.replace(
+        /document\.getElementById\('lbl-nav-obtahovacky'\)\.innerText\s*=\s*s\.obtahovacky;/g,
+        "var tracingLabel=document.getElementById('lbl-nav-obtahovacky'); if(tracingLabel) tracingLabel.innerText=s.obtahovacky;"
+    );
+
+    html = html.replaceAll(
+        "document.getElementById('btn-'+t).className = t===typ",
+        "var typeButton=document.getElementById('btn-'+t); if(!typeButton)return;\n        typeButton.className = t===typ"
+    );
+
+    return html;
+}
+
 function countCsvRows(csv) {
     return csv.split(/\r?\n/).map((line) => line.trim()).filter(Boolean).length - 1;
 }
@@ -74,10 +88,12 @@ function setEmptyTracingState(html, isEmpty) {
     html = html.replace(/\s*<style data-empty-tracing-category>[\s\S]*?<\/style>/i, '');
     if (!isEmpty) return html;
 
-    html = html.replace(/\s*<button\b[^>]*id="btn-obtahovacky"[^>]*>[\s\S]*?<\/button>/i, '');
-    html = html.replace(/<div class="flex flex-col"><div><h3 class="font-bold text-slate-800 mb-1">✏️[\s\S]*?<\/a><\/div><\/div>/i, '');
-    html = html.replace('grid grid-cols-1 md:grid-cols-4 gap-6 mt-4 pt-4 border-t border-slate-50', 'grid grid-cols-1 md:grid-cols-3 gap-6 mt-4 pt-4 border-t border-slate-50');
-    return html;
+    const style = `<style data-empty-tracing-category>
+#btn-obtahovacky{display:none!important}
+#about-section .grid>div:nth-child(4){display:none!important}
+@media(min-width:768px){#about-section .grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+</style>`;
+    return html.replace(/<\/head>/i, `${style}\n</head>`);
 }
 
 const tracingCsv = await readFile(path.join(root, 'assets/data/obtahovacky.csv'), 'utf8');
@@ -92,8 +108,9 @@ for (const entry of indexes) {
     html = setNoScriptFallback(html, entry.noScript);
     html = ensureVisibleBody(html);
     html = ensureResponsiveNavigation(html);
+    html = makeOptionalTracingSafe(html);
     html = setEmptyTracingState(html, tracingIsEmpty);
     if (html !== original) await writeFile(file, html);
 }
 
-console.log(`Finalized localized indexes. Mobile visibility ensured. Tracing category ${tracingIsEmpty ? 'removed (no worksheets)' : 'visible'}.`);
+console.log(`Finalized localized indexes. Mobile visibility and localization safety ensured. Tracing category ${tracingIsEmpty ? 'hidden (no worksheets)' : 'visible'}.`);
