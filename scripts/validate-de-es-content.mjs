@@ -196,7 +196,7 @@ for (const [locale, config] of Object.entries(activityLocales)) {
         assert(html.includes('"@type":"LearningResource"'), `${file}: missing LearningResource schema`);
         assert(html.includes('"mainEntityOfPage"'), `${file}: missing schema mainEntityOfPage`);
         assert(html.includes('"provider"'), `${file}: missing schema provider`);
-        assert(html.includes('pagead2.googlesyndication.com'), `${file}: missing AdSense script`);
+        assert(!html.includes('pagead2.googlesyndication.com'), `${file}: AdSense must not load on activity detail pages`);
         assert(html.includes('googletagmanager.com/gtag/js'), `${file}: missing Analytics script`);
         assert(html.includes('data-activity-footer'), `${file}: missing localized footer`);
         for (const value of [...config.nav, ...config.legal]) assert(html.includes(value), `${file}: missing ${value}`);
