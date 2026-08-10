@@ -79,6 +79,7 @@ jobs:
           node --check scripts/normalize-guide-headers.mjs
           node --check scripts/finalize-localized-indexes.mjs
           node --check scripts/generate-category-pages.mjs
+          node --check scripts/fix-known-image-fallbacks.mjs
           node --check scripts/legal-localization.mjs
           node --check scripts/postbuild-adsense-audit.mjs
           node --check scripts/validate-localized-site.mjs
@@ -112,6 +113,9 @@ jobs:
 
       - name: Generate localized category pages
         run: node scripts/generate-category-pages.mjs
+
+      - name: Apply known image fallbacks
+        run: node scripts/fix-known-image-fallbacks.mjs
 
       - name: Install image optimizer
         run: python3 -m pip install --disable-pip-version-check --quiet pillow
