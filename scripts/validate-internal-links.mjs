@@ -6,6 +6,13 @@ const siteOrigin = 'https://vinmat.eu';
 const siteBase = '/worldforkids/';
 const errors = [];
 const skipDirs = new Set(['.git', 'node_modules', 'public']);
+const localeHomes = {
+    en: '/worldforkids/',
+    cs: '/worldforkids/cs/',
+    de: '/worldforkids/de/',
+    es: '/worldforkids/es/'
+};
+const homepagePaths = new Set(['index.html', 'cs/index.html', 'de/index.html', 'es/index.html']);
 
 async function collectHtml(dir = root) {
     const out = [];
@@ -50,6 +57,29 @@ function localTarget(sourceFile, rawValue) {
     return path.resolve(path.dirname(sourceFile), relative.endsWith('/') ? `${relative}index.html` : relative);
 }
 
+function pageLocale(html, relative) {
+    const fromBody = html.match(/<body\b[^>]*\bdata-locale=["'](en|cs|de|es)["']/i)?.[1];
+    if (fromBody) return fromBody;
+    if (relative.startsWith('cs/')) return 'cs';
+    if (relative.startsWith('de/')) return 'de';
+    if (relative.startsWith('es/')) return 'es';
+    return 'en';
+}
+
+function validateLocalizedHomepageAnchors(html, relative) {
+    const locale = pageLocale(html, relative);
+    const expected = localeHomes[locale] || localeHomes.en;
+    const anchors = [...html.matchAll(/<a\b[^>]*\bhref=(['"])(.*?)\1/gi)];
+
+    for (const match of anchors) {
+        const href = cleanUrl(match[2]);
+        if (!/^https?:\/\/(?:www\.)?vinmat\.eu\/worldforkids\/?$/i.test(href)) continue;
+        if (expected !== localeHomes.en) {
+            errors.push(`${relative}: generic English W4K homepage anchor remains on ${locale} page: ${href}`);
+        }
+    }
+}
+
 async function exists(target) {
     try { await access(target); return true; } catch { return false; }
 }
@@ -57,6 +87,13 @@ async function exists(target) {
 const files = await collectHtml();
 for (const file of files) {
     const html = await readFile(file, 'utf8');
+    const relative = path.relative(root, file).split(path.sep).join('/');
+    validateLocalizedHomepageAnchors(html, relative);
+
+    if (homepagePaths.has(relative) && /<option\s+value=["']popular["']/i.test(html)) {
+        errors.push(`${relative}: disabled popular-sort placeholder is still visible`);
+    }
+
     const attributes = [
         ...html.matchAll(/\b(?:href|src)=(['\"])(.*?)\1/gi),
         ...html.matchAll(/\bsrcset=(['\"])(.*?)\1/gi)
@@ -72,11 +109,11 @@ for (const file of files) {
             const target = localTarget(file, candidate);
             if (!target) continue;
             if (!target.startsWith(root)) {
-                errors.push(`${path.relative(root, file)}: path escapes site root: ${candidate}`);
+                errors.push(`${relative}: path escapes site root: ${candidate}`);
                 continue;
             }
             if (!await exists(target)) {
-                errors.push(`${path.relative(root, file)}: missing target ${candidate} -> ${path.relative(root, target)}`);
+                errors.push(`${relative}: missing target ${candidate} -> ${path.relative(root, target)}`);
             }
         }
     }
