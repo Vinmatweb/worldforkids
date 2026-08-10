@@ -15,6 +15,12 @@ const legalPages = new Set([
   'es/terminos-de-uso.html'
 ]);
 const activityPrefixes = ['activities/', 'cs/aktivity/', 'de/aktivitaeten/', 'es/actividades/'];
+const localeHomes = {
+  en: '/worldforkids/',
+  cs: '/worldforkids/cs/',
+  de: '/worldforkids/de/',
+  es: '/worldforkids/es/'
+};
 
 async function collectHtmlFiles(directory, prefix = '') {
   const entries = await readdir(directory, { withFileTypes: true });
@@ -54,6 +60,37 @@ function normalizeSharedScriptPaths(html, relative) {
   return html
     .replaceAll('../../assets/js/site-config.js', '../assets/js/site-config.js')
     .replaceAll('../../assets/js/site-navigation.js', '../assets/js/site-navigation.js');
+}
+
+function localeFromHtml(html, relative) {
+  const bodyLocale = html.match(/<body\b[^>]*\bdata-locale=["'](en|cs|de|es)["']/i)?.[1];
+  if (bodyLocale) return bodyLocale;
+  if (relative.startsWith('cs/')) return 'cs';
+  if (relative.startsWith('de/')) return 'de';
+  if (relative.startsWith('es/')) return 'es';
+  return 'en';
+}
+
+function normalizeLocalizedHomeAnchors(html, relative) {
+  const locale = localeFromHtml(html, relative);
+  const target = localeHomes[locale] || localeHomes.en;
+
+  // Only rewrite clickable anchors that point exactly to the W4K homepage.
+  // Metadata, canonical URLs and structured data are intentionally untouched.
+  return html.replace(
+    /(<a\b[^>]*\bhref=)(["'])https?:\/\/(?:www\.)?vinmat\.eu\/worldforkids\/?\2/gi,
+    (_match, prefix, quote) => `${prefix}${quote}${target}${quote}`
+  );
+}
+
+function removePopularSortPlaceholder(html, relative) {
+  if (!homepagePaths.has(relative)) return html;
+
+  // Popularity has no real data source yet, so do not show a disabled
+  // "coming soon" item in the mobile/native sort selector.
+  return html
+    .replace(/\s*'<option value="popular" disabled>'\s*\+\s*s\.sortPopular\s*\+\s*'<\/option>'\s*\+\s*/g, '\n    ')
+    .replace(/\s*<option\s+value=["']popular["'][^>]*>[^<]*<\/option>\s*/gi, '\n');
 }
 
 function stripAdsense(html) {
@@ -99,6 +136,8 @@ for (const file of files) {
   html = replaceMissingOgImage(html);
   html = normalizeDoubleEscapedEntities(html);
   html = normalizeSharedScriptPaths(html, file.relative);
+  html = normalizeLocalizedHomeAnchors(html, file.relative);
+  html = removePopularSortPlaceholder(html, file.relative);
   html = ensurePlannerNoindex(html, file.relative);
 
   // Ads live on the four catalog homepages. Activity detail pages are kept
