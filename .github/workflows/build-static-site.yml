@@ -77,6 +77,7 @@ jobs:
           node --check scripts/build-static-site.mjs
           node --check scripts/finalize-activity-pages.mjs
           node --check scripts/normalize-guide-headers.mjs
+          node --check scripts/sync-dot-guide-localizations.mjs
           node --check scripts/finalize-localized-indexes.mjs
           node --check scripts/generate-category-pages.mjs
           node --check scripts/fix-known-image-fallbacks.mjs
@@ -107,6 +108,9 @@ jobs:
 
       - name: Normalize localized guide headers
         run: node scripts/normalize-guide-headers.mjs
+
+      - name: Expand DE/ES dot-to-dot guides
+        run: node scripts/sync-dot-guide-localizations.mjs
 
       - name: Finalize localized indexes
         run: node scripts/finalize-localized-indexes.mjs
