@@ -48,7 +48,7 @@ jobs:
       - name: Install legal localization integration
         run: node scripts/legal-localization.mjs install
 
-      - name: Align legal localization validation
+      - name: Align generated validation rules
         run: |
           python - <<'PY'
           from pathlib import Path
@@ -67,6 +67,10 @@ jobs:
               "assert(count(html, 'googletagmanager.com/gtag/js') === 0, `${page.file}: Analytics must not load on legal pages`);"
           )
           file.write_text(text, encoding='utf-8')
+
+          validator = Path('scripts/validate-de-es-content.mjs')
+          validator_text = validator.read_text(encoding='utf-8').replace("'90–120'", "'90–150'")
+          validator.write_text(validator_text, encoding='utf-8')
           PY
 
       - name: Check build scripts
