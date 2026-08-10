@@ -79,8 +79,8 @@ assert(deColoring.includes('Detailreichere Motive und kleinere Flächen'), 'de/a
 
 const deDot = await read('de/anleitung-punkte-verbinden.html');
 const esDot = await read('es/guia-unir-puntos.html');
-for (const value of ['10–20', '30', '90–120', '150']) assert(deDot.includes(value), `German dot-to-dot guide missing production value ${value}`);
-for (const value of ['10–20', '30', '90–120', '150']) assert(esDot.includes(value), `Spanish dot-to-dot guide missing production value ${value}`);
+for (const value of ['10–20', '30', '90–150', '150']) assert(deDot.includes(value), `German dot-to-dot guide missing production value ${value}`);
+for (const value of ['10–20', '30', '90–150', '150']) assert(esDot.includes(value), `Spanish dot-to-dot guide missing production value ${value}`);
 
 const deTracing = await read('de/anleitung-nachzeichnen.html');
 const esTracing = await read('es/guia-trazado.html');
