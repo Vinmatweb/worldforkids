@@ -1,4 +1,4 @@
-import { access, readFile, writeFile } from 'node:fs/promises';
+import { access, readFile, readdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 
 const root = process.cwd();
@@ -35,6 +35,13 @@ const pages = [
     { key: 'tracingHistory', en: 'history-tracing.html', cs: 'historie-obkreslovani.html', de: 'geschichte-nachzeichnen.html', es: 'historia-trazado.html' },
     { key: 'privacy', en: 'privacy.html', cs: 'zasady-ochrany-osobnich-udaju.html', de: 'datenschutz.html', es: 'privacidad.html' },
     { key: 'terms', en: 'terms.html', cs: 'podminky-uziti.html', de: 'nutzungsbedingungen.html', es: 'terminos.html' }
+];
+
+const activityDirectories = [
+    { locale: 'en', directory: 'activities' },
+    { locale: 'de', directory: 'de/aktivitaeten' },
+    { locale: 'es', directory: 'es/actividades' },
+    { locale: 'cs', directory: 'cs/aktivity' }
 ];
 
 function relativeFile(locale, page) {
@@ -94,6 +101,28 @@ function languageLinks(locale, page, gapClass) {
     return `<div class="flex ${gapClass}">${links}</div>`;
 }
 
+function activityLanguageLinks(html, locale, gapClass) {
+    const alternates = Object.fromEntries(
+        [...html.matchAll(/<link rel="alternate" hreflang="(en|cs|de|es)" href="([^"]+)">/g)]
+            .map((match) => [match[1], match[2]])
+    );
+
+    const links = languageOrder.map((target) => {
+        const href = alternates[target];
+        if (!href) {
+            return `<span data-language-target="${target}" aria-disabled="true" class="font-bold opacity-40 cursor-default">${locales[target].label}</span>`;
+        }
+        const current = target === locale;
+        const classes = current
+            ? 'text-amber-400 transition-colors font-bold cursor-default'
+            : 'hover:text-amber-400 transition-colors font-bold';
+        const currentAttribute = current ? ' aria-current="page"' : '';
+        return `<a href="${href}" data-language-target="${target}" class="${classes}"${currentAttribute}>${locales[target].label}</a>`;
+    }).join('');
+
+    return `<div class="flex ${gapClass}">${links}</div>`;
+}
+
 function header(locale, page) {
     const labels = locales[locale].nav;
     const activityPage = pages.find((item) => item.key === 'activityGuide');
@@ -132,6 +161,21 @@ function header(locale, page) {
 <!-- HEADER END -->`;
 }
 
+function normalizeActivityHeader(html, locale) {
+    const mobilePattern = /<div class="flex items-center gap-2 border-r border-slate-700 pr-2">[\s\S]*?<\/div><div class="flex gap-2">[\s\S]*?<\/div>/;
+    const desktopPattern = /<div class="flex items-center gap-2\.5 border-r border-slate-700 pr-4">[\s\S]*?<\/div><div class="flex gap-3">[\s\S]*?<\/div>/;
+
+    html = html.replace(
+        mobilePattern,
+        `${socialLinks(true)}${activityLanguageLinks(html, locale, 'gap-2')}`
+    );
+    html = html.replace(
+        desktopPattern,
+        `${socialLinks(false)}${activityLanguageLinks(html, locale, 'gap-3')}`
+    );
+    return html;
+}
+
 let changedFiles = 0;
 for (const page of pages) {
     for (const locale of languageOrder) {
@@ -151,4 +195,19 @@ for (const page of pages) {
     }
 }
 
-console.log(`Normalized ${changedFiles} localized guide headers.`);
+for (const activitySet of activityDirectories) {
+    const directory = path.join(root, activitySet.directory);
+    if (!(await exists(directory))) continue;
+    const entries = await readdir(directory, { withFileTypes: true });
+    for (const entry of entries) {
+        if (!entry.isFile() || !entry.name.endsWith('.html')) continue;
+        const file = path.join(directory, entry.name);
+        const original = await readFile(file, 'utf8');
+        const updated = normalizeActivityHeader(original, activitySet.locale);
+        if (updated === original) continue;
+        await writeFile(file, updated);
+        changedFiles += 1;
+    }
+}
+
+console.log(`Normalized ${changedFiles} localized guide, legal and activity headers.`);
