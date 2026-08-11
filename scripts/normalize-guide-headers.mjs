@@ -109,15 +109,16 @@ function activityLanguageLinks(html, locale, gapClass) {
 
     const links = languageOrder.map((target) => {
         const href = alternates[target];
+        const label = `<span>${locales[target].label}</span>`;
         if (!href) {
-            return `<span data-language-target="${target}" aria-disabled="true" class="font-bold opacity-40 cursor-default">${locales[target].label}</span>`;
+            return `<span data-language-target="${target}" aria-disabled="true" class="font-bold opacity-40 cursor-default">${label}</span>`;
         }
         const current = target === locale;
         const classes = current
             ? 'text-amber-400 transition-colors font-bold cursor-default'
             : 'hover:text-amber-400 transition-colors font-bold';
         const currentAttribute = current ? ' aria-current="page"' : '';
-        return `<a href="${href}" data-language-target="${target}" class="${classes}"${currentAttribute}>${locales[target].label}</a>`;
+        return `<a href="${href}" data-language-target="${target}" class="${classes}"${currentAttribute}>${label}</a>`;
     }).join('');
 
     return `<div class="flex ${gapClass}">${links}</div>`;
