@@ -3,7 +3,7 @@ import path from 'node:path';
 
 const root = process.cwd();
 const basePath = '/worldforkids/';
-const languageOrder = ['cs', 'en', 'de', 'es'];
+const languageOrder = ['en', 'de', 'es', 'cs'];
 
 const locales = {
     en: {
@@ -81,8 +81,15 @@ function socialLinks(compact = false) {
 
 function languageLinks(locale, page, gapClass) {
     const links = languageOrder
-        .filter((target) => target !== locale && availability.get(`${page.key}:${target}`))
-        .map((target) => `<a href="${publicUrl(target, page)}" data-language-target="${target}" class="hover:text-amber-400 transition-colors font-bold">${locales[target].label}</a>`)
+        .filter((target) => availability.get(`${page.key}:${target}`))
+        .map((target) => {
+            const current = target === locale;
+            const classes = current
+                ? 'text-amber-400 transition-colors font-bold cursor-default'
+                : 'hover:text-amber-400 transition-colors font-bold';
+            const currentAttribute = current ? ' aria-current="page"' : '';
+            return `<a href="${publicUrl(target, page)}" data-language-target="${target}" class="${classes}"${currentAttribute}>${locales[target].label}</a>`;
+        })
         .join('\n');
     return `<div class="flex ${gapClass}">${links}</div>`;
 }
