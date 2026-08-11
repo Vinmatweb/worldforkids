@@ -83,6 +83,7 @@ jobs:
           node --check scripts/normalize-guide-headers.mjs
           node --check scripts/sync-dot-guide-localizations.mjs
           node --check scripts/sync-full-activity-guides.mjs
+          node --check scripts/fix-full-guide-validation.mjs
           node --check scripts/finalize-localized-indexes.mjs
           node --check scripts/generate-category-pages.mjs
           node --check scripts/fix-known-image-fallbacks.mjs
@@ -119,6 +120,9 @@ jobs:
 
       - name: Expand remaining DE/ES activity guides
         run: node scripts/sync-full-activity-guides.mjs
+
+      - name: Apply full guide production safeguards
+        run: node scripts/fix-full-guide-validation.mjs
 
       - name: Finalize localized indexes
         run: node scripts/finalize-localized-indexes.mjs
