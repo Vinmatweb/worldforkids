@@ -2,7 +2,7 @@
 (function () {
     'use strict';
 
-    var languageOrder = ['cs', 'en', 'de', 'es'];
+    var languageOrder = ['en', 'de', 'es', 'cs'];
     var languageLabels = { cs: 'CZ', en: 'EN', de: 'DE', es: 'ES' };
 
     var navLabels = {
@@ -60,27 +60,52 @@
 
     function targetLocale(control) {
         var explicitTarget = control.getAttribute('data-language-target');
-        if (explicitTarget) return explicitTarget;
+        if (explicitTarget) return explicitTarget === 'cz' ? 'cs' : explicitTarget;
         var id = control.id || '';
         if (id.indexOf('cz') !== -1 || id.indexOf('cs') !== -1) return 'cs';
         if (id.indexOf('en') !== -1) return 'en';
         if (id.indexOf('de') !== -1) return 'de';
         if (id.indexOf('es') !== -1) return 'es';
+
+        var aria = (control.getAttribute('aria-label') || '').toLowerCase();
+        if (aria === 'čeština' || aria === 'cestina' || aria === 'czech') return 'cs';
+        if (aria === 'english') return 'en';
+        if (aria === 'deutsch' || aria === 'german') return 'de';
+        if (aria === 'español' || aria === 'espanol' || aria === 'spanish') return 'es';
+
+        var text = (control.textContent || '').replace(/\s+/g, ' ').trim().split(' ')[0].toUpperCase();
+        if (text === 'CZ' || text === 'CS') return 'cs';
+        if (text === 'EN') return 'en';
+        if (text === 'DE') return 'de';
+        if (text === 'ES') return 'es';
         return null;
     }
 
     function isLanguageControl(element) {
-        if (!element || !/^(A|BUTTON)$/.test(element.tagName)) return false;
+        if (!element || !/^(A|BUTTON|SPAN)$/.test(element.tagName)) return false;
         if (element.hasAttribute('data-language-target')) return true;
         if (/^lang-to-(cz|cs|en|de|es)(-desktop)?$/.test(element.id || '')) return true;
-        return false;
+        var aria = (element.getAttribute('aria-label') || '').toLowerCase();
+        if (/^(english|čeština|cestina|czech|deutsch|german|español|espanol|spanish)$/.test(aria)) return true;
+        return /^(EN|DE|ES|CZ|CS)$/.test((element.textContent || '').replace(/\s+/g, ' ').trim());
+    }
+
+    function alternateLocaleUrl(locale) {
+        var alternate = document.querySelector('link[rel="alternate"][hreflang="' + locale + '"]');
+        return alternate ? alternate.getAttribute('href') : null;
+    }
+
+    function localeTargetUrl(locale) {
+        if (!window.VinMatSite || !VinMatSite.languages[locale]) return null;
+        var routeKey = currentRouteKey();
+        var configured = typeof VinMatSite.hasRoute === 'function' && VinMatSite.hasRoute(locale, routeKey)
+            ? VinMatSite.localeUrl(locale, routeKey, currentSearch())
+            : null;
+        return configured || alternateLocaleUrl(locale);
     }
 
     function routeAvailable(locale) {
-        if (!window.VinMatSite) return false;
-        return typeof VinMatSite.hasRoute === 'function'
-            ? VinMatSite.hasRoute(locale, currentRouteKey())
-            : Boolean(VinMatSite.localeUrl(locale, currentRouteKey(), ''));
+        return Boolean(localeTargetUrl(locale));
     }
 
     function normalizeMainNavigation(locale) {
@@ -108,9 +133,46 @@
         });
     }
 
+    function normalizeSocialLinks(topBar) {
+        if (!topBar) return;
+        var socialSelector = 'a[aria-label="YouTube"], a[aria-label="Instagram"]';
+        var groups = [];
+        Array.from(topBar.querySelectorAll(socialSelector)).forEach(function (link) {
+            var parent = link.parentElement;
+            if (parent && groups.indexOf(parent) === -1) groups.push(parent);
+        });
+        if (!groups.length) return;
+
+        var youtubeSvg = '<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>';
+        var instagramSvg = '<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>';
+
+        groups.forEach(function (group) {
+            Array.from(group.querySelectorAll(socialSelector)).forEach(function (link) { link.remove(); });
+
+            var youtube = document.createElement('a');
+            youtube.href = 'https://www.youtube.com/@vinmat_worldforkids';
+            youtube.target = '_blank';
+            youtube.rel = 'noopener noreferrer';
+            youtube.className = 'text-white hover:text-amber-400 transition-colors';
+            youtube.setAttribute('aria-label', 'YouTube');
+            youtube.innerHTML = youtubeSvg;
+
+            var instagram = document.createElement('a');
+            instagram.href = 'https://www.instagram.com/vinmat_worldforkids/';
+            instagram.target = '_blank';
+            instagram.rel = 'noopener noreferrer';
+            instagram.className = 'text-white hover:text-amber-400 transition-colors';
+            instagram.setAttribute('aria-label', 'Instagram');
+            instagram.innerHTML = instagramSvg;
+
+            group.appendChild(youtube);
+            group.appendChild(instagram);
+        });
+    }
+
     function normalizeLanguageSwitchers(topBar, locale) {
         if (!topBar || !window.VinMatSite) return;
-        var controls = Array.from(topBar.querySelectorAll('a, button')).filter(isLanguageControl);
+        var controls = Array.from(topBar.querySelectorAll('a, button, span')).filter(isLanguageControl);
         var groups = [];
 
         controls.forEach(function (control) {
@@ -124,14 +186,31 @@
             });
 
             languageOrder.forEach(function (target) {
-                if (target === locale || !routeAvailable(target)) return;
-                var url = VinMatSite.localeUrl(target, currentRouteKey(), currentSearch());
-                if (!url) return;
+                var url = localeTargetUrl(target);
+                var isCurrent = target === locale;
+                var label = languageLabels[target];
+                var nativeName = VinMatSite.languages[target] && VinMatSite.languages[target].nativeName;
+
+                if (!url) {
+                    var unavailable = document.createElement('span');
+                    unavailable.setAttribute('data-language-target', target);
+                    unavailable.setAttribute('aria-disabled', 'true');
+                    if (nativeName) unavailable.setAttribute('title', nativeName);
+                    unavailable.className = 'font-bold opacity-40 cursor-default';
+                    unavailable.textContent = label;
+                    group.appendChild(unavailable);
+                    return;
+                }
+
                 var link = document.createElement('a');
                 link.href = url;
                 link.setAttribute('data-language-target', target);
-                link.className = 'hover:text-amber-400 transition-colors font-bold';
-                link.textContent = languageLabels[target];
+                if (nativeName) link.setAttribute('aria-label', nativeName);
+                link.className = isCurrent
+                    ? 'text-amber-400 transition-colors font-bold cursor-default'
+                    : 'hover:text-amber-400 transition-colors font-bold';
+                if (isCurrent) link.setAttribute('aria-current', 'page');
+                link.textContent = label;
                 group.appendChild(link);
             });
         });
@@ -206,6 +285,7 @@
         var locale = currentLocale();
         var topBar = document.querySelector('body > div.fixed.top-0, body > div[class*="fixed"][class*="top-0"]');
         normalizeMainNavigation(locale);
+        normalizeSocialLinks(topBar);
         normalizeLanguageSwitchers(topBar, locale);
         normalizeFooter(locale);
         improveResponsiveHeader(topBar);
@@ -249,7 +329,15 @@
         if (!control || !window.VinMatSite) return;
         var locale = targetLocale(control);
         if (!locale || !VinMatSite.languages[locale]) return;
-        var url = VinMatSite.localeUrl(locale, currentRouteKey(), currentSearch());
+        if (control.getAttribute('aria-disabled') === 'true') {
+            event.preventDefault();
+            return;
+        }
+        if (locale === currentLocale()) {
+            event.preventDefault();
+            return;
+        }
+        var url = localeTargetUrl(locale);
         if (!url) return;
         event.preventDefault();
         event.stopImmediatePropagation();
