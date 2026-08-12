@@ -148,25 +148,99 @@
                 </div>
             </section>
         </div>
+        <aside class="lg:col-span-1">
+            <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm space-y-5 h-full flex flex-col justify-between">
 
-        <aside class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm space-y-5 h-full">
-            <div class="text-center space-y-2">
-                <div class="text-3xl">💝</div>
-                <h2 class="text-xl font-extrabold text-slate-900 uppercase tracking-wide">Projekt unterstützen</h2>
-                <p class="text-xs text-slate-600 leading-relaxed font-medium">Alle Aktivitäten bleiben kostenlos. Eine freiwillige Unterstützung hilft bei neuen Arbeitsblättern und den laufenden Kosten der Webseite.</p>
-            </div>
+                <div class="space-y-5">
+                    <div class="text-center space-y-2">
+                        <div class="text-3xl">💝</div>
+                        <h2 class="text-xl font-extrabold text-slate-900 uppercase tracking-wide">Projekt unterstützen</h2>
+                        <p class="text-xs text-slate-600 leading-relaxed font-medium">
+                            Wenn Ihnen unsere Aktivitäten Freude gemacht haben, freuen wir uns über freiwillige Unterstützung. Sie hilft dabei, weitere kostenlose Arbeitsblätter zu erstellen und die Website zu betreiben.
+                        </p>
+                    </div>
 
-            <a href="https://ko-fi.com/vinmat" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-amber-500 hover:bg-amber-600 text-white text-xs font-bold py-3 rounded-xl shadow-sm">☕ Über Ko-fi unterstützen</a>
-            <a href="https://paypal.me/VinmatForKids" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold py-3 rounded-xl shadow-sm">💳 Über PayPal unterstützen</a>
+                    <div class="space-y-3">
 
-            <div class="border-t border-slate-100 pt-5 space-y-3 text-center">
-                <h3 class="font-bold text-slate-900 text-sm">⚡ Bitcoin Lightning</h3>
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=lightning%3Alnurl1dp68gurn8ghj7amhwuhxzmnevdhkjm3wvdaz7ctsdyhkc6t8dp6xu6twvuhkcmn4wfkz7v33xesk2e33vvkngerp8qkngwtpxqknscnrvvkk2dnx8pjnydpkxy6rsdqjpdwtd" alt="QR-Code für eine freiwillige Unterstützung über Bitcoin Lightning" class="w-36 h-36 mx-auto bg-white border border-slate-200 rounded-xl p-1" loading="lazy">
-                <div class="flex items-center justify-center gap-2 text-[10px] font-mono text-slate-500 break-all">
-                    <span>vinmatforkids@anycoin.cz</span>
-                    <button type="button" id="ln-copy-button" onclick="copyLightningAddress()" title="Lightning-Adresse kopieren" aria-label="Lightning-Adresse kopieren">📋</button>
+                        <!-- Ko-fi -->
+                        <div class="bg-slate-50 border border-slate-100 rounded-2xl p-4 space-y-3">
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-sm">☕ Ko-fi</h3>
+                                <p class="text-[10px] text-slate-500 font-medium">Unterstützung weiterer Inhalte per Karte oder PayPal</p>
+                            </div>
+                            <a href="https://ko-fi.com/vinmat"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="block w-full text-center bg-amber-500 hover:bg-amber-600 hover:scale-[1.02] transition-all duration-200 text-white text-xs font-bold py-2 rounded-xl shadow-sm">
+                                Auf einen Kaffee einladen
+                            </a>
+                        </div>
+
+                        <!-- PayPal -->
+                        <div class="bg-slate-50 border border-slate-100 rounded-2xl p-4 space-y-3">
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-sm">💳 PayPal</h3>
+                                <p class="text-[10px] text-slate-500 font-medium">Schnelle einmalige Unterstützung für das Projekt</p>
+                            </div>
+                            <a href="https://paypal.me/VinmatForKids"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="block w-full text-center bg-blue-600 hover:bg-blue-700 hover:scale-[1.02] transition-all duration-200 text-white text-xs font-bold py-2 rounded-xl shadow-sm">
+                                Mit PayPal unterstützen
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-slate-100 pt-5 space-y-4">
+                        <div class="text-center space-y-1">
+                            <div class="text-2xl">⚡</div>
+                            <h3 class="font-bold text-slate-900 text-sm">Bitcoin Lightning</h3>
+                            <p class="text-[10px] text-slate-500 font-medium">Schnelle Unterstützung über eine Lightning-Adresse</p>
+                        </div>
+
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=lightning%3Alnurl1dp68gurn8ghj7amhwuhxzmnevdhkjm3wvdaz7ctsdyhkc6t8dp6xu6twvuhkcmn4wfkz7v33xesk2e33vvkngerp8qkngwtpxqknscnrvvkk2dnx8pjnydpkxy6rsdqjpdwtd"
+                             alt="Bitcoin-Lightning-QR-Code zur Unterstützung von VinMats Welt für Kinder"
+                             class="w-36 h-36 mx-auto bg-white border border-slate-200 rounded-xl p-1"
+                             loading="lazy">
+
+                        <div class="flex items-center justify-center gap-2 text-[10px] font-mono text-slate-500 select-all break-all w-full">
+                            <span id="ln-address">vinmatforkids@anycoin.cz</span>
+                            <button type="button"
+                                    id="ln-copy-button"
+                                    onclick="copyLightningAddress()"
+                                    class="text-sm hover:scale-110 transition-transform"
+                                    title="Lightning-Adresse kopieren"
+                                    aria-label="Lightning-Adresse kopieren">📋</button>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3 w-full">
+                            <a id="ln-usd-1"
+                               href="lightning:vinmatforkids@anycoin.cz"
+                               class="bg-amber-500 hover:bg-amber-600 hover:scale-[1.02] transition-all duration-200 text-white rounded-xl py-2 flex flex-col items-center justify-center shadow-sm">
+                                <span class="text-base font-bold">💛 $1</span>
+                                <span class="text-[11px] opacity-90 mt-0.5">~1,500 sats</span>
+                            </a>
+
+                            <a id="ln-usd-5"
+                               href="lightning:vinmatforkids@anycoin.cz"
+                               class="bg-amber-500 hover:bg-amber-600 hover:scale-[1.02] transition-all duration-200 text-white rounded-xl py-2 flex flex-col items-center justify-center shadow-sm">
+                                <span class="text-base font-bold">💛 $5</span>
+                                <span class="text-[11px] opacity-90 mt-0.5">~7,500 sats</span>
+                            </a>
+                        </div>
+
+                        <p class="text-[10px] text-slate-500 text-center leading-relaxed">
+                            Oder den QR-Code scannen und einen beliebigen Betrag wählen.
+                        </p>
+                    </div>
                 </div>
-                <p class="text-[10px] text-slate-500 leading-relaxed">QR-Code scannen oder die Lightning-Adresse kopieren und den Betrag selbst wählen.</p>
+
+                <div class="bg-amber-50 border border-amber-100 rounded-2xl p-4 text-center">
+                    <p class="text-[11px] text-amber-950 font-bold leading-relaxed">
+                        Jeder Beitrag hilft uns, weitere kostenlose Aktivitäten für Kinder zu erstellen.
+                    </p>
+                </div>
+
             </div>
         </aside>
     </div>
