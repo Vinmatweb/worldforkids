@@ -4,7 +4,6 @@ const root = new URL('../', import.meta.url);
 
 const pages = {
   'de/unsere-geschichte.html': {
-    locale: 'de-DE',
     supportTitle: 'Projekt unterstützen',
     intro: 'Wenn Ihnen unsere Aktivitäten Freude gemacht haben, freuen wir uns über freiwillige Unterstützung. Sie hilft dabei, weitere kostenlose Arbeitsblätter zu erstellen und die Website zu betreiben.',
     kofiDesc: 'Unterstützung weiterer Inhalte per Karte oder PayPal',
@@ -12,14 +11,12 @@ const pages = {
     paypalDesc: 'Schnelle einmalige Unterstützung für das Projekt',
     paypalCta: 'Mit PayPal unterstützen',
     lightningDesc: 'Schnelle Unterstützung über eine Lightning-Adresse',
-    qrAlt: "Bitcoin-Lightning-QR-Code zur Unterstützung von VinMat's World for Kids",
+    qrAlt: 'Bitcoin-Lightning-QR-Code zur Unterstützung von VinMats Welt für Kinder',
     copyTitle: 'Lightning-Adresse kopieren',
     qrHelp: 'Oder den QR-Code scannen und einen beliebigen Betrag wählen.',
-    finalMessage: 'Jeder Beitrag hilft uns, weitere kostenlose Aktivitäten für Kinder zu erstellen.',
-    btcError: 'BTC-Kurs konnte nicht geladen werden.'
+    finalMessage: 'Jeder Beitrag hilft uns, weitere kostenlose Aktivitäten für Kinder zu erstellen.'
   },
   'es/nuestra-historia.html': {
-    locale: 'es-ES',
     supportTitle: 'Apoyar el proyecto',
     intro: 'Si nuestras actividades os han resultado útiles, agradecemos cualquier apoyo voluntario. Nos ayuda a crear más fichas gratuitas y a mantener la web en funcionamiento.',
     kofiDesc: 'Apoya nuevas actividades con tarjeta o PayPal',
@@ -27,11 +24,10 @@ const pages = {
     paypalDesc: 'Apoyo rápido y puntual para el proyecto',
     paypalCta: 'Apoyar con PayPal',
     lightningDesc: 'Apoyo rápido mediante una dirección Lightning',
-    qrAlt: "Código QR de Bitcoin Lightning para apoyar VinMat's World for Kids",
+    qrAlt: 'Código QR de Bitcoin Lightning para apoyar El mundo de VinMat para niños',
     copyTitle: 'Copiar la dirección Lightning',
     qrHelp: 'O escanea el código QR y elige la cantidad que quieras aportar.',
-    finalMessage: 'Cada aportación nos ayuda a crear más actividades gratuitas para niños.',
-    btcError: 'No se ha podido cargar el precio de BTC.'
+    finalMessage: 'Cada aportación nos ayuda a crear más actividades gratuitas para niños.'
   }
 };
 
@@ -106,14 +102,14 @@ function supportPanel(copy) {
                                href="lightning:vinmatforkids@anycoin.cz"
                                class="bg-amber-500 hover:bg-amber-600 hover:scale-[1.02] transition-all duration-200 text-white rounded-xl py-2 flex flex-col items-center justify-center shadow-sm">
                                 <span class="text-base font-bold">💛 $1</span>
-                                <span id="ln-usd-1-sats" class="text-[11px] opacity-90 mt-0.5">~1,500 sats</span>
+                                <span class="text-[11px] opacity-90 mt-0.5">~1,500 sats</span>
                             </a>
 
                             <a id="ln-usd-5"
                                href="lightning:vinmatforkids@anycoin.cz"
                                class="bg-amber-500 hover:bg-amber-600 hover:scale-[1.02] transition-all duration-200 text-white rounded-xl py-2 flex flex-col items-center justify-center shadow-sm">
                                 <span class="text-base font-bold">💛 $5</span>
-                                <span id="ln-usd-5-sats" class="text-[11px] opacity-90 mt-0.5">~7,500 sats</span>
+                                <span class="text-[11px] opacity-90 mt-0.5">~7,500 sats</span>
                             </a>
                         </div>
 
@@ -133,26 +129,6 @@ function supportPanel(copy) {
         </aside>`;
 }
 
-function lightningUpdater(copy) {
-  return `    async function updateLightningUsdButtons() {
-        try {
-            const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd');
-            const data = await response.json();
-            const btcUsd = data.bitcoin.usd;
-            const usdToSats = (usd) => Math.round((usd / btcUsd) * 100000000);
-            const one = document.getElementById('ln-usd-1-sats');
-            const five = document.getElementById('ln-usd-5-sats');
-            if (one) one.textContent = '~' + usdToSats(1).toLocaleString('${copy.locale}') + ' sats';
-            if (five) five.textContent = '~' + usdToSats(5).toLocaleString('${copy.locale}') + ' sats';
-        } catch (e) {
-            console.log('${copy.btcError}');
-        }
-    }
-    updateLightningUsdButtons();
-
-`;
-}
-
 for (const [file, copy] of Object.entries(pages)) {
   const url = new URL(file, root);
   let html = await readFile(url, 'utf8');
@@ -170,17 +146,15 @@ for (const [file, copy] of Object.entries(pages)) {
 
   html = html.replace(/\s*<aside class="(?:lg:col-span-1|bg-white)[\s\S]*?<\/aside>/, `\n${supportPanel(copy)}`);
 
-  if (!html.includes('function updateLightningUsdButtons()')) {
-    html = html.replace(
-      '    async function loadPublishedStats() {',
-      `${lightningUpdater(copy)}    async function loadPublishedStats() {`
-    );
-  }
+  html = html.replace(
+    /\s*async function updateLightningUsdButtons\(\) \{[\s\S]*?updateLightningUsdButtons\(\);\s*/,
+    '\n\n'
+  );
 
   if (html !== original) {
     await writeFile(url, html, 'utf8');
-    console.log(`Story layout and support panel synchronized: ${file}`);
+    console.log(`Story layout and full support panel synchronized: ${file}`);
   } else {
-    console.log(`Story layout and support panel already synchronized: ${file}`);
+    console.log(`Story layout and full support panel already synchronized: ${file}`);
   }
 }
