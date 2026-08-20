@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+  <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet">
+  <title>VinMat – Mega Balíčky | Interní plán</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg:#0e1117;
+      --panel:#161b22;
+      --panel2:#1d2430;
+      --line:#30363d;
+      --text:#f0f3f6;
+      --muted:#9da7b3;
+      --accent:#7ee787;
+      --accent2:#79c0ff;
+      --farm:#f2cc60;
+      --transport:#79c0ff;
+      --shadow:0 12px 36px rgba(0,0,0,.22);
+    }
+    * { box-sizing:border-box; }
+    body {
+      margin:0;
+      min-height:100vh;
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:linear-gradient(180deg,#0b0f14 0%,var(--bg) 100%);
+      color:var(--text);
+    }
+    main { width:min(980px,calc(100% - 28px)); margin:0 auto; padding:42px 0 70px; }
+    header { margin-bottom:28px; }
+    h1 { margin:0 0 10px; font-size:clamp(28px,5vw,46px); letter-spacing:-.03em; }
+    .lead { margin:0; max-width:760px; color:var(--muted); line-height:1.6; }
+    .private-note {
+      margin-top:16px;
+      padding:12px 14px;
+      border:1px solid var(--line);
+      border-radius:12px;
+      background:rgba(255,255,255,.025);
+      color:var(--muted);
+      font-size:14px;
+    }
+    .world { margin:18px 0; border:1px solid var(--line); border-radius:18px; background:var(--panel); box-shadow:var(--shadow); overflow:hidden; }
+    details { border-top:1px solid var(--line); }
+    details:first-child { border-top:0; }
+    summary { cursor:pointer; list-style:none; user-select:none; }
+    summary::-webkit-details-marker { display:none; }
+    .world > summary {
+      padding:20px 22px;
+      font-size:21px;
+      font-weight:800;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+    }
+    .world > summary::after, .bundle > summary::after, .motif > summary::after {
+      content:"▾";
+      color:var(--muted);
+      transition:transform .18s ease;
+      flex:0 0 auto;
+    }
+    details:not([open]) > summary::after { transform:rotate(-90deg); }
+    .world-body { padding:0 14px 14px; }
+    .bundle { margin:10px 0; border:1px solid var(--line); border-radius:14px; overflow:hidden; background:var(--panel2); }
+    .bundle > summary { padding:15px 16px; display:flex; align-items:center; justify-content:space-between; gap:12px; font-weight:750; }
+    .bundle-content { padding:0 12px 12px; }
+    .motif { margin:8px 0; border:1px solid rgba(255,255,255,.08); border-radius:11px; background:rgba(0,0,0,.12); overflow:hidden; }
+    .motif > summary { padding:12px 14px; display:flex; align-items:center; justify-content:space-between; gap:12px; font-weight:650; }
+    ul { margin:0; padding:4px 18px 13px 36px; color:#d7dde5; }
+    li { margin:7px 0; line-height:1.35; }
+    .badge { display:inline-flex; align-items:center; min-width:42px; justify-content:center; padding:4px 8px; margin-right:9px; border-radius:999px; font-size:12px; font-weight:800; border:1px solid rgba(255,255,255,.12); color:#111; }
+    .farm { background:var(--farm); }
+    .transport { background:var(--transport); }
+    .count { color:var(--muted); font-size:13px; font-weight:600; white-space:nowrap; }
+    .hint { color:var(--muted); font-size:13px; margin:8px 4px 14px; }
+    footer { margin-top:28px; color:var(--muted); font-size:13px; text-align:center; }
+    @media (max-width:640px) {
+      main { width:min(100% - 18px,980px); padding-top:24px; }
+      .world > summary { padding:17px 15px; font-size:18px; }
+      .world-body { padding:0 8px 8px; }
+      .bundle > summary { padding:13px 12px; }
+      .motif > summary { padding:11px 12px; }
+      .count { display:none; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>VinMat – Mega Balíčky</h1>
+    <p class="lead">Interní přehled světů, Mega Balíčků a zdrojových motivů. Kliknutím na jednotlivé úrovně se seznam rozbalí.</p>
+    <div class="private-note">Interní pracovní stránka • není odkazovaná z webu • není určena k indexaci vyhledávači.</div>
+  </header>
+
+  <details class="world" open>
+    <summary><span>🌾 Farm World</span><span class="count">3 Mega Balíčky · 15 rodinek</span></summary>
+    <div class="world-body">
+      <p class="hint">Zvířecí model: Lv3 celá rodinka → Lv2 samice s mláďaty → Lv2 samec → Lv1 samice → Lv1 mládě.</p>
+
+      <details class="bundle" open>
+        <summary><span><span class="badge farm">MB1</span>Hlavní chlév a stáj</span><span class="count">5 rodinek</span></summary>
+        <div class="bundle-content">
+          <details class="motif" open><summary>Slepičí rodinka</summary><ul><li>Lv3 — celá slepičí rodinka</li><li>Lv2 — slepice s kuřátky</li><li>Lv2 — kohout</li><li>Lv1 — slepice</li><li>Lv1 — kuře</li></ul></details>
+          <details class="motif"><summary>Prasečí rodinka</summary><ul><li>Lv3 — celá prasečí rodinka</li><li>Lv2 — prasnice se selaty</li><li>Lv2 — kanec</li><li>Lv1 — prasnice</li><li>Lv1 — sele</li></ul></details>
+          <details class="motif"><summary>Kraví rodinka</summary><ul><li>Lv3 — celá kraví rodinka</li><li>Lv2 — kráva s telaty</li><li>Lv2 — býk</li><li>Lv1 — kráva</li><li>Lv1 — tele</li></ul></details>
+          <details class="motif"><summary>Ovčí rodinka</summary><ul><li>Lv3 — celá ovčí rodinka</li><li>Lv2 — ovce s jehňaty</li><li>Lv2 — beran</li><li>Lv1 — ovce</li><li>Lv1 — jehně</li></ul></details>
+          <details class="motif"><summary>Koňská rodinka</summary><ul><li>Lv3 — celá koňská rodinka</li><li>Lv2 — klisna s hříbaty</li><li>Lv2 — hřebec</li><li>Lv1 — klisna</li><li>Lv1 — hříbě</li></ul></details>
+        </div>
+      </details>
+
+      <details class="bundle">
+        <summary><span><span class="badge farm">MB2</span>Vodní dvůr a drobná zvířata</span><span class="count">5 rodinek</span></summary>
+        <div class="bundle-content">
+          <details class="motif"><summary>Kachní rodinka</summary><ul><li>Lv3 — 1 kačer, 2 dospělé kachny, 5 kachňat</li><li>Lv2 — kachna s kachňaty</li><li>Lv2 — kačer</li><li>Lv1 — kachna</li><li>Lv1 — kachně</li></ul></details>
+          <details class="motif"><summary>Husí rodinka</summary><ul><li>Lv3 — 1 houser, 2 dospělé husy, 4 housata</li><li>Lv2 — husa s housaty</li><li>Lv2 — houser</li><li>Lv1 — husa</li><li>Lv1 — house</li></ul></details>
+          <details class="motif"><summary>Králičí rodinka</summary><ul><li>Lv3 — celá králičí rodinka</li><li>Lv2 — samice s mláďaty</li><li>Lv2 — samec</li><li>Lv1 — králík</li><li>Lv1 — králíče</li></ul></details>
+          <details class="motif"><summary>Kozí rodinka</summary><ul><li>Lv3 — celá kozí rodinka</li><li>Lv2 — koza s kůzlaty</li><li>Lv2 — kozel</li><li>Lv1 — koza</li><li>Lv1 — kůzle</li></ul></details>
+          <details class="motif"><summary>Oslí rodinka</summary><ul><li>Lv3 — celá oslí rodinka</li><li>Lv2 — oslice s hříbaty</li><li>Lv2 — osel</li><li>Lv1 — oslice</li><li>Lv1 — oslí hříbě</li></ul></details>
+        </div>
+      </details>
+
+      <details class="bundle">
+        <summary><span><span class="badge farm">MB3</span>Dvorek, střecha a hlídači</span><span class="count">5 rodinek</span></summary>
+        <div class="bundle-content">
+          <details class="motif"><summary>Psí rodinka</summary><ul><li>Lv3 — celá psí rodinka u domu a boudy</li><li>Lv2 — fena se štěňaty</li><li>Lv2 — pes</li><li>Lv1 — fena</li><li>Lv1 — štěně</li></ul></details>
+          <details class="motif"><summary>Kočičí rodinka</summary><ul><li>Lv3 — celá kočičí rodinka na dvoře</li><li>Lv2 — kočka s koťaty</li><li>Lv2 — kocour</li><li>Lv1 — kočka</li><li>Lv1 — kotě</li></ul></details>
+          <details class="motif"><summary>Krůtí rodinka</summary><ul><li>Lv3 — celá krůtí rodinka ve výběhu</li><li>Lv2 — krůta s krůťaty</li><li>Lv2 — krocan</li><li>Lv1 — krůta</li><li>Lv1 — krůtě</li></ul></details>
+          <details class="motif"><summary>Holubí rodinka</summary><ul><li>Lv3 — holubí rodinka u holubníku</li><li>Lv2 — holubice s mláďaty</li><li>Lv2 — holub</li><li>Lv1 — holubice</li><li>Lv1 — holoubě</li></ul></details>
+          <details class="motif"><summary>Myší rodinka</summary><ul><li>Lv3 — celá myší rodinka v hospodářské části farmy</li><li>Lv2 — samice s mláďaty</li><li>Lv2 — samec</li><li>Lv1 — dospělá myš</li><li>Lv1 — myší mládě</li></ul></details>
+        </div>
+      </details>
+    </div>
+  </details>
+
+  <details class="world">
+    <summary><span>🚜 Transport World</span><span class="count">6 Mega Balíčků · 30 hlavních motivů</span></summary>
+    <div class="world-body">
+      <p class="hint">Dopravní model: Lv3 akční scéna → Lv2 jednoduchá scéna → Lv2 druhá scéna → Lv1 hlavní vozidlo → Lv1 související menší motiv.</p>
+
+      <details class="bundle"><summary><span><span class="badge transport">MB1</span>City Streets & Everyday Transport</span><span class="count">5 motivů</span></summary><div class="bundle-content">
+        <details class="motif"><summary>Osobní auto</summary><ul><li>Lv3 — auto v živé městské scéně</li><li>Lv2 — auto na ulici</li><li>Lv2 — auto u parkoviště nebo křižovatky</li><li>Lv1 — osobní auto</li><li>Lv1 — jednoduchý související dopravní motiv</li></ul></details>
+        <details class="motif"><summary>Městský autobus</summary><ul><li>Lv3 — autobus v městském provozu</li><li>Lv2 — autobus u zastávky</li><li>Lv2 — autobus na městské ulici</li><li>Lv1 — autobus</li><li>Lv1 — zastávka nebo jednoduchý dopravní prvek</li></ul></details>
+        <details class="motif"><summary>Taxi</summary><ul><li>Lv3 — taxi v centru</li><li>Lv2 — taxi u chodníku</li><li>Lv2 — taxi na křižovatce</li><li>Lv1 — taxi</li><li>Lv1 — jednoduchý související motiv</li></ul></details>
+        <details class="motif"><summary>Motocykl / skútr</summary><ul><li>Lv3 — motocykl v provozu</li><li>Lv2 — motocykl na ulici</li><li>Lv2 — motocykl u parkovacího místa</li><li>Lv1 — motocykl</li><li>Lv1 — helma nebo jednoduchý související motiv</li></ul></details>
+        <details class="motif"><summary>Jízdní kolo</summary><ul><li>Lv3 — cyklista na cyklostezce</li><li>Lv2 — kolo na stezce</li><li>Lv2 — kolo u stojanu nebo přechodu</li><li>Lv1 — jízdní kolo</li><li>Lv1 — helma nebo dopravní prvek</li></ul></details>
+      </div></details>
+
+      <details class="bundle"><summary><span><span class="badge transport">MB2</span>Construction Site Machines</span><span class="count">5 motivů</span></summary><div class="bundle-content">
+        <details class="motif"><summary>Bagr</summary><ul><li>Lv3 — bagr pracuje na staveništi</li><li>Lv2 — bagr nabírá zeminu</li><li>Lv2 — bagr u výkopu</li><li>Lv1 — bagr</li><li>Lv1 — jednoduchý pomocný stavební motiv</li></ul></details>
+        <details class="motif"><summary>Buldozer</summary><ul><li>Lv3 — buldozer srovnává terén</li><li>Lv2 — buldozer tlačí zeminu</li><li>Lv2 — buldozer na staveništi</li><li>Lv1 — buldozer</li><li>Lv1 — jednoduchý stavební motiv</li></ul></details>
+        <details class="motif"><summary>Kolový nakladač</summary><ul><li>Lv3 — nakladač pracuje s materiálem</li><li>Lv2 — nakladač nabírá štěrk</li><li>Lv2 — nakladač u hromady materiálu</li><li>Lv1 — kolový nakladač</li><li>Lv1 — jednoduchý stavební motiv</li></ul></details>
+        <details class="motif"><summary>Sklápěč</summary><ul><li>Lv3 — sklápěč na staveništi</li><li>Lv2 — sklápěč vyklápí materiál</li><li>Lv2 — sklápěč čeká u bagru</li><li>Lv1 — sklápěč</li><li>Lv1 — jednoduchý stavební motiv</li></ul></details>
+        <details class="motif"><summary>Autojeřáb</summary><ul><li>Lv3 — autojeřáb zvedá stavební díl</li><li>Lv2 — autojeřáb při práci</li><li>Lv2 — autojeřáb u rozestavěné budovy</li><li>Lv1 — autojeřáb</li><li>Lv1 — hák nebo jednoduchý stavební motiv</li></ul></details>
+      </div></details>
+
+      <details class="bundle"><summary><span><span class="badge transport">MB3</span>Rescue & Service Vehicles</span><span class="count">5 motivů</span></summary><div class="bundle-content">
+        <details class="motif"><summary>Hasičské auto</summary><ul><li>Lv3 — hasičské auto v zásahové scéně bez nebezpečných detailů</li><li>Lv2 — hasičské auto u stanice</li><li>Lv2 — hasičské auto na ulici</li><li>Lv1 — hasičské auto</li><li>Lv1 — jednoduchý hasičský motiv</li></ul></details>
+        <details class="motif"><summary>Sanitka</summary><ul><li>Lv3 — sanitka přijíždí pomoci</li><li>Lv2 — sanitka u nemocničního příjezdu</li><li>Lv2 — sanitka na městské ulici</li><li>Lv1 — sanitka</li><li>Lv1 — jednoduchý záchranářský motiv</li></ul></details>
+        <details class="motif"><summary>Policejní auto</summary><ul><li>Lv3 — policejní auto pomáhá řídit bezpečný provoz</li><li>Lv2 — policejní auto u křižovatky</li><li>Lv2 — policejní auto na ulici</li><li>Lv1 — policejní auto</li><li>Lv1 — jednoduchý dopravně-bezpečnostní motiv</li></ul></details>
+        <details class="motif"><summary>Odtahové vozidlo</summary><ul><li>Lv3 — odtahové auto pomáhá porouchanému autu</li><li>Lv2 — odtahovka nakládá auto</li><li>Lv2 — odtahovka u kraje silnice</li><li>Lv1 — odtahové vozidlo</li><li>Lv1 — jednoduchý servisní motiv</li></ul></details>
+        <details class="motif"><summary>Záchranný vrtulník</summary><ul><li>Lv3 — vrtulník přistává na heliportu</li><li>Lv2 — vrtulník nad městem</li><li>Lv2 — vrtulník u heliportu</li><li>Lv1 — záchranný vrtulník</li><li>Lv1 — jednoduchý heliportový motiv</li></ul></details>
+      </div></details>
+
+      <details class="bundle"><summary><span><span class="badge transport">MB4</span>Rails & Public Transport</span><span class="count">5 motivů</span></summary><div class="bundle-content">
+        <details class="motif"><summary>Osobní vlak</summary><ul><li>Lv3 — osobní vlak přijíždí do stanice</li><li>Lv2 — vlak u nástupiště</li><li>Lv2 — vlak na trati</li><li>Lv1 — osobní vlak</li><li>Lv1 — jednoduchý železniční motiv</li></ul></details>
+        <details class="motif"><summary>Nákladní vlak</summary><ul><li>Lv3 — nákladní vlak projíždí nákladní zónou</li><li>Lv2 — lokomotiva s vagony</li><li>Lv2 — vlak na vedlejší koleji</li><li>Lv1 — nákladní lokomotiva</li><li>Lv1 — nákladní vagon</li></ul></details>
+        <details class="motif"><summary>Tramvaj</summary><ul><li>Lv3 — tramvaj v městské ulici</li><li>Lv2 — tramvaj u zastávky</li><li>Lv2 — tramvaj na kolejích</li><li>Lv1 — tramvaj</li><li>Lv1 — tramvajová zastávka nebo kolejový motiv</li></ul></details>
+        <details class="motif"><summary>Metro</summary><ul><li>Lv3 — metro ve stanici</li><li>Lv2 — souprava u nástupiště</li><li>Lv2 — metro v tunelu</li><li>Lv1 — metro</li><li>Lv1 — jednoduchý motiv stanice</li></ul></details>
+        <details class="motif"><summary>Jednokolejka / lokální železniční vůz</summary><ul><li>Lv3 — kolejové vozidlo v moderní dopravní scéně</li><li>Lv2 — vozidlo u stanice</li><li>Lv2 — vozidlo na trati</li><li>Lv1 — kolejové vozidlo</li><li>Lv1 — jednoduchý kolejový motiv</li></ul></details>
+      </div></details>
+
+      <details class="bundle"><summary><span><span class="badge transport">MB5</span>Airport & Aircraft</span><span class="count">5 motivů</span></summary><div class="bundle-content">
+        <details class="motif"><summary>Dopravní letadlo</summary><ul><li>Lv3 — letadlo na letišti</li><li>Lv2 — letadlo na stojánce</li><li>Lv2 — letadlo na ranveji</li><li>Lv1 — dopravní letadlo</li><li>Lv1 — jednoduchý letištní motiv</li></ul></details>
+        <details class="motif"><summary>Vrtulník</summary><ul><li>Lv3 — vrtulník v letištní scéně</li><li>Lv2 — vrtulník u hangáru</li><li>Lv2 — vrtulník ve vzduchu</li><li>Lv1 — vrtulník</li><li>Lv1 — jednoduchý letištní motiv</li></ul></details>
+        <details class="motif"><summary>Malé vrtulové letadlo</summary><ul><li>Lv3 — malé letadlo u hangáru</li><li>Lv2 — letadlo na malé stojánce</li><li>Lv2 — letadlo na ranveji</li><li>Lv1 — vrtulové letadlo</li><li>Lv1 — jednoduchý letecký motiv</li></ul></details>
+        <details class="motif"><summary>Letištní hasičské vozidlo</summary><ul><li>Lv3 — letištní hasičský vůz při cvičení nebo pohotovosti</li><li>Lv2 — vůz na letištní ploše</li><li>Lv2 — vůz u stanice</li><li>Lv1 — letištní hasičské vozidlo</li><li>Lv1 — jednoduchý letištní bezpečnostní motiv</li></ul></details>
+        <details class="motif"><summary>Zavazadlový tahač / servisní vozidlo</summary><ul><li>Lv3 — servisní vozidla obsluhují letadlo</li><li>Lv2 — tahač veze zavazadla</li><li>Lv2 — tahač u terminálu</li><li>Lv1 — letištní tahač</li><li>Lv1 — zavazadlový vozík</li></ul></details>
+      </div></details>
+
+      <details class="bundle"><summary><span><span class="badge transport">MB6</span>Harbor & Water Transport</span><span class="count">5 motivů</span></summary><div class="bundle-content">
+        <details class="motif"><summary>Plachetnice</summary><ul><li>Lv3 — plachetnice v přístavním zálivu</li><li>Lv2 — plachetnice u mola</li><li>Lv2 — plachetnice na vodě</li><li>Lv1 — plachetnice</li><li>Lv1 — jednoduchý přístavní motiv</li></ul></details>
+        <details class="motif"><summary>Motorový člun</summary><ul><li>Lv3 — člun v přístavní scéně</li><li>Lv2 — člun u mola</li><li>Lv2 — člun na vodě</li><li>Lv1 — motorový člun</li><li>Lv1 — bóje nebo jednoduchý vodní motiv</li></ul></details>
+        <details class="motif"><summary>Trajekt</summary><ul><li>Lv3 — trajekt připlouvá k terminálu</li><li>Lv2 — trajekt u mola</li><li>Lv2 — trajekt na trase</li><li>Lv1 — trajekt</li><li>Lv1 — jednoduchý přístavní motiv</li></ul></details>
+        <details class="motif"><summary>Nákladní loď</summary><ul><li>Lv3 — nákladní loď v kontejnerovém přístavu</li><li>Lv2 — loď u přístavního jeřábu</li><li>Lv2 — loď připlouvá do přístavu</li><li>Lv1 — nákladní loď</li><li>Lv1 — kontejner nebo jednoduchý přístavní motiv</li></ul></details>
+        <details class="motif"><summary>Remorkér</summary><ul><li>Lv3 — remorkér pomáhá velké lodi</li><li>Lv2 — remorkér u mola</li><li>Lv2 — remorkér v přístavu</li><li>Lv1 — remorkér</li><li>Lv1 — jednoduchý přístavní motiv</li></ul></details>
+      </div></details>
+    </div>
+  </details>
+
+  <footer>VinMat’s World for Kids — interní plán Mega Balíčků</footer>
+</main>
+</body>
+</html>
