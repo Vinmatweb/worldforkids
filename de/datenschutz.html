@@ -63,6 +63,6 @@
 <script>localStorage.setItem('vinmat_main_lang','de');localStorage.setItem('vinmat_lang','de');function kopirujProjektovyEmail(){const emailAdresa='vinmatforkids@gmail.com';const statusLabel=document.getElementById('kopirovan-status');navigator.clipboard.writeText(emailAdresa).then(()=>{statusLabel.textContent='(E-Mail vinmatforkids@gmail.com kopiert!)';statusLabel.classList.remove('opacity-0');setTimeout(()=>statusLabel.classList.add('opacity-0'),1800)}).catch(()=>{})}</script>
 <button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" class="fixed bottom-14 text-3xl hover:scale-110 transition-all duration-300 opacity-0 pointer-events-none z-50" style="left:min(calc(50% + 30rem),calc(100vw - 60px));" aria-label="Nach oben">⬆️</button>
 <script>const backToTop=document.getElementById('backToTop');window.addEventListener('scroll',()=>{if(window.scrollY>500){backToTop.classList.remove('opacity-0','pointer-events-none');backToTop.classList.add('opacity-100')}else{backToTop.classList.remove('opacity-100');backToTop.classList.add('opacity-0')}})</script>
-<script src="../assets/js/site-navigation.js"></script>
+    <script src="../assets/js/site-navigation.js"></script>
 </body>
 </html>
