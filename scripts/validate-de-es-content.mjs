@@ -197,7 +197,7 @@ for (const [locale, config] of Object.entries(activityLocales)) {
         assert(html.includes('"mainEntityOfPage"'), `${file}: missing schema mainEntityOfPage`);
         assert(html.includes('"provider"'), `${file}: missing schema provider`);
         assert(!html.includes('pagead2.googlesyndication.com'), `${file}: AdSense must not load on activity detail pages`);
-        assert(html.includes('googletagmanager.com/gtag/js'), `${file}: missing Analytics script`);
+        assert(!html.includes('googletagmanager.com/gtag/js'), `${file}: Analytics must not load on activity detail pages before a consent message can be shown`);
         assert(html.includes('data-activity-footer'), `${file}: missing localized footer`);
         for (const value of [...config.nav, ...config.legal]) assert(html.includes(value), `${file}: missing ${value}`);
         assert(html.includes('<span>CZ</span>'), `${file}: missing CZ language label`);
