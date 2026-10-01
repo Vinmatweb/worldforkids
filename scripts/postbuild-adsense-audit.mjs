@@ -208,12 +208,12 @@ for (const file of files) {
   html = normalizePrivacyAdvertising(html, file.relative);
   html = ensurePlannerNoindex(html, file.relative);
 
-  // Keep AdSense code only on the four localized catalogue homepages.
-  // Activity pages, guides, legal pages and internal utilities stay ad-free
-  // until a deliberate placement review says otherwise.
+  // Keep AdSense and Google Analytics only on the four localized catalogue
+  // homepages, where the Google European-regulations message can collect and
+  // pass the user's consent choices. Direct landings on activity/guide/legal
+  // pages therefore remain free of consent-sensitive Google tags.
   if (homepagePaths.has(file.relative)) html = ensureHomepageAdsense(html, file.relative);
-  else html = stripAdsense(html);
-  if (legalPages.has(file.relative)) html = stripConsentSensitiveTracking(html);
+  else html = stripConsentSensitiveTracking(html);
 
   if (html !== original) {
     await writeFile(file.absolute, html);
