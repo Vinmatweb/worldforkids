@@ -70,6 +70,9 @@ for (const file of files) {
   if (!homepages.has(file.relative) && adsenseCount !== 0) {
     errors.push(`${file.relative}: AdSense loader is allowed only on localized catalogue homepages`);
   }
+  if (!homepages.has(file.relative) && analyticsCount !== 0) {
+    errors.push(`${file.relative}: Google Analytics is allowed only on localized catalogue homepages so direct landings do not bypass the consent message`);
+  }
 
   if (isActivity(file.relative)) {
     if (hasNoindex(html)) errors.push(`${file.relative}: activity detail must be indexable`);
