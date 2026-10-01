@@ -67,8 +67,11 @@ for (const file of files) {
     if (analyticsCount > 0) warnings.push(`${file.relative}: Google Analytics loads before any on-page consent flow; ensure your Google-certified CMP / consent setup covers this before ad serving.`);
   }
 
+  if (!homepages.has(file.relative) && adsenseCount !== 0) {
+    errors.push(`${file.relative}: AdSense loader is allowed only on localized catalogue homepages`);
+  }
+
   if (isActivity(file.relative)) {
-    if (adsenseCount !== 0) errors.push(`${file.relative}: AdSense loader must not be present on activity detail pages`);
     if (hasNoindex(html)) errors.push(`${file.relative}: activity detail must be indexable`);
     requireMatch(html, /<title>[^<]+<\/title>/i, `${file.relative}: missing title`);
     requireMatch(html, /<meta\s+name=["']description["'][^>]*content=["'][^"']+/i, `${file.relative}: missing meta description`);
