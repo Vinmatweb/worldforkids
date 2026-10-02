@@ -743,7 +743,7 @@
     },
     {
       "batch": 8,
-      "state": "awaiting-deployment-verification",
+      "state": "published-user-review-deferred",
       "items": [
         {
           "id": 10199,
@@ -826,8 +826,27 @@
       "skippedTitles": [],
       "checks": {
         "DriveBytes": "verified",
-        "mobile": "User review deferred"
-      }
+        "mobile": "Deferred by user; no mobile visual claim",
+        "deployment": "GitHub Actions build and Pages successful",
+        "assetHttp": "18/18 exact bytes and Git blob SHA match",
+        "languagePages": [
+          "activities/coloring-friendly-cartoon-skull.html",
+          "cs/aktivity/omalovanka-vesela-lebka.html",
+          "de/aktivitaeten/ausmalbild-freundlicher-totenkopf.html",
+          "es/actividades/dibujo-calavera-simpatica.html",
+          "activities/coloring-children-trick-or-treating.html",
+          "cs/aktivity/omalovanka-deti-na-halloweenske-kolede.html",
+          "de/aktivitaeten/ausmalbild-kinder-beim-su-igkeitensammeln.html",
+          "es/actividades/dibujo-ninos-pidiendo-dulces-en-halloween.html",
+          "activities/coloring-witch-cauldron-with-bubbles.html",
+          "cs/aktivity/omalovanka-carodejnicky-kotlik-s-bublinami.html",
+          "de/aktivitaeten/ausmalbild-hexenkessel-mit-blasen.html",
+          "es/actividades/dibujo-caldero-de-bruja-con-burbujas.html"
+        ],
+        "catalog": "unique rows and new items verified",
+        "sheets": "published status read back"
+      },
+      "publishCommit": "897b13e898b3919ae9cd306ff8b059106d3dcb95"
     }
   ],
   "remainingPairs": 26,

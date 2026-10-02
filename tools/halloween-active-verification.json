@@ -1,20 +1,20 @@
 {
-  "batch": 7,
+  "batch": 8,
   "assets": 18,
   "pages": [
-    "activities/coloring-friendly-ghosts-in-a-garden-by-an-old-house.html",
-    "cs/aktivity/omalovanka-duchove-v-zahrade-pred-starym-domem.html",
-    "de/aktivitaeten/ausmalbild-freundliche-geister-im-garten-vor-einem-alten-haus.html",
-    "es/actividades/dibujo-fantasmas-amistosos-en-el-jardin-de-una-casa-antigua.html",
-    "activities/coloring-friendly-mummy.html",
-    "cs/aktivity/omalovanka-vesela-mumie.html",
-    "de/aktivitaeten/ausmalbild-freundliche-mumie.html",
-    "es/actividades/dibujo-momia-amistosa.html",
-    "activities/coloring-friendly-raven.html",
-    "cs/aktivity/omalovanka-vesely-havran.html",
-    "de/aktivitaeten/ausmalbild-freundlicher-rabe.html",
-    "es/actividades/dibujo-cuervo-amistoso.html"
+    "activities/coloring-friendly-cartoon-skull.html",
+    "cs/aktivity/omalovanka-vesela-lebka.html",
+    "de/aktivitaeten/ausmalbild-freundlicher-totenkopf.html",
+    "es/actividades/dibujo-calavera-simpatica.html",
+    "activities/coloring-children-trick-or-treating.html",
+    "cs/aktivity/omalovanka-deti-na-halloweenske-kolede.html",
+    "de/aktivitaeten/ausmalbild-kinder-beim-su-igkeitensammeln.html",
+    "es/actividades/dibujo-ninos-pidiendo-dulces-en-halloween.html",
+    "activities/coloring-witch-cauldron-with-bubbles.html",
+    "cs/aktivity/omalovanka-carodejnicky-kotlik-s-bublinami.html",
+    "de/aktivitaeten/ausmalbild-hexenkessel-mit-blasen.html",
+    "es/actividades/dibujo-caldero-de-bruja-con-burbujas.html"
   ],
-  "catalogRows": 35,
+  "catalogRows": 38,
   "status": "passed"
 }
