@@ -1,6 +1,6 @@
 {
   "batch": 1,
-  "state": "approved-with-pumpkin-wrap",
+  "state": "corrected-to-approved-artwork",
   "items": [
     {
       "id": 10017,
@@ -15,10 +15,10 @@
           "Coloring"
         ],
         "widths": [
-          142.74400000000003,
-          164.9
+          130.98461538461538,
+          144.55384615384617
         ],
-        "ascent": 35.064,
+        "height": 90.41538461538462,
         "alignment": "left"
       }
     },
@@ -36,11 +36,11 @@
           "- Sample"
         ],
         "widths": [
-          142.74400000000003,
-          164.9,
-          169.544
+          130.98461538461538,
+          144.55384615384617,
+          153.4968325791855
         ],
-        "ascent": 35.064,
+        "height": 135.71764705882353,
         "alignment": "left"
       }
     },
@@ -49,16 +49,16 @@
       "variant": "coloring",
       "heading": "VinMat Coloring",
       "placement": {
-        "x": 138.78579527559057,
+        "x": 157.23779527559057,
         "top": 14.173228346456694,
         "size": 36,
         "lines": [
           "VinMat Coloring"
         ],
         "widths": [
-          317.704
+          280.8
         ],
-        "ascent": 35.064,
+        "height": 43.61538461538462,
         "alignment": "center"
       }
     },
@@ -67,16 +67,16 @@
       "variant": "sample",
       "heading": "VinMat Coloring - Sample",
       "placement": {
-        "x": 48.98379527559055,
+        "x": 77.85860975522857,
         "top": 14.173228346456694,
         "size": 36,
         "lines": [
           "VinMat Coloring - Sample"
         ],
         "widths": [
-          497.30800000000005
+          439.558371040724
         ],
-        "ascent": 35.064,
+        "height": 43.61538461538462,
         "alignment": "center"
       }
     },
@@ -85,16 +85,16 @@
       "variant": "coloring",
       "heading": "VinMat Coloring",
       "placement": {
-        "x": 138.78579527559057,
+        "x": 157.23779527559057,
         "top": 14.173228346456694,
         "size": 36,
         "lines": [
           "VinMat Coloring"
         ],
         "widths": [
-          317.704
+          280.8
         ],
-        "ascent": 35.064,
+        "height": 43.61538461538462,
         "alignment": "center"
       }
     },
@@ -103,20 +103,21 @@
       "variant": "sample",
       "heading": "VinMat Coloring - Sample",
       "placement": {
-        "x": 48.98379527559055,
+        "x": 77.85860975522857,
         "top": 14.173228346456694,
         "size": 36,
         "lines": [
           "VinMat Coloring - Sample"
         ],
         "widths": [
-          497.30800000000005
+          439.558371040724
         ],
-        "ascent": 35.064,
+        "height": 43.61538461538462,
         "alignment": "center"
       }
     }
   ],
   "skipped": [],
-  "previewFiles": "unchanged; titles only in download PNG/PDF"
+  "previewFiles": "unchanged; titles only in download PNG/PDF",
+  "typography": "Direct vector contours from the approved LV1\u20134 proof; no substituted font"
 }

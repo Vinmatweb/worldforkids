@@ -7,6 +7,7 @@ Usage: python tools/brand-printable.py source.png output-base --title TITLE
 Writes branded .pdf/.png and an unbranded .webp preview.
 """
 import argparse
+import json
 import subprocess
 import tempfile
 from pathlib import Path
@@ -23,23 +24,48 @@ from reportlab.pdfgen import canvas
 
 URL = 'https://vinmat.eu/w4k'
 FONT = '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
-TITLE_FONT = Path(__file__).parent / 'fonts' / 'Fredoka-Bold.ttf'
+TITLE_ART = json.loads((Path(__file__).parent / 'branding' / 'approved-rounded-title.json').read_text())
+
+
+def title_line_size(line, size):
+    words = [TITLE_ART['words'][word] for word in line.split()]
+    scale = size / TITLE_ART['capHeight']
+    return (sum(word['width'] for word in words) + 38 * (len(words)-1)) * scale, max(word['height'] for word in words) * scale
+
+
+def draw_title(pdf, placement):
+    """Draw the approved proof's actual contours, without substituting a font."""
+    scale = placement['size'] / TITLE_ART['capHeight']
+    for index, line in enumerate(placement['lines']):
+        pdf.saveState()
+        pdf.translate(placement['x'], A4[1]-placement['top']-index*placement['size']*1.3)
+        pdf.scale(scale, -scale)
+        pdf.setFillColorRGB(0, 0, 0)
+        offset = 0
+        for word in line.split():
+            art = TITLE_ART['words'][word]
+            path = pdf.beginPath()
+            for contour in art['paths']:
+                path.moveTo(offset+contour[0][0], contour[0][1])
+                for x, y in contour[1:]:
+                    path.lineTo(offset+x, y)
+                path.close()
+            pdf.drawPath(path, stroke=0, fill=1, fillMode=0)
+            offset += art['width'] + 38
+        pdf.restoreState()
 
 
 def place_title(image, text):
     """Find a blank rectangle; never move, shrink or paint over the artwork."""
-    pdfmetrics.registerFont(TTFont('RoundedTitle', str(TITLE_FONT)))
     page_width, page_height = A4
-    font = pdfmetrics.getFont('RoundedTitle')
     for size in (36, 34, 32, 30, 28):
         wrapped = [text.split(' - ')[0], '- '+text.split(' - ')[1]] if ' - ' in text else ['VinMat', 'Coloring']
         line_options = [text.splitlines()] if '\n' in text else ([text], wrapped)
         for lines in line_options:
-            line_widths = [pdfmetrics.stringWidth(line, 'RoundedTitle', size)
-                           + (len(line) - 1) * 0.8 for line in lines]
+            line_sizes = [title_line_size(line, size) for line in lines]
+            line_widths = [dimensions[0] for dimensions in line_sizes]
             width = max(line_widths)
-            ascent, descent = font.face.ascent * size / 1000, font.face.descent * size / 1000
-            height = ascent - descent + (len(lines) - 1) * size * 1.15
+            height = max(index * size * 1.3 + dimensions[1] for index, dimensions in enumerate(line_sizes))
             for alignment in ('center', 'left', 'right'):
                 x = {'center': (page_width-width)/2, 'left': 8*mm,
                      'right': page_width-8*mm-width}[alignment]
@@ -53,7 +79,7 @@ def place_title(image, text):
                 if min(channel[0] for channel in ImageStat.Stat(region).extrema) < 235:
                     continue
                 return dict(x=x, top=top, size=size, lines=lines, widths=line_widths,
-                            ascent=ascent, alignment=alignment)
+                            height=height, alignment=alignment)
     return None
 
 
@@ -78,19 +104,7 @@ def compose(source, output, title, heading=None):
                       draw_width, draw_height, mask='auto')
         placement = place_title(image, heading) if heading else None
         if placement:
-            pdf.saveState()
-            pdf.setFillColorRGB(1, 1, 1)
-            pdf.setStrokeColorRGB(0, 0, 0)
-            pdf.setLineWidth(0.65)
-            for line_index, line in enumerate(placement['lines']):
-                label = pdf.beginText(placement['x'], page_height-placement['top']
-                                      -placement['ascent']-line_index*placement['size']*1.15)
-                label.setFont('RoundedTitle', placement['size'])
-                label.setCharSpace(0.8)
-                label.setTextRenderMode(2)
-                label.textLine(line)
-                pdf.drawText(label)
-            pdf.restoreState()
+            draw_title(pdf, placement)
         if heading:
             print(f'{output.name}: '+('title placed '+placement['alignment'] if placement else 'TITLE DOES NOT FIT'))
         # Embed the font and give letters explicit breathing room at small sizes.

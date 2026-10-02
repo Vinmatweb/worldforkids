@@ -119,7 +119,7 @@
     "font": "Embedded DejaVu Sans, 8 pt; FREE PRINTABLE letter spacing 0.25 pt",
     "titlePilot": {
       "batch": 1,
-      "state": "approved-with-pumpkin-wrap",
+      "state": "corrected-to-approved-artwork",
       "items": 6,
       "skipped": [],
       "details": "tools/branding-title-pilot.json",
@@ -136,7 +136,8 @@
           "Coloring",
           "- Sample"
         ]
-      }
+      },
+      "typography": "approved-rounded-title.json; original proof contours"
     }
   }
 }
