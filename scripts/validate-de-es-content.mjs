@@ -128,14 +128,12 @@ function parseCsv(text) {
     return rows.map((values) => Object.fromEntries(headers.map((header, index) => [header, values[index] || ''])));
 }
 
-const csvConfig = [
-    ['bludiste', 6], ['omalovanky', 14], ['spojovacky', 8], ['obtahovacky', 0]
-];
+const csvConfig = ['bludiste', 'omalovanky', 'spojovacky', 'obtahovacky'];
 const allRows = [];
-for (const [type, expected] of csvConfig) {
+for (const type of csvConfig) {
     const text = await read(`assets/data/${type}.csv`);
     const rows = parseCsv(text);
-    assert(rows.length === expected, `assets/data/${type}.csv: expected ${expected} rows, found ${rows.length}`);
+    assert(new Set(rows.map(row=>row.soubor)).size === rows.length, `assets/data/${type}.csv: duplicate file bases`);
     for (const row of rows) allRows.push({ type, ...row });
 }
 
@@ -166,10 +164,12 @@ async function exists(relative) {
 }
 
 for (const row of allRows) {
-    const variants = ['colored', 'partly_colored', 'coloring'].filter((variant) => row[`altEn_${variant}`] && row[`altEn_${variant}`] !== '0');
+    const variants = ['colored', 'partly_colored', 'coloring', 'sample'].filter((variant) => row[`altEn_${variant}`] && row[`altEn_${variant}`] !== '0');
     const active = variants.length ? variants : ['coloring'];
     for (const variant of active) {
-        const base = active.length === 1 ? `public/${row.type}/${row.soubor}` : `public/${row.type}/${row.soubor}-${variant}`;
+        const prefix = `public/${row.type}/${row.assetDirectory ? row.assetDirectory+'/' : ''}${row.soubor}`;
+        const base = active.length === 1 ? prefix : `${prefix}-${variant}`;
+        if(row.pdf === '1') assert(await exists(`${base}.pdf`), `${base}.pdf: missing printable`);
         assert(await exists(`${base}.png`), `${base}.png: missing image`);
         assert(await exists(`${base}.webp`), `${base}.webp: missing image`);
     }
@@ -182,7 +182,7 @@ const activityLocales = {
 
 for (const [locale, config] of Object.entries(activityLocales)) {
     const names = (await readdir(path.join(root, config.directory))).filter((name) => name.endsWith('.html'));
-    assert(names.length === 28, `${config.directory}: expected 28 activity pages, found ${names.length}`);
+    assert(names.length === allRows.length, `${config.directory}: expected ${allRows.length} activity pages, found ${names.length}`);
     for (const name of names) {
         const file = `${config.directory}/${name}`;
         const html = await read(file);
@@ -202,15 +202,15 @@ for (const [locale, config] of Object.entries(activityLocales)) {
         for (const value of [...config.nav, ...config.legal]) assert(html.includes(value), `${file}: missing ${value}`);
         assert(html.includes('<span>CZ</span>'), `${file}: missing CZ language label`);
         assert(!html.includes('>CS<'), `${file}: CS language label remains`);
-        assert(count(html, ' download>') === 1, `${file}: expected one download link`);
+        assert(count(html, ' download>') === (html.includes('id="activity-pdf"') ? 2 : 1), `${file}: wrong number of download links`);
         assert(html.includes('onclick="window.print()"'), `${file}: missing print button`);
         validateScripts(html, file);
     }
 }
 
 const sitemap = await read('sitemap.xml');
-assert(count(sitemap, '<loc>https://vinmat.eu/worldforkids/de/aktivitaeten/') === 28, 'sitemap.xml: expected 28 German activity URLs');
-assert(count(sitemap, '<loc>https://vinmat.eu/worldforkids/es/actividades/') === 28, 'sitemap.xml: expected 28 Spanish activity URLs');
+assert(count(sitemap, '<loc>https://vinmat.eu/worldforkids/de/aktivitaeten/') === allRows.length, 'sitemap.xml: wrong German activity URL count');
+assert(count(sitemap, '<loc>https://vinmat.eu/worldforkids/es/actividades/') === allRows.length, 'sitemap.xml: wrong Spanish activity URL count');
 assert(sitemap.includes('<loc>https://vinmat.eu/worldforkids/de/datenschutz.html</loc>'), 'sitemap.xml: missing German privacy page');
 assert(sitemap.includes('<loc>https://vinmat.eu/worldforkids/de/nutzungsbedingungen.html</loc>'), 'sitemap.xml: missing German terms page');
 assert(sitemap.includes('<loc>https://vinmat.eu/worldforkids/es/privacidad.html</loc>'), 'sitemap.xml: missing Spanish privacy page');

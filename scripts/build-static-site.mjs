@@ -178,7 +178,7 @@ async function readActivities() {
             const row = Object.fromEntries(headers.map((header, index) => [header, cells[index] ?? '']));
             if (!row.soubor) continue;
 
-            const variants = ['colored', 'partly_colored', 'coloring']
+            const variants = ['colored', 'partly_colored', 'coloring', 'sample']
                 .filter((variant) => row[`altEn_${variant}`] && row[`altEn_${variant}`] !== '0');
 
             const names = {};
@@ -186,7 +186,7 @@ async function readActivities() {
             for (const [locale, config] of Object.entries(languages)) {
                 const col = config.csvColumn;
                 names[locale] = row[`nazev${col}`] || row.nazevEn || row.soubor;
-                alt[locale] = Object.fromEntries(['colored', 'partly_colored', 'coloring'].map((variant) => [
+                alt[locale] = Object.fromEntries(['colored', 'partly_colored', 'coloring', 'sample'].map((variant) => [
                     variant,
                     row[`alt${col}_${variant}`] || row[`altEn_${variant}`] || ''
                 ]));
@@ -196,6 +196,8 @@ async function readActivities() {
                 id: `${type}-${row.soubor}`,
                 type,
                 fileBase: row.soubor,
+                assetDirectory: row.assetDirectory || '',
+                pdf: row.pdf === '1',
                 level: row.soubor.split('_')[0].toUpperCase(),
                 date: row.datumPridani || '',
                 names,
@@ -209,7 +211,7 @@ async function readActivities() {
 }
 
 function imageBase(activity, variant) {
-    const base = `${basePath}public/${activity.type}/${activity.fileBase}`;
+    const base = `${basePath}public/${activity.type}/${activity.assetDirectory ? `${activity.assetDirectory}/` : ''}${activity.fileBase}`;
     return activity.variants.length === 1 ? base : `${base}-${variant}`;
 }
 
@@ -436,6 +438,23 @@ function activityPage(activity, locale) {
         educationalLevel: activity.level
     };
 
+    const sampleLabels = { en:'Color Sample', cs:'Barevný vzor', de:'Farbvorlage', es:'Modelo a color' };
+    const bwLabels = { en:'B&W', cs:'Černobílá', de:'Schwarz-Weiß', es:'Blanco y negro' };
+    const hasSample = activity.variants.includes('sample');
+    const variantControls = hasSample ? `<div class="flex flex-wrap gap-2 mt-5" aria-label="${escapeHtml(config.levelLabel)}"><button type="button" data-variant="coloring" class="bg-slate-900 text-white rounded-xl px-4 py-3 font-bold">${bwLabels[locale]}</button><button type="button" data-variant="sample" class="bg-slate-100 text-slate-700 rounded-xl px-4 py-3 font-bold">${sampleLabels[locale]}</button></div>` : '';
+    const pdfLink = activity.pdf ? `<a id="activity-pdf" class="block text-center bg-indigo-50 text-indigo-700 font-bold py-3 px-4 rounded-xl" href="${escapeHtml(imageBase(activity, variant))}.pdf" download>PDF</a>` : '';
+    const variantScript = hasSample ? `<script>
+    const printableVariants=${JSON.stringify(Object.fromEntries(activity.variants.map(v => [v,{base:imageBase(activity,v),alt:activity.alt[locale][v] || activity.names[locale]}]))).replaceAll('<','\\u003c')};
+    document.querySelectorAll('[data-variant]').forEach(button=>button.addEventListener('click',()=>{
+        const selected=printableVariants[button.dataset.variant];
+        const preview=document.querySelector('.activity-print-image');
+        preview.querySelector('source').srcset=selected.base+'.webp';
+        preview.querySelector('img').src=selected.base+'.png'; preview.querySelector('img').alt=selected.alt;
+        document.getElementById('activity-png').href=selected.base+'.png';
+        const pdf=document.getElementById('activity-pdf'); if(pdf)pdf.href=selected.base+'.pdf';
+        document.querySelectorAll('[data-variant]').forEach(b=>{b.setAttribute('aria-pressed',String(b===button));b.className=(b===button?'bg-slate-900 text-white':'bg-slate-100 text-slate-700')+' rounded-xl px-4 py-3 font-bold';});
+    }));
+    </script>` : '';
     return `<!doctype html>
 <html lang="${config.htmlLang}">
 <head>
@@ -475,9 +494,10 @@ ${hreflangTags}
         <a class="text-sm font-bold text-indigo-700 hover:underline" href="${home}">${escapeHtml(config.detailBack)}</a>
         <article class="activity-print-card mt-5 grid gap-7 md:grid-cols-[minmax(0,3fr)_minmax(240px,2fr)] bg-white rounded-3xl border border-slate-100 shadow-sm p-5 md:p-8">
             <div class="activity-print-image bg-slate-50 rounded-2xl p-4 flex items-center justify-center">${picture(activity, locale, variant, 'max-w-full max-h-[70vh] object-contain')}</div>
-            <div class="flex flex-col justify-between gap-6"><div><p class="text-xs font-bold text-slate-400 uppercase tracking-wider">${escapeHtml(config.cardType[activity.type])} · ${escapeHtml(config.levelLabel)} ${escapeHtml(levelNumber)}</p><h1 class="mt-2 text-3xl font-extrabold text-slate-900">${escapeHtml(activity.names[locale])}</h1><p class="mt-4 text-slate-600 leading-relaxed">${escapeHtml(description)}</p></div><div class="space-y-3"><a class="block text-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-xl" href="${escapeHtml(imageBase(activity, variant))}.png" download>${escapeHtml(config.detailCta)}</a><button class="w-full bg-slate-800 hover:bg-slate-900 text-white font-bold py-3 px-4 rounded-xl" onclick="window.print()">${escapeHtml(config.detailPrint)}</button></div></div>
+            <div class="flex flex-col justify-between gap-6"><div><p class="text-xs font-bold text-slate-400 uppercase tracking-wider">${escapeHtml(config.cardType[activity.type])} · ${escapeHtml(config.levelLabel)} ${escapeHtml(levelNumber)}</p><h1 class="mt-2 text-3xl font-extrabold text-slate-900">${escapeHtml(activity.names[locale])}</h1><p class="mt-4 text-slate-600 leading-relaxed">${escapeHtml(description)}</p>${variantControls}</div><div class="space-y-3"><a id="activity-png" class="block text-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-xl" href="${escapeHtml(imageBase(activity, variant))}.png" download>${escapeHtml(config.detailCta)}${activity.pdf ? ' (PNG)' : ''}</a>${pdfLink}<button class="w-full bg-slate-800 hover:bg-slate-900 text-white font-bold py-3 px-4 rounded-xl" onclick="window.print()">${escapeHtml(config.detailPrint)}</button></div></div>
         </article>
     </main>
+    ${variantScript}
     <script src="../../assets/js/site-navigation.js"></script>
 </body>
 </html>`;

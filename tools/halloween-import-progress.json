@@ -1,0 +1,40 @@
+{
+  "sourceFolderId": "1efo6dcitquAwz--8OK93RlDMeXg_x1ir",
+  "spreadsheetId": "1tk4e1ayW_dfwqy6NZMK0i5i3zd2cZ7mWFmop4kk4h8E",
+  "batchSize": 6,
+  "batches": [
+    {
+      "batch": 1,
+      "state": "awaiting-deployment-verification",
+      "items": [
+        {
+          "id": 10017,
+          "base": "lv1_gpt_10017_1_en-pumpkin-coloring-page",
+          "sourceColoringId": "1zrV5_oraSHprae7lPy6DpNtWWTkEfbUi",
+          "sourceSampleId": "1EDLyvlX7sEoEP2Xi48HNRMCgj6X_9b-N",
+          "originalColoring": "lv1_gpt_H1001_1_en-pumpkin-coloring-page-coloring.png",
+          "originalSample": "lv1_gpt_H1001_1_en-pumpkin-coloring-page-sample.png",
+          "sheetRow": 16
+        },
+        {
+          "id": 10018,
+          "base": "lv1_gpt_10018_1_en-friendly-ghost-coloring-page",
+          "sourceColoringId": "1BIrsX3aD7VuylXeXzy7bgmLhoHAgtiI1",
+          "sourceSampleId": "1ldNB8UxExw48ArBYHTK5osSYfsYRvA5B",
+          "originalColoring": "lv1_gpt_H1002_1_en-friendly-ghost-coloring-page-coloring.png",
+          "originalSample": "lv1_gpt_H1002_1_en-friendly-ghost-coloring-page-sample.png",
+          "sheetRow": 17
+        },
+        {
+          "id": 10185,
+          "base": "lv1_gpt_10185_1_en-bat-with-spread-wings-coloring-page",
+          "sourceColoringId": "1n1JdNusN7V_cqsbwQaeTUXQ3zpM8BbOH",
+          "sourceSampleId": "1aBDCsuhL_oV0OCLh89VNtsFcSAxRtoq4",
+          "originalColoring": "lv1_gpt_H1003_1_en-bat-with-spread-wings-coloring-page-coloring.png",
+          "originalSample": "lv1_gpt_H1003_1_en-bat-with-spread-wings-coloring-page-sample.png",
+          "sheetRow": 18
+        }
+      ]
+    }
+  ]
+}

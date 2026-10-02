@@ -46,6 +46,7 @@ const podkatPreklady = {
     'mise': { en: '🚀 Space Missions',         cz: '🚀 Vesmírné mise', de: '🚀 Weltraummissionen', es: '🚀 Misiones espaciales' },
     'astronomie':    { en: '🪐 Astronomy & Planets',    cz: '🪐 Astronomie a planety', de: '🪐 Astronomie und Planeten', es: '🪐 Astronomía y planetas' },
     'sci-fi':        { en: '👽 Sci-Fi & Aliens',        cz: '👽 Sci-Fi a mimozemšťané', de: '👽 Science-Fiction und Außerirdische', es: '👽 Ciencia ficción y extraterrestres' },
+    'halloween': { en:'🎃 Halloween', cz:'🎃 Halloween', de:'🎃 Halloween', es:'🎃 Halloween' },
   // SEM PŘIDÁVEJ DALŠÍ PODKATEGORIE
 };
 
