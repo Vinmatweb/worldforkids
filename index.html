@@ -343,6 +343,36 @@
         </article>
 
         <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/activities/coloring-witch-hat.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Witch Hat">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv1_gpt_10021_1_en-witch-hat-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv1_gpt_10021_1_en-witch-hat-coloring-page-coloring.png" alt="Witch Hat: black-and-white LV1 coloring page for ages 3–4, free to print on A4 paper." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Coloring</span><span class="text-xs text-slate-400 font-bold">LV1</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/activities/coloring-witch-hat.html" class="hover:text-indigo-600">Witch Hat</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/activities/coloring-cat-with-a-halloween-pumpkin.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Cat with a Halloween Pumpkin">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-coloring-page-coloring.png" alt="Cat with a Halloween Pumpkin: black-and-white LV1 coloring page for ages 3–4, free to print on A4 paper." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Coloring</span><span class="text-xs text-slate-400 font-bold">LV1</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/activities/coloring-cat-with-a-halloween-pumpkin.html" class="hover:text-indigo-600">Cat with a Halloween Pumpkin</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/activities/coloring-pumpkin-with-autumn-leaves.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Pumpkin with Autumn Leaves">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-coloring.png" alt="Pumpkin with Autumn Leaves: black-and-white LV2 coloring page for ages 5–6, free to print on A4 paper." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Coloring</span><span class="text-xs text-slate-400 font-bold">LV2</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/activities/coloring-pumpkin-with-autumn-leaves.html" class="hover:text-indigo-600">Pumpkin with Autumn Leaves</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
             <a href="/worldforkids/activities/coloring-snail.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Snail">
                 <picture><source media="screen" srcset="/worldforkids/public/omalovanky/lv1_gpt_1036-snail-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/lv1_gpt_1036-snail-coloring.png" alt="Simple black and white children&#039;s coloring page with a snail for kids (toddlers and preschoolers) aged 3–4 years old free to print" loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
             </a>
@@ -881,7 +911,7 @@ function rozsekajCsvRadek(text) {
 
 async function nactiCsvData(typ) {
     try {
-        var r = await fetch('assets/data/'+typ+'.csv?v=9cb820497ab6');
+        var r = await fetch('assets/data/'+typ+'.csv?v=1a40d9180752');
         if (!r.ok) { console.warn('CSV nenalezeno: '+typ); return []; }
         var text = await r.text();
         var radky = text.split(/\r?\n/);
