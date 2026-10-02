@@ -523,6 +523,36 @@
         </article>
 
         <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/cs/aktivity/omalovanka-vesela-lebka.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Veselá lebka">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv1_gpt_10199_1_en-friendly-cartoon-skull-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv1_gpt_10199_1_en-friendly-cartoon-skull-coloring-page-coloring.png" alt="Veselá lebka: černobílá omalovánka LV1 pro děti 3–4 let, zdarma k vytisknutí na A4." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Omalovánka</span><span class="text-xs text-slate-400 font-bold">LV1</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/cs/aktivity/omalovanka-vesela-lebka.html" class="hover:text-indigo-600">Veselá lebka</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/cs/aktivity/omalovanka-deti-na-halloweenske-kolede.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Děti na halloweenské koledě">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv2_gpt_10200_1_en-children-trick-or-treating-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv2_gpt_10200_1_en-children-trick-or-treating-coloring-page-coloring.png" alt="Děti na halloweenské koledě: černobílá omalovánka LV2 pro děti 5–6 let, zdarma k vytisknutí na A4." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Omalovánka</span><span class="text-xs text-slate-400 font-bold">LV2</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/cs/aktivity/omalovanka-deti-na-halloweenske-kolede.html" class="hover:text-indigo-600">Děti na halloweenské koledě</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/cs/aktivity/omalovanka-carodejnicky-kotlik-s-bublinami.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Čarodějnický kotlík s bublinami">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-coloring.png" alt="Čarodějnický kotlík s bublinami: černobílá omalovánka LV2 pro děti 5–6 let, zdarma k vytisknutí na A4." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Omalovánka</span><span class="text-xs text-slate-400 font-bold">LV2</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/cs/aktivity/omalovanka-carodejnicky-kotlik-s-bublinami.html" class="hover:text-indigo-600">Čarodějnický kotlík s bublinami</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
             <a href="/worldforkids/cs/aktivity/omalovanka-snek.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Šnek">
                 <picture><source media="screen" srcset="/worldforkids/public/omalovanky/lv1_gpt_1036-snail-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/lv1_gpt_1036-snail-coloring.png" alt="Jednoduchá černobílá dětská omalovánka se šnekem pro děti (batolata a předškoláky) ve věku 3–4 roky k vytisknutí zdarma" loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
             </a>
@@ -1061,7 +1091,7 @@ function rozsekajCsvRadek(text) {
 
 async function nactiCsvData(typ) {
     try {
-        var r = await fetch('../assets/data/'+typ+'.csv?v=f95233c9ccbe');
+        var r = await fetch('../assets/data/'+typ+'.csv?v=8ac25dad7a5c');
         if (!r.ok) { console.warn('CSV nenalezeno: '+typ); return []; }
         var text = await r.text();
         var radky = text.split(/\r?\n/);

@@ -523,6 +523,36 @@
         </article>
 
         <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/es/actividades/dibujo-calavera-simpatica.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Calavera simpática">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv1_gpt_10199_1_en-friendly-cartoon-skull-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv1_gpt_10199_1_en-friendly-cartoon-skull-coloring-page-coloring.png" alt="Calavera simpática: dibujo en blanco y negro de nivel 1 para niños de 3–4 años, gratis para imprimir en A4." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Dibujo para colorear</span><span class="text-xs text-slate-400 font-bold">LV1</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/es/actividades/dibujo-calavera-simpatica.html" class="hover:text-indigo-600">Calavera simpática</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/es/actividades/dibujo-ninos-pidiendo-dulces-en-halloween.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Niños pidiendo dulces en Halloween">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv2_gpt_10200_1_en-children-trick-or-treating-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv2_gpt_10200_1_en-children-trick-or-treating-coloring-page-coloring.png" alt="Niños pidiendo dulces en Halloween: dibujo en blanco y negro de nivel 2 para niños de 5–6 años, gratis para imprimir en A4." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Dibujo para colorear</span><span class="text-xs text-slate-400 font-bold">LV2</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/es/actividades/dibujo-ninos-pidiendo-dulces-en-halloween.html" class="hover:text-indigo-600">Niños pidiendo dulces en Halloween</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/es/actividades/dibujo-caldero-de-bruja-con-burbujas.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Caldero de bruja con burbujas">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-coloring.png" alt="Caldero de bruja con burbujas: dibujo en blanco y negro de nivel 2 para niños de 5–6 años, gratis para imprimir en A4." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Dibujo para colorear</span><span class="text-xs text-slate-400 font-bold">LV2</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/es/actividades/dibujo-caldero-de-bruja-con-burbujas.html" class="hover:text-indigo-600">Caldero de bruja con burbujas</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
             <a href="/worldforkids/es/actividades/dibujo-caracol.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Caracol">
                 <picture><source media="screen" srcset="/worldforkids/public/omalovanky/lv1_gpt_1036-snail-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/lv1_gpt_1036-snail-coloring.png" alt="Dibujo para colorear sencillo en blanco y negro con un caracol para niños de 3–4 años, gratis para imprimir" loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
             </a>
@@ -1057,7 +1087,7 @@ function rozsekajCsvRadek(text) {
 
 async function nactiCsvData(typ) {
     try {
-        var r = await fetch('../assets/data/'+typ+'.csv?v=f95233c9ccbe');
+        var r = await fetch('../assets/data/'+typ+'.csv?v=8ac25dad7a5c');
         if (!r.ok) { console.warn('CSV nenalezeno: '+typ); return []; }
         var text = await r.text();
         var radky = text.split(/\r?\n/);
