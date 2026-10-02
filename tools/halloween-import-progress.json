@@ -523,7 +523,7 @@
     },
     {
       "batch": 6,
-      "state": "awaiting-deployment-verification",
+      "state": "published-user-review-deferred",
       "items": [
         {
           "id": 10194,
@@ -606,8 +606,27 @@
       "skippedTitles": [],
       "checks": {
         "DriveBytes": "verified",
-        "mobile": "User review deferred"
-      }
+        "mobile": "Deferred by user; no mobile visual claim",
+        "deployment": "GitHub Actions build and Pages successful",
+        "assetHttp": "18/18 exact bytes and Git blob SHA match",
+        "languagePages": [
+          "activities/coloring-halloween-garden-party.html",
+          "cs/aktivity/omalovanka-halloweenska-zahradni-slavnost.html",
+          "de/aktivitaeten/ausmalbild-halloween-gartenfest.html",
+          "es/actividades/dibujo-fiesta-de-halloween-en-el-jardin.html",
+          "activities/coloring-friendly-dragon-in-an-autumn-garden.html",
+          "cs/aktivity/omalovanka-drak-v-podzimni-zahrade.html",
+          "de/aktivitaeten/ausmalbild-freundlicher-drache-im-herbstgarten.html",
+          "es/actividades/dibujo-dragon-amistoso-en-un-jardin-otonal.html",
+          "activities/coloring-friendly-dragon-in-an-autumn-garden-lv3.html",
+          "cs/aktivity/omalovanka-drak-v-podzimni-zahrade-lv3.html",
+          "de/aktivitaeten/ausmalbild-freundlicher-drache-im-herbstgarten-lv3.html",
+          "es/actividades/dibujo-dragon-amistoso-en-un-jardin-otonal-lv3.html"
+        ],
+        "catalog": "unique rows and new items verified",
+        "sheets": "published status read back"
+      },
+      "publishCommit": "8ae85c444a9929b8eb178aa6e5736c475efa65cc"
     }
   ],
   "remainingPairs": 32,

@@ -1,20 +1,20 @@
 {
-  "batch": 5,
+  "batch": 6,
   "assets": 18,
   "pages": [
-    "activities/coloring-halloween-house-with-pumpkins-and-bats-lv3.html",
-    "cs/aktivity/omalovanka-halloweensky-dum-s-dynemi-a-netopyry-lv3.html",
-    "de/aktivitaeten/ausmalbild-halloween-haus-mit-kurbissen-und-fledermausen-lv3.html",
-    "es/actividades/dibujo-casa-de-halloween-con-calabazas-y-murcielagos-lv3.html",
-    "activities/coloring-witch-flying-over-an-autumn-village.html",
-    "cs/aktivity/omalovanka-carodejnice-nad-podzimni-vesnici.html",
-    "de/aktivitaeten/ausmalbild-hexe-uber-einem-herbstdorf.html",
-    "es/actividades/dibujo-bruja-volando-sobre-un-pueblo-otonal.html",
-    "activities/coloring-witch-flying-over-an-autumn-village-lv3.html",
-    "cs/aktivity/omalovanka-carodejnice-nad-podzimni-vesnici-lv3.html",
-    "de/aktivitaeten/ausmalbild-hexe-uber-einem-herbstdorf-lv3.html",
-    "es/actividades/dibujo-bruja-volando-sobre-un-pueblo-otonal-lv3.html"
+    "activities/coloring-halloween-garden-party.html",
+    "cs/aktivity/omalovanka-halloweenska-zahradni-slavnost.html",
+    "de/aktivitaeten/ausmalbild-halloween-gartenfest.html",
+    "es/actividades/dibujo-fiesta-de-halloween-en-el-jardin.html",
+    "activities/coloring-friendly-dragon-in-an-autumn-garden.html",
+    "cs/aktivity/omalovanka-drak-v-podzimni-zahrade.html",
+    "de/aktivitaeten/ausmalbild-freundlicher-drache-im-herbstgarten.html",
+    "es/actividades/dibujo-dragon-amistoso-en-un-jardin-otonal.html",
+    "activities/coloring-friendly-dragon-in-an-autumn-garden-lv3.html",
+    "cs/aktivity/omalovanka-drak-v-podzimni-zahrade-lv3.html",
+    "de/aktivitaeten/ausmalbild-freundlicher-drache-im-herbstgarten-lv3.html",
+    "es/actividades/dibujo-dragon-amistoso-en-un-jardin-otonal-lv3.html"
   ],
-  "catalogRows": 29,
+  "catalogRows": 32,
   "status": "passed"
 }
