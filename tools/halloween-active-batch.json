@@ -582,7 +582,7 @@
       "reason": "No blank area for title without covering artwork"
     }
   ],
-  "state": "saved-awaiting-deployment",
+  "state": "published-user-review-deferred",
   "headers": [
     "Status",
     "ID",

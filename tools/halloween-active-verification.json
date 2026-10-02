@@ -1,20 +1,20 @@
 {
-  "batch": 4,
+  "batch": 5,
   "assets": 18,
   "pages": [
-    "activities/coloring-bat-flying-over-a-fence-with-a-pumpkin.html",
-    "cs/aktivity/omalovanka-netopyr-nad-plotem-s-dyni.html",
-    "de/aktivitaeten/ausmalbild-fledermaus-uber-einem-zaun-mit-kurbis.html",
-    "es/actividades/dibujo-murcielago-sobre-una-valla-con-calabaza.html",
-    "activities/coloring-bat-flying-over-a-fence-with-a-pumpkin-lv2.html",
-    "cs/aktivity/omalovanka-netopyr-nad-plotem-s-dyni-lv2.html",
-    "de/aktivitaeten/ausmalbild-fledermaus-uber-einem-zaun-mit-kurbis-lv2.html",
-    "es/actividades/dibujo-murcielago-sobre-una-valla-con-calabaza-lv2.html",
-    "activities/coloring-halloween-house-with-pumpkins-and-bats.html",
-    "cs/aktivity/omalovanka-halloweensky-dum-s-dynemi-a-netopyry.html",
-    "de/aktivitaeten/ausmalbild-halloween-haus-mit-kurbissen-und-fledermausen.html",
-    "es/actividades/dibujo-casa-de-halloween-con-calabazas-y-murcielagos.html"
+    "activities/coloring-halloween-house-with-pumpkins-and-bats-lv3.html",
+    "cs/aktivity/omalovanka-halloweensky-dum-s-dynemi-a-netopyry-lv3.html",
+    "de/aktivitaeten/ausmalbild-halloween-haus-mit-kurbissen-und-fledermausen-lv3.html",
+    "es/actividades/dibujo-casa-de-halloween-con-calabazas-y-murcielagos-lv3.html",
+    "activities/coloring-witch-flying-over-an-autumn-village.html",
+    "cs/aktivity/omalovanka-carodejnice-nad-podzimni-vesnici.html",
+    "de/aktivitaeten/ausmalbild-hexe-uber-einem-herbstdorf.html",
+    "es/actividades/dibujo-bruja-volando-sobre-un-pueblo-otonal.html",
+    "activities/coloring-witch-flying-over-an-autumn-village-lv3.html",
+    "cs/aktivity/omalovanka-carodejnice-nad-podzimni-vesnici-lv3.html",
+    "de/aktivitaeten/ausmalbild-hexe-uber-einem-herbstdorf-lv3.html",
+    "es/actividades/dibujo-bruja-volando-sobre-un-pueblo-otonal-lv3.html"
   ],
-  "catalogRows": 26,
+  "catalogRows": 29,
   "status": "passed"
 }

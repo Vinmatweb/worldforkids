@@ -400,7 +400,7 @@
     },
     {
       "batch": 5,
-      "state": "awaiting-deployment-verification",
+      "state": "published-user-review-deferred",
       "items": [
         {
           "id": 10192,
@@ -499,8 +499,27 @@
       ],
       "checks": {
         "DriveBytes": "verified",
-        "mobile": "User review deferred"
-      }
+        "mobile": "Deferred by user; no mobile visual claim",
+        "deployment": "GitHub Actions build and Pages successful",
+        "assetHttp": "18/18 exact bytes and Git blob SHA match",
+        "languagePages": [
+          "activities/coloring-halloween-house-with-pumpkins-and-bats-lv3.html",
+          "cs/aktivity/omalovanka-halloweensky-dum-s-dynemi-a-netopyry-lv3.html",
+          "de/aktivitaeten/ausmalbild-halloween-haus-mit-kurbissen-und-fledermausen-lv3.html",
+          "es/actividades/dibujo-casa-de-halloween-con-calabazas-y-murcielagos-lv3.html",
+          "activities/coloring-witch-flying-over-an-autumn-village.html",
+          "cs/aktivity/omalovanka-carodejnice-nad-podzimni-vesnici.html",
+          "de/aktivitaeten/ausmalbild-hexe-uber-einem-herbstdorf.html",
+          "es/actividades/dibujo-bruja-volando-sobre-un-pueblo-otonal.html",
+          "activities/coloring-witch-flying-over-an-autumn-village-lv3.html",
+          "cs/aktivity/omalovanka-carodejnice-nad-podzimni-vesnici-lv3.html",
+          "de/aktivitaeten/ausmalbild-hexe-uber-einem-herbstdorf-lv3.html",
+          "es/actividades/dibujo-bruja-volando-sobre-un-pueblo-otonal-lv3.html"
+        ],
+        "catalog": "unique rows and new items verified",
+        "sheets": "published status read back"
+      },
+      "publishCommit": "316de8df23e0dfa860a4f966910c0794696bd701"
     }
   ],
   "remainingPairs": 35,
