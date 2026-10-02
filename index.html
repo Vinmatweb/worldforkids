@@ -373,6 +373,36 @@
         </article>
 
         <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/activities/coloring-ghost-in-front-of-a-haunted-house.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Ghost in Front of a Haunted House">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv2_gpt_10188_1_en-friendly-ghost-in-front-of-haunted-house-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv2_gpt_10188_1_en-friendly-ghost-in-front-of-haunted-house-coloring-page-coloring.png" alt="Ghost in Front of a Haunted House: black-and-white LV2 coloring page for ages 5–6, free to print on A4 paper." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Coloring</span><span class="text-xs text-slate-400 font-bold">LV2</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/activities/coloring-ghost-in-front-of-a-haunted-house.html" class="hover:text-indigo-600">Ghost in Front of a Haunted House</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/activities/coloring-cat-sitting-on-a-pumpkin.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Cat Sitting on a Pumpkin">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv2_gpt_10189_1_en-cat-sitting-on-pumpkin-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv2_gpt_10189_1_en-cat-sitting-on-pumpkin-coloring-page-coloring.png" alt="Cat Sitting on a Pumpkin: black-and-white LV2 coloring page for ages 5–6, free to print on A4 paper." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Coloring</span><span class="text-xs text-slate-400 font-bold">LV2</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/activities/coloring-cat-sitting-on-a-pumpkin.html" class="hover:text-indigo-600">Cat Sitting on a Pumpkin</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/activities/coloring-witch-with-a-broom-and-moon.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Witch with a Broom and Moon">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv2_gpt_10190_1_en-witch-with-broom-and-moon-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv2_gpt_10190_1_en-witch-with-broom-and-moon-coloring-page-coloring.png" alt="Witch with a Broom and Moon: black-and-white LV2 coloring page for ages 5–6, free to print on A4 paper." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Coloring</span><span class="text-xs text-slate-400 font-bold">LV2</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/activities/coloring-witch-with-a-broom-and-moon.html" class="hover:text-indigo-600">Witch with a Broom and Moon</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
             <a href="/worldforkids/activities/coloring-snail.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Snail">
                 <picture><source media="screen" srcset="/worldforkids/public/omalovanky/lv1_gpt_1036-snail-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/lv1_gpt_1036-snail-coloring.png" alt="Simple black and white children&#039;s coloring page with a snail for kids (toddlers and preschoolers) aged 3–4 years old free to print" loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
             </a>
@@ -911,7 +941,7 @@ function rozsekajCsvRadek(text) {
 
 async function nactiCsvData(typ) {
     try {
-        var r = await fetch('assets/data/'+typ+'.csv?v=1a40d9180752');
+        var r = await fetch('assets/data/'+typ+'.csv?v=be43380777a4');
         if (!r.ok) { console.warn('CSV nenalezeno: '+typ); return []; }
         var text = await r.text();
         var radky = text.split(/\r?\n/);

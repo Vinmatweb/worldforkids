@@ -373,6 +373,36 @@
         </article>
 
         <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/cs/aktivity/omalovanka-duch-pred-strasidelnym-domem.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Duch před strašidelným domem">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv2_gpt_10188_1_en-friendly-ghost-in-front-of-haunted-house-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv2_gpt_10188_1_en-friendly-ghost-in-front-of-haunted-house-coloring-page-coloring.png" alt="Duch před strašidelným domem: černobílá omalovánka LV2 pro děti 5–6 let, zdarma k vytisknutí na A4." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Omalovánka</span><span class="text-xs text-slate-400 font-bold">LV2</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/cs/aktivity/omalovanka-duch-pred-strasidelnym-domem.html" class="hover:text-indigo-600">Duch před strašidelným domem</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/cs/aktivity/omalovanka-kocka-na-dyni.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Kočka na dýni">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv2_gpt_10189_1_en-cat-sitting-on-pumpkin-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv2_gpt_10189_1_en-cat-sitting-on-pumpkin-coloring-page-coloring.png" alt="Kočka na dýni: černobílá omalovánka LV2 pro děti 5–6 let, zdarma k vytisknutí na A4." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Omalovánka</span><span class="text-xs text-slate-400 font-bold">LV2</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/cs/aktivity/omalovanka-kocka-na-dyni.html" class="hover:text-indigo-600">Kočka na dýni</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/cs/aktivity/omalovanka-carodejnice-s-kostetem-a-mesicem.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Čarodějnice s koštětem a měsícem">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv2_gpt_10190_1_en-witch-with-broom-and-moon-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv2_gpt_10190_1_en-witch-with-broom-and-moon-coloring-page-coloring.png" alt="Čarodějnice s koštětem a měsícem: černobílá omalovánka LV2 pro děti 5–6 let, zdarma k vytisknutí na A4." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Omalovánka</span><span class="text-xs text-slate-400 font-bold">LV2</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/cs/aktivity/omalovanka-carodejnice-s-kostetem-a-mesicem.html" class="hover:text-indigo-600">Čarodějnice s koštětem a měsícem</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
             <a href="/worldforkids/cs/aktivity/omalovanka-snek.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Šnek">
                 <picture><source media="screen" srcset="/worldforkids/public/omalovanky/lv1_gpt_1036-snail-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/lv1_gpt_1036-snail-coloring.png" alt="Jednoduchá černobílá dětská omalovánka se šnekem pro děti (batolata a předškoláky) ve věku 3–4 roky k vytisknutí zdarma" loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
             </a>
@@ -911,7 +941,7 @@ function rozsekajCsvRadek(text) {
 
 async function nactiCsvData(typ) {
     try {
-        var r = await fetch('../assets/data/'+typ+'.csv?v=1a40d9180752');
+        var r = await fetch('../assets/data/'+typ+'.csv?v=be43380777a4');
         if (!r.ok) { console.warn('CSV nenalezeno: '+typ); return []; }
         var text = await r.text();
         var radky = text.split(/\r?\n/);
