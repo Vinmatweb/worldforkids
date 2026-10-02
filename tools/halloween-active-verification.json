@@ -1,0 +1,20 @@
+{
+  "batch": 3,
+  "assets": 18,
+  "pages": [
+    "activities/coloring-ghost-in-front-of-a-haunted-house.html",
+    "cs/aktivity/omalovanka-duch-pred-strasidelnym-domem.html",
+    "de/aktivitaeten/ausmalbild-geist-vor-einem-spukhaus.html",
+    "es/actividades/dibujo-fantasma-frente-a-una-casa-encantada.html",
+    "activities/coloring-cat-sitting-on-a-pumpkin.html",
+    "cs/aktivity/omalovanka-kocka-na-dyni.html",
+    "de/aktivitaeten/ausmalbild-katze-auf-einem-kurbis.html",
+    "es/actividades/dibujo-gato-sentado-en-una-calabaza.html",
+    "activities/coloring-witch-with-a-broom-and-moon.html",
+    "cs/aktivity/omalovanka-carodejnice-s-kostetem-a-mesicem.html",
+    "de/aktivitaeten/ausmalbild-hexe-mit-besen-und-mond.html",
+    "es/actividades/dibujo-bruja-con-escoba-y-luna.html"
+  ],
+  "catalogRows": 23,
+  "status": "passed"
+}

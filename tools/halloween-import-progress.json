@@ -186,7 +186,7 @@
     },
     {
       "batch": 3,
-      "state": "awaiting-deployment-verification",
+      "state": "published-user-review-deferred",
       "items": [
         {
           "id": 10188,
@@ -269,8 +269,27 @@
       "skippedTitles": [],
       "checks": {
         "DriveBytes": "verified",
-        "mobile": "User review deferred"
-      }
+        "mobile": "Deferred by user; no mobile visual claim",
+        "deployment": "GitHub Actions build and Pages successful",
+        "assetHttp": "18/18 exact bytes and Git blob SHA match",
+        "languagePages": [
+          "activities/coloring-ghost-in-front-of-a-haunted-house.html",
+          "cs/aktivity/omalovanka-duch-pred-strasidelnym-domem.html",
+          "de/aktivitaeten/ausmalbild-geist-vor-einem-spukhaus.html",
+          "es/actividades/dibujo-fantasma-frente-a-una-casa-encantada.html",
+          "activities/coloring-cat-sitting-on-a-pumpkin.html",
+          "cs/aktivity/omalovanka-kocka-na-dyni.html",
+          "de/aktivitaeten/ausmalbild-katze-auf-einem-kurbis.html",
+          "es/actividades/dibujo-gato-sentado-en-una-calabaza.html",
+          "activities/coloring-witch-with-a-broom-and-moon.html",
+          "cs/aktivity/omalovanka-carodejnice-s-kostetem-a-mesicem.html",
+          "de/aktivitaeten/ausmalbild-hexe-mit-besen-und-mond.html",
+          "es/actividades/dibujo-bruja-con-escoba-y-luna.html"
+        ],
+        "catalog": "unique rows and new items verified",
+        "sheets": "published status read back"
+      },
+      "publishCommit": "2319fb48babe3d0668a58f89b587e97942dfa618"
     }
   ],
   "remainingPairs": 41,
@@ -433,6 +452,99 @@
     }
   },
   "continuationBlocker": null,
-  "mobileReview": "Deferred by user on 2026-10-02; publishing authorized through all 50 pairs."
+  "mobileReview": "Deferred by user on 2026-10-02; publishing authorized through all 50 pairs.",
+  "originalsRestored": [
+    {
+      "name": "lv1_gpt_H1001_1_en-pumpkin-coloring-page-coloring.png",
+      "id": "1EM6Boq39BFs13WYPwSjN65n6MZiKzppY",
+      "bytes": 43201
+    },
+    {
+      "name": "lv1_gpt_H1001_1_en-pumpkin-coloring-page-sample.png",
+      "id": "1ufZz8E2DrG7Bj4pSAcvrikvhhC_CUHFL",
+      "bytes": 328953
+    },
+    {
+      "name": "lv1_gpt_H1002_1_en-friendly-ghost-coloring-page-coloring.png",
+      "id": "1goOje-xIsaSaavkaelqz06lvtO4IlkwW",
+      "bytes": 33500
+    },
+    {
+      "name": "lv1_gpt_H1002_1_en-friendly-ghost-coloring-page-sample.png",
+      "id": "19Au9OVOtfNG0bfkhRiWdJerma8fUMc0S",
+      "bytes": 162616
+    },
+    {
+      "name": "lv1_gpt_H1003_1_en-bat-with-spread-wings-coloring-page-coloring.png",
+      "id": "1b5F0OZy1VTMrpfXdxKvATPXFU_A0wnbs",
+      "bytes": 29957
+    },
+    {
+      "name": "lv1_gpt_H1003_1_en-bat-with-spread-wings-coloring-page-sample.png",
+      "id": "1c3MRF82RW2DgrCkGEu4wNnYMut32YYvP",
+      "bytes": 189494
+    },
+    {
+      "name": "lv1_gpt_H1004_1_en-witch-hat-coloring-page-coloring.png",
+      "id": "1pDWFr1M1gEv6YG4JfwqzAfyywcGynjSc",
+      "bytes": 29968
+    },
+    {
+      "name": "lv1_gpt_H1004_1_en-witch-hat-coloring-page-sample.png",
+      "id": "1HaIehNAuPpeRXR3SOdDvt5BvVXzqVVWc",
+      "bytes": 220993
+    },
+    {
+      "name": "lv1_gpt_H1005_1_en-friendly-cat-and-pumpkin-coloring-page-coloring.png",
+      "id": "1sTI_p_BdBIRIv_iOGvQ3rKL7-h3QecMx",
+      "bytes": 42379
+    },
+    {
+      "name": "lv1_gpt_H1005_1_en-friendly-cat-and-pumpkin-coloring-page-sample.png",
+      "id": "13J6STzeFZ-mJ_0aS_UeBkzwl4kV2jlVc",
+      "bytes": 350666
+    },
+    {
+      "name": "lv2_gpt_H1006_1_en-pumpkin-with-autumn-leaves-coloring-page-coloring.png",
+      "id": "1iMiX96QN0E48b_IRgWA3gIxL9FsLzoGe",
+      "bytes": 1002323
+    },
+    {
+      "name": "lv2_gpt_H1006_1_en-pumpkin-with-autumn-leaves-coloring-page-sample.png",
+      "id": "18JglNZiPQdXEqMly4anG7JsBw-fIVpq4",
+      "bytes": 353979
+    },
+    {
+      "name": "lv2_gpt_H1007_1_en-friendly-ghost-in-front-of-haunted-house-coloring-page-coloring.png",
+      "id": "1bbo5g0M_8RP1YJRiBc3yDaZERjzPr3RE",
+      "bytes": 58703
+    },
+    {
+      "name": "lv2_gpt_H1007_1_en-friendly-ghost-in-front-of-haunted-house-coloring-page-sample2.png",
+      "id": "1uxSnj9tTf9yTN0IszzRuthc2Vcgnt2Up",
+      "bytes": 638618
+    },
+    {
+      "name": "lv2_gpt_H1008_1_en-cat-sitting-on-pumpkin-coloring-page-coloring.png",
+      "id": "1rsymVE5bMQE3OSzJRyM-hBYynrVOaTLp",
+      "bytes": 889688
+    },
+    {
+      "name": "lv2_gpt_H1008_1_en-cat-sitting-on-pumpkin-coloring-page-sample.png",
+      "id": "1hz8T-T_oKlAHTovuuQSXIFSk4A9-Mu_3",
+      "bytes": 332100
+    },
+    {
+      "name": "lv2_gpt_H1009_1_en-witch-with-broom-and-moon-coloring-page-coloring.png",
+      "id": "13KvkXdygqOsGZHsgg-zOaiH4g0W9aFW0",
+      "bytes": 960492
+    },
+    {
+      "name": "lv2_gpt_H1009_1_en-witch-with-broom-and-moon-coloring-page-sample.png",
+      "id": "1ZvajJyjdnIgkfzPga6vzZZ0oR_pn4RYq",
+      "bytes": 332318
+    }
+  ],
+  "originalPolicy": "Keep original unbranded PNGs in Drive; upload branded PNGs and PDFs separately without replacing originals."
 }
 

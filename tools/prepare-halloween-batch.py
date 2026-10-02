@@ -23,6 +23,7 @@ files, skipped = [], []
 for item in state['items']:
     base = re.sub(r'H\d+', str(item['id']), item['originalBase'])
     level = int(base[2])
+    brand.TITLE_ART = brand.ADULT_TITLE_ART if level == 5 else brand.ROUNDED_TITLE_ART
     row = dict(ID=str(item['id']),soubor=base,kategorie='svatky',podkategorie='halloween',datumPridani='2026-10-02',sezona='podzim,halloween',zamereni='jemna-motorika',assetDirectory='en',pdf='1')
     for lang,name in zip(['Cz','En','De','Es'],item['names']):
         row['nazev'+lang] = name

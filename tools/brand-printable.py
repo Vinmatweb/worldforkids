@@ -24,7 +24,9 @@ from reportlab.pdfgen import canvas
 
 URL = 'https://vinmat.eu/w4k'
 FONT = '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
-TITLE_ART = json.loads((Path(__file__).parent / 'branding' / 'approved-rounded-title.json').read_text())
+ROUNDED_TITLE_ART = json.loads((Path(__file__).parent / 'branding' / 'approved-rounded-title.json').read_text())
+ADULT_TITLE_ART = json.loads((Path(__file__).parent / 'branding' / 'approved-adult-title.json').read_text())
+TITLE_ART = ROUNDED_TITLE_ART
 
 
 def title_line_size(line, size):
