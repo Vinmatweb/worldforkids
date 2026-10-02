@@ -116,6 +116,16 @@
     "verified": "Six downloadable PNGs retain original pixel dimensions and QR codes decode; PDF typography visually checked; WebP previews unchanged",
     "date": "2026-10-02",
     "layout": "Small corner blocks inset 8 mm; original illustration fills A4 without a reserved footer strip",
-    "font": "Embedded DejaVu Sans, 8 pt; FREE PRINTABLE letter spacing 0.25 pt"
+    "font": "Embedded DejaVu Sans, 8 pt; FREE PRINTABLE letter spacing 0.25 pt",
+    "titlePilot": {
+      "batch": 1,
+      "state": "awaiting-user-review",
+      "items": 6,
+      "skipped": [],
+      "details": "tools/branding-title-pilot.json",
+      "artworkResized": false,
+      "headerStrip": false,
+      "previewsChanged": false
+    }
   }
 }

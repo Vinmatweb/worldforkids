@@ -10,6 +10,7 @@ import argparse
 import subprocess
 import tempfile
 from pathlib import Path
+from PIL import ImageStat
 
 import qrcode
 from PIL import Image
@@ -22,9 +23,40 @@ from reportlab.pdfgen import canvas
 
 URL = 'https://vinmat.eu/w4k'
 FONT = '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
+TITLE_FONT = Path(__file__).parent / 'fonts' / 'Fredoka-Bold.ttf'
 
 
-def compose(source, output, title):
+def place_title(image, text):
+    """Find a blank rectangle; never move, shrink or paint over the artwork."""
+    pdfmetrics.registerFont(TTFont('RoundedTitle', str(TITLE_FONT)))
+    page_width, page_height = A4
+    font = pdfmetrics.getFont('RoundedTitle')
+    for size in (36, 34, 32, 30, 28):
+        wrapped = [text.split(' - ')[0], '- '+text.split(' - ')[1]] if ' - ' in text else ['VinMat', 'Coloring']
+        for lines in ([text], wrapped):
+            line_widths = [pdfmetrics.stringWidth(line, 'RoundedTitle', size)
+                           + (len(line) - 1) * 0.8 for line in lines]
+            width = max(line_widths)
+            ascent, descent = font.face.ascent * size / 1000, font.face.descent * size / 1000
+            height = ascent - descent + (len(lines) - 1) * size * 1.15
+            for alignment in ('center', 'left', 'right'):
+                x = {'center': (page_width-width)/2, 'left': 8*mm,
+                     'right': page_width-8*mm-width}[alignment]
+                top, pad = 5 * mm, 1.5 * mm
+                box = (x-pad, top-pad, x+width+pad, top+height+pad)
+                if box[0] < 0 or box[2] > page_width or box[3] > 55*mm:
+                    continue
+                pixel_box = (int(box[0]/page_width*image.width), int(box[1]/page_height*image.height),
+                             int(box[2]/page_width*image.width)+1, int(box[3]/page_height*image.height)+1)
+                region = image.convert('RGB').crop(pixel_box)
+                if min(channel[0] for channel in ImageStat.Stat(region).extrema) < 235:
+                    continue
+                return dict(x=x, top=top, size=size, lines=lines, widths=line_widths,
+                            ascent=ascent, alignment=alignment)
+    return None
+
+
+def compose(source, output, title, heading=None):
     source, output = Path(source), Path(output)
     if source.resolve() == output.with_suffix('.png').resolve():
         raise ValueError('Source must be the original, not the generated PNG')
@@ -43,6 +75,23 @@ def compose(source, output, title):
         pdf.drawImage(ImageReader(image), (page_width - draw_width) / 2,
                       (page_height - draw_height) / 2,
                       draw_width, draw_height, mask='auto')
+        placement = place_title(image, heading) if heading else None
+        if placement:
+            pdf.saveState()
+            pdf.setFillColorRGB(1, 1, 1)
+            pdf.setStrokeColorRGB(0, 0, 0)
+            pdf.setLineWidth(0.65)
+            for line_index, line in enumerate(placement['lines']):
+                label = pdf.beginText(placement['x'], page_height-placement['top']
+                                      -placement['ascent']-line_index*placement['size']*1.15)
+                label.setFont('RoundedTitle', placement['size'])
+                label.setCharSpace(0.8)
+                label.setTextRenderMode(2)
+                label.textLine(line)
+                pdf.drawText(label)
+            pdf.restoreState()
+        if heading:
+            print(f'{output.name}: '+('title placed '+placement['alignment'] if placement else 'TITLE DOES NOT FIT'))
         # Embed the font and give letters explicit breathing room at small sizes.
         pdfmetrics.registerFont(TTFont('PrintableSans', FONT))
         baseline = margin + 1.6 * mm
@@ -98,5 +147,6 @@ if __name__ == '__main__':
     parser.add_argument('source')
     parser.add_argument('output')
     parser.add_argument('--title', default="VinMat's World for Kids — Free Printable")
+    parser.add_argument('--heading', help='Optional outlined title; omitted if no blank area fits')
     args = parser.parse_args()
-    compose(args.source, args.output, args.title)
+    compose(args.source, args.output, args.title, args.heading)
