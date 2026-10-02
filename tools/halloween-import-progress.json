@@ -5,7 +5,7 @@
   "batches": [
     {
       "batch": 1,
-      "state": "awaiting-deployment-verification",
+      "state": "published-awaiting-mobile-verification",
       "items": [
         {
           "id": 10017,
@@ -34,7 +34,77 @@
           "originalSample": "lv1_gpt_H1003_1_en-bat-with-spread-wings-coloring-page-sample.png",
           "sheetRow": 18
         }
+      ],
+      "publishCommit": "2b06a7768cd1c16c6abe758f89634ddfd8d5b1b3",
+      "cacheFixCommit": "fac6277e758215e5b83502f90f2e5a4dafed3d8a",
+      "checks": {
+        "content": "passed",
+        "internalLinks": "passed",
+        "localization": "passed",
+        "assetHttp": "18/18 PNG/PDF/WebP URLs returned 200",
+        "desktopDetails": "passed EN/CZ/DE/ES",
+        "mobile": "blocked: controlled browser has no supported viewport resizing; mobile preview navigation rejected by browser URL policy",
+        "catalog": "passed: three cards visible; sample switch and modal PDF link verified"
+      },
+      "pdfDriveFiles": [
+        {
+          "base": "lv1_gpt_10017_1_en-pumpkin-coloring-page",
+          "variant": "coloring",
+          "id": "1mjw7q-1SY9WKZpt-VkXKlY8NxP2PymYg",
+          "url": "https://drive.google.com/file/d/1mjw7q-1SY9WKZpt-VkXKlY8NxP2PymYg/view?usp=drivesdk"
+        },
+        {
+          "base": "lv1_gpt_10017_1_en-pumpkin-coloring-page",
+          "variant": "sample",
+          "id": "16GreqJA9Yk6uPI8p3aCdoOG-H702DiD4",
+          "url": "https://drive.google.com/file/d/16GreqJA9Yk6uPI8p3aCdoOG-H702DiD4/view?usp=drivesdk"
+        },
+        {
+          "base": "lv1_gpt_10018_1_en-friendly-ghost-coloring-page",
+          "variant": "coloring",
+          "id": "101PzRLQsukygjNykUClQNf8GEfqZzvts",
+          "url": "https://drive.google.com/file/d/101PzRLQsukygjNykUClQNf8GEfqZzvts/view?usp=drivesdk"
+        },
+        {
+          "base": "lv1_gpt_10018_1_en-friendly-ghost-coloring-page",
+          "variant": "sample",
+          "id": "1WypfmbOcKifVpnb1Slt1sO_Fl7azrj9-",
+          "url": "https://drive.google.com/file/d/1WypfmbOcKifVpnb1Slt1sO_Fl7azrj9-/view?usp=drivesdk"
+        },
+        {
+          "base": "lv1_gpt_10185_1_en-bat-with-spread-wings-coloring-page",
+          "variant": "coloring",
+          "id": "1KJeEN9gKGMYMJj36RqdvlBoJQyKXO6D9",
+          "url": "https://drive.google.com/file/d/1KJeEN9gKGMYMJj36RqdvlBoJQyKXO6D9/view?usp=drivesdk"
+        },
+        {
+          "base": "lv1_gpt_10185_1_en-bat-with-spread-wings-coloring-page",
+          "variant": "sample",
+          "id": "1FmKl2pAL_PGzsypWcuuYxqMg4T4APXo9",
+          "url": "https://drive.google.com/file/d/1FmKl2pAL_PGzsypWcuuYxqMg4T4APXo9/view?usp=drivesdk"
+        }
       ]
+    }
+  ],
+  "remainingPairs": 47,
+  "nextOriginalFiles": [
+    {
+      "coloring": "lv1_gpt_H1004_1_en-witch-hat-coloring-page-coloring.png",
+      "coloringId": "1QuyzYUoqxKF_sNOumi7X0l88b3BfRiyW",
+      "sample": "lv1_gpt_H1004_1_en-witch-hat-coloring-page-sample.png",
+      "sampleId": "11a_6YjafuNtCYlf6VFPvnry28a5ywEA7"
+    },
+    {
+      "coloring": "lv1_gpt_H1005_1_en-friendly-cat-and-pumpkin-coloring-page-coloring.png",
+      "coloringId": "1JHF9dboylq2VqhkY0-zF-ADEHYIzMj6k",
+      "sample": "lv1_gpt_H1005_1_en-friendly-cat-and-pumpkin-coloring-page-sample.png",
+      "sampleId": "1kqjWtcCDkxJZE0cTzLCh8dTDXJegWgrL"
+    },
+    {
+      "coloring": "lv2_gpt_H1006_1_en-pumpkin-with-autumn-leaves-coloring-page-coloring.png",
+      "coloringId": "1sd-c4MbWbagYxZmbiiF-Tls5IVI1dzqk",
+      "sample": "lv2_gpt_H1006_1_en-pumpkin-with-autumn-leaves-coloring-page-sample.png",
+      "sampleId": "1Ss-DuNgLRdyTBll4gaKWA-DN0sdrcWkL"
     }
   ]
 }
