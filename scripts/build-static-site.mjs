@@ -1,3 +1,4 @@
+import { createHash } from 'node:crypto';
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
@@ -664,6 +665,8 @@ async function build() {
         Object.values(languages).map((cfg) => `${siteUrl}${cfg.output ? `${cfg.output}/` : ''}`)
     );
     let englishIndex = await readFile(path.join(root, 'index.html'), 'utf8');
+    const catalogRevision = createHash('sha256').update(JSON.stringify(activities)).digest('hex').slice(0,12);
+    englishIndex = englishIndex.replace(/fetch\('assets\/data\/'\+typ\+'\.csv(?:\?v=[^']*)?'\)/, `fetch('assets/data/'+typ+'.csv?v=${catalogRevision}')`);
     englishIndex = setCatalog(englishIndex, staticCatalog(activities, 'en'));
     englishIndex = setIndexSeo(englishIndex, 'en');
     englishIndex = setIndexLocale(englishIndex, 'en');

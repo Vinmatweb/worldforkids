@@ -672,13 +672,17 @@
 
         <a href="/worldforkids/es/privacidad.html"
            id="txt-footer-privacy"
-           class="hover:text-white transition-colors">Privacidad</a>
+           class="hover:text-white transition-colors">
+                    Privacidad
+                </a>
 
         <span class="hidden md:inline">·</span>
 
         <a href="/worldforkids/es/terminos-de-uso.html"
            id="txt-footer-terms"
-           class="hover:text-white transition-colors">Términos de uso</a>
+           class="hover:text-white transition-colors">
+                    Términos de uso
+                </a>
 
         <span class="hidden md:inline">·</span>
 
@@ -877,7 +881,7 @@ function rozsekajCsvRadek(text) {
 
 async function nactiCsvData(typ) {
     try {
-        var r = await fetch('../assets/data/'+typ+'.csv');
+        var r = await fetch('../assets/data/'+typ+'.csv?v=9cb820497ab6');
         if (!r.ok) { console.warn('CSV nenalezeno: '+typ); return []; }
         var text = await r.text();
         var radky = text.split(/\r?\n/);
