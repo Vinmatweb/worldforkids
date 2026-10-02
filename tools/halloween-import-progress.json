@@ -5,7 +5,7 @@
   "batches": [
     {
       "batch": 1,
-      "state": "published-awaiting-mobile-verification",
+      "state": "published-user-review-deferred",
       "items": [
         {
           "id": 10017,
@@ -87,7 +87,7 @@
     },
     {
       "batch": 2,
-      "state": "published-awaiting-mobile-verification",
+      "state": "published-user-review-deferred",
       "items": [
         {
           "id": 10021,
@@ -183,24 +183,112 @@
       },
       "publishCommit": "85ea702c3e27286560e4ea0c6d0a6de19e00340e",
       "deploymentCommit": "298762211a5ed06acf192efb7cbfdbe054b3f672"
+    },
+    {
+      "batch": 3,
+      "state": "awaiting-deployment-verification",
+      "items": [
+        {
+          "id": 10188,
+          "base": "lv2_gpt_10188_1_en-friendly-ghost-in-front-of-haunted-house-coloring-page",
+          "originalBase": "lv2_gpt_H1007_1_en-friendly-ghost-in-front-of-haunted-house-coloring-page",
+          "sourceColoringId": "1qVTz91Ymzk_q6czLvIcotkdK02fsRJPu",
+          "sourceSampleId": "14l_VFnCyGCqFNUMMz_xtmiVzVhOyM-Be",
+          "sheetRow": 22,
+          "masterRow": 1359
+        },
+        {
+          "id": 10189,
+          "base": "lv2_gpt_10189_1_en-cat-sitting-on-pumpkin-coloring-page",
+          "originalBase": "lv2_gpt_H1008_1_en-cat-sitting-on-pumpkin-coloring-page",
+          "sourceColoringId": "1IBqrQ03-LBH-Nbm4BgkSinKrKxAGN_XD",
+          "sourceSampleId": "1ADPU4YV6x3ibbZQWzZEot_avVQAj53U6",
+          "sheetRow": 23,
+          "masterRow": 1360
+        },
+        {
+          "id": 10190,
+          "base": "lv2_gpt_10190_1_en-witch-with-broom-and-moon-coloring-page",
+          "originalBase": "lv2_gpt_H1009_1_en-witch-with-broom-and-moon-coloring-page",
+          "sourceColoringId": "13SBgfXFBsvdObM46K97AePB1GW28nSaA",
+          "sourceSampleId": "11ehJxZAN3BbVDgcL7COTxv98faC65vfH",
+          "sheetRow": 24,
+          "masterRow": 1361
+        }
+      ],
+      "driveFiles": [
+        {
+          "id": "1qVTz91Ymzk_q6czLvIcotkdK02fsRJPu",
+          "path": "public/omalovanky/en/lv2_gpt_10188_1_en-friendly-ghost-in-front-of-haunted-house-coloring-page-coloring.png"
+        },
+        {
+          "id": "1QOgsot63n0n_SdwkKnoxb9C7gThSCpep",
+          "path": "public/omalovanky/en/lv2_gpt_10188_1_en-friendly-ghost-in-front-of-haunted-house-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "14l_VFnCyGCqFNUMMz_xtmiVzVhOyM-Be",
+          "path": "public/omalovanky/en/lv2_gpt_10188_1_en-friendly-ghost-in-front-of-haunted-house-coloring-page-sample.png"
+        },
+        {
+          "id": "1JYflR_3vcNgRuywinsajQtW2Cu2lP6lQ",
+          "path": "public/omalovanky/en/lv2_gpt_10188_1_en-friendly-ghost-in-front-of-haunted-house-coloring-page-sample.pdf"
+        },
+        {
+          "id": "1IBqrQ03-LBH-Nbm4BgkSinKrKxAGN_XD",
+          "path": "public/omalovanky/en/lv2_gpt_10189_1_en-cat-sitting-on-pumpkin-coloring-page-coloring.png"
+        },
+        {
+          "id": "118DFxvQLngCFY3YC98YSElKPA6pCVizb",
+          "path": "public/omalovanky/en/lv2_gpt_10189_1_en-cat-sitting-on-pumpkin-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "1ADPU4YV6x3ibbZQWzZEot_avVQAj53U6",
+          "path": "public/omalovanky/en/lv2_gpt_10189_1_en-cat-sitting-on-pumpkin-coloring-page-sample.png"
+        },
+        {
+          "id": "1aFiEHo-rxiGjlsPRupKOFDzBsWeVfcnX",
+          "path": "public/omalovanky/en/lv2_gpt_10189_1_en-cat-sitting-on-pumpkin-coloring-page-sample.pdf"
+        },
+        {
+          "id": "13SBgfXFBsvdObM46K97AePB1GW28nSaA",
+          "path": "public/omalovanky/en/lv2_gpt_10190_1_en-witch-with-broom-and-moon-coloring-page-coloring.png"
+        },
+        {
+          "id": "1aJCUwyXMcv4bjFvta07x7Xt5VwKWojCc",
+          "path": "public/omalovanky/en/lv2_gpt_10190_1_en-witch-with-broom-and-moon-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "11ehJxZAN3BbVDgcL7COTxv98faC65vfH",
+          "path": "public/omalovanky/en/lv2_gpt_10190_1_en-witch-with-broom-and-moon-coloring-page-sample.png"
+        },
+        {
+          "id": "1SacdUIyp-ZnhC5JAGkBLZYkNI5PVEvUR",
+          "path": "public/omalovanky/en/lv2_gpt_10190_1_en-witch-with-broom-and-moon-coloring-page-sample.pdf"
+        }
+      ],
+      "skippedTitles": [],
+      "checks": {
+        "DriveBytes": "verified",
+        "mobile": "User review deferred"
+      }
     }
   ],
-  "remainingPairs": 44,
+  "remainingPairs": 41,
   "nextOriginalFiles": [
     {
-      "originalBase": "lv2_gpt_H1007_1_en-friendly-ghost-in-front-of-haunted-house-coloring-page",
+      "originalBase": "lv2_gpt_H1010_1_en-bat-flying-over-fence-with-pumpkin-coloring-page",
       "coloring": {
-        "url": "https://drive.google.com/file/d/1qVTz91Ymzk_q6czLvIcotkdK02fsRJPu/view?usp=drivesdk",
-        "title": "lv2_gpt_H1007_1_en-friendly-ghost-in-front-of-haunted-house-coloring-page-coloring.png",
-        "id": "1qVTz91Ymzk_q6czLvIcotkdK02fsRJPu",
+        "url": "https://drive.google.com/file/d/18zurwtBWVDcBZPMECFaojcyZmawnO_xw/view?usp=drivesdk",
+        "title": "lv2_gpt_H1010_1_en-bat-flying-over-fence-with-pumpkin-coloring-page-coloring.png",
+        "id": "18zurwtBWVDcBZPMECFaojcyZmawnO_xw",
         "mime_type": "image/png",
-        "size": "58703",
+        "size": "49832",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:11.493Z",
-        "updated_at": "2026-09-30T10:20:19.431Z",
-        "viewedByMeTime": "2026-10-02T11:20:11.493Z",
-        "display_title": "lv2_gpt_H1007_1_en-friendly-ghost-in-front-of-haunted-house-coloring-page-coloring.png",
-        "display_url": "https://drive.google.com/file/d/1qVTz91Ymzk_q6czLvIcotkdK02fsRJPu/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:20:13.398Z",
+        "updated_at": "2026-09-30T10:20:19.440Z",
+        "viewedByMeTime": "2026-10-02T11:20:13.398Z",
+        "display_title": "lv2_gpt_H1010_1_en-bat-flying-over-fence-with-pumpkin-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/18zurwtBWVDcBZPMECFaojcyZmawnO_xw/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -209,17 +297,17 @@
         "can_list_children": false
       },
       "sample": {
-        "url": "https://drive.google.com/file/d/14l_VFnCyGCqFNUMMz_xtmiVzVhOyM-Be/view?usp=drivesdk",
-        "title": "lv2_gpt_H1007_1_en-friendly-ghost-in-front-of-haunted-house-coloring-page-sample2.png",
-        "id": "14l_VFnCyGCqFNUMMz_xtmiVzVhOyM-Be",
+        "url": "https://drive.google.com/file/d/1zbUUbvwnuUk9Wl3bY2xvfk9ku9NSGnn8/view?usp=drivesdk",
+        "title": "lv2_gpt_H1010_1_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample.png",
+        "id": "1zbUUbvwnuUk9Wl3bY2xvfk9ku9NSGnn8",
         "mime_type": "image/png",
-        "size": "638618",
+        "size": "486133",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:11.752Z",
-        "updated_at": "2026-09-30T09:29:58.179Z",
-        "viewedByMeTime": "2026-10-02T11:20:11.752Z",
-        "display_title": "lv2_gpt_H1007_1_en-friendly-ghost-in-front-of-haunted-house-coloring-page-sample2.png",
-        "display_url": "https://drive.google.com/file/d/14l_VFnCyGCqFNUMMz_xtmiVzVhOyM-Be/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:20:15.281Z",
+        "updated_at": "2026-09-30T09:29:58.194Z",
+        "viewedByMeTime": "2026-10-02T11:20:15.281Z",
+        "display_title": "lv2_gpt_H1010_1_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/1zbUUbvwnuUk9Wl3bY2xvfk9ku9NSGnn8/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -229,19 +317,19 @@
       }
     },
     {
-      "originalBase": "lv2_gpt_H1008_1_en-cat-sitting-on-pumpkin-coloring-page",
-      "sample": {
-        "url": "https://drive.google.com/file/d/1ADPU4YV6x3ibbZQWzZEot_avVQAj53U6/view?usp=drivesdk",
-        "title": "lv2_gpt_H1008_1_en-cat-sitting-on-pumpkin-coloring-page-sample.png",
-        "id": "1ADPU4YV6x3ibbZQWzZEot_avVQAj53U6",
+      "originalBase": "lv2_gpt_H1010_2_en-bat-flying-over-fence-with-pumpkin-coloring-page",
+      "coloring": {
+        "url": "https://drive.google.com/file/d/1V3_YyoyfvsCrJfUWHN-h2B4gqjpWDx-R/view?usp=drivesdk",
+        "title": "lv2_gpt_H1010_2_en-bat-flying-over-fence-with-pumpkin-coloring-page-coloring.png",
+        "id": "1V3_YyoyfvsCrJfUWHN-h2B4gqjpWDx-R",
         "mime_type": "image/png",
-        "size": "332100",
+        "size": "861152",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:13.097Z",
-        "updated_at": "2026-09-30T09:29:58.411Z",
-        "viewedByMeTime": "2026-10-02T11:20:13.097Z",
-        "display_title": "lv2_gpt_H1008_1_en-cat-sitting-on-pumpkin-coloring-page-sample.png",
-        "display_url": "https://drive.google.com/file/d/1ADPU4YV6x3ibbZQWzZEot_avVQAj53U6/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:20:14.118Z",
+        "updated_at": "2026-09-30T10:22:09.166Z",
+        "viewedByMeTime": "2026-10-02T11:20:14.118Z",
+        "display_title": "lv2_gpt_H1010_2_en-bat-flying-over-fence-with-pumpkin-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/1V3_YyoyfvsCrJfUWHN-h2B4gqjpWDx-R/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -249,18 +337,18 @@
         "can_download": true,
         "can_list_children": false
       },
-      "coloring": {
-        "url": "https://drive.google.com/file/d/1IBqrQ03-LBH-Nbm4BgkSinKrKxAGN_XD/view?usp=drivesdk",
-        "title": "lv2_gpt_H1008_1_en-cat-sitting-on-pumpkin-coloring-page-coloring.png",
-        "id": "1IBqrQ03-LBH-Nbm4BgkSinKrKxAGN_XD",
+      "sample": {
+        "url": "https://drive.google.com/file/d/1z0VlY6p6Wrsvw2J_8pbi0_TWczOQjKjZ/view?usp=drivesdk",
+        "title": "lv2_gpt_H1010_2_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample.png",
+        "id": "1z0VlY6p6Wrsvw2J_8pbi0_TWczOQjKjZ",
         "mime_type": "image/png",
-        "size": "889688",
+        "size": "327560",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:12.965Z",
-        "updated_at": "2026-09-30T09:29:58.396Z",
-        "viewedByMeTime": "2026-10-02T11:20:12.965Z",
-        "display_title": "lv2_gpt_H1008_1_en-cat-sitting-on-pumpkin-coloring-page-coloring.png",
-        "display_url": "https://drive.google.com/file/d/1IBqrQ03-LBH-Nbm4BgkSinKrKxAGN_XD/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:20:14.367Z",
+        "updated_at": "2026-09-30T09:29:58.490Z",
+        "viewedByMeTime": "2026-10-02T11:20:14.367Z",
+        "display_title": "lv2_gpt_H1010_2_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/1z0VlY6p6Wrsvw2J_8pbi0_TWczOQjKjZ/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -270,19 +358,19 @@
       }
     },
     {
-      "originalBase": "lv2_gpt_H1009_1_en-witch-with-broom-and-moon-coloring-page",
-      "sample": {
-        "url": "https://drive.google.com/file/d/11ehJxZAN3BbVDgcL7COTxv98faC65vfH/view?usp=drivesdk",
-        "title": "lv2_gpt_H1009_1_en-witch-with-broom-and-moon-coloring-page-sample.png",
-        "id": "11ehJxZAN3BbVDgcL7COTxv98faC65vfH",
+      "originalBase": "lv2_gpt_H1011_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page",
+      "coloring": {
+        "url": "https://drive.google.com/file/d/1sR-lqLs8atwwTAZnk5Xi5qG4rUaqvJNq/view?usp=drivesdk",
+        "title": "lv2_gpt_H1011_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-coloring.png",
+        "id": "1sR-lqLs8atwwTAZnk5Xi5qG4rUaqvJNq",
         "mime_type": "image/png",
-        "size": "332318",
+        "size": "73587",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:15.406Z",
-        "updated_at": "2026-09-30T09:29:58.442Z",
-        "viewedByMeTime": "2026-10-02T11:20:15.406Z",
-        "display_title": "lv2_gpt_H1009_1_en-witch-with-broom-and-moon-coloring-page-sample.png",
-        "display_url": "https://drive.google.com/file/d/11ehJxZAN3BbVDgcL7COTxv98faC65vfH/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:20:13.786Z",
+        "updated_at": "2026-09-30T11:06:48.191Z",
+        "viewedByMeTime": "2026-10-02T11:20:13.786Z",
+        "display_title": "lv2_gpt_H1011_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/1sR-lqLs8atwwTAZnk5Xi5qG4rUaqvJNq/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -290,18 +378,18 @@
         "can_download": true,
         "can_list_children": false
       },
-      "coloring": {
-        "url": "https://drive.google.com/file/d/13SBgfXFBsvdObM46K97AePB1GW28nSaA/view?usp=drivesdk",
-        "title": "lv2_gpt_H1009_1_en-witch-with-broom-and-moon-coloring-page-coloring.png",
-        "id": "13SBgfXFBsvdObM46K97AePB1GW28nSaA",
+      "sample": {
+        "url": "https://drive.google.com/file/d/1lw0L1_uvd3BfCFlTuc6b5Mppb2Sf1dhg/view?usp=drivesdk",
+        "title": "lv2_gpt_H1011_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-sample.png",
+        "id": "1lw0L1_uvd3BfCFlTuc6b5Mppb2Sf1dhg",
         "mime_type": "image/png",
-        "size": "960492",
+        "size": "573761",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:15.924Z",
-        "updated_at": "2026-09-30T09:29:58.428Z",
-        "viewedByMeTime": "2026-10-02T11:20:15.924Z",
-        "display_title": "lv2_gpt_H1009_1_en-witch-with-broom-and-moon-coloring-page-coloring.png",
-        "display_url": "https://drive.google.com/file/d/13SBgfXFBsvdObM46K97AePB1GW28nSaA/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:20:17.112Z",
+        "updated_at": "2026-09-30T09:29:58.587Z",
+        "viewedByMeTime": "2026-10-02T11:20:17.112Z",
+        "display_title": "lv2_gpt_H1011_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/1lw0L1_uvd3BfCFlTuc6b5Mppb2Sf1dhg/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -344,5 +432,7 @@
       "typography": "approved-rounded-title.json; original proof contours"
     }
   },
-  "continuationBlocker": "Complete mobile visual verification of current batch before processing batch 3. No further source images or sheet rows have been modified."
+  "continuationBlocker": null,
+  "mobileReview": "Deferred by user on 2026-10-02; publishing authorized through all 50 pairs."
 }
+
