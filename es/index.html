@@ -493,6 +493,36 @@
         </article>
 
         <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/es/actividades/dibujo-fantasmas-amistosos-en-el-jardin-de-una-casa-antigua.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Fantasmas amistosos en el jardín de una casa antigua">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv3_gpt_10196_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv3_gpt_10196_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-coloring.png" alt="Fantasmas amistosos en el jardín de una casa antigua: dibujo en blanco y negro de nivel 3 para niños de 6–7 años, gratis para imprimir en A4." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Dibujo para colorear</span><span class="text-xs text-slate-400 font-bold">LV3</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/es/actividades/dibujo-fantasmas-amistosos-en-el-jardin-de-una-casa-antigua.html" class="hover:text-indigo-600">Fantasmas amistosos en el jardín de una casa antigua</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/es/actividades/dibujo-momia-amistosa.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Momia amistosa">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv1_gpt_10197_1_en-friendly-mummy-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv1_gpt_10197_1_en-friendly-mummy-coloring-page-coloring.png" alt="Momia amistosa: dibujo en blanco y negro de nivel 1 para niños de 3–4 años, gratis para imprimir en A4." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Dibujo para colorear</span><span class="text-xs text-slate-400 font-bold">LV1</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/es/actividades/dibujo-momia-amistosa.html" class="hover:text-indigo-600">Momia amistosa</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/es/actividades/dibujo-cuervo-amistoso.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Cuervo amistoso">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv1_gpt_10198_1_en-friendly-raven-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv1_gpt_10198_1_en-friendly-raven-coloring-page-coloring.png" alt="Cuervo amistoso: dibujo en blanco y negro de nivel 1 para niños de 3–4 años, gratis para imprimir en A4." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Dibujo para colorear</span><span class="text-xs text-slate-400 font-bold">LV1</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/es/actividades/dibujo-cuervo-amistoso.html" class="hover:text-indigo-600">Cuervo amistoso</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
             <a href="/worldforkids/es/actividades/dibujo-caracol.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Caracol">
                 <picture><source media="screen" srcset="/worldforkids/public/omalovanky/lv1_gpt_1036-snail-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/lv1_gpt_1036-snail-coloring.png" alt="Dibujo para colorear sencillo en blanco y negro con un caracol para niños de 3–4 años, gratis para imprimir" loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
             </a>
@@ -1027,7 +1057,7 @@ function rozsekajCsvRadek(text) {
 
 async function nactiCsvData(typ) {
     try {
-        var r = await fetch('../assets/data/'+typ+'.csv?v=1a159ca82203');
+        var r = await fetch('../assets/data/'+typ+'.csv?v=f95233c9ccbe');
         if (!r.ok) { console.warn('CSV nenalezeno: '+typ); return []; }
         var text = await r.text();
         var radky = text.split(/\r?\n/);
