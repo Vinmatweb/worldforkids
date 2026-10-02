@@ -1714,7 +1714,7 @@ async function tiskniAktualni(){
     var btn=document.getElementById('print-btn'), orig=btn.innerText; btn.innerText='⏳...';
     var cb=ziskejCestuBase(aktivniModalPolozka,aktivniModalVerze);
     var origin=window.location.origin+window.location.pathname.replace(/\/[^/]*$/,'/');
-    var url=await nejlepsiUrl(cb), tiskUrl=origin+url;
+    var url=aktivniModalPolozka.pdf ? cb+'.png' : await nejlepsiUrl(cb), tiskUrl=origin+url;
     var okno=window.open('','_blank');
     okno.document.write('<html><head><title>Print – VinMat</title><style>body{margin:0;display:flex;justify-content:center;align-items:center;min-height:100vh;}img{max-width:100%;max-height:100vh;object-fit:contain;}</style></head><body><img src="'+tiskUrl+'" onload="window.print();window.close();" onerror="window.close();"></body></html>');
     okno.document.close(); btn.innerText=orig;

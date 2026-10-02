@@ -252,7 +252,7 @@ function activityUrl(activity, locale) {
 function picture(activity, locale, variant, className = '') {
     const base = imageBase(activity, variant);
     const alt = activity.alt[locale][variant] || activity.names[locale];
-    return `<picture><source srcset="${escapeHtml(base)}.webp" type="image/webp"><img src="${escapeHtml(base)}.png" alt="${escapeHtml(alt)}" loading="lazy" class="${className}"></picture>`;
+    return `<picture><source media="screen" srcset="${escapeHtml(base)}.webp" type="image/webp"><img src="${escapeHtml(base)}.png" alt="${escapeHtml(alt)}" loading="lazy" class="${className}"></picture>`;
 }
 
 function activityCard(activity, locale) {

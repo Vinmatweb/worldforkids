@@ -106,5 +106,14 @@
       "sample": "lv2_gpt_H1006_1_en-pumpkin-with-autumn-leaves-coloring-page-sample.png",
       "sampleId": "1Ss-DuNgLRdyTBll4gaKWA-DN0sdrcWkL"
     }
-  ]
+  ],
+  "branding": {
+    "url": "https://vinmat.eu/w4k",
+    "label": "FREE PRINTABLE",
+    "fontSizePt": 8,
+    "qrSizeMm": 17,
+    "scope": "Branded downloadable PNG/PDF for batch 1 and subsequent imports; WebP previews remain unbranded",
+    "verified": "All six downloadable PNG QR codes decoded; A4 PDF footer verified; WebP restored from original artwork",
+    "date": "2026-10-02"
+  }
 }
