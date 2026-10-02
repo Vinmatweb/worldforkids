@@ -113,7 +113,9 @@
     "fontSizePt": 8,
     "qrSizeMm": 17,
     "scope": "Branded downloadable PNG/PDF for batch 1 and subsequent imports; WebP previews remain unbranded",
-    "verified": "All six downloadable PNG QR codes decoded; A4 PDF footer verified; WebP restored from original artwork",
-    "date": "2026-10-02"
+    "verified": "Six downloadable PNGs retain original pixel dimensions and QR codes decode; PDF typography visually checked; WebP previews unchanged",
+    "date": "2026-10-02",
+    "layout": "Small corner blocks inset 8 mm; original illustration fills A4 without a reserved footer strip",
+    "font": "Embedded DejaVu Sans, 8 pt; FREE PRINTABLE letter spacing 0.25 pt"
   }
 }
