@@ -293,7 +293,7 @@
     },
     {
       "batch": 4,
-      "state": "awaiting-deployment-verification",
+      "state": "published-user-review-deferred",
       "items": [
         {
           "id": 10191,
@@ -376,8 +376,27 @@
       "skippedTitles": [],
       "checks": {
         "DriveBytes": "verified",
-        "mobile": "User review deferred"
-      }
+        "mobile": "Deferred by user; no mobile visual claim",
+        "deployment": "GitHub Actions build and Pages successful",
+        "assetHttp": "18/18 exact bytes and Git blob SHA match",
+        "languagePages": [
+          "activities/coloring-bat-flying-over-a-fence-with-a-pumpkin.html",
+          "cs/aktivity/omalovanka-netopyr-nad-plotem-s-dyni.html",
+          "de/aktivitaeten/ausmalbild-fledermaus-uber-einem-zaun-mit-kurbis.html",
+          "es/actividades/dibujo-murcielago-sobre-una-valla-con-calabaza.html",
+          "activities/coloring-bat-flying-over-a-fence-with-a-pumpkin-lv2.html",
+          "cs/aktivity/omalovanka-netopyr-nad-plotem-s-dyni-lv2.html",
+          "de/aktivitaeten/ausmalbild-fledermaus-uber-einem-zaun-mit-kurbis-lv2.html",
+          "es/actividades/dibujo-murcielago-sobre-una-valla-con-calabaza-lv2.html",
+          "activities/coloring-halloween-house-with-pumpkins-and-bats.html",
+          "cs/aktivity/omalovanka-halloweensky-dum-s-dynemi-a-netopyry.html",
+          "de/aktivitaeten/ausmalbild-halloween-haus-mit-kurbissen-und-fledermausen.html",
+          "es/actividades/dibujo-casa-de-halloween-con-calabazas-y-murcielagos.html"
+        ],
+        "catalog": "unique rows and new items verified",
+        "sheets": "published status read back"
+      },
+      "publishCommit": "3e814685b227288b8a75998d3c788cf2d49552d1"
     }
   ],
   "remainingPairs": 38,

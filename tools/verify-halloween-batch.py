@@ -17,23 +17,26 @@ def verify_asset(f):
     return f['path']
 with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
     assets=list(pool.map(verify_asset,state['files']))
-pages=[]
+page_jobs=[]
 for item in state['items']:
     matches=[]
     for directory in ['activities','cs/aktivity','de/aktivitaeten','es/actividades']:
         found=[p for p in (root/directory).glob('*.html') if item['base']+'-coloring.png' in p.read_text()]
         assert len(found)==1,(item['base'],directory,found)
         matches.extend(found)
-    for p in matches:
-        path=str(p.relative_to(root))
-        html=get(path).decode()
-        assert item['base']+'-coloring.png' in html
-        assert item['base']+'-sample' in html and 'data-variant="sample"' in html
-        assert "selected.base+'.png'" in html and "selected.base+'.pdf'" in html
-        assert 'rel="canonical"' in html
-        assert all('hreflang="'+lang+'"' in html for lang in ['en','cs','de','es'])
-        assert '<h1' in html and 'activity-png' in html and 'activity-pdf' in html
-        pages.append(path)
+    page_jobs.extend((item,str(p.relative_to(root))) for p in matches)
+def verify_page(job):
+    item,path=job
+    html=get(path).decode()
+    assert item['base']+'-coloring.png' in html
+    assert item['base']+'-sample' in html and 'data-variant="sample"' in html
+    assert "selected.base+'.png'" in html and "selected.base+'.pdf'" in html
+    assert 'rel="canonical"' in html
+    assert all('hreflang="'+lang+'"' in html for lang in ['en','cs','de','es'])
+    assert '<h1' in html and 'activity-png' in html and 'activity-pdf' in html
+    return path
+with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
+    pages=list(pool.map(verify_page,page_jobs))
 revision=hashlib.sha256((root/'assets/data/omalovanky.csv').read_bytes()).hexdigest()[:12]
 rows=list(csv.DictReader(io.StringIO(get('assets/data/omalovanky.csv?v='+revision).decode('utf-8-sig'))))
 for item in state['items']:
