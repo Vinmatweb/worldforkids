@@ -520,24 +520,112 @@
         "sheets": "published status read back"
       },
       "publishCommit": "316de8df23e0dfa860a4f966910c0794696bd701"
+    },
+    {
+      "batch": 6,
+      "state": "awaiting-deployment-verification",
+      "items": [
+        {
+          "id": 10194,
+          "base": "lv3_gpt_10194_1_en-halloween-garden-party-coloring-page",
+          "originalBase": "lv3_gpt_H1013_1_en-halloween-garden-party-coloring-page",
+          "sourceColoringId": "13ELeAkIIWBj-Y83kYIZE2U_4e6p2qtVa",
+          "sourceSampleId": "1lMgis1ayePYC_CkBDykHt_34TWpyndbX",
+          "sheetRow": 31,
+          "masterRow": 1365
+        },
+        {
+          "id": 10195,
+          "base": "lv3_gpt_10195_1_en-friendly-dragon-in-autumn-garden-coloring-page",
+          "originalBase": "lv3_gpt_H1014_1_en-friendly-dragon-in-autumn-garden-coloring-page",
+          "sourceColoringId": "1uLF0Olbrz13gN60R6pYK7gKCzqXZYyNx",
+          "sourceSampleId": "1tIV29Vhd5fNn3nAsLgnb9NvNxujgrzJy",
+          "sheetRow": 32,
+          "masterRow": 1366
+        },
+        {
+          "id": 10195,
+          "base": "lv3_gpt_10195_2_en-friendly-dragon-in-autumn-garden-coloring-page",
+          "originalBase": "lv3_gpt_H1014_2_en-friendly-dragon-in-autumn-garden-coloring-page",
+          "sourceColoringId": "1h13pGyLlkm5tXpb_V66IqUlsnUXp_iSe",
+          "sourceSampleId": "1J1VaBX2Ai9gUewHTEJQzxxeRaiCn_2He",
+          "sheetRow": 33,
+          "masterRow": 1366
+        }
+      ],
+      "driveFiles": [
+        {
+          "id": "1JK8LLIHEIn2qTpDTy4PmAxRlROnMPMHF",
+          "path": "public/omalovanky/en/lv3_gpt_10194_1_en-halloween-garden-party-coloring-page-coloring.png"
+        },
+        {
+          "id": "1uhlUigwsMTa5wYRNsGP0aQuMjO3Tac0i",
+          "path": "public/omalovanky/en/lv3_gpt_10194_1_en-halloween-garden-party-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "16qhRjFcb4wklmfVMLqsovjsPbW_Z7P9i",
+          "path": "public/omalovanky/en/lv3_gpt_10194_1_en-halloween-garden-party-coloring-page-sample.png"
+        },
+        {
+          "id": "1PbsHdstdNVczVbaqgEqOGP1qbdeLv_k7",
+          "path": "public/omalovanky/en/lv3_gpt_10194_1_en-halloween-garden-party-coloring-page-sample.pdf"
+        },
+        {
+          "id": "1ItPG1XCzYYOomHUcn7MgPymwMyRrVl3q",
+          "path": "public/omalovanky/en/lv3_gpt_10195_1_en-friendly-dragon-in-autumn-garden-coloring-page-coloring.png"
+        },
+        {
+          "id": "1S-FbWt6pra2k162WHFa9p7Id_bTnH-hh",
+          "path": "public/omalovanky/en/lv3_gpt_10195_1_en-friendly-dragon-in-autumn-garden-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "124D6SD4JFTLtb17uCfGOyqDMqXeJohRY",
+          "path": "public/omalovanky/en/lv3_gpt_10195_1_en-friendly-dragon-in-autumn-garden-coloring-page-sample.png"
+        },
+        {
+          "id": "1E0uy3DhedCVAH3DzPYfTz4K1PaNcP9Tr",
+          "path": "public/omalovanky/en/lv3_gpt_10195_1_en-friendly-dragon-in-autumn-garden-coloring-page-sample.pdf"
+        },
+        {
+          "id": "1GQuU18g5EIPew4Q141j1rImAyx19kOzH",
+          "path": "public/omalovanky/en/lv3_gpt_10195_2_en-friendly-dragon-in-autumn-garden-coloring-page-coloring.png"
+        },
+        {
+          "id": "1W4uhiHjry9_hWhhDpxuqya6ju3U4TpYL",
+          "path": "public/omalovanky/en/lv3_gpt_10195_2_en-friendly-dragon-in-autumn-garden-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "1nG9kREpwtmrdUy6UHp29WudDQJd-Hc3I",
+          "path": "public/omalovanky/en/lv3_gpt_10195_2_en-friendly-dragon-in-autumn-garden-coloring-page-sample.png"
+        },
+        {
+          "id": "1dxrd9XNjNZ_u4PaskiafWiq-QghUvI1S",
+          "path": "public/omalovanky/en/lv3_gpt_10195_2_en-friendly-dragon-in-autumn-garden-coloring-page-sample.pdf"
+        }
+      ],
+      "skippedTitles": [],
+      "checks": {
+        "DriveBytes": "verified",
+        "mobile": "User review deferred"
+      }
     }
   ],
-  "remainingPairs": 35,
+  "remainingPairs": 32,
   "nextOriginalFiles": [
     {
-      "originalBase": "lv3_gpt_H1013_1_en-halloween-garden-party-coloring-page",
+      "originalBase": "lv3_gpt_H1015_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page",
       "coloring": {
-        "url": "https://drive.google.com/file/d/13ELeAkIIWBj-Y83kYIZE2U_4e6p2qtVa/view?usp=drivesdk",
-        "title": "lv3_gpt_H1013_1_en-halloween-garden-party-coloring-page-coloring.png",
-        "id": "13ELeAkIIWBj-Y83kYIZE2U_4e6p2qtVa",
+        "url": "https://drive.google.com/file/d/1eBJNcvoQrr-NZhWPoeTKRBGSo07O_N1i/view?usp=drivesdk",
+        "title": "lv3_gpt_H1015_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-coloring.png",
+        "id": "1eBJNcvoQrr-NZhWPoeTKRBGSo07O_N1i",
         "mime_type": "image/png",
-        "size": "62650",
+        "size": "77807",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:14.645Z",
-        "updated_at": "2026-09-30T10:20:19.453Z",
-        "viewedByMeTime": "2026-10-02T11:20:14.645Z",
-        "display_title": "lv3_gpt_H1013_1_en-halloween-garden-party-coloring-page-coloring.png",
-        "display_url": "https://drive.google.com/file/d/13ELeAkIIWBj-Y83kYIZE2U_4e6p2qtVa/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:20:15.224Z",
+        "updated_at": "2026-09-30T10:20:19.370Z",
+        "viewedByMeTime": "2026-10-02T11:20:15.224Z",
+        "display_title": "lv3_gpt_H1015_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/1eBJNcvoQrr-NZhWPoeTKRBGSo07O_N1i/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -546,17 +634,17 @@
         "can_list_children": false
       },
       "sample": {
-        "url": "https://drive.google.com/file/d/1lMgis1ayePYC_CkBDykHt_34TWpyndbX/view?usp=drivesdk",
-        "title": "lv3_gpt_H1013_1_en-halloween-garden-party-coloring-page-sample.png",
-        "id": "1lMgis1ayePYC_CkBDykHt_34TWpyndbX",
+        "url": "https://drive.google.com/file/d/1my683hfANzXVMsXeW7tKpkBPHXaPQf31/view?usp=drivesdk",
+        "title": "lv3_gpt_H1015_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-sample.png",
+        "id": "1my683hfANzXVMsXeW7tKpkBPHXaPQf31",
         "mime_type": "image/png",
-        "size": "616082",
+        "size": "798674",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:15.078Z",
-        "updated_at": "2026-09-30T09:29:58.868Z",
-        "viewedByMeTime": "2026-10-02T11:20:15.078Z",
-        "display_title": "lv3_gpt_H1013_1_en-halloween-garden-party-coloring-page-sample.png",
-        "display_url": "https://drive.google.com/file/d/1lMgis1ayePYC_CkBDykHt_34TWpyndbX/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:20:14.951Z",
+        "updated_at": "2026-09-30T09:29:59.009Z",
+        "viewedByMeTime": "2026-10-02T11:20:14.951Z",
+        "display_title": "lv3_gpt_H1015_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/1my683hfANzXVMsXeW7tKpkBPHXaPQf31/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -566,19 +654,19 @@
       }
     },
     {
-      "originalBase": "lv3_gpt_H1014_1_en-friendly-dragon-in-autumn-garden-coloring-page",
-      "sample": {
-        "url": "https://drive.google.com/file/d/1tIV29Vhd5fNn3nAsLgnb9NvNxujgrzJy/view?usp=drivesdk",
-        "title": "lv3_gpt_H1014_1_en-friendly-dragon-in-autumn-garden-coloring-page-sample.png",
-        "id": "1tIV29Vhd5fNn3nAsLgnb9NvNxujgrzJy",
+      "originalBase": "lv1_gpt_H1016_1_en-friendly-mummy-coloring-page",
+      "coloring": {
+        "url": "https://drive.google.com/file/d/1tq8PlCy0RTqcd05vdrg0FvPRvx6ONne9/view?usp=drivesdk",
+        "title": "lv1_gpt_H1016_1_en-friendly-mummy-coloring-page-coloring.png",
+        "id": "1tq8PlCy0RTqcd05vdrg0FvPRvx6ONne9",
         "mime_type": "image/png",
-        "size": "2328907",
+        "size": "1245136",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:23:04.812Z",
-        "updated_at": "2026-09-30T11:01:27.341Z",
-        "viewedByMeTime": "2026-10-02T11:23:04.812Z",
-        "display_title": "lv3_gpt_H1014_1_en-friendly-dragon-in-autumn-garden-coloring-page-sample.png",
-        "display_url": "https://drive.google.com/file/d/1tIV29Vhd5fNn3nAsLgnb9NvNxujgrzJy/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:20:35.360Z",
+        "updated_at": "2026-09-30T15:56:57.967Z",
+        "viewedByMeTime": "2026-10-02T11:20:35.360Z",
+        "display_title": "lv1_gpt_H1016_1_en-friendly-mummy-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/1tq8PlCy0RTqcd05vdrg0FvPRvx6ONne9/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -586,18 +674,18 @@
         "can_download": true,
         "can_list_children": false
       },
-      "coloring": {
-        "url": "https://drive.google.com/file/d/1uLF0Olbrz13gN60R6pYK7gKCzqXZYyNx/view?usp=drivesdk",
-        "title": "lv3_gpt_H1014_1_en-friendly-dragon-in-autumn-garden-coloring-page-coloring.png",
-        "id": "1uLF0Olbrz13gN60R6pYK7gKCzqXZYyNx",
+      "sample": {
+        "url": "https://drive.google.com/file/d/1vdPa2CSl5BMneEClCnfCp6FuUtPi8rC0/view?usp=drivesdk",
+        "title": "lv1_gpt_H1016_1_en-friendly-mummy-coloring-page-sample.png",
+        "id": "1vdPa2CSl5BMneEClCnfCp6FuUtPi8rC0",
         "mime_type": "image/png",
-        "size": "6225554",
+        "size": "1381121",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:22:52.847Z",
-        "updated_at": "2026-09-30T10:35:40.986Z",
-        "viewedByMeTime": "2026-10-02T11:22:52.847Z",
-        "display_title": "lv3_gpt_H1014_1_en-friendly-dragon-in-autumn-garden-coloring-page-coloring.png",
-        "display_url": "https://drive.google.com/file/d/1uLF0Olbrz13gN60R6pYK7gKCzqXZYyNx/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:20:15.247Z",
+        "updated_at": "2026-09-30T15:56:54.046Z",
+        "viewedByMeTime": "2026-10-02T11:20:15.247Z",
+        "display_title": "lv1_gpt_H1016_1_en-friendly-mummy-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/1vdPa2CSl5BMneEClCnfCp6FuUtPi8rC0/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -607,19 +695,19 @@
       }
     },
     {
-      "originalBase": "lv3_gpt_H1014_2_en-friendly-dragon-in-autumn-garden-coloring-page",
+      "originalBase": "lv1_gpt_H1017_1_en-friendly-raven-coloring-page",
       "coloring": {
-        "url": "https://drive.google.com/file/d/1h13pGyLlkm5tXpb_V66IqUlsnUXp_iSe/view?usp=drivesdk",
-        "title": "lv3_gpt_H1014_2_en-friendly-dragon-in-autumn-garden-coloring-page-coloring.png",
-        "id": "1h13pGyLlkm5tXpb_V66IqUlsnUXp_iSe",
+        "url": "https://drive.google.com/file/d/1RaPpR4vHrdfJJjb3Oa_WXrEHaFBsNjRU/view?usp=drivesdk",
+        "title": "lv1_gpt_H1017_1_en-friendly-raven-coloring-page-coloring.png",
+        "id": "1RaPpR4vHrdfJJjb3Oa_WXrEHaFBsNjRU",
         "mime_type": "image/png",
-        "size": "68728",
+        "size": "932056",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:15.046Z",
-        "updated_at": "2026-09-30T10:20:19.464Z",
-        "viewedByMeTime": "2026-10-02T11:20:15.046Z",
-        "display_title": "lv3_gpt_H1014_2_en-friendly-dragon-in-autumn-garden-coloring-page-coloring.png",
-        "display_url": "https://drive.google.com/file/d/1h13pGyLlkm5tXpb_V66IqUlsnUXp_iSe/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:20:12.029Z",
+        "updated_at": "2026-09-30T15:56:57.983Z",
+        "viewedByMeTime": "2026-10-02T11:20:12.029Z",
+        "display_title": "lv1_gpt_H1017_1_en-friendly-raven-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/1RaPpR4vHrdfJJjb3Oa_WXrEHaFBsNjRU/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -628,17 +716,17 @@
         "can_list_children": false
       },
       "sample": {
-        "url": "https://drive.google.com/file/d/1J1VaBX2Ai9gUewHTEJQzxxeRaiCn_2He/view?usp=drivesdk",
-        "title": "lv3_gpt_H1014_2_en-friendly-dragon-in-autumn-garden-coloring-page-sample.png",
-        "id": "1J1VaBX2Ai9gUewHTEJQzxxeRaiCn_2He",
+        "url": "https://drive.google.com/file/d/124FEsEzgi8XdAi-HcG3HHh6yqvA1EtXf/view?usp=drivesdk",
+        "title": "lv1_gpt_H1017_1_en-friendly-raven-coloring-page-sample.png",
+        "id": "124FEsEzgi8XdAi-HcG3HHh6yqvA1EtXf",
         "mime_type": "image/png",
-        "size": "689564",
+        "size": "1161011",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:15.075Z",
-        "updated_at": "2026-09-30T09:29:58.934Z",
-        "viewedByMeTime": "2026-10-02T11:20:15.075Z",
-        "display_title": "lv3_gpt_H1014_2_en-friendly-dragon-in-autumn-garden-coloring-page-sample.png",
-        "display_url": "https://drive.google.com/file/d/1J1VaBX2Ai9gUewHTEJQzxxeRaiCn_2He/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:20:33.241Z",
+        "updated_at": "2026-09-30T15:56:54.063Z",
+        "viewedByMeTime": "2026-10-02T11:20:33.241Z",
+        "display_title": "lv1_gpt_H1017_1_en-friendly-raven-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/124FEsEzgi8XdAi-HcG3HHh6yqvA1EtXf/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
