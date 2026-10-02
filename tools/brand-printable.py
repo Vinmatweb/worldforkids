@@ -33,7 +33,8 @@ def place_title(image, text):
     font = pdfmetrics.getFont('RoundedTitle')
     for size in (36, 34, 32, 30, 28):
         wrapped = [text.split(' - ')[0], '- '+text.split(' - ')[1]] if ' - ' in text else ['VinMat', 'Coloring']
-        for lines in ([text], wrapped):
+        line_options = [text.splitlines()] if '\n' in text else ([text], wrapped)
+        for lines in line_options:
             line_widths = [pdfmetrics.stringWidth(line, 'RoundedTitle', size)
                            + (len(line) - 1) * 0.8 for line in lines]
             width = max(line_widths)

@@ -1,20 +1,22 @@
 {
   "batch": 1,
-  "state": "awaiting-user-review",
+  "state": "approved-with-pumpkin-wrap",
   "items": [
     {
       "id": 10017,
       "variant": "coloring",
-      "heading": "VinMat Coloring",
+      "heading": "VinMat\nColoring",
       "placement": {
         "x": 22.67716535433071,
         "top": 14.173228346456694,
         "size": 36,
         "lines": [
-          "VinMat Coloring"
+          "VinMat",
+          "Coloring"
         ],
         "widths": [
-          317.704
+          142.74400000000003,
+          164.9
         ],
         "ascent": 35.064,
         "alignment": "left"
@@ -23,20 +25,22 @@
     {
       "id": 10017,
       "variant": "sample",
-      "heading": "VinMat Coloring - Sample",
+      "heading": "VinMat\nColoring\n- Sample",
       "placement": {
         "x": 22.67716535433071,
         "top": 14.173228346456694,
-        "size": 30,
+        "size": 36,
         "lines": [
-          "VinMat Coloring",
+          "VinMat",
+          "Coloring",
           "- Sample"
         ],
         "widths": [
-          266.62,
-          142.22
+          142.74400000000003,
+          164.9,
+          169.544
         ],
-        "ascent": 29.22,
+        "ascent": 35.064,
         "alignment": "left"
       }
     },

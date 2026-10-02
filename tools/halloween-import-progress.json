@@ -119,13 +119,24 @@
     "font": "Embedded DejaVu Sans, 8 pt; FREE PRINTABLE letter spacing 0.25 pt",
     "titlePilot": {
       "batch": 1,
-      "state": "awaiting-user-review",
+      "state": "approved-with-pumpkin-wrap",
       "items": 6,
       "skipped": [],
       "details": "tools/branding-title-pilot.json",
       "artworkResized": false,
       "headerStrip": false,
-      "previewsChanged": false
+      "previewsChanged": false,
+      "pumpkinLines": {
+        "coloring": [
+          "VinMat",
+          "Coloring"
+        ],
+        "sample": [
+          "VinMat",
+          "Coloring",
+          "- Sample"
+        ]
+      }
     }
   }
 }
