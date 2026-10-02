@@ -84,9 +84,99 @@
           "url": "https://drive.google.com/file/d/1FmKl2pAL_PGzsypWcuuYxqMg4T4APXo9/view?usp=drivesdk"
         }
       ]
+    },
+    {
+      "batch": 2,
+      "state": "awaiting-deployment-verification",
+      "items": [
+        {
+          "id": 10021,
+          "base": "lv1_gpt_10021_1_en-witch-hat-coloring-page",
+          "originalBase": "lv1_gpt_H1004_1_en-witch-hat-coloring-page",
+          "sourceColoringId": "1QuyzYUoqxKF_sNOumi7X0l88b3BfRiyW",
+          "sourceSampleId": "11a_6YjafuNtCYlf6VFPvnry28a5ywEA7",
+          "sheetRow": 19,
+          "masterRow": 1192
+        },
+        {
+          "id": 10186,
+          "base": "lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-coloring-page",
+          "originalBase": "lv1_gpt_H1005_1_en-friendly-cat-and-pumpkin-coloring-page",
+          "sourceColoringId": "1JHF9dboylq2VqhkY0-zF-ADEHYIzMj6k",
+          "sourceSampleId": "1kqjWtcCDkxJZE0cTzLCh8dTDXJegWgrL",
+          "sheetRow": 20,
+          "masterRow": 1357
+        },
+        {
+          "id": 10187,
+          "base": "lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page",
+          "originalBase": "lv2_gpt_H1006_1_en-pumpkin-with-autumn-leaves-coloring-page",
+          "sourceColoringId": "1sd-c4MbWbagYxZmbiiF-Tls5IVI1dzqk",
+          "sourceSampleId": "1Ss-DuNgLRdyTBll4gaKWA-DN0sdrcWkL",
+          "sheetRow": 21,
+          "masterRow": 1358
+        }
+      ],
+      "driveFiles": [
+        {
+          "id": "1QuyzYUoqxKF_sNOumi7X0l88b3BfRiyW",
+          "path": "public/omalovanky/en/lv1_gpt_10021_1_en-witch-hat-coloring-page-coloring.png"
+        },
+        {
+          "id": "1jZRnLwMqZd49U5tjsSIjKlHHso3BJlTS",
+          "path": "public/omalovanky/en/lv1_gpt_10021_1_en-witch-hat-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "11a_6YjafuNtCYlf6VFPvnry28a5ywEA7",
+          "path": "public/omalovanky/en/lv1_gpt_10021_1_en-witch-hat-coloring-page-sample.png"
+        },
+        {
+          "id": "1BTcmStaYoh80hka6dvi_c7xS-6H_fXDg",
+          "path": "public/omalovanky/en/lv1_gpt_10021_1_en-witch-hat-coloring-page-sample.pdf"
+        },
+        {
+          "id": "1JHF9dboylq2VqhkY0-zF-ADEHYIzMj6k",
+          "path": "public/omalovanky/en/lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-coloring-page-coloring.png"
+        },
+        {
+          "id": "1CeU8AvD_4E-VMdfFKQfMKPIs2NmElpCy",
+          "path": "public/omalovanky/en/lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "1kqjWtcCDkxJZE0cTzLCh8dTDXJegWgrL",
+          "path": "public/omalovanky/en/lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-coloring-page-sample.png"
+        },
+        {
+          "id": "1-Jju2atiIWoIcTImPDbl5_RlfdEeLojK",
+          "path": "public/omalovanky/en/lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-coloring-page-sample.pdf"
+        },
+        {
+          "id": "1sd-c4MbWbagYxZmbiiF-Tls5IVI1dzqk",
+          "path": "public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-coloring.png"
+        },
+        {
+          "id": "1QPbmxm7jkkbFMIRG6EsBsjrekKqfsx61",
+          "path": "public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "1Ss-DuNgLRdyTBll4gaKWA-DN0sdrcWkL",
+          "path": "public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-sample.png"
+        },
+        {
+          "id": "1uWFZ6OV2lIKvYTV40VKXqOwdYdJf3JnD",
+          "path": "public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-sample.pdf"
+        }
+      ],
+      "skippedTitles": [],
+      "checks": {
+        "localContent": "passed",
+        "localization": "passed EN/CZ/DE/ES",
+        "internalLinks": "passed for 183 HTML files",
+        "PNGResolutionAndQR": "passed 6/6"
+      }
     }
   ],
-  "remainingPairs": 47,
+  "remainingPairs": 44,
   "nextOriginalFiles": [
     {
       "coloring": "lv1_gpt_H1004_1_en-witch-hat-coloring-page-coloring.png",

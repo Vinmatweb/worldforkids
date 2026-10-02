@@ -1,0 +1,678 @@
+{
+  "batch": 2,
+  "items": [
+    {
+      "originalBase": "lv1_gpt_H1004_1_en-witch-hat-coloring-page",
+      "sample": {
+        "url": "https://drive.google.com/file/d/11a_6YjafuNtCYlf6VFPvnry28a5ywEA7/view?usp=drivesdk",
+        "title": "lv1_gpt_H1004_1_en-witch-hat-coloring-page-sample.png",
+        "id": "11a_6YjafuNtCYlf6VFPvnry28a5ywEA7",
+        "mime_type": "image/png",
+        "size": "220993",
+        "file_or_folder": "file",
+        "created_at": "2026-10-02T11:20:12.050Z",
+        "updated_at": "2026-09-30T09:29:58.294Z",
+        "viewedByMeTime": "2026-10-02T11:20:12.050Z",
+        "display_title": "lv1_gpt_H1004_1_en-witch-hat-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/11a_6YjafuNtCYlf6VFPvnry28a5ywEA7/view?usp=drivesdk",
+        "parent_ids": [
+          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+        ],
+        "shared": false,
+        "can_download": true,
+        "can_list_children": false
+      },
+      "coloring": {
+        "url": "https://drive.google.com/file/d/1QuyzYUoqxKF_sNOumi7X0l88b3BfRiyW/view?usp=drivesdk",
+        "title": "lv1_gpt_H1004_1_en-witch-hat-coloring-page-coloring.png",
+        "id": "1QuyzYUoqxKF_sNOumi7X0l88b3BfRiyW",
+        "mime_type": "image/png",
+        "size": "29968",
+        "file_or_folder": "file",
+        "created_at": "2026-10-02T11:20:11.237Z",
+        "updated_at": "2026-09-30T09:29:58.281Z",
+        "viewedByMeTime": "2026-10-02T11:20:11.237Z",
+        "display_title": "lv1_gpt_H1004_1_en-witch-hat-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/1QuyzYUoqxKF_sNOumi7X0l88b3BfRiyW/view?usp=drivesdk",
+        "parent_ids": [
+          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+        ],
+        "shared": false,
+        "can_download": true,
+        "can_list_children": false
+      },
+      "id": 10021,
+      "names": [
+        "Klobouk čarodějnice",
+        "Witch Hat",
+        "Hexenhut",
+        "Sombrero de bruja"
+      ],
+      "masterRowIndex": 1191,
+      "existingMaster": true,
+      "sheetRowIndex": 18,
+      "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/ee4c7064-ca23-4307-ae3f-fe599b6cf03d/lv1_gpt_H1004_1_en-witch-hat-coloring-page-coloring.png",
+      "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/ee8d8b49-247c-4fb1-9a5e-f6ed1ab06117/lv1_gpt_H1004_1_en-witch-hat-coloring-page-sample.png",
+      "base": "lv1_gpt_10021_1_en-witch-hat-coloring-page",
+      "row": {
+        "ID": "10021",
+        "soubor": "lv1_gpt_10021_1_en-witch-hat-coloring-page",
+        "kategorie": "svatky",
+        "podkategorie": "halloween",
+        "datumPridani": "2026-10-02",
+        "sezona": "podzim,halloween",
+        "zamereni": "jemna-motorika",
+        "assetDirectory": "en",
+        "pdf": "1",
+        "nazevCz": "Klobouk čarodějnice",
+        "altCz_coloring": "Klobouk čarodějnice: černobílá omalovánka LV1 pro děti 3–4 let, zdarma k vytisknutí na A4.",
+        "altCz_sample": "Klobouk čarodějnice: barevný vzor k omalovánce LV1.",
+        "nazevEn": "Witch Hat",
+        "altEn_coloring": "Witch Hat: black-and-white LV1 coloring page for ages 3–4, free to print on A4 paper.",
+        "altEn_sample": "Witch Hat: color sample for the LV1 coloring page.",
+        "nazevDe": "Hexenhut",
+        "altDe_coloring": "Hexenhut: schwarz-weißes Ausmalbild der Stufe 1 für Kinder von 3–4 Jahren, kostenlos auf A4 drucken.",
+        "altDe_sample": "Hexenhut: Farbvorlage zum Ausmalbild der Stufe 1.",
+        "nazevEs": "Sombrero de bruja",
+        "altEs_coloring": "Sombrero de bruja: dibujo en blanco y negro de nivel 1 para niños de 3–4 años, gratis para imprimir en A4.",
+        "altEs_sample": "Sombrero de bruja: modelo a color para el dibujo de nivel 1.",
+        "Status": "vygenerováno",
+        "driveColoring": "https://drive.google.com/file/d/1QuyzYUoqxKF_sNOumi7X0l88b3BfRiyW/view?usp=drivesdk",
+        "driveSample": "https://drive.google.com/file/d/11a_6YjafuNtCYlf6VFPvnry28a5ywEA7/view?usp=drivesdk",
+        "drivePdfColoring": "https://drive.google.com/file/d/1jZRnLwMqZd49U5tjsSIjKlHHso3BJlTS/view?usp=drivesdk",
+        "drivePdfSample": "https://drive.google.com/file/d/1BTcmStaYoh80hka6dvi_c7xS-6H_fXDg/view?usp=drivesdk"
+      },
+      "level": 1
+    },
+    {
+      "originalBase": "lv1_gpt_H1005_1_en-friendly-cat-and-pumpkin-coloring-page",
+      "coloring": {
+        "url": "https://drive.google.com/file/d/1JHF9dboylq2VqhkY0-zF-ADEHYIzMj6k/view?usp=drivesdk",
+        "title": "lv1_gpt_H1005_1_en-friendly-cat-and-pumpkin-coloring-page-coloring.png",
+        "id": "1JHF9dboylq2VqhkY0-zF-ADEHYIzMj6k",
+        "mime_type": "image/png",
+        "size": "42379",
+        "file_or_folder": "file",
+        "created_at": "2026-10-02T11:20:11.713Z",
+        "updated_at": "2026-09-30T10:20:19.422Z",
+        "viewedByMeTime": "2026-10-02T11:20:11.713Z",
+        "display_title": "lv1_gpt_H1005_1_en-friendly-cat-and-pumpkin-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/1JHF9dboylq2VqhkY0-zF-ADEHYIzMj6k/view?usp=drivesdk",
+        "parent_ids": [
+          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+        ],
+        "shared": false,
+        "can_download": true,
+        "can_list_children": false
+      },
+      "sample": {
+        "url": "https://drive.google.com/file/d/1kqjWtcCDkxJZE0cTzLCh8dTDXJegWgrL/view?usp=drivesdk",
+        "title": "lv1_gpt_H1005_1_en-friendly-cat-and-pumpkin-coloring-page-sample.png",
+        "id": "1kqjWtcCDkxJZE0cTzLCh8dTDXJegWgrL",
+        "mime_type": "image/png",
+        "size": "350666",
+        "file_or_folder": "file",
+        "created_at": "2026-10-02T11:20:12.733Z",
+        "updated_at": "2026-09-30T09:29:58.314Z",
+        "viewedByMeTime": "2026-10-02T11:20:12.733Z",
+        "display_title": "lv1_gpt_H1005_1_en-friendly-cat-and-pumpkin-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/1kqjWtcCDkxJZE0cTzLCh8dTDXJegWgrL/view?usp=drivesdk",
+        "parent_ids": [
+          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+        ],
+        "shared": false,
+        "can_download": true,
+        "can_list_children": false
+      },
+      "id": 10186,
+      "names": [
+        "Kočka s halloweenskou dýní",
+        "Cat with a Halloween Pumpkin",
+        "Katze mit Halloween-Kürbis",
+        "Gato con una calabaza de Halloween"
+      ],
+      "masterRowIndex": 1356,
+      "existingMaster": false,
+      "sheetRowIndex": 19,
+      "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/7d6092a0-bb5f-4f94-a15f-cf6b9d761495/lv1_gpt_H1005_1_en-friendly-cat-and-pumpkin-coloring-page-coloring.png",
+      "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/d2567140-d820-441a-8abb-038d96968ca9/lv1_gpt_H1005_1_en-friendly-cat-and-pumpkin-coloring-page-sample.png",
+      "base": "lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-coloring-page",
+      "row": {
+        "ID": "10186",
+        "soubor": "lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-coloring-page",
+        "kategorie": "svatky",
+        "podkategorie": "halloween",
+        "datumPridani": "2026-10-02",
+        "sezona": "podzim,halloween",
+        "zamereni": "jemna-motorika",
+        "assetDirectory": "en",
+        "pdf": "1",
+        "nazevCz": "Kočka s halloweenskou dýní",
+        "altCz_coloring": "Kočka s halloweenskou dýní: černobílá omalovánka LV1 pro děti 3–4 let, zdarma k vytisknutí na A4.",
+        "altCz_sample": "Kočka s halloweenskou dýní: barevný vzor k omalovánce LV1.",
+        "nazevEn": "Cat with a Halloween Pumpkin",
+        "altEn_coloring": "Cat with a Halloween Pumpkin: black-and-white LV1 coloring page for ages 3–4, free to print on A4 paper.",
+        "altEn_sample": "Cat with a Halloween Pumpkin: color sample for the LV1 coloring page.",
+        "nazevDe": "Katze mit Halloween-Kürbis",
+        "altDe_coloring": "Katze mit Halloween-Kürbis: schwarz-weißes Ausmalbild der Stufe 1 für Kinder von 3–4 Jahren, kostenlos auf A4 drucken.",
+        "altDe_sample": "Katze mit Halloween-Kürbis: Farbvorlage zum Ausmalbild der Stufe 1.",
+        "nazevEs": "Gato con una calabaza de Halloween",
+        "altEs_coloring": "Gato con una calabaza de Halloween: dibujo en blanco y negro de nivel 1 para niños de 3–4 años, gratis para imprimir en A4.",
+        "altEs_sample": "Gato con una calabaza de Halloween: modelo a color para el dibujo de nivel 1.",
+        "Status": "vygenerováno",
+        "driveColoring": "https://drive.google.com/file/d/1JHF9dboylq2VqhkY0-zF-ADEHYIzMj6k/view?usp=drivesdk",
+        "driveSample": "https://drive.google.com/file/d/1kqjWtcCDkxJZE0cTzLCh8dTDXJegWgrL/view?usp=drivesdk",
+        "drivePdfColoring": "https://drive.google.com/file/d/1CeU8AvD_4E-VMdfFKQfMKPIs2NmElpCy/view?usp=drivesdk",
+        "drivePdfSample": "https://drive.google.com/file/d/1-Jju2atiIWoIcTImPDbl5_RlfdEeLojK/view?usp=drivesdk"
+      },
+      "level": 1
+    },
+    {
+      "originalBase": "lv2_gpt_H1006_1_en-pumpkin-with-autumn-leaves-coloring-page",
+      "sample": {
+        "url": "https://drive.google.com/file/d/1Ss-DuNgLRdyTBll4gaKWA-DN0sdrcWkL/view?usp=drivesdk",
+        "title": "lv2_gpt_H1006_1_en-pumpkin-with-autumn-leaves-coloring-page-sample.png",
+        "id": "1Ss-DuNgLRdyTBll4gaKWA-DN0sdrcWkL",
+        "mime_type": "image/png",
+        "size": "353979",
+        "file_or_folder": "file",
+        "created_at": "2026-10-02T11:20:13.043Z",
+        "updated_at": "2026-09-30T09:29:58.350Z",
+        "viewedByMeTime": "2026-10-02T11:20:13.043Z",
+        "display_title": "lv2_gpt_H1006_1_en-pumpkin-with-autumn-leaves-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/1Ss-DuNgLRdyTBll4gaKWA-DN0sdrcWkL/view?usp=drivesdk",
+        "parent_ids": [
+          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+        ],
+        "shared": false,
+        "can_download": true,
+        "can_list_children": false
+      },
+      "coloring": {
+        "url": "https://drive.google.com/file/d/1sd-c4MbWbagYxZmbiiF-Tls5IVI1dzqk/view?usp=drivesdk",
+        "title": "lv2_gpt_H1006_1_en-pumpkin-with-autumn-leaves-coloring-page-coloring.png",
+        "id": "1sd-c4MbWbagYxZmbiiF-Tls5IVI1dzqk",
+        "mime_type": "image/png",
+        "size": "1002323",
+        "file_or_folder": "file",
+        "created_at": "2026-10-02T11:20:11.851Z",
+        "updated_at": "2026-09-30T09:29:58.337Z",
+        "viewedByMeTime": "2026-10-02T11:20:11.851Z",
+        "display_title": "lv2_gpt_H1006_1_en-pumpkin-with-autumn-leaves-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/1sd-c4MbWbagYxZmbiiF-Tls5IVI1dzqk/view?usp=drivesdk",
+        "parent_ids": [
+          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+        ],
+        "shared": false,
+        "can_download": true,
+        "can_list_children": false
+      },
+      "id": 10187,
+      "names": [
+        "Dýně s podzimními listy",
+        "Pumpkin with Autumn Leaves",
+        "Kürbis mit Herbstblättern",
+        "Calabaza con hojas de otoño"
+      ],
+      "masterRowIndex": 1357,
+      "existingMaster": false,
+      "sheetRowIndex": 20,
+      "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/2a21791f-c121-46d2-abaa-38509e6009a1/lv2_gpt_H1006_1_en-pumpkin-with-autumn-leaves-coloring-page-coloring.png",
+      "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/e35387fc-732c-4f3b-a018-63bd0e827bae/lv2_gpt_H1006_1_en-pumpkin-with-autumn-leaves-coloring-page-sample.png",
+      "base": "lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page",
+      "row": {
+        "ID": "10187",
+        "soubor": "lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page",
+        "kategorie": "svatky",
+        "podkategorie": "halloween",
+        "datumPridani": "2026-10-02",
+        "sezona": "podzim,halloween",
+        "zamereni": "jemna-motorika",
+        "assetDirectory": "en",
+        "pdf": "1",
+        "nazevCz": "Dýně s podzimními listy",
+        "altCz_coloring": "Dýně s podzimními listy: černobílá omalovánka LV2 pro děti 5–6 let, zdarma k vytisknutí na A4.",
+        "altCz_sample": "Dýně s podzimními listy: barevný vzor k omalovánce LV2.",
+        "nazevEn": "Pumpkin with Autumn Leaves",
+        "altEn_coloring": "Pumpkin with Autumn Leaves: black-and-white LV2 coloring page for ages 5–6, free to print on A4 paper.",
+        "altEn_sample": "Pumpkin with Autumn Leaves: color sample for the LV2 coloring page.",
+        "nazevDe": "Kürbis mit Herbstblättern",
+        "altDe_coloring": "Kürbis mit Herbstblättern: schwarz-weißes Ausmalbild der Stufe 2 für Kinder von 5–6 Jahren, kostenlos auf A4 drucken.",
+        "altDe_sample": "Kürbis mit Herbstblättern: Farbvorlage zum Ausmalbild der Stufe 2.",
+        "nazevEs": "Calabaza con hojas de otoño",
+        "altEs_coloring": "Calabaza con hojas de otoño: dibujo en blanco y negro de nivel 2 para niños de 5–6 años, gratis para imprimir en A4.",
+        "altEs_sample": "Calabaza con hojas de otoño: modelo a color para el dibujo de nivel 2.",
+        "Status": "vygenerováno",
+        "driveColoring": "https://drive.google.com/file/d/1sd-c4MbWbagYxZmbiiF-Tls5IVI1dzqk/view?usp=drivesdk",
+        "driveSample": "https://drive.google.com/file/d/1Ss-DuNgLRdyTBll4gaKWA-DN0sdrcWkL/view?usp=drivesdk",
+        "drivePdfColoring": "https://drive.google.com/file/d/1QPbmxm7jkkbFMIRG6EsBsjrekKqfsx61/view?usp=drivesdk",
+        "drivePdfSample": "https://drive.google.com/file/d/1uWFZ6OV2lIKvYTV40VKXqOwdYdJf3JnD/view?usp=drivesdk"
+      },
+      "level": 2
+    }
+  ],
+  "files": [
+    {
+      "file": "/tmp/vinmat-halloween-batch-2/lv1_gpt_10021_1_en-witch-hat-coloring-page-coloring.png",
+      "path": "public/omalovanky/en/lv1_gpt_10021_1_en-witch-hat-coloring-page-coloring.png",
+      "bytes": 115941,
+      "sha": "fc04d639d843ffd6999bb0b2eb26d35a43d8d45e",
+      "id": 10021,
+      "variant": "coloring",
+      "ext": "png",
+      "driveId": "1QuyzYUoqxKF_sNOumi7X0l88b3BfRiyW",
+      "placement": {
+        "x": 157.23779527559057,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring"
+        ],
+        "widths": [
+          280.8
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      }
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-2/lv1_gpt_10021_1_en-witch-hat-coloring-page-coloring.pdf",
+      "path": "public/omalovanky/en/lv1_gpt_10021_1_en-witch-hat-coloring-page-coloring.pdf",
+      "bytes": 98192,
+      "sha": "b1fb5b86398b44316a5e71d02ca9d7aca13bdc0f",
+      "id": 10021,
+      "variant": "coloring",
+      "ext": "pdf",
+      "driveId": "1jZRnLwMqZd49U5tjsSIjKlHHso3BJlTS",
+      "placement": {
+        "x": 157.23779527559057,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring"
+        ],
+        "widths": [
+          280.8
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      },
+      "driveUrl": "https://drive.google.com/file/d/1jZRnLwMqZd49U5tjsSIjKlHHso3BJlTS/view?usp=drivesdk"
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-2/lv1_gpt_10021_1_en-witch-hat-coloring-page-coloring.webp",
+      "path": "public/omalovanky/en/lv1_gpt_10021_1_en-witch-hat-coloring-page-coloring.webp",
+      "bytes": 62714,
+      "sha": "71c3484f7cc1fe0ddcff8824ee105e8548e5826e",
+      "id": 10021,
+      "variant": "coloring",
+      "ext": "webp",
+      "driveId": null,
+      "placement": {
+        "x": 157.23779527559057,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring"
+        ],
+        "widths": [
+          280.8
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      }
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-2/lv1_gpt_10021_1_en-witch-hat-coloring-page-sample.png",
+      "path": "public/omalovanky/en/lv1_gpt_10021_1_en-witch-hat-coloring-page-sample.png",
+      "bytes": 578546,
+      "sha": "add69e7f195a73503c50f7aa7ad660dfa86581b2",
+      "id": 10021,
+      "variant": "sample",
+      "ext": "png",
+      "driveId": "11a_6YjafuNtCYlf6VFPvnry28a5ywEA7",
+      "placement": {
+        "x": 77.85860975522857,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring - Sample"
+        ],
+        "widths": [
+          439.558371040724
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      }
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-2/lv1_gpt_10021_1_en-witch-hat-coloring-page-sample.pdf",
+      "path": "public/omalovanky/en/lv1_gpt_10021_1_en-witch-hat-coloring-page-sample.pdf",
+      "bytes": 526745,
+      "sha": "b4ac6fa8d33d527875690f0c7ee66a0444afbf4e",
+      "id": 10021,
+      "variant": "sample",
+      "ext": "pdf",
+      "driveId": "1BTcmStaYoh80hka6dvi_c7xS-6H_fXDg",
+      "placement": {
+        "x": 77.85860975522857,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring - Sample"
+        ],
+        "widths": [
+          439.558371040724
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      },
+      "driveUrl": "https://drive.google.com/file/d/1BTcmStaYoh80hka6dvi_c7xS-6H_fXDg/view?usp=drivesdk"
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-2/lv1_gpt_10021_1_en-witch-hat-coloring-page-sample.webp",
+      "path": "public/omalovanky/en/lv1_gpt_10021_1_en-witch-hat-coloring-page-sample.webp",
+      "bytes": 108474,
+      "sha": "4ca9c7cf285e965ef4be6234b85e7238793a16df",
+      "id": 10021,
+      "variant": "sample",
+      "ext": "webp",
+      "driveId": null,
+      "placement": {
+        "x": 77.85860975522857,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring - Sample"
+        ],
+        "widths": [
+          439.558371040724
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      }
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-2/lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-coloring-page-coloring.png",
+      "path": "public/omalovanky/en/lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-coloring-page-coloring.png",
+      "bytes": 99901,
+      "sha": "7528f64603962b7cffb8d35c2afd5e8224eb3098",
+      "id": 10186,
+      "variant": "coloring",
+      "ext": "png",
+      "driveId": "1JHF9dboylq2VqhkY0-zF-ADEHYIzMj6k",
+      "placement": {
+        "x": 157.23779527559057,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring"
+        ],
+        "widths": [
+          280.8
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      }
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-2/lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-coloring-page-coloring.pdf",
+      "path": "public/omalovanky/en/lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-coloring-page-coloring.pdf",
+      "bytes": 121647,
+      "sha": "dbfc15545ee4e2e08ce02dc1c5bd126b5d0ead4b",
+      "id": 10186,
+      "variant": "coloring",
+      "ext": "pdf",
+      "driveId": "1CeU8AvD_4E-VMdfFKQfMKPIs2NmElpCy",
+      "placement": {
+        "x": 157.23779527559057,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring"
+        ],
+        "widths": [
+          280.8
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      },
+      "driveUrl": "https://drive.google.com/file/d/1CeU8AvD_4E-VMdfFKQfMKPIs2NmElpCy/view?usp=drivesdk"
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-2/lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-coloring-page-coloring.webp",
+      "path": "public/omalovanky/en/lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-coloring-page-coloring.webp",
+      "bytes": 85678,
+      "sha": "bb8ac6a6fee367e256f6c41c04b32fb47e2970f0",
+      "id": 10186,
+      "variant": "coloring",
+      "ext": "webp",
+      "driveId": null,
+      "placement": {
+        "x": 157.23779527559057,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring"
+        ],
+        "widths": [
+          280.8
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      }
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-2/lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-coloring-page-sample.png",
+      "path": "public/omalovanky/en/lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-coloring-page-sample.png",
+      "bytes": 944965,
+      "sha": "4b5c190d6b4ff4977c5a8aa9306aba4cc4a754e5",
+      "id": 10186,
+      "variant": "sample",
+      "ext": "png",
+      "driveId": "1kqjWtcCDkxJZE0cTzLCh8dTDXJegWgrL",
+      "placement": {
+        "x": 77.85860975522857,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring - Sample"
+        ],
+        "widths": [
+          439.558371040724
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      }
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-2/lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-coloring-page-sample.pdf",
+      "path": "public/omalovanky/en/lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-coloring-page-sample.pdf",
+      "bytes": 732653,
+      "sha": "851b9ecd6649bb5a938bc432d8a4d23384e44753",
+      "id": 10186,
+      "variant": "sample",
+      "ext": "pdf",
+      "driveId": "1-Jju2atiIWoIcTImPDbl5_RlfdEeLojK",
+      "placement": {
+        "x": 77.85860975522857,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring - Sample"
+        ],
+        "widths": [
+          439.558371040724
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      },
+      "driveUrl": "https://drive.google.com/file/d/1-Jju2atiIWoIcTImPDbl5_RlfdEeLojK/view?usp=drivesdk"
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-2/lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-coloring-page-sample.webp",
+      "path": "public/omalovanky/en/lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-coloring-page-sample.webp",
+      "bytes": 204150,
+      "sha": "32047e92501fe21cfa3f2fb5507fa1c7f1dc595d",
+      "id": 10186,
+      "variant": "sample",
+      "ext": "webp",
+      "driveId": null,
+      "placement": {
+        "x": 77.85860975522857,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring - Sample"
+        ],
+        "widths": [
+          439.558371040724
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      }
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-2/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-coloring.png",
+      "path": "public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-coloring.png",
+      "bytes": 1788706,
+      "sha": "72527fb91ab8dafea559e224dde56e1c37c0431e",
+      "id": 10187,
+      "variant": "coloring",
+      "ext": "png",
+      "driveId": "1sd-c4MbWbagYxZmbiiF-Tls5IVI1dzqk",
+      "placement": {
+        "x": 157.23779527559057,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring"
+        ],
+        "widths": [
+          280.8
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      }
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-2/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-coloring.pdf",
+      "path": "public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-coloring.pdf",
+      "bytes": 1648525,
+      "sha": "676510f81c8b9847e5da3a24056dc9d0596fd546",
+      "id": 10187,
+      "variant": "coloring",
+      "ext": "pdf",
+      "driveId": "1QPbmxm7jkkbFMIRG6EsBsjrekKqfsx61",
+      "placement": {
+        "x": 157.23779527559057,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring"
+        ],
+        "widths": [
+          280.8
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      },
+      "driveUrl": "https://drive.google.com/file/d/1QPbmxm7jkkbFMIRG6EsBsjrekKqfsx61/view?usp=drivesdk"
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-2/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-coloring.webp",
+      "path": "public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-coloring.webp",
+      "bytes": 237966,
+      "sha": "970a464c75e14fe2443d76ff0f4aed878ba75806",
+      "id": 10187,
+      "variant": "coloring",
+      "ext": "webp",
+      "driveId": null,
+      "placement": {
+        "x": 157.23779527559057,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring"
+        ],
+        "widths": [
+          280.8
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      }
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-2/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-sample.png",
+      "path": "public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-sample.png",
+      "bytes": 1018080,
+      "sha": "60e129023730ff27114c1af870c88b4c9b0a96de",
+      "id": 10187,
+      "variant": "sample",
+      "ext": "png",
+      "driveId": "1Ss-DuNgLRdyTBll4gaKWA-DN0sdrcWkL",
+      "placement": {
+        "x": 77.85860975522857,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring - Sample"
+        ],
+        "widths": [
+          439.558371040724
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      }
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-2/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-sample.pdf",
+      "path": "public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-sample.pdf",
+      "bytes": 717601,
+      "sha": "cb2571f47db8e94a3856afa7cddd94fdf2245849",
+      "id": 10187,
+      "variant": "sample",
+      "ext": "pdf",
+      "driveId": "1uWFZ6OV2lIKvYTV40VKXqOwdYdJf3JnD",
+      "placement": {
+        "x": 77.85860975522857,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring - Sample"
+        ],
+        "widths": [
+          439.558371040724
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      },
+      "driveUrl": "https://drive.google.com/file/d/1uWFZ6OV2lIKvYTV40VKXqOwdYdJf3JnD/view?usp=drivesdk"
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-2/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-sample.webp",
+      "path": "public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-sample.webp",
+      "bytes": 267188,
+      "sha": "f114490a2dc11a956b1eceb9112d8a9178cc5f28",
+      "id": 10187,
+      "variant": "sample",
+      "ext": "webp",
+      "driveId": null,
+      "placement": {
+        "x": 77.85860975522857,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring - Sample"
+        ],
+        "widths": [
+          439.558371040724
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      }
+    }
+  ],
+  "skipped": [],
+  "state": "prepared"
+}
