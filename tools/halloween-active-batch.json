@@ -1,39 +1,20 @@
 {
-  "batch": 4,
+  "batch": 5,
   "items": [
     {
-      "originalBase": "lv2_gpt_H1010_1_en-bat-flying-over-fence-with-pumpkin-coloring-page",
-      "coloring": {
-        "url": "https://drive.google.com/file/d/18zurwtBWVDcBZPMECFaojcyZmawnO_xw/view?usp=drivesdk",
-        "title": "lv2_gpt_H1010_1_en-bat-flying-over-fence-with-pumpkin-coloring-page-coloring.png",
-        "id": "18zurwtBWVDcBZPMECFaojcyZmawnO_xw",
-        "mime_type": "image/png",
-        "size": "49832",
-        "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:13.398Z",
-        "updated_at": "2026-09-30T10:20:19.440Z",
-        "viewedByMeTime": "2026-10-02T11:20:13.398Z",
-        "display_title": "lv2_gpt_H1010_1_en-bat-flying-over-fence-with-pumpkin-coloring-page-coloring.png",
-        "display_url": "https://drive.google.com/file/d/18zurwtBWVDcBZPMECFaojcyZmawnO_xw/view?usp=drivesdk",
-        "parent_ids": [
-          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
-        ],
-        "shared": false,
-        "can_download": true,
-        "can_list_children": false
-      },
+      "originalBase": "lv3_gpt_H1011_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page",
       "sample": {
-        "url": "https://drive.google.com/file/d/1zbUUbvwnuUk9Wl3bY2xvfk9ku9NSGnn8/view?usp=drivesdk",
-        "title": "lv2_gpt_H1010_1_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample.png",
-        "id": "1zbUUbvwnuUk9Wl3bY2xvfk9ku9NSGnn8",
+        "url": "https://drive.google.com/file/d/1UjQ4b5TxCgb0Pd7zzesMAEJOz_LrSw6c/view?usp=drivesdk",
+        "title": "lv3_gpt_H1011_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-sample.png",
+        "id": "1UjQ4b5TxCgb0Pd7zzesMAEJOz_LrSw6c",
         "mime_type": "image/png",
-        "size": "486133",
+        "size": "2395041",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:15.281Z",
-        "updated_at": "2026-09-30T09:29:58.194Z",
-        "viewedByMeTime": "2026-10-02T11:20:15.281Z",
-        "display_title": "lv2_gpt_H1010_1_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample.png",
-        "display_url": "https://drive.google.com/file/d/1zbUUbvwnuUk9Wl3bY2xvfk9ku9NSGnn8/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:22:09.993Z",
+        "updated_at": "2026-09-30T11:01:18.757Z",
+        "viewedByMeTime": "2026-10-02T11:22:09.993Z",
+        "display_title": "lv3_gpt_H1011_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/1UjQ4b5TxCgb0Pd7zzesMAEJOz_LrSw6c/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -41,165 +22,18 @@
         "can_download": true,
         "can_list_children": false
       },
-      "names": [
-        "Netopýr nad plotem s dýní",
-        "Bat Flying over a Fence with a Pumpkin",
-        "Fledermaus über einem Zaun mit Kürbis",
-        "Murciélago sobre una valla con calabaza"
-      ],
-      "id": 10191,
-      "masterRow": 1362,
-      "existingMaster": false,
-      "sheetRow": 25,
-      "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/1ff9cf8c-d32e-4cb6-b9d9-6f41a719105f/lv2_gpt_H1010_1_en-bat-flying-over-fence-with-pumpkin-coloring-page-coloring.png",
-      "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/8f1fe3c9-1a64-406a-9131-cccd60a3e956/lv2_gpt_H1010_1_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample.png",
-      "base": "lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-coloring-page",
-      "row": {
-        "ID": "10191",
-        "soubor": "lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-coloring-page",
-        "kategorie": "svatky",
-        "podkategorie": "halloween",
-        "datumPridani": "2026-10-02",
-        "sezona": "podzim,halloween",
-        "zamereni": "jemna-motorika",
-        "assetDirectory": "en",
-        "pdf": "1",
-        "nazevCz": "Netopýr nad plotem s dýní",
-        "altCz_coloring": "Netopýr nad plotem s dýní: černobílá omalovánka LV2 pro děti 5–6 let, zdarma k vytisknutí na A4.",
-        "altCz_sample": "Netopýr nad plotem s dýní: barevný vzor k omalovánce LV2.",
-        "nazevEn": "Bat Flying over a Fence with a Pumpkin",
-        "altEn_coloring": "Bat Flying over a Fence with a Pumpkin: black-and-white LV2 coloring page for ages 5–6, free to print on A4 paper.",
-        "altEn_sample": "Bat Flying over a Fence with a Pumpkin: color sample for the LV2 coloring page.",
-        "nazevDe": "Fledermaus über einem Zaun mit Kürbis",
-        "altDe_coloring": "Fledermaus über einem Zaun mit Kürbis: schwarz-weißes Ausmalbild der Stufe 2 für Kinder von 5–6 Jahren, kostenlos auf A4 drucken.",
-        "altDe_sample": "Fledermaus über einem Zaun mit Kürbis: Farbvorlage zum Ausmalbild der Stufe 2.",
-        "nazevEs": "Murciélago sobre una valla con calabaza",
-        "altEs_coloring": "Murciélago sobre una valla con calabaza: dibujo en blanco y negro de nivel 2 para niños de 5–6 años, gratis para imprimir en A4.",
-        "altEs_sample": "Murciélago sobre una valla con calabaza: modelo a color para el dibujo de nivel 2.",
-        "Status": "vygenerováno",
-        "driveColoring": "https://drive.google.com/file/d/1qyc1W96OdSaX3wg173S51mJuRJr0JSG5/view",
-        "drivePdfColoring": "https://drive.google.com/file/d/1dTIKYmYk-N9HjdgeVcPDbc3vIdSyrURE/view",
-        "driveSample": "https://drive.google.com/file/d/1OsRcqep6p9tly68mI8p16vTqUkSWZMVP/view",
-        "drivePdfSample": "https://drive.google.com/file/d/1eavf2td0yWa0kgXdANiQ-2K38sa0tQUx/view"
-      },
-      "level": 2
-    },
-    {
-      "originalBase": "lv2_gpt_H1010_2_en-bat-flying-over-fence-with-pumpkin-coloring-page",
       "coloring": {
-        "url": "https://drive.google.com/file/d/1V3_YyoyfvsCrJfUWHN-h2B4gqjpWDx-R/view?usp=drivesdk",
-        "title": "lv2_gpt_H1010_2_en-bat-flying-over-fence-with-pumpkin-coloring-page-coloring.png",
-        "id": "1V3_YyoyfvsCrJfUWHN-h2B4gqjpWDx-R",
+        "url": "https://drive.google.com/file/d/19xlIGHVq4ADqrtZiEMgmyfM3gTi_1ZqU/view?usp=drivesdk",
+        "title": "lv3_gpt_H1011_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-coloring.png",
+        "id": "19xlIGHVq4ADqrtZiEMgmyfM3gTi_1ZqU",
         "mime_type": "image/png",
-        "size": "861152",
+        "size": "6475102",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:14.118Z",
-        "updated_at": "2026-09-30T10:22:09.166Z",
-        "viewedByMeTime": "2026-10-02T11:20:14.118Z",
-        "display_title": "lv2_gpt_H1010_2_en-bat-flying-over-fence-with-pumpkin-coloring-page-coloring.png",
-        "display_url": "https://drive.google.com/file/d/1V3_YyoyfvsCrJfUWHN-h2B4gqjpWDx-R/view?usp=drivesdk",
-        "parent_ids": [
-          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
-        ],
-        "shared": false,
-        "can_download": true,
-        "can_list_children": false
-      },
-      "sample": {
-        "url": "https://drive.google.com/file/d/1z0VlY6p6Wrsvw2J_8pbi0_TWczOQjKjZ/view?usp=drivesdk",
-        "title": "lv2_gpt_H1010_2_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample.png",
-        "id": "1z0VlY6p6Wrsvw2J_8pbi0_TWczOQjKjZ",
-        "mime_type": "image/png",
-        "size": "327560",
-        "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:14.367Z",
-        "updated_at": "2026-09-30T09:29:58.490Z",
-        "viewedByMeTime": "2026-10-02T11:20:14.367Z",
-        "display_title": "lv2_gpt_H1010_2_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample.png",
-        "display_url": "https://drive.google.com/file/d/1z0VlY6p6Wrsvw2J_8pbi0_TWczOQjKjZ/view?usp=drivesdk",
-        "parent_ids": [
-          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
-        ],
-        "shared": false,
-        "can_download": true,
-        "can_list_children": false
-      },
-      "names": [
-        "Netopýr nad plotem s dýní",
-        "Bat Flying over a Fence with a Pumpkin",
-        "Fledermaus über einem Zaun mit Kürbis",
-        "Murciélago sobre una valla con calabaza"
-      ],
-      "id": 10191,
-      "masterRow": 1362,
-      "existingMaster": true,
-      "sheetRow": 26,
-      "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/79671f06-f58b-4e21-8aa2-2c34869bdab1/lv2_gpt_H1010_2_en-bat-flying-over-fence-with-pumpkin-coloring-page-coloring.png",
-      "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/66c95619-0819-4f62-9b16-f3b8aff57fe2/lv2_gpt_H1010_2_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample.png",
-      "base": "lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-coloring-page",
-      "row": {
-        "ID": "10191",
-        "soubor": "lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-coloring-page",
-        "kategorie": "svatky",
-        "podkategorie": "halloween",
-        "datumPridani": "2026-10-02",
-        "sezona": "podzim,halloween",
-        "zamereni": "jemna-motorika",
-        "assetDirectory": "en",
-        "pdf": "1",
-        "nazevCz": "Netopýr nad plotem s dýní",
-        "altCz_coloring": "Netopýr nad plotem s dýní: černobílá omalovánka LV2 pro děti 5–6 let, zdarma k vytisknutí na A4.",
-        "altCz_sample": "Netopýr nad plotem s dýní: barevný vzor k omalovánce LV2.",
-        "nazevEn": "Bat Flying over a Fence with a Pumpkin",
-        "altEn_coloring": "Bat Flying over a Fence with a Pumpkin: black-and-white LV2 coloring page for ages 5–6, free to print on A4 paper.",
-        "altEn_sample": "Bat Flying over a Fence with a Pumpkin: color sample for the LV2 coloring page.",
-        "nazevDe": "Fledermaus über einem Zaun mit Kürbis",
-        "altDe_coloring": "Fledermaus über einem Zaun mit Kürbis: schwarz-weißes Ausmalbild der Stufe 2 für Kinder von 5–6 Jahren, kostenlos auf A4 drucken.",
-        "altDe_sample": "Fledermaus über einem Zaun mit Kürbis: Farbvorlage zum Ausmalbild der Stufe 2.",
-        "nazevEs": "Murciélago sobre una valla con calabaza",
-        "altEs_coloring": "Murciélago sobre una valla con calabaza: dibujo en blanco y negro de nivel 2 para niños de 5–6 años, gratis para imprimir en A4.",
-        "altEs_sample": "Murciélago sobre una valla con calabaza: modelo a color para el dibujo de nivel 2.",
-        "Status": "vygenerováno",
-        "driveColoring": "https://drive.google.com/file/d/1hSUyCGjXKxnMUM-IsscCws8r3fKANYaA/view",
-        "drivePdfColoring": "https://drive.google.com/file/d/1E09LYK4aEfY3Ue9HzFT0e6nirqFLh6-P/view",
-        "driveSample": "https://drive.google.com/file/d/1btcxbQL6CywPX-cdxxRKpgnmHuyYsuG3/view",
-        "drivePdfSample": "https://drive.google.com/file/d/1ymomPb94Gy6tpHc8s1DzHgvOeHFKK2ag/view"
-      },
-      "level": 2
-    },
-    {
-      "originalBase": "lv2_gpt_H1011_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page",
-      "coloring": {
-        "url": "https://drive.google.com/file/d/1sR-lqLs8atwwTAZnk5Xi5qG4rUaqvJNq/view?usp=drivesdk",
-        "title": "lv2_gpt_H1011_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-coloring.png",
-        "id": "1sR-lqLs8atwwTAZnk5Xi5qG4rUaqvJNq",
-        "mime_type": "image/png",
-        "size": "73587",
-        "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:13.786Z",
-        "updated_at": "2026-09-30T11:06:48.191Z",
-        "viewedByMeTime": "2026-10-02T11:20:13.786Z",
-        "display_title": "lv2_gpt_H1011_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-coloring.png",
-        "display_url": "https://drive.google.com/file/d/1sR-lqLs8atwwTAZnk5Xi5qG4rUaqvJNq/view?usp=drivesdk",
-        "parent_ids": [
-          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
-        ],
-        "shared": false,
-        "can_download": true,
-        "can_list_children": false
-      },
-      "sample": {
-        "url": "https://drive.google.com/file/d/1lw0L1_uvd3BfCFlTuc6b5Mppb2Sf1dhg/view?usp=drivesdk",
-        "title": "lv2_gpt_H1011_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-sample.png",
-        "id": "1lw0L1_uvd3BfCFlTuc6b5Mppb2Sf1dhg",
-        "mime_type": "image/png",
-        "size": "573761",
-        "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:17.112Z",
-        "updated_at": "2026-09-30T09:29:58.587Z",
-        "viewedByMeTime": "2026-10-02T11:20:17.112Z",
-        "display_title": "lv2_gpt_H1011_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-sample.png",
-        "display_url": "https://drive.google.com/file/d/1lw0L1_uvd3BfCFlTuc6b5Mppb2Sf1dhg/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:22:58.582Z",
+        "updated_at": "2026-09-30T09:29:58.562Z",
+        "viewedByMeTime": "2026-10-02T11:22:58.582Z",
+        "display_title": "lv3_gpt_H1011_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/19xlIGHVq4ADqrtZiEMgmyfM3gTi_1ZqU/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -215,14 +49,14 @@
       ],
       "id": 10192,
       "masterRow": 1363,
-      "existingMaster": false,
-      "sheetRow": 27,
-      "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/d6119375-7b94-4c8e-8209-1408c29a489b/lv2_gpt_H1011_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-coloring.png",
-      "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/22f176f2-1cb9-4e8b-a429-10310cb9f7d5/lv2_gpt_H1011_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-sample.png",
-      "base": "lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page",
+      "existingMaster": true,
+      "sheetRow": 28,
+      "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/d9dd782e-edf2-4ced-857c-95ed4e338899/lv3_gpt_H1011_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-coloring.png",
+      "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/d7b6f4cf-0db2-49d5-9b83-a9aab458a859/lv3_gpt_H1011_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-sample.png",
+      "base": "lv3_gpt_10192_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page",
       "row": {
         "ID": "10192",
-        "soubor": "lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page",
+        "soubor": "lv3_gpt_10192_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page",
         "kategorie": "svatky",
         "podkategorie": "halloween",
         "datumPridani": "2026-10-02",
@@ -231,59 +65,376 @@
         "assetDirectory": "en",
         "pdf": "1",
         "nazevCz": "Halloweenský dům s dýněmi a netopýry",
-        "altCz_coloring": "Halloweenský dům s dýněmi a netopýry: černobílá omalovánka LV2 pro děti 5–6 let, zdarma k vytisknutí na A4.",
-        "altCz_sample": "Halloweenský dům s dýněmi a netopýry: barevný vzor k omalovánce LV2.",
+        "altCz_coloring": "Halloweenský dům s dýněmi a netopýry: černobílá omalovánka LV3 pro děti 6–7 let, zdarma k vytisknutí na A4.",
+        "altCz_sample": "Halloweenský dům s dýněmi a netopýry: barevný vzor k omalovánce LV3.",
         "nazevEn": "Halloween House with Pumpkins and Bats",
-        "altEn_coloring": "Halloween House with Pumpkins and Bats: black-and-white LV2 coloring page for ages 5–6, free to print on A4 paper.",
-        "altEn_sample": "Halloween House with Pumpkins and Bats: color sample for the LV2 coloring page.",
+        "altEn_coloring": "Halloween House with Pumpkins and Bats: black-and-white LV3 coloring page for ages 6–7, free to print on A4 paper.",
+        "altEn_sample": "Halloween House with Pumpkins and Bats: color sample for the LV3 coloring page.",
         "nazevDe": "Halloween-Haus mit Kürbissen und Fledermäusen",
-        "altDe_coloring": "Halloween-Haus mit Kürbissen und Fledermäusen: schwarz-weißes Ausmalbild der Stufe 2 für Kinder von 5–6 Jahren, kostenlos auf A4 drucken.",
-        "altDe_sample": "Halloween-Haus mit Kürbissen und Fledermäusen: Farbvorlage zum Ausmalbild der Stufe 2.",
+        "altDe_coloring": "Halloween-Haus mit Kürbissen und Fledermäusen: schwarz-weißes Ausmalbild der Stufe 3 für Kinder von 6–7 Jahren, kostenlos auf A4 drucken.",
+        "altDe_sample": "Halloween-Haus mit Kürbissen und Fledermäusen: Farbvorlage zum Ausmalbild der Stufe 3.",
         "nazevEs": "Casa de Halloween con calabazas y murciélagos",
-        "altEs_coloring": "Casa de Halloween con calabazas y murciélagos: dibujo en blanco y negro de nivel 2 para niños de 5–6 años, gratis para imprimir en A4.",
-        "altEs_sample": "Casa de Halloween con calabazas y murciélagos: modelo a color para el dibujo de nivel 2.",
+        "altEs_coloring": "Casa de Halloween con calabazas y murciélagos: dibujo en blanco y negro de nivel 3 para niños de 6–7 años, gratis para imprimir en A4.",
+        "altEs_sample": "Casa de Halloween con calabazas y murciélagos: modelo a color para el dibujo de nivel 3.",
         "Status": "vygenerováno",
-        "driveColoring": "https://drive.google.com/file/d/1HH5EDQqzesEydE5eDHwCwv1VzVokTxiI/view",
-        "drivePdfColoring": "https://drive.google.com/file/d/1WMCqAkYr0eEMuqGI-ZFsS0nR4s_JUN4K/view",
-        "driveSample": "https://drive.google.com/file/d/1TKoj4rIErjbfCnRskovfHutst0lZiMon/view",
-        "drivePdfSample": "https://drive.google.com/file/d/1-f-CZAdClBtpgAxntFo7hIGkzQrDvaC6/view"
+        "driveColoring": "https://drive.google.com/file/d/1l_vF6TnuTeYPt-q4NArTHSoevCyaCVM1/view",
+        "drivePdfColoring": "https://drive.google.com/file/d/1ZRUTxkNj0dBnkqRLVwqhWfHlmgMn97UF/view",
+        "driveSample": "https://drive.google.com/file/d/1Z2gJH0s4-7EBrQKRGCQjxH6gn6CyPC_A/view",
+        "drivePdfSample": "https://drive.google.com/file/d/1GLJZaOSox0DyfeDDW3_-Gy6j_asq70Gk/view"
       },
-      "level": 2
+      "level": 3
+    },
+    {
+      "originalBase": "lv3_gpt_H1012_1_en-witch-flying-over-autumn-village-coloring-page",
+      "sample": {
+        "url": "https://drive.google.com/file/d/1fZqbeqMmg-FLtqy-_wGWgI6vz_oyHCrb/view?usp=drivesdk",
+        "title": "lv3_gpt_H1012_1_en-witch-flying-over-autumn-village-coloring-page-sample.png",
+        "id": "1fZqbeqMmg-FLtqy-_wGWgI6vz_oyHCrb",
+        "mime_type": "image/png",
+        "size": "2524338",
+        "file_or_folder": "file",
+        "created_at": "2026-10-02T11:23:01.325Z",
+        "updated_at": "2026-09-30T11:01:21.565Z",
+        "viewedByMeTime": "2026-10-02T11:23:01.325Z",
+        "display_title": "lv3_gpt_H1012_1_en-witch-flying-over-autumn-village-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/1fZqbeqMmg-FLtqy-_wGWgI6vz_oyHCrb/view?usp=drivesdk",
+        "parent_ids": [
+          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+        ],
+        "shared": false,
+        "can_download": true,
+        "can_list_children": false
+      },
+      "coloring": {
+        "url": "https://drive.google.com/file/d/18qG_J57BzW9-n56hkZlyTrXP0eYlv_JW/view?usp=drivesdk",
+        "title": "lv3_gpt_H1012_1_en-witch-flying-over-autumn-village-coloring-page-coloring.png",
+        "id": "18qG_J57BzW9-n56hkZlyTrXP0eYlv_JW",
+        "mime_type": "image/png",
+        "size": "7494901",
+        "file_or_folder": "file",
+        "created_at": "2026-10-02T11:23:13.856Z",
+        "updated_at": "2026-09-30T09:29:58.719Z",
+        "viewedByMeTime": "2026-10-02T11:23:13.856Z",
+        "display_title": "lv3_gpt_H1012_1_en-witch-flying-over-autumn-village-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/18qG_J57BzW9-n56hkZlyTrXP0eYlv_JW/view?usp=drivesdk",
+        "parent_ids": [
+          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+        ],
+        "shared": false,
+        "can_download": true,
+        "can_list_children": false
+      },
+      "names": [
+        "Čarodějnice nad podzimní vesnicí",
+        "Witch Flying over an Autumn Village",
+        "Hexe über einem Herbstdorf",
+        "Bruja volando sobre un pueblo otoñal"
+      ],
+      "id": 10193,
+      "masterRow": 1364,
+      "existingMaster": false,
+      "sheetRow": 29,
+      "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/de160dd9-c00e-4b84-8740-a4239106aa26/lv3_gpt_H1012_1_en-witch-flying-over-autumn-village-coloring-page-coloring.png",
+      "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/067db7e2-2bdd-4fe1-8ee0-855a97534cd0/lv3_gpt_H1012_1_en-witch-flying-over-autumn-village-coloring-page-sample.png",
+      "base": "lv3_gpt_10193_1_en-witch-flying-over-autumn-village-coloring-page",
+      "row": {
+        "ID": "10193",
+        "soubor": "lv3_gpt_10193_1_en-witch-flying-over-autumn-village-coloring-page",
+        "kategorie": "svatky",
+        "podkategorie": "halloween",
+        "datumPridani": "2026-10-02",
+        "sezona": "podzim,halloween",
+        "zamereni": "jemna-motorika",
+        "assetDirectory": "en",
+        "pdf": "1",
+        "nazevCz": "Čarodějnice nad podzimní vesnicí",
+        "altCz_coloring": "Čarodějnice nad podzimní vesnicí: černobílá omalovánka LV3 pro děti 6–7 let, zdarma k vytisknutí na A4.",
+        "altCz_sample": "Čarodějnice nad podzimní vesnicí: barevný vzor k omalovánce LV3.",
+        "nazevEn": "Witch Flying over an Autumn Village",
+        "altEn_coloring": "Witch Flying over an Autumn Village: black-and-white LV3 coloring page for ages 6–7, free to print on A4 paper.",
+        "altEn_sample": "Witch Flying over an Autumn Village: color sample for the LV3 coloring page.",
+        "nazevDe": "Hexe über einem Herbstdorf",
+        "altDe_coloring": "Hexe über einem Herbstdorf: schwarz-weißes Ausmalbild der Stufe 3 für Kinder von 6–7 Jahren, kostenlos auf A4 drucken.",
+        "altDe_sample": "Hexe über einem Herbstdorf: Farbvorlage zum Ausmalbild der Stufe 3.",
+        "nazevEs": "Bruja volando sobre un pueblo otoñal",
+        "altEs_coloring": "Bruja volando sobre un pueblo otoñal: dibujo en blanco y negro de nivel 3 para niños de 6–7 años, gratis para imprimir en A4.",
+        "altEs_sample": "Bruja volando sobre un pueblo otoñal: modelo a color para el dibujo de nivel 3.",
+        "Status": "vygenerováno",
+        "driveColoring": "https://drive.google.com/file/d/1ffyY-ne2el0eaweU7dgqCH-z7p_hTlwJ/view",
+        "drivePdfColoring": "https://drive.google.com/file/d/1s1XPUeWX4xNYx9Ugru7Mf1P_RwsrqXIe/view",
+        "driveSample": "https://drive.google.com/file/d/1FSrItv5cyZmtFcMnIdre14wCkt9-r-np/view",
+        "drivePdfSample": "https://drive.google.com/file/d/1v04uErsDPOzR4bxKzhR9d5iTojqHC2W8/view"
+      },
+      "level": 3
+    },
+    {
+      "originalBase": "lv3_gpt_H1012_2_en-witch-flying-over-autumn-village-coloring-page",
+      "coloring": {
+        "url": "https://drive.google.com/file/d/1hVgd5znjYS4fd9wG8_6-1X5Jvv4Pf9Ki/view?usp=drivesdk",
+        "title": "lv3_gpt_H1012_2_en-witch-flying-over-autumn-village-coloring-page-coloring.png",
+        "id": "1hVgd5znjYS4fd9wG8_6-1X5Jvv4Pf9Ki",
+        "mime_type": "image/png",
+        "size": "100401",
+        "file_or_folder": "file",
+        "created_at": "2026-10-02T11:20:14.896Z",
+        "updated_at": "2026-09-30T11:06:50.428Z",
+        "viewedByMeTime": "2026-10-02T11:20:14.896Z",
+        "display_title": "lv3_gpt_H1012_2_en-witch-flying-over-autumn-village-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/1hVgd5znjYS4fd9wG8_6-1X5Jvv4Pf9Ki/view?usp=drivesdk",
+        "parent_ids": [
+          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+        ],
+        "shared": false,
+        "can_download": true,
+        "can_list_children": false
+      },
+      "sample": {
+        "url": "https://drive.google.com/file/d/1q8CfTdLPL9rLUGJcL2sKmItYM2fHzjtv/view?usp=drivesdk",
+        "title": "lv3_gpt_H1012_2_en-witch-flying-over-autumn-village-coloring-page-sample.png",
+        "id": "1q8CfTdLPL9rLUGJcL2sKmItYM2fHzjtv",
+        "mime_type": "image/png",
+        "size": "823204",
+        "file_or_folder": "file",
+        "created_at": "2026-10-02T11:20:21.912Z",
+        "updated_at": "2026-09-30T09:29:58.773Z",
+        "viewedByMeTime": "2026-10-02T11:20:21.912Z",
+        "display_title": "lv3_gpt_H1012_2_en-witch-flying-over-autumn-village-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/1q8CfTdLPL9rLUGJcL2sKmItYM2fHzjtv/view?usp=drivesdk",
+        "parent_ids": [
+          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+        ],
+        "shared": false,
+        "can_download": true,
+        "can_list_children": false
+      },
+      "names": [
+        "Čarodějnice nad podzimní vesnicí",
+        "Witch Flying over an Autumn Village",
+        "Hexe über einem Herbstdorf",
+        "Bruja volando sobre un pueblo otoñal"
+      ],
+      "id": 10193,
+      "masterRow": 1364,
+      "existingMaster": true,
+      "sheetRow": 30,
+      "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/962fb4fe-e45e-49dd-9840-bcfbcb52b44f/lv3_gpt_H1012_2_en-witch-flying-over-autumn-village-coloring-page-coloring.png",
+      "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/233cc60f-6488-4370-9ffa-3d12698f2041/lv3_gpt_H1012_2_en-witch-flying-over-autumn-village-coloring-page-sample.png",
+      "base": "lv3_gpt_10193_2_en-witch-flying-over-autumn-village-coloring-page",
+      "row": {
+        "ID": "10193",
+        "soubor": "lv3_gpt_10193_2_en-witch-flying-over-autumn-village-coloring-page",
+        "kategorie": "svatky",
+        "podkategorie": "halloween",
+        "datumPridani": "2026-10-02",
+        "sezona": "podzim,halloween",
+        "zamereni": "jemna-motorika",
+        "assetDirectory": "en",
+        "pdf": "1",
+        "nazevCz": "Čarodějnice nad podzimní vesnicí",
+        "altCz_coloring": "Čarodějnice nad podzimní vesnicí: černobílá omalovánka LV3 pro děti 6–7 let, zdarma k vytisknutí na A4.",
+        "altCz_sample": "Čarodějnice nad podzimní vesnicí: barevný vzor k omalovánce LV3.",
+        "nazevEn": "Witch Flying over an Autumn Village",
+        "altEn_coloring": "Witch Flying over an Autumn Village: black-and-white LV3 coloring page for ages 6–7, free to print on A4 paper.",
+        "altEn_sample": "Witch Flying over an Autumn Village: color sample for the LV3 coloring page.",
+        "nazevDe": "Hexe über einem Herbstdorf",
+        "altDe_coloring": "Hexe über einem Herbstdorf: schwarz-weißes Ausmalbild der Stufe 3 für Kinder von 6–7 Jahren, kostenlos auf A4 drucken.",
+        "altDe_sample": "Hexe über einem Herbstdorf: Farbvorlage zum Ausmalbild der Stufe 3.",
+        "nazevEs": "Bruja volando sobre un pueblo otoñal",
+        "altEs_coloring": "Bruja volando sobre un pueblo otoñal: dibujo en blanco y negro de nivel 3 para niños de 6–7 años, gratis para imprimir en A4.",
+        "altEs_sample": "Bruja volando sobre un pueblo otoñal: modelo a color para el dibujo de nivel 3.",
+        "Status": "vygenerováno",
+        "driveColoring": "https://drive.google.com/file/d/1E2SkP7Og-tZOBNuNF7xtlX7-xy4kpJ_R/view",
+        "drivePdfColoring": "https://drive.google.com/file/d/1Pi9MG3optBhyizK-1Wv3WCg_BxGrIiUU/view",
+        "driveSample": "https://drive.google.com/file/d/1yS6XZvpsMooYIL2HqiLVJLdiXcRSJ6RK/view",
+        "drivePdfSample": "https://drive.google.com/file/d/1N43uzeLgXVZOwnjTuiZQ97P7kSMdErhB/view"
+      },
+      "level": 3
     }
   ],
   "files": [
     {
-      "file": "/tmp/vinmat-halloween-batch-4/lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-coloring-page-coloring.png",
-      "path": "public/omalovanky/en/lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-coloring-page-coloring.png",
-      "bytes": 109627,
-      "sha": "924ba3b207b55fa9139e136b5c9aa5d69619b78e",
-      "id": 10191,
+      "file": "/tmp/vinmat-halloween-batch-5/lv3_gpt_10192_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-coloring.png",
+      "path": "public/omalovanky/en/lv3_gpt_10192_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-coloring.png",
+      "bytes": 6250448,
+      "sha": "2432bfb41dcc59324bd574257b8d6555acb2c8f9",
+      "id": 10192,
       "variant": "coloring",
       "ext": "png",
-      "driveId": "1qyc1W96OdSaX3wg173S51mJuRJr0JSG5",
-      "placement": {
-        "x": 157.23779527559057,
-        "top": 14.173228346456694,
-        "size": 36,
-        "lines": [
-          "VinMat Coloring"
-        ],
-        "widths": [
-          280.8
-        ],
-        "height": 43.61538461538462,
-        "alignment": "center"
-      }
+      "driveId": "1l_vF6TnuTeYPt-q4NArTHSoevCyaCVM1",
+      "placement": null
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-4/lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-coloring-page-coloring.pdf",
-      "path": "public/omalovanky/en/lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-coloring-page-coloring.pdf",
-      "bytes": 131716,
-      "sha": "3bda6fdcb42e99163e8829583e342bcb14af571f",
-      "id": 10191,
+      "file": "/tmp/vinmat-halloween-batch-5/lv3_gpt_10192_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-coloring.pdf",
+      "path": "public/omalovanky/en/lv3_gpt_10192_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-coloring.pdf",
+      "bytes": 9653389,
+      "sha": "592b5d0f8954ef2d3f2af37ae6c2e2007b362b53",
+      "id": 10192,
       "variant": "coloring",
       "ext": "pdf",
-      "driveId": "1dTIKYmYk-N9HjdgeVcPDbc3vIdSyrURE",
+      "driveId": "1ZRUTxkNj0dBnkqRLVwqhWfHlmgMn97UF",
+      "placement": null
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-5/lv3_gpt_10192_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-coloring.webp",
+      "path": "public/omalovanky/en/lv3_gpt_10192_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-coloring.webp",
+      "bytes": 747410,
+      "sha": "a87b0319ce83b01b427318181c1bd173d8486c73",
+      "id": 10192,
+      "variant": "coloring",
+      "ext": "webp",
+      "driveId": null,
+      "placement": null
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-5/lv3_gpt_10192_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-sample.png",
+      "path": "public/omalovanky/en/lv3_gpt_10192_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-sample.png",
+      "bytes": 2207806,
+      "sha": "1ede95804a851ca7c703ece7ef0f3e252d24fc5b",
+      "id": 10192,
+      "variant": "sample",
+      "ext": "png",
+      "driveId": "1Z2gJH0s4-7EBrQKRGCQjxH6gn6CyPC_A",
+      "placement": null
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-5/lv3_gpt_10192_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-sample.pdf",
+      "path": "public/omalovanky/en/lv3_gpt_10192_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-sample.pdf",
+      "bytes": 4391784,
+      "sha": "5e0d370fb29583401b7f10a74517bf367832a7fa",
+      "id": 10192,
+      "variant": "sample",
+      "ext": "pdf",
+      "driveId": "1GLJZaOSox0DyfeDDW3_-Gy6j_asq70Gk",
+      "placement": null
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-5/lv3_gpt_10192_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-sample.webp",
+      "path": "public/omalovanky/en/lv3_gpt_10192_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-sample.webp",
+      "bytes": 418018,
+      "sha": "97f141596cb2b8d0e7300d68ac240840d3906238",
+      "id": 10192,
+      "variant": "sample",
+      "ext": "webp",
+      "driveId": null,
+      "placement": null
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-5/lv3_gpt_10193_1_en-witch-flying-over-autumn-village-coloring-page-coloring.png",
+      "path": "public/omalovanky/en/lv3_gpt_10193_1_en-witch-flying-over-autumn-village-coloring-page-coloring.png",
+      "bytes": 7294900,
+      "sha": "95be64d3662ad4834d1d38e0d281d9bf7dc2c18f",
+      "id": 10193,
+      "variant": "coloring",
+      "ext": "png",
+      "driveId": "1ffyY-ne2el0eaweU7dgqCH-z7p_hTlwJ",
+      "placement": {
+        "x": 22.67716535433071,
+        "top": 14.173228346456694,
+        "size": 30,
+        "lines": [
+          "VinMat",
+          "Coloring"
+        ],
+        "widths": [
+          109.15384615384616,
+          120.46153846153847
+        ],
+        "height": 75.34615384615384,
+        "alignment": "left"
+      }
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-5/lv3_gpt_10193_1_en-witch-flying-over-autumn-village-coloring-page-coloring.pdf",
+      "path": "public/omalovanky/en/lv3_gpt_10193_1_en-witch-flying-over-autumn-village-coloring-page-coloring.pdf",
+      "bytes": 10896201,
+      "sha": "587ff38ad1ad419438308c137da3ee47ad3f1228",
+      "id": 10193,
+      "variant": "coloring",
+      "ext": "pdf",
+      "driveId": "1s1XPUeWX4xNYx9Ugru7Mf1P_RwsrqXIe",
+      "placement": {
+        "x": 22.67716535433071,
+        "top": 14.173228346456694,
+        "size": 30,
+        "lines": [
+          "VinMat",
+          "Coloring"
+        ],
+        "widths": [
+          109.15384615384616,
+          120.46153846153847
+        ],
+        "height": 75.34615384615384,
+        "alignment": "left"
+      }
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-5/lv3_gpt_10193_1_en-witch-flying-over-autumn-village-coloring-page-coloring.webp",
+      "path": "public/omalovanky/en/lv3_gpt_10193_1_en-witch-flying-over-autumn-village-coloring-page-coloring.webp",
+      "bytes": 947972,
+      "sha": "9e328e4c5a7cd74ea0757a3fb3cc3512b731a1ee",
+      "id": 10193,
+      "variant": "coloring",
+      "ext": "webp",
+      "driveId": null,
+      "placement": {
+        "x": 22.67716535433071,
+        "top": 14.173228346456694,
+        "size": 30,
+        "lines": [
+          "VinMat",
+          "Coloring"
+        ],
+        "widths": [
+          109.15384615384616,
+          120.46153846153847
+        ],
+        "height": 75.34615384615384,
+        "alignment": "left"
+      }
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-5/lv3_gpt_10193_1_en-witch-flying-over-autumn-village-coloring-page-sample.png",
+      "path": "public/omalovanky/en/lv3_gpt_10193_1_en-witch-flying-over-autumn-village-coloring-page-sample.png",
+      "bytes": 2325155,
+      "sha": "a86a273440d96df572e9097f92d9f05f78e7f05a",
+      "id": 10193,
+      "variant": "sample",
+      "ext": "png",
+      "driveId": "1FSrItv5cyZmtFcMnIdre14wCkt9-r-np",
+      "placement": null
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-5/lv3_gpt_10193_1_en-witch-flying-over-autumn-village-coloring-page-sample.pdf",
+      "path": "public/omalovanky/en/lv3_gpt_10193_1_en-witch-flying-over-autumn-village-coloring-page-sample.pdf",
+      "bytes": 4515523,
+      "sha": "165692ffaa738acad071e9df0ffc5bffaf6aadc0",
+      "id": 10193,
+      "variant": "sample",
+      "ext": "pdf",
+      "driveId": "1v04uErsDPOzR4bxKzhR9d5iTojqHC2W8",
+      "placement": null
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-5/lv3_gpt_10193_1_en-witch-flying-over-autumn-village-coloring-page-sample.webp",
+      "path": "public/omalovanky/en/lv3_gpt_10193_1_en-witch-flying-over-autumn-village-coloring-page-sample.webp",
+      "bytes": 440052,
+      "sha": "4304cbd822627655e2069ad8d05c36bd40cd0473",
+      "id": 10193,
+      "variant": "sample",
+      "ext": "webp",
+      "driveId": null,
+      "placement": null
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-5/lv3_gpt_10193_2_en-witch-flying-over-autumn-village-coloring-page-coloring.png",
+      "path": "public/omalovanky/en/lv3_gpt_10193_2_en-witch-flying-over-autumn-village-coloring-page-coloring.png",
+      "bytes": 286781,
+      "sha": "b0158fdbfb6e28149c322ccba58c8e203674260c",
+      "id": 10193,
+      "variant": "coloring",
+      "ext": "png",
+      "driveId": "1E2SkP7Og-tZOBNuNF7xtlX7-xy4kpJ_R",
       "placement": {
         "x": 157.23779527559057,
         "top": 14.173228346456694,
@@ -299,11 +450,34 @@
       }
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-4/lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-coloring-page-coloring.webp",
-      "path": "public/omalovanky/en/lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-coloring-page-coloring.webp",
-      "bytes": 109408,
-      "sha": "5a4dd0632e1b9c36a4ce566c4d184587b4a9736a",
-      "id": 10191,
+      "file": "/tmp/vinmat-halloween-batch-5/lv3_gpt_10193_2_en-witch-flying-over-autumn-village-coloring-page-coloring.pdf",
+      "path": "public/omalovanky/en/lv3_gpt_10193_2_en-witch-flying-over-autumn-village-coloring-page-coloring.pdf",
+      "bytes": 203767,
+      "sha": "fb29808649fc1e84bde1f885adeee8a9e1858c0d",
+      "id": 10193,
+      "variant": "coloring",
+      "ext": "pdf",
+      "driveId": "1Pi9MG3optBhyizK-1Wv3WCg_BxGrIiUU",
+      "placement": {
+        "x": 157.23779527559057,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring"
+        ],
+        "widths": [
+          280.8
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      }
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-5/lv3_gpt_10193_2_en-witch-flying-over-autumn-village-coloring-page-coloring.webp",
+      "path": "public/omalovanky/en/lv3_gpt_10193_2_en-witch-flying-over-autumn-village-coloring-page-coloring.webp",
+      "bytes": 299964,
+      "sha": "d194d1ca90827534734e5eeaa8840ba7ab9536d4",
+      "id": 10193,
       "variant": "coloring",
       "ext": "webp",
       "driveId": null,
@@ -322,14 +496,14 @@
       }
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-4/lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample.png",
-      "path": "public/omalovanky/en/lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample.png",
-      "bytes": 1406229,
-      "sha": "5ca8a659b30bed84749f41e7b9615f0b19bb0a6a",
-      "id": 10191,
+      "file": "/tmp/vinmat-halloween-batch-5/lv3_gpt_10193_2_en-witch-flying-over-autumn-village-coloring-page-sample.png",
+      "path": "public/omalovanky/en/lv3_gpt_10193_2_en-witch-flying-over-autumn-village-coloring-page-sample.png",
+      "bytes": 2701750,
+      "sha": "bb2a41759397bd90beedf8cca07cd7f6285ad90e",
+      "id": 10193,
       "variant": "sample",
       "ext": "png",
-      "driveId": "1OsRcqep6p9tly68mI8p16vTqUkSWZMVP",
+      "driveId": "1yS6XZvpsMooYIL2HqiLVJLdiXcRSJ6RK",
       "placement": {
         "x": 77.85860975522857,
         "top": 14.173228346456694,
@@ -345,14 +519,14 @@
       }
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-4/lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample.pdf",
-      "path": "public/omalovanky/en/lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample.pdf",
-      "bytes": 964611,
-      "sha": "2239617e9092a57665e26ded7d85b539ed7e49d0",
-      "id": 10191,
+      "file": "/tmp/vinmat-halloween-batch-5/lv3_gpt_10193_2_en-witch-flying-over-autumn-village-coloring-page-sample.pdf",
+      "path": "public/omalovanky/en/lv3_gpt_10193_2_en-witch-flying-over-autumn-village-coloring-page-sample.pdf",
+      "bytes": 1471931,
+      "sha": "c6e15e28214b9b709dcad5b2320b283f2da557fa",
+      "id": 10193,
       "variant": "sample",
       "ext": "pdf",
-      "driveId": "1eavf2td0yWa0kgXdANiQ-2K38sa0tQUx",
+      "driveId": "1N43uzeLgXVZOwnjTuiZQ97P7kSMdErhB",
       "placement": {
         "x": 77.85860975522857,
         "top": 14.173228346456694,
@@ -368,287 +542,11 @@
       }
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-4/lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample.webp",
-      "path": "public/omalovanky/en/lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample.webp",
-      "bytes": 325006,
-      "sha": "13d092d75b5e8aa4980d9532e8f06cf22127d21e",
-      "id": 10191,
-      "variant": "sample",
-      "ext": "webp",
-      "driveId": null,
-      "placement": {
-        "x": 77.85860975522857,
-        "top": 14.173228346456694,
-        "size": 36,
-        "lines": [
-          "VinMat Coloring - Sample"
-        ],
-        "widths": [
-          439.558371040724
-        ],
-        "height": 43.61538461538462,
-        "alignment": "center"
-      }
-    },
-    {
-      "file": "/tmp/vinmat-halloween-batch-4/lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-coloring-page-coloring.png",
-      "path": "public/omalovanky/en/lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-coloring-page-coloring.png",
-      "bytes": 1512123,
-      "sha": "3dc5ad55c58420d3172b6eb74386e2e2904ac35c",
-      "id": 10191,
-      "variant": "coloring",
-      "ext": "png",
-      "driveId": "1hSUyCGjXKxnMUM-IsscCws8r3fKANYaA",
-      "placement": {
-        "x": 157.23779527559057,
-        "top": 14.173228346456694,
-        "size": 36,
-        "lines": [
-          "VinMat Coloring"
-        ],
-        "widths": [
-          280.8
-        ],
-        "height": 43.61538461538462,
-        "alignment": "center"
-      }
-    },
-    {
-      "file": "/tmp/vinmat-halloween-batch-4/lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-coloring-page-coloring.pdf",
-      "path": "public/omalovanky/en/lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-coloring-page-coloring.pdf",
-      "bytes": 1452534,
-      "sha": "3dae8c3352d1973230d95c587375114f0ce0a5d1",
-      "id": 10191,
-      "variant": "coloring",
-      "ext": "pdf",
-      "driveId": "1E09LYK4aEfY3Ue9HzFT0e6nirqFLh6-P",
-      "placement": {
-        "x": 157.23779527559057,
-        "top": 14.173228346456694,
-        "size": 36,
-        "lines": [
-          "VinMat Coloring"
-        ],
-        "widths": [
-          280.8
-        ],
-        "height": 43.61538461538462,
-        "alignment": "center"
-      }
-    },
-    {
-      "file": "/tmp/vinmat-halloween-batch-4/lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-coloring-page-coloring.webp",
-      "path": "public/omalovanky/en/lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-coloring-page-coloring.webp",
-      "bytes": 190562,
-      "sha": "5a74f10af4c5d45e45496f76128401d32b0841e9",
-      "id": 10191,
-      "variant": "coloring",
-      "ext": "webp",
-      "driveId": null,
-      "placement": {
-        "x": 157.23779527559057,
-        "top": 14.173228346456694,
-        "size": 36,
-        "lines": [
-          "VinMat Coloring"
-        ],
-        "widths": [
-          280.8
-        ],
-        "height": 43.61538461538462,
-        "alignment": "center"
-      }
-    },
-    {
-      "file": "/tmp/vinmat-halloween-batch-4/lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample.png",
-      "path": "public/omalovanky/en/lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample.png",
-      "bytes": 957546,
-      "sha": "3bd183c291876d057ca56d64188f30169b861ec5",
-      "id": 10191,
-      "variant": "sample",
-      "ext": "png",
-      "driveId": "1btcxbQL6CywPX-cdxxRKpgnmHuyYsuG3",
-      "placement": {
-        "x": 77.85860975522857,
-        "top": 14.173228346456694,
-        "size": 36,
-        "lines": [
-          "VinMat Coloring - Sample"
-        ],
-        "widths": [
-          439.558371040724
-        ],
-        "height": 43.61538461538462,
-        "alignment": "center"
-      }
-    },
-    {
-      "file": "/tmp/vinmat-halloween-batch-4/lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample.pdf",
-      "path": "public/omalovanky/en/lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample.pdf",
-      "bytes": 679320,
-      "sha": "b44349cf7a9451f4608dca8cc31fca837b414f9a",
-      "id": 10191,
-      "variant": "sample",
-      "ext": "pdf",
-      "driveId": "1ymomPb94Gy6tpHc8s1DzHgvOeHFKK2ag",
-      "placement": {
-        "x": 77.85860975522857,
-        "top": 14.173228346456694,
-        "size": 36,
-        "lines": [
-          "VinMat Coloring - Sample"
-        ],
-        "widths": [
-          439.558371040724
-        ],
-        "height": 43.61538461538462,
-        "alignment": "center"
-      }
-    },
-    {
-      "file": "/tmp/vinmat-halloween-batch-4/lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample.webp",
-      "path": "public/omalovanky/en/lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample.webp",
-      "bytes": 216116,
-      "sha": "bed7839ba8e36d8b78c45e89411ce79997660136",
-      "id": 10191,
-      "variant": "sample",
-      "ext": "webp",
-      "driveId": null,
-      "placement": {
-        "x": 77.85860975522857,
-        "top": 14.173228346456694,
-        "size": 36,
-        "lines": [
-          "VinMat Coloring - Sample"
-        ],
-        "widths": [
-          439.558371040724
-        ],
-        "height": 43.61538461538462,
-        "alignment": "center"
-      }
-    },
-    {
-      "file": "/tmp/vinmat-halloween-batch-4/lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-coloring.png",
-      "path": "public/omalovanky/en/lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-coloring.png",
-      "bytes": 225195,
-      "sha": "098a8b21852f8cc80bcf64ef16831c8835cb2243",
-      "id": 10192,
-      "variant": "coloring",
-      "ext": "png",
-      "driveId": "1HH5EDQqzesEydE5eDHwCwv1VzVokTxiI",
-      "placement": {
-        "x": 157.23779527559057,
-        "top": 14.173228346456694,
-        "size": 36,
-        "lines": [
-          "VinMat Coloring"
-        ],
-        "widths": [
-          280.8
-        ],
-        "height": 43.61538461538462,
-        "alignment": "center"
-      }
-    },
-    {
-      "file": "/tmp/vinmat-halloween-batch-4/lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-coloring.pdf",
-      "path": "public/omalovanky/en/lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-coloring.pdf",
-      "bytes": 172499,
-      "sha": "c0dc806eaab7678942ad2b7e5e553e40d66a8f33",
-      "id": 10192,
-      "variant": "coloring",
-      "ext": "pdf",
-      "driveId": "1WMCqAkYr0eEMuqGI-ZFsS0nR4s_JUN4K",
-      "placement": {
-        "x": 157.23779527559057,
-        "top": 14.173228346456694,
-        "size": 36,
-        "lines": [
-          "VinMat Coloring"
-        ],
-        "widths": [
-          280.8
-        ],
-        "height": 43.61538461538462,
-        "alignment": "center"
-      }
-    },
-    {
-      "file": "/tmp/vinmat-halloween-batch-4/lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-coloring.webp",
-      "path": "public/omalovanky/en/lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-coloring.webp",
-      "bytes": 208564,
-      "sha": "dda6fe3849620fd9fec1404cdd8c5e8134622719",
-      "id": 10192,
-      "variant": "coloring",
-      "ext": "webp",
-      "driveId": null,
-      "placement": {
-        "x": 157.23779527559057,
-        "top": 14.173228346456694,
-        "size": 36,
-        "lines": [
-          "VinMat Coloring"
-        ],
-        "widths": [
-          280.8
-        ],
-        "height": 43.61538461538462,
-        "alignment": "center"
-      }
-    },
-    {
-      "file": "/tmp/vinmat-halloween-batch-4/lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-sample.png",
-      "path": "public/omalovanky/en/lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-sample.png",
-      "bytes": 1830028,
-      "sha": "eb991232d1c57618251f48dc313566a72eb8d2b5",
-      "id": 10192,
-      "variant": "sample",
-      "ext": "png",
-      "driveId": "1TKoj4rIErjbfCnRskovfHutst0lZiMon",
-      "placement": {
-        "x": 77.85860975522857,
-        "top": 14.173228346456694,
-        "size": 36,
-        "lines": [
-          "VinMat Coloring - Sample"
-        ],
-        "widths": [
-          439.558371040724
-        ],
-        "height": 43.61538461538462,
-        "alignment": "center"
-      }
-    },
-    {
-      "file": "/tmp/vinmat-halloween-batch-4/lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-sample.pdf",
-      "path": "public/omalovanky/en/lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-sample.pdf",
-      "bytes": 1083647,
-      "sha": "401a06ab93b9a6eb01b2911556a58d94b115ba5b",
-      "id": 10192,
-      "variant": "sample",
-      "ext": "pdf",
-      "driveId": "1-f-CZAdClBtpgAxntFo7hIGkzQrDvaC6",
-      "placement": {
-        "x": 77.85860975522857,
-        "top": 14.173228346456694,
-        "size": 36,
-        "lines": [
-          "VinMat Coloring - Sample"
-        ],
-        "widths": [
-          439.558371040724
-        ],
-        "height": 43.61538461538462,
-        "alignment": "center"
-      }
-    },
-    {
-      "file": "/tmp/vinmat-halloween-batch-4/lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-sample.webp",
-      "path": "public/omalovanky/en/lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-sample.webp",
-      "bytes": 471478,
-      "sha": "e285aca0cee2eb1043b89997240ef0f02a6a97ef",
-      "id": 10192,
+      "file": "/tmp/vinmat-halloween-batch-5/lv3_gpt_10193_2_en-witch-flying-over-autumn-village-coloring-page-sample.webp",
+      "path": "public/omalovanky/en/lv3_gpt_10193_2_en-witch-flying-over-autumn-village-coloring-page-sample.webp",
+      "bytes": 678160,
+      "sha": "c4b7f77273d904635c43abae5907985fc02b262b",
+      "id": 10193,
       "variant": "sample",
       "ext": "webp",
       "driveId": null,
@@ -667,8 +565,24 @@
       }
     }
   ],
-  "skipped": [],
-  "state": "published-user-review-deferred",
+  "skipped": [
+    {
+      "id": 10192,
+      "variant": "coloring",
+      "reason": "No blank area for title without covering artwork"
+    },
+    {
+      "id": 10192,
+      "variant": "sample",
+      "reason": "No blank area for title without covering artwork"
+    },
+    {
+      "id": 10193,
+      "variant": "sample",
+      "reason": "No blank area for title without covering artwork"
+    }
+  ],
+  "state": "saved-awaiting-deployment",
   "headers": [
     "Status",
     "ID",

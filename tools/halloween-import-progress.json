@@ -397,24 +397,128 @@
         "sheets": "published status read back"
       },
       "publishCommit": "3e814685b227288b8a75998d3c788cf2d49552d1"
+    },
+    {
+      "batch": 5,
+      "state": "awaiting-deployment-verification",
+      "items": [
+        {
+          "id": 10192,
+          "base": "lv3_gpt_10192_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page",
+          "originalBase": "lv3_gpt_H1011_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page",
+          "sourceColoringId": "19xlIGHVq4ADqrtZiEMgmyfM3gTi_1ZqU",
+          "sourceSampleId": "1UjQ4b5TxCgb0Pd7zzesMAEJOz_LrSw6c",
+          "sheetRow": 28,
+          "masterRow": 1363
+        },
+        {
+          "id": 10193,
+          "base": "lv3_gpt_10193_1_en-witch-flying-over-autumn-village-coloring-page",
+          "originalBase": "lv3_gpt_H1012_1_en-witch-flying-over-autumn-village-coloring-page",
+          "sourceColoringId": "18qG_J57BzW9-n56hkZlyTrXP0eYlv_JW",
+          "sourceSampleId": "1fZqbeqMmg-FLtqy-_wGWgI6vz_oyHCrb",
+          "sheetRow": 29,
+          "masterRow": 1364
+        },
+        {
+          "id": 10193,
+          "base": "lv3_gpt_10193_2_en-witch-flying-over-autumn-village-coloring-page",
+          "originalBase": "lv3_gpt_H1012_2_en-witch-flying-over-autumn-village-coloring-page",
+          "sourceColoringId": "1hVgd5znjYS4fd9wG8_6-1X5Jvv4Pf9Ki",
+          "sourceSampleId": "1q8CfTdLPL9rLUGJcL2sKmItYM2fHzjtv",
+          "sheetRow": 30,
+          "masterRow": 1364
+        }
+      ],
+      "driveFiles": [
+        {
+          "id": "1l_vF6TnuTeYPt-q4NArTHSoevCyaCVM1",
+          "path": "public/omalovanky/en/lv3_gpt_10192_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-coloring.png"
+        },
+        {
+          "id": "1ZRUTxkNj0dBnkqRLVwqhWfHlmgMn97UF",
+          "path": "public/omalovanky/en/lv3_gpt_10192_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "1Z2gJH0s4-7EBrQKRGCQjxH6gn6CyPC_A",
+          "path": "public/omalovanky/en/lv3_gpt_10192_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-sample.png"
+        },
+        {
+          "id": "1GLJZaOSox0DyfeDDW3_-Gy6j_asq70Gk",
+          "path": "public/omalovanky/en/lv3_gpt_10192_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-sample.pdf"
+        },
+        {
+          "id": "1ffyY-ne2el0eaweU7dgqCH-z7p_hTlwJ",
+          "path": "public/omalovanky/en/lv3_gpt_10193_1_en-witch-flying-over-autumn-village-coloring-page-coloring.png"
+        },
+        {
+          "id": "1s1XPUeWX4xNYx9Ugru7Mf1P_RwsrqXIe",
+          "path": "public/omalovanky/en/lv3_gpt_10193_1_en-witch-flying-over-autumn-village-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "1FSrItv5cyZmtFcMnIdre14wCkt9-r-np",
+          "path": "public/omalovanky/en/lv3_gpt_10193_1_en-witch-flying-over-autumn-village-coloring-page-sample.png"
+        },
+        {
+          "id": "1v04uErsDPOzR4bxKzhR9d5iTojqHC2W8",
+          "path": "public/omalovanky/en/lv3_gpt_10193_1_en-witch-flying-over-autumn-village-coloring-page-sample.pdf"
+        },
+        {
+          "id": "1E2SkP7Og-tZOBNuNF7xtlX7-xy4kpJ_R",
+          "path": "public/omalovanky/en/lv3_gpt_10193_2_en-witch-flying-over-autumn-village-coloring-page-coloring.png"
+        },
+        {
+          "id": "1Pi9MG3optBhyizK-1Wv3WCg_BxGrIiUU",
+          "path": "public/omalovanky/en/lv3_gpt_10193_2_en-witch-flying-over-autumn-village-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "1yS6XZvpsMooYIL2HqiLVJLdiXcRSJ6RK",
+          "path": "public/omalovanky/en/lv3_gpt_10193_2_en-witch-flying-over-autumn-village-coloring-page-sample.png"
+        },
+        {
+          "id": "1N43uzeLgXVZOwnjTuiZQ97P7kSMdErhB",
+          "path": "public/omalovanky/en/lv3_gpt_10193_2_en-witch-flying-over-autumn-village-coloring-page-sample.pdf"
+        }
+      ],
+      "skippedTitles": [
+        {
+          "id": 10192,
+          "variant": "coloring",
+          "reason": "No blank area for title without covering artwork"
+        },
+        {
+          "id": 10192,
+          "variant": "sample",
+          "reason": "No blank area for title without covering artwork"
+        },
+        {
+          "id": 10193,
+          "variant": "sample",
+          "reason": "No blank area for title without covering artwork"
+        }
+      ],
+      "checks": {
+        "DriveBytes": "verified",
+        "mobile": "User review deferred"
+      }
     }
   ],
-  "remainingPairs": 38,
+  "remainingPairs": 35,
   "nextOriginalFiles": [
     {
-      "originalBase": "lv3_gpt_H1011_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page",
-      "sample": {
-        "url": "https://drive.google.com/file/d/1UjQ4b5TxCgb0Pd7zzesMAEJOz_LrSw6c/view?usp=drivesdk",
-        "title": "lv3_gpt_H1011_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-sample.png",
-        "id": "1UjQ4b5TxCgb0Pd7zzesMAEJOz_LrSw6c",
+      "originalBase": "lv3_gpt_H1013_1_en-halloween-garden-party-coloring-page",
+      "coloring": {
+        "url": "https://drive.google.com/file/d/13ELeAkIIWBj-Y83kYIZE2U_4e6p2qtVa/view?usp=drivesdk",
+        "title": "lv3_gpt_H1013_1_en-halloween-garden-party-coloring-page-coloring.png",
+        "id": "13ELeAkIIWBj-Y83kYIZE2U_4e6p2qtVa",
         "mime_type": "image/png",
-        "size": "2395041",
+        "size": "62650",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:22:09.993Z",
-        "updated_at": "2026-09-30T11:01:18.757Z",
-        "viewedByMeTime": "2026-10-02T11:22:09.993Z",
-        "display_title": "lv3_gpt_H1011_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-sample.png",
-        "display_url": "https://drive.google.com/file/d/1UjQ4b5TxCgb0Pd7zzesMAEJOz_LrSw6c/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:20:14.645Z",
+        "updated_at": "2026-09-30T10:20:19.453Z",
+        "viewedByMeTime": "2026-10-02T11:20:14.645Z",
+        "display_title": "lv3_gpt_H1013_1_en-halloween-garden-party-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/13ELeAkIIWBj-Y83kYIZE2U_4e6p2qtVa/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -422,18 +526,18 @@
         "can_download": true,
         "can_list_children": false
       },
-      "coloring": {
-        "url": "https://drive.google.com/file/d/19xlIGHVq4ADqrtZiEMgmyfM3gTi_1ZqU/view?usp=drivesdk",
-        "title": "lv3_gpt_H1011_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-coloring.png",
-        "id": "19xlIGHVq4ADqrtZiEMgmyfM3gTi_1ZqU",
+      "sample": {
+        "url": "https://drive.google.com/file/d/1lMgis1ayePYC_CkBDykHt_34TWpyndbX/view?usp=drivesdk",
+        "title": "lv3_gpt_H1013_1_en-halloween-garden-party-coloring-page-sample.png",
+        "id": "1lMgis1ayePYC_CkBDykHt_34TWpyndbX",
         "mime_type": "image/png",
-        "size": "6475102",
+        "size": "616082",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:22:58.582Z",
-        "updated_at": "2026-09-30T09:29:58.562Z",
-        "viewedByMeTime": "2026-10-02T11:22:58.582Z",
-        "display_title": "lv3_gpt_H1011_1_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-coloring.png",
-        "display_url": "https://drive.google.com/file/d/19xlIGHVq4ADqrtZiEMgmyfM3gTi_1ZqU/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:20:15.078Z",
+        "updated_at": "2026-09-30T09:29:58.868Z",
+        "viewedByMeTime": "2026-10-02T11:20:15.078Z",
+        "display_title": "lv3_gpt_H1013_1_en-halloween-garden-party-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/1lMgis1ayePYC_CkBDykHt_34TWpyndbX/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -443,19 +547,19 @@
       }
     },
     {
-      "originalBase": "lv3_gpt_H1012_1_en-witch-flying-over-autumn-village-coloring-page",
+      "originalBase": "lv3_gpt_H1014_1_en-friendly-dragon-in-autumn-garden-coloring-page",
       "sample": {
-        "url": "https://drive.google.com/file/d/1fZqbeqMmg-FLtqy-_wGWgI6vz_oyHCrb/view?usp=drivesdk",
-        "title": "lv3_gpt_H1012_1_en-witch-flying-over-autumn-village-coloring-page-sample.png",
-        "id": "1fZqbeqMmg-FLtqy-_wGWgI6vz_oyHCrb",
+        "url": "https://drive.google.com/file/d/1tIV29Vhd5fNn3nAsLgnb9NvNxujgrzJy/view?usp=drivesdk",
+        "title": "lv3_gpt_H1014_1_en-friendly-dragon-in-autumn-garden-coloring-page-sample.png",
+        "id": "1tIV29Vhd5fNn3nAsLgnb9NvNxujgrzJy",
         "mime_type": "image/png",
-        "size": "2524338",
+        "size": "2328907",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:23:01.325Z",
-        "updated_at": "2026-09-30T11:01:21.565Z",
-        "viewedByMeTime": "2026-10-02T11:23:01.325Z",
-        "display_title": "lv3_gpt_H1012_1_en-witch-flying-over-autumn-village-coloring-page-sample.png",
-        "display_url": "https://drive.google.com/file/d/1fZqbeqMmg-FLtqy-_wGWgI6vz_oyHCrb/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:23:04.812Z",
+        "updated_at": "2026-09-30T11:01:27.341Z",
+        "viewedByMeTime": "2026-10-02T11:23:04.812Z",
+        "display_title": "lv3_gpt_H1014_1_en-friendly-dragon-in-autumn-garden-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/1tIV29Vhd5fNn3nAsLgnb9NvNxujgrzJy/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -464,17 +568,17 @@
         "can_list_children": false
       },
       "coloring": {
-        "url": "https://drive.google.com/file/d/18qG_J57BzW9-n56hkZlyTrXP0eYlv_JW/view?usp=drivesdk",
-        "title": "lv3_gpt_H1012_1_en-witch-flying-over-autumn-village-coloring-page-coloring.png",
-        "id": "18qG_J57BzW9-n56hkZlyTrXP0eYlv_JW",
+        "url": "https://drive.google.com/file/d/1uLF0Olbrz13gN60R6pYK7gKCzqXZYyNx/view?usp=drivesdk",
+        "title": "lv3_gpt_H1014_1_en-friendly-dragon-in-autumn-garden-coloring-page-coloring.png",
+        "id": "1uLF0Olbrz13gN60R6pYK7gKCzqXZYyNx",
         "mime_type": "image/png",
-        "size": "7494901",
+        "size": "6225554",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:23:13.856Z",
-        "updated_at": "2026-09-30T09:29:58.719Z",
-        "viewedByMeTime": "2026-10-02T11:23:13.856Z",
-        "display_title": "lv3_gpt_H1012_1_en-witch-flying-over-autumn-village-coloring-page-coloring.png",
-        "display_url": "https://drive.google.com/file/d/18qG_J57BzW9-n56hkZlyTrXP0eYlv_JW/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:22:52.847Z",
+        "updated_at": "2026-09-30T10:35:40.986Z",
+        "viewedByMeTime": "2026-10-02T11:22:52.847Z",
+        "display_title": "lv3_gpt_H1014_1_en-friendly-dragon-in-autumn-garden-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/1uLF0Olbrz13gN60R6pYK7gKCzqXZYyNx/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -484,19 +588,19 @@
       }
     },
     {
-      "originalBase": "lv3_gpt_H1012_2_en-witch-flying-over-autumn-village-coloring-page",
+      "originalBase": "lv3_gpt_H1014_2_en-friendly-dragon-in-autumn-garden-coloring-page",
       "coloring": {
-        "url": "https://drive.google.com/file/d/1hVgd5znjYS4fd9wG8_6-1X5Jvv4Pf9Ki/view?usp=drivesdk",
-        "title": "lv3_gpt_H1012_2_en-witch-flying-over-autumn-village-coloring-page-coloring.png",
-        "id": "1hVgd5znjYS4fd9wG8_6-1X5Jvv4Pf9Ki",
+        "url": "https://drive.google.com/file/d/1h13pGyLlkm5tXpb_V66IqUlsnUXp_iSe/view?usp=drivesdk",
+        "title": "lv3_gpt_H1014_2_en-friendly-dragon-in-autumn-garden-coloring-page-coloring.png",
+        "id": "1h13pGyLlkm5tXpb_V66IqUlsnUXp_iSe",
         "mime_type": "image/png",
-        "size": "100401",
+        "size": "68728",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:14.896Z",
-        "updated_at": "2026-09-30T11:06:50.428Z",
-        "viewedByMeTime": "2026-10-02T11:20:14.896Z",
-        "display_title": "lv3_gpt_H1012_2_en-witch-flying-over-autumn-village-coloring-page-coloring.png",
-        "display_url": "https://drive.google.com/file/d/1hVgd5znjYS4fd9wG8_6-1X5Jvv4Pf9Ki/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:20:15.046Z",
+        "updated_at": "2026-09-30T10:20:19.464Z",
+        "viewedByMeTime": "2026-10-02T11:20:15.046Z",
+        "display_title": "lv3_gpt_H1014_2_en-friendly-dragon-in-autumn-garden-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/1h13pGyLlkm5tXpb_V66IqUlsnUXp_iSe/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -505,17 +609,17 @@
         "can_list_children": false
       },
       "sample": {
-        "url": "https://drive.google.com/file/d/1q8CfTdLPL9rLUGJcL2sKmItYM2fHzjtv/view?usp=drivesdk",
-        "title": "lv3_gpt_H1012_2_en-witch-flying-over-autumn-village-coloring-page-sample.png",
-        "id": "1q8CfTdLPL9rLUGJcL2sKmItYM2fHzjtv",
+        "url": "https://drive.google.com/file/d/1J1VaBX2Ai9gUewHTEJQzxxeRaiCn_2He/view?usp=drivesdk",
+        "title": "lv3_gpt_H1014_2_en-friendly-dragon-in-autumn-garden-coloring-page-sample.png",
+        "id": "1J1VaBX2Ai9gUewHTEJQzxxeRaiCn_2He",
         "mime_type": "image/png",
-        "size": "823204",
+        "size": "689564",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:21.912Z",
-        "updated_at": "2026-09-30T09:29:58.773Z",
-        "viewedByMeTime": "2026-10-02T11:20:21.912Z",
-        "display_title": "lv3_gpt_H1012_2_en-witch-flying-over-autumn-village-coloring-page-sample.png",
-        "display_url": "https://drive.google.com/file/d/1q8CfTdLPL9rLUGJcL2sKmItYM2fHzjtv/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:20:15.075Z",
+        "updated_at": "2026-09-30T09:29:58.934Z",
+        "viewedByMeTime": "2026-10-02T11:20:15.075Z",
+        "display_title": "lv3_gpt_H1014_2_en-friendly-dragon-in-autumn-garden-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/1J1VaBX2Ai9gUewHTEJQzxxeRaiCn_2He/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
