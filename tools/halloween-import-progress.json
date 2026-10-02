@@ -87,7 +87,7 @@
     },
     {
       "batch": 2,
-      "state": "awaiting-deployment-verification",
+      "state": "published-awaiting-mobile-verification",
       "items": [
         {
           "id": 10021,
@@ -172,29 +172,143 @@
         "localContent": "passed",
         "localization": "passed EN/CZ/DE/ES",
         "internalLinks": "passed for 183 HTML files",
-        "PNGResolutionAndQR": "passed 6/6"
-      }
+        "PNGResolutionAndQR": "passed 6/6",
+        "deployment": "GitHub Actions build and Pages successful",
+        "assetHttp": "18/18 PNG/PDF/WebP URLs HTTP 200",
+        "desktopDetails": "passed EN/CZ/DE/ES, 12 pages",
+        "sampleSwitch": "passed 3/3, PNG and PDF links switch to sample",
+        "catalog": "all six imported Halloween pairs present after reload; existing activities remain present",
+        "sheets": "published status read back in catalog and category 10 master",
+        "mobile": "blocked: supported browser APIs do not provide viewport resizing; browser keyboard zoom had no effect"
+      },
+      "publishCommit": "85ea702c3e27286560e4ea0c6d0a6de19e00340e",
+      "deploymentCommit": "298762211a5ed06acf192efb7cbfdbe054b3f672"
     }
   ],
   "remainingPairs": 44,
   "nextOriginalFiles": [
     {
-      "coloring": "lv1_gpt_H1004_1_en-witch-hat-coloring-page-coloring.png",
-      "coloringId": "1QuyzYUoqxKF_sNOumi7X0l88b3BfRiyW",
-      "sample": "lv1_gpt_H1004_1_en-witch-hat-coloring-page-sample.png",
-      "sampleId": "11a_6YjafuNtCYlf6VFPvnry28a5ywEA7"
+      "originalBase": "lv2_gpt_H1007_1_en-friendly-ghost-in-front-of-haunted-house-coloring-page",
+      "coloring": {
+        "url": "https://drive.google.com/file/d/1qVTz91Ymzk_q6czLvIcotkdK02fsRJPu/view?usp=drivesdk",
+        "title": "lv2_gpt_H1007_1_en-friendly-ghost-in-front-of-haunted-house-coloring-page-coloring.png",
+        "id": "1qVTz91Ymzk_q6czLvIcotkdK02fsRJPu",
+        "mime_type": "image/png",
+        "size": "58703",
+        "file_or_folder": "file",
+        "created_at": "2026-10-02T11:20:11.493Z",
+        "updated_at": "2026-09-30T10:20:19.431Z",
+        "viewedByMeTime": "2026-10-02T11:20:11.493Z",
+        "display_title": "lv2_gpt_H1007_1_en-friendly-ghost-in-front-of-haunted-house-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/1qVTz91Ymzk_q6czLvIcotkdK02fsRJPu/view?usp=drivesdk",
+        "parent_ids": [
+          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+        ],
+        "shared": false,
+        "can_download": true,
+        "can_list_children": false
+      },
+      "sample": {
+        "url": "https://drive.google.com/file/d/14l_VFnCyGCqFNUMMz_xtmiVzVhOyM-Be/view?usp=drivesdk",
+        "title": "lv2_gpt_H1007_1_en-friendly-ghost-in-front-of-haunted-house-coloring-page-sample2.png",
+        "id": "14l_VFnCyGCqFNUMMz_xtmiVzVhOyM-Be",
+        "mime_type": "image/png",
+        "size": "638618",
+        "file_or_folder": "file",
+        "created_at": "2026-10-02T11:20:11.752Z",
+        "updated_at": "2026-09-30T09:29:58.179Z",
+        "viewedByMeTime": "2026-10-02T11:20:11.752Z",
+        "display_title": "lv2_gpt_H1007_1_en-friendly-ghost-in-front-of-haunted-house-coloring-page-sample2.png",
+        "display_url": "https://drive.google.com/file/d/14l_VFnCyGCqFNUMMz_xtmiVzVhOyM-Be/view?usp=drivesdk",
+        "parent_ids": [
+          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+        ],
+        "shared": false,
+        "can_download": true,
+        "can_list_children": false
+      }
     },
     {
-      "coloring": "lv1_gpt_H1005_1_en-friendly-cat-and-pumpkin-coloring-page-coloring.png",
-      "coloringId": "1JHF9dboylq2VqhkY0-zF-ADEHYIzMj6k",
-      "sample": "lv1_gpt_H1005_1_en-friendly-cat-and-pumpkin-coloring-page-sample.png",
-      "sampleId": "1kqjWtcCDkxJZE0cTzLCh8dTDXJegWgrL"
+      "originalBase": "lv2_gpt_H1008_1_en-cat-sitting-on-pumpkin-coloring-page",
+      "sample": {
+        "url": "https://drive.google.com/file/d/1ADPU4YV6x3ibbZQWzZEot_avVQAj53U6/view?usp=drivesdk",
+        "title": "lv2_gpt_H1008_1_en-cat-sitting-on-pumpkin-coloring-page-sample.png",
+        "id": "1ADPU4YV6x3ibbZQWzZEot_avVQAj53U6",
+        "mime_type": "image/png",
+        "size": "332100",
+        "file_or_folder": "file",
+        "created_at": "2026-10-02T11:20:13.097Z",
+        "updated_at": "2026-09-30T09:29:58.411Z",
+        "viewedByMeTime": "2026-10-02T11:20:13.097Z",
+        "display_title": "lv2_gpt_H1008_1_en-cat-sitting-on-pumpkin-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/1ADPU4YV6x3ibbZQWzZEot_avVQAj53U6/view?usp=drivesdk",
+        "parent_ids": [
+          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+        ],
+        "shared": false,
+        "can_download": true,
+        "can_list_children": false
+      },
+      "coloring": {
+        "url": "https://drive.google.com/file/d/1IBqrQ03-LBH-Nbm4BgkSinKrKxAGN_XD/view?usp=drivesdk",
+        "title": "lv2_gpt_H1008_1_en-cat-sitting-on-pumpkin-coloring-page-coloring.png",
+        "id": "1IBqrQ03-LBH-Nbm4BgkSinKrKxAGN_XD",
+        "mime_type": "image/png",
+        "size": "889688",
+        "file_or_folder": "file",
+        "created_at": "2026-10-02T11:20:12.965Z",
+        "updated_at": "2026-09-30T09:29:58.396Z",
+        "viewedByMeTime": "2026-10-02T11:20:12.965Z",
+        "display_title": "lv2_gpt_H1008_1_en-cat-sitting-on-pumpkin-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/1IBqrQ03-LBH-Nbm4BgkSinKrKxAGN_XD/view?usp=drivesdk",
+        "parent_ids": [
+          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+        ],
+        "shared": false,
+        "can_download": true,
+        "can_list_children": false
+      }
     },
     {
-      "coloring": "lv2_gpt_H1006_1_en-pumpkin-with-autumn-leaves-coloring-page-coloring.png",
-      "coloringId": "1sd-c4MbWbagYxZmbiiF-Tls5IVI1dzqk",
-      "sample": "lv2_gpt_H1006_1_en-pumpkin-with-autumn-leaves-coloring-page-sample.png",
-      "sampleId": "1Ss-DuNgLRdyTBll4gaKWA-DN0sdrcWkL"
+      "originalBase": "lv2_gpt_H1009_1_en-witch-with-broom-and-moon-coloring-page",
+      "sample": {
+        "url": "https://drive.google.com/file/d/11ehJxZAN3BbVDgcL7COTxv98faC65vfH/view?usp=drivesdk",
+        "title": "lv2_gpt_H1009_1_en-witch-with-broom-and-moon-coloring-page-sample.png",
+        "id": "11ehJxZAN3BbVDgcL7COTxv98faC65vfH",
+        "mime_type": "image/png",
+        "size": "332318",
+        "file_or_folder": "file",
+        "created_at": "2026-10-02T11:20:15.406Z",
+        "updated_at": "2026-09-30T09:29:58.442Z",
+        "viewedByMeTime": "2026-10-02T11:20:15.406Z",
+        "display_title": "lv2_gpt_H1009_1_en-witch-with-broom-and-moon-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/11ehJxZAN3BbVDgcL7COTxv98faC65vfH/view?usp=drivesdk",
+        "parent_ids": [
+          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+        ],
+        "shared": false,
+        "can_download": true,
+        "can_list_children": false
+      },
+      "coloring": {
+        "url": "https://drive.google.com/file/d/13SBgfXFBsvdObM46K97AePB1GW28nSaA/view?usp=drivesdk",
+        "title": "lv2_gpt_H1009_1_en-witch-with-broom-and-moon-coloring-page-coloring.png",
+        "id": "13SBgfXFBsvdObM46K97AePB1GW28nSaA",
+        "mime_type": "image/png",
+        "size": "960492",
+        "file_or_folder": "file",
+        "created_at": "2026-10-02T11:20:15.924Z",
+        "updated_at": "2026-09-30T09:29:58.428Z",
+        "viewedByMeTime": "2026-10-02T11:20:15.924Z",
+        "display_title": "lv2_gpt_H1009_1_en-witch-with-broom-and-moon-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/13SBgfXFBsvdObM46K97AePB1GW28nSaA/view?usp=drivesdk",
+        "parent_ids": [
+          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+        ],
+        "shared": false,
+        "can_download": true,
+        "can_list_children": false
+      }
     }
   ],
   "branding": {
@@ -229,5 +343,6 @@
       },
       "typography": "approved-rounded-title.json; original proof contours"
     }
-  }
+  },
+  "continuationBlocker": "Complete mobile visual verification of current batch before processing batch 3. No further source images or sheet rows have been modified."
 }
