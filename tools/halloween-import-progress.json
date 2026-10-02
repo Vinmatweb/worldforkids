@@ -630,7 +630,7 @@
     },
     {
       "batch": 7,
-      "state": "awaiting-deployment-verification",
+      "state": "published-user-review-deferred",
       "items": [
         {
           "id": 10196,
@@ -719,8 +719,27 @@
       ],
       "checks": {
         "DriveBytes": "verified",
-        "mobile": "User review deferred"
-      }
+        "mobile": "Deferred by user; no mobile visual claim",
+        "deployment": "GitHub Actions build and Pages successful",
+        "assetHttp": "18/18 exact bytes and Git blob SHA match",
+        "languagePages": [
+          "activities/coloring-friendly-ghosts-in-a-garden-by-an-old-house.html",
+          "cs/aktivity/omalovanka-duchove-v-zahrade-pred-starym-domem.html",
+          "de/aktivitaeten/ausmalbild-freundliche-geister-im-garten-vor-einem-alten-haus.html",
+          "es/actividades/dibujo-fantasmas-amistosos-en-el-jardin-de-una-casa-antigua.html",
+          "activities/coloring-friendly-mummy.html",
+          "cs/aktivity/omalovanka-vesela-mumie.html",
+          "de/aktivitaeten/ausmalbild-freundliche-mumie.html",
+          "es/actividades/dibujo-momia-amistosa.html",
+          "activities/coloring-friendly-raven.html",
+          "cs/aktivity/omalovanka-vesely-havran.html",
+          "de/aktivitaeten/ausmalbild-freundlicher-rabe.html",
+          "es/actividades/dibujo-cuervo-amistoso.html"
+        ],
+        "catalog": "unique rows and new items verified",
+        "sheets": "published status read back"
+      },
+      "publishCommit": "d94f3f009480049277d637a5416382adc4c78460"
     }
   ],
   "remainingPairs": 29,

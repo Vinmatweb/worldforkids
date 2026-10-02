@@ -1,20 +1,20 @@
 {
-  "batch": 6,
+  "batch": 7,
   "assets": 18,
   "pages": [
-    "activities/coloring-halloween-garden-party.html",
-    "cs/aktivity/omalovanka-halloweenska-zahradni-slavnost.html",
-    "de/aktivitaeten/ausmalbild-halloween-gartenfest.html",
-    "es/actividades/dibujo-fiesta-de-halloween-en-el-jardin.html",
-    "activities/coloring-friendly-dragon-in-an-autumn-garden.html",
-    "cs/aktivity/omalovanka-drak-v-podzimni-zahrade.html",
-    "de/aktivitaeten/ausmalbild-freundlicher-drache-im-herbstgarten.html",
-    "es/actividades/dibujo-dragon-amistoso-en-un-jardin-otonal.html",
-    "activities/coloring-friendly-dragon-in-an-autumn-garden-lv3.html",
-    "cs/aktivity/omalovanka-drak-v-podzimni-zahrade-lv3.html",
-    "de/aktivitaeten/ausmalbild-freundlicher-drache-im-herbstgarten-lv3.html",
-    "es/actividades/dibujo-dragon-amistoso-en-un-jardin-otonal-lv3.html"
+    "activities/coloring-friendly-ghosts-in-a-garden-by-an-old-house.html",
+    "cs/aktivity/omalovanka-duchove-v-zahrade-pred-starym-domem.html",
+    "de/aktivitaeten/ausmalbild-freundliche-geister-im-garten-vor-einem-alten-haus.html",
+    "es/actividades/dibujo-fantasmas-amistosos-en-el-jardin-de-una-casa-antigua.html",
+    "activities/coloring-friendly-mummy.html",
+    "cs/aktivity/omalovanka-vesela-mumie.html",
+    "de/aktivitaeten/ausmalbild-freundliche-mumie.html",
+    "es/actividades/dibujo-momia-amistosa.html",
+    "activities/coloring-friendly-raven.html",
+    "cs/aktivity/omalovanka-vesely-havran.html",
+    "de/aktivitaeten/ausmalbild-freundlicher-rabe.html",
+    "es/actividades/dibujo-cuervo-amistoso.html"
   ],
-  "catalogRows": 32,
+  "catalogRows": 35,
   "status": "passed"
 }
