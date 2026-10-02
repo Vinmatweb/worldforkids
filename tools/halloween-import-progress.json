@@ -740,24 +740,112 @@
         "sheets": "published status read back"
       },
       "publishCommit": "d94f3f009480049277d637a5416382adc4c78460"
+    },
+    {
+      "batch": 8,
+      "state": "awaiting-deployment-verification",
+      "items": [
+        {
+          "id": 10199,
+          "base": "lv1_gpt_10199_1_en-friendly-cartoon-skull-coloring-page",
+          "originalBase": "lv1_gpt_H1018_1_en-friendly-cartoon-skull-coloring-page",
+          "sourceColoringId": "1DrmdSxRxkcYS660HZTuvjCxtzg1bw16P",
+          "sourceSampleId": "14UW2IDDF1vPb8ZHZBce1q0SU8uvYFDaf",
+          "sheetRow": 37,
+          "masterRow": 1370
+        },
+        {
+          "id": 10200,
+          "base": "lv2_gpt_10200_1_en-children-trick-or-treating-coloring-page",
+          "originalBase": "lv2_gpt_H1019_1_en-children-trick-or-treating-coloring-page",
+          "sourceColoringId": "1MJFWryHXxG9Q-jxmukFEffjYfV8MkQnE",
+          "sourceSampleId": "1ZByj5bW-vDECGkYTPfAeyMpJe1aIT9hj",
+          "sheetRow": 38,
+          "masterRow": 1371
+        },
+        {
+          "id": 10025,
+          "base": "lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-coloring-page",
+          "originalBase": "lv2_gpt_H1020_1_en-friendly-witch-cauldron-with-bubbles-coloring-page",
+          "sourceColoringId": "138lwPd_rX27mjLutWuoh8pHyyprw87jp",
+          "sourceSampleId": "1oIO6Q6xdCWDrVaEjp9FjZTND7X_7ZtZO",
+          "sheetRow": 39,
+          "masterRow": 1196
+        }
+      ],
+      "driveFiles": [
+        {
+          "id": "1kWmhoveAMAXaE2EW6q7epqx9_FuoW1ZX",
+          "path": "public/omalovanky/en/lv1_gpt_10199_1_en-friendly-cartoon-skull-coloring-page-coloring.png"
+        },
+        {
+          "id": "17gPelOhIyBwSGFLxwJOraQE5Xodq7uDF",
+          "path": "public/omalovanky/en/lv1_gpt_10199_1_en-friendly-cartoon-skull-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "1oJ0eMlJO6KxiOE51uCLn51os9PboFrJJ",
+          "path": "public/omalovanky/en/lv1_gpt_10199_1_en-friendly-cartoon-skull-coloring-page-sample.png"
+        },
+        {
+          "id": "1nxLO6OJt2jMK1X76GosQVx99SU64Nc6h",
+          "path": "public/omalovanky/en/lv1_gpt_10199_1_en-friendly-cartoon-skull-coloring-page-sample.pdf"
+        },
+        {
+          "id": "14zbQQWqCspGSWX2FoeTuiKuHRlqNOUhM",
+          "path": "public/omalovanky/en/lv2_gpt_10200_1_en-children-trick-or-treating-coloring-page-coloring.png"
+        },
+        {
+          "id": "1vmEZd1xzyuRVIlSagZzcgewdYxaPCGZ8",
+          "path": "public/omalovanky/en/lv2_gpt_10200_1_en-children-trick-or-treating-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "1IS3EW8zraat9NEiPK5p_pF8eE187mOdN",
+          "path": "public/omalovanky/en/lv2_gpt_10200_1_en-children-trick-or-treating-coloring-page-sample.png"
+        },
+        {
+          "id": "1cjamd8Ex2dAWeqBgFLPpce8z1qi0RRdz",
+          "path": "public/omalovanky/en/lv2_gpt_10200_1_en-children-trick-or-treating-coloring-page-sample.pdf"
+        },
+        {
+          "id": "114HYiYueDiJH820QII-qWvPg3x_zjR-H",
+          "path": "public/omalovanky/en/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-coloring.png"
+        },
+        {
+          "id": "1W7nReLgkJjzMGAP404XT3hxZocLYgILB",
+          "path": "public/omalovanky/en/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "1l3GMHtM-XnZ9GDIIYH0Xks-mm3NaCVYk",
+          "path": "public/omalovanky/en/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-sample.png"
+        },
+        {
+          "id": "1e-h1RY0KuvOrE-Zmx6DTUgLnzbZ7S6oV",
+          "path": "public/omalovanky/en/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-sample.pdf"
+        }
+      ],
+      "skippedTitles": [],
+      "checks": {
+        "DriveBytes": "verified",
+        "mobile": "User review deferred"
+      }
     }
   ],
-  "remainingPairs": 29,
+  "remainingPairs": 26,
   "nextOriginalFiles": [
     {
-      "originalBase": "lv1_gpt_H1018_1_en-friendly-cartoon-skull-coloring-page",
+      "originalBase": "lv2_gpt_H1021_1_en-owl-post-carrier-with-letter-and-lantern-coloring-page",
       "coloring": {
-        "url": "https://drive.google.com/file/d/1DrmdSxRxkcYS660HZTuvjCxtzg1bw16P/view?usp=drivesdk",
-        "title": "lv1_gpt_H1018_1_en-friendly-cartoon-skull-coloring-page-coloring.png",
-        "id": "1DrmdSxRxkcYS660HZTuvjCxtzg1bw16P",
+        "url": "https://drive.google.com/file/d/1lJizu_85fYDxp6YAoN8K6tiO9LCM8ZWu/view?usp=drivesdk",
+        "title": "lv2_gpt_H1021_1_en-owl-post-carrier-with-letter-and-lantern-coloring-page-coloring.png",
+        "id": "1lJizu_85fYDxp6YAoN8K6tiO9LCM8ZWu",
         "mime_type": "image/png",
-        "size": "923443",
+        "size": "1138567",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:11.839Z",
-        "updated_at": "2026-09-30T15:56:58.000Z",
-        "viewedByMeTime": "2026-10-02T11:20:11.839Z",
-        "display_title": "lv1_gpt_H1018_1_en-friendly-cartoon-skull-coloring-page-coloring.png",
-        "display_url": "https://drive.google.com/file/d/1DrmdSxRxkcYS660HZTuvjCxtzg1bw16P/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:21:16.091Z",
+        "updated_at": "2026-09-30T19:12:27.955Z",
+        "viewedByMeTime": "2026-10-02T11:21:16.091Z",
+        "display_title": "lv2_gpt_H1021_1_en-owl-post-carrier-with-letter-and-lantern-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/1lJizu_85fYDxp6YAoN8K6tiO9LCM8ZWu/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -766,17 +854,17 @@
         "can_list_children": false
       },
       "sample": {
-        "url": "https://drive.google.com/file/d/14UW2IDDF1vPb8ZHZBce1q0SU8uvYFDaf/view?usp=drivesdk",
-        "title": "lv1_gpt_H1018_1_en-friendly-cartoon-skull-coloring-page-sample.png",
-        "id": "14UW2IDDF1vPb8ZHZBce1q0SU8uvYFDaf",
+        "url": "https://drive.google.com/file/d/1TpsVKKtLRJuXbYggFJT7t4odMqjF6c38/view?usp=drivesdk",
+        "title": "lv2_gpt_H1021_1_en-owl-post-carrier-with-letter-and-lantern-coloring-page-sample.png",
+        "id": "1TpsVKKtLRJuXbYggFJT7t4odMqjF6c38",
         "mime_type": "image/png",
-        "size": "1171149",
+        "size": "1337096",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:21.213Z",
-        "updated_at": "2026-09-30T15:56:54.080Z",
-        "viewedByMeTime": "2026-10-02T11:20:21.213Z",
-        "display_title": "lv1_gpt_H1018_1_en-friendly-cartoon-skull-coloring-page-sample.png",
-        "display_url": "https://drive.google.com/file/d/14UW2IDDF1vPb8ZHZBce1q0SU8uvYFDaf/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:20:55.647Z",
+        "updated_at": "2026-09-30T19:12:25.937Z",
+        "viewedByMeTime": "2026-10-02T11:20:55.647Z",
+        "display_title": "lv2_gpt_H1021_1_en-owl-post-carrier-with-letter-and-lantern-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/1TpsVKKtLRJuXbYggFJT7t4odMqjF6c38/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -786,19 +874,19 @@
       }
     },
     {
-      "originalBase": "lv2_gpt_H1019_1_en-children-trick-or-treating-coloring-page",
+      "originalBase": "lv2_gpt_H1022_1_en-friendly-scarecrow-in-pumpkin-patch-coloring-page",
       "coloring": {
-        "url": "https://drive.google.com/file/d/1MJFWryHXxG9Q-jxmukFEffjYfV8MkQnE/view?usp=drivesdk",
-        "title": "lv2_gpt_H1019_1_en-children-trick-or-treating-coloring-page-coloring.png",
-        "id": "1MJFWryHXxG9Q-jxmukFEffjYfV8MkQnE",
+        "url": "https://drive.google.com/file/d/1-hMkc1x2K7V_UN0_8qYE68JzdLqoIp51/view?usp=drivesdk",
+        "title": "lv2_gpt_H1022_1_en-friendly-scarecrow-in-pumpkin-patch-coloring-page-coloring.png",
+        "id": "1-hMkc1x2K7V_UN0_8qYE68JzdLqoIp51",
         "mime_type": "image/png",
-        "size": "1430171",
+        "size": "1383996",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:37.707Z",
-        "updated_at": "2026-09-30T19:12:27.873Z",
-        "viewedByMeTime": "2026-10-02T11:20:37.707Z",
-        "display_title": "lv2_gpt_H1019_1_en-children-trick-or-treating-coloring-page-coloring.png",
-        "display_url": "https://drive.google.com/file/d/1MJFWryHXxG9Q-jxmukFEffjYfV8MkQnE/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:20:43.416Z",
+        "updated_at": "2026-09-30T19:12:27.988Z",
+        "viewedByMeTime": "2026-10-02T11:20:43.416Z",
+        "display_title": "lv2_gpt_H1022_1_en-friendly-scarecrow-in-pumpkin-patch-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/1-hMkc1x2K7V_UN0_8qYE68JzdLqoIp51/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -807,17 +895,17 @@
         "can_list_children": false
       },
       "sample": {
-        "url": "https://drive.google.com/file/d/1ZByj5bW-vDECGkYTPfAeyMpJe1aIT9hj/view?usp=drivesdk",
-        "title": "lv2_gpt_H1019_1_en-children-trick-or-treating-coloring-page-sample.png",
-        "id": "1ZByj5bW-vDECGkYTPfAeyMpJe1aIT9hj",
+        "url": "https://drive.google.com/file/d/1341GEZC9ViWIXvq9BYKxJqs3ltz4QcTI/view?usp=drivesdk",
+        "title": "lv2_gpt_H1022_1_en-friendly-scarecrow-in-pumpkin-patch-coloring-page-sample.png",
+        "id": "1341GEZC9ViWIXvq9BYKxJqs3ltz4QcTI",
         "mime_type": "image/png",
-        "size": "1576023",
+        "size": "1819754",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:21:05.634Z",
-        "updated_at": "2026-09-30T19:12:25.856Z",
-        "viewedByMeTime": "2026-10-02T11:21:05.634Z",
-        "display_title": "lv2_gpt_H1019_1_en-children-trick-or-treating-coloring-page-sample.png",
-        "display_url": "https://drive.google.com/file/d/1ZByj5bW-vDECGkYTPfAeyMpJe1aIT9hj/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:20:51.659Z",
+        "updated_at": "2026-09-30T19:12:25.982Z",
+        "viewedByMeTime": "2026-10-02T11:20:51.659Z",
+        "display_title": "lv2_gpt_H1022_1_en-friendly-scarecrow-in-pumpkin-patch-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/1341GEZC9ViWIXvq9BYKxJqs3ltz4QcTI/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -827,19 +915,19 @@
       }
     },
     {
-      "originalBase": "lv2_gpt_H1020_1_en-friendly-witch-cauldron-with-bubbles-coloring-page",
+      "originalBase": "lv2_gpt_H1023_1_en-friendly-spider-on-decorative-web-coloring-page",
       "coloring": {
-        "url": "https://drive.google.com/file/d/138lwPd_rX27mjLutWuoh8pHyyprw87jp/view?usp=drivesdk",
-        "title": "lv2_gpt_H1020_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-coloring.png",
-        "id": "138lwPd_rX27mjLutWuoh8pHyyprw87jp",
+        "url": "https://drive.google.com/file/d/1j9LPGwBgCOlbNbBIQ45lEsMY-kpOIrDo/view?usp=drivesdk",
+        "title": "lv2_gpt_H1023_1_en-friendly-spider-on-decorative-web-coloring-page-coloring.png",
+        "id": "1j9LPGwBgCOlbNbBIQ45lEsMY-kpOIrDo",
         "mime_type": "image/png",
-        "size": "1068142",
+        "size": "956254",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:21:07.889Z",
-        "updated_at": "2026-09-30T19:12:27.907Z",
-        "viewedByMeTime": "2026-10-02T11:21:07.889Z",
-        "display_title": "lv2_gpt_H1020_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-coloring.png",
-        "display_url": "https://drive.google.com/file/d/138lwPd_rX27mjLutWuoh8pHyyprw87jp/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:20:14.489Z",
+        "updated_at": "2026-09-30T19:12:28.020Z",
+        "viewedByMeTime": "2026-10-02T11:20:14.489Z",
+        "display_title": "lv2_gpt_H1023_1_en-friendly-spider-on-decorative-web-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/1j9LPGwBgCOlbNbBIQ45lEsMY-kpOIrDo/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -848,17 +936,17 @@
         "can_list_children": false
       },
       "sample": {
-        "url": "https://drive.google.com/file/d/1oIO6Q6xdCWDrVaEjp9FjZTND7X_7ZtZO/view?usp=drivesdk",
-        "title": "lv2_gpt_H1020_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-sample.png",
-        "id": "1oIO6Q6xdCWDrVaEjp9FjZTND7X_7ZtZO",
+        "url": "https://drive.google.com/file/d/1vVHxqbSIOcbI4yP0b7U8VxxLxwmJ4Rn1/view?usp=drivesdk",
+        "title": "lv2_gpt_H1023_1_en-friendly-spider-on-decorative-web-coloring-page-sample.png",
+        "id": "1vVHxqbSIOcbI4yP0b7U8VxxLxwmJ4Rn1",
         "mime_type": "image/png",
-        "size": "1165369",
+        "size": "1271657",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:53.680Z",
-        "updated_at": "2026-09-30T19:12:25.896Z",
-        "viewedByMeTime": "2026-10-02T11:20:53.680Z",
-        "display_title": "lv2_gpt_H1020_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-sample.png",
-        "display_url": "https://drive.google.com/file/d/1oIO6Q6xdCWDrVaEjp9FjZTND7X_7ZtZO/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:20:48.749Z",
+        "updated_at": "2026-09-30T19:12:26.017Z",
+        "viewedByMeTime": "2026-10-02T11:20:48.749Z",
+        "display_title": "lv2_gpt_H1023_1_en-friendly-spider-on-decorative-web-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/1vVHxqbSIOcbI4yP0b7U8VxxLxwmJ4Rn1/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],

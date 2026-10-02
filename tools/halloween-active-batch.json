@@ -1,20 +1,20 @@
 {
-  "batch": 7,
+  "batch": 8,
   "items": [
     {
-      "originalBase": "lv3_gpt_H1015_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page",
+      "originalBase": "lv1_gpt_H1018_1_en-friendly-cartoon-skull-coloring-page",
       "coloring": {
-        "url": "https://drive.google.com/file/d/1eBJNcvoQrr-NZhWPoeTKRBGSo07O_N1i/view?usp=drivesdk",
-        "title": "lv3_gpt_H1015_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-coloring.png",
-        "id": "1eBJNcvoQrr-NZhWPoeTKRBGSo07O_N1i",
+        "url": "https://drive.google.com/file/d/1DrmdSxRxkcYS660HZTuvjCxtzg1bw16P/view?usp=drivesdk",
+        "title": "lv1_gpt_H1018_1_en-friendly-cartoon-skull-coloring-page-coloring.png",
+        "id": "1DrmdSxRxkcYS660HZTuvjCxtzg1bw16P",
         "mime_type": "image/png",
-        "size": "77807",
+        "size": "923443",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:15.224Z",
-        "updated_at": "2026-09-30T10:20:19.370Z",
-        "viewedByMeTime": "2026-10-02T11:20:15.224Z",
-        "display_title": "lv3_gpt_H1015_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-coloring.png",
-        "display_url": "https://drive.google.com/file/d/1eBJNcvoQrr-NZhWPoeTKRBGSo07O_N1i/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:20:11.839Z",
+        "updated_at": "2026-09-30T15:56:58.000Z",
+        "viewedByMeTime": "2026-10-02T11:20:11.839Z",
+        "display_title": "lv1_gpt_H1018_1_en-friendly-cartoon-skull-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/1DrmdSxRxkcYS660HZTuvjCxtzg1bw16P/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -23,17 +23,17 @@
         "can_list_children": false
       },
       "sample": {
-        "url": "https://drive.google.com/file/d/1my683hfANzXVMsXeW7tKpkBPHXaPQf31/view?usp=drivesdk",
-        "title": "lv3_gpt_H1015_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-sample.png",
-        "id": "1my683hfANzXVMsXeW7tKpkBPHXaPQf31",
+        "url": "https://drive.google.com/file/d/14UW2IDDF1vPb8ZHZBce1q0SU8uvYFDaf/view?usp=drivesdk",
+        "title": "lv1_gpt_H1018_1_en-friendly-cartoon-skull-coloring-page-sample.png",
+        "id": "14UW2IDDF1vPb8ZHZBce1q0SU8uvYFDaf",
         "mime_type": "image/png",
-        "size": "798674",
+        "size": "1171149",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:14.951Z",
-        "updated_at": "2026-09-30T09:29:59.009Z",
-        "viewedByMeTime": "2026-10-02T11:20:14.951Z",
-        "display_title": "lv3_gpt_H1015_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-sample.png",
-        "display_url": "https://drive.google.com/file/d/1my683hfANzXVMsXeW7tKpkBPHXaPQf31/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:20:21.213Z",
+        "updated_at": "2026-09-30T15:56:54.080Z",
+        "viewedByMeTime": "2026-10-02T11:20:21.213Z",
+        "display_title": "lv1_gpt_H1018_1_en-friendly-cartoon-skull-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/14UW2IDDF1vPb8ZHZBce1q0SU8uvYFDaf/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -42,21 +42,21 @@
         "can_list_children": false
       },
       "names": [
-        "Duchové v zahradě před starým domem",
-        "Friendly Ghosts in a Garden by an Old House",
-        "Freundliche Geister im Garten vor einem alten Haus",
-        "Fantasmas amistosos en el jardín de una casa antigua"
+        "Veselá lebka",
+        "Friendly Cartoon Skull",
+        "Freundlicher Totenkopf",
+        "Calavera simpática"
       ],
-      "id": 10196,
-      "masterRow": 1367,
+      "id": 10199,
+      "masterRow": 1370,
       "existingMaster": false,
-      "sheetRow": 34,
-      "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/fd45084b-a73c-4f44-96de-d10881185fbf/lv3_gpt_H1015_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-coloring.png",
-      "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/4b0f5e0c-bb52-481c-a644-799057a61a44/lv3_gpt_H1015_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-sample.png",
-      "base": "lv3_gpt_10196_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page",
+      "sheetRow": 37,
+      "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/29bc6fd6-dd86-4f4b-889b-e32aa9ffc1b1/lv1_gpt_H1018_1_en-friendly-cartoon-skull-coloring-page-coloring.png",
+      "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/ef770cbf-ac99-4429-aec4-405036a22cbe/lv1_gpt_H1018_1_en-friendly-cartoon-skull-coloring-page-sample.png",
+      "base": "lv1_gpt_10199_1_en-friendly-cartoon-skull-coloring-page",
       "row": {
-        "ID": "10196",
-        "soubor": "lv3_gpt_10196_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page",
+        "ID": "10199",
+        "soubor": "lv1_gpt_10199_1_en-friendly-cartoon-skull-coloring-page",
         "kategorie": "svatky",
         "podkategorie": "halloween",
         "datumPridani": "2026-10-02",
@@ -64,123 +64,40 @@
         "zamereni": "jemna-motorika",
         "assetDirectory": "en",
         "pdf": "1",
-        "nazevCz": "Duchové v zahradě před starým domem",
-        "altCz_coloring": "Duchové v zahradě před starým domem: černobílá omalovánka LV3 pro děti 6–7 let, zdarma k vytisknutí na A4.",
-        "altCz_sample": "Duchové v zahradě před starým domem: barevný vzor k omalovánce LV3.",
-        "nazevEn": "Friendly Ghosts in a Garden by an Old House",
-        "altEn_coloring": "Friendly Ghosts in a Garden by an Old House: black-and-white LV3 coloring page for ages 6–7, free to print on A4 paper.",
-        "altEn_sample": "Friendly Ghosts in a Garden by an Old House: color sample for the LV3 coloring page.",
-        "nazevDe": "Freundliche Geister im Garten vor einem alten Haus",
-        "altDe_coloring": "Freundliche Geister im Garten vor einem alten Haus: schwarz-weißes Ausmalbild der Stufe 3 für Kinder von 6–7 Jahren, kostenlos auf A4 drucken.",
-        "altDe_sample": "Freundliche Geister im Garten vor einem alten Haus: Farbvorlage zum Ausmalbild der Stufe 3.",
-        "nazevEs": "Fantasmas amistosos en el jardín de una casa antigua",
-        "altEs_coloring": "Fantasmas amistosos en el jardín de una casa antigua: dibujo en blanco y negro de nivel 3 para niños de 6–7 años, gratis para imprimir en A4.",
-        "altEs_sample": "Fantasmas amistosos en el jardín de una casa antigua: modelo a color para el dibujo de nivel 3.",
+        "nazevCz": "Veselá lebka",
+        "altCz_coloring": "Veselá lebka: černobílá omalovánka LV1 pro děti 3–4 let, zdarma k vytisknutí na A4.",
+        "altCz_sample": "Veselá lebka: barevný vzor k omalovánce LV1.",
+        "nazevEn": "Friendly Cartoon Skull",
+        "altEn_coloring": "Friendly Cartoon Skull: black-and-white LV1 coloring page for ages 3–4, free to print on A4 paper.",
+        "altEn_sample": "Friendly Cartoon Skull: color sample for the LV1 coloring page.",
+        "nazevDe": "Freundlicher Totenkopf",
+        "altDe_coloring": "Freundlicher Totenkopf: schwarz-weißes Ausmalbild der Stufe 1 für Kinder von 3–4 Jahren, kostenlos auf A4 drucken.",
+        "altDe_sample": "Freundlicher Totenkopf: Farbvorlage zum Ausmalbild der Stufe 1.",
+        "nazevEs": "Calavera simpática",
+        "altEs_coloring": "Calavera simpática: dibujo en blanco y negro de nivel 1 para niños de 3–4 años, gratis para imprimir en A4.",
+        "altEs_sample": "Calavera simpática: modelo a color para el dibujo de nivel 1.",
         "Status": "vygenerováno",
-        "driveColoring": "https://drive.google.com/file/d/16qngw2gBN8ODOSN77z-D1aoNokeizeDt/view",
-        "drivePdfColoring": "https://drive.google.com/file/d/1MvVr4OvVW2PXh35wQK1N_Z_r-ic_mRgD/view",
-        "driveSample": "https://drive.google.com/file/d/1ZZAu6xvqQCL1Wnbp9MUy3GpVnXxUGnWF/view",
-        "drivePdfSample": "https://drive.google.com/file/d/1_I8XIF6uPZT7EWLBGRhA4sBTjPLRwcUU/view"
-      },
-      "level": 3
-    },
-    {
-      "originalBase": "lv1_gpt_H1016_1_en-friendly-mummy-coloring-page",
-      "coloring": {
-        "url": "https://drive.google.com/file/d/1tq8PlCy0RTqcd05vdrg0FvPRvx6ONne9/view?usp=drivesdk",
-        "title": "lv1_gpt_H1016_1_en-friendly-mummy-coloring-page-coloring.png",
-        "id": "1tq8PlCy0RTqcd05vdrg0FvPRvx6ONne9",
-        "mime_type": "image/png",
-        "size": "1245136",
-        "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:35.360Z",
-        "updated_at": "2026-09-30T15:56:57.967Z",
-        "viewedByMeTime": "2026-10-02T11:20:35.360Z",
-        "display_title": "lv1_gpt_H1016_1_en-friendly-mummy-coloring-page-coloring.png",
-        "display_url": "https://drive.google.com/file/d/1tq8PlCy0RTqcd05vdrg0FvPRvx6ONne9/view?usp=drivesdk",
-        "parent_ids": [
-          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
-        ],
-        "shared": false,
-        "can_download": true,
-        "can_list_children": false
-      },
-      "sample": {
-        "url": "https://drive.google.com/file/d/1vdPa2CSl5BMneEClCnfCp6FuUtPi8rC0/view?usp=drivesdk",
-        "title": "lv1_gpt_H1016_1_en-friendly-mummy-coloring-page-sample.png",
-        "id": "1vdPa2CSl5BMneEClCnfCp6FuUtPi8rC0",
-        "mime_type": "image/png",
-        "size": "1381121",
-        "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:15.247Z",
-        "updated_at": "2026-09-30T15:56:54.046Z",
-        "viewedByMeTime": "2026-10-02T11:20:15.247Z",
-        "display_title": "lv1_gpt_H1016_1_en-friendly-mummy-coloring-page-sample.png",
-        "display_url": "https://drive.google.com/file/d/1vdPa2CSl5BMneEClCnfCp6FuUtPi8rC0/view?usp=drivesdk",
-        "parent_ids": [
-          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
-        ],
-        "shared": false,
-        "can_download": true,
-        "can_list_children": false
-      },
-      "names": [
-        "Veselá mumie",
-        "Friendly Mummy",
-        "Freundliche Mumie",
-        "Momia amistosa"
-      ],
-      "id": 10197,
-      "masterRow": 1368,
-      "existingMaster": false,
-      "sheetRow": 35,
-      "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/90d5bda4-1e46-4a95-bdcb-51ebbf7c2955/lv1_gpt_H1016_1_en-friendly-mummy-coloring-page-coloring.png",
-      "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/987d34a4-bbe3-4c66-ad2f-98add9d23197/lv1_gpt_H1016_1_en-friendly-mummy-coloring-page-sample.png",
-      "base": "lv1_gpt_10197_1_en-friendly-mummy-coloring-page",
-      "row": {
-        "ID": "10197",
-        "soubor": "lv1_gpt_10197_1_en-friendly-mummy-coloring-page",
-        "kategorie": "svatky",
-        "podkategorie": "halloween",
-        "datumPridani": "2026-10-02",
-        "sezona": "podzim,halloween",
-        "zamereni": "jemna-motorika",
-        "assetDirectory": "en",
-        "pdf": "1",
-        "nazevCz": "Veselá mumie",
-        "altCz_coloring": "Veselá mumie: černobílá omalovánka LV1 pro děti 3–4 let, zdarma k vytisknutí na A4.",
-        "altCz_sample": "Veselá mumie: barevný vzor k omalovánce LV1.",
-        "nazevEn": "Friendly Mummy",
-        "altEn_coloring": "Friendly Mummy: black-and-white LV1 coloring page for ages 3–4, free to print on A4 paper.",
-        "altEn_sample": "Friendly Mummy: color sample for the LV1 coloring page.",
-        "nazevDe": "Freundliche Mumie",
-        "altDe_coloring": "Freundliche Mumie: schwarz-weißes Ausmalbild der Stufe 1 für Kinder von 3–4 Jahren, kostenlos auf A4 drucken.",
-        "altDe_sample": "Freundliche Mumie: Farbvorlage zum Ausmalbild der Stufe 1.",
-        "nazevEs": "Momia amistosa",
-        "altEs_coloring": "Momia amistosa: dibujo en blanco y negro de nivel 1 para niños de 3–4 años, gratis para imprimir en A4.",
-        "altEs_sample": "Momia amistosa: modelo a color para el dibujo de nivel 1.",
-        "Status": "vygenerováno",
-        "driveColoring": "https://drive.google.com/file/d/1bepdHpMcVTGXVHrnU5WVFb0CUeGmotgH/view",
-        "drivePdfColoring": "https://drive.google.com/file/d/1HV9A5ik2Lo2D9n2Wh_KYfVZ8nuhDmqMu/view",
-        "driveSample": "https://drive.google.com/file/d/1PkkjSn1fNnMZXKaAzjYmow7jTBpzupSk/view",
-        "drivePdfSample": "https://drive.google.com/file/d/1URD3W3mTs_p1PMd1NnZN8sVntJOtMnNv/view"
+        "driveColoring": "https://drive.google.com/file/d/1kWmhoveAMAXaE2EW6q7epqx9_FuoW1ZX/view",
+        "drivePdfColoring": "https://drive.google.com/file/d/17gPelOhIyBwSGFLxwJOraQE5Xodq7uDF/view",
+        "driveSample": "https://drive.google.com/file/d/1oJ0eMlJO6KxiOE51uCLn51os9PboFrJJ/view",
+        "drivePdfSample": "https://drive.google.com/file/d/1nxLO6OJt2jMK1X76GosQVx99SU64Nc6h/view"
       },
       "level": 1
     },
     {
-      "originalBase": "lv1_gpt_H1017_1_en-friendly-raven-coloring-page",
+      "originalBase": "lv2_gpt_H1019_1_en-children-trick-or-treating-coloring-page",
       "coloring": {
-        "url": "https://drive.google.com/file/d/1RaPpR4vHrdfJJjb3Oa_WXrEHaFBsNjRU/view?usp=drivesdk",
-        "title": "lv1_gpt_H1017_1_en-friendly-raven-coloring-page-coloring.png",
-        "id": "1RaPpR4vHrdfJJjb3Oa_WXrEHaFBsNjRU",
+        "url": "https://drive.google.com/file/d/1MJFWryHXxG9Q-jxmukFEffjYfV8MkQnE/view?usp=drivesdk",
+        "title": "lv2_gpt_H1019_1_en-children-trick-or-treating-coloring-page-coloring.png",
+        "id": "1MJFWryHXxG9Q-jxmukFEffjYfV8MkQnE",
         "mime_type": "image/png",
-        "size": "932056",
+        "size": "1430171",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:12.029Z",
-        "updated_at": "2026-09-30T15:56:57.983Z",
-        "viewedByMeTime": "2026-10-02T11:20:12.029Z",
-        "display_title": "lv1_gpt_H1017_1_en-friendly-raven-coloring-page-coloring.png",
-        "display_url": "https://drive.google.com/file/d/1RaPpR4vHrdfJJjb3Oa_WXrEHaFBsNjRU/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:20:37.707Z",
+        "updated_at": "2026-09-30T19:12:27.873Z",
+        "viewedByMeTime": "2026-10-02T11:20:37.707Z",
+        "display_title": "lv2_gpt_H1019_1_en-children-trick-or-treating-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/1MJFWryHXxG9Q-jxmukFEffjYfV8MkQnE/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -189,17 +106,17 @@
         "can_list_children": false
       },
       "sample": {
-        "url": "https://drive.google.com/file/d/124FEsEzgi8XdAi-HcG3HHh6yqvA1EtXf/view?usp=drivesdk",
-        "title": "lv1_gpt_H1017_1_en-friendly-raven-coloring-page-sample.png",
-        "id": "124FEsEzgi8XdAi-HcG3HHh6yqvA1EtXf",
+        "url": "https://drive.google.com/file/d/1ZByj5bW-vDECGkYTPfAeyMpJe1aIT9hj/view?usp=drivesdk",
+        "title": "lv2_gpt_H1019_1_en-children-trick-or-treating-coloring-page-sample.png",
+        "id": "1ZByj5bW-vDECGkYTPfAeyMpJe1aIT9hj",
         "mime_type": "image/png",
-        "size": "1161011",
+        "size": "1576023",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:33.241Z",
-        "updated_at": "2026-09-30T15:56:54.063Z",
-        "viewedByMeTime": "2026-10-02T11:20:33.241Z",
-        "display_title": "lv1_gpt_H1017_1_en-friendly-raven-coloring-page-sample.png",
-        "display_url": "https://drive.google.com/file/d/124FEsEzgi8XdAi-HcG3HHh6yqvA1EtXf/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:21:05.634Z",
+        "updated_at": "2026-09-30T19:12:25.856Z",
+        "viewedByMeTime": "2026-10-02T11:21:05.634Z",
+        "display_title": "lv2_gpt_H1019_1_en-children-trick-or-treating-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/1ZByj5bW-vDECGkYTPfAeyMpJe1aIT9hj/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -208,21 +125,21 @@
         "can_list_children": false
       },
       "names": [
-        "Veselý havran",
-        "Friendly Raven",
-        "Freundlicher Rabe",
-        "Cuervo amistoso"
+        "Děti na halloweenské koledě",
+        "Children Trick-or-Treating",
+        "Kinder beim Süßigkeitensammeln",
+        "Niños pidiendo dulces en Halloween"
       ],
-      "id": 10198,
-      "masterRow": 1369,
+      "id": 10200,
+      "masterRow": 1371,
       "existingMaster": false,
-      "sheetRow": 36,
-      "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/46380761-873c-4386-8132-9a090bd12780/lv1_gpt_H1017_1_en-friendly-raven-coloring-page-coloring.png",
-      "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/a9d04f62-0b73-4815-8d3e-a3c09aa394e8/lv1_gpt_H1017_1_en-friendly-raven-coloring-page-sample.png",
-      "base": "lv1_gpt_10198_1_en-friendly-raven-coloring-page",
+      "sheetRow": 38,
+      "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/a12a8499-2452-4416-89ae-ad083fc7c04b/lv2_gpt_H1019_1_en-children-trick-or-treating-coloring-page-coloring.png",
+      "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/4fa23d61-9cc4-4bab-ba20-6bed5dcc4773/lv2_gpt_H1019_1_en-children-trick-or-treating-coloring-page-sample.png",
+      "base": "lv2_gpt_10200_1_en-children-trick-or-treating-coloring-page",
       "row": {
-        "ID": "10198",
-        "soubor": "lv1_gpt_10198_1_en-friendly-raven-coloring-page",
+        "ID": "10200",
+        "soubor": "lv2_gpt_10200_1_en-children-trick-or-treating-coloring-page",
         "kategorie": "svatky",
         "podkategorie": "halloween",
         "datumPridani": "2026-10-02",
@@ -230,37 +147,120 @@
         "zamereni": "jemna-motorika",
         "assetDirectory": "en",
         "pdf": "1",
-        "nazevCz": "Veselý havran",
-        "altCz_coloring": "Veselý havran: černobílá omalovánka LV1 pro děti 3–4 let, zdarma k vytisknutí na A4.",
-        "altCz_sample": "Veselý havran: barevný vzor k omalovánce LV1.",
-        "nazevEn": "Friendly Raven",
-        "altEn_coloring": "Friendly Raven: black-and-white LV1 coloring page for ages 3–4, free to print on A4 paper.",
-        "altEn_sample": "Friendly Raven: color sample for the LV1 coloring page.",
-        "nazevDe": "Freundlicher Rabe",
-        "altDe_coloring": "Freundlicher Rabe: schwarz-weißes Ausmalbild der Stufe 1 für Kinder von 3–4 Jahren, kostenlos auf A4 drucken.",
-        "altDe_sample": "Freundlicher Rabe: Farbvorlage zum Ausmalbild der Stufe 1.",
-        "nazevEs": "Cuervo amistoso",
-        "altEs_coloring": "Cuervo amistoso: dibujo en blanco y negro de nivel 1 para niños de 3–4 años, gratis para imprimir en A4.",
-        "altEs_sample": "Cuervo amistoso: modelo a color para el dibujo de nivel 1.",
+        "nazevCz": "Děti na halloweenské koledě",
+        "altCz_coloring": "Děti na halloweenské koledě: černobílá omalovánka LV2 pro děti 5–6 let, zdarma k vytisknutí na A4.",
+        "altCz_sample": "Děti na halloweenské koledě: barevný vzor k omalovánce LV2.",
+        "nazevEn": "Children Trick-or-Treating",
+        "altEn_coloring": "Children Trick-or-Treating: black-and-white LV2 coloring page for ages 5–6, free to print on A4 paper.",
+        "altEn_sample": "Children Trick-or-Treating: color sample for the LV2 coloring page.",
+        "nazevDe": "Kinder beim Süßigkeitensammeln",
+        "altDe_coloring": "Kinder beim Süßigkeitensammeln: schwarz-weißes Ausmalbild der Stufe 2 für Kinder von 5–6 Jahren, kostenlos auf A4 drucken.",
+        "altDe_sample": "Kinder beim Süßigkeitensammeln: Farbvorlage zum Ausmalbild der Stufe 2.",
+        "nazevEs": "Niños pidiendo dulces en Halloween",
+        "altEs_coloring": "Niños pidiendo dulces en Halloween: dibujo en blanco y negro de nivel 2 para niños de 5–6 años, gratis para imprimir en A4.",
+        "altEs_sample": "Niños pidiendo dulces en Halloween: modelo a color para el dibujo de nivel 2.",
         "Status": "vygenerováno",
-        "driveColoring": "https://drive.google.com/file/d/1CzwAUPlox-CPRoqiSXTNGwOwOb-r012G/view",
-        "drivePdfColoring": "https://drive.google.com/file/d/1UjgxQgKxxUXDaI8I8eVx370aIreLMHQ0/view",
-        "driveSample": "https://drive.google.com/file/d/129npSNo1lJUgNkCzbSp4SePNvRyoU6SJ/view",
-        "drivePdfSample": "https://drive.google.com/file/d/1KJf59ool4I6k8dVVjy40v3wkS2FxZQG5/view"
+        "driveColoring": "https://drive.google.com/file/d/14zbQQWqCspGSWX2FoeTuiKuHRlqNOUhM/view",
+        "drivePdfColoring": "https://drive.google.com/file/d/1vmEZd1xzyuRVIlSagZzcgewdYxaPCGZ8/view",
+        "driveSample": "https://drive.google.com/file/d/1IS3EW8zraat9NEiPK5p_pF8eE187mOdN/view",
+        "drivePdfSample": "https://drive.google.com/file/d/1cjamd8Ex2dAWeqBgFLPpce8z1qi0RRdz/view"
       },
-      "level": 1
+      "level": 2
+    },
+    {
+      "originalBase": "lv2_gpt_H1020_1_en-friendly-witch-cauldron-with-bubbles-coloring-page",
+      "coloring": {
+        "url": "https://drive.google.com/file/d/138lwPd_rX27mjLutWuoh8pHyyprw87jp/view?usp=drivesdk",
+        "title": "lv2_gpt_H1020_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-coloring.png",
+        "id": "138lwPd_rX27mjLutWuoh8pHyyprw87jp",
+        "mime_type": "image/png",
+        "size": "1068142",
+        "file_or_folder": "file",
+        "created_at": "2026-10-02T11:21:07.889Z",
+        "updated_at": "2026-09-30T19:12:27.907Z",
+        "viewedByMeTime": "2026-10-02T11:21:07.889Z",
+        "display_title": "lv2_gpt_H1020_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/138lwPd_rX27mjLutWuoh8pHyyprw87jp/view?usp=drivesdk",
+        "parent_ids": [
+          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+        ],
+        "shared": false,
+        "can_download": true,
+        "can_list_children": false
+      },
+      "sample": {
+        "url": "https://drive.google.com/file/d/1oIO6Q6xdCWDrVaEjp9FjZTND7X_7ZtZO/view?usp=drivesdk",
+        "title": "lv2_gpt_H1020_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-sample.png",
+        "id": "1oIO6Q6xdCWDrVaEjp9FjZTND7X_7ZtZO",
+        "mime_type": "image/png",
+        "size": "1165369",
+        "file_or_folder": "file",
+        "created_at": "2026-10-02T11:20:53.680Z",
+        "updated_at": "2026-09-30T19:12:25.896Z",
+        "viewedByMeTime": "2026-10-02T11:20:53.680Z",
+        "display_title": "lv2_gpt_H1020_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/1oIO6Q6xdCWDrVaEjp9FjZTND7X_7ZtZO/view?usp=drivesdk",
+        "parent_ids": [
+          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+        ],
+        "shared": false,
+        "can_download": true,
+        "can_list_children": false
+      },
+      "names": [
+        "Čarodějnický kotlík s bublinami",
+        "Witch Cauldron with Bubbles",
+        "Hexenkessel mit Blasen",
+        "Caldero de bruja con burbujas"
+      ],
+      "id": 10025,
+      "masterRow": 1196,
+      "existingMaster": true,
+      "sheetRow": 39,
+      "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/b4f6658f-628c-4a4e-9d89-41500e68d301/lv2_gpt_H1020_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-coloring.png",
+      "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/461d023a-337f-46d2-885b-66e43b83a8ec/lv2_gpt_H1020_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-sample.png",
+      "base": "lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-coloring-page",
+      "row": {
+        "ID": "10025",
+        "soubor": "lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-coloring-page",
+        "kategorie": "svatky",
+        "podkategorie": "halloween",
+        "datumPridani": "2026-10-02",
+        "sezona": "podzim,halloween",
+        "zamereni": "jemna-motorika",
+        "assetDirectory": "en",
+        "pdf": "1",
+        "nazevCz": "Čarodějnický kotlík s bublinami",
+        "altCz_coloring": "Čarodějnický kotlík s bublinami: černobílá omalovánka LV2 pro děti 5–6 let, zdarma k vytisknutí na A4.",
+        "altCz_sample": "Čarodějnický kotlík s bublinami: barevný vzor k omalovánce LV2.",
+        "nazevEn": "Witch Cauldron with Bubbles",
+        "altEn_coloring": "Witch Cauldron with Bubbles: black-and-white LV2 coloring page for ages 5–6, free to print on A4 paper.",
+        "altEn_sample": "Witch Cauldron with Bubbles: color sample for the LV2 coloring page.",
+        "nazevDe": "Hexenkessel mit Blasen",
+        "altDe_coloring": "Hexenkessel mit Blasen: schwarz-weißes Ausmalbild der Stufe 2 für Kinder von 5–6 Jahren, kostenlos auf A4 drucken.",
+        "altDe_sample": "Hexenkessel mit Blasen: Farbvorlage zum Ausmalbild der Stufe 2.",
+        "nazevEs": "Caldero de bruja con burbujas",
+        "altEs_coloring": "Caldero de bruja con burbujas: dibujo en blanco y negro de nivel 2 para niños de 5–6 años, gratis para imprimir en A4.",
+        "altEs_sample": "Caldero de bruja con burbujas: modelo a color para el dibujo de nivel 2.",
+        "Status": "vygenerováno",
+        "driveColoring": "https://drive.google.com/file/d/114HYiYueDiJH820QII-qWvPg3x_zjR-H/view",
+        "drivePdfColoring": "https://drive.google.com/file/d/1W7nReLgkJjzMGAP404XT3hxZocLYgILB/view",
+        "driveSample": "https://drive.google.com/file/d/1l3GMHtM-XnZ9GDIIYH0Xks-mm3NaCVYk/view",
+        "drivePdfSample": "https://drive.google.com/file/d/1e-h1RY0KuvOrE-Zmx6DTUgLnzbZ7S6oV/view"
+      },
+      "level": 2
     }
   ],
   "files": [
     {
-      "file": "/tmp/vinmat-halloween-batch-7/lv3_gpt_10196_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-coloring.png",
-      "path": "public/omalovanky/en/lv3_gpt_10196_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-coloring.png",
-      "bytes": 153316,
-      "sha": "36942a67e0f2228e378eeb82c93ea4064b2d241d",
-      "id": 10196,
+      "file": "/tmp/vinmat-halloween-batch-8/lv1_gpt_10199_1_en-friendly-cartoon-skull-coloring-page-coloring.png",
+      "path": "public/omalovanky/en/lv1_gpt_10199_1_en-friendly-cartoon-skull-coloring-page-coloring.png",
+      "bytes": 791336,
+      "sha": "639657abe8a9b8dc0107edd1c335b1c5c8e90954",
+      "id": 10199,
       "variant": "coloring",
       "ext": "png",
-      "driveId": "16qngw2gBN8ODOSN77z-D1aoNokeizeDt",
+      "driveId": "1kWmhoveAMAXaE2EW6q7epqx9_FuoW1ZX",
       "placement": {
         "x": 157.23779527559057,
         "top": 14.173228346456694,
@@ -277,14 +277,14 @@
       "driveUploaded": true
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-7/lv3_gpt_10196_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-coloring.pdf",
-      "path": "public/omalovanky/en/lv3_gpt_10196_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-coloring.pdf",
-      "bytes": 162769,
-      "sha": "ee1076c9e2d178a087077452df774098dd4ffa52",
-      "id": 10196,
+      "file": "/tmp/vinmat-halloween-batch-8/lv1_gpt_10199_1_en-friendly-cartoon-skull-coloring-page-coloring.pdf",
+      "path": "public/omalovanky/en/lv1_gpt_10199_1_en-friendly-cartoon-skull-coloring-page-coloring.pdf",
+      "bytes": 1140395,
+      "sha": "2edb039a8eafa58d647cddc3448d512b503a76fa",
+      "id": 10199,
       "variant": "coloring",
       "ext": "pdf",
-      "driveId": "1MvVr4OvVW2PXh35wQK1N_Z_r-ic_mRgD",
+      "driveId": "17gPelOhIyBwSGFLxwJOraQE5Xodq7uDF",
       "placement": {
         "x": 157.23779527559057,
         "top": 14.173228346456694,
@@ -301,11 +301,11 @@
       "driveUploaded": true
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-7/lv3_gpt_10196_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-coloring.webp",
-      "path": "public/omalovanky/en/lv3_gpt_10196_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-coloring.webp",
-      "bytes": 179348,
-      "sha": "2d8a8a22ebfe81f6e70817eead784bd132e53ab5",
-      "id": 10196,
+      "file": "/tmp/vinmat-halloween-batch-8/lv1_gpt_10199_1_en-friendly-cartoon-skull-coloring-page-coloring.webp",
+      "path": "public/omalovanky/en/lv1_gpt_10199_1_en-friendly-cartoon-skull-coloring-page-coloring.webp",
+      "bytes": 68550,
+      "sha": "bb52e601af0dfdc797db2792b82b352432c21ed7",
+      "id": 10199,
       "variant": "coloring",
       "ext": "webp",
       "driveId": null,
@@ -324,14 +324,14 @@
       }
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-7/lv3_gpt_10196_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-sample.png",
-      "path": "public/omalovanky/en/lv3_gpt_10196_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-sample.png",
-      "bytes": 2541704,
-      "sha": "56157654332f5187b05055198936e7c9b4058db1",
-      "id": 10196,
+      "file": "/tmp/vinmat-halloween-batch-8/lv1_gpt_10199_1_en-friendly-cartoon-skull-coloring-page-sample.png",
+      "path": "public/omalovanky/en/lv1_gpt_10199_1_en-friendly-cartoon-skull-coloring-page-sample.png",
+      "bytes": 1004567,
+      "sha": "fa4fecec7f9280ead0333d50a9dcd4d2c978d90b",
+      "id": 10199,
       "variant": "sample",
       "ext": "png",
-      "driveId": "1ZZAu6xvqQCL1Wnbp9MUy3GpVnXxUGnWF",
+      "driveId": "1oJ0eMlJO6KxiOE51uCLn51os9PboFrJJ",
       "placement": {
         "x": 77.85860975522857,
         "top": 14.173228346456694,
@@ -348,14 +348,14 @@
       "driveUploaded": true
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-7/lv3_gpt_10196_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-sample.pdf",
-      "path": "public/omalovanky/en/lv3_gpt_10196_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-sample.pdf",
-      "bytes": 1445644,
-      "sha": "e28bdae2eca20b69080971909d3b54d6c879809d",
-      "id": 10196,
+      "file": "/tmp/vinmat-halloween-batch-8/lv1_gpt_10199_1_en-friendly-cartoon-skull-coloring-page-sample.pdf",
+      "path": "public/omalovanky/en/lv1_gpt_10199_1_en-friendly-cartoon-skull-coloring-page-sample.pdf",
+      "bytes": 1818840,
+      "sha": "f097597014d4b0f1374269405f97e90dbb21d58f",
+      "id": 10199,
       "variant": "sample",
       "ext": "pdf",
-      "driveId": "1_I8XIF6uPZT7EWLBGRhA4sBTjPLRwcUU",
+      "driveId": "1nxLO6OJt2jMK1X76GosQVx99SU64Nc6h",
       "placement": {
         "x": 77.85860975522857,
         "top": 14.173228346456694,
@@ -372,11 +372,11 @@
       "driveUploaded": true
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-7/lv3_gpt_10196_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-sample.webp",
-      "path": "public/omalovanky/en/lv3_gpt_10196_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-sample.webp",
-      "bytes": 635766,
-      "sha": "8770101dc9be5abfae8a5569cc281ab02866b0ef",
-      "id": 10196,
+      "file": "/tmp/vinmat-halloween-batch-8/lv1_gpt_10199_1_en-friendly-cartoon-skull-coloring-page-sample.webp",
+      "path": "public/omalovanky/en/lv1_gpt_10199_1_en-friendly-cartoon-skull-coloring-page-sample.webp",
+      "bytes": 88392,
+      "sha": "ab57a35a99b9a2423c6aa934172bd21e00b1cfa9",
+      "id": 10199,
       "variant": "sample",
       "ext": "webp",
       "driveId": null,
@@ -395,126 +395,14 @@
       }
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-7/lv1_gpt_10197_1_en-friendly-mummy-coloring-page-coloring.png",
-      "path": "public/omalovanky/en/lv1_gpt_10197_1_en-friendly-mummy-coloring-page-coloring.png",
-      "bytes": 1096949,
-      "sha": "9c8e9b0a04985b5da31c8a2ddc46084c626b9a22",
-      "id": 10197,
+      "file": "/tmp/vinmat-halloween-batch-8/lv2_gpt_10200_1_en-children-trick-or-treating-coloring-page-coloring.png",
+      "path": "public/omalovanky/en/lv2_gpt_10200_1_en-children-trick-or-treating-coloring-page-coloring.png",
+      "bytes": 1318110,
+      "sha": "e13e7ef09c8a5850aabcecfff9b374d92821c1fc",
+      "id": 10200,
       "variant": "coloring",
       "ext": "png",
-      "driveId": "1bepdHpMcVTGXVHrnU5WVFb0CUeGmotgH",
-      "placement": {
-        "x": 436.07534827377356,
-        "top": 14.173228346456694,
-        "size": 34,
-        "lines": [
-          "VinMat",
-          "Coloring"
-        ],
-        "widths": [
-          123.70769230769231,
-          136.52307692307693
-        ],
-        "height": 85.3923076923077,
-        "alignment": "right"
-      },
-      "driveUploaded": true
-    },
-    {
-      "file": "/tmp/vinmat-halloween-batch-7/lv1_gpt_10197_1_en-friendly-mummy-coloring-page-coloring.pdf",
-      "path": "public/omalovanky/en/lv1_gpt_10197_1_en-friendly-mummy-coloring-page-coloring.pdf",
-      "bytes": 1488658,
-      "sha": "fe59e16cad744bed4bd6196dfce7cb25ebcf9554",
-      "id": 10197,
-      "variant": "coloring",
-      "ext": "pdf",
-      "driveId": "1HV9A5ik2Lo2D9n2Wh_KYfVZ8nuhDmqMu",
-      "placement": {
-        "x": 436.07534827377356,
-        "top": 14.173228346456694,
-        "size": 34,
-        "lines": [
-          "VinMat",
-          "Coloring"
-        ],
-        "widths": [
-          123.70769230769231,
-          136.52307692307693
-        ],
-        "height": 85.3923076923077,
-        "alignment": "right"
-      },
-      "driveUploaded": true
-    },
-    {
-      "file": "/tmp/vinmat-halloween-batch-7/lv1_gpt_10197_1_en-friendly-mummy-coloring-page-coloring.webp",
-      "path": "public/omalovanky/en/lv1_gpt_10197_1_en-friendly-mummy-coloring-page-coloring.webp",
-      "bytes": 122040,
-      "sha": "1f12f580464094e139cb6f7f4667e24598a0993f",
-      "id": 10197,
-      "variant": "coloring",
-      "ext": "webp",
-      "driveId": null,
-      "placement": {
-        "x": 436.07534827377356,
-        "top": 14.173228346456694,
-        "size": 34,
-        "lines": [
-          "VinMat",
-          "Coloring"
-        ],
-        "widths": [
-          123.70769230769231,
-          136.52307692307693
-        ],
-        "height": 85.3923076923077,
-        "alignment": "right"
-      }
-    },
-    {
-      "file": "/tmp/vinmat-halloween-batch-7/lv1_gpt_10197_1_en-friendly-mummy-coloring-page-sample.png",
-      "path": "public/omalovanky/en/lv1_gpt_10197_1_en-friendly-mummy-coloring-page-sample.png",
-      "bytes": 1197321,
-      "sha": "9257850f0dea48fd7f224b50df97341436885457",
-      "id": 10197,
-      "variant": "sample",
-      "ext": "png",
-      "driveId": "1PkkjSn1fNnMZXKaAzjYmow7jTBpzupSk",
-      "placement": null,
-      "driveUploaded": true
-    },
-    {
-      "file": "/tmp/vinmat-halloween-batch-7/lv1_gpt_10197_1_en-friendly-mummy-coloring-page-sample.pdf",
-      "path": "public/omalovanky/en/lv1_gpt_10197_1_en-friendly-mummy-coloring-page-sample.pdf",
-      "bytes": 2032631,
-      "sha": "c1bce50dd36ec1644a6d3b7c4cf7147a74ce7708",
-      "id": 10197,
-      "variant": "sample",
-      "ext": "pdf",
-      "driveId": "1URD3W3mTs_p1PMd1NnZN8sVntJOtMnNv",
-      "placement": null,
-      "driveUploaded": true
-    },
-    {
-      "file": "/tmp/vinmat-halloween-batch-7/lv1_gpt_10197_1_en-friendly-mummy-coloring-page-sample.webp",
-      "path": "public/omalovanky/en/lv1_gpt_10197_1_en-friendly-mummy-coloring-page-sample.webp",
-      "bytes": 155500,
-      "sha": "7a4bc99ef2968e4995cb8ef642a816f612bbc4ce",
-      "id": 10197,
-      "variant": "sample",
-      "ext": "webp",
-      "driveId": null,
-      "placement": null
-    },
-    {
-      "file": "/tmp/vinmat-halloween-batch-7/lv1_gpt_10198_1_en-friendly-raven-coloring-page-coloring.png",
-      "path": "public/omalovanky/en/lv1_gpt_10198_1_en-friendly-raven-coloring-page-coloring.png",
-      "bytes": 821361,
-      "sha": "db4bd4a76414b50ba638e672009da3df782ccaf5",
-      "id": 10198,
-      "variant": "coloring",
-      "ext": "png",
-      "driveId": "1CzwAUPlox-CPRoqiSXTNGwOwOb-r012G",
+      "driveId": "14zbQQWqCspGSWX2FoeTuiKuHRlqNOUhM",
       "placement": {
         "x": 157.23779527559057,
         "top": 14.173228346456694,
@@ -531,14 +419,14 @@
       "driveUploaded": true
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-7/lv1_gpt_10198_1_en-friendly-raven-coloring-page-coloring.pdf",
-      "path": "public/omalovanky/en/lv1_gpt_10198_1_en-friendly-raven-coloring-page-coloring.pdf",
-      "bytes": 1139972,
-      "sha": "9e21a3abe22655a12f44fecc0cc226ecb8dd686c",
-      "id": 10198,
+      "file": "/tmp/vinmat-halloween-batch-8/lv2_gpt_10200_1_en-children-trick-or-treating-coloring-page-coloring.pdf",
+      "path": "public/omalovanky/en/lv2_gpt_10200_1_en-children-trick-or-treating-coloring-page-coloring.pdf",
+      "bytes": 1662252,
+      "sha": "2571d6549d5947a91bcb993b6ff57d6305013ef2",
+      "id": 10200,
       "variant": "coloring",
       "ext": "pdf",
-      "driveId": "1UjgxQgKxxUXDaI8I8eVx370aIreLMHQ0",
+      "driveId": "1vmEZd1xzyuRVIlSagZzcgewdYxaPCGZ8",
       "placement": {
         "x": 157.23779527559057,
         "top": 14.173228346456694,
@@ -555,11 +443,11 @@
       "driveUploaded": true
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-7/lv1_gpt_10198_1_en-friendly-raven-coloring-page-coloring.webp",
-      "path": "public/omalovanky/en/lv1_gpt_10198_1_en-friendly-raven-coloring-page-coloring.webp",
-      "bytes": 73794,
-      "sha": "9a4567a733d720cc818bfdba620daa72d47fdc46",
-      "id": 10198,
+      "file": "/tmp/vinmat-halloween-batch-8/lv2_gpt_10200_1_en-children-trick-or-treating-coloring-page-coloring.webp",
+      "path": "public/omalovanky/en/lv2_gpt_10200_1_en-children-trick-or-treating-coloring-page-coloring.webp",
+      "bytes": 181282,
+      "sha": "999864770ea62d3ff14d7ae8ef7ffc9a27c9f6e2",
+      "id": 10200,
       "variant": "coloring",
       "ext": "webp",
       "driveId": null,
@@ -578,14 +466,14 @@
       }
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-7/lv1_gpt_10198_1_en-friendly-raven-coloring-page-sample.png",
-      "path": "public/omalovanky/en/lv1_gpt_10198_1_en-friendly-raven-coloring-page-sample.png",
-      "bytes": 1011658,
-      "sha": "b79e557a8965485a8fde53a876c1e32f6ff32ce5",
-      "id": 10198,
+      "file": "/tmp/vinmat-halloween-batch-8/lv2_gpt_10200_1_en-children-trick-or-treating-coloring-page-sample.png",
+      "path": "public/omalovanky/en/lv2_gpt_10200_1_en-children-trick-or-treating-coloring-page-sample.png",
+      "bytes": 1456812,
+      "sha": "71607c4e6fc711a8355757b2a76e0ffee9fbefb6",
+      "id": 10200,
       "variant": "sample",
       "ext": "png",
-      "driveId": "129npSNo1lJUgNkCzbSp4SePNvRyoU6SJ",
+      "driveId": "1IS3EW8zraat9NEiPK5p_pF8eE187mOdN",
       "placement": {
         "x": 77.85860975522857,
         "top": 14.173228346456694,
@@ -602,14 +490,14 @@
       "driveUploaded": true
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-7/lv1_gpt_10198_1_en-friendly-raven-coloring-page-sample.pdf",
-      "path": "public/omalovanky/en/lv1_gpt_10198_1_en-friendly-raven-coloring-page-sample.pdf",
-      "bytes": 1762938,
-      "sha": "0463ef49aa7fdcf90ffb910dbef20230bb5c4894",
-      "id": 10198,
+      "file": "/tmp/vinmat-halloween-batch-8/lv2_gpt_10200_1_en-children-trick-or-treating-coloring-page-sample.pdf",
+      "path": "public/omalovanky/en/lv2_gpt_10200_1_en-children-trick-or-treating-coloring-page-sample.pdf",
+      "bytes": 2555797,
+      "sha": "865a8a8602a8c9e44ae161192dca3c7bf059f009",
+      "id": 10200,
       "variant": "sample",
       "ext": "pdf",
-      "driveId": "1KJf59ool4I6k8dVVjy40v3wkS2FxZQG5",
+      "driveId": "1cjamd8Ex2dAWeqBgFLPpce8z1qi0RRdz",
       "placement": {
         "x": 77.85860975522857,
         "top": 14.173228346456694,
@@ -626,11 +514,153 @@
       "driveUploaded": true
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-7/lv1_gpt_10198_1_en-friendly-raven-coloring-page-sample.webp",
-      "path": "public/omalovanky/en/lv1_gpt_10198_1_en-friendly-raven-coloring-page-sample.webp",
-      "bytes": 75808,
-      "sha": "5fbc275409382134bd3d84983078ea9cd763f680",
-      "id": 10198,
+      "file": "/tmp/vinmat-halloween-batch-8/lv2_gpt_10200_1_en-children-trick-or-treating-coloring-page-sample.webp",
+      "path": "public/omalovanky/en/lv2_gpt_10200_1_en-children-trick-or-treating-coloring-page-sample.webp",
+      "bytes": 210258,
+      "sha": "0664902d213bed19e44442d866eb39bc5d3f87d8",
+      "id": 10200,
+      "variant": "sample",
+      "ext": "webp",
+      "driveId": null,
+      "placement": {
+        "x": 77.85860975522857,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring - Sample"
+        ],
+        "widths": [
+          439.558371040724
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      }
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-8/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-coloring.png",
+      "path": "public/omalovanky/en/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-coloring.png",
+      "bytes": 963228,
+      "sha": "7afc631d55fe80c3c4c608522213ee01103ec657",
+      "id": 10025,
+      "variant": "coloring",
+      "ext": "png",
+      "driveId": "114HYiYueDiJH820QII-qWvPg3x_zjR-H",
+      "placement": {
+        "x": 157.23779527559057,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring"
+        ],
+        "widths": [
+          280.8
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      },
+      "driveUploaded": true
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-8/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-coloring.pdf",
+      "path": "public/omalovanky/en/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-coloring.pdf",
+      "bytes": 1283252,
+      "sha": "0de9a0e7e6c0484f28c7e3ef8e7ae3e29966dc4e",
+      "id": 10025,
+      "variant": "coloring",
+      "ext": "pdf",
+      "driveId": "1W7nReLgkJjzMGAP404XT3hxZocLYgILB",
+      "placement": {
+        "x": 157.23779527559057,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring"
+        ],
+        "widths": [
+          280.8
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      },
+      "driveUploaded": true
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-8/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-coloring.webp",
+      "path": "public/omalovanky/en/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-coloring.webp",
+      "bytes": 100738,
+      "sha": "e44985c5b259f5be7abc6d2bb2ddf0d1c5011cab",
+      "id": 10025,
+      "variant": "coloring",
+      "ext": "webp",
+      "driveId": null,
+      "placement": {
+        "x": 157.23779527559057,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring"
+        ],
+        "widths": [
+          280.8
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      }
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-8/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-sample.png",
+      "path": "public/omalovanky/en/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-sample.png",
+      "bytes": 1052829,
+      "sha": "13466967b17249743a990c0edca8cc816233db97",
+      "id": 10025,
+      "variant": "sample",
+      "ext": "png",
+      "driveId": "1l3GMHtM-XnZ9GDIIYH0Xks-mm3NaCVYk",
+      "placement": {
+        "x": 77.85860975522857,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring - Sample"
+        ],
+        "widths": [
+          439.558371040724
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      },
+      "driveUploaded": true
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-8/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-sample.pdf",
+      "path": "public/omalovanky/en/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-sample.pdf",
+      "bytes": 1872904,
+      "sha": "ab80136770720ab438481c005f7f16c7f74250a3",
+      "id": 10025,
+      "variant": "sample",
+      "ext": "pdf",
+      "driveId": "1e-h1RY0KuvOrE-Zmx6DTUgLnzbZ7S6oV",
+      "placement": {
+        "x": 77.85860975522857,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring - Sample"
+        ],
+        "widths": [
+          439.558371040724
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      },
+      "driveUploaded": true
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-8/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-sample.webp",
+      "path": "public/omalovanky/en/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-sample.webp",
+      "bytes": 126870,
+      "sha": "079e485e93ffa789a4bcd4c1a0abd247b29ded67",
+      "id": 10025,
       "variant": "sample",
       "ext": "webp",
       "driveId": null,
@@ -649,14 +679,8 @@
       }
     }
   ],
-  "skipped": [
-    {
-      "id": 10197,
-      "variant": "sample",
-      "reason": "No blank area for title without covering artwork"
-    }
-  ],
-  "state": "published-user-review-deferred",
+  "skipped": [],
+  "state": "saved-awaiting-deployment",
   "headers": [
     "Status",
     "ID",
