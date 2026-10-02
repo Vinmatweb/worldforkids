@@ -627,24 +627,118 @@
         "sheets": "published status read back"
       },
       "publishCommit": "8ae85c444a9929b8eb178aa6e5736c475efa65cc"
+    },
+    {
+      "batch": 7,
+      "state": "awaiting-deployment-verification",
+      "items": [
+        {
+          "id": 10196,
+          "base": "lv3_gpt_10196_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page",
+          "originalBase": "lv3_gpt_H1015_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page",
+          "sourceColoringId": "1eBJNcvoQrr-NZhWPoeTKRBGSo07O_N1i",
+          "sourceSampleId": "1my683hfANzXVMsXeW7tKpkBPHXaPQf31",
+          "sheetRow": 34,
+          "masterRow": 1367
+        },
+        {
+          "id": 10197,
+          "base": "lv1_gpt_10197_1_en-friendly-mummy-coloring-page",
+          "originalBase": "lv1_gpt_H1016_1_en-friendly-mummy-coloring-page",
+          "sourceColoringId": "1tq8PlCy0RTqcd05vdrg0FvPRvx6ONne9",
+          "sourceSampleId": "1vdPa2CSl5BMneEClCnfCp6FuUtPi8rC0",
+          "sheetRow": 35,
+          "masterRow": 1368
+        },
+        {
+          "id": 10198,
+          "base": "lv1_gpt_10198_1_en-friendly-raven-coloring-page",
+          "originalBase": "lv1_gpt_H1017_1_en-friendly-raven-coloring-page",
+          "sourceColoringId": "1RaPpR4vHrdfJJjb3Oa_WXrEHaFBsNjRU",
+          "sourceSampleId": "124FEsEzgi8XdAi-HcG3HHh6yqvA1EtXf",
+          "sheetRow": 36,
+          "masterRow": 1369
+        }
+      ],
+      "driveFiles": [
+        {
+          "id": "16qngw2gBN8ODOSN77z-D1aoNokeizeDt",
+          "path": "public/omalovanky/en/lv3_gpt_10196_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-coloring.png"
+        },
+        {
+          "id": "1MvVr4OvVW2PXh35wQK1N_Z_r-ic_mRgD",
+          "path": "public/omalovanky/en/lv3_gpt_10196_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "1ZZAu6xvqQCL1Wnbp9MUy3GpVnXxUGnWF",
+          "path": "public/omalovanky/en/lv3_gpt_10196_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-sample.png"
+        },
+        {
+          "id": "1_I8XIF6uPZT7EWLBGRhA4sBTjPLRwcUU",
+          "path": "public/omalovanky/en/lv3_gpt_10196_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-sample.pdf"
+        },
+        {
+          "id": "1bepdHpMcVTGXVHrnU5WVFb0CUeGmotgH",
+          "path": "public/omalovanky/en/lv1_gpt_10197_1_en-friendly-mummy-coloring-page-coloring.png"
+        },
+        {
+          "id": "1HV9A5ik2Lo2D9n2Wh_KYfVZ8nuhDmqMu",
+          "path": "public/omalovanky/en/lv1_gpt_10197_1_en-friendly-mummy-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "1PkkjSn1fNnMZXKaAzjYmow7jTBpzupSk",
+          "path": "public/omalovanky/en/lv1_gpt_10197_1_en-friendly-mummy-coloring-page-sample.png"
+        },
+        {
+          "id": "1URD3W3mTs_p1PMd1NnZN8sVntJOtMnNv",
+          "path": "public/omalovanky/en/lv1_gpt_10197_1_en-friendly-mummy-coloring-page-sample.pdf"
+        },
+        {
+          "id": "1CzwAUPlox-CPRoqiSXTNGwOwOb-r012G",
+          "path": "public/omalovanky/en/lv1_gpt_10198_1_en-friendly-raven-coloring-page-coloring.png"
+        },
+        {
+          "id": "1UjgxQgKxxUXDaI8I8eVx370aIreLMHQ0",
+          "path": "public/omalovanky/en/lv1_gpt_10198_1_en-friendly-raven-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "129npSNo1lJUgNkCzbSp4SePNvRyoU6SJ",
+          "path": "public/omalovanky/en/lv1_gpt_10198_1_en-friendly-raven-coloring-page-sample.png"
+        },
+        {
+          "id": "1KJf59ool4I6k8dVVjy40v3wkS2FxZQG5",
+          "path": "public/omalovanky/en/lv1_gpt_10198_1_en-friendly-raven-coloring-page-sample.pdf"
+        }
+      ],
+      "skippedTitles": [
+        {
+          "id": 10197,
+          "variant": "sample",
+          "reason": "No blank area for title without covering artwork"
+        }
+      ],
+      "checks": {
+        "DriveBytes": "verified",
+        "mobile": "User review deferred"
+      }
     }
   ],
-  "remainingPairs": 32,
+  "remainingPairs": 29,
   "nextOriginalFiles": [
     {
-      "originalBase": "lv3_gpt_H1015_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page",
+      "originalBase": "lv1_gpt_H1018_1_en-friendly-cartoon-skull-coloring-page",
       "coloring": {
-        "url": "https://drive.google.com/file/d/1eBJNcvoQrr-NZhWPoeTKRBGSo07O_N1i/view?usp=drivesdk",
-        "title": "lv3_gpt_H1015_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-coloring.png",
-        "id": "1eBJNcvoQrr-NZhWPoeTKRBGSo07O_N1i",
+        "url": "https://drive.google.com/file/d/1DrmdSxRxkcYS660HZTuvjCxtzg1bw16P/view?usp=drivesdk",
+        "title": "lv1_gpt_H1018_1_en-friendly-cartoon-skull-coloring-page-coloring.png",
+        "id": "1DrmdSxRxkcYS660HZTuvjCxtzg1bw16P",
         "mime_type": "image/png",
-        "size": "77807",
+        "size": "923443",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:15.224Z",
-        "updated_at": "2026-09-30T10:20:19.370Z",
-        "viewedByMeTime": "2026-10-02T11:20:15.224Z",
-        "display_title": "lv3_gpt_H1015_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-coloring.png",
-        "display_url": "https://drive.google.com/file/d/1eBJNcvoQrr-NZhWPoeTKRBGSo07O_N1i/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:20:11.839Z",
+        "updated_at": "2026-09-30T15:56:58.000Z",
+        "viewedByMeTime": "2026-10-02T11:20:11.839Z",
+        "display_title": "lv1_gpt_H1018_1_en-friendly-cartoon-skull-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/1DrmdSxRxkcYS660HZTuvjCxtzg1bw16P/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -653,17 +747,17 @@
         "can_list_children": false
       },
       "sample": {
-        "url": "https://drive.google.com/file/d/1my683hfANzXVMsXeW7tKpkBPHXaPQf31/view?usp=drivesdk",
-        "title": "lv3_gpt_H1015_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-sample.png",
-        "id": "1my683hfANzXVMsXeW7tKpkBPHXaPQf31",
+        "url": "https://drive.google.com/file/d/14UW2IDDF1vPb8ZHZBce1q0SU8uvYFDaf/view?usp=drivesdk",
+        "title": "lv1_gpt_H1018_1_en-friendly-cartoon-skull-coloring-page-sample.png",
+        "id": "14UW2IDDF1vPb8ZHZBce1q0SU8uvYFDaf",
         "mime_type": "image/png",
-        "size": "798674",
+        "size": "1171149",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:14.951Z",
-        "updated_at": "2026-09-30T09:29:59.009Z",
-        "viewedByMeTime": "2026-10-02T11:20:14.951Z",
-        "display_title": "lv3_gpt_H1015_1_en-friendly-ghosts-in-garden-before-old-house-coloring-page-sample.png",
-        "display_url": "https://drive.google.com/file/d/1my683hfANzXVMsXeW7tKpkBPHXaPQf31/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:20:21.213Z",
+        "updated_at": "2026-09-30T15:56:54.080Z",
+        "viewedByMeTime": "2026-10-02T11:20:21.213Z",
+        "display_title": "lv1_gpt_H1018_1_en-friendly-cartoon-skull-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/14UW2IDDF1vPb8ZHZBce1q0SU8uvYFDaf/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -673,19 +767,19 @@
       }
     },
     {
-      "originalBase": "lv1_gpt_H1016_1_en-friendly-mummy-coloring-page",
+      "originalBase": "lv2_gpt_H1019_1_en-children-trick-or-treating-coloring-page",
       "coloring": {
-        "url": "https://drive.google.com/file/d/1tq8PlCy0RTqcd05vdrg0FvPRvx6ONne9/view?usp=drivesdk",
-        "title": "lv1_gpt_H1016_1_en-friendly-mummy-coloring-page-coloring.png",
-        "id": "1tq8PlCy0RTqcd05vdrg0FvPRvx6ONne9",
+        "url": "https://drive.google.com/file/d/1MJFWryHXxG9Q-jxmukFEffjYfV8MkQnE/view?usp=drivesdk",
+        "title": "lv2_gpt_H1019_1_en-children-trick-or-treating-coloring-page-coloring.png",
+        "id": "1MJFWryHXxG9Q-jxmukFEffjYfV8MkQnE",
         "mime_type": "image/png",
-        "size": "1245136",
+        "size": "1430171",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:35.360Z",
-        "updated_at": "2026-09-30T15:56:57.967Z",
-        "viewedByMeTime": "2026-10-02T11:20:35.360Z",
-        "display_title": "lv1_gpt_H1016_1_en-friendly-mummy-coloring-page-coloring.png",
-        "display_url": "https://drive.google.com/file/d/1tq8PlCy0RTqcd05vdrg0FvPRvx6ONne9/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:20:37.707Z",
+        "updated_at": "2026-09-30T19:12:27.873Z",
+        "viewedByMeTime": "2026-10-02T11:20:37.707Z",
+        "display_title": "lv2_gpt_H1019_1_en-children-trick-or-treating-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/1MJFWryHXxG9Q-jxmukFEffjYfV8MkQnE/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -694,17 +788,17 @@
         "can_list_children": false
       },
       "sample": {
-        "url": "https://drive.google.com/file/d/1vdPa2CSl5BMneEClCnfCp6FuUtPi8rC0/view?usp=drivesdk",
-        "title": "lv1_gpt_H1016_1_en-friendly-mummy-coloring-page-sample.png",
-        "id": "1vdPa2CSl5BMneEClCnfCp6FuUtPi8rC0",
+        "url": "https://drive.google.com/file/d/1ZByj5bW-vDECGkYTPfAeyMpJe1aIT9hj/view?usp=drivesdk",
+        "title": "lv2_gpt_H1019_1_en-children-trick-or-treating-coloring-page-sample.png",
+        "id": "1ZByj5bW-vDECGkYTPfAeyMpJe1aIT9hj",
         "mime_type": "image/png",
-        "size": "1381121",
+        "size": "1576023",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:15.247Z",
-        "updated_at": "2026-09-30T15:56:54.046Z",
-        "viewedByMeTime": "2026-10-02T11:20:15.247Z",
-        "display_title": "lv1_gpt_H1016_1_en-friendly-mummy-coloring-page-sample.png",
-        "display_url": "https://drive.google.com/file/d/1vdPa2CSl5BMneEClCnfCp6FuUtPi8rC0/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:21:05.634Z",
+        "updated_at": "2026-09-30T19:12:25.856Z",
+        "viewedByMeTime": "2026-10-02T11:21:05.634Z",
+        "display_title": "lv2_gpt_H1019_1_en-children-trick-or-treating-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/1ZByj5bW-vDECGkYTPfAeyMpJe1aIT9hj/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -714,19 +808,19 @@
       }
     },
     {
-      "originalBase": "lv1_gpt_H1017_1_en-friendly-raven-coloring-page",
+      "originalBase": "lv2_gpt_H1020_1_en-friendly-witch-cauldron-with-bubbles-coloring-page",
       "coloring": {
-        "url": "https://drive.google.com/file/d/1RaPpR4vHrdfJJjb3Oa_WXrEHaFBsNjRU/view?usp=drivesdk",
-        "title": "lv1_gpt_H1017_1_en-friendly-raven-coloring-page-coloring.png",
-        "id": "1RaPpR4vHrdfJJjb3Oa_WXrEHaFBsNjRU",
+        "url": "https://drive.google.com/file/d/138lwPd_rX27mjLutWuoh8pHyyprw87jp/view?usp=drivesdk",
+        "title": "lv2_gpt_H1020_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-coloring.png",
+        "id": "138lwPd_rX27mjLutWuoh8pHyyprw87jp",
         "mime_type": "image/png",
-        "size": "932056",
+        "size": "1068142",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:12.029Z",
-        "updated_at": "2026-09-30T15:56:57.983Z",
-        "viewedByMeTime": "2026-10-02T11:20:12.029Z",
-        "display_title": "lv1_gpt_H1017_1_en-friendly-raven-coloring-page-coloring.png",
-        "display_url": "https://drive.google.com/file/d/1RaPpR4vHrdfJJjb3Oa_WXrEHaFBsNjRU/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:21:07.889Z",
+        "updated_at": "2026-09-30T19:12:27.907Z",
+        "viewedByMeTime": "2026-10-02T11:21:07.889Z",
+        "display_title": "lv2_gpt_H1020_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/138lwPd_rX27mjLutWuoh8pHyyprw87jp/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -735,17 +829,17 @@
         "can_list_children": false
       },
       "sample": {
-        "url": "https://drive.google.com/file/d/124FEsEzgi8XdAi-HcG3HHh6yqvA1EtXf/view?usp=drivesdk",
-        "title": "lv1_gpt_H1017_1_en-friendly-raven-coloring-page-sample.png",
-        "id": "124FEsEzgi8XdAi-HcG3HHh6yqvA1EtXf",
+        "url": "https://drive.google.com/file/d/1oIO6Q6xdCWDrVaEjp9FjZTND7X_7ZtZO/view?usp=drivesdk",
+        "title": "lv2_gpt_H1020_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-sample.png",
+        "id": "1oIO6Q6xdCWDrVaEjp9FjZTND7X_7ZtZO",
         "mime_type": "image/png",
-        "size": "1161011",
+        "size": "1165369",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:33.241Z",
-        "updated_at": "2026-09-30T15:56:54.063Z",
-        "viewedByMeTime": "2026-10-02T11:20:33.241Z",
-        "display_title": "lv1_gpt_H1017_1_en-friendly-raven-coloring-page-sample.png",
-        "display_url": "https://drive.google.com/file/d/124FEsEzgi8XdAi-HcG3HHh6yqvA1EtXf/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:20:53.680Z",
+        "updated_at": "2026-09-30T19:12:25.896Z",
+        "viewedByMeTime": "2026-10-02T11:20:53.680Z",
+        "display_title": "lv2_gpt_H1020_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/1oIO6Q6xdCWDrVaEjp9FjZTND7X_7ZtZO/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
