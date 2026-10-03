@@ -2484,7 +2484,7 @@
     },
     {
       "batch": 14,
-      "state": "prepared",
+      "state": "published-user-review-deferred",
       "items": [
         {
           "originalBase": "lv5_gpt_H1035_1_en-old-castle-cutaway-halloween-coloring-page",
@@ -2560,7 +2560,7 @@
             "nazevEs": "Castillo antiguo en corte con escenas de Halloween",
             "altEs_coloring": "Castillo antiguo en corte con escenas de Halloween: dibujo detallado de nivel 5 para adultos, gratis para imprimir en A4.",
             "altEs_sample": "Castillo antiguo en corte con escenas de Halloween: modelo a color para el dibujo de nivel 5.",
-            "Status": "vygenerováno",
+            "Status": "publikováno",
             "driveColoring": "https://drive.google.com/file/d/11tqEu1oNIvYu5fHvslG6g-tshLiXDuSB/view",
             "drivePdfColoring": "https://drive.google.com/file/d/1tZK58R7FBEMW01x2vDADu91UK3qrptkh/view",
             "driveSample": "https://drive.google.com/file/d/1VDHF_ys9HYryFJupz5b6MfnjM3HCE944/view",
@@ -2642,7 +2642,7 @@
             "nazevEs": "Valle panorámico de Halloween",
             "altEs_coloring": "Valle panorámico de Halloween: dibujo detallado de nivel 5 para adultos, gratis para imprimir en A4.",
             "altEs_sample": "Valle panorámico de Halloween: modelo a color para el dibujo de nivel 5.",
-            "Status": "vygenerováno",
+            "Status": "publikováno",
             "driveColoring": "https://drive.google.com/file/d/16bU2LGvPYIp-XVavAdoetelFx1PfjMbu/view",
             "drivePdfColoring": "https://drive.google.com/file/d/1g56HCfzzDoy94zDdWj0J_cz2WOvCR2wD/view",
             "driveSample": "https://drive.google.com/file/d/1QKlg0ejSVe4PvIYPeYc8u8enqnVGBPBn/view",
@@ -2724,7 +2724,7 @@
             "nazevEs": "Monstruo amistoso de Frankenstein",
             "altEs_coloring": "Monstruo amistoso de Frankenstein: dibujo en blanco y negro de nivel 2 para niños de 5–6 años, gratis para imprimir en A4.",
             "altEs_sample": "Monstruo amistoso de Frankenstein: modelo a color para el dibujo de nivel 2.",
-            "Status": "vygenerováno",
+            "Status": "publikováno",
             "driveColoring": "https://drive.google.com/file/d/1C0dqd7IxpDcsILQk5_jLA41MqIMPQxGI/view",
             "drivePdfColoring": "https://drive.google.com/file/d/1tEJM9whHYjPBTdG1rPeJX6ieM9it1HPC/view",
             "driveSample": "https://drive.google.com/file/d/1ADw0TAqUrGZ8VxcVBHS0XygjQQYbmYg4/view",
@@ -2813,16 +2813,21 @@
       "checks": {
         "PNGResolutionAndQR": "6/6 passed",
         "DriveSizes": "12/12 passed",
-        "sheets": "exact values read back",
-        "mobile": "User review deferred"
-      }
+        "sheets": "published status read back",
+        "mobile": "User review deferred",
+        "liveAssets": "18/18 exact SHA",
+        "livePages": "12/12 in all languages",
+        "deployment": "Actions and Pages passed"
+      },
+      "publishCommit": "780a12e1c1a1f1bd366d7df4f465674da6ba609d",
+      "deploymentCommit": "77bc9c5322593d2b3eb06b9c4292600cb787919d"
     }
   ],
-  "remainingPairs": 11,
+  "remainingPairs": 8,
   "nextOriginalFiles": [
-    "lv5_gpt_H1035_1_en-old-castle-cutaway-halloween-coloring-page",
-    "lv5_gpt_H1036_1_en-halloween-valley-panoramic-scene-coloring-page",
-    "lv2_gpt_H1038_1_en-friendly-frankenstein-monster-coloring-page"
+    "lv3_gpt_H1039_1_en-friendly-gargoyle-on-rooftop-coloring-page",
+    "lv3_gpt_H1040_1_en-friendly-haunted-tree-coloring-page",
+    "lv2_gpt_H1041_1_en-friendly-ghost-baking-halloween-cookies-coloring-page"
   ],
   "branding": {
     "url": "https://vinmat.eu/w4k",

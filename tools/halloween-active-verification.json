@@ -1,20 +1,20 @@
 {
-  "batch": 13,
+  "batch": 14,
   "assets": 18,
   "pages": [
-    "activities/coloring-halloween-amusement-park.html",
-    "cs/aktivity/omalovanka-halloweensky-zabavni-park.html",
-    "de/aktivitaeten/ausmalbild-halloween-vergnugungspark.html",
-    "es/actividades/dibujo-parque-de-atracciones-de-halloween.html",
-    "activities/coloring-friendly-werewolf-family-in-an-autumn-woodland.html",
-    "cs/aktivity/omalovanka-pratelska-rodina-vlkodlaku-v-podzimnim-lese.html",
-    "de/aktivitaeten/ausmalbild-freundliche-werwolffamilie-im-herbstwald.html",
-    "es/actividades/dibujo-familia-amistosa-de-hombres-lobo-en-un-bosque-otonal.html",
-    "activities/coloring-halloween-train-in-a-mountain-valley.html",
-    "cs/aktivity/omalovanka-halloweensky-vlak-v-horskem-udoli.html",
-    "de/aktivitaeten/ausmalbild-halloween-zug-in-einem-bergtal.html",
-    "es/actividades/dibujo-tren-de-halloween-en-un-valle-de-montana.html"
+    "activities/coloring-old-castle-cutaway-with-halloween-scenes.html",
+    "cs/aktivity/omalovanka-stary-hrad-s-halloweenskymi-vyjevy.html",
+    "de/aktivitaeten/ausmalbild-alte-burg-im-querschnitt-mit-halloween-szenen.html",
+    "es/actividades/dibujo-castillo-antiguo-en-corte-con-escenas-de-halloween.html",
+    "activities/coloring-panoramic-halloween-valley.html",
+    "cs/aktivity/omalovanka-panoramaticke-halloweenske-udoli.html",
+    "de/aktivitaeten/ausmalbild-panoramisches-halloween-tal.html",
+    "es/actividades/dibujo-valle-panoramico-de-halloween.html",
+    "activities/coloring-friendly-frankenstein-monster.html",
+    "cs/aktivity/omalovanka-pratelske-frankensteinovo-monstrum.html",
+    "de/aktivitaeten/ausmalbild-freundliches-frankenstein-monster.html",
+    "es/actividades/dibujo-monstruo-amistoso-de-frankenstein.html"
   ],
-  "catalogRows": 53,
+  "catalogRows": 56,
   "status": "passed"
 }
