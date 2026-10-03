@@ -613,6 +613,36 @@
         </article>
 
         <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/activities/coloring-halloween-costume-parade.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Halloween Costume Parade">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv3_gpt_10207_1_en-halloween-costume-parade-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv3_gpt_10207_1_en-halloween-costume-parade-coloring-page-coloring.png" alt="Halloween Costume Parade: black-and-white LV3 coloring page for ages 6–7, free to print on A4 paper." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Coloring</span><span class="text-xs text-slate-400 font-bold">LV3</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/activities/coloring-halloween-costume-parade.html" class="hover:text-indigo-600">Halloween Costume Parade</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/activities/coloring-pony-pulling-a-pumpkin-wagon.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Pony Pulling a Pumpkin Wagon">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv3_gpt_10208_1_en-pumpkin-wagon-pulled-by-pony-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv3_gpt_10208_1_en-pumpkin-wagon-pulled-by-pony-coloring-page-coloring.png" alt="Pony Pulling a Pumpkin Wagon: black-and-white LV3 coloring page for ages 6–7, free to print on A4 paper." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Coloring</span><span class="text-xs text-slate-400 font-bold">LV3</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/activities/coloring-pony-pulling-a-pumpkin-wagon.html" class="hover:text-indigo-600">Pony Pulling a Pumpkin Wagon</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/activities/coloring-scarecrow-with-crows-in-a-pumpkin-field.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Scarecrow with Crows in a Pumpkin Field">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv3_gpt_10209_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv3_gpt_10209_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page-coloring.png" alt="Scarecrow with Crows in a Pumpkin Field: black-and-white LV3 coloring page for ages 6–7, free to print on A4 paper." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Coloring</span><span class="text-xs text-slate-400 font-bold">LV3</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/activities/coloring-scarecrow-with-crows-in-a-pumpkin-field.html" class="hover:text-indigo-600">Scarecrow with Crows in a Pumpkin Field</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
             <a href="/worldforkids/activities/coloring-snail.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Snail">
                 <picture><source media="screen" srcset="/worldforkids/public/omalovanky/lv1_gpt_1036-snail-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/lv1_gpt_1036-snail-coloring.png" alt="Simple black and white children&#039;s coloring page with a snail for kids (toddlers and preschoolers) aged 3–4 years old free to print" loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
             </a>
@@ -1151,7 +1181,7 @@ function rozsekajCsvRadek(text) {
 
 async function nactiCsvData(typ) {
     try {
-        var r = await fetch('assets/data/'+typ+'.csv?v=a0eae1735c18');
+        var r = await fetch('assets/data/'+typ+'.csv?v=8e4635573101');
         if (!r.ok) { console.warn('CSV nenalezeno: '+typ); return []; }
         var text = await r.text();
         var radky = text.split(/\r?\n/);
