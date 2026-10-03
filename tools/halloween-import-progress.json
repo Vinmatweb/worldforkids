@@ -1821,6 +1821,331 @@
       },
       "publishCommit": "2246f684bd4392eb5fb5a0287476e1d47dd02af0",
       "deploymentCommit": "365de3517d97adcddb2f3c2b27f0103b471ee265"
+    },
+    {
+      "batch": 12,
+      "state": "prepared",
+      "items": [
+        {
+          "originalBase": "lv3_gpt_H1030_1_en-friendly-halloween-cemetery-with-ghosts-coloring-page",
+          "sample": {
+            "url": "https://drive.google.com/file/d/1moJnOMKv0fNuCL_59mLp2l3eg2HqPC1i/view?usp=drivesdk",
+            "title": "lv3_gpt_H1030_1_en-friendly-halloween-cemetery-with-ghosts-coloring-page-sample.png",
+            "id": "1moJnOMKv0fNuCL_59mLp2l3eg2HqPC1i",
+            "mime_type": "image/png",
+            "size": "2132189",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:23:57.997Z",
+            "updated_at": "2026-09-30T19:14:34.118Z",
+            "viewedByMeTime": "2026-10-02T11:23:57.997Z",
+            "display_title": "lv3_gpt_H1030_1_en-friendly-halloween-cemetery-with-ghosts-coloring-page-sample.png",
+            "display_url": "https://drive.google.com/file/d/1moJnOMKv0fNuCL_59mLp2l3eg2HqPC1i/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "coloring": {
+            "url": "https://drive.google.com/file/d/17k975c4QADhSVxWqR0np0_zuN91JaMFa/view?usp=drivesdk",
+            "title": "lv3_gpt_H1030_1_en-friendly-halloween-cemetery-with-ghosts-coloring-page-coloring.png",
+            "id": "17k975c4QADhSVxWqR0np0_zuN91JaMFa",
+            "mime_type": "image/png",
+            "size": "1725244",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:24:25.694Z",
+            "updated_at": "2026-09-30T15:12:20.397Z",
+            "viewedByMeTime": "2026-10-02T11:24:25.694Z",
+            "display_title": "lv3_gpt_H1030_1_en-friendly-halloween-cemetery-with-ghosts-coloring-page-coloring.png",
+            "display_url": "https://drive.google.com/file/d/17k975c4QADhSVxWqR0np0_zuN91JaMFa/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "id": 10210,
+          "names": [
+            "Přátelský hřbitov s duchy",
+            "Friendly Halloween Cemetery with Ghosts",
+            "Freundlicher Halloween-Friedhof mit Geistern",
+            "Cementerio amistoso de Halloween con fantasmas"
+          ],
+          "sheetRow": 49,
+          "masterRow": 1381,
+          "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/f2d713af-862d-42ff-8f0d-cf685cd5f2d2/lv3_gpt_H1030_1_en-friendly-halloween-cemetery-with-ghosts-coloring-page-coloring.png",
+          "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/185ca278-722a-49e3-99ed-faaa3387b8d4/lv3_gpt_H1030_1_en-friendly-halloween-cemetery-with-ghosts-coloring-page-sample.png",
+          "base": "lv3_gpt_10210_1_en-friendly-halloween-cemetery-with-ghosts-coloring-page",
+          "row": {
+            "ID": "10210",
+            "soubor": "lv3_gpt_10210_1_en-friendly-halloween-cemetery-with-ghosts-coloring-page",
+            "kategorie": "svatky",
+            "podkategorie": "halloween",
+            "datumPridani": "2026-10-02",
+            "sezona": "podzim,halloween",
+            "zamereni": "jemna-motorika",
+            "assetDirectory": "en",
+            "pdf": "1",
+            "nazevCz": "Přátelský hřbitov s duchy",
+            "altCz_coloring": "Přátelský hřbitov s duchy: černobílá omalovánka LV3 pro děti 6–7 let, zdarma k vytisknutí na A4.",
+            "altCz_sample": "Přátelský hřbitov s duchy: barevný vzor k omalovánce LV3.",
+            "nazevEn": "Friendly Halloween Cemetery with Ghosts",
+            "altEn_coloring": "Friendly Halloween Cemetery with Ghosts: black-and-white LV3 coloring page for ages 6–7, free to print on A4 paper.",
+            "altEn_sample": "Friendly Halloween Cemetery with Ghosts: color sample for the LV3 coloring page.",
+            "nazevDe": "Freundlicher Halloween-Friedhof mit Geistern",
+            "altDe_coloring": "Freundlicher Halloween-Friedhof mit Geistern: schwarz-weißes Ausmalbild der Stufe 3 für Kinder von 6–7 Jahren, kostenlos auf A4 drucken.",
+            "altDe_sample": "Freundlicher Halloween-Friedhof mit Geistern: Farbvorlage zum Ausmalbild der Stufe 3.",
+            "nazevEs": "Cementerio amistoso de Halloween con fantasmas",
+            "altEs_coloring": "Cementerio amistoso de Halloween con fantasmas: dibujo en blanco y negro de nivel 3 para niños de 6–7 años, gratis para imprimir en A4.",
+            "altEs_sample": "Cementerio amistoso de Halloween con fantasmas: modelo a color para el dibujo de nivel 3.",
+            "Status": "vygenerováno",
+            "driveColoring": "https://drive.google.com/file/d/1-r6guryNjvfx9bg9a5rHY4BM5s2juFjE/view",
+            "drivePdfColoring": "https://drive.google.com/file/d/1nAaIFEqz-zsr8sH3D4PG-Sm9x4vM--Wn/view",
+            "driveSample": "https://drive.google.com/file/d/1uCdSnmUoK3EjTxRjpz79GqYXrKH2ZqHk/view",
+            "drivePdfSample": "https://drive.google.com/file/d/18Pig37o-jU4mNqouvaAruIZlo17dryAr/view"
+          },
+          "level": 3
+        },
+        {
+          "originalBase": "lv3_gpt_H1031_1_en-twelve-different-pumpkins-3x4-coloring-page",
+          "sample": {
+            "url": "https://drive.google.com/file/d/1xPpKW9ur6RcQP0YzB8sQZCZmBbZtAPeM/view?usp=drivesdk",
+            "title": "lv3_gpt_H1031_1_en-twelve-different-pumpkins-3x4-coloring-page-sample.png",
+            "id": "1xPpKW9ur6RcQP0YzB8sQZCZmBbZtAPeM",
+            "mime_type": "image/png",
+            "size": "1874418",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:24:05.295Z",
+            "updated_at": "2026-09-30T19:14:33.968Z",
+            "viewedByMeTime": "2026-10-02T11:24:05.295Z",
+            "display_title": "lv3_gpt_H1031_1_en-twelve-different-pumpkins-3x4-coloring-page-sample.png",
+            "display_url": "https://drive.google.com/file/d/1xPpKW9ur6RcQP0YzB8sQZCZmBbZtAPeM/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "coloring": {
+            "url": "https://drive.google.com/file/d/1NlWSpcuj8zz3_o7bgQnlI1wcm0NAz9Si/view?usp=drivesdk",
+            "title": "lv3_gpt_H1031_1_en-twelve-different-pumpkins-3x4-coloring-page-coloring.png",
+            "id": "1NlWSpcuj8zz3_o7bgQnlI1wcm0NAz9Si",
+            "mime_type": "image/png",
+            "size": "1566011",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:24:18.965Z",
+            "updated_at": "2026-09-30T15:12:20.422Z",
+            "viewedByMeTime": "2026-10-02T11:24:18.965Z",
+            "display_title": "lv3_gpt_H1031_1_en-twelve-different-pumpkins-3x4-coloring-page-coloring.png",
+            "display_url": "https://drive.google.com/file/d/1NlWSpcuj8zz3_o7bgQnlI1wcm0NAz9Si/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "id": 10211,
+          "names": [
+            "Dvanáct různých halloweenských dýní",
+            "Twelve Different Halloween Pumpkins",
+            "Zwölf verschiedene Halloween-Kürbisse",
+            "Doce calabazas diferentes de Halloween"
+          ],
+          "sheetRow": 50,
+          "masterRow": 1382,
+          "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/f64e550a-70fc-416b-be24-c1c506f06759/lv3_gpt_H1031_1_en-twelve-different-pumpkins-3x4-coloring-page-coloring.png",
+          "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/7ea765ec-aaa6-494b-92c2-0e51b981ad7b/lv3_gpt_H1031_1_en-twelve-different-pumpkins-3x4-coloring-page-sample.png",
+          "base": "lv3_gpt_10211_1_en-twelve-different-pumpkins-3x4-coloring-page",
+          "row": {
+            "ID": "10211",
+            "soubor": "lv3_gpt_10211_1_en-twelve-different-pumpkins-3x4-coloring-page",
+            "kategorie": "svatky",
+            "podkategorie": "halloween",
+            "datumPridani": "2026-10-02",
+            "sezona": "podzim,halloween",
+            "zamereni": "jemna-motorika",
+            "assetDirectory": "en",
+            "pdf": "1",
+            "nazevCz": "Dvanáct různých halloweenských dýní",
+            "altCz_coloring": "Dvanáct různých halloweenských dýní: černobílá omalovánka LV3 pro děti 6–7 let, zdarma k vytisknutí na A4.",
+            "altCz_sample": "Dvanáct různých halloweenských dýní: barevný vzor k omalovánce LV3.",
+            "nazevEn": "Twelve Different Halloween Pumpkins",
+            "altEn_coloring": "Twelve Different Halloween Pumpkins: black-and-white LV3 coloring page for ages 6–7, free to print on A4 paper.",
+            "altEn_sample": "Twelve Different Halloween Pumpkins: color sample for the LV3 coloring page.",
+            "nazevDe": "Zwölf verschiedene Halloween-Kürbisse",
+            "altDe_coloring": "Zwölf verschiedene Halloween-Kürbisse: schwarz-weißes Ausmalbild der Stufe 3 für Kinder von 6–7 Jahren, kostenlos auf A4 drucken.",
+            "altDe_sample": "Zwölf verschiedene Halloween-Kürbisse: Farbvorlage zum Ausmalbild der Stufe 3.",
+            "nazevEs": "Doce calabazas diferentes de Halloween",
+            "altEs_coloring": "Doce calabazas diferentes de Halloween: dibujo en blanco y negro de nivel 3 para niños de 6–7 años, gratis para imprimir en A4.",
+            "altEs_sample": "Doce calabazas diferentes de Halloween: modelo a color para el dibujo de nivel 3.",
+            "Status": "vygenerováno",
+            "driveColoring": "https://drive.google.com/file/d/1TzVFfu83-MB7BbxQAwhWCLPJM7L4XVSj/view",
+            "drivePdfColoring": "https://drive.google.com/file/d/1FgK43VuADDdpYnF3TDWKuZ9Pj_1oX1wV/view",
+            "driveSample": "https://drive.google.com/file/d/17W5hsnrKKsyOVfuFFge58aa2LFBEbFt6/view",
+            "drivePdfSample": "https://drive.google.com/file/d/12yIJeRKcLk0hNUe7yhHOcvlxQDK_Eb5G/view"
+          },
+          "level": 3
+        },
+        {
+          "originalBase": "lv3_gpt_H1031_2_en-twelve-unique-carved-pumpkins-3x4-coloring-page",
+          "coloring": {
+            "url": "https://drive.google.com/file/d/1Jhvb4B6GOme-ZDOFKZchoal4fnZvqqyo/view?usp=drivesdk",
+            "title": "lv3_gpt_H1031_2_en-twelve-unique-carved-pumpkins-3x4-coloring-page-coloring.png",
+            "id": "1Jhvb4B6GOme-ZDOFKZchoal4fnZvqqyo",
+            "mime_type": "image/png",
+            "size": "1650938",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:25:07.792Z",
+            "updated_at": "2026-10-01T07:08:04.377Z",
+            "viewedByMeTime": "2026-10-02T11:25:07.792Z",
+            "display_title": "lv3_gpt_H1031_2_en-twelve-unique-carved-pumpkins-3x4-coloring-page-coloring.png",
+            "display_url": "https://drive.google.com/file/d/1Jhvb4B6GOme-ZDOFKZchoal4fnZvqqyo/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "sample": {
+            "url": "https://drive.google.com/file/d/18COvo7Y2moUjpa8MLCvGHVZJWokCFK-1/view?usp=drivesdk",
+            "title": "lv3_gpt_H1031_2_en-twelve-unique-carved-pumpkins-3x4-coloring-page-sample.png",
+            "id": "18COvo7Y2moUjpa8MLCvGHVZJWokCFK-1",
+            "mime_type": "image/png",
+            "size": "2206813",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:24:02.769Z",
+            "updated_at": "2026-10-01T07:07:55.821Z",
+            "viewedByMeTime": "2026-10-02T11:24:02.769Z",
+            "display_title": "lv3_gpt_H1031_2_en-twelve-unique-carved-pumpkins-3x4-coloring-page-sample.png",
+            "display_url": "https://drive.google.com/file/d/18COvo7Y2moUjpa8MLCvGHVZJWokCFK-1/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "id": 10211,
+          "names": [
+            "Dvanáct vyřezávaných halloweenských dýní",
+            "Twelve Unique Carved Halloween Pumpkins",
+            "Zwölf einzigartige geschnitzte Halloween-Kürbisse",
+            "Doce calabazas talladas únicas de Halloween"
+          ],
+          "sheetRow": 51,
+          "masterRow": 1382,
+          "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/97cb1d62-126d-4d2d-88de-4d3409841bfb/lv3_gpt_H1031_2_en-twelve-unique-carved-pumpkins-3x4-coloring-page-coloring.png",
+          "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/b4eae1ce-ebc2-48af-9c74-6b2324eca1b3/lv3_gpt_H1031_2_en-twelve-unique-carved-pumpkins-3x4-coloring-page-sample.png",
+          "base": "lv3_gpt_10211_2_en-twelve-unique-carved-pumpkins-3x4-coloring-page",
+          "row": {
+            "ID": "10211",
+            "soubor": "lv3_gpt_10211_2_en-twelve-unique-carved-pumpkins-3x4-coloring-page",
+            "kategorie": "svatky",
+            "podkategorie": "halloween",
+            "datumPridani": "2026-10-02",
+            "sezona": "podzim,halloween",
+            "zamereni": "jemna-motorika",
+            "assetDirectory": "en",
+            "pdf": "1",
+            "nazevCz": "Dvanáct vyřezávaných halloweenských dýní",
+            "altCz_coloring": "Dvanáct vyřezávaných halloweenských dýní: černobílá omalovánka LV3 pro děti 6–7 let, zdarma k vytisknutí na A4.",
+            "altCz_sample": "Dvanáct vyřezávaných halloweenských dýní: barevný vzor k omalovánce LV3.",
+            "nazevEn": "Twelve Unique Carved Halloween Pumpkins",
+            "altEn_coloring": "Twelve Unique Carved Halloween Pumpkins: black-and-white LV3 coloring page for ages 6–7, free to print on A4 paper.",
+            "altEn_sample": "Twelve Unique Carved Halloween Pumpkins: color sample for the LV3 coloring page.",
+            "nazevDe": "Zwölf einzigartige geschnitzte Halloween-Kürbisse",
+            "altDe_coloring": "Zwölf einzigartige geschnitzte Halloween-Kürbisse: schwarz-weißes Ausmalbild der Stufe 3 für Kinder von 6–7 Jahren, kostenlos auf A4 drucken.",
+            "altDe_sample": "Zwölf einzigartige geschnitzte Halloween-Kürbisse: Farbvorlage zum Ausmalbild der Stufe 3.",
+            "nazevEs": "Doce calabazas talladas únicas de Halloween",
+            "altEs_coloring": "Doce calabazas talladas únicas de Halloween: dibujo en blanco y negro de nivel 3 para niños de 6–7 años, gratis para imprimir en A4.",
+            "altEs_sample": "Doce calabazas talladas únicas de Halloween: modelo a color para el dibujo de nivel 3.",
+            "Status": "vygenerováno",
+            "driveColoring": "https://drive.google.com/file/d/1mIQr3NolYDZC75gkjhzPRHMJqXQDES4V/view",
+            "drivePdfColoring": "https://drive.google.com/file/d/1floejxKzfjtOgEiVe45n4p5n9ijO7EXA/view",
+            "driveSample": "https://drive.google.com/file/d/1t1c0ccUCNqTVxL1R2amQynMB2Bffc-Gg/view",
+            "drivePdfSample": "https://drive.google.com/file/d/16ES67kI6bCUL8M5XQhCO0Cmcb6x7Ptjq/view"
+          },
+          "level": 3
+        }
+      ],
+      "driveFiles": [
+        {
+          "id": "1-r6guryNjvfx9bg9a5rHY4BM5s2juFjE",
+          "path": "public/omalovanky/en/lv3_gpt_10210_1_en-friendly-halloween-cemetery-with-ghosts-coloring-page-coloring.png"
+        },
+        {
+          "id": "1nAaIFEqz-zsr8sH3D4PG-Sm9x4vM--Wn",
+          "path": "public/omalovanky/en/lv3_gpt_10210_1_en-friendly-halloween-cemetery-with-ghosts-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "1uCdSnmUoK3EjTxRjpz79GqYXrKH2ZqHk",
+          "path": "public/omalovanky/en/lv3_gpt_10210_1_en-friendly-halloween-cemetery-with-ghosts-coloring-page-sample.png"
+        },
+        {
+          "id": "18Pig37o-jU4mNqouvaAruIZlo17dryAr",
+          "path": "public/omalovanky/en/lv3_gpt_10210_1_en-friendly-halloween-cemetery-with-ghosts-coloring-page-sample.pdf"
+        },
+        {
+          "id": "1TzVFfu83-MB7BbxQAwhWCLPJM7L4XVSj",
+          "path": "public/omalovanky/en/lv3_gpt_10211_1_en-twelve-different-pumpkins-3x4-coloring-page-coloring.png"
+        },
+        {
+          "id": "1FgK43VuADDdpYnF3TDWKuZ9Pj_1oX1wV",
+          "path": "public/omalovanky/en/lv3_gpt_10211_1_en-twelve-different-pumpkins-3x4-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "17W5hsnrKKsyOVfuFFge58aa2LFBEbFt6",
+          "path": "public/omalovanky/en/lv3_gpt_10211_1_en-twelve-different-pumpkins-3x4-coloring-page-sample.png"
+        },
+        {
+          "id": "12yIJeRKcLk0hNUe7yhHOcvlxQDK_Eb5G",
+          "path": "public/omalovanky/en/lv3_gpt_10211_1_en-twelve-different-pumpkins-3x4-coloring-page-sample.pdf"
+        },
+        {
+          "id": "1mIQr3NolYDZC75gkjhzPRHMJqXQDES4V",
+          "path": "public/omalovanky/en/lv3_gpt_10211_2_en-twelve-unique-carved-pumpkins-3x4-coloring-page-coloring.png"
+        },
+        {
+          "id": "1floejxKzfjtOgEiVe45n4p5n9ijO7EXA",
+          "path": "public/omalovanky/en/lv3_gpt_10211_2_en-twelve-unique-carved-pumpkins-3x4-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "1t1c0ccUCNqTVxL1R2amQynMB2Bffc-Gg",
+          "path": "public/omalovanky/en/lv3_gpt_10211_2_en-twelve-unique-carved-pumpkins-3x4-coloring-page-sample.png"
+        },
+        {
+          "id": "16ES67kI6bCUL8M5XQhCO0Cmcb6x7Ptjq",
+          "path": "public/omalovanky/en/lv3_gpt_10211_2_en-twelve-unique-carved-pumpkins-3x4-coloring-page-sample.pdf"
+        }
+      ],
+      "skippedTitles": [
+        {
+          "id": 10211,
+          "variant": "sample",
+          "reason": "No blank area for title without covering artwork"
+        },
+        {
+          "id": 10211,
+          "variant": "coloring",
+          "reason": "No blank area for title without covering artwork"
+        },
+        {
+          "id": 10211,
+          "variant": "sample",
+          "reason": "No blank area for title without covering artwork"
+        }
+      ],
+      "checks": {
+        "PNGResolutionAndQR": "passed 6/6",
+        "DriveSizes": "passed 12/12",
+        "sheets": "exact values read back",
+        "mobile": "User review deferred"
+      }
     }
   ],
   "remainingPairs": 17,
