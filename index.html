@@ -673,6 +673,36 @@
         </article>
 
         <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/activities/coloring-halloween-amusement-park.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Halloween Amusement Park">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv4_gpt_10212_1_en-halloween-amusement-park-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv4_gpt_10212_1_en-halloween-amusement-park-coloring-page-coloring.png" alt="Halloween Amusement Park: black-and-white LV4 coloring page for ages 7–8, free to print on A4 paper." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Coloring</span><span class="text-xs text-slate-400 font-bold">LV4</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/activities/coloring-halloween-amusement-park.html" class="hover:text-indigo-600">Halloween Amusement Park</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/activities/coloring-friendly-werewolf-family-in-an-autumn-woodland.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Friendly Werewolf Family in an Autumn Woodland">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv4_gpt_10213_1_en-friendly-werewolf-family-autumn-woodland-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv4_gpt_10213_1_en-friendly-werewolf-family-autumn-woodland-coloring-page-coloring.png" alt="Friendly Werewolf Family in an Autumn Woodland: black-and-white LV4 coloring page for ages 7–8, free to print on A4 paper." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Coloring</span><span class="text-xs text-slate-400 font-bold">LV4</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/activities/coloring-friendly-werewolf-family-in-an-autumn-woodland.html" class="hover:text-indigo-600">Friendly Werewolf Family in an Autumn Woodland</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/activities/coloring-halloween-train-in-a-mountain-valley.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Halloween Train in a Mountain Valley">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv4_gpt_10214_1_en-halloween-train-mountain-valley-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv4_gpt_10214_1_en-halloween-train-mountain-valley-coloring-page-coloring.png" alt="Halloween Train in a Mountain Valley: black-and-white LV4 coloring page for ages 7–8, free to print on A4 paper." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Coloring</span><span class="text-xs text-slate-400 font-bold">LV4</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/activities/coloring-halloween-train-in-a-mountain-valley.html" class="hover:text-indigo-600">Halloween Train in a Mountain Valley</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
             <a href="/worldforkids/activities/coloring-snail.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Snail">
                 <picture><source media="screen" srcset="/worldforkids/public/omalovanky/lv1_gpt_1036-snail-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/lv1_gpt_1036-snail-coloring.png" alt="Simple black and white children&#039;s coloring page with a snail for kids (toddlers and preschoolers) aged 3–4 years old free to print" loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
             </a>
@@ -1211,7 +1241,7 @@ function rozsekajCsvRadek(text) {
 
 async function nactiCsvData(typ) {
     try {
-        var r = await fetch('assets/data/'+typ+'.csv?v=c50380e3c330');
+        var r = await fetch('assets/data/'+typ+'.csv?v=0d145786593f');
         if (!r.ok) { console.warn('CSV nenalezeno: '+typ); return []; }
         var text = await r.text();
         var radky = text.split(/\r?\n/);
