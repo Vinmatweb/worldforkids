@@ -553,6 +553,36 @@
         </article>
 
         <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/cs/aktivity/omalovanka-sovi-postak-s-dopisem-a-lucernou.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Soví pošťák s dopisem a lucernou">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv2_gpt_10201_1_en-owl-post-carrier-with-letter-and-lantern-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv2_gpt_10201_1_en-owl-post-carrier-with-letter-and-lantern-coloring-page-coloring.png" alt="Soví pošťák s dopisem a lucernou: černobílá omalovánka LV2 pro děti 5–6 let, zdarma k vytisknutí na A4." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Omalovánka</span><span class="text-xs text-slate-400 font-bold">LV2</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/cs/aktivity/omalovanka-sovi-postak-s-dopisem-a-lucernou.html" class="hover:text-indigo-600">Soví pošťák s dopisem a lucernou</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/cs/aktivity/omalovanka-strasak-na-dynovem-policku.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Strašák na dýňovém políčku">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv2_gpt_10202_1_en-friendly-scarecrow-in-pumpkin-patch-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv2_gpt_10202_1_en-friendly-scarecrow-in-pumpkin-patch-coloring-page-coloring.png" alt="Strašák na dýňovém políčku: černobílá omalovánka LV2 pro děti 5–6 let, zdarma k vytisknutí na A4." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Omalovánka</span><span class="text-xs text-slate-400 font-bold">LV2</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/cs/aktivity/omalovanka-strasak-na-dynovem-policku.html" class="hover:text-indigo-600">Strašák na dýňovém políčku</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/cs/aktivity/omalovanka-pavouk-na-ozdobne-pavucine.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Pavouk na ozdobné pavučině">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv2_gpt_10203_1_en-friendly-spider-on-decorative-web-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv2_gpt_10203_1_en-friendly-spider-on-decorative-web-coloring-page-coloring.png" alt="Pavouk na ozdobné pavučině: černobílá omalovánka LV2 pro děti 5–6 let, zdarma k vytisknutí na A4." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Omalovánka</span><span class="text-xs text-slate-400 font-bold">LV2</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/cs/aktivity/omalovanka-pavouk-na-ozdobne-pavucine.html" class="hover:text-indigo-600">Pavouk na ozdobné pavučině</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
             <a href="/worldforkids/cs/aktivity/omalovanka-snek.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Šnek">
                 <picture><source media="screen" srcset="/worldforkids/public/omalovanky/lv1_gpt_1036-snail-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/lv1_gpt_1036-snail-coloring.png" alt="Jednoduchá černobílá dětská omalovánka se šnekem pro děti (batolata a předškoláky) ve věku 3–4 roky k vytisknutí zdarma" loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
             </a>
@@ -1091,7 +1121,7 @@ function rozsekajCsvRadek(text) {
 
 async function nactiCsvData(typ) {
     try {
-        var r = await fetch('../assets/data/'+typ+'.csv?v=8ac25dad7a5c');
+        var r = await fetch('../assets/data/'+typ+'.csv?v=9a2faf12c307');
         if (!r.ok) { console.warn('CSV nenalezeno: '+typ); return []; }
         var text = await r.text();
         var radky = text.split(/\r?\n/);
