@@ -850,7 +850,7 @@
     },
     {
       "batch": 9,
-      "state": "ready-for-deployment",
+      "state": "published-user-review-deferred",
       "items": [
         {
           "id": 10201,
@@ -1163,11 +1163,17 @@
         "PNGResolutionAndQR": "passed 6/6",
         "GitBlobs": "18/18 exact SHA matches",
         "DriveSizes": "12/12 exact sizes",
-        "mobile": "User review deferred"
-      }
+        "mobile": "User review deferred",
+        "deployment": "GitHub Actions and Pages passed",
+        "liveAssets": "18/18 exact bytes and SHA",
+        "livePages": "12/12 EN/CZ/DE/ES",
+        "sheets": "published status read back"
+      },
+      "publishCommit": "2956bbc93414dce2dd3ade5f67a2e6a686ab9529",
+      "deploymentCommit": "d3da23eb00023a0da91fdee3f2442f702d11f6d2"
     }
   ],
-  "remainingPairs": 26,
+  "remainingPairs": 23,
   "nextOriginalFiles": [
     {
       "originalBase": "lv2_gpt_H1021_1_en-owl-post-carrier-with-letter-and-lantern-coloring-page",

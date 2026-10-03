@@ -77,7 +77,7 @@
         "nazevEs": "Búho cartero con una carta y una linterna",
         "altEs_coloring": "Búho cartero con una carta y una linterna: dibujo en blanco y negro de nivel 2 para niños de 5–6 años, gratis para imprimir en A4.",
         "altEs_sample": "Búho cartero con una carta y una linterna: modelo a color para el dibujo de nivel 2.",
-        "Status": "vygenerováno",
+        "Status": "publikováno",
         "driveColoring": "https://drive.google.com/file/d/1b0U24UMEuXH1rXhYXn5zWL3u6yGdtkSU/view",
         "drivePdfColoring": "https://drive.google.com/file/d/1gPogQrZ6rpVFzG026PLsueVAk-IxtTeY/view",
         "driveSample": "https://drive.google.com/file/d/1P4fhcPGs3wEEkmvoN6KvavVfziuMH4jd/view",
@@ -161,7 +161,7 @@
         "nazevEs": "Espantapájaros amistoso en un huerto de calabazas",
         "altEs_coloring": "Espantapájaros amistoso en un huerto de calabazas: dibujo en blanco y negro de nivel 2 para niños de 5–6 años, gratis para imprimir en A4.",
         "altEs_sample": "Espantapájaros amistoso en un huerto de calabazas: modelo a color para el dibujo de nivel 2.",
-        "Status": "vygenerováno",
+        "Status": "publikováno",
         "driveColoring": "https://drive.google.com/file/d/1ho2A1lFWbAgzG-_VBLoOsmex7fR0tL9O/view",
         "drivePdfColoring": "https://drive.google.com/file/d/1vFJIXPKYsDUBodcYclemwVN7XHVFmTcY/view",
         "driveSample": "https://drive.google.com/file/d/1vMIuec9TbWjv_aL9tmb_G3Qdy3c1oBqk/view",
@@ -245,7 +245,7 @@
         "nazevEs": "Araña amistosa en una telaraña decorativa",
         "altEs_coloring": "Araña amistosa en una telaraña decorativa: dibujo en blanco y negro de nivel 2 para niños de 5–6 años, gratis para imprimir en A4.",
         "altEs_sample": "Araña amistosa en una telaraña decorativa: modelo a color para el dibujo de nivel 2.",
-        "Status": "vygenerováno",
+        "Status": "publikováno",
         "driveColoring": "https://drive.google.com/file/d/1HWNivD8IgDRFICmmX9cNaO6UBjImnHZT/view",
         "drivePdfColoring": "https://drive.google.com/file/d/1rvaJQEN0uLrLIJkYDR3aR09s_mqDokB7/view",
         "driveSample": "https://drive.google.com/file/d/1IThQZAGL8Km69wA-BPPQCjAppLuzkDIn/view",
@@ -254,7 +254,7 @@
       "level": 2
     }
   ],
-  "state": "ready-for-deployment",
+  "state": "published-user-review-deferred",
   "files": [
     {
       "file": "/workspace/scratch/62452b8ae3fe/worldforkids/public/omalovanky/en/lv2_gpt_10201_1_en-owl-post-carrier-with-letter-and-lantern-coloring-page-coloring.png",
@@ -727,6 +727,12 @@
     "PNGResolutionAndQR": "passed 6/6",
     "GitBlobs": "18/18 exact SHA matches",
     "DriveSizes": "12/12 exact sizes",
-    "mobile": "User review deferred"
-  }
+    "mobile": "User review deferred",
+    "deployment": "GitHub Actions and Pages passed",
+    "liveAssets": "18/18 exact bytes and SHA",
+    "livePages": "12/12 EN/CZ/DE/ES",
+    "sheets": "published status read back"
+  },
+  "publishCommit": "2956bbc93414dce2dd3ade5f67a2e6a686ab9529",
+  "deploymentCommit": "d3da23eb00023a0da91fdee3f2442f702d11f6d2"
 }

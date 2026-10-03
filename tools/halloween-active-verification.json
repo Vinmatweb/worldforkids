@@ -1,20 +1,20 @@
 {
-  "batch": 8,
+  "batch": 9,
   "assets": 18,
   "pages": [
-    "activities/coloring-friendly-cartoon-skull.html",
-    "cs/aktivity/omalovanka-vesela-lebka.html",
-    "de/aktivitaeten/ausmalbild-freundlicher-totenkopf.html",
-    "es/actividades/dibujo-calavera-simpatica.html",
-    "activities/coloring-children-trick-or-treating.html",
-    "cs/aktivity/omalovanka-deti-na-halloweenske-kolede.html",
-    "de/aktivitaeten/ausmalbild-kinder-beim-su-igkeitensammeln.html",
-    "es/actividades/dibujo-ninos-pidiendo-dulces-en-halloween.html",
-    "activities/coloring-witch-cauldron-with-bubbles.html",
-    "cs/aktivity/omalovanka-carodejnicky-kotlik-s-bublinami.html",
-    "de/aktivitaeten/ausmalbild-hexenkessel-mit-blasen.html",
-    "es/actividades/dibujo-caldero-de-bruja-con-burbujas.html"
+    "activities/coloring-owl-mail-carrier-with-a-letter-and-lantern.html",
+    "cs/aktivity/omalovanka-sovi-postak-s-dopisem-a-lucernou.html",
+    "de/aktivitaeten/ausmalbild-eulenpostbote-mit-brief-und-laterne.html",
+    "es/actividades/dibujo-buho-cartero-con-una-carta-y-una-linterna.html",
+    "activities/coloring-friendly-scarecrow-in-a-pumpkin-patch.html",
+    "cs/aktivity/omalovanka-strasak-na-dynovem-policku.html",
+    "de/aktivitaeten/ausmalbild-freundliche-vogelscheuche-im-kurbisbeet.html",
+    "es/actividades/dibujo-espantapajaros-amistoso-en-un-huerto-de-calabazas.html",
+    "activities/coloring-friendly-spider-on-a-decorative-web.html",
+    "cs/aktivity/omalovanka-pavouk-na-ozdobne-pavucine.html",
+    "de/aktivitaeten/ausmalbild-freundliche-spinne-auf-einem-dekorativen-netz.html",
+    "es/actividades/dibujo-arana-amistosa-en-una-telarana-decorativa.html"
   ],
-  "catalogRows": 38,
+  "catalogRows": 41,
   "status": "passed"
 }
