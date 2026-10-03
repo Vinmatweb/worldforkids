@@ -1174,7 +1174,7 @@
     },
     {
       "batch": 10,
-      "state": "prepared",
+      "state": "published-user-review-deferred",
       "items": [
         {
           "originalBase": "lv2_gpt_H1024_1_en-friendly-skeleton-with-pumpkin-coloring-page",
@@ -1250,7 +1250,7 @@
             "nazevEs": "Esqueleto amistoso con una calabaza",
             "altEs_coloring": "Esqueleto amistoso con una calabaza: dibujo en blanco y negro de nivel 2 para niños de 5–6 años, gratis para imprimir en A4.",
             "altEs_sample": "Esqueleto amistoso con una calabaza: modelo a color para el dibujo de nivel 2.",
-            "Status": "vygenerováno",
+            "Status": "publikováno",
             "driveColoring": "https://drive.google.com/file/d/1uSHnXnXsGjjmYIpwLpfla_m3TigTs10t/view",
             "drivePdfColoring": "https://drive.google.com/file/d/12QT-xUhGwXpAFpC_8n6_ZulgTjF4XpeF/view",
             "driveSample": "https://drive.google.com/file/d/17wPRk6Eycbf-EhxSb5rSVf4RSdJFFJ38/view",
@@ -1332,7 +1332,7 @@
             "nazevEs": "Vampiro amistoso con un murciélago",
             "altEs_coloring": "Vampiro amistoso con un murciélago: dibujo en blanco y negro de nivel 2 para niños de 5–6 años, gratis para imprimir en A4.",
             "altEs_sample": "Vampiro amistoso con un murciélago: modelo a color para el dibujo de nivel 2.",
-            "Status": "vygenerováno",
+            "Status": "publikováno",
             "driveColoring": "https://drive.google.com/file/d/1CcnGEWynEHMRvWVY_PMKgyAV9V5M3Ky_/view",
             "drivePdfColoring": "https://drive.google.com/file/d/1Nh3UshcMOlcKk_EXGHsARcps-8DJR9oO/view",
             "driveSample": "https://drive.google.com/file/d/1a1RLQfQYEu8Xj8sFTGMHT4n6Svzkpiwq/view",
@@ -1414,7 +1414,7 @@
             "nazevEs": "Zombi amistoso con una calabaza",
             "altEs_coloring": "Zombi amistoso con una calabaza: dibujo en blanco y negro de nivel 2 para niños de 5–6 años, gratis para imprimir en A4.",
             "altEs_sample": "Zombi amistoso con una calabaza: modelo a color para el dibujo de nivel 2.",
-            "Status": "vygenerováno",
+            "Status": "publikováno",
             "driveColoring": "https://drive.google.com/file/d/1iGBV2XXXYTmD96aw0l-M8TdnnMpbARpF/view",
             "drivePdfColoring": "https://drive.google.com/file/d/1vMqujKBsJx6655TDuzaSIgh5hnxVr31t/view",
             "driveSample": "https://drive.google.com/file/d/1KUL_oBrfP_ltyY-HnerASNOeUQnAZgIA/view",
@@ -1488,135 +1488,21 @@
       "checks": {
         "PNGResolutionAndQR": "passed 6/6",
         "DriveSizes": "passed 12/12",
-        "mobile": "User review deferred"
-      }
+        "mobile": "User review deferred",
+        "liveAssets": "18/18 exact SHA",
+        "livePages": "12/12 in all languages",
+        "sheets": "published status read back",
+        "deployment": "Actions and Pages passed"
+      },
+      "publishCommit": "c9e8a2ccdf514aed67458c6ff2c745d71917b49c",
+      "deploymentCommit": "889305c0fbb6c36fd4843dd9d2be09baf553da89"
     }
   ],
   "remainingPairs": 20,
   "nextOriginalFiles": [
-    {
-      "originalBase": "lv2_gpt_H1021_1_en-owl-post-carrier-with-letter-and-lantern-coloring-page",
-      "coloring": {
-        "url": "https://drive.google.com/file/d/1lJizu_85fYDxp6YAoN8K6tiO9LCM8ZWu/view?usp=drivesdk",
-        "title": "lv2_gpt_H1021_1_en-owl-post-carrier-with-letter-and-lantern-coloring-page-coloring.png",
-        "id": "1lJizu_85fYDxp6YAoN8K6tiO9LCM8ZWu",
-        "mime_type": "image/png",
-        "size": "1138567",
-        "file_or_folder": "file",
-        "created_at": "2026-10-02T11:21:16.091Z",
-        "updated_at": "2026-09-30T19:12:27.955Z",
-        "viewedByMeTime": "2026-10-02T11:21:16.091Z",
-        "display_title": "lv2_gpt_H1021_1_en-owl-post-carrier-with-letter-and-lantern-coloring-page-coloring.png",
-        "display_url": "https://drive.google.com/file/d/1lJizu_85fYDxp6YAoN8K6tiO9LCM8ZWu/view?usp=drivesdk",
-        "parent_ids": [
-          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
-        ],
-        "shared": false,
-        "can_download": true,
-        "can_list_children": false
-      },
-      "sample": {
-        "url": "https://drive.google.com/file/d/1TpsVKKtLRJuXbYggFJT7t4odMqjF6c38/view?usp=drivesdk",
-        "title": "lv2_gpt_H1021_1_en-owl-post-carrier-with-letter-and-lantern-coloring-page-sample.png",
-        "id": "1TpsVKKtLRJuXbYggFJT7t4odMqjF6c38",
-        "mime_type": "image/png",
-        "size": "1337096",
-        "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:55.647Z",
-        "updated_at": "2026-09-30T19:12:25.937Z",
-        "viewedByMeTime": "2026-10-02T11:20:55.647Z",
-        "display_title": "lv2_gpt_H1021_1_en-owl-post-carrier-with-letter-and-lantern-coloring-page-sample.png",
-        "display_url": "https://drive.google.com/file/d/1TpsVKKtLRJuXbYggFJT7t4odMqjF6c38/view?usp=drivesdk",
-        "parent_ids": [
-          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
-        ],
-        "shared": false,
-        "can_download": true,
-        "can_list_children": false
-      }
-    },
-    {
-      "originalBase": "lv2_gpt_H1022_1_en-friendly-scarecrow-in-pumpkin-patch-coloring-page",
-      "coloring": {
-        "url": "https://drive.google.com/file/d/1-hMkc1x2K7V_UN0_8qYE68JzdLqoIp51/view?usp=drivesdk",
-        "title": "lv2_gpt_H1022_1_en-friendly-scarecrow-in-pumpkin-patch-coloring-page-coloring.png",
-        "id": "1-hMkc1x2K7V_UN0_8qYE68JzdLqoIp51",
-        "mime_type": "image/png",
-        "size": "1383996",
-        "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:43.416Z",
-        "updated_at": "2026-09-30T19:12:27.988Z",
-        "viewedByMeTime": "2026-10-02T11:20:43.416Z",
-        "display_title": "lv2_gpt_H1022_1_en-friendly-scarecrow-in-pumpkin-patch-coloring-page-coloring.png",
-        "display_url": "https://drive.google.com/file/d/1-hMkc1x2K7V_UN0_8qYE68JzdLqoIp51/view?usp=drivesdk",
-        "parent_ids": [
-          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
-        ],
-        "shared": false,
-        "can_download": true,
-        "can_list_children": false
-      },
-      "sample": {
-        "url": "https://drive.google.com/file/d/1341GEZC9ViWIXvq9BYKxJqs3ltz4QcTI/view?usp=drivesdk",
-        "title": "lv2_gpt_H1022_1_en-friendly-scarecrow-in-pumpkin-patch-coloring-page-sample.png",
-        "id": "1341GEZC9ViWIXvq9BYKxJqs3ltz4QcTI",
-        "mime_type": "image/png",
-        "size": "1819754",
-        "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:51.659Z",
-        "updated_at": "2026-09-30T19:12:25.982Z",
-        "viewedByMeTime": "2026-10-02T11:20:51.659Z",
-        "display_title": "lv2_gpt_H1022_1_en-friendly-scarecrow-in-pumpkin-patch-coloring-page-sample.png",
-        "display_url": "https://drive.google.com/file/d/1341GEZC9ViWIXvq9BYKxJqs3ltz4QcTI/view?usp=drivesdk",
-        "parent_ids": [
-          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
-        ],
-        "shared": false,
-        "can_download": true,
-        "can_list_children": false
-      }
-    },
-    {
-      "originalBase": "lv2_gpt_H1023_1_en-friendly-spider-on-decorative-web-coloring-page",
-      "coloring": {
-        "url": "https://drive.google.com/file/d/1j9LPGwBgCOlbNbBIQ45lEsMY-kpOIrDo/view?usp=drivesdk",
-        "title": "lv2_gpt_H1023_1_en-friendly-spider-on-decorative-web-coloring-page-coloring.png",
-        "id": "1j9LPGwBgCOlbNbBIQ45lEsMY-kpOIrDo",
-        "mime_type": "image/png",
-        "size": "956254",
-        "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:14.489Z",
-        "updated_at": "2026-09-30T19:12:28.020Z",
-        "viewedByMeTime": "2026-10-02T11:20:14.489Z",
-        "display_title": "lv2_gpt_H1023_1_en-friendly-spider-on-decorative-web-coloring-page-coloring.png",
-        "display_url": "https://drive.google.com/file/d/1j9LPGwBgCOlbNbBIQ45lEsMY-kpOIrDo/view?usp=drivesdk",
-        "parent_ids": [
-          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
-        ],
-        "shared": false,
-        "can_download": true,
-        "can_list_children": false
-      },
-      "sample": {
-        "url": "https://drive.google.com/file/d/1vVHxqbSIOcbI4yP0b7U8VxxLxwmJ4Rn1/view?usp=drivesdk",
-        "title": "lv2_gpt_H1023_1_en-friendly-spider-on-decorative-web-coloring-page-sample.png",
-        "id": "1vVHxqbSIOcbI4yP0b7U8VxxLxwmJ4Rn1",
-        "mime_type": "image/png",
-        "size": "1271657",
-        "file_or_folder": "file",
-        "created_at": "2026-10-02T11:20:48.749Z",
-        "updated_at": "2026-09-30T19:12:26.017Z",
-        "viewedByMeTime": "2026-10-02T11:20:48.749Z",
-        "display_title": "lv2_gpt_H1023_1_en-friendly-spider-on-decorative-web-coloring-page-sample.png",
-        "display_url": "https://drive.google.com/file/d/1vVHxqbSIOcbI4yP0b7U8VxxLxwmJ4Rn1/view?usp=drivesdk",
-        "parent_ids": [
-          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
-        ],
-        "shared": false,
-        "can_download": true,
-        "can_list_children": false
-      }
-    }
+    "lv3_gpt_H1027_1_en-halloween-costume-parade-coloring-page",
+    "lv3_gpt_H1028_1_en-pumpkin-wagon-pulled-by-pony-coloring-page",
+    "lv3_gpt_H1029_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page"
   ],
   "branding": {
     "url": "https://vinmat.eu/w4k",

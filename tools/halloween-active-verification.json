@@ -1,20 +1,20 @@
 {
-  "batch": 9,
+  "batch": 10,
   "assets": 18,
   "pages": [
-    "activities/coloring-owl-mail-carrier-with-a-letter-and-lantern.html",
-    "cs/aktivity/omalovanka-sovi-postak-s-dopisem-a-lucernou.html",
-    "de/aktivitaeten/ausmalbild-eulenpostbote-mit-brief-und-laterne.html",
-    "es/actividades/dibujo-buho-cartero-con-una-carta-y-una-linterna.html",
-    "activities/coloring-friendly-scarecrow-in-a-pumpkin-patch.html",
-    "cs/aktivity/omalovanka-strasak-na-dynovem-policku.html",
-    "de/aktivitaeten/ausmalbild-freundliche-vogelscheuche-im-kurbisbeet.html",
-    "es/actividades/dibujo-espantapajaros-amistoso-en-un-huerto-de-calabazas.html",
-    "activities/coloring-friendly-spider-on-a-decorative-web.html",
-    "cs/aktivity/omalovanka-pavouk-na-ozdobne-pavucine.html",
-    "de/aktivitaeten/ausmalbild-freundliche-spinne-auf-einem-dekorativen-netz.html",
-    "es/actividades/dibujo-arana-amistosa-en-una-telarana-decorativa.html"
+    "activities/coloring-friendly-skeleton-with-a-pumpkin.html",
+    "cs/aktivity/omalovanka-pratelsky-kostlivec-s-dyni.html",
+    "de/aktivitaeten/ausmalbild-freundliches-skelett-mit-einem-kurbis.html",
+    "es/actividades/dibujo-esqueleto-amistoso-con-una-calabaza.html",
+    "activities/coloring-friendly-vampire-with-a-bat.html",
+    "cs/aktivity/omalovanka-pratelsky-upir-s-netopyrem.html",
+    "de/aktivitaeten/ausmalbild-freundlicher-vampir-mit-einer-fledermaus.html",
+    "es/actividades/dibujo-vampiro-amistoso-con-un-murcielago.html",
+    "activities/coloring-friendly-zombie-with-a-pumpkin.html",
+    "cs/aktivity/omalovanka-pratelska-zombie-s-dyni.html",
+    "de/aktivitaeten/ausmalbild-freundlicher-zombie-mit-einem-kurbis.html",
+    "es/actividades/dibujo-zombi-amistoso-con-una-calabaza.html"
   ],
-  "catalogRows": 41,
+  "catalogRows": 44,
   "status": "passed"
 }
