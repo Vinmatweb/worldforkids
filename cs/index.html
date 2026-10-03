@@ -733,6 +733,36 @@
         </article>
 
         <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/cs/aktivity/omalovanka-pratelsky-chrlic-na-strese.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Přátelský chrlič na střeše">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv3_gpt_10218_1_en-friendly-gargoyle-on-rooftop-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv3_gpt_10218_1_en-friendly-gargoyle-on-rooftop-coloring-page-coloring.png" alt="Přátelský chrlič na střeše: černobílá omalovánka LV3 pro děti 6–7 let, zdarma k vytisknutí na A4." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Omalovánka</span><span class="text-xs text-slate-400 font-bold">LV3</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/cs/aktivity/omalovanka-pratelsky-chrlic-na-strese.html" class="hover:text-indigo-600">Přátelský chrlič na střeše</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/cs/aktivity/omalovanka-pratelsky-strasidelny-strom.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Přátelský strašidelný strom">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv3_gpt_10219_1_en-friendly-haunted-tree-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv3_gpt_10219_1_en-friendly-haunted-tree-coloring-page-coloring.png" alt="Přátelský strašidelný strom: černobílá omalovánka LV3 pro děti 6–7 let, zdarma k vytisknutí na A4." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Omalovánka</span><span class="text-xs text-slate-400 font-bold">LV3</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/cs/aktivity/omalovanka-pratelsky-strasidelny-strom.html" class="hover:text-indigo-600">Přátelský strašidelný strom</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/cs/aktivity/omalovanka-duch-pece-halloweenske-susenky.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Duch peče halloweenské sušenky">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-coloring.png" alt="Duch peče halloweenské sušenky: černobílá omalovánka LV2 pro děti 5–6 let, zdarma k vytisknutí na A4." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Omalovánka</span><span class="text-xs text-slate-400 font-bold">LV2</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/cs/aktivity/omalovanka-duch-pece-halloweenske-susenky.html" class="hover:text-indigo-600">Duch peče halloweenské sušenky</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
             <a href="/worldforkids/cs/aktivity/omalovanka-snek.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Šnek">
                 <picture><source media="screen" srcset="/worldforkids/public/omalovanky/lv1_gpt_1036-snail-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/lv1_gpt_1036-snail-coloring.png" alt="Jednoduchá černobílá dětská omalovánka se šnekem pro děti (batolata a předškoláky) ve věku 3–4 roky k vytisknutí zdarma" loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
             </a>
@@ -1271,7 +1301,7 @@ function rozsekajCsvRadek(text) {
 
 async function nactiCsvData(typ) {
     try {
-        var r = await fetch('../assets/data/'+typ+'.csv?v=b3e7e5dbf22d');
+        var r = await fetch('../assets/data/'+typ+'.csv?v=933b27a31099');
         if (!r.ok) { console.warn('CSV nenalezeno: '+typ); return []; }
         var text = await r.text();
         var radky = text.split(/\r?\n/);

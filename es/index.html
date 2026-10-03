@@ -733,6 +733,36 @@
         </article>
 
         <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/es/actividades/dibujo-gargola-amistosa-en-un-tejado.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Gárgola amistosa en un tejado">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv3_gpt_10218_1_en-friendly-gargoyle-on-rooftop-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv3_gpt_10218_1_en-friendly-gargoyle-on-rooftop-coloring-page-coloring.png" alt="Gárgola amistosa en un tejado: dibujo en blanco y negro de nivel 3 para niños de 6–7 años, gratis para imprimir en A4." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Dibujo para colorear</span><span class="text-xs text-slate-400 font-bold">LV3</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/es/actividades/dibujo-gargola-amistosa-en-un-tejado.html" class="hover:text-indigo-600">Gárgola amistosa en un tejado</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/es/actividades/dibujo-arbol-encantado-amistoso.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Árbol encantado amistoso">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv3_gpt_10219_1_en-friendly-haunted-tree-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv3_gpt_10219_1_en-friendly-haunted-tree-coloring-page-coloring.png" alt="Árbol encantado amistoso: dibujo en blanco y negro de nivel 3 para niños de 6–7 años, gratis para imprimir en A4." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Dibujo para colorear</span><span class="text-xs text-slate-400 font-bold">LV3</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/es/actividades/dibujo-arbol-encantado-amistoso.html" class="hover:text-indigo-600">Árbol encantado amistoso</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
+            <a href="/worldforkids/es/actividades/dibujo-fantasma-horneando-galletas-de-halloween.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Fantasma horneando galletas de Halloween">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-coloring.png" alt="Fantasma horneando galletas de Halloween: dibujo en blanco y negro de nivel 2 para niños de 5–6 años, gratis para imprimir en A4." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            </a>
+            <div class="p-4 flex-grow">
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Dibujo para colorear</span><span class="text-xs text-slate-400 font-bold">LV2</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/es/actividades/dibujo-fantasma-horneando-galletas-de-halloween.html" class="hover:text-indigo-600">Fantasma horneando galletas de Halloween</a></h3>
+            </div>
+        </article>
+
+        <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
             <a href="/worldforkids/es/actividades/dibujo-caracol.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Caracol">
                 <picture><source media="screen" srcset="/worldforkids/public/omalovanky/lv1_gpt_1036-snail-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/lv1_gpt_1036-snail-coloring.png" alt="Dibujo para colorear sencillo en blanco y negro con un caracol para niños de 3–4 años, gratis para imprimir" loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
             </a>
@@ -1267,7 +1297,7 @@ function rozsekajCsvRadek(text) {
 
 async function nactiCsvData(typ) {
     try {
-        var r = await fetch('../assets/data/'+typ+'.csv?v=b3e7e5dbf22d');
+        var r = await fetch('../assets/data/'+typ+'.csv?v=933b27a31099');
         if (!r.ok) { console.warn('CSV nenalezeno: '+typ); return []; }
         var text = await r.text();
         var radky = text.split(/\r?\n/);
