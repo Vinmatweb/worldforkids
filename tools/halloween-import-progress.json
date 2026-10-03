@@ -1171,9 +1171,328 @@
       },
       "publishCommit": "2956bbc93414dce2dd3ade5f67a2e6a686ab9529",
       "deploymentCommit": "d3da23eb00023a0da91fdee3f2442f702d11f6d2"
+    },
+    {
+      "batch": 10,
+      "state": "prepared",
+      "items": [
+        {
+          "originalBase": "lv2_gpt_H1024_1_en-friendly-skeleton-with-pumpkin-coloring-page",
+          "coloring": {
+            "url": "https://drive.google.com/file/d/1HXKGPn2yM8CVlj0X4VBiy236rYEtGDFV/view?usp=drivesdk",
+            "title": "lv2_gpt_H1024_1_en-friendly-skeleton-with-pumpkin-coloring-page-coloring.png",
+            "id": "1HXKGPn2yM8CVlj0X4VBiy236rYEtGDFV",
+            "mime_type": "image/png",
+            "size": "1089207",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:21:23.402Z",
+            "updated_at": "2026-09-30T19:12:28.071Z",
+            "viewedByMeTime": "2026-10-02T11:21:23.402Z",
+            "display_title": "lv2_gpt_H1024_1_en-friendly-skeleton-with-pumpkin-coloring-page-coloring.png",
+            "display_url": "https://drive.google.com/file/d/1HXKGPn2yM8CVlj0X4VBiy236rYEtGDFV/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "sample": {
+            "url": "https://drive.google.com/file/d/17NPRkDI5l1I-Q7snGmHV0QjIZ0uFMOsE/view?usp=drivesdk",
+            "title": "lv2_gpt_H1024_1_en-friendly-skeleton-with-pumpkin-coloring-page-sample.png",
+            "id": "17NPRkDI5l1I-Q7snGmHV0QjIZ0uFMOsE",
+            "mime_type": "image/png",
+            "size": "1161437",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:21:40.212Z",
+            "updated_at": "2026-09-30T19:12:26.052Z",
+            "viewedByMeTime": "2026-10-02T11:21:40.212Z",
+            "display_title": "lv2_gpt_H1024_1_en-friendly-skeleton-with-pumpkin-coloring-page-sample.png",
+            "display_url": "https://drive.google.com/file/d/17NPRkDI5l1I-Q7snGmHV0QjIZ0uFMOsE/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "id": 10204,
+          "names": [
+            "Přátelský kostlivec s dýní",
+            "Friendly Skeleton with a Pumpkin",
+            "Freundliches Skelett mit einem Kürbis",
+            "Esqueleto amistoso con una calabaza"
+          ],
+          "sheetRow": 43,
+          "masterRow": 1375,
+          "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/b70ee94d-5437-45b7-ad45-ca5dd71ba151/lv2_gpt_H1024_1_en-friendly-skeleton-with-pumpkin-coloring-page-coloring.png",
+          "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/06568c7b-3631-44a4-8704-39ef1c648391/lv2_gpt_H1024_1_en-friendly-skeleton-with-pumpkin-coloring-page-sample.png",
+          "base": "lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-coloring-page",
+          "row": {
+            "ID": "10204",
+            "soubor": "lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-coloring-page",
+            "kategorie": "svatky",
+            "podkategorie": "halloween",
+            "datumPridani": "2026-10-02",
+            "sezona": "podzim,halloween",
+            "zamereni": "jemna-motorika",
+            "assetDirectory": "en",
+            "pdf": "1",
+            "nazevCz": "Přátelský kostlivec s dýní",
+            "altCz_coloring": "Přátelský kostlivec s dýní: černobílá omalovánka LV2 pro děti 5–6 let, zdarma k vytisknutí na A4.",
+            "altCz_sample": "Přátelský kostlivec s dýní: barevný vzor k omalovánce LV2.",
+            "nazevEn": "Friendly Skeleton with a Pumpkin",
+            "altEn_coloring": "Friendly Skeleton with a Pumpkin: black-and-white LV2 coloring page for ages 5–6, free to print on A4 paper.",
+            "altEn_sample": "Friendly Skeleton with a Pumpkin: color sample for the LV2 coloring page.",
+            "nazevDe": "Freundliches Skelett mit einem Kürbis",
+            "altDe_coloring": "Freundliches Skelett mit einem Kürbis: schwarz-weißes Ausmalbild der Stufe 2 für Kinder von 5–6 Jahren, kostenlos auf A4 drucken.",
+            "altDe_sample": "Freundliches Skelett mit einem Kürbis: Farbvorlage zum Ausmalbild der Stufe 2.",
+            "nazevEs": "Esqueleto amistoso con una calabaza",
+            "altEs_coloring": "Esqueleto amistoso con una calabaza: dibujo en blanco y negro de nivel 2 para niños de 5–6 años, gratis para imprimir en A4.",
+            "altEs_sample": "Esqueleto amistoso con una calabaza: modelo a color para el dibujo de nivel 2.",
+            "Status": "vygenerováno",
+            "driveColoring": "https://drive.google.com/file/d/1uSHnXnXsGjjmYIpwLpfla_m3TigTs10t/view",
+            "drivePdfColoring": "https://drive.google.com/file/d/12QT-xUhGwXpAFpC_8n6_ZulgTjF4XpeF/view",
+            "driveSample": "https://drive.google.com/file/d/17wPRk6Eycbf-EhxSb5rSVf4RSdJFFJ38/view",
+            "drivePdfSample": "https://drive.google.com/file/d/1jeRhl7aTO6meMZunMAoJi_gn1y300vpG/view"
+          },
+          "level": 2
+        },
+        {
+          "originalBase": "lv2_gpt_H1025_1_en-friendly-vampire-with-bat-coloring-page",
+          "coloring": {
+            "url": "https://drive.google.com/file/d/1STmrYOPhuxC63EAXsokkEFjtNeAwbrm-/view?usp=drivesdk",
+            "title": "lv2_gpt_H1025_1_en-friendly-vampire-with-bat-coloring-page-coloring.png",
+            "id": "1STmrYOPhuxC63EAXsokkEFjtNeAwbrm-",
+            "mime_type": "image/png",
+            "size": "1205054",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:21:48.871Z",
+            "updated_at": "2026-09-30T19:12:28.108Z",
+            "viewedByMeTime": "2026-10-02T11:21:48.871Z",
+            "display_title": "lv2_gpt_H1025_1_en-friendly-vampire-with-bat-coloring-page-coloring.png",
+            "display_url": "https://drive.google.com/file/d/1STmrYOPhuxC63EAXsokkEFjtNeAwbrm-/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "sample": {
+            "url": "https://drive.google.com/file/d/1Hp6GEFcRUgqD8uQ6PjLzJzrWhzxPPkO1/view?usp=drivesdk",
+            "title": "lv2_gpt_H1025_1_en-friendly-vampire-with-bat-coloring-page-sample.png",
+            "id": "1Hp6GEFcRUgqD8uQ6PjLzJzrWhzxPPkO1",
+            "mime_type": "image/png",
+            "size": "1814228",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:21:35.731Z",
+            "updated_at": "2026-09-30T19:12:26.110Z",
+            "viewedByMeTime": "2026-10-02T11:21:35.731Z",
+            "display_title": "lv2_gpt_H1025_1_en-friendly-vampire-with-bat-coloring-page-sample.png",
+            "display_url": "https://drive.google.com/file/d/1Hp6GEFcRUgqD8uQ6PjLzJzrWhzxPPkO1/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "id": 10205,
+          "names": [
+            "Přátelský upír s netopýrem",
+            "Friendly Vampire with a Bat",
+            "Freundlicher Vampir mit einer Fledermaus",
+            "Vampiro amistoso con un murciélago"
+          ],
+          "sheetRow": 44,
+          "masterRow": 1376,
+          "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/8c2337a6-5adb-482a-ade1-868a9f252fce/lv2_gpt_H1025_1_en-friendly-vampire-with-bat-coloring-page-coloring.png",
+          "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/5dac9d02-6560-4c7a-a59c-b43dc9cb5c25/lv2_gpt_H1025_1_en-friendly-vampire-with-bat-coloring-page-sample.png",
+          "base": "lv2_gpt_10205_1_en-friendly-vampire-with-bat-coloring-page",
+          "row": {
+            "ID": "10205",
+            "soubor": "lv2_gpt_10205_1_en-friendly-vampire-with-bat-coloring-page",
+            "kategorie": "svatky",
+            "podkategorie": "halloween",
+            "datumPridani": "2026-10-02",
+            "sezona": "podzim,halloween",
+            "zamereni": "jemna-motorika",
+            "assetDirectory": "en",
+            "pdf": "1",
+            "nazevCz": "Přátelský upír s netopýrem",
+            "altCz_coloring": "Přátelský upír s netopýrem: černobílá omalovánka LV2 pro děti 5–6 let, zdarma k vytisknutí na A4.",
+            "altCz_sample": "Přátelský upír s netopýrem: barevný vzor k omalovánce LV2.",
+            "nazevEn": "Friendly Vampire with a Bat",
+            "altEn_coloring": "Friendly Vampire with a Bat: black-and-white LV2 coloring page for ages 5–6, free to print on A4 paper.",
+            "altEn_sample": "Friendly Vampire with a Bat: color sample for the LV2 coloring page.",
+            "nazevDe": "Freundlicher Vampir mit einer Fledermaus",
+            "altDe_coloring": "Freundlicher Vampir mit einer Fledermaus: schwarz-weißes Ausmalbild der Stufe 2 für Kinder von 5–6 Jahren, kostenlos auf A4 drucken.",
+            "altDe_sample": "Freundlicher Vampir mit einer Fledermaus: Farbvorlage zum Ausmalbild der Stufe 2.",
+            "nazevEs": "Vampiro amistoso con un murciélago",
+            "altEs_coloring": "Vampiro amistoso con un murciélago: dibujo en blanco y negro de nivel 2 para niños de 5–6 años, gratis para imprimir en A4.",
+            "altEs_sample": "Vampiro amistoso con un murciélago: modelo a color para el dibujo de nivel 2.",
+            "Status": "vygenerováno",
+            "driveColoring": "https://drive.google.com/file/d/1CcnGEWynEHMRvWVY_PMKgyAV9V5M3Ky_/view",
+            "drivePdfColoring": "https://drive.google.com/file/d/1Nh3UshcMOlcKk_EXGHsARcps-8DJR9oO/view",
+            "driveSample": "https://drive.google.com/file/d/1a1RLQfQYEu8Xj8sFTGMHT4n6Svzkpiwq/view",
+            "drivePdfSample": "https://drive.google.com/file/d/1rvlQ4-8zojBii5WcgvF5bHb7oE-z36ch/view"
+          },
+          "level": 2
+        },
+        {
+          "originalBase": "lv2_gpt_H1026_1_en-friendly-zombie-with-pumpkin-coloring-page",
+          "coloring": {
+            "url": "https://drive.google.com/file/d/1vfNPRPno2Ryl9AYZd_FoyH8lFG9cOVw4/view?usp=drivesdk",
+            "title": "lv2_gpt_H1026_1_en-friendly-zombie-with-pumpkin-coloring-page-coloring.png",
+            "id": "1vfNPRPno2Ryl9AYZd_FoyH8lFG9cOVw4",
+            "mime_type": "image/png",
+            "size": "1483098",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:21:59.498Z",
+            "updated_at": "2026-09-30T19:12:28.155Z",
+            "viewedByMeTime": "2026-10-02T11:21:59.498Z",
+            "display_title": "lv2_gpt_H1026_1_en-friendly-zombie-with-pumpkin-coloring-page-coloring.png",
+            "display_url": "https://drive.google.com/file/d/1vfNPRPno2Ryl9AYZd_FoyH8lFG9cOVw4/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "sample": {
+            "url": "https://drive.google.com/file/d/18FdueFvMmxtXR-1K7Ud4IapJIvw6PORt/view?usp=drivesdk",
+            "title": "lv2_gpt_H1026_1_en-friendly-zombie-with-pumpkin-coloring-page-sample.png",
+            "id": "18FdueFvMmxtXR-1K7Ud4IapJIvw6PORt",
+            "mime_type": "image/png",
+            "size": "1720833",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:21:33.030Z",
+            "updated_at": "2026-09-30T19:12:25.818Z",
+            "viewedByMeTime": "2026-10-02T11:21:33.030Z",
+            "display_title": "lv2_gpt_H1026_1_en-friendly-zombie-with-pumpkin-coloring-page-sample.png",
+            "display_url": "https://drive.google.com/file/d/18FdueFvMmxtXR-1K7Ud4IapJIvw6PORt/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "id": 10206,
+          "names": [
+            "Přátelská zombie s dýní",
+            "Friendly Zombie with a Pumpkin",
+            "Freundlicher Zombie mit einem Kürbis",
+            "Zombi amistoso con una calabaza"
+          ],
+          "sheetRow": 45,
+          "masterRow": 1377,
+          "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/ab80438b-315c-45b1-ba7e-cb60ff5d4300/lv2_gpt_H1026_1_en-friendly-zombie-with-pumpkin-coloring-page-coloring.png",
+          "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/94ad17ee-39d2-4208-b348-637caf7e8f41/lv2_gpt_H1026_1_en-friendly-zombie-with-pumpkin-coloring-page-sample.png",
+          "base": "lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-coloring-page",
+          "row": {
+            "ID": "10206",
+            "soubor": "lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-coloring-page",
+            "kategorie": "svatky",
+            "podkategorie": "halloween",
+            "datumPridani": "2026-10-02",
+            "sezona": "podzim,halloween",
+            "zamereni": "jemna-motorika",
+            "assetDirectory": "en",
+            "pdf": "1",
+            "nazevCz": "Přátelská zombie s dýní",
+            "altCz_coloring": "Přátelská zombie s dýní: černobílá omalovánka LV2 pro děti 5–6 let, zdarma k vytisknutí na A4.",
+            "altCz_sample": "Přátelská zombie s dýní: barevný vzor k omalovánce LV2.",
+            "nazevEn": "Friendly Zombie with a Pumpkin",
+            "altEn_coloring": "Friendly Zombie with a Pumpkin: black-and-white LV2 coloring page for ages 5–6, free to print on A4 paper.",
+            "altEn_sample": "Friendly Zombie with a Pumpkin: color sample for the LV2 coloring page.",
+            "nazevDe": "Freundlicher Zombie mit einem Kürbis",
+            "altDe_coloring": "Freundlicher Zombie mit einem Kürbis: schwarz-weißes Ausmalbild der Stufe 2 für Kinder von 5–6 Jahren, kostenlos auf A4 drucken.",
+            "altDe_sample": "Freundlicher Zombie mit einem Kürbis: Farbvorlage zum Ausmalbild der Stufe 2.",
+            "nazevEs": "Zombi amistoso con una calabaza",
+            "altEs_coloring": "Zombi amistoso con una calabaza: dibujo en blanco y negro de nivel 2 para niños de 5–6 años, gratis para imprimir en A4.",
+            "altEs_sample": "Zombi amistoso con una calabaza: modelo a color para el dibujo de nivel 2.",
+            "Status": "vygenerováno",
+            "driveColoring": "https://drive.google.com/file/d/1iGBV2XXXYTmD96aw0l-M8TdnnMpbARpF/view",
+            "drivePdfColoring": "https://drive.google.com/file/d/1vMqujKBsJx6655TDuzaSIgh5hnxVr31t/view",
+            "driveSample": "https://drive.google.com/file/d/1KUL_oBrfP_ltyY-HnerASNOeUQnAZgIA/view",
+            "drivePdfSample": "https://drive.google.com/file/d/1Q_ZuOo9OgnsJduOUo-GhpDBKjH8vg_8U/view"
+          },
+          "level": 2
+        }
+      ],
+      "driveFiles": [
+        {
+          "id": "1uSHnXnXsGjjmYIpwLpfla_m3TigTs10t",
+          "path": "public/omalovanky/en/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-coloring-page-coloring.png"
+        },
+        {
+          "id": "12QT-xUhGwXpAFpC_8n6_ZulgTjF4XpeF",
+          "path": "public/omalovanky/en/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "17wPRk6Eycbf-EhxSb5rSVf4RSdJFFJ38",
+          "path": "public/omalovanky/en/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-coloring-page-sample.png"
+        },
+        {
+          "id": "1jeRhl7aTO6meMZunMAoJi_gn1y300vpG",
+          "path": "public/omalovanky/en/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-coloring-page-sample.pdf"
+        },
+        {
+          "id": "1CcnGEWynEHMRvWVY_PMKgyAV9V5M3Ky_",
+          "path": "public/omalovanky/en/lv2_gpt_10205_1_en-friendly-vampire-with-bat-coloring-page-coloring.png"
+        },
+        {
+          "id": "1Nh3UshcMOlcKk_EXGHsARcps-8DJR9oO",
+          "path": "public/omalovanky/en/lv2_gpt_10205_1_en-friendly-vampire-with-bat-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "1a1RLQfQYEu8Xj8sFTGMHT4n6Svzkpiwq",
+          "path": "public/omalovanky/en/lv2_gpt_10205_1_en-friendly-vampire-with-bat-coloring-page-sample.png"
+        },
+        {
+          "id": "1rvlQ4-8zojBii5WcgvF5bHb7oE-z36ch",
+          "path": "public/omalovanky/en/lv2_gpt_10205_1_en-friendly-vampire-with-bat-coloring-page-sample.pdf"
+        },
+        {
+          "id": "1iGBV2XXXYTmD96aw0l-M8TdnnMpbARpF",
+          "path": "public/omalovanky/en/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-coloring-page-coloring.png"
+        },
+        {
+          "id": "1vMqujKBsJx6655TDuzaSIgh5hnxVr31t",
+          "path": "public/omalovanky/en/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "1KUL_oBrfP_ltyY-HnerASNOeUQnAZgIA",
+          "path": "public/omalovanky/en/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-coloring-page-sample.png"
+        },
+        {
+          "id": "1Q_ZuOo9OgnsJduOUo-GhpDBKjH8vg_8U",
+          "path": "public/omalovanky/en/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-coloring-page-sample.pdf"
+        }
+      ],
+      "skippedTitles": [
+        {
+          "id": 10205,
+          "variant": "sample",
+          "reason": "No blank area for title without covering artwork"
+        },
+        {
+          "id": 10206,
+          "variant": "sample",
+          "reason": "No blank area for title without covering artwork"
+        }
+      ],
+      "checks": {
+        "PNGResolutionAndQR": "passed 6/6",
+        "DriveSizes": "passed 12/12",
+        "mobile": "User review deferred"
+      }
     }
   ],
-  "remainingPairs": 23,
+  "remainingPairs": 20,
   "nextOriginalFiles": [
     {
       "originalBase": "lv2_gpt_H1021_1_en-owl-post-carrier-with-letter-and-lantern-coloring-page",
