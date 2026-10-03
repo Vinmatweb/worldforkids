@@ -1,20 +1,20 @@
 {
-  "batch": 11,
+  "batch": 12,
   "assets": 18,
   "pages": [
-    "activities/coloring-halloween-costume-parade.html",
-    "cs/aktivity/omalovanka-halloweensky-pruvod-kostymu.html",
-    "de/aktivitaeten/ausmalbild-halloween-kostumparade.html",
-    "es/actividades/dibujo-desfile-de-disfraces-de-halloween.html",
-    "activities/coloring-pony-pulling-a-pumpkin-wagon.html",
-    "cs/aktivity/omalovanka-ponik-tahne-vozik-s-dynemi.html",
-    "de/aktivitaeten/ausmalbild-pony-zieht-einen-kurbiswagen.html",
-    "es/actividades/dibujo-poni-tirando-de-un-carro-de-calabazas.html",
-    "activities/coloring-scarecrow-with-crows-in-a-pumpkin-field.html",
-    "cs/aktivity/omalovanka-strasak-s-vranami-na-dynovem-poli.html",
-    "de/aktivitaeten/ausmalbild-vogelscheuche-mit-krahen-auf-einem-kurbisfeld.html",
-    "es/actividades/dibujo-espantapajaros-con-cuervos-en-un-campo-de-calabazas.html"
+    "activities/coloring-friendly-halloween-cemetery-with-ghosts.html",
+    "cs/aktivity/omalovanka-pratelsky-hrbitov-s-duchy.html",
+    "de/aktivitaeten/ausmalbild-freundlicher-halloween-friedhof-mit-geistern.html",
+    "es/actividades/dibujo-cementerio-amistoso-de-halloween-con-fantasmas.html",
+    "activities/coloring-twelve-different-halloween-pumpkins.html",
+    "cs/aktivity/omalovanka-dvanact-ruznych-halloweenskych-dyni.html",
+    "de/aktivitaeten/ausmalbild-zwolf-verschiedene-halloween-kurbisse.html",
+    "es/actividades/dibujo-doce-calabazas-diferentes-de-halloween.html",
+    "activities/coloring-twelve-unique-carved-halloween-pumpkins.html",
+    "cs/aktivity/omalovanka-dvanact-vyrezavanych-halloweenskych-dyni.html",
+    "de/aktivitaeten/ausmalbild-zwolf-einzigartige-geschnitzte-halloween-kurbisse.html",
+    "es/actividades/dibujo-doce-calabazas-talladas-unicas-de-halloween.html"
   ],
-  "catalogRows": 47,
+  "catalogRows": 50,
   "status": "passed"
 }

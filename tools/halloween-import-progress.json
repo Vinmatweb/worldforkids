@@ -1824,7 +1824,7 @@
     },
     {
       "batch": 12,
-      "state": "prepared",
+      "state": "published-user-review-deferred",
       "items": [
         {
           "originalBase": "lv3_gpt_H1030_1_en-friendly-halloween-cemetery-with-ghosts-coloring-page",
@@ -1900,7 +1900,7 @@
             "nazevEs": "Cementerio amistoso de Halloween con fantasmas",
             "altEs_coloring": "Cementerio amistoso de Halloween con fantasmas: dibujo en blanco y negro de nivel 3 para niños de 6–7 años, gratis para imprimir en A4.",
             "altEs_sample": "Cementerio amistoso de Halloween con fantasmas: modelo a color para el dibujo de nivel 3.",
-            "Status": "vygenerováno",
+            "Status": "publikováno",
             "driveColoring": "https://drive.google.com/file/d/1-r6guryNjvfx9bg9a5rHY4BM5s2juFjE/view",
             "drivePdfColoring": "https://drive.google.com/file/d/1nAaIFEqz-zsr8sH3D4PG-Sm9x4vM--Wn/view",
             "driveSample": "https://drive.google.com/file/d/1uCdSnmUoK3EjTxRjpz79GqYXrKH2ZqHk/view",
@@ -1982,7 +1982,7 @@
             "nazevEs": "Doce calabazas diferentes de Halloween",
             "altEs_coloring": "Doce calabazas diferentes de Halloween: dibujo en blanco y negro de nivel 3 para niños de 6–7 años, gratis para imprimir en A4.",
             "altEs_sample": "Doce calabazas diferentes de Halloween: modelo a color para el dibujo de nivel 3.",
-            "Status": "vygenerováno",
+            "Status": "publikováno",
             "driveColoring": "https://drive.google.com/file/d/1TzVFfu83-MB7BbxQAwhWCLPJM7L4XVSj/view",
             "drivePdfColoring": "https://drive.google.com/file/d/1FgK43VuADDdpYnF3TDWKuZ9Pj_1oX1wV/view",
             "driveSample": "https://drive.google.com/file/d/17W5hsnrKKsyOVfuFFge58aa2LFBEbFt6/view",
@@ -2064,7 +2064,7 @@
             "nazevEs": "Doce calabazas talladas únicas de Halloween",
             "altEs_coloring": "Doce calabazas talladas únicas de Halloween: dibujo en blanco y negro de nivel 3 para niños de 6–7 años, gratis para imprimir en A4.",
             "altEs_sample": "Doce calabazas talladas únicas de Halloween: modelo a color para el dibujo de nivel 3.",
-            "Status": "vygenerováno",
+            "Status": "publikováno",
             "driveColoring": "https://drive.google.com/file/d/1mIQr3NolYDZC75gkjhzPRHMJqXQDES4V/view",
             "drivePdfColoring": "https://drive.google.com/file/d/1floejxKzfjtOgEiVe45n4p5n9ijO7EXA/view",
             "driveSample": "https://drive.google.com/file/d/1t1c0ccUCNqTVxL1R2amQynMB2Bffc-Gg/view",
@@ -2143,16 +2143,21 @@
       "checks": {
         "PNGResolutionAndQR": "passed 6/6",
         "DriveSizes": "passed 12/12",
-        "sheets": "exact values read back",
-        "mobile": "User review deferred"
-      }
+        "sheets": "published status read back",
+        "mobile": "User review deferred",
+        "liveAssets": "18/18 exact SHA",
+        "livePages": "12/12 in all languages",
+        "deployment": "Actions and Pages passed"
+      },
+      "publishCommit": "caeef89d5b1e445d3fe73464272e68b552ba3689",
+      "deploymentCommit": "645572ce6bbcf9597d5208c8432ae9a113bb4c9a"
     }
   ],
-  "remainingPairs": 17,
+  "remainingPairs": 14,
   "nextOriginalFiles": [
-    "lv3_gpt_H1030_1_en-friendly-halloween-cemetery-with-ghosts-coloring-page",
-    "lv3_gpt_H1031_1_en-twelve-different-pumpkins-3x4-coloring-page",
-    "lv3_gpt_H1031_2_en-twelve-unique-carved-pumpkins-3x4-coloring-page"
+    "lv4_gpt_H1032_1_en-halloween-amusement-park-coloring-page",
+    "lv4_gpt_H1033_1_en-friendly-werewolf-family-autumn-woodland-coloring-page",
+    "lv4_gpt_H1034_1_en-halloween-train-mountain-valley-coloring-page"
   ],
   "branding": {
     "url": "https://vinmat.eu/w4k",
