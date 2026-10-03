@@ -2821,6 +2821,326 @@
       },
       "publishCommit": "780a12e1c1a1f1bd366d7df4f465674da6ba609d",
       "deploymentCommit": "77bc9c5322593d2b3eb06b9c4292600cb787919d"
+    },
+    {
+      "batch": 15,
+      "state": "prepared",
+      "items": [
+        {
+          "originalBase": "lv3_gpt_H1039_1_en-friendly-gargoyle-on-rooftop-coloring-page",
+          "sample": {
+            "url": "https://drive.google.com/file/d/1npQz11IdTbLh9ruIks5eAfo6paqHtnPj/view?usp=drivesdk",
+            "title": "lv3_gpt_H1039_1_en-friendly-gargoyle-on-rooftop-coloring-page-sample.png",
+            "id": "1npQz11IdTbLh9ruIks5eAfo6paqHtnPj",
+            "mime_type": "image/png",
+            "size": "1662236",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:24:16.131Z",
+            "updated_at": "2026-10-01T12:31:42.903Z",
+            "viewedByMeTime": "2026-10-02T11:24:16.131Z",
+            "display_title": "lv3_gpt_H1039_1_en-friendly-gargoyle-on-rooftop-coloring-page-sample.png",
+            "display_url": "https://drive.google.com/file/d/1npQz11IdTbLh9ruIks5eAfo6paqHtnPj/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "coloring": {
+            "url": "https://drive.google.com/file/d/1oXt61mm0V5KXe8XBWuGmuooMcDwFWcrT/view?usp=drivesdk",
+            "title": "lv3_gpt_H1039_1_en-friendly-gargoyle-on-rooftop-coloring-page-coloring.png",
+            "id": "1oXt61mm0V5KXe8XBWuGmuooMcDwFWcrT",
+            "mime_type": "image/png",
+            "size": "1260095",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:24:13.238Z",
+            "updated_at": "2026-10-01T10:12:29.928Z",
+            "viewedByMeTime": "2026-10-02T11:24:13.238Z",
+            "display_title": "lv3_gpt_H1039_1_en-friendly-gargoyle-on-rooftop-coloring-page-coloring.png",
+            "display_url": "https://drive.google.com/file/d/1oXt61mm0V5KXe8XBWuGmuooMcDwFWcrT/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "id": 10218,
+          "names": [
+            "Přátelský chrlič na střeše",
+            "Friendly Gargoyle on a Rooftop",
+            "Freundlicher Wasserspeier auf einem Dach",
+            "Gárgola amistosa en un tejado"
+          ],
+          "sheetRow": 58,
+          "masterRow": 1389,
+          "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/b8f25161-0e61-41f0-8bb7-65f917958298/lv3_gpt_H1039_1_en-friendly-gargoyle-on-rooftop-coloring-page-coloring.png",
+          "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/d65b670a-2e0e-4543-9c5e-12e0bb7db61e/lv3_gpt_H1039_1_en-friendly-gargoyle-on-rooftop-coloring-page-sample.png",
+          "base": "lv3_gpt_10218_1_en-friendly-gargoyle-on-rooftop-coloring-page",
+          "row": {
+            "ID": "10218",
+            "soubor": "lv3_gpt_10218_1_en-friendly-gargoyle-on-rooftop-coloring-page",
+            "kategorie": "svatky",
+            "podkategorie": "halloween",
+            "datumPridani": "2026-10-02",
+            "sezona": "podzim,halloween",
+            "zamereni": "jemna-motorika",
+            "assetDirectory": "en",
+            "pdf": "1",
+            "nazevCz": "Přátelský chrlič na střeše",
+            "altCz_coloring": "Přátelský chrlič na střeše: černobílá omalovánka LV3 pro děti 6–7 let, zdarma k vytisknutí na A4.",
+            "altCz_sample": "Přátelský chrlič na střeše: barevný vzor k omalovánce LV3.",
+            "nazevEn": "Friendly Gargoyle on a Rooftop",
+            "altEn_coloring": "Friendly Gargoyle on a Rooftop: black-and-white LV3 coloring page for ages 6–7, free to print on A4 paper.",
+            "altEn_sample": "Friendly Gargoyle on a Rooftop: color sample for the LV3 coloring page.",
+            "nazevDe": "Freundlicher Wasserspeier auf einem Dach",
+            "altDe_coloring": "Freundlicher Wasserspeier auf einem Dach: schwarz-weißes Ausmalbild der Stufe 3 für Kinder von 6–7 Jahren, kostenlos auf A4 drucken.",
+            "altDe_sample": "Freundlicher Wasserspeier auf einem Dach: Farbvorlage zum Ausmalbild der Stufe 3.",
+            "nazevEs": "Gárgola amistosa en un tejado",
+            "altEs_coloring": "Gárgola amistosa en un tejado: dibujo en blanco y negro de nivel 3 para niños de 6–7 años, gratis para imprimir en A4.",
+            "altEs_sample": "Gárgola amistosa en un tejado: modelo a color para el dibujo de nivel 3.",
+            "Status": "vygenerováno",
+            "driveColoring": "https://drive.google.com/file/d/1XeV7vabpVQpZ-WNVljSqGqEQe8yFTlaW/view",
+            "drivePdfColoring": "https://drive.google.com/file/d/1FCnuPfIcPmjYWO__goblC7HP5QYqM2tJ/view",
+            "driveSample": "https://drive.google.com/file/d/1fDCn838EfGI_G0WVRsshgwlmP5q2OyJ1/view",
+            "drivePdfSample": "https://drive.google.com/file/d/1ihtX2UMPDkJ4-LwPfeUGF9eAMovgIaUY/view"
+          },
+          "level": 3
+        },
+        {
+          "originalBase": "lv3_gpt_H1040_1_en-friendly-haunted-tree-coloring-page",
+          "sample": {
+            "url": "https://drive.google.com/file/d/1EPwc5uOMgRjCZhDJNEmHkS-V0_38iFAI/view?usp=drivesdk",
+            "title": "lv3_gpt_H1040_1_en-friendly-haunted-tree-coloring-page-sample.png",
+            "id": "1EPwc5uOMgRjCZhDJNEmHkS-V0_38iFAI",
+            "mime_type": "image/png",
+            "size": "1856317",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:24:37.275Z",
+            "updated_at": "2026-10-01T12:31:42.796Z",
+            "viewedByMeTime": "2026-10-02T11:24:37.275Z",
+            "display_title": "lv3_gpt_H1040_1_en-friendly-haunted-tree-coloring-page-sample.png",
+            "display_url": "https://drive.google.com/file/d/1EPwc5uOMgRjCZhDJNEmHkS-V0_38iFAI/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "coloring": {
+            "url": "https://drive.google.com/file/d/1yvZfsicF7qcs5vfTFWb-iE1tiX_MYk_3/view?usp=drivesdk",
+            "title": "lv3_gpt_H1040_1_en-friendly-haunted-tree-coloring-page-coloring.png",
+            "id": "1yvZfsicF7qcs5vfTFWb-iE1tiX_MYk_3",
+            "mime_type": "image/png",
+            "size": "1534630",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:25:04.802Z",
+            "updated_at": "2026-10-01T10:12:30.498Z",
+            "viewedByMeTime": "2026-10-02T11:25:04.802Z",
+            "display_title": "lv3_gpt_H1040_1_en-friendly-haunted-tree-coloring-page-coloring.png",
+            "display_url": "https://drive.google.com/file/d/1yvZfsicF7qcs5vfTFWb-iE1tiX_MYk_3/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "id": 10219,
+          "names": [
+            "Přátelský strašidelný strom",
+            "Friendly Haunted Tree",
+            "Freundlicher Spukbaum",
+            "Árbol encantado amistoso"
+          ],
+          "sheetRow": 59,
+          "masterRow": 1390,
+          "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/6b9af5eb-f6e4-444f-aec1-c9b5d118abe6/lv3_gpt_H1040_1_en-friendly-haunted-tree-coloring-page-coloring.png",
+          "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/c634f894-5b6a-4ebd-93fd-32812d887d55/lv3_gpt_H1040_1_en-friendly-haunted-tree-coloring-page-sample.png",
+          "base": "lv3_gpt_10219_1_en-friendly-haunted-tree-coloring-page",
+          "row": {
+            "ID": "10219",
+            "soubor": "lv3_gpt_10219_1_en-friendly-haunted-tree-coloring-page",
+            "kategorie": "svatky",
+            "podkategorie": "halloween",
+            "datumPridani": "2026-10-02",
+            "sezona": "podzim,halloween",
+            "zamereni": "jemna-motorika",
+            "assetDirectory": "en",
+            "pdf": "1",
+            "nazevCz": "Přátelský strašidelný strom",
+            "altCz_coloring": "Přátelský strašidelný strom: černobílá omalovánka LV3 pro děti 6–7 let, zdarma k vytisknutí na A4.",
+            "altCz_sample": "Přátelský strašidelný strom: barevný vzor k omalovánce LV3.",
+            "nazevEn": "Friendly Haunted Tree",
+            "altEn_coloring": "Friendly Haunted Tree: black-and-white LV3 coloring page for ages 6–7, free to print on A4 paper.",
+            "altEn_sample": "Friendly Haunted Tree: color sample for the LV3 coloring page.",
+            "nazevDe": "Freundlicher Spukbaum",
+            "altDe_coloring": "Freundlicher Spukbaum: schwarz-weißes Ausmalbild der Stufe 3 für Kinder von 6–7 Jahren, kostenlos auf A4 drucken.",
+            "altDe_sample": "Freundlicher Spukbaum: Farbvorlage zum Ausmalbild der Stufe 3.",
+            "nazevEs": "Árbol encantado amistoso",
+            "altEs_coloring": "Árbol encantado amistoso: dibujo en blanco y negro de nivel 3 para niños de 6–7 años, gratis para imprimir en A4.",
+            "altEs_sample": "Árbol encantado amistoso: modelo a color para el dibujo de nivel 3.",
+            "Status": "vygenerováno",
+            "driveColoring": "https://drive.google.com/file/d/1lS8fAIX05gv84v-2dKZMVJJ4l0a11bAq/view",
+            "drivePdfColoring": "https://drive.google.com/file/d/1KbhJ8unsoBQ6pAo_6Mx-K9Kwmq5MQhJt/view",
+            "driveSample": "https://drive.google.com/file/d/1ag-4kKge7I4PcCdQNlgbh_kyHKoI49O7/view",
+            "drivePdfSample": "https://drive.google.com/file/d/1B419SlTo1LjdYFoGJut3K9Yb8fAX9EmN/view"
+          },
+          "level": 3
+        },
+        {
+          "originalBase": "lv2_gpt_H1041_1_en-friendly-ghost-baking-halloween-cookies-coloring-page",
+          "sample": {
+            "url": "https://drive.google.com/file/d/1Z0uzPDIAFtKds3A3nZPc8PWFJ1wYx7uo/view?usp=drivesdk",
+            "title": "lv2_gpt_H1041_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-sample.png",
+            "id": "1Z0uzPDIAFtKds3A3nZPc8PWFJ1wYx7uo",
+            "mime_type": "image/png",
+            "size": "1756534",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:21:42.339Z",
+            "updated_at": "2026-10-02T11:04:44.639Z",
+            "viewedByMeTime": "2026-10-02T11:21:42.339Z",
+            "display_title": "lv2_gpt_H1041_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-sample.png",
+            "display_url": "https://drive.google.com/file/d/1Z0uzPDIAFtKds3A3nZPc8PWFJ1wYx7uo/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "coloring": {
+            "url": "https://drive.google.com/file/d/12mOx8Hvq3pa_6_hsnjNJPn1zrLOEhjTW/view?usp=drivesdk",
+            "title": "lv2_gpt_H1041_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-coloring.png",
+            "id": "12mOx8Hvq3pa_6_hsnjNJPn1zrLOEhjTW",
+            "mime_type": "image/png",
+            "size": "1445810",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:21:57.084Z",
+            "updated_at": "2026-10-02T10:34:06.645Z",
+            "viewedByMeTime": "2026-10-02T11:21:57.084Z",
+            "display_title": "lv2_gpt_H1041_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-coloring.png",
+            "display_url": "https://drive.google.com/file/d/12mOx8Hvq3pa_6_hsnjNJPn1zrLOEhjTW/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "id": 10220,
+          "names": [
+            "Duch peče halloweenské sušenky",
+            "Ghost Baking Halloween Cookies",
+            "Geist backt Halloween-Kekse",
+            "Fantasma horneando galletas de Halloween"
+          ],
+          "sheetRow": 60,
+          "masterRow": 1391,
+          "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/64fc0ead-155c-4f02-9c75-ec987997d261/lv2_gpt_H1041_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-coloring.png",
+          "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/5bb819d3-4ac6-4b44-82e4-fa0e520a1736/lv2_gpt_H1041_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-sample.png",
+          "base": "lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-coloring-page",
+          "row": {
+            "ID": "10220",
+            "soubor": "lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-coloring-page",
+            "kategorie": "svatky",
+            "podkategorie": "halloween",
+            "datumPridani": "2026-10-02",
+            "sezona": "podzim,halloween",
+            "zamereni": "jemna-motorika",
+            "assetDirectory": "en",
+            "pdf": "1",
+            "nazevCz": "Duch peče halloweenské sušenky",
+            "altCz_coloring": "Duch peče halloweenské sušenky: černobílá omalovánka LV2 pro děti 5–6 let, zdarma k vytisknutí na A4.",
+            "altCz_sample": "Duch peče halloweenské sušenky: barevný vzor k omalovánce LV2.",
+            "nazevEn": "Ghost Baking Halloween Cookies",
+            "altEn_coloring": "Ghost Baking Halloween Cookies: black-and-white LV2 coloring page for ages 5–6, free to print on A4 paper.",
+            "altEn_sample": "Ghost Baking Halloween Cookies: color sample for the LV2 coloring page.",
+            "nazevDe": "Geist backt Halloween-Kekse",
+            "altDe_coloring": "Geist backt Halloween-Kekse: schwarz-weißes Ausmalbild der Stufe 2 für Kinder von 5–6 Jahren, kostenlos auf A4 drucken.",
+            "altDe_sample": "Geist backt Halloween-Kekse: Farbvorlage zum Ausmalbild der Stufe 2.",
+            "nazevEs": "Fantasma horneando galletas de Halloween",
+            "altEs_coloring": "Fantasma horneando galletas de Halloween: dibujo en blanco y negro de nivel 2 para niños de 5–6 años, gratis para imprimir en A4.",
+            "altEs_sample": "Fantasma horneando galletas de Halloween: modelo a color para el dibujo de nivel 2.",
+            "Status": "vygenerováno",
+            "driveColoring": "https://drive.google.com/file/d/1nC4Fzcq2syw-jLMGqnQYxpj9BBtvbGXq/view",
+            "drivePdfColoring": "https://drive.google.com/file/d/1oVoR1PIthBauY3P3vceVEDPP9OQornty/view",
+            "driveSample": "https://drive.google.com/file/d/1Y38xjQBdbjSs-Bk9gp1x9UCGPi46KeHp/view",
+            "drivePdfSample": "https://drive.google.com/file/d/1X_ME513plZIGcEeT2iuEK1TW9hr17ODt/view"
+          },
+          "level": 2
+        }
+      ],
+      "driveFiles": [
+        {
+          "id": "1XeV7vabpVQpZ-WNVljSqGqEQe8yFTlaW",
+          "path": "public/omalovanky/en/lv3_gpt_10218_1_en-friendly-gargoyle-on-rooftop-coloring-page-coloring.png"
+        },
+        {
+          "id": "1FCnuPfIcPmjYWO__goblC7HP5QYqM2tJ",
+          "path": "public/omalovanky/en/lv3_gpt_10218_1_en-friendly-gargoyle-on-rooftop-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "1fDCn838EfGI_G0WVRsshgwlmP5q2OyJ1",
+          "path": "public/omalovanky/en/lv3_gpt_10218_1_en-friendly-gargoyle-on-rooftop-coloring-page-sample.png"
+        },
+        {
+          "id": "1ihtX2UMPDkJ4-LwPfeUGF9eAMovgIaUY",
+          "path": "public/omalovanky/en/lv3_gpt_10218_1_en-friendly-gargoyle-on-rooftop-coloring-page-sample.pdf"
+        },
+        {
+          "id": "1lS8fAIX05gv84v-2dKZMVJJ4l0a11bAq",
+          "path": "public/omalovanky/en/lv3_gpt_10219_1_en-friendly-haunted-tree-coloring-page-coloring.png"
+        },
+        {
+          "id": "1KbhJ8unsoBQ6pAo_6Mx-K9Kwmq5MQhJt",
+          "path": "public/omalovanky/en/lv3_gpt_10219_1_en-friendly-haunted-tree-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "1ag-4kKge7I4PcCdQNlgbh_kyHKoI49O7",
+          "path": "public/omalovanky/en/lv3_gpt_10219_1_en-friendly-haunted-tree-coloring-page-sample.png"
+        },
+        {
+          "id": "1B419SlTo1LjdYFoGJut3K9Yb8fAX9EmN",
+          "path": "public/omalovanky/en/lv3_gpt_10219_1_en-friendly-haunted-tree-coloring-page-sample.pdf"
+        },
+        {
+          "id": "1nC4Fzcq2syw-jLMGqnQYxpj9BBtvbGXq",
+          "path": "public/omalovanky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-coloring.png"
+        },
+        {
+          "id": "1oVoR1PIthBauY3P3vceVEDPP9OQornty",
+          "path": "public/omalovanky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "1Y38xjQBdbjSs-Bk9gp1x9UCGPi46KeHp",
+          "path": "public/omalovanky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-sample.png"
+        },
+        {
+          "id": "1X_ME513plZIGcEeT2iuEK1TW9hr17ODt",
+          "path": "public/omalovanky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-sample.pdf"
+        }
+      ],
+      "skippedTitles": [
+        {
+          "id": 10218,
+          "variant": "sample",
+          "reason": "No blank area for title without covering artwork"
+        },
+        {
+          "id": 10219,
+          "variant": "sample",
+          "reason": "No blank area for title without covering artwork"
+        }
+      ],
+      "checks": {
+        "PNGResolutionAndQR": "6/6 passed",
+        "DriveSizes": "12/12 passed",
+        "sheets": "exact values read back",
+        "mobile": "User review deferred"
+      }
     }
   ],
   "remainingPairs": 8,
