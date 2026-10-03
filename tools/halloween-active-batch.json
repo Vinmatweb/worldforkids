@@ -1,6 +1,6 @@
 {
   "batch": 13,
-  "state": "prepared",
+  "state": "published-user-review-deferred",
   "items": [
     {
       "originalBase": "lv4_gpt_H1032_1_en-halloween-amusement-park-coloring-page",
@@ -76,7 +76,7 @@
         "nazevEs": "Parque de atracciones de Halloween",
         "altEs_coloring": "Parque de atracciones de Halloween: dibujo en blanco y negro de nivel 4 para niños de 7–8 años, gratis para imprimir en A4.",
         "altEs_sample": "Parque de atracciones de Halloween: modelo a color para el dibujo de nivel 4.",
-        "Status": "vygenerováno",
+        "Status": "publikováno",
         "driveColoring": "https://drive.google.com/file/d/1PAMBjA4ZOZ7TYG9On6rWJpbi2nwxSYtb/view",
         "drivePdfColoring": "https://drive.google.com/file/d/1n3AB0QgEqnWPuKkqDqFqEkK1lEByo7qI/view",
         "driveSample": "https://drive.google.com/file/d/1-oD1fiRF6k5T96Vspxv7CDXoGcJAVK1J/view",
@@ -158,7 +158,7 @@
         "nazevEs": "Familia amistosa de hombres lobo en un bosque otoñal",
         "altEs_coloring": "Familia amistosa de hombres lobo en un bosque otoñal: dibujo en blanco y negro de nivel 4 para niños de 7–8 años, gratis para imprimir en A4.",
         "altEs_sample": "Familia amistosa de hombres lobo en un bosque otoñal: modelo a color para el dibujo de nivel 4.",
-        "Status": "vygenerováno",
+        "Status": "publikováno",
         "driveColoring": "https://drive.google.com/file/d/1meP3Mq3CE6NfSQ2MIrglY2aZlYEBTm3C/view",
         "drivePdfColoring": "https://drive.google.com/file/d/1vx5OXgxIgHlxcUwsW7PDkSOSUtlLBPsH/view",
         "driveSample": "https://drive.google.com/file/d/1MkxaWt4FyMg7NVghIgid6yjG9xV7mHgk/view",
@@ -240,7 +240,7 @@
         "nazevEs": "Tren de Halloween en un valle de montaña",
         "altEs_coloring": "Tren de Halloween en un valle de montaña: dibujo en blanco y negro de nivel 4 para niños de 7–8 años, gratis para imprimir en A4.",
         "altEs_sample": "Tren de Halloween en un valle de montaña: modelo a color para el dibujo de nivel 4.",
-        "Status": "vygenerováno",
+        "Status": "publikováno",
         "driveColoring": "https://drive.google.com/file/d/1AhpccB84lybQzoVH8ZahEUqgZNXIqiMs/view",
         "drivePdfColoring": "https://drive.google.com/file/d/1MHoD4fdeXhXULCMbguYAQzFD0WgVfKoG/view",
         "driveSample": "https://drive.google.com/file/d/1QHRALGDHNGm7kRfyMw5TF0gpRDimv8wc/view",
@@ -625,7 +625,12 @@
   "checks": {
     "PNGResolutionAndQR": "passed 6/6",
     "DriveSizes": "passed 12/12",
-    "sheets": "exact values read back",
-    "mobile": "User review deferred"
-  }
+    "sheets": "published status read back",
+    "mobile": "User review deferred",
+    "liveAssets": "18/18 exact SHA",
+    "livePages": "12/12 in all languages",
+    "deployment": "Actions and Pages passed"
+  },
+  "publishCommit": "079a3bb27ad6ddc3d2946a5321b0f4c260023cea",
+  "deploymentCommit": "920b32749243c1b7b283039b0cf52fe324d885cb"
 }

@@ -1,20 +1,20 @@
 {
-  "batch": 12,
+  "batch": 13,
   "assets": 18,
   "pages": [
-    "activities/coloring-friendly-halloween-cemetery-with-ghosts.html",
-    "cs/aktivity/omalovanka-pratelsky-hrbitov-s-duchy.html",
-    "de/aktivitaeten/ausmalbild-freundlicher-halloween-friedhof-mit-geistern.html",
-    "es/actividades/dibujo-cementerio-amistoso-de-halloween-con-fantasmas.html",
-    "activities/coloring-twelve-different-halloween-pumpkins.html",
-    "cs/aktivity/omalovanka-dvanact-ruznych-halloweenskych-dyni.html",
-    "de/aktivitaeten/ausmalbild-zwolf-verschiedene-halloween-kurbisse.html",
-    "es/actividades/dibujo-doce-calabazas-diferentes-de-halloween.html",
-    "activities/coloring-twelve-unique-carved-halloween-pumpkins.html",
-    "cs/aktivity/omalovanka-dvanact-vyrezavanych-halloweenskych-dyni.html",
-    "de/aktivitaeten/ausmalbild-zwolf-einzigartige-geschnitzte-halloween-kurbisse.html",
-    "es/actividades/dibujo-doce-calabazas-talladas-unicas-de-halloween.html"
+    "activities/coloring-halloween-amusement-park.html",
+    "cs/aktivity/omalovanka-halloweensky-zabavni-park.html",
+    "de/aktivitaeten/ausmalbild-halloween-vergnugungspark.html",
+    "es/actividades/dibujo-parque-de-atracciones-de-halloween.html",
+    "activities/coloring-friendly-werewolf-family-in-an-autumn-woodland.html",
+    "cs/aktivity/omalovanka-pratelska-rodina-vlkodlaku-v-podzimnim-lese.html",
+    "de/aktivitaeten/ausmalbild-freundliche-werwolffamilie-im-herbstwald.html",
+    "es/actividades/dibujo-familia-amistosa-de-hombres-lobo-en-un-bosque-otonal.html",
+    "activities/coloring-halloween-train-in-a-mountain-valley.html",
+    "cs/aktivity/omalovanka-halloweensky-vlak-v-horskem-udoli.html",
+    "de/aktivitaeten/ausmalbild-halloween-zug-in-einem-bergtal.html",
+    "es/actividades/dibujo-tren-de-halloween-en-un-valle-de-montana.html"
   ],
-  "catalogRows": 50,
+  "catalogRows": 53,
   "status": "passed"
 }
