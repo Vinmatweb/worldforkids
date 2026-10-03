@@ -1,20 +1,20 @@
 {
-  "batch": 10,
+  "batch": 11,
   "assets": 18,
   "pages": [
-    "activities/coloring-friendly-skeleton-with-a-pumpkin.html",
-    "cs/aktivity/omalovanka-pratelsky-kostlivec-s-dyni.html",
-    "de/aktivitaeten/ausmalbild-freundliches-skelett-mit-einem-kurbis.html",
-    "es/actividades/dibujo-esqueleto-amistoso-con-una-calabaza.html",
-    "activities/coloring-friendly-vampire-with-a-bat.html",
-    "cs/aktivity/omalovanka-pratelsky-upir-s-netopyrem.html",
-    "de/aktivitaeten/ausmalbild-freundlicher-vampir-mit-einer-fledermaus.html",
-    "es/actividades/dibujo-vampiro-amistoso-con-un-murcielago.html",
-    "activities/coloring-friendly-zombie-with-a-pumpkin.html",
-    "cs/aktivity/omalovanka-pratelska-zombie-s-dyni.html",
-    "de/aktivitaeten/ausmalbild-freundlicher-zombie-mit-einem-kurbis.html",
-    "es/actividades/dibujo-zombi-amistoso-con-una-calabaza.html"
+    "activities/coloring-halloween-costume-parade.html",
+    "cs/aktivity/omalovanka-halloweensky-pruvod-kostymu.html",
+    "de/aktivitaeten/ausmalbild-halloween-kostumparade.html",
+    "es/actividades/dibujo-desfile-de-disfraces-de-halloween.html",
+    "activities/coloring-pony-pulling-a-pumpkin-wagon.html",
+    "cs/aktivity/omalovanka-ponik-tahne-vozik-s-dynemi.html",
+    "de/aktivitaeten/ausmalbild-pony-zieht-einen-kurbiswagen.html",
+    "es/actividades/dibujo-poni-tirando-de-un-carro-de-calabazas.html",
+    "activities/coloring-scarecrow-with-crows-in-a-pumpkin-field.html",
+    "cs/aktivity/omalovanka-strasak-s-vranami-na-dynovem-poli.html",
+    "de/aktivitaeten/ausmalbild-vogelscheuche-mit-krahen-auf-einem-kurbisfeld.html",
+    "es/actividades/dibujo-espantapajaros-con-cuervos-en-un-campo-de-calabazas.html"
   ],
-  "catalogRows": 44,
+  "catalogRows": 47,
   "status": "passed"
 }
