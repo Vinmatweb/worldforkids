@@ -2151,6 +2151,331 @@
       },
       "publishCommit": "caeef89d5b1e445d3fe73464272e68b552ba3689",
       "deploymentCommit": "645572ce6bbcf9597d5208c8432ae9a113bb4c9a"
+    },
+    {
+      "batch": 13,
+      "state": "prepared",
+      "items": [
+        {
+          "originalBase": "lv4_gpt_H1032_1_en-halloween-amusement-park-coloring-page",
+          "sample": {
+            "url": "https://drive.google.com/file/d/1BMOOwcTXZ4FaaTI8oq1i8xr9Vr_hZgJG/view?usp=drivesdk",
+            "title": "lv4_gpt_H1032_1_en-halloween-amusement-park-coloring-page-sample.png",
+            "id": "1BMOOwcTXZ4FaaTI8oq1i8xr9Vr_hZgJG",
+            "mime_type": "image/png",
+            "size": "3245010",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:25:50.429Z",
+            "updated_at": "2026-09-30T19:43:42.444Z",
+            "viewedByMeTime": "2026-10-02T11:25:50.429Z",
+            "display_title": "lv4_gpt_H1032_1_en-halloween-amusement-park-coloring-page-sample.png",
+            "display_url": "https://drive.google.com/file/d/1BMOOwcTXZ4FaaTI8oq1i8xr9Vr_hZgJG/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "coloring": {
+            "url": "https://drive.google.com/file/d/1JdHuomUL9brFiTI1kUYq-lS0lLF2fiHc/view?usp=drivesdk",
+            "title": "lv4_gpt_H1032_1_en-halloween-amusement-park-coloring-page-coloring.png",
+            "id": "1JdHuomUL9brFiTI1kUYq-lS0lLF2fiHc",
+            "mime_type": "image/png",
+            "size": "2275404",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:25:59.952Z",
+            "updated_at": "2026-09-30T19:09:26.886Z",
+            "viewedByMeTime": "2026-10-02T11:25:59.952Z",
+            "display_title": "lv4_gpt_H1032_1_en-halloween-amusement-park-coloring-page-coloring.png",
+            "display_url": "https://drive.google.com/file/d/1JdHuomUL9brFiTI1kUYq-lS0lLF2fiHc/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "id": 10212,
+          "names": [
+            "Halloweenský zábavní park",
+            "Halloween Amusement Park",
+            "Halloween-Vergnügungspark",
+            "Parque de atracciones de Halloween"
+          ],
+          "sheetRow": 52,
+          "masterRow": 1383,
+          "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/263abe1d-c562-4cae-8012-7230da0baf47/lv4_gpt_H1032_1_en-halloween-amusement-park-coloring-page-coloring.png",
+          "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/e7394111-cc31-4411-8192-448a0f629264/lv4_gpt_H1032_1_en-halloween-amusement-park-coloring-page-sample.png",
+          "base": "lv4_gpt_10212_1_en-halloween-amusement-park-coloring-page",
+          "row": {
+            "ID": "10212",
+            "soubor": "lv4_gpt_10212_1_en-halloween-amusement-park-coloring-page",
+            "kategorie": "svatky",
+            "podkategorie": "halloween",
+            "datumPridani": "2026-10-02",
+            "sezona": "podzim,halloween",
+            "zamereni": "jemna-motorika",
+            "assetDirectory": "en",
+            "pdf": "1",
+            "nazevCz": "Halloweenský zábavní park",
+            "altCz_coloring": "Halloweenský zábavní park: černobílá omalovánka LV4 pro děti 7–8 let, zdarma k vytisknutí na A4.",
+            "altCz_sample": "Halloweenský zábavní park: barevný vzor k omalovánce LV4.",
+            "nazevEn": "Halloween Amusement Park",
+            "altEn_coloring": "Halloween Amusement Park: black-and-white LV4 coloring page for ages 7–8, free to print on A4 paper.",
+            "altEn_sample": "Halloween Amusement Park: color sample for the LV4 coloring page.",
+            "nazevDe": "Halloween-Vergnügungspark",
+            "altDe_coloring": "Halloween-Vergnügungspark: schwarz-weißes Ausmalbild der Stufe 4 für Kinder von 7–8 Jahren, kostenlos auf A4 drucken.",
+            "altDe_sample": "Halloween-Vergnügungspark: Farbvorlage zum Ausmalbild der Stufe 4.",
+            "nazevEs": "Parque de atracciones de Halloween",
+            "altEs_coloring": "Parque de atracciones de Halloween: dibujo en blanco y negro de nivel 4 para niños de 7–8 años, gratis para imprimir en A4.",
+            "altEs_sample": "Parque de atracciones de Halloween: modelo a color para el dibujo de nivel 4.",
+            "Status": "vygenerováno",
+            "driveColoring": "https://drive.google.com/file/d/1PAMBjA4ZOZ7TYG9On6rWJpbi2nwxSYtb/view",
+            "drivePdfColoring": "https://drive.google.com/file/d/1n3AB0QgEqnWPuKkqDqFqEkK1lEByo7qI/view",
+            "driveSample": "https://drive.google.com/file/d/1-oD1fiRF6k5T96Vspxv7CDXoGcJAVK1J/view",
+            "drivePdfSample": "https://drive.google.com/file/d/1vKneUAMhU_MGcCL-qoznjLz9uJJb4J77/view"
+          },
+          "level": 4
+        },
+        {
+          "originalBase": "lv4_gpt_H1033_1_en-friendly-werewolf-family-autumn-woodland-coloring-page",
+          "sample": {
+            "url": "https://drive.google.com/file/d/1OrJ3Ev3LaT9O7rGMwDuwc5OZwoNbOIiJ/view?usp=drivesdk",
+            "title": "lv4_gpt_H1033_1_en-friendly-werewolf-family-autumn-woodland-coloring-page-sample.png",
+            "id": "1OrJ3Ev3LaT9O7rGMwDuwc5OZwoNbOIiJ",
+            "mime_type": "image/png",
+            "size": "3434942",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:26:13.744Z",
+            "updated_at": "2026-09-30T19:43:42.491Z",
+            "viewedByMeTime": "2026-10-02T11:26:13.744Z",
+            "display_title": "lv4_gpt_H1033_1_en-friendly-werewolf-family-autumn-woodland-coloring-page-sample.png",
+            "display_url": "https://drive.google.com/file/d/1OrJ3Ev3LaT9O7rGMwDuwc5OZwoNbOIiJ/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "coloring": {
+            "url": "https://drive.google.com/file/d/1MDKzolfJZuARhPFE7To086rI3LTKS8JD/view?usp=drivesdk",
+            "title": "lv4_gpt_H1033_1_en-friendly-werewolf-family-autumn-woodland-coloring-page-coloring.png",
+            "id": "1MDKzolfJZuARhPFE7To086rI3LTKS8JD",
+            "mime_type": "image/png",
+            "size": "2347620",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:25:47.934Z",
+            "updated_at": "2026-09-30T19:09:26.809Z",
+            "viewedByMeTime": "2026-10-02T11:25:47.934Z",
+            "display_title": "lv4_gpt_H1033_1_en-friendly-werewolf-family-autumn-woodland-coloring-page-coloring.png",
+            "display_url": "https://drive.google.com/file/d/1MDKzolfJZuARhPFE7To086rI3LTKS8JD/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "id": 10213,
+          "names": [
+            "Přátelská rodina vlkodlaků v podzimním lese",
+            "Friendly Werewolf Family in an Autumn Woodland",
+            "Freundliche Werwolffamilie im Herbstwald",
+            "Familia amistosa de hombres lobo en un bosque otoñal"
+          ],
+          "sheetRow": 53,
+          "masterRow": 1384,
+          "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/20e13b66-fd78-46da-8d53-5c2cf7c3dcdc/lv4_gpt_H1033_1_en-friendly-werewolf-family-autumn-woodland-coloring-page-coloring.png",
+          "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/2c86278d-e238-40bb-9192-6a8156d9612c/lv4_gpt_H1033_1_en-friendly-werewolf-family-autumn-woodland-coloring-page-sample.png",
+          "base": "lv4_gpt_10213_1_en-friendly-werewolf-family-autumn-woodland-coloring-page",
+          "row": {
+            "ID": "10213",
+            "soubor": "lv4_gpt_10213_1_en-friendly-werewolf-family-autumn-woodland-coloring-page",
+            "kategorie": "svatky",
+            "podkategorie": "halloween",
+            "datumPridani": "2026-10-02",
+            "sezona": "podzim,halloween",
+            "zamereni": "jemna-motorika",
+            "assetDirectory": "en",
+            "pdf": "1",
+            "nazevCz": "Přátelská rodina vlkodlaků v podzimním lese",
+            "altCz_coloring": "Přátelská rodina vlkodlaků v podzimním lese: černobílá omalovánka LV4 pro děti 7–8 let, zdarma k vytisknutí na A4.",
+            "altCz_sample": "Přátelská rodina vlkodlaků v podzimním lese: barevný vzor k omalovánce LV4.",
+            "nazevEn": "Friendly Werewolf Family in an Autumn Woodland",
+            "altEn_coloring": "Friendly Werewolf Family in an Autumn Woodland: black-and-white LV4 coloring page for ages 7–8, free to print on A4 paper.",
+            "altEn_sample": "Friendly Werewolf Family in an Autumn Woodland: color sample for the LV4 coloring page.",
+            "nazevDe": "Freundliche Werwolffamilie im Herbstwald",
+            "altDe_coloring": "Freundliche Werwolffamilie im Herbstwald: schwarz-weißes Ausmalbild der Stufe 4 für Kinder von 7–8 Jahren, kostenlos auf A4 drucken.",
+            "altDe_sample": "Freundliche Werwolffamilie im Herbstwald: Farbvorlage zum Ausmalbild der Stufe 4.",
+            "nazevEs": "Familia amistosa de hombres lobo en un bosque otoñal",
+            "altEs_coloring": "Familia amistosa de hombres lobo en un bosque otoñal: dibujo en blanco y negro de nivel 4 para niños de 7–8 años, gratis para imprimir en A4.",
+            "altEs_sample": "Familia amistosa de hombres lobo en un bosque otoñal: modelo a color para el dibujo de nivel 4.",
+            "Status": "vygenerováno",
+            "driveColoring": "https://drive.google.com/file/d/1meP3Mq3CE6NfSQ2MIrglY2aZlYEBTm3C/view",
+            "drivePdfColoring": "https://drive.google.com/file/d/1vx5OXgxIgHlxcUwsW7PDkSOSUtlLBPsH/view",
+            "driveSample": "https://drive.google.com/file/d/1MkxaWt4FyMg7NVghIgid6yjG9xV7mHgk/view",
+            "drivePdfSample": "https://drive.google.com/file/d/1rZTGyOWfdHrzodonGh88hzRoyUwt-7JQ/view"
+          },
+          "level": 4
+        },
+        {
+          "originalBase": "lv4_gpt_H1034_1_en-halloween-train-mountain-valley-coloring-page",
+          "sample": {
+            "url": "https://drive.google.com/file/d/1WBvdGu7M_sUQeqKHFoN95doLICQf2PzH/view?usp=drivesdk",
+            "title": "lv4_gpt_H1034_1_en-halloween-train-mountain-valley-coloring-page-sample.png",
+            "id": "1WBvdGu7M_sUQeqKHFoN95doLICQf2PzH",
+            "mime_type": "image/png",
+            "size": "3136866",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:26:48.462Z",
+            "updated_at": "2026-09-30T19:43:42.555Z",
+            "viewedByMeTime": "2026-10-02T11:26:48.462Z",
+            "display_title": "lv4_gpt_H1034_1_en-halloween-train-mountain-valley-coloring-page-sample.png",
+            "display_url": "https://drive.google.com/file/d/1WBvdGu7M_sUQeqKHFoN95doLICQf2PzH/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "coloring": {
+            "url": "https://drive.google.com/file/d/1V4FRphXCRoy7TO4QQTaWTKcUFxW25nrI/view?usp=drivesdk",
+            "title": "lv4_gpt_H1034_1_en-halloween-train-mountain-valley-coloring-page-coloring.png",
+            "id": "1V4FRphXCRoy7TO4QQTaWTKcUFxW25nrI",
+            "mime_type": "image/png",
+            "size": "2498809",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:26:46.501Z",
+            "updated_at": "2026-09-30T19:09:26.850Z",
+            "viewedByMeTime": "2026-10-02T11:26:46.501Z",
+            "display_title": "lv4_gpt_H1034_1_en-halloween-train-mountain-valley-coloring-page-coloring.png",
+            "display_url": "https://drive.google.com/file/d/1V4FRphXCRoy7TO4QQTaWTKcUFxW25nrI/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "id": 10214,
+          "names": [
+            "Halloweenský vlak v horském údolí",
+            "Halloween Train in a Mountain Valley",
+            "Halloween-Zug in einem Bergtal",
+            "Tren de Halloween en un valle de montaña"
+          ],
+          "sheetRow": 54,
+          "masterRow": 1385,
+          "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/a38ec753-86f9-4a41-b51f-93fc75d64d59/lv4_gpt_H1034_1_en-halloween-train-mountain-valley-coloring-page-coloring.png",
+          "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/a8d3e314-8ce1-4bec-849e-e1250b1c3610/lv4_gpt_H1034_1_en-halloween-train-mountain-valley-coloring-page-sample.png",
+          "base": "lv4_gpt_10214_1_en-halloween-train-mountain-valley-coloring-page",
+          "row": {
+            "ID": "10214",
+            "soubor": "lv4_gpt_10214_1_en-halloween-train-mountain-valley-coloring-page",
+            "kategorie": "svatky",
+            "podkategorie": "halloween",
+            "datumPridani": "2026-10-02",
+            "sezona": "podzim,halloween",
+            "zamereni": "jemna-motorika",
+            "assetDirectory": "en",
+            "pdf": "1",
+            "nazevCz": "Halloweenský vlak v horském údolí",
+            "altCz_coloring": "Halloweenský vlak v horském údolí: černobílá omalovánka LV4 pro děti 7–8 let, zdarma k vytisknutí na A4.",
+            "altCz_sample": "Halloweenský vlak v horském údolí: barevný vzor k omalovánce LV4.",
+            "nazevEn": "Halloween Train in a Mountain Valley",
+            "altEn_coloring": "Halloween Train in a Mountain Valley: black-and-white LV4 coloring page for ages 7–8, free to print on A4 paper.",
+            "altEn_sample": "Halloween Train in a Mountain Valley: color sample for the LV4 coloring page.",
+            "nazevDe": "Halloween-Zug in einem Bergtal",
+            "altDe_coloring": "Halloween-Zug in einem Bergtal: schwarz-weißes Ausmalbild der Stufe 4 für Kinder von 7–8 Jahren, kostenlos auf A4 drucken.",
+            "altDe_sample": "Halloween-Zug in einem Bergtal: Farbvorlage zum Ausmalbild der Stufe 4.",
+            "nazevEs": "Tren de Halloween en un valle de montaña",
+            "altEs_coloring": "Tren de Halloween en un valle de montaña: dibujo en blanco y negro de nivel 4 para niños de 7–8 años, gratis para imprimir en A4.",
+            "altEs_sample": "Tren de Halloween en un valle de montaña: modelo a color para el dibujo de nivel 4.",
+            "Status": "vygenerováno",
+            "driveColoring": "https://drive.google.com/file/d/1AhpccB84lybQzoVH8ZahEUqgZNXIqiMs/view",
+            "drivePdfColoring": "https://drive.google.com/file/d/1MHoD4fdeXhXULCMbguYAQzFD0WgVfKoG/view",
+            "driveSample": "https://drive.google.com/file/d/1QHRALGDHNGm7kRfyMw5TF0gpRDimv8wc/view",
+            "drivePdfSample": "https://drive.google.com/file/d/1_vHcjNYgNJG_IY5mRIj8lYHPsriq4_0z/view"
+          },
+          "level": 4
+        }
+      ],
+      "driveFiles": [
+        {
+          "id": "1PAMBjA4ZOZ7TYG9On6rWJpbi2nwxSYtb",
+          "path": "public/omalovanky/en/lv4_gpt_10212_1_en-halloween-amusement-park-coloring-page-coloring.png"
+        },
+        {
+          "id": "1n3AB0QgEqnWPuKkqDqFqEkK1lEByo7qI",
+          "path": "public/omalovanky/en/lv4_gpt_10212_1_en-halloween-amusement-park-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "1-oD1fiRF6k5T96Vspxv7CDXoGcJAVK1J",
+          "path": "public/omalovanky/en/lv4_gpt_10212_1_en-halloween-amusement-park-coloring-page-sample.png"
+        },
+        {
+          "id": "1vKneUAMhU_MGcCL-qoznjLz9uJJb4J77",
+          "path": "public/omalovanky/en/lv4_gpt_10212_1_en-halloween-amusement-park-coloring-page-sample.pdf"
+        },
+        {
+          "id": "1meP3Mq3CE6NfSQ2MIrglY2aZlYEBTm3C",
+          "path": "public/omalovanky/en/lv4_gpt_10213_1_en-friendly-werewolf-family-autumn-woodland-coloring-page-coloring.png"
+        },
+        {
+          "id": "1vx5OXgxIgHlxcUwsW7PDkSOSUtlLBPsH",
+          "path": "public/omalovanky/en/lv4_gpt_10213_1_en-friendly-werewolf-family-autumn-woodland-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "1MkxaWt4FyMg7NVghIgid6yjG9xV7mHgk",
+          "path": "public/omalovanky/en/lv4_gpt_10213_1_en-friendly-werewolf-family-autumn-woodland-coloring-page-sample.png"
+        },
+        {
+          "id": "1rZTGyOWfdHrzodonGh88hzRoyUwt-7JQ",
+          "path": "public/omalovanky/en/lv4_gpt_10213_1_en-friendly-werewolf-family-autumn-woodland-coloring-page-sample.pdf"
+        },
+        {
+          "id": "1AhpccB84lybQzoVH8ZahEUqgZNXIqiMs",
+          "path": "public/omalovanky/en/lv4_gpt_10214_1_en-halloween-train-mountain-valley-coloring-page-coloring.png"
+        },
+        {
+          "id": "1MHoD4fdeXhXULCMbguYAQzFD0WgVfKoG",
+          "path": "public/omalovanky/en/lv4_gpt_10214_1_en-halloween-train-mountain-valley-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "1QHRALGDHNGm7kRfyMw5TF0gpRDimv8wc",
+          "path": "public/omalovanky/en/lv4_gpt_10214_1_en-halloween-train-mountain-valley-coloring-page-sample.png"
+        },
+        {
+          "id": "1_vHcjNYgNJG_IY5mRIj8lYHPsriq4_0z",
+          "path": "public/omalovanky/en/lv4_gpt_10214_1_en-halloween-train-mountain-valley-coloring-page-sample.pdf"
+        }
+      ],
+      "skippedTitles": [
+        {
+          "id": 10212,
+          "variant": "sample",
+          "reason": "No blank area for title without covering artwork"
+        },
+        {
+          "id": 10213,
+          "variant": "sample",
+          "reason": "No blank area for title without covering artwork"
+        },
+        {
+          "id": 10214,
+          "variant": "sample",
+          "reason": "No blank area for title without covering artwork"
+        }
+      ],
+      "checks": {
+        "PNGResolutionAndQR": "passed 6/6",
+        "DriveSizes": "passed 12/12",
+        "sheets": "exact values read back",
+        "mobile": "User review deferred"
+      }
     }
   ],
   "remainingPairs": 14,
