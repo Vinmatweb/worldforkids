@@ -1496,6 +1496,326 @@
       },
       "publishCommit": "c9e8a2ccdf514aed67458c6ff2c745d71917b49c",
       "deploymentCommit": "889305c0fbb6c36fd4843dd9d2be09baf553da89"
+    },
+    {
+      "batch": 11,
+      "state": "prepared",
+      "items": [
+        {
+          "originalBase": "lv3_gpt_H1027_1_en-halloween-costume-parade-coloring-page",
+          "sample": {
+            "url": "https://drive.google.com/file/d/1AnjLiLVpsqnJIFOpi-bA8180QcL-IJbh/view?usp=drivesdk",
+            "title": "lv3_gpt_H1027_1_en-halloween-costume-parade-coloring-page-sample.png",
+            "id": "1AnjLiLVpsqnJIFOpi-bA8180QcL-IJbh",
+            "mime_type": "image/png",
+            "size": "2573370",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:23:21.039Z",
+            "updated_at": "2026-09-30T19:14:34.005Z",
+            "viewedByMeTime": "2026-10-02T11:23:21.039Z",
+            "display_title": "lv3_gpt_H1027_1_en-halloween-costume-parade-coloring-page-sample.png",
+            "display_url": "https://drive.google.com/file/d/1AnjLiLVpsqnJIFOpi-bA8180QcL-IJbh/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "coloring": {
+            "url": "https://drive.google.com/file/d/1jPEhlIjtmPAb4d-B1wAa_dHBVoAM6IID/view?usp=drivesdk",
+            "title": "lv3_gpt_H1027_1_en-halloween-costume-parade-coloring-page-coloring.png",
+            "id": "1jPEhlIjtmPAb4d-B1wAa_dHBVoAM6IID",
+            "mime_type": "image/png",
+            "size": "1765296",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:23:38.201Z",
+            "updated_at": "2026-09-30T15:12:20.332Z",
+            "viewedByMeTime": "2026-10-02T11:23:38.201Z",
+            "display_title": "lv3_gpt_H1027_1_en-halloween-costume-parade-coloring-page-coloring.png",
+            "display_url": "https://drive.google.com/file/d/1jPEhlIjtmPAb4d-B1wAa_dHBVoAM6IID/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "id": 10207,
+          "names": [
+            "Halloweenský průvod kostýmů",
+            "Halloween Costume Parade",
+            "Halloween-Kostümparade",
+            "Desfile de disfraces de Halloween"
+          ],
+          "sheetRow": 46,
+          "masterRow": 1378,
+          "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/1f909ccd-f1bc-4b3b-a836-de4bc4d995a2/lv3_gpt_H1027_1_en-halloween-costume-parade-coloring-page-coloring.png",
+          "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/8e9efeb4-5f38-4c2c-be93-c86303133601/lv3_gpt_H1027_1_en-halloween-costume-parade-coloring-page-sample.png",
+          "base": "lv3_gpt_10207_1_en-halloween-costume-parade-coloring-page",
+          "row": {
+            "ID": "10207",
+            "soubor": "lv3_gpt_10207_1_en-halloween-costume-parade-coloring-page",
+            "kategorie": "svatky",
+            "podkategorie": "halloween",
+            "datumPridani": "2026-10-02",
+            "sezona": "podzim,halloween",
+            "zamereni": "jemna-motorika",
+            "assetDirectory": "en",
+            "pdf": "1",
+            "nazevCz": "Halloweenský průvod kostýmů",
+            "altCz_coloring": "Halloweenský průvod kostýmů: černobílá omalovánka LV3 pro děti 6–7 let, zdarma k vytisknutí na A4.",
+            "altCz_sample": "Halloweenský průvod kostýmů: barevný vzor k omalovánce LV3.",
+            "nazevEn": "Halloween Costume Parade",
+            "altEn_coloring": "Halloween Costume Parade: black-and-white LV3 coloring page for ages 6–7, free to print on A4 paper.",
+            "altEn_sample": "Halloween Costume Parade: color sample for the LV3 coloring page.",
+            "nazevDe": "Halloween-Kostümparade",
+            "altDe_coloring": "Halloween-Kostümparade: schwarz-weißes Ausmalbild der Stufe 3 für Kinder von 6–7 Jahren, kostenlos auf A4 drucken.",
+            "altDe_sample": "Halloween-Kostümparade: Farbvorlage zum Ausmalbild der Stufe 3.",
+            "nazevEs": "Desfile de disfraces de Halloween",
+            "altEs_coloring": "Desfile de disfraces de Halloween: dibujo en blanco y negro de nivel 3 para niños de 6–7 años, gratis para imprimir en A4.",
+            "altEs_sample": "Desfile de disfraces de Halloween: modelo a color para el dibujo de nivel 3.",
+            "Status": "vygenerováno",
+            "driveColoring": "https://drive.google.com/file/d/1N16F5DbIrjdFsyHMO2YmNbSxpHLJsdzl/view",
+            "drivePdfColoring": "https://drive.google.com/file/d/1u5BpgCQdFKuII1RAu3GurneXlFKrZ8nt/view",
+            "driveSample": "https://drive.google.com/file/d/1oNtKgN9R1Um9IzhZw5M4BXIS6CGtqbNl/view",
+            "drivePdfSample": "https://drive.google.com/file/d/1xQEa5vYCEF4qL4qDdgWwc8LPT8xL3_35/view"
+          },
+          "level": 3
+        },
+        {
+          "originalBase": "lv3_gpt_H1028_1_en-pumpkin-wagon-pulled-by-pony-coloring-page",
+          "sample": {
+            "url": "https://drive.google.com/file/d/13YtXhcVJKGEzQDCCtdgBE4qSIVysCY69/view?usp=drivesdk",
+            "title": "lv3_gpt_H1028_1_en-pumpkin-wagon-pulled-by-pony-coloring-page-sample.png",
+            "id": "13YtXhcVJKGEzQDCCtdgBE4qSIVysCY69",
+            "mime_type": "image/png",
+            "size": "2437658",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:23:31.376Z",
+            "updated_at": "2026-09-30T19:14:34.042Z",
+            "viewedByMeTime": "2026-10-02T11:23:31.376Z",
+            "display_title": "lv3_gpt_H1028_1_en-pumpkin-wagon-pulled-by-pony-coloring-page-sample.png",
+            "display_url": "https://drive.google.com/file/d/13YtXhcVJKGEzQDCCtdgBE4qSIVysCY69/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "coloring": {
+            "url": "https://drive.google.com/file/d/1ywf3czwWZFno_FevoXlfbvxdzHqxN6ub/view?usp=drivesdk",
+            "title": "lv3_gpt_H1028_1_en-pumpkin-wagon-pulled-by-pony-coloring-page-coloring.png",
+            "id": "1ywf3czwWZFno_FevoXlfbvxdzHqxN6ub",
+            "mime_type": "image/png",
+            "size": "1776425",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:23:40.208Z",
+            "updated_at": "2026-09-30T15:12:20.354Z",
+            "viewedByMeTime": "2026-10-02T11:23:40.208Z",
+            "display_title": "lv3_gpt_H1028_1_en-pumpkin-wagon-pulled-by-pony-coloring-page-coloring.png",
+            "display_url": "https://drive.google.com/file/d/1ywf3czwWZFno_FevoXlfbvxdzHqxN6ub/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "id": 10208,
+          "names": [
+            "Poník táhne vozík s dýněmi",
+            "Pony Pulling a Pumpkin Wagon",
+            "Pony zieht einen Kürbiswagen",
+            "Poni tirando de un carro de calabazas"
+          ],
+          "sheetRow": 47,
+          "masterRow": 1379,
+          "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/695b5945-45ce-4ee3-9971-6dc382615d96/lv3_gpt_H1028_1_en-pumpkin-wagon-pulled-by-pony-coloring-page-coloring.png",
+          "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/52d119a8-3e55-41f6-8aaa-a802c9a55ae7/lv3_gpt_H1028_1_en-pumpkin-wagon-pulled-by-pony-coloring-page-sample.png",
+          "base": "lv3_gpt_10208_1_en-pumpkin-wagon-pulled-by-pony-coloring-page",
+          "row": {
+            "ID": "10208",
+            "soubor": "lv3_gpt_10208_1_en-pumpkin-wagon-pulled-by-pony-coloring-page",
+            "kategorie": "svatky",
+            "podkategorie": "halloween",
+            "datumPridani": "2026-10-02",
+            "sezona": "podzim,halloween",
+            "zamereni": "jemna-motorika",
+            "assetDirectory": "en",
+            "pdf": "1",
+            "nazevCz": "Poník táhne vozík s dýněmi",
+            "altCz_coloring": "Poník táhne vozík s dýněmi: černobílá omalovánka LV3 pro děti 6–7 let, zdarma k vytisknutí na A4.",
+            "altCz_sample": "Poník táhne vozík s dýněmi: barevný vzor k omalovánce LV3.",
+            "nazevEn": "Pony Pulling a Pumpkin Wagon",
+            "altEn_coloring": "Pony Pulling a Pumpkin Wagon: black-and-white LV3 coloring page for ages 6–7, free to print on A4 paper.",
+            "altEn_sample": "Pony Pulling a Pumpkin Wagon: color sample for the LV3 coloring page.",
+            "nazevDe": "Pony zieht einen Kürbiswagen",
+            "altDe_coloring": "Pony zieht einen Kürbiswagen: schwarz-weißes Ausmalbild der Stufe 3 für Kinder von 6–7 Jahren, kostenlos auf A4 drucken.",
+            "altDe_sample": "Pony zieht einen Kürbiswagen: Farbvorlage zum Ausmalbild der Stufe 3.",
+            "nazevEs": "Poni tirando de un carro de calabazas",
+            "altEs_coloring": "Poni tirando de un carro de calabazas: dibujo en blanco y negro de nivel 3 para niños de 6–7 años, gratis para imprimir en A4.",
+            "altEs_sample": "Poni tirando de un carro de calabazas: modelo a color para el dibujo de nivel 3.",
+            "Status": "vygenerováno",
+            "driveColoring": "https://drive.google.com/file/d/1bFth40INsjH1YWNHRAZW90g57eBLJjci/view",
+            "drivePdfColoring": "https://drive.google.com/file/d/1xLQVqwNhY8_Tow6CD-lgRsxDuJgQeQog/view",
+            "driveSample": "https://drive.google.com/file/d/1xlm0sleHOhXJkOJTJjoJWGXx2Wub8m51/view",
+            "drivePdfSample": "https://drive.google.com/file/d/1IOv1vtIZTsJ_3S0U6sydqBf3g5m70wI2/view"
+          },
+          "level": 3
+        },
+        {
+          "originalBase": "lv3_gpt_H1029_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page",
+          "sample": {
+            "url": "https://drive.google.com/file/d/1ME_9xqx5e0iJYczYXFwOaplc53mgK-Go/view?usp=drivesdk",
+            "title": "lv3_gpt_H1029_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page-sample.png",
+            "id": "1ME_9xqx5e0iJYczYXFwOaplc53mgK-Go",
+            "mime_type": "image/png",
+            "size": "2177094",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:23:53.082Z",
+            "updated_at": "2026-09-30T19:14:34.081Z",
+            "viewedByMeTime": "2026-10-02T11:23:53.082Z",
+            "display_title": "lv3_gpt_H1029_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page-sample.png",
+            "display_url": "https://drive.google.com/file/d/1ME_9xqx5e0iJYczYXFwOaplc53mgK-Go/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "coloring": {
+            "url": "https://drive.google.com/file/d/19YKMixGHqPG8Rb8gP2naAII7B40elZap/view?usp=drivesdk",
+            "title": "lv3_gpt_H1029_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page-coloring.png",
+            "id": "19YKMixGHqPG8Rb8gP2naAII7B40elZap",
+            "mime_type": "image/png",
+            "size": "1515713",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:23:42.472Z",
+            "updated_at": "2026-09-30T15:12:20.375Z",
+            "viewedByMeTime": "2026-10-02T11:23:42.472Z",
+            "display_title": "lv3_gpt_H1029_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page-coloring.png",
+            "display_url": "https://drive.google.com/file/d/19YKMixGHqPG8Rb8gP2naAII7B40elZap/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "id": 10209,
+          "names": [
+            "Strašák s vránami na dýňovém poli",
+            "Scarecrow with Crows in a Pumpkin Field",
+            "Vogelscheuche mit Krähen auf einem Kürbisfeld",
+            "Espantapájaros con cuervos en un campo de calabazas"
+          ],
+          "sheetRow": 48,
+          "masterRow": 1380,
+          "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/329bd5fe-3a23-4f77-94a5-5ba7874db85b/lv3_gpt_H1029_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page-coloring.png",
+          "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/84b6e369-842c-4d37-a4c2-f2c28711a556/lv3_gpt_H1029_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page-sample.png",
+          "base": "lv3_gpt_10209_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page",
+          "row": {
+            "ID": "10209",
+            "soubor": "lv3_gpt_10209_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page",
+            "kategorie": "svatky",
+            "podkategorie": "halloween",
+            "datumPridani": "2026-10-02",
+            "sezona": "podzim,halloween",
+            "zamereni": "jemna-motorika",
+            "assetDirectory": "en",
+            "pdf": "1",
+            "nazevCz": "Strašák s vránami na dýňovém poli",
+            "altCz_coloring": "Strašák s vránami na dýňovém poli: černobílá omalovánka LV3 pro děti 6–7 let, zdarma k vytisknutí na A4.",
+            "altCz_sample": "Strašák s vránami na dýňovém poli: barevný vzor k omalovánce LV3.",
+            "nazevEn": "Scarecrow with Crows in a Pumpkin Field",
+            "altEn_coloring": "Scarecrow with Crows in a Pumpkin Field: black-and-white LV3 coloring page for ages 6–7, free to print on A4 paper.",
+            "altEn_sample": "Scarecrow with Crows in a Pumpkin Field: color sample for the LV3 coloring page.",
+            "nazevDe": "Vogelscheuche mit Krähen auf einem Kürbisfeld",
+            "altDe_coloring": "Vogelscheuche mit Krähen auf einem Kürbisfeld: schwarz-weißes Ausmalbild der Stufe 3 für Kinder von 6–7 Jahren, kostenlos auf A4 drucken.",
+            "altDe_sample": "Vogelscheuche mit Krähen auf einem Kürbisfeld: Farbvorlage zum Ausmalbild der Stufe 3.",
+            "nazevEs": "Espantapájaros con cuervos en un campo de calabazas",
+            "altEs_coloring": "Espantapájaros con cuervos en un campo de calabazas: dibujo en blanco y negro de nivel 3 para niños de 6–7 años, gratis para imprimir en A4.",
+            "altEs_sample": "Espantapájaros con cuervos en un campo de calabazas: modelo a color para el dibujo de nivel 3.",
+            "Status": "vygenerováno",
+            "driveColoring": "https://drive.google.com/file/d/1l7_tXQi8JYA_e3RGfGU-XTCnzvRFsnsy/view",
+            "drivePdfColoring": "https://drive.google.com/file/d/1PvaebpSTyZzuhlLfQ3iDk5FVLmmKneu8/view",
+            "driveSample": "https://drive.google.com/file/d/1uCgwp0rNmMtDe7jq6nlVexNR_10nnMRy/view",
+            "drivePdfSample": "https://drive.google.com/file/d/13l4xb7iPWM4vfw2ELH9n4lRjp9yV7xkm/view"
+          },
+          "level": 3
+        }
+      ],
+      "driveFiles": [
+        {
+          "id": "1N16F5DbIrjdFsyHMO2YmNbSxpHLJsdzl",
+          "path": "public/omalovanky/en/lv3_gpt_10207_1_en-halloween-costume-parade-coloring-page-coloring.png"
+        },
+        {
+          "id": "1u5BpgCQdFKuII1RAu3GurneXlFKrZ8nt",
+          "path": "public/omalovanky/en/lv3_gpt_10207_1_en-halloween-costume-parade-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "1oNtKgN9R1Um9IzhZw5M4BXIS6CGtqbNl",
+          "path": "public/omalovanky/en/lv3_gpt_10207_1_en-halloween-costume-parade-coloring-page-sample.png"
+        },
+        {
+          "id": "1xQEa5vYCEF4qL4qDdgWwc8LPT8xL3_35",
+          "path": "public/omalovanky/en/lv3_gpt_10207_1_en-halloween-costume-parade-coloring-page-sample.pdf"
+        },
+        {
+          "id": "1bFth40INsjH1YWNHRAZW90g57eBLJjci",
+          "path": "public/omalovanky/en/lv3_gpt_10208_1_en-pumpkin-wagon-pulled-by-pony-coloring-page-coloring.png"
+        },
+        {
+          "id": "1xLQVqwNhY8_Tow6CD-lgRsxDuJgQeQog",
+          "path": "public/omalovanky/en/lv3_gpt_10208_1_en-pumpkin-wagon-pulled-by-pony-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "1xlm0sleHOhXJkOJTJjoJWGXx2Wub8m51",
+          "path": "public/omalovanky/en/lv3_gpt_10208_1_en-pumpkin-wagon-pulled-by-pony-coloring-page-sample.png"
+        },
+        {
+          "id": "1IOv1vtIZTsJ_3S0U6sydqBf3g5m70wI2",
+          "path": "public/omalovanky/en/lv3_gpt_10208_1_en-pumpkin-wagon-pulled-by-pony-coloring-page-sample.pdf"
+        },
+        {
+          "id": "1l7_tXQi8JYA_e3RGfGU-XTCnzvRFsnsy",
+          "path": "public/omalovanky/en/lv3_gpt_10209_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page-coloring.png"
+        },
+        {
+          "id": "1PvaebpSTyZzuhlLfQ3iDk5FVLmmKneu8",
+          "path": "public/omalovanky/en/lv3_gpt_10209_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "1uCgwp0rNmMtDe7jq6nlVexNR_10nnMRy",
+          "path": "public/omalovanky/en/lv3_gpt_10209_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page-sample.png"
+        },
+        {
+          "id": "13l4xb7iPWM4vfw2ELH9n4lRjp9yV7xkm",
+          "path": "public/omalovanky/en/lv3_gpt_10209_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page-sample.pdf"
+        }
+      ],
+      "skippedTitles": [
+        {
+          "id": 10207,
+          "variant": "sample",
+          "reason": "No blank area for title without covering artwork"
+        },
+        {
+          "id": 10208,
+          "variant": "sample",
+          "reason": "No blank area for title without covering artwork"
+        }
+      ],
+      "checks": {
+        "PNGResolutionAndQR": "passed 6/6",
+        "DriveSizes": "passed 12/12",
+        "sheets": "exact values read back",
+        "mobile": "User review deferred"
+      }
     }
   ],
   "remainingPairs": 20,

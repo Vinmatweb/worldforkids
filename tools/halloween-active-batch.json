@@ -1,40 +1,21 @@
 {
-  "batch": 10,
-  "state": "published-user-review-deferred",
+  "batch": 11,
+  "state": "prepared",
   "items": [
     {
-      "originalBase": "lv2_gpt_H1024_1_en-friendly-skeleton-with-pumpkin-coloring-page",
-      "coloring": {
-        "url": "https://drive.google.com/file/d/1HXKGPn2yM8CVlj0X4VBiy236rYEtGDFV/view?usp=drivesdk",
-        "title": "lv2_gpt_H1024_1_en-friendly-skeleton-with-pumpkin-coloring-page-coloring.png",
-        "id": "1HXKGPn2yM8CVlj0X4VBiy236rYEtGDFV",
-        "mime_type": "image/png",
-        "size": "1089207",
-        "file_or_folder": "file",
-        "created_at": "2026-10-02T11:21:23.402Z",
-        "updated_at": "2026-09-30T19:12:28.071Z",
-        "viewedByMeTime": "2026-10-02T11:21:23.402Z",
-        "display_title": "lv2_gpt_H1024_1_en-friendly-skeleton-with-pumpkin-coloring-page-coloring.png",
-        "display_url": "https://drive.google.com/file/d/1HXKGPn2yM8CVlj0X4VBiy236rYEtGDFV/view?usp=drivesdk",
-        "parent_ids": [
-          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
-        ],
-        "shared": false,
-        "can_download": true,
-        "can_list_children": false
-      },
+      "originalBase": "lv3_gpt_H1027_1_en-halloween-costume-parade-coloring-page",
       "sample": {
-        "url": "https://drive.google.com/file/d/17NPRkDI5l1I-Q7snGmHV0QjIZ0uFMOsE/view?usp=drivesdk",
-        "title": "lv2_gpt_H1024_1_en-friendly-skeleton-with-pumpkin-coloring-page-sample.png",
-        "id": "17NPRkDI5l1I-Q7snGmHV0QjIZ0uFMOsE",
+        "url": "https://drive.google.com/file/d/1AnjLiLVpsqnJIFOpi-bA8180QcL-IJbh/view?usp=drivesdk",
+        "title": "lv3_gpt_H1027_1_en-halloween-costume-parade-coloring-page-sample.png",
+        "id": "1AnjLiLVpsqnJIFOpi-bA8180QcL-IJbh",
         "mime_type": "image/png",
-        "size": "1161437",
+        "size": "2573370",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:21:40.212Z",
-        "updated_at": "2026-09-30T19:12:26.052Z",
-        "viewedByMeTime": "2026-10-02T11:21:40.212Z",
-        "display_title": "lv2_gpt_H1024_1_en-friendly-skeleton-with-pumpkin-coloring-page-sample.png",
-        "display_url": "https://drive.google.com/file/d/17NPRkDI5l1I-Q7snGmHV0QjIZ0uFMOsE/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:23:21.039Z",
+        "updated_at": "2026-09-30T19:14:34.005Z",
+        "viewedByMeTime": "2026-10-02T11:23:21.039Z",
+        "display_title": "lv3_gpt_H1027_1_en-halloween-costume-parade-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/1AnjLiLVpsqnJIFOpi-bA8180QcL-IJbh/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -42,21 +23,40 @@
         "can_download": true,
         "can_list_children": false
       },
-      "id": 10204,
+      "coloring": {
+        "url": "https://drive.google.com/file/d/1jPEhlIjtmPAb4d-B1wAa_dHBVoAM6IID/view?usp=drivesdk",
+        "title": "lv3_gpt_H1027_1_en-halloween-costume-parade-coloring-page-coloring.png",
+        "id": "1jPEhlIjtmPAb4d-B1wAa_dHBVoAM6IID",
+        "mime_type": "image/png",
+        "size": "1765296",
+        "file_or_folder": "file",
+        "created_at": "2026-10-02T11:23:38.201Z",
+        "updated_at": "2026-09-30T15:12:20.332Z",
+        "viewedByMeTime": "2026-10-02T11:23:38.201Z",
+        "display_title": "lv3_gpt_H1027_1_en-halloween-costume-parade-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/1jPEhlIjtmPAb4d-B1wAa_dHBVoAM6IID/view?usp=drivesdk",
+        "parent_ids": [
+          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+        ],
+        "shared": false,
+        "can_download": true,
+        "can_list_children": false
+      },
+      "id": 10207,
       "names": [
-        "Přátelský kostlivec s dýní",
-        "Friendly Skeleton with a Pumpkin",
-        "Freundliches Skelett mit einem Kürbis",
-        "Esqueleto amistoso con una calabaza"
+        "Halloweenský průvod kostýmů",
+        "Halloween Costume Parade",
+        "Halloween-Kostümparade",
+        "Desfile de disfraces de Halloween"
       ],
-      "sheetRow": 43,
-      "masterRow": 1375,
-      "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/b70ee94d-5437-45b7-ad45-ca5dd71ba151/lv2_gpt_H1024_1_en-friendly-skeleton-with-pumpkin-coloring-page-coloring.png",
-      "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/06568c7b-3631-44a4-8704-39ef1c648391/lv2_gpt_H1024_1_en-friendly-skeleton-with-pumpkin-coloring-page-sample.png",
-      "base": "lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-coloring-page",
+      "sheetRow": 46,
+      "masterRow": 1378,
+      "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/1f909ccd-f1bc-4b3b-a836-de4bc4d995a2/lv3_gpt_H1027_1_en-halloween-costume-parade-coloring-page-coloring.png",
+      "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/8e9efeb4-5f38-4c2c-be93-c86303133601/lv3_gpt_H1027_1_en-halloween-costume-parade-coloring-page-sample.png",
+      "base": "lv3_gpt_10207_1_en-halloween-costume-parade-coloring-page",
       "row": {
-        "ID": "10204",
-        "soubor": "lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-coloring-page",
+        "ID": "10207",
+        "soubor": "lv3_gpt_10207_1_en-halloween-costume-parade-coloring-page",
         "kategorie": "svatky",
         "podkategorie": "halloween",
         "datumPridani": "2026-10-02",
@@ -64,59 +64,40 @@
         "zamereni": "jemna-motorika",
         "assetDirectory": "en",
         "pdf": "1",
-        "nazevCz": "Přátelský kostlivec s dýní",
-        "altCz_coloring": "Přátelský kostlivec s dýní: černobílá omalovánka LV2 pro děti 5–6 let, zdarma k vytisknutí na A4.",
-        "altCz_sample": "Přátelský kostlivec s dýní: barevný vzor k omalovánce LV2.",
-        "nazevEn": "Friendly Skeleton with a Pumpkin",
-        "altEn_coloring": "Friendly Skeleton with a Pumpkin: black-and-white LV2 coloring page for ages 5–6, free to print on A4 paper.",
-        "altEn_sample": "Friendly Skeleton with a Pumpkin: color sample for the LV2 coloring page.",
-        "nazevDe": "Freundliches Skelett mit einem Kürbis",
-        "altDe_coloring": "Freundliches Skelett mit einem Kürbis: schwarz-weißes Ausmalbild der Stufe 2 für Kinder von 5–6 Jahren, kostenlos auf A4 drucken.",
-        "altDe_sample": "Freundliches Skelett mit einem Kürbis: Farbvorlage zum Ausmalbild der Stufe 2.",
-        "nazevEs": "Esqueleto amistoso con una calabaza",
-        "altEs_coloring": "Esqueleto amistoso con una calabaza: dibujo en blanco y negro de nivel 2 para niños de 5–6 años, gratis para imprimir en A4.",
-        "altEs_sample": "Esqueleto amistoso con una calabaza: modelo a color para el dibujo de nivel 2.",
-        "Status": "publikováno",
-        "driveColoring": "https://drive.google.com/file/d/1uSHnXnXsGjjmYIpwLpfla_m3TigTs10t/view",
-        "drivePdfColoring": "https://drive.google.com/file/d/12QT-xUhGwXpAFpC_8n6_ZulgTjF4XpeF/view",
-        "driveSample": "https://drive.google.com/file/d/17wPRk6Eycbf-EhxSb5rSVf4RSdJFFJ38/view",
-        "drivePdfSample": "https://drive.google.com/file/d/1jeRhl7aTO6meMZunMAoJi_gn1y300vpG/view"
+        "nazevCz": "Halloweenský průvod kostýmů",
+        "altCz_coloring": "Halloweenský průvod kostýmů: černobílá omalovánka LV3 pro děti 6–7 let, zdarma k vytisknutí na A4.",
+        "altCz_sample": "Halloweenský průvod kostýmů: barevný vzor k omalovánce LV3.",
+        "nazevEn": "Halloween Costume Parade",
+        "altEn_coloring": "Halloween Costume Parade: black-and-white LV3 coloring page for ages 6–7, free to print on A4 paper.",
+        "altEn_sample": "Halloween Costume Parade: color sample for the LV3 coloring page.",
+        "nazevDe": "Halloween-Kostümparade",
+        "altDe_coloring": "Halloween-Kostümparade: schwarz-weißes Ausmalbild der Stufe 3 für Kinder von 6–7 Jahren, kostenlos auf A4 drucken.",
+        "altDe_sample": "Halloween-Kostümparade: Farbvorlage zum Ausmalbild der Stufe 3.",
+        "nazevEs": "Desfile de disfraces de Halloween",
+        "altEs_coloring": "Desfile de disfraces de Halloween: dibujo en blanco y negro de nivel 3 para niños de 6–7 años, gratis para imprimir en A4.",
+        "altEs_sample": "Desfile de disfraces de Halloween: modelo a color para el dibujo de nivel 3.",
+        "Status": "vygenerováno",
+        "driveColoring": "https://drive.google.com/file/d/1N16F5DbIrjdFsyHMO2YmNbSxpHLJsdzl/view",
+        "drivePdfColoring": "https://drive.google.com/file/d/1u5BpgCQdFKuII1RAu3GurneXlFKrZ8nt/view",
+        "driveSample": "https://drive.google.com/file/d/1oNtKgN9R1Um9IzhZw5M4BXIS6CGtqbNl/view",
+        "drivePdfSample": "https://drive.google.com/file/d/1xQEa5vYCEF4qL4qDdgWwc8LPT8xL3_35/view"
       },
-      "level": 2
+      "level": 3
     },
     {
-      "originalBase": "lv2_gpt_H1025_1_en-friendly-vampire-with-bat-coloring-page",
-      "coloring": {
-        "url": "https://drive.google.com/file/d/1STmrYOPhuxC63EAXsokkEFjtNeAwbrm-/view?usp=drivesdk",
-        "title": "lv2_gpt_H1025_1_en-friendly-vampire-with-bat-coloring-page-coloring.png",
-        "id": "1STmrYOPhuxC63EAXsokkEFjtNeAwbrm-",
-        "mime_type": "image/png",
-        "size": "1205054",
-        "file_or_folder": "file",
-        "created_at": "2026-10-02T11:21:48.871Z",
-        "updated_at": "2026-09-30T19:12:28.108Z",
-        "viewedByMeTime": "2026-10-02T11:21:48.871Z",
-        "display_title": "lv2_gpt_H1025_1_en-friendly-vampire-with-bat-coloring-page-coloring.png",
-        "display_url": "https://drive.google.com/file/d/1STmrYOPhuxC63EAXsokkEFjtNeAwbrm-/view?usp=drivesdk",
-        "parent_ids": [
-          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
-        ],
-        "shared": false,
-        "can_download": true,
-        "can_list_children": false
-      },
+      "originalBase": "lv3_gpt_H1028_1_en-pumpkin-wagon-pulled-by-pony-coloring-page",
       "sample": {
-        "url": "https://drive.google.com/file/d/1Hp6GEFcRUgqD8uQ6PjLzJzrWhzxPPkO1/view?usp=drivesdk",
-        "title": "lv2_gpt_H1025_1_en-friendly-vampire-with-bat-coloring-page-sample.png",
-        "id": "1Hp6GEFcRUgqD8uQ6PjLzJzrWhzxPPkO1",
+        "url": "https://drive.google.com/file/d/13YtXhcVJKGEzQDCCtdgBE4qSIVysCY69/view?usp=drivesdk",
+        "title": "lv3_gpt_H1028_1_en-pumpkin-wagon-pulled-by-pony-coloring-page-sample.png",
+        "id": "13YtXhcVJKGEzQDCCtdgBE4qSIVysCY69",
         "mime_type": "image/png",
-        "size": "1814228",
+        "size": "2437658",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:21:35.731Z",
-        "updated_at": "2026-09-30T19:12:26.110Z",
-        "viewedByMeTime": "2026-10-02T11:21:35.731Z",
-        "display_title": "lv2_gpt_H1025_1_en-friendly-vampire-with-bat-coloring-page-sample.png",
-        "display_url": "https://drive.google.com/file/d/1Hp6GEFcRUgqD8uQ6PjLzJzrWhzxPPkO1/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:23:31.376Z",
+        "updated_at": "2026-09-30T19:14:34.042Z",
+        "viewedByMeTime": "2026-10-02T11:23:31.376Z",
+        "display_title": "lv3_gpt_H1028_1_en-pumpkin-wagon-pulled-by-pony-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/13YtXhcVJKGEzQDCCtdgBE4qSIVysCY69/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -124,21 +105,40 @@
         "can_download": true,
         "can_list_children": false
       },
-      "id": 10205,
+      "coloring": {
+        "url": "https://drive.google.com/file/d/1ywf3czwWZFno_FevoXlfbvxdzHqxN6ub/view?usp=drivesdk",
+        "title": "lv3_gpt_H1028_1_en-pumpkin-wagon-pulled-by-pony-coloring-page-coloring.png",
+        "id": "1ywf3czwWZFno_FevoXlfbvxdzHqxN6ub",
+        "mime_type": "image/png",
+        "size": "1776425",
+        "file_or_folder": "file",
+        "created_at": "2026-10-02T11:23:40.208Z",
+        "updated_at": "2026-09-30T15:12:20.354Z",
+        "viewedByMeTime": "2026-10-02T11:23:40.208Z",
+        "display_title": "lv3_gpt_H1028_1_en-pumpkin-wagon-pulled-by-pony-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/1ywf3czwWZFno_FevoXlfbvxdzHqxN6ub/view?usp=drivesdk",
+        "parent_ids": [
+          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+        ],
+        "shared": false,
+        "can_download": true,
+        "can_list_children": false
+      },
+      "id": 10208,
       "names": [
-        "Přátelský upír s netopýrem",
-        "Friendly Vampire with a Bat",
-        "Freundlicher Vampir mit einer Fledermaus",
-        "Vampiro amistoso con un murciélago"
+        "Poník táhne vozík s dýněmi",
+        "Pony Pulling a Pumpkin Wagon",
+        "Pony zieht einen Kürbiswagen",
+        "Poni tirando de un carro de calabazas"
       ],
-      "sheetRow": 44,
-      "masterRow": 1376,
-      "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/8c2337a6-5adb-482a-ade1-868a9f252fce/lv2_gpt_H1025_1_en-friendly-vampire-with-bat-coloring-page-coloring.png",
-      "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/5dac9d02-6560-4c7a-a59c-b43dc9cb5c25/lv2_gpt_H1025_1_en-friendly-vampire-with-bat-coloring-page-sample.png",
-      "base": "lv2_gpt_10205_1_en-friendly-vampire-with-bat-coloring-page",
+      "sheetRow": 47,
+      "masterRow": 1379,
+      "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/695b5945-45ce-4ee3-9971-6dc382615d96/lv3_gpt_H1028_1_en-pumpkin-wagon-pulled-by-pony-coloring-page-coloring.png",
+      "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/52d119a8-3e55-41f6-8aaa-a802c9a55ae7/lv3_gpt_H1028_1_en-pumpkin-wagon-pulled-by-pony-coloring-page-sample.png",
+      "base": "lv3_gpt_10208_1_en-pumpkin-wagon-pulled-by-pony-coloring-page",
       "row": {
-        "ID": "10205",
-        "soubor": "lv2_gpt_10205_1_en-friendly-vampire-with-bat-coloring-page",
+        "ID": "10208",
+        "soubor": "lv3_gpt_10208_1_en-pumpkin-wagon-pulled-by-pony-coloring-page",
         "kategorie": "svatky",
         "podkategorie": "halloween",
         "datumPridani": "2026-10-02",
@@ -146,59 +146,40 @@
         "zamereni": "jemna-motorika",
         "assetDirectory": "en",
         "pdf": "1",
-        "nazevCz": "Přátelský upír s netopýrem",
-        "altCz_coloring": "Přátelský upír s netopýrem: černobílá omalovánka LV2 pro děti 5–6 let, zdarma k vytisknutí na A4.",
-        "altCz_sample": "Přátelský upír s netopýrem: barevný vzor k omalovánce LV2.",
-        "nazevEn": "Friendly Vampire with a Bat",
-        "altEn_coloring": "Friendly Vampire with a Bat: black-and-white LV2 coloring page for ages 5–6, free to print on A4 paper.",
-        "altEn_sample": "Friendly Vampire with a Bat: color sample for the LV2 coloring page.",
-        "nazevDe": "Freundlicher Vampir mit einer Fledermaus",
-        "altDe_coloring": "Freundlicher Vampir mit einer Fledermaus: schwarz-weißes Ausmalbild der Stufe 2 für Kinder von 5–6 Jahren, kostenlos auf A4 drucken.",
-        "altDe_sample": "Freundlicher Vampir mit einer Fledermaus: Farbvorlage zum Ausmalbild der Stufe 2.",
-        "nazevEs": "Vampiro amistoso con un murciélago",
-        "altEs_coloring": "Vampiro amistoso con un murciélago: dibujo en blanco y negro de nivel 2 para niños de 5–6 años, gratis para imprimir en A4.",
-        "altEs_sample": "Vampiro amistoso con un murciélago: modelo a color para el dibujo de nivel 2.",
-        "Status": "publikováno",
-        "driveColoring": "https://drive.google.com/file/d/1CcnGEWynEHMRvWVY_PMKgyAV9V5M3Ky_/view",
-        "drivePdfColoring": "https://drive.google.com/file/d/1Nh3UshcMOlcKk_EXGHsARcps-8DJR9oO/view",
-        "driveSample": "https://drive.google.com/file/d/1a1RLQfQYEu8Xj8sFTGMHT4n6Svzkpiwq/view",
-        "drivePdfSample": "https://drive.google.com/file/d/1rvlQ4-8zojBii5WcgvF5bHb7oE-z36ch/view"
+        "nazevCz": "Poník táhne vozík s dýněmi",
+        "altCz_coloring": "Poník táhne vozík s dýněmi: černobílá omalovánka LV3 pro děti 6–7 let, zdarma k vytisknutí na A4.",
+        "altCz_sample": "Poník táhne vozík s dýněmi: barevný vzor k omalovánce LV3.",
+        "nazevEn": "Pony Pulling a Pumpkin Wagon",
+        "altEn_coloring": "Pony Pulling a Pumpkin Wagon: black-and-white LV3 coloring page for ages 6–7, free to print on A4 paper.",
+        "altEn_sample": "Pony Pulling a Pumpkin Wagon: color sample for the LV3 coloring page.",
+        "nazevDe": "Pony zieht einen Kürbiswagen",
+        "altDe_coloring": "Pony zieht einen Kürbiswagen: schwarz-weißes Ausmalbild der Stufe 3 für Kinder von 6–7 Jahren, kostenlos auf A4 drucken.",
+        "altDe_sample": "Pony zieht einen Kürbiswagen: Farbvorlage zum Ausmalbild der Stufe 3.",
+        "nazevEs": "Poni tirando de un carro de calabazas",
+        "altEs_coloring": "Poni tirando de un carro de calabazas: dibujo en blanco y negro de nivel 3 para niños de 6–7 años, gratis para imprimir en A4.",
+        "altEs_sample": "Poni tirando de un carro de calabazas: modelo a color para el dibujo de nivel 3.",
+        "Status": "vygenerováno",
+        "driveColoring": "https://drive.google.com/file/d/1bFth40INsjH1YWNHRAZW90g57eBLJjci/view",
+        "drivePdfColoring": "https://drive.google.com/file/d/1xLQVqwNhY8_Tow6CD-lgRsxDuJgQeQog/view",
+        "driveSample": "https://drive.google.com/file/d/1xlm0sleHOhXJkOJTJjoJWGXx2Wub8m51/view",
+        "drivePdfSample": "https://drive.google.com/file/d/1IOv1vtIZTsJ_3S0U6sydqBf3g5m70wI2/view"
       },
-      "level": 2
+      "level": 3
     },
     {
-      "originalBase": "lv2_gpt_H1026_1_en-friendly-zombie-with-pumpkin-coloring-page",
-      "coloring": {
-        "url": "https://drive.google.com/file/d/1vfNPRPno2Ryl9AYZd_FoyH8lFG9cOVw4/view?usp=drivesdk",
-        "title": "lv2_gpt_H1026_1_en-friendly-zombie-with-pumpkin-coloring-page-coloring.png",
-        "id": "1vfNPRPno2Ryl9AYZd_FoyH8lFG9cOVw4",
-        "mime_type": "image/png",
-        "size": "1483098",
-        "file_or_folder": "file",
-        "created_at": "2026-10-02T11:21:59.498Z",
-        "updated_at": "2026-09-30T19:12:28.155Z",
-        "viewedByMeTime": "2026-10-02T11:21:59.498Z",
-        "display_title": "lv2_gpt_H1026_1_en-friendly-zombie-with-pumpkin-coloring-page-coloring.png",
-        "display_url": "https://drive.google.com/file/d/1vfNPRPno2Ryl9AYZd_FoyH8lFG9cOVw4/view?usp=drivesdk",
-        "parent_ids": [
-          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
-        ],
-        "shared": false,
-        "can_download": true,
-        "can_list_children": false
-      },
+      "originalBase": "lv3_gpt_H1029_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page",
       "sample": {
-        "url": "https://drive.google.com/file/d/18FdueFvMmxtXR-1K7Ud4IapJIvw6PORt/view?usp=drivesdk",
-        "title": "lv2_gpt_H1026_1_en-friendly-zombie-with-pumpkin-coloring-page-sample.png",
-        "id": "18FdueFvMmxtXR-1K7Ud4IapJIvw6PORt",
+        "url": "https://drive.google.com/file/d/1ME_9xqx5e0iJYczYXFwOaplc53mgK-Go/view?usp=drivesdk",
+        "title": "lv3_gpt_H1029_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page-sample.png",
+        "id": "1ME_9xqx5e0iJYczYXFwOaplc53mgK-Go",
         "mime_type": "image/png",
-        "size": "1720833",
+        "size": "2177094",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:21:33.030Z",
-        "updated_at": "2026-09-30T19:12:25.818Z",
-        "viewedByMeTime": "2026-10-02T11:21:33.030Z",
-        "display_title": "lv2_gpt_H1026_1_en-friendly-zombie-with-pumpkin-coloring-page-sample.png",
-        "display_url": "https://drive.google.com/file/d/18FdueFvMmxtXR-1K7Ud4IapJIvw6PORt/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:23:53.082Z",
+        "updated_at": "2026-09-30T19:14:34.081Z",
+        "viewedByMeTime": "2026-10-02T11:23:53.082Z",
+        "display_title": "lv3_gpt_H1029_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/1ME_9xqx5e0iJYczYXFwOaplc53mgK-Go/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -206,21 +187,40 @@
         "can_download": true,
         "can_list_children": false
       },
-      "id": 10206,
+      "coloring": {
+        "url": "https://drive.google.com/file/d/19YKMixGHqPG8Rb8gP2naAII7B40elZap/view?usp=drivesdk",
+        "title": "lv3_gpt_H1029_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page-coloring.png",
+        "id": "19YKMixGHqPG8Rb8gP2naAII7B40elZap",
+        "mime_type": "image/png",
+        "size": "1515713",
+        "file_or_folder": "file",
+        "created_at": "2026-10-02T11:23:42.472Z",
+        "updated_at": "2026-09-30T15:12:20.375Z",
+        "viewedByMeTime": "2026-10-02T11:23:42.472Z",
+        "display_title": "lv3_gpt_H1029_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/19YKMixGHqPG8Rb8gP2naAII7B40elZap/view?usp=drivesdk",
+        "parent_ids": [
+          "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+        ],
+        "shared": false,
+        "can_download": true,
+        "can_list_children": false
+      },
+      "id": 10209,
       "names": [
-        "Přátelská zombie s dýní",
-        "Friendly Zombie with a Pumpkin",
-        "Freundlicher Zombie mit einem Kürbis",
-        "Zombi amistoso con una calabaza"
+        "Strašák s vránami na dýňovém poli",
+        "Scarecrow with Crows in a Pumpkin Field",
+        "Vogelscheuche mit Krähen auf einem Kürbisfeld",
+        "Espantapájaros con cuervos en un campo de calabazas"
       ],
-      "sheetRow": 45,
-      "masterRow": 1377,
-      "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/ab80438b-315c-45b1-ba7e-cb60ff5d4300/lv2_gpt_H1026_1_en-friendly-zombie-with-pumpkin-coloring-page-coloring.png",
-      "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/94ad17ee-39d2-4208-b348-637caf7e8f41/lv2_gpt_H1026_1_en-friendly-zombie-with-pumpkin-coloring-page-sample.png",
-      "base": "lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-coloring-page",
+      "sheetRow": 48,
+      "masterRow": 1380,
+      "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/329bd5fe-3a23-4f77-94a5-5ba7874db85b/lv3_gpt_H1029_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page-coloring.png",
+      "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/84b6e369-842c-4d37-a4c2-f2c28711a556/lv3_gpt_H1029_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page-sample.png",
+      "base": "lv3_gpt_10209_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page",
       "row": {
-        "ID": "10206",
-        "soubor": "lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-coloring-page",
+        "ID": "10209",
+        "soubor": "lv3_gpt_10209_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page",
         "kategorie": "svatky",
         "podkategorie": "halloween",
         "datumPridani": "2026-10-02",
@@ -228,37 +228,37 @@
         "zamereni": "jemna-motorika",
         "assetDirectory": "en",
         "pdf": "1",
-        "nazevCz": "Přátelská zombie s dýní",
-        "altCz_coloring": "Přátelská zombie s dýní: černobílá omalovánka LV2 pro děti 5–6 let, zdarma k vytisknutí na A4.",
-        "altCz_sample": "Přátelská zombie s dýní: barevný vzor k omalovánce LV2.",
-        "nazevEn": "Friendly Zombie with a Pumpkin",
-        "altEn_coloring": "Friendly Zombie with a Pumpkin: black-and-white LV2 coloring page for ages 5–6, free to print on A4 paper.",
-        "altEn_sample": "Friendly Zombie with a Pumpkin: color sample for the LV2 coloring page.",
-        "nazevDe": "Freundlicher Zombie mit einem Kürbis",
-        "altDe_coloring": "Freundlicher Zombie mit einem Kürbis: schwarz-weißes Ausmalbild der Stufe 2 für Kinder von 5–6 Jahren, kostenlos auf A4 drucken.",
-        "altDe_sample": "Freundlicher Zombie mit einem Kürbis: Farbvorlage zum Ausmalbild der Stufe 2.",
-        "nazevEs": "Zombi amistoso con una calabaza",
-        "altEs_coloring": "Zombi amistoso con una calabaza: dibujo en blanco y negro de nivel 2 para niños de 5–6 años, gratis para imprimir en A4.",
-        "altEs_sample": "Zombi amistoso con una calabaza: modelo a color para el dibujo de nivel 2.",
-        "Status": "publikováno",
-        "driveColoring": "https://drive.google.com/file/d/1iGBV2XXXYTmD96aw0l-M8TdnnMpbARpF/view",
-        "drivePdfColoring": "https://drive.google.com/file/d/1vMqujKBsJx6655TDuzaSIgh5hnxVr31t/view",
-        "driveSample": "https://drive.google.com/file/d/1KUL_oBrfP_ltyY-HnerASNOeUQnAZgIA/view",
-        "drivePdfSample": "https://drive.google.com/file/d/1Q_ZuOo9OgnsJduOUo-GhpDBKjH8vg_8U/view"
+        "nazevCz": "Strašák s vránami na dýňovém poli",
+        "altCz_coloring": "Strašák s vránami na dýňovém poli: černobílá omalovánka LV3 pro děti 6–7 let, zdarma k vytisknutí na A4.",
+        "altCz_sample": "Strašák s vránami na dýňovém poli: barevný vzor k omalovánce LV3.",
+        "nazevEn": "Scarecrow with Crows in a Pumpkin Field",
+        "altEn_coloring": "Scarecrow with Crows in a Pumpkin Field: black-and-white LV3 coloring page for ages 6–7, free to print on A4 paper.",
+        "altEn_sample": "Scarecrow with Crows in a Pumpkin Field: color sample for the LV3 coloring page.",
+        "nazevDe": "Vogelscheuche mit Krähen auf einem Kürbisfeld",
+        "altDe_coloring": "Vogelscheuche mit Krähen auf einem Kürbisfeld: schwarz-weißes Ausmalbild der Stufe 3 für Kinder von 6–7 Jahren, kostenlos auf A4 drucken.",
+        "altDe_sample": "Vogelscheuche mit Krähen auf einem Kürbisfeld: Farbvorlage zum Ausmalbild der Stufe 3.",
+        "nazevEs": "Espantapájaros con cuervos en un campo de calabazas",
+        "altEs_coloring": "Espantapájaros con cuervos en un campo de calabazas: dibujo en blanco y negro de nivel 3 para niños de 6–7 años, gratis para imprimir en A4.",
+        "altEs_sample": "Espantapájaros con cuervos en un campo de calabazas: modelo a color para el dibujo de nivel 3.",
+        "Status": "vygenerováno",
+        "driveColoring": "https://drive.google.com/file/d/1l7_tXQi8JYA_e3RGfGU-XTCnzvRFsnsy/view",
+        "drivePdfColoring": "https://drive.google.com/file/d/1PvaebpSTyZzuhlLfQ3iDk5FVLmmKneu8/view",
+        "driveSample": "https://drive.google.com/file/d/1uCgwp0rNmMtDe7jq6nlVexNR_10nnMRy/view",
+        "drivePdfSample": "https://drive.google.com/file/d/13l4xb7iPWM4vfw2ELH9n4lRjp9yV7xkm/view"
       },
-      "level": 2
+      "level": 3
     }
   ],
   "files": [
     {
-      "file": "/tmp/vinmat-halloween-batch-10/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-coloring-page-coloring.png",
-      "path": "public/omalovanky/en/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-coloring-page-coloring.png",
-      "bytes": 969364,
-      "sha": "656c643ae59a41c46c7f88a7bdea52f6f7386c86",
-      "id": 10204,
+      "file": "/tmp/vinmat-halloween-batch-11/lv3_gpt_10207_1_en-halloween-costume-parade-coloring-page-coloring.png",
+      "path": "public/omalovanky/en/lv3_gpt_10207_1_en-halloween-costume-parade-coloring-page-coloring.png",
+      "bytes": 1687248,
+      "sha": "d271a43f2089d19ff2f06f339765b5150adf7f55",
+      "id": 10207,
       "variant": "coloring",
       "ext": "png",
-      "driveId": "1uSHnXnXsGjjmYIpwLpfla_m3TigTs10t",
+      "driveId": "1N16F5DbIrjdFsyHMO2YmNbSxpHLJsdzl",
       "placement": {
         "x": 157.23779527559057,
         "top": 14.173228346456694,
@@ -275,14 +275,14 @@
       "driveUploaded": true
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-10/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-coloring-page-coloring.pdf",
-      "path": "public/omalovanky/en/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-coloring-page-coloring.pdf",
-      "bytes": 1307236,
-      "sha": "408b3da5282dbdeb2493568775c4ffc15585e30f",
-      "id": 10204,
+      "file": "/tmp/vinmat-halloween-batch-11/lv3_gpt_10207_1_en-halloween-costume-parade-coloring-page-coloring.pdf",
+      "path": "public/omalovanky/en/lv3_gpt_10207_1_en-halloween-costume-parade-coloring-page-coloring.pdf",
+      "bytes": 2047563,
+      "sha": "c20af3c52317384c617b934e343ac897d03ad64e",
+      "id": 10207,
       "variant": "coloring",
       "ext": "pdf",
-      "driveId": "12QT-xUhGwXpAFpC_8n6_ZulgTjF4XpeF",
+      "driveId": "1u5BpgCQdFKuII1RAu3GurneXlFKrZ8nt",
       "placement": {
         "x": 157.23779527559057,
         "top": 14.173228346456694,
@@ -299,11 +299,11 @@
       "driveUploaded": true
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-10/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-coloring-page-coloring.webp",
-      "path": "public/omalovanky/en/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-coloring-page-coloring.webp",
-      "bytes": 108354,
-      "sha": "e502d3241633a883b08dd67f041911c505ccc489",
-      "id": 10204,
+      "file": "/tmp/vinmat-halloween-batch-11/lv3_gpt_10207_1_en-halloween-costume-parade-coloring-page-coloring.webp",
+      "path": "public/omalovanky/en/lv3_gpt_10207_1_en-halloween-costume-parade-coloring-page-coloring.webp",
+      "bytes": 279910,
+      "sha": "aeffa5965bff1fbcd5581c9e074ec25744e0db47",
+      "id": 10207,
       "variant": "coloring",
       "ext": "webp",
       "driveId": null,
@@ -322,309 +322,297 @@
       }
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-10/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-coloring-page-sample.png",
-      "path": "public/omalovanky/en/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-coloring-page-sample.png",
-      "bytes": 1046063,
-      "sha": "00b4663f0c377bad64267a578e2c0e6a0f43a724",
-      "id": 10204,
+      "file": "/tmp/vinmat-halloween-batch-11/lv3_gpt_10207_1_en-halloween-costume-parade-coloring-page-sample.png",
+      "path": "public/omalovanky/en/lv3_gpt_10207_1_en-halloween-costume-parade-coloring-page-sample.png",
+      "bytes": 2387427,
+      "sha": "a16aab7083175ddba724bd8bbbb9a79311baf6a6",
+      "id": 10207,
       "variant": "sample",
       "ext": "png",
-      "driveId": "17wPRk6Eycbf-EhxSb5rSVf4RSdJFFJ38",
-      "placement": {
-        "x": 77.85860975522857,
-        "top": 14.173228346456694,
-        "size": 36,
-        "lines": [
-          "VinMat Coloring - Sample"
-        ],
-        "widths": [
-          439.558371040724
-        ],
-        "height": 43.61538461538462,
-        "alignment": "center"
-      },
-      "driveUploaded": true
-    },
-    {
-      "file": "/tmp/vinmat-halloween-batch-10/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-coloring-page-sample.pdf",
-      "path": "public/omalovanky/en/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-coloring-page-sample.pdf",
-      "bytes": 1837586,
-      "sha": "d7048de685975a0b95836ddd6e31fa06da926e90",
-      "id": 10204,
-      "variant": "sample",
-      "ext": "pdf",
-      "driveId": "1jeRhl7aTO6meMZunMAoJi_gn1y300vpG",
-      "placement": {
-        "x": 77.85860975522857,
-        "top": 14.173228346456694,
-        "size": 36,
-        "lines": [
-          "VinMat Coloring - Sample"
-        ],
-        "widths": [
-          439.558371040724
-        ],
-        "height": 43.61538461538462,
-        "alignment": "center"
-      },
-      "driveUploaded": true
-    },
-    {
-      "file": "/tmp/vinmat-halloween-batch-10/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-coloring-page-sample.webp",
-      "path": "public/omalovanky/en/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-coloring-page-sample.webp",
-      "bytes": 138050,
-      "sha": "c2163ff432de085daf80d892196b4169aa32eb94",
-      "id": 10204,
-      "variant": "sample",
-      "ext": "webp",
-      "driveId": null,
-      "placement": {
-        "x": 77.85860975522857,
-        "top": 14.173228346456694,
-        "size": 36,
-        "lines": [
-          "VinMat Coloring - Sample"
-        ],
-        "widths": [
-          439.558371040724
-        ],
-        "height": 43.61538461538462,
-        "alignment": "center"
-      }
-    },
-    {
-      "file": "/tmp/vinmat-halloween-batch-10/lv2_gpt_10205_1_en-friendly-vampire-with-bat-coloring-page-coloring.png",
-      "path": "public/omalovanky/en/lv2_gpt_10205_1_en-friendly-vampire-with-bat-coloring-page-coloring.png",
-      "bytes": 1081274,
-      "sha": "bd5e9b241a7260ee3bda70d1d9231382724bdcf1",
-      "id": 10205,
-      "variant": "coloring",
-      "ext": "png",
-      "driveId": "1CcnGEWynEHMRvWVY_PMKgyAV9V5M3Ky_",
-      "placement": {
-        "x": 22.67716535433071,
-        "top": 14.173228346456694,
-        "size": 34,
-        "lines": [
-          "VinMat",
-          "Coloring"
-        ],
-        "widths": [
-          123.70769230769231,
-          136.52307692307693
-        ],
-        "height": 85.3923076923077,
-        "alignment": "left"
-      },
-      "driveUploaded": true
-    },
-    {
-      "file": "/tmp/vinmat-halloween-batch-10/lv2_gpt_10205_1_en-friendly-vampire-with-bat-coloring-page-coloring.pdf",
-      "path": "public/omalovanky/en/lv2_gpt_10205_1_en-friendly-vampire-with-bat-coloring-page-coloring.pdf",
-      "bytes": 1450922,
-      "sha": "b8941e91db236a76fe6447007b28ccf31b1a32f4",
-      "id": 10205,
-      "variant": "coloring",
-      "ext": "pdf",
-      "driveId": "1Nh3UshcMOlcKk_EXGHsARcps-8DJR9oO",
-      "placement": {
-        "x": 22.67716535433071,
-        "top": 14.173228346456694,
-        "size": 34,
-        "lines": [
-          "VinMat",
-          "Coloring"
-        ],
-        "widths": [
-          123.70769230769231,
-          136.52307692307693
-        ],
-        "height": 85.3923076923077,
-        "alignment": "left"
-      },
-      "driveUploaded": true
-    },
-    {
-      "file": "/tmp/vinmat-halloween-batch-10/lv2_gpt_10205_1_en-friendly-vampire-with-bat-coloring-page-coloring.webp",
-      "path": "public/omalovanky/en/lv2_gpt_10205_1_en-friendly-vampire-with-bat-coloring-page-coloring.webp",
-      "bytes": 134582,
-      "sha": "d5c27d86e1dfe0810050bbd7041b59a5a1d02437",
-      "id": 10205,
-      "variant": "coloring",
-      "ext": "webp",
-      "driveId": null,
-      "placement": {
-        "x": 22.67716535433071,
-        "top": 14.173228346456694,
-        "size": 34,
-        "lines": [
-          "VinMat",
-          "Coloring"
-        ],
-        "widths": [
-          123.70769230769231,
-          136.52307692307693
-        ],
-        "height": 85.3923076923077,
-        "alignment": "left"
-      }
-    },
-    {
-      "file": "/tmp/vinmat-halloween-batch-10/lv2_gpt_10205_1_en-friendly-vampire-with-bat-coloring-page-sample.png",
-      "path": "public/omalovanky/en/lv2_gpt_10205_1_en-friendly-vampire-with-bat-coloring-page-sample.png",
-      "bytes": 1573603,
-      "sha": "cfbdb9acfc6c09c61cf107fce671a50f4a3fedc3",
-      "id": 10205,
-      "variant": "sample",
-      "ext": "png",
-      "driveId": "1a1RLQfQYEu8Xj8sFTGMHT4n6Svzkpiwq",
+      "driveId": "1oNtKgN9R1Um9IzhZw5M4BXIS6CGtqbNl",
       "placement": null,
       "driveUploaded": true
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-10/lv2_gpt_10205_1_en-friendly-vampire-with-bat-coloring-page-sample.pdf",
-      "path": "public/omalovanky/en/lv2_gpt_10205_1_en-friendly-vampire-with-bat-coloring-page-sample.pdf",
-      "bytes": 2850181,
-      "sha": "2f7bd011bf3caccca4ad7ca2c6706e2be0aba7be",
-      "id": 10205,
+      "file": "/tmp/vinmat-halloween-batch-11/lv3_gpt_10207_1_en-halloween-costume-parade-coloring-page-sample.pdf",
+      "path": "public/omalovanky/en/lv3_gpt_10207_1_en-halloween-costume-parade-coloring-page-sample.pdf",
+      "bytes": 4636785,
+      "sha": "201cbb9a0741847e7585fc6712ff0725bf9c4d3b",
+      "id": 10207,
       "variant": "sample",
       "ext": "pdf",
-      "driveId": "1rvlQ4-8zojBii5WcgvF5bHb7oE-z36ch",
+      "driveId": "1xQEa5vYCEF4qL4qDdgWwc8LPT8xL3_35",
       "placement": null,
       "driveUploaded": true
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-10/lv2_gpt_10205_1_en-friendly-vampire-with-bat-coloring-page-sample.webp",
-      "path": "public/omalovanky/en/lv2_gpt_10205_1_en-friendly-vampire-with-bat-coloring-page-sample.webp",
-      "bytes": 172834,
-      "sha": "c723c091bf3e6aa05c70f79f1f41db0db72a2449",
-      "id": 10205,
+      "file": "/tmp/vinmat-halloween-batch-11/lv3_gpt_10207_1_en-halloween-costume-parade-coloring-page-sample.webp",
+      "path": "public/omalovanky/en/lv3_gpt_10207_1_en-halloween-costume-parade-coloring-page-sample.webp",
+      "bytes": 445320,
+      "sha": "70a9c78f91608d8e314161803755ac8a33c7e2ad",
+      "id": 10207,
       "variant": "sample",
       "ext": "webp",
       "driveId": null,
       "placement": null
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-10/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-coloring-page-coloring.png",
-      "path": "public/omalovanky/en/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-coloring-page-coloring.png",
-      "bytes": 1312883,
-      "sha": "fcc8c0c55a38a655b85b48e05e96ef8a59e80992",
-      "id": 10206,
+      "file": "/tmp/vinmat-halloween-batch-11/lv3_gpt_10208_1_en-pumpkin-wagon-pulled-by-pony-coloring-page-coloring.png",
+      "path": "public/omalovanky/en/lv3_gpt_10208_1_en-pumpkin-wagon-pulled-by-pony-coloring-page-coloring.png",
+      "bytes": 1662921,
+      "sha": "f9ad6cac4e2118a46dcf9a02110b2396c5f791fa",
+      "id": 10208,
       "variant": "coloring",
       "ext": "png",
-      "driveId": "1iGBV2XXXYTmD96aw0l-M8TdnnMpbARpF",
+      "driveId": "1bFth40INsjH1YWNHRAZW90g57eBLJjci",
       "placement": {
-        "x": 428.0445790430043,
+        "x": 157.23779527559057,
         "top": 14.173228346456694,
         "size": 36,
         "lines": [
-          "VinMat",
-          "Coloring"
+          "VinMat Coloring"
         ],
         "widths": [
-          130.98461538461538,
-          144.55384615384617
+          280.8
         ],
-        "height": 90.41538461538462,
-        "alignment": "right"
+        "height": 43.61538461538462,
+        "alignment": "center"
       },
       "driveUploaded": true
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-10/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-coloring-page-coloring.pdf",
-      "path": "public/omalovanky/en/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-coloring-page-coloring.pdf",
-      "bytes": 1701502,
-      "sha": "1e6b00048a7d56cc27a3bb8e4914b722b4e91801",
-      "id": 10206,
+      "file": "/tmp/vinmat-halloween-batch-11/lv3_gpt_10208_1_en-pumpkin-wagon-pulled-by-pony-coloring-page-coloring.pdf",
+      "path": "public/omalovanky/en/lv3_gpt_10208_1_en-pumpkin-wagon-pulled-by-pony-coloring-page-coloring.pdf",
+      "bytes": 2051131,
+      "sha": "5130440eea2f9ae964ec00fd92a5f94fe6110d02",
+      "id": 10208,
       "variant": "coloring",
       "ext": "pdf",
-      "driveId": "1vMqujKBsJx6655TDuzaSIgh5hnxVr31t",
+      "driveId": "1xLQVqwNhY8_Tow6CD-lgRsxDuJgQeQog",
       "placement": {
-        "x": 428.0445790430043,
+        "x": 157.23779527559057,
         "top": 14.173228346456694,
         "size": 36,
         "lines": [
-          "VinMat",
-          "Coloring"
+          "VinMat Coloring"
         ],
         "widths": [
-          130.98461538461538,
-          144.55384615384617
+          280.8
         ],
-        "height": 90.41538461538462,
-        "alignment": "right"
+        "height": 43.61538461538462,
+        "alignment": "center"
       },
       "driveUploaded": true
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-10/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-coloring-page-coloring.webp",
-      "path": "public/omalovanky/en/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-coloring-page-coloring.webp",
-      "bytes": 140058,
-      "sha": "274527035ab46cf37dfa4355b8c924b5a4e3d909",
-      "id": 10206,
+      "file": "/tmp/vinmat-halloween-batch-11/lv3_gpt_10208_1_en-pumpkin-wagon-pulled-by-pony-coloring-page-coloring.webp",
+      "path": "public/omalovanky/en/lv3_gpt_10208_1_en-pumpkin-wagon-pulled-by-pony-coloring-page-coloring.webp",
+      "bytes": 280602,
+      "sha": "57a4ea32da32cc60e62c62dc898a7d93c2ea24d2",
+      "id": 10208,
       "variant": "coloring",
       "ext": "webp",
       "driveId": null,
       "placement": {
-        "x": 428.0445790430043,
+        "x": 157.23779527559057,
         "top": 14.173228346456694,
         "size": 36,
         "lines": [
-          "VinMat",
-          "Coloring"
+          "VinMat Coloring"
         ],
         "widths": [
-          130.98461538461538,
-          144.55384615384617
+          280.8
         ],
-        "height": 90.41538461538462,
-        "alignment": "right"
+        "height": 43.61538461538462,
+        "alignment": "center"
       }
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-10/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-coloring-page-sample.png",
-      "path": "public/omalovanky/en/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-coloring-page-sample.png",
-      "bytes": 1529548,
-      "sha": "8a2aae2d1e7e292518f7732c19ed3fb42edeeed2",
-      "id": 10206,
+      "file": "/tmp/vinmat-halloween-batch-11/lv3_gpt_10208_1_en-pumpkin-wagon-pulled-by-pony-coloring-page-sample.png",
+      "path": "public/omalovanky/en/lv3_gpt_10208_1_en-pumpkin-wagon-pulled-by-pony-coloring-page-sample.png",
+      "bytes": 2242455,
+      "sha": "b522fb24490d460db73cd86cbc80fb0783d5e6e2",
+      "id": 10208,
       "variant": "sample",
       "ext": "png",
-      "driveId": "1KUL_oBrfP_ltyY-HnerASNOeUQnAZgIA",
+      "driveId": "1xlm0sleHOhXJkOJTJjoJWGXx2Wub8m51",
       "placement": null,
       "driveUploaded": true
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-10/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-coloring-page-sample.pdf",
-      "path": "public/omalovanky/en/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-coloring-page-sample.pdf",
-      "bytes": 2797719,
-      "sha": "a344acf3085d9ca42d262332195e83c1b9ac3101",
-      "id": 10206,
+      "file": "/tmp/vinmat-halloween-batch-11/lv3_gpt_10208_1_en-pumpkin-wagon-pulled-by-pony-coloring-page-sample.pdf",
+      "path": "public/omalovanky/en/lv3_gpt_10208_1_en-pumpkin-wagon-pulled-by-pony-coloring-page-sample.pdf",
+      "bytes": 4275327,
+      "sha": "419cb83731e70c3438777bc1c5eff257476bd9c4",
+      "id": 10208,
       "variant": "sample",
       "ext": "pdf",
-      "driveId": "1Q_ZuOo9OgnsJduOUo-GhpDBKjH8vg_8U",
+      "driveId": "1IOv1vtIZTsJ_3S0U6sydqBf3g5m70wI2",
       "placement": null,
       "driveUploaded": true
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-10/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-coloring-page-sample.webp",
-      "path": "public/omalovanky/en/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-coloring-page-sample.webp",
-      "bytes": 216766,
-      "sha": "207270680a082da10bc22103aaaeee5ca145e0ff",
-      "id": 10206,
+      "file": "/tmp/vinmat-halloween-batch-11/lv3_gpt_10208_1_en-pumpkin-wagon-pulled-by-pony-coloring-page-sample.webp",
+      "path": "public/omalovanky/en/lv3_gpt_10208_1_en-pumpkin-wagon-pulled-by-pony-coloring-page-sample.webp",
+      "bytes": 418540,
+      "sha": "db5b63751e750c38d8b55520adb841b17c3af99d",
+      "id": 10208,
       "variant": "sample",
       "ext": "webp",
       "driveId": null,
       "placement": null
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-11/lv3_gpt_10209_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page-coloring.png",
+      "path": "public/omalovanky/en/lv3_gpt_10209_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page-coloring.png",
+      "bytes": 1424813,
+      "sha": "8996c59fcfe6b123f823bba4b41a308c5903b7fe",
+      "id": 10209,
+      "variant": "coloring",
+      "ext": "png",
+      "driveId": "1l7_tXQi8JYA_e3RGfGU-XTCnzvRFsnsy",
+      "placement": {
+        "x": 157.23779527559057,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring"
+        ],
+        "widths": [
+          280.8
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      },
+      "driveUploaded": true
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-11/lv3_gpt_10209_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page-coloring.pdf",
+      "path": "public/omalovanky/en/lv3_gpt_10209_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page-coloring.pdf",
+      "bytes": 1801524,
+      "sha": "f0b1ee4d5abc5bd98a30934ed942ecae8deb784c",
+      "id": 10209,
+      "variant": "coloring",
+      "ext": "pdf",
+      "driveId": "1PvaebpSTyZzuhlLfQ3iDk5FVLmmKneu8",
+      "placement": {
+        "x": 157.23779527559057,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring"
+        ],
+        "widths": [
+          280.8
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      },
+      "driveUploaded": true
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-11/lv3_gpt_10209_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page-coloring.webp",
+      "path": "public/omalovanky/en/lv3_gpt_10209_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page-coloring.webp",
+      "bytes": 228114,
+      "sha": "a12feaf35792cd8956312357b4e828de5ac92fc3",
+      "id": 10209,
+      "variant": "coloring",
+      "ext": "webp",
+      "driveId": null,
+      "placement": {
+        "x": 157.23779527559057,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring"
+        ],
+        "widths": [
+          280.8
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      }
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-11/lv3_gpt_10209_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page-sample.png",
+      "path": "public/omalovanky/en/lv3_gpt_10209_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page-sample.png",
+      "bytes": 1978574,
+      "sha": "d0db27d01d31423c7079406e3b06d134f869402c",
+      "id": 10209,
+      "variant": "sample",
+      "ext": "png",
+      "driveId": "1uCgwp0rNmMtDe7jq6nlVexNR_10nnMRy",
+      "placement": {
+        "x": 77.85860975522857,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring - Sample"
+        ],
+        "widths": [
+          439.558371040724
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      },
+      "driveUploaded": true
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-11/lv3_gpt_10209_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page-sample.pdf",
+      "path": "public/omalovanky/en/lv3_gpt_10209_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page-sample.pdf",
+      "bytes": 3434888,
+      "sha": "dec42189dfd6c2856031f132e93226acf1eba688",
+      "id": 10209,
+      "variant": "sample",
+      "ext": "pdf",
+      "driveId": "13l4xb7iPWM4vfw2ELH9n4lRjp9yV7xkm",
+      "placement": {
+        "x": 77.85860975522857,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring - Sample"
+        ],
+        "widths": [
+          439.558371040724
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      },
+      "driveUploaded": true
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-11/lv3_gpt_10209_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page-sample.webp",
+      "path": "public/omalovanky/en/lv3_gpt_10209_1_en-friendly-scarecrow-in-pumpkin-field-with-crows-coloring-page-sample.webp",
+      "bytes": 333886,
+      "sha": "e384c925e96a7023dd42cc575ee1f57cce96c30e",
+      "id": 10209,
+      "variant": "sample",
+      "ext": "webp",
+      "driveId": null,
+      "placement": {
+        "x": 77.85860975522857,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring - Sample"
+        ],
+        "widths": [
+          439.558371040724
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      }
     }
   ],
   "skipped": [
     {
-      "id": 10205,
+      "id": 10207,
       "variant": "sample",
       "reason": "No blank area for title without covering artwork"
     },
     {
-      "id": 10206,
+      "id": 10208,
       "variant": "sample",
       "reason": "No blank area for title without covering artwork"
     }
@@ -668,12 +656,7 @@
   "checks": {
     "PNGResolutionAndQR": "passed 6/6",
     "DriveSizes": "passed 12/12",
-    "mobile": "User review deferred",
-    "liveAssets": "18/18 exact SHA",
-    "livePages": "12/12 in all languages",
-    "sheets": "published status read back",
-    "deployment": "Actions and Pages passed"
-  },
-  "publishCommit": "c9e8a2ccdf514aed67458c6ff2c745d71917b49c",
-  "deploymentCommit": "889305c0fbb6c36fd4843dd9d2be09baf553da89"
+    "sheets": "exact values read back",
+    "mobile": "User review deferred"
+  }
 }
