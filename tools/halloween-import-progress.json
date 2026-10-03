@@ -2481,6 +2481,341 @@
       },
       "publishCommit": "079a3bb27ad6ddc3d2946a5321b0f4c260023cea",
       "deploymentCommit": "920b32749243c1b7b283039b0cf52fe324d885cb"
+    },
+    {
+      "batch": 14,
+      "state": "prepared",
+      "items": [
+        {
+          "originalBase": "lv5_gpt_H1035_1_en-old-castle-cutaway-halloween-coloring-page",
+          "sample": {
+            "url": "https://drive.google.com/file/d/1xeKhbUAsFcMTSCow3zehmy5AH68LdN8Y/view?usp=drivesdk",
+            "title": "lv5_gpt_H1035_1_en-old-castle-cutaway-halloween-coloring-page-sample.png",
+            "id": "1xeKhbUAsFcMTSCow3zehmy5AH68LdN8Y",
+            "mime_type": "image/png",
+            "size": "3315755",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:26:26.780Z",
+            "updated_at": "2026-09-30T19:43:42.619Z",
+            "viewedByMeTime": "2026-10-02T11:26:26.780Z",
+            "display_title": "lv5_gpt_H1035_1_en-old-castle-cutaway-halloween-coloring-page-sample.png",
+            "display_url": "https://drive.google.com/file/d/1xeKhbUAsFcMTSCow3zehmy5AH68LdN8Y/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "coloring": {
+            "url": "https://drive.google.com/file/d/1PgFlPP6UGg-Nk9xXQvIpGo4LrCV48yvv/view?usp=drivesdk",
+            "title": "lv5_gpt_H1035_1_en-old-castle-cutaway-halloween-coloring-page-coloring.png",
+            "id": "1PgFlPP6UGg-Nk9xXQvIpGo4LrCV48yvv",
+            "mime_type": "image/png",
+            "size": "2832825",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:26:36.448Z",
+            "updated_at": "2026-09-30T19:09:26.928Z",
+            "viewedByMeTime": "2026-10-02T11:26:36.448Z",
+            "display_title": "lv5_gpt_H1035_1_en-old-castle-cutaway-halloween-coloring-page-coloring.png",
+            "display_url": "https://drive.google.com/file/d/1PgFlPP6UGg-Nk9xXQvIpGo4LrCV48yvv/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "id": 10215,
+          "names": [
+            "Starý hrad s halloweenskými výjevy",
+            "Old Castle Cutaway with Halloween Scenes",
+            "Alte Burg im Querschnitt mit Halloween-Szenen",
+            "Castillo antiguo en corte con escenas de Halloween"
+          ],
+          "sheetRow": 55,
+          "masterRow": 1386,
+          "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/08225feb-780e-4be4-8ca4-31d947076571/lv5_gpt_H1035_1_en-old-castle-cutaway-halloween-coloring-page-coloring.png",
+          "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/be3325b7-fcc3-4c4a-9020-63035b079f21/lv5_gpt_H1035_1_en-old-castle-cutaway-halloween-coloring-page-sample.png",
+          "base": "lv5_gpt_10215_1_en-old-castle-cutaway-halloween-coloring-page",
+          "row": {
+            "ID": "10215",
+            "soubor": "lv5_gpt_10215_1_en-old-castle-cutaway-halloween-coloring-page",
+            "kategorie": "svatky",
+            "podkategorie": "halloween",
+            "datumPridani": "2026-10-02",
+            "sezona": "podzim,halloween",
+            "zamereni": "jemna-motorika",
+            "assetDirectory": "en",
+            "pdf": "1",
+            "nazevCz": "Starý hrad s halloweenskými výjevy",
+            "altCz_coloring": "Starý hrad s halloweenskými výjevy: detailní omalovánka LV5 pro dospělé, zdarma k vytisknutí na A4.",
+            "altCz_sample": "Starý hrad s halloweenskými výjevy: barevný vzor k omalovánce LV5.",
+            "nazevEn": "Old Castle Cutaway with Halloween Scenes",
+            "altEn_coloring": "Old Castle Cutaway with Halloween Scenes: detailed LV5 coloring page for adults, free to print on A4 paper.",
+            "altEn_sample": "Old Castle Cutaway with Halloween Scenes: color sample for the LV5 coloring page.",
+            "nazevDe": "Alte Burg im Querschnitt mit Halloween-Szenen",
+            "altDe_coloring": "Alte Burg im Querschnitt mit Halloween-Szenen: detailliertes Ausmalbild der Stufe 5 für Erwachsene, kostenlos auf A4 drucken.",
+            "altDe_sample": "Alte Burg im Querschnitt mit Halloween-Szenen: Farbvorlage zum Ausmalbild der Stufe 5.",
+            "nazevEs": "Castillo antiguo en corte con escenas de Halloween",
+            "altEs_coloring": "Castillo antiguo en corte con escenas de Halloween: dibujo detallado de nivel 5 para adultos, gratis para imprimir en A4.",
+            "altEs_sample": "Castillo antiguo en corte con escenas de Halloween: modelo a color para el dibujo de nivel 5.",
+            "Status": "vygenerováno",
+            "driveColoring": "https://drive.google.com/file/d/11tqEu1oNIvYu5fHvslG6g-tshLiXDuSB/view",
+            "drivePdfColoring": "https://drive.google.com/file/d/1tZK58R7FBEMW01x2vDADu91UK3qrptkh/view",
+            "driveSample": "https://drive.google.com/file/d/1VDHF_ys9HYryFJupz5b6MfnjM3HCE944/view",
+            "drivePdfSample": "https://drive.google.com/file/d/1SbNDEdX17vH9Iy1amy5NQEp9yg9M0QCT/view"
+          },
+          "level": 5
+        },
+        {
+          "originalBase": "lv5_gpt_H1036_1_en-halloween-valley-panoramic-scene-coloring-page",
+          "sample": {
+            "url": "https://drive.google.com/file/d/1iIUb-wOXn_0-dHAKnXmdm8N9YUqDceeF/view?usp=drivesdk",
+            "title": "lv5_gpt_H1036_1_en-halloween-valley-panoramic-scene-coloring-page-sample.png",
+            "id": "1iIUb-wOXn_0-dHAKnXmdm8N9YUqDceeF",
+            "mime_type": "image/png",
+            "size": "3345513",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:27:07.044Z",
+            "updated_at": "2026-09-30T19:43:42.396Z",
+            "viewedByMeTime": "2026-10-02T11:27:07.044Z",
+            "display_title": "lv5_gpt_H1036_1_en-halloween-valley-panoramic-scene-coloring-page-sample.png",
+            "display_url": "https://drive.google.com/file/d/1iIUb-wOXn_0-dHAKnXmdm8N9YUqDceeF/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "coloring": {
+            "url": "https://drive.google.com/file/d/1M2VKon9Vm8MbioYcgeycdD0C1t4v4hwz/view?usp=drivesdk",
+            "title": "lv5_gpt_H1036_1_en-halloween-valley-panoramic-scene-coloring-page-coloring.png",
+            "id": "1M2VKon9Vm8MbioYcgeycdD0C1t4v4hwz",
+            "mime_type": "image/png",
+            "size": "2931690",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:27:04.800Z",
+            "updated_at": "2026-09-30T19:09:26.772Z",
+            "viewedByMeTime": "2026-10-02T11:27:04.800Z",
+            "display_title": "lv5_gpt_H1036_1_en-halloween-valley-panoramic-scene-coloring-page-coloring.png",
+            "display_url": "https://drive.google.com/file/d/1M2VKon9Vm8MbioYcgeycdD0C1t4v4hwz/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "id": 10216,
+          "names": [
+            "Panoramatické halloweenské údolí",
+            "Panoramic Halloween Valley",
+            "Panoramisches Halloween-Tal",
+            "Valle panorámico de Halloween"
+          ],
+          "sheetRow": 56,
+          "masterRow": 1387,
+          "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/8c308de4-27d4-4104-9861-a004cb717a96/lv5_gpt_H1036_1_en-halloween-valley-panoramic-scene-coloring-page-coloring.png",
+          "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/e8035e35-4c31-435a-bef9-78e9b92100c1/lv5_gpt_H1036_1_en-halloween-valley-panoramic-scene-coloring-page-sample.png",
+          "base": "lv5_gpt_10216_1_en-halloween-valley-panoramic-scene-coloring-page",
+          "row": {
+            "ID": "10216",
+            "soubor": "lv5_gpt_10216_1_en-halloween-valley-panoramic-scene-coloring-page",
+            "kategorie": "svatky",
+            "podkategorie": "halloween",
+            "datumPridani": "2026-10-02",
+            "sezona": "podzim,halloween",
+            "zamereni": "jemna-motorika",
+            "assetDirectory": "en",
+            "pdf": "1",
+            "nazevCz": "Panoramatické halloweenské údolí",
+            "altCz_coloring": "Panoramatické halloweenské údolí: detailní omalovánka LV5 pro dospělé, zdarma k vytisknutí na A4.",
+            "altCz_sample": "Panoramatické halloweenské údolí: barevný vzor k omalovánce LV5.",
+            "nazevEn": "Panoramic Halloween Valley",
+            "altEn_coloring": "Panoramic Halloween Valley: detailed LV5 coloring page for adults, free to print on A4 paper.",
+            "altEn_sample": "Panoramic Halloween Valley: color sample for the LV5 coloring page.",
+            "nazevDe": "Panoramisches Halloween-Tal",
+            "altDe_coloring": "Panoramisches Halloween-Tal: detailliertes Ausmalbild der Stufe 5 für Erwachsene, kostenlos auf A4 drucken.",
+            "altDe_sample": "Panoramisches Halloween-Tal: Farbvorlage zum Ausmalbild der Stufe 5.",
+            "nazevEs": "Valle panorámico de Halloween",
+            "altEs_coloring": "Valle panorámico de Halloween: dibujo detallado de nivel 5 para adultos, gratis para imprimir en A4.",
+            "altEs_sample": "Valle panorámico de Halloween: modelo a color para el dibujo de nivel 5.",
+            "Status": "vygenerováno",
+            "driveColoring": "https://drive.google.com/file/d/16bU2LGvPYIp-XVavAdoetelFx1PfjMbu/view",
+            "drivePdfColoring": "https://drive.google.com/file/d/1g56HCfzzDoy94zDdWj0J_cz2WOvCR2wD/view",
+            "driveSample": "https://drive.google.com/file/d/1QKlg0ejSVe4PvIYPeYc8u8enqnVGBPBn/view",
+            "drivePdfSample": "https://drive.google.com/file/d/1vwJWWkaM0Zuy2-Y7HiFKZxwukb5iJZYX/view"
+          },
+          "level": 5
+        },
+        {
+          "originalBase": "lv2_gpt_H1038_1_en-friendly-frankenstein-monster-coloring-page",
+          "sample": {
+            "url": "https://drive.google.com/file/d/1E8AjVj8efl1ordH_V_pTs1wy9flMGl5Z/view?usp=drivesdk",
+            "title": "lv2_gpt_H1038_1_en-friendly-frankenstein-monster-coloring-page-sample.png",
+            "id": "1E8AjVj8efl1ordH_V_pTs1wy9flMGl5Z",
+            "mime_type": "image/png",
+            "size": "1801723",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:21:44.430Z",
+            "updated_at": "2026-10-01T12:31:40.324Z",
+            "viewedByMeTime": "2026-10-02T11:21:44.430Z",
+            "display_title": "lv2_gpt_H1038_1_en-friendly-frankenstein-monster-coloring-page-sample.png",
+            "display_url": "https://drive.google.com/file/d/1E8AjVj8efl1ordH_V_pTs1wy9flMGl5Z/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "coloring": {
+            "url": "https://drive.google.com/file/d/1rSR_YT0m5gjbcLae2zpNVnzOAthdP3xX/view?usp=drivesdk",
+            "title": "lv2_gpt_H1038_1_en-friendly-frankenstein-monster-coloring-page-coloring.png",
+            "id": "1rSR_YT0m5gjbcLae2zpNVnzOAthdP3xX",
+            "mime_type": "image/png",
+            "size": "1334555",
+            "file_or_folder": "file",
+            "created_at": "2026-10-02T11:21:46.689Z",
+            "updated_at": "2026-10-01T10:12:27.530Z",
+            "viewedByMeTime": "2026-10-02T11:21:46.689Z",
+            "display_title": "lv2_gpt_H1038_1_en-friendly-frankenstein-monster-coloring-page-coloring.png",
+            "display_url": "https://drive.google.com/file/d/1rSR_YT0m5gjbcLae2zpNVnzOAthdP3xX/view?usp=drivesdk",
+            "parent_ids": [
+              "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
+            ],
+            "shared": false,
+            "can_download": true,
+            "can_list_children": false
+          },
+          "id": 10217,
+          "names": [
+            "Přátelské Frankensteinovo monstrum",
+            "Friendly Frankenstein Monster",
+            "Freundliches Frankenstein-Monster",
+            "Monstruo amistoso de Frankenstein"
+          ],
+          "sheetRow": 57,
+          "masterRow": 1388,
+          "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/1b088c87-f190-43cf-b6db-eda2eae6d2a5/lv2_gpt_H1038_1_en-friendly-frankenstein-monster-coloring-page-coloring.png",
+          "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/93800fd4-6ad5-4ac0-bf1a-bdf12aabc02f/lv2_gpt_H1038_1_en-friendly-frankenstein-monster-coloring-page-sample.png",
+          "base": "lv2_gpt_10217_1_en-friendly-frankenstein-monster-coloring-page",
+          "row": {
+            "ID": "10217",
+            "soubor": "lv2_gpt_10217_1_en-friendly-frankenstein-monster-coloring-page",
+            "kategorie": "svatky",
+            "podkategorie": "halloween",
+            "datumPridani": "2026-10-02",
+            "sezona": "podzim,halloween",
+            "zamereni": "jemna-motorika",
+            "assetDirectory": "en",
+            "pdf": "1",
+            "nazevCz": "Přátelské Frankensteinovo monstrum",
+            "altCz_coloring": "Přátelské Frankensteinovo monstrum: černobílá omalovánka LV2 pro děti 5–6 let, zdarma k vytisknutí na A4.",
+            "altCz_sample": "Přátelské Frankensteinovo monstrum: barevný vzor k omalovánce LV2.",
+            "nazevEn": "Friendly Frankenstein Monster",
+            "altEn_coloring": "Friendly Frankenstein Monster: black-and-white LV2 coloring page for ages 5–6, free to print on A4 paper.",
+            "altEn_sample": "Friendly Frankenstein Monster: color sample for the LV2 coloring page.",
+            "nazevDe": "Freundliches Frankenstein-Monster",
+            "altDe_coloring": "Freundliches Frankenstein-Monster: schwarz-weißes Ausmalbild der Stufe 2 für Kinder von 5–6 Jahren, kostenlos auf A4 drucken.",
+            "altDe_sample": "Freundliches Frankenstein-Monster: Farbvorlage zum Ausmalbild der Stufe 2.",
+            "nazevEs": "Monstruo amistoso de Frankenstein",
+            "altEs_coloring": "Monstruo amistoso de Frankenstein: dibujo en blanco y negro de nivel 2 para niños de 5–6 años, gratis para imprimir en A4.",
+            "altEs_sample": "Monstruo amistoso de Frankenstein: modelo a color para el dibujo de nivel 2.",
+            "Status": "vygenerováno",
+            "driveColoring": "https://drive.google.com/file/d/1C0dqd7IxpDcsILQk5_jLA41MqIMPQxGI/view",
+            "drivePdfColoring": "https://drive.google.com/file/d/1tEJM9whHYjPBTdG1rPeJX6ieM9it1HPC/view",
+            "driveSample": "https://drive.google.com/file/d/1ADw0TAqUrGZ8VxcVBHS0XygjQQYbmYg4/view",
+            "drivePdfSample": "https://drive.google.com/file/d/1zSDuI_ed6o9dQxoK7bcXEmk3LXngifIf/view"
+          },
+          "level": 2
+        }
+      ],
+      "driveFiles": [
+        {
+          "id": "11tqEu1oNIvYu5fHvslG6g-tshLiXDuSB",
+          "path": "public/omalovanky/en/lv5_gpt_10215_1_en-old-castle-cutaway-halloween-coloring-page-coloring.png"
+        },
+        {
+          "id": "1tZK58R7FBEMW01x2vDADu91UK3qrptkh",
+          "path": "public/omalovanky/en/lv5_gpt_10215_1_en-old-castle-cutaway-halloween-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "1VDHF_ys9HYryFJupz5b6MfnjM3HCE944",
+          "path": "public/omalovanky/en/lv5_gpt_10215_1_en-old-castle-cutaway-halloween-coloring-page-sample.png"
+        },
+        {
+          "id": "1SbNDEdX17vH9Iy1amy5NQEp9yg9M0QCT",
+          "path": "public/omalovanky/en/lv5_gpt_10215_1_en-old-castle-cutaway-halloween-coloring-page-sample.pdf"
+        },
+        {
+          "id": "16bU2LGvPYIp-XVavAdoetelFx1PfjMbu",
+          "path": "public/omalovanky/en/lv5_gpt_10216_1_en-halloween-valley-panoramic-scene-coloring-page-coloring.png"
+        },
+        {
+          "id": "1g56HCfzzDoy94zDdWj0J_cz2WOvCR2wD",
+          "path": "public/omalovanky/en/lv5_gpt_10216_1_en-halloween-valley-panoramic-scene-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "1QKlg0ejSVe4PvIYPeYc8u8enqnVGBPBn",
+          "path": "public/omalovanky/en/lv5_gpt_10216_1_en-halloween-valley-panoramic-scene-coloring-page-sample.png"
+        },
+        {
+          "id": "1vwJWWkaM0Zuy2-Y7HiFKZxwukb5iJZYX",
+          "path": "public/omalovanky/en/lv5_gpt_10216_1_en-halloween-valley-panoramic-scene-coloring-page-sample.pdf"
+        },
+        {
+          "id": "1C0dqd7IxpDcsILQk5_jLA41MqIMPQxGI",
+          "path": "public/omalovanky/en/lv2_gpt_10217_1_en-friendly-frankenstein-monster-coloring-page-coloring.png"
+        },
+        {
+          "id": "1tEJM9whHYjPBTdG1rPeJX6ieM9it1HPC",
+          "path": "public/omalovanky/en/lv2_gpt_10217_1_en-friendly-frankenstein-monster-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "1ADw0TAqUrGZ8VxcVBHS0XygjQQYbmYg4",
+          "path": "public/omalovanky/en/lv2_gpt_10217_1_en-friendly-frankenstein-monster-coloring-page-sample.png"
+        },
+        {
+          "id": "1zSDuI_ed6o9dQxoK7bcXEmk3LXngifIf",
+          "path": "public/omalovanky/en/lv2_gpt_10217_1_en-friendly-frankenstein-monster-coloring-page-sample.pdf"
+        }
+      ],
+      "skippedTitles": [
+        {
+          "id": 10215,
+          "variant": "coloring",
+          "reason": "No blank area for title without covering artwork"
+        },
+        {
+          "id": 10215,
+          "variant": "sample",
+          "reason": "No blank area for title without covering artwork"
+        },
+        {
+          "id": 10216,
+          "variant": "coloring",
+          "reason": "No blank area for title without covering artwork"
+        },
+        {
+          "id": 10216,
+          "variant": "sample",
+          "reason": "No blank area for title without covering artwork"
+        },
+        {
+          "id": 10217,
+          "variant": "sample",
+          "reason": "No blank area for title without covering artwork"
+        }
+      ],
+      "checks": {
+        "PNGResolutionAndQR": "6/6 passed",
+        "DriveSizes": "12/12 passed",
+        "sheets": "exact values read back",
+        "mobile": "User review deferred"
+      }
     }
   ],
   "remainingPairs": 11,

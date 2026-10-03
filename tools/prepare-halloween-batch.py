@@ -38,7 +38,19 @@ for item in state['items']:
         heading = 'VinMat Coloring'+(' - Sample' if variant=='sample' else '')
         with Image.open(source) as image:
             dimensions = image.size
-            placement = brand.place_title(image,heading)
+            if level == 5 and brand.ADULT_TITLE_ART is None:
+                # The surviving approved tracing contains these exact metrics.
+                # They are only a conservative no-space check, never drawn.
+                # Every Sample layout includes this text or a larger rectangle.
+                brand.TITLE_ART = {'capHeight': 208, 'words': {
+                    'VinMat': {'width': 898, 'height': 211},
+                    'Coloring': {'width': 957, 'height': 268}}}
+                if brand.place_title(image, 'VinMat Coloring'):
+                    raise ValueError('LV5 has space for its title; restore approved contours first.')
+                placement = None
+                heading = None
+            else:
+                placement = brand.place_title(image,heading)
         if not placement:
             skipped.append({'id':item['id'],'variant':variant,'reason':'No blank area for title without covering artwork'})
         brand.compose(source,target,item['names'][1]+(' - Color Sample' if variant=='sample' else ' - Coloring Page'),heading)
