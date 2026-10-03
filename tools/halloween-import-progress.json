@@ -847,6 +847,324 @@
         "sheets": "published status read back"
       },
       "publishCommit": "897b13e898b3919ae9cd306ff8b059106d3dcb95"
+    },
+    {
+      "batch": 9,
+      "state": "ready-for-deployment",
+      "items": [
+        {
+          "id": 10201,
+          "originalBase": "lv2_gpt_H1021_1_en-owl-post-carrier-with-letter-and-lantern-coloring-page",
+          "names": [
+            "Soví pošťák s dopisem a lucernou",
+            "Owl Mail Carrier with a Letter and Lantern",
+            "Eulenpostbote mit Brief und Laterne",
+            "Búho cartero con una carta y una linterna"
+          ],
+          "sheetRow": 40,
+          "masterRow": 1372,
+          "coloring": {
+            "id": "1lJizu_85fYDxp6YAoN8K6tiO9LCM8ZWu",
+            "title": "lv2_gpt_H1021_1_en-owl-post-carrier-with-letter-and-lantern-coloring-page-coloring.png",
+            "mime_type": "image/png",
+            "size": "1138567",
+            "url": "https://drive.google.com/file/d/1lJizu_85fYDxp6YAoN8K6tiO9LCM8ZWu/view?usp=drivesdk",
+            "display_url": "https://drive.google.com/file/d/1lJizu_85fYDxp6YAoN8K6tiO9LCM8ZWu/view?usp=drivesdk",
+            "file_or_folder": "file",
+            "created_time": "2026-10-02T11:21:16.091Z",
+            "modified_time": "2026-09-30T19:12:27.955Z",
+            "parent_ids": null,
+            "drive_id": null,
+            "current_user_can_share": null,
+            "has_augmented_permissions": null,
+            "shared": false,
+            "permissions": null,
+            "source_visibility_status": "not_shared",
+            "can_download": true,
+            "can_list_children": false
+          },
+          "sample": {
+            "id": "1TpsVKKtLRJuXbYggFJT7t4odMqjF6c38",
+            "title": "lv2_gpt_H1021_1_en-owl-post-carrier-with-letter-and-lantern-coloring-page-sample.png",
+            "mime_type": "image/png",
+            "size": "1337096",
+            "url": "https://drive.google.com/file/d/1TpsVKKtLRJuXbYggFJT7t4odMqjF6c38/view?usp=drivesdk",
+            "display_url": "https://drive.google.com/file/d/1TpsVKKtLRJuXbYggFJT7t4odMqjF6c38/view?usp=drivesdk",
+            "file_or_folder": "file",
+            "created_time": "2026-10-02T11:20:55.647Z",
+            "modified_time": "2026-09-30T19:12:25.937Z",
+            "parent_ids": null,
+            "drive_id": null,
+            "current_user_can_share": null,
+            "has_augmented_permissions": null,
+            "shared": false,
+            "permissions": null,
+            "source_visibility_status": "not_shared",
+            "can_download": true,
+            "can_list_children": false
+          },
+          "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/69b2603e-268f-4f21-8bea-4051733e6d27/lv2_gpt_H1021_1_en-owl-post-carrier-with-letter-and-lantern-coloring-page-coloring.png",
+          "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/b7051a9e-0ad7-4469-9b7d-73826d823ff4/lv2_gpt_H1021_1_en-owl-post-carrier-with-letter-and-lantern-coloring-page-sample.png",
+          "base": "lv2_gpt_10201_1_en-owl-post-carrier-with-letter-and-lantern-coloring-page",
+          "row": {
+            "ID": "10201",
+            "soubor": "lv2_gpt_10201_1_en-owl-post-carrier-with-letter-and-lantern-coloring-page",
+            "kategorie": "svatky",
+            "podkategorie": "halloween",
+            "datumPridani": "2026-10-02",
+            "sezona": "podzim,halloween",
+            "zamereni": "jemna-motorika",
+            "assetDirectory": "en",
+            "pdf": "1",
+            "nazevCz": "Soví pošťák s dopisem a lucernou",
+            "altCz_coloring": "Soví pošťák s dopisem a lucernou: černobílá omalovánka LV2 pro děti 5–6 let, zdarma k vytisknutí na A4.",
+            "altCz_sample": "Soví pošťák s dopisem a lucernou: barevný vzor k omalovánce LV2.",
+            "nazevEn": "Owl Mail Carrier with a Letter and Lantern",
+            "altEn_coloring": "Owl Mail Carrier with a Letter and Lantern: black-and-white LV2 coloring page for ages 5–6, free to print on A4 paper.",
+            "altEn_sample": "Owl Mail Carrier with a Letter and Lantern: color sample for the LV2 coloring page.",
+            "nazevDe": "Eulenpostbote mit Brief und Laterne",
+            "altDe_coloring": "Eulenpostbote mit Brief und Laterne: schwarz-weißes Ausmalbild der Stufe 2 für Kinder von 5–6 Jahren, kostenlos auf A4 drucken.",
+            "altDe_sample": "Eulenpostbote mit Brief und Laterne: Farbvorlage zum Ausmalbild der Stufe 2.",
+            "nazevEs": "Búho cartero con una carta y una linterna",
+            "altEs_coloring": "Búho cartero con una carta y una linterna: dibujo en blanco y negro de nivel 2 para niños de 5–6 años, gratis para imprimir en A4.",
+            "altEs_sample": "Búho cartero con una carta y una linterna: modelo a color para el dibujo de nivel 2.",
+            "Status": "vygenerováno",
+            "driveColoring": "https://drive.google.com/file/d/1b0U24UMEuXH1rXhYXn5zWL3u6yGdtkSU/view",
+            "drivePdfColoring": "https://drive.google.com/file/d/1gPogQrZ6rpVFzG026PLsueVAk-IxtTeY/view",
+            "driveSample": "https://drive.google.com/file/d/1P4fhcPGs3wEEkmvoN6KvavVfziuMH4jd/view",
+            "drivePdfSample": "https://drive.google.com/file/d/1bCgGZxaRKvV_3y1Dz_jwKeYu7HcBObsa/view"
+          },
+          "level": 2
+        },
+        {
+          "id": 10202,
+          "originalBase": "lv2_gpt_H1022_1_en-friendly-scarecrow-in-pumpkin-patch-coloring-page",
+          "names": [
+            "Strašák na dýňovém políčku",
+            "Friendly Scarecrow in a Pumpkin Patch",
+            "Freundliche Vogelscheuche im Kürbisbeet",
+            "Espantapájaros amistoso en un huerto de calabazas"
+          ],
+          "sheetRow": 41,
+          "masterRow": 1373,
+          "coloring": {
+            "id": "1-hMkc1x2K7V_UN0_8qYE68JzdLqoIp51",
+            "title": "lv2_gpt_H1022_1_en-friendly-scarecrow-in-pumpkin-patch-coloring-page-coloring.png",
+            "mime_type": "image/png",
+            "size": "1383996",
+            "url": "https://drive.google.com/file/d/1-hMkc1x2K7V_UN0_8qYE68JzdLqoIp51/view?usp=drivesdk",
+            "display_url": "https://drive.google.com/file/d/1-hMkc1x2K7V_UN0_8qYE68JzdLqoIp51/view?usp=drivesdk",
+            "file_or_folder": "file",
+            "created_time": "2026-10-02T11:20:43.416Z",
+            "modified_time": "2026-09-30T19:12:27.988Z",
+            "parent_ids": null,
+            "drive_id": null,
+            "current_user_can_share": null,
+            "has_augmented_permissions": null,
+            "shared": false,
+            "permissions": null,
+            "source_visibility_status": "not_shared",
+            "can_download": true,
+            "can_list_children": false
+          },
+          "sample": {
+            "id": "1341GEZC9ViWIXvq9BYKxJqs3ltz4QcTI",
+            "title": "lv2_gpt_H1022_1_en-friendly-scarecrow-in-pumpkin-patch-coloring-page-sample.png",
+            "mime_type": "image/png",
+            "size": "1819754",
+            "url": "https://drive.google.com/file/d/1341GEZC9ViWIXvq9BYKxJqs3ltz4QcTI/view?usp=drivesdk",
+            "display_url": "https://drive.google.com/file/d/1341GEZC9ViWIXvq9BYKxJqs3ltz4QcTI/view?usp=drivesdk",
+            "file_or_folder": "file",
+            "created_time": "2026-10-02T11:20:51.659Z",
+            "modified_time": "2026-09-30T19:12:25.982Z",
+            "parent_ids": null,
+            "drive_id": null,
+            "current_user_can_share": null,
+            "has_augmented_permissions": null,
+            "shared": false,
+            "permissions": null,
+            "source_visibility_status": "not_shared",
+            "can_download": true,
+            "can_list_children": false
+          },
+          "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/719f1ac9-0a43-45a2-adfa-b8b6876c71a2/lv2_gpt_H1022_1_en-friendly-scarecrow-in-pumpkin-patch-coloring-page-coloring.png",
+          "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/995a2762-c07b-482c-b72f-cc7070420dee/lv2_gpt_H1022_1_en-friendly-scarecrow-in-pumpkin-patch-coloring-page-sample.png",
+          "base": "lv2_gpt_10202_1_en-friendly-scarecrow-in-pumpkin-patch-coloring-page",
+          "row": {
+            "ID": "10202",
+            "soubor": "lv2_gpt_10202_1_en-friendly-scarecrow-in-pumpkin-patch-coloring-page",
+            "kategorie": "svatky",
+            "podkategorie": "halloween",
+            "datumPridani": "2026-10-02",
+            "sezona": "podzim,halloween",
+            "zamereni": "jemna-motorika",
+            "assetDirectory": "en",
+            "pdf": "1",
+            "nazevCz": "Strašák na dýňovém políčku",
+            "altCz_coloring": "Strašák na dýňovém políčku: černobílá omalovánka LV2 pro děti 5–6 let, zdarma k vytisknutí na A4.",
+            "altCz_sample": "Strašák na dýňovém políčku: barevný vzor k omalovánce LV2.",
+            "nazevEn": "Friendly Scarecrow in a Pumpkin Patch",
+            "altEn_coloring": "Friendly Scarecrow in a Pumpkin Patch: black-and-white LV2 coloring page for ages 5–6, free to print on A4 paper.",
+            "altEn_sample": "Friendly Scarecrow in a Pumpkin Patch: color sample for the LV2 coloring page.",
+            "nazevDe": "Freundliche Vogelscheuche im Kürbisbeet",
+            "altDe_coloring": "Freundliche Vogelscheuche im Kürbisbeet: schwarz-weißes Ausmalbild der Stufe 2 für Kinder von 5–6 Jahren, kostenlos auf A4 drucken.",
+            "altDe_sample": "Freundliche Vogelscheuche im Kürbisbeet: Farbvorlage zum Ausmalbild der Stufe 2.",
+            "nazevEs": "Espantapájaros amistoso en un huerto de calabazas",
+            "altEs_coloring": "Espantapájaros amistoso en un huerto de calabazas: dibujo en blanco y negro de nivel 2 para niños de 5–6 años, gratis para imprimir en A4.",
+            "altEs_sample": "Espantapájaros amistoso en un huerto de calabazas: modelo a color para el dibujo de nivel 2.",
+            "Status": "vygenerováno",
+            "driveColoring": "https://drive.google.com/file/d/1ho2A1lFWbAgzG-_VBLoOsmex7fR0tL9O/view",
+            "drivePdfColoring": "https://drive.google.com/file/d/1vFJIXPKYsDUBodcYclemwVN7XHVFmTcY/view",
+            "driveSample": "https://drive.google.com/file/d/1vMIuec9TbWjv_aL9tmb_G3Qdy3c1oBqk/view",
+            "drivePdfSample": "https://drive.google.com/file/d/1g9kbhKjx0of1jFB1q2OonI4Gr1lhuzAC/view"
+          },
+          "level": 2
+        },
+        {
+          "id": 10203,
+          "originalBase": "lv2_gpt_H1023_1_en-friendly-spider-on-decorative-web-coloring-page",
+          "names": [
+            "Pavouk na ozdobné pavučině",
+            "Friendly Spider on a Decorative Web",
+            "Freundliche Spinne auf einem dekorativen Netz",
+            "Araña amistosa en una telaraña decorativa"
+          ],
+          "sheetRow": 42,
+          "masterRow": 1374,
+          "coloring": {
+            "id": "1j9LPGwBgCOlbNbBIQ45lEsMY-kpOIrDo",
+            "title": "lv2_gpt_H1023_1_en-friendly-spider-on-decorative-web-coloring-page-coloring.png",
+            "mime_type": "image/png",
+            "size": "956254",
+            "url": "https://drive.google.com/file/d/1j9LPGwBgCOlbNbBIQ45lEsMY-kpOIrDo/view?usp=drivesdk",
+            "display_url": "https://drive.google.com/file/d/1j9LPGwBgCOlbNbBIQ45lEsMY-kpOIrDo/view?usp=drivesdk",
+            "file_or_folder": "file",
+            "created_time": "2026-10-02T11:20:14.489Z",
+            "modified_time": "2026-09-30T19:12:28.020Z",
+            "parent_ids": null,
+            "drive_id": null,
+            "current_user_can_share": null,
+            "has_augmented_permissions": null,
+            "shared": false,
+            "permissions": null,
+            "source_visibility_status": "not_shared",
+            "can_download": true,
+            "can_list_children": false
+          },
+          "sample": {
+            "id": "1vVHxqbSIOcbI4yP0b7U8VxxLxwmJ4Rn1",
+            "title": "lv2_gpt_H1023_1_en-friendly-spider-on-decorative-web-coloring-page-sample.png",
+            "mime_type": "image/png",
+            "size": "1271657",
+            "url": "https://drive.google.com/file/d/1vVHxqbSIOcbI4yP0b7U8VxxLxwmJ4Rn1/view?usp=drivesdk",
+            "display_url": "https://drive.google.com/file/d/1vVHxqbSIOcbI4yP0b7U8VxxLxwmJ4Rn1/view?usp=drivesdk",
+            "file_or_folder": "file",
+            "created_time": "2026-10-02T11:20:48.749Z",
+            "modified_time": "2026-09-30T19:12:26.017Z",
+            "parent_ids": null,
+            "drive_id": null,
+            "current_user_can_share": null,
+            "has_augmented_permissions": null,
+            "shared": false,
+            "permissions": null,
+            "source_visibility_status": "not_shared",
+            "can_download": true,
+            "can_list_children": false
+          },
+          "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/bf360c31-18be-4723-a112-3a95ed660d51/lv2_gpt_H1023_1_en-friendly-spider-on-decorative-web-coloring-page-coloring.png",
+          "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/8dd38573-fe37-42b8-98fc-c7610c556f83/lv2_gpt_H1023_1_en-friendly-spider-on-decorative-web-coloring-page-sample.png",
+          "base": "lv2_gpt_10203_1_en-friendly-spider-on-decorative-web-coloring-page",
+          "row": {
+            "ID": "10203",
+            "soubor": "lv2_gpt_10203_1_en-friendly-spider-on-decorative-web-coloring-page",
+            "kategorie": "svatky",
+            "podkategorie": "halloween",
+            "datumPridani": "2026-10-02",
+            "sezona": "podzim,halloween",
+            "zamereni": "jemna-motorika",
+            "assetDirectory": "en",
+            "pdf": "1",
+            "nazevCz": "Pavouk na ozdobné pavučině",
+            "altCz_coloring": "Pavouk na ozdobné pavučině: černobílá omalovánka LV2 pro děti 5–6 let, zdarma k vytisknutí na A4.",
+            "altCz_sample": "Pavouk na ozdobné pavučině: barevný vzor k omalovánce LV2.",
+            "nazevEn": "Friendly Spider on a Decorative Web",
+            "altEn_coloring": "Friendly Spider on a Decorative Web: black-and-white LV2 coloring page for ages 5–6, free to print on A4 paper.",
+            "altEn_sample": "Friendly Spider on a Decorative Web: color sample for the LV2 coloring page.",
+            "nazevDe": "Freundliche Spinne auf einem dekorativen Netz",
+            "altDe_coloring": "Freundliche Spinne auf einem dekorativen Netz: schwarz-weißes Ausmalbild der Stufe 2 für Kinder von 5–6 Jahren, kostenlos auf A4 drucken.",
+            "altDe_sample": "Freundliche Spinne auf einem dekorativen Netz: Farbvorlage zum Ausmalbild der Stufe 2.",
+            "nazevEs": "Araña amistosa en una telaraña decorativa",
+            "altEs_coloring": "Araña amistosa en una telaraña decorativa: dibujo en blanco y negro de nivel 2 para niños de 5–6 años, gratis para imprimir en A4.",
+            "altEs_sample": "Araña amistosa en una telaraña decorativa: modelo a color para el dibujo de nivel 2.",
+            "Status": "vygenerováno",
+            "driveColoring": "https://drive.google.com/file/d/1HWNivD8IgDRFICmmX9cNaO6UBjImnHZT/view",
+            "drivePdfColoring": "https://drive.google.com/file/d/1rvaJQEN0uLrLIJkYDR3aR09s_mqDokB7/view",
+            "driveSample": "https://drive.google.com/file/d/1IThQZAGL8Km69wA-BPPQCjAppLuzkDIn/view",
+            "drivePdfSample": "https://drive.google.com/file/d/1NSKsBIee24qbdMbSqHvKEDf9lJdyGa2E/view"
+          },
+          "level": 2
+        }
+      ],
+      "driveFiles": [
+        {
+          "id": "1b0U24UMEuXH1rXhYXn5zWL3u6yGdtkSU",
+          "path": "public/omalovanky/en/lv2_gpt_10201_1_en-owl-post-carrier-with-letter-and-lantern-coloring-page-coloring.png"
+        },
+        {
+          "id": "1gPogQrZ6rpVFzG026PLsueVAk-IxtTeY",
+          "path": "public/omalovanky/en/lv2_gpt_10201_1_en-owl-post-carrier-with-letter-and-lantern-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "1P4fhcPGs3wEEkmvoN6KvavVfziuMH4jd",
+          "path": "public/omalovanky/en/lv2_gpt_10201_1_en-owl-post-carrier-with-letter-and-lantern-coloring-page-sample.png"
+        },
+        {
+          "id": "1bCgGZxaRKvV_3y1Dz_jwKeYu7HcBObsa",
+          "path": "public/omalovanky/en/lv2_gpt_10201_1_en-owl-post-carrier-with-letter-and-lantern-coloring-page-sample.pdf"
+        },
+        {
+          "id": "1ho2A1lFWbAgzG-_VBLoOsmex7fR0tL9O",
+          "path": "public/omalovanky/en/lv2_gpt_10202_1_en-friendly-scarecrow-in-pumpkin-patch-coloring-page-coloring.png"
+        },
+        {
+          "id": "1vFJIXPKYsDUBodcYclemwVN7XHVFmTcY",
+          "path": "public/omalovanky/en/lv2_gpt_10202_1_en-friendly-scarecrow-in-pumpkin-patch-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "1vMIuec9TbWjv_aL9tmb_G3Qdy3c1oBqk",
+          "path": "public/omalovanky/en/lv2_gpt_10202_1_en-friendly-scarecrow-in-pumpkin-patch-coloring-page-sample.png"
+        },
+        {
+          "id": "1g9kbhKjx0of1jFB1q2OonI4Gr1lhuzAC",
+          "path": "public/omalovanky/en/lv2_gpt_10202_1_en-friendly-scarecrow-in-pumpkin-patch-coloring-page-sample.pdf"
+        },
+        {
+          "id": "1HWNivD8IgDRFICmmX9cNaO6UBjImnHZT",
+          "path": "public/omalovanky/en/lv2_gpt_10203_1_en-friendly-spider-on-decorative-web-coloring-page-coloring.png"
+        },
+        {
+          "id": "1rvaJQEN0uLrLIJkYDR3aR09s_mqDokB7",
+          "path": "public/omalovanky/en/lv2_gpt_10203_1_en-friendly-spider-on-decorative-web-coloring-page-coloring.pdf"
+        },
+        {
+          "id": "1IThQZAGL8Km69wA-BPPQCjAppLuzkDIn",
+          "path": "public/omalovanky/en/lv2_gpt_10203_1_en-friendly-spider-on-decorative-web-coloring-page-sample.png"
+        },
+        {
+          "id": "1NSKsBIee24qbdMbSqHvKEDf9lJdyGa2E",
+          "path": "public/omalovanky/en/lv2_gpt_10203_1_en-friendly-spider-on-decorative-web-coloring-page-sample.pdf"
+        }
+      ],
+      "skippedTitles": [],
+      "checks": {
+        "localContent": "passed",
+        "localization": "passed EN/CZ/DE/ES",
+        "internalLinks": "passed 267 HTML files",
+        "PNGResolutionAndQR": "passed 6/6",
+        "GitBlobs": "18/18 exact SHA matches",
+        "DriveSizes": "12/12 exact sizes",
+        "mobile": "User review deferred"
+      }
     }
   ],
   "remainingPairs": 26,
@@ -1104,4 +1422,3 @@
   ],
   "originalPolicy": "Keep original unbranded PNGs in Drive; upload branded PNGs and PDFs separately without replacing originals."
 }
-

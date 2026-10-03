@@ -25,11 +25,17 @@ from reportlab.pdfgen import canvas
 URL = 'https://vinmat.eu/w4k'
 FONT = '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
 ROUNDED_TITLE_ART = json.loads((Path(__file__).parent / 'branding' / 'approved-rounded-title.json').read_text())
-ADULT_TITLE_ART = json.loads((Path(__file__).parent / 'branding' / 'approved-adult-title.json').read_text())
+try:
+    ADULT_TITLE_ART = json.loads((Path(__file__).parent / 'branding' / 'approved-adult-title.json').read_text())
+except (UnicodeDecodeError, json.JSONDecodeError):
+    # Keep the approved LV1–4 artwork usable; fail explicitly for LV5.
+    ADULT_TITLE_ART = None
 TITLE_ART = ROUNDED_TITLE_ART
 
 
 def title_line_size(line, size):
+    if TITLE_ART is None:
+        raise ValueError('The approved LV5 title artwork is damaged; restore it before branding LV5.')
     words = [TITLE_ART['words'][word] for word in line.split()]
     scale = size / TITLE_ART['capHeight']
     return (sum(word['width'] for word in words) + 38 * (len(words)-1)) * scale, max(word['height'] for word in words) * scale
