@@ -654,7 +654,8 @@
           "bytes": 59262,
           "sha": "56379bd488760cac67eb01716da3688fec688f82"
         }
-      ]
+      ],
+      "state": "published-to-github"
     },
     {
       "fileBase": "lv2_gpt_10202_1_en-friendly-scarecrow-in-pumpkin-patch-tracing",
@@ -718,7 +719,8 @@
           "bytes": 82476,
           "sha": "1833a8f8d08001bd330035694f529517c7cf11c2"
         }
-      ]
+      ],
+      "state": "published-to-github"
     },
     {
       "fileBase": "lv2_gpt_10203_1_en-friendly-spider-on-decorative-web-tracing",
@@ -782,7 +784,8 @@
           "bytes": 46964,
           "sha": "b2bbb38a44a7e07efe19018fc4d46079158f78e3"
         }
-      ]
+      ],
+      "state": "published-to-github"
     },
     {
       "fileBase": "lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-tracing",
@@ -1105,5 +1108,5 @@
       ]
     }
   ],
-  "publishedCount": 9
+  "publishedCount": 12
 }
