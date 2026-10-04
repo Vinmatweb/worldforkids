@@ -1,10 +1,24 @@
 {
-  "state": "publishing",
+  "state": "completed",
   "checks": {
     "driveFilesVerified": 34,
     "sheetRowsVerified": 17,
     "priorVisualQa": 17,
-    "qrCodes": 17
+    "qrCodes": 17,
+    "assets": 51,
+    "localizedPages": 68,
+    "csvRows": 17,
+    "localizedIndexes": 4,
+    "sharedSamples": 17,
+    "result": "passed",
+    "sheetRowsPublished": 17,
+    "relatedActivities": "verified in all four locales",
+    "bothDirections": "passed",
+    "singleActivityHidden": "passed",
+    "multiVariantMotif": "passed",
+    "build": "success",
+    "pagesDeployment": "success",
+    "nativeSheetFormatting": "verified"
   },
   "items": [
     {
@@ -46,7 +60,7 @@
         "drivePdfTracing": "https://drive.google.com/file/d/1WPcO5p2DuOVSHCszBWD7wtdj9n9fA4r0/view",
         "drivePdfSample": "https://drive.google.com/file/d/1uWFZ6OV2lIKvYTV40VKXqOwdYdJf3JnD/view?usp=drivesdk",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-sample",
-        "Status": "vygenerováno"
+        "Status": "publikováno"
       },
       "files": [
         {
@@ -70,7 +84,7 @@
           "sha": "63e92a7f74173713e2cddb360e30cb00f36d76f4"
         }
       ],
-      "state": "published-to-github"
+      "state": "public-verified"
     },
     {
       "fileBase": "lv2_gpt_10188_1_en-friendly-ghost-in-front-of-haunted-house-tracing",
@@ -111,7 +125,7 @@
         "drivePdfTracing": "https://drive.google.com/file/d/135HqR1oU-ida0W1nuwiK0Dcmhew4Tiyo/view",
         "drivePdfSample": "https://drive.google.com/file/d/1JYflR_3vcNgRuywinsajQtW2Cu2lP6lQ/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10188_1_en-friendly-ghost-in-front-of-haunted-house-coloring-page-sample",
-        "Status": "vygenerováno"
+        "Status": "publikováno"
       },
       "files": [
         {
@@ -135,7 +149,7 @@
           "sha": "fbd17b4a1e8ae71fc65dc8ecba4ea02da9c5002e"
         }
       ],
-      "state": "published-to-github"
+      "state": "public-verified"
     },
     {
       "fileBase": "lv2_gpt_10189_1_en-cat-sitting-on-pumpkin-tracing",
@@ -176,7 +190,7 @@
         "drivePdfTracing": "https://drive.google.com/file/d/1WKZaRmXyZoWCTvfjIdCEVWQgntpvxDSU/view",
         "drivePdfSample": "https://drive.google.com/file/d/1aFiEHo-rxiGjlsPRupKOFDzBsWeVfcnX/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10189_1_en-cat-sitting-on-pumpkin-coloring-page-sample",
-        "Status": "vygenerováno"
+        "Status": "publikováno"
       },
       "files": [
         {
@@ -200,7 +214,7 @@
           "sha": "c32d694a896e6f9bbc0f13365e9b4d64ae8f8754"
         }
       ],
-      "state": "published-to-github"
+      "state": "public-verified"
     },
     {
       "fileBase": "lv2_gpt_10190_1_en-witch-with-broom-and-moon-tracing",
@@ -241,7 +255,7 @@
         "drivePdfTracing": "https://drive.google.com/file/d/1j94v7tNw4m8UkvCZPwCsznJgIAmTZPcU/view",
         "drivePdfSample": "https://drive.google.com/file/d/1SacdUIyp-ZnhC5JAGkBLZYkNI5PVEvUR/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10190_1_en-witch-with-broom-and-moon-coloring-page-sample",
-        "Status": "vygenerováno"
+        "Status": "publikováno"
       },
       "files": [
         {
@@ -265,7 +279,7 @@
           "sha": "ca453ad9f74398116ef21aeb670133121b7e1b2a"
         }
       ],
-      "state": "published-to-github"
+      "state": "public-verified"
     },
     {
       "fileBase": "lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-tracing",
@@ -306,7 +320,7 @@
         "drivePdfTracing": "https://drive.google.com/file/d/1e36aaw51DYICb03YfswQ6yCY9fRLwiYJ/view",
         "drivePdfSample": "https://drive.google.com/file/d/1eavf2td0yWa0kgXdANiQ-2K38sa0tQUx/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample",
-        "Status": "vygenerováno"
+        "Status": "publikováno"
       },
       "files": [
         {
@@ -330,7 +344,7 @@
           "sha": "048d4c40b16a13810980032d50ab34724f7835b8"
         }
       ],
-      "state": "published-to-github"
+      "state": "public-verified"
     },
     {
       "fileBase": "lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-tracing",
@@ -371,7 +385,7 @@
         "drivePdfTracing": "https://drive.google.com/file/d/18DrKj6lZzUUQx-X0tCrdprquqErnxR-s/view",
         "drivePdfSample": "https://drive.google.com/file/d/1ymomPb94Gy6tpHc8s1DzHgvOeHFKK2ag/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample",
-        "Status": "vygenerováno"
+        "Status": "publikováno"
       },
       "files": [
         {
@@ -395,7 +409,7 @@
           "sha": "84613f2c7311ac9e326a94cf72459369c4461e3b"
         }
       ],
-      "state": "published-to-github"
+      "state": "public-verified"
     },
     {
       "fileBase": "lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-tracing",
@@ -436,7 +450,7 @@
         "drivePdfTracing": "https://drive.google.com/file/d/1VrQXHyPcHHikXBQjm0SuO9JZ9qJd6tBI/view",
         "drivePdfSample": "https://drive.google.com/file/d/1-f-CZAdClBtpgAxntFo7hIGkzQrDvaC6/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-sample",
-        "Status": "vygenerováno"
+        "Status": "publikováno"
       },
       "files": [
         {
@@ -460,7 +474,7 @@
           "sha": "d905095f32a2c7e0b2086980e7bc03d0bc73a9f8"
         }
       ],
-      "state": "published-to-github"
+      "state": "public-verified"
     },
     {
       "fileBase": "lv2_gpt_10200_1_en-children-trick-or-treating-tracing",
@@ -501,7 +515,7 @@
         "drivePdfTracing": "https://drive.google.com/file/d/1yuiATEvz21I0akk8upXMJDX8BYIdI_00/view",
         "drivePdfSample": "https://drive.google.com/file/d/1cjamd8Ex2dAWeqBgFLPpce8z1qi0RRdz/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10200_1_en-children-trick-or-treating-coloring-page-sample",
-        "Status": "vygenerováno"
+        "Status": "publikováno"
       },
       "files": [
         {
@@ -525,7 +539,7 @@
           "sha": "27b45ddbae7e825f741f6f6b4113924a6515a1d3"
         }
       ],
-      "state": "published-to-github"
+      "state": "public-verified"
     },
     {
       "fileBase": "lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-tracing",
@@ -566,7 +580,7 @@
         "drivePdfTracing": "https://drive.google.com/file/d/1hl2CK6A30s8WmzWJxnJEhXWJACaizf9u/view",
         "drivePdfSample": "https://drive.google.com/file/d/1e-h1RY0KuvOrE-Zmx6DTUgLnzbZ7S6oV/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-sample",
-        "Status": "vygenerováno"
+        "Status": "publikováno"
       },
       "files": [
         {
@@ -590,7 +604,7 @@
           "sha": "3db57a2ffa2902d46d6bacc7ed96ff221e168268"
         }
       ],
-      "state": "published-to-github"
+      "state": "public-verified"
     },
     {
       "fileBase": "lv2_gpt_10201_1_en-owl-post-carrier-with-letter-and-lantern-tracing",
@@ -631,7 +645,7 @@
         "drivePdfTracing": "https://drive.google.com/file/d/13k6dH4UoBF3at7iHkBLZEEejn4LEjX9J/view",
         "drivePdfSample": "https://drive.google.com/file/d/1bCgGZxaRKvV_3y1Dz_jwKeYu7HcBObsa/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10201_1_en-owl-post-carrier-with-letter-and-lantern-coloring-page-sample",
-        "Status": "vygenerováno"
+        "Status": "publikováno"
       },
       "files": [
         {
@@ -655,7 +669,7 @@
           "sha": "56379bd488760cac67eb01716da3688fec688f82"
         }
       ],
-      "state": "published-to-github"
+      "state": "public-verified"
     },
     {
       "fileBase": "lv2_gpt_10202_1_en-friendly-scarecrow-in-pumpkin-patch-tracing",
@@ -696,7 +710,7 @@
         "drivePdfTracing": "https://drive.google.com/file/d/1Gi-z25QQAvRE1ZXEYzaoyrxPRQlRCU0Z/view",
         "drivePdfSample": "https://drive.google.com/file/d/1g9kbhKjx0of1jFB1q2OonI4Gr1lhuzAC/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10202_1_en-friendly-scarecrow-in-pumpkin-patch-coloring-page-sample",
-        "Status": "vygenerováno"
+        "Status": "publikováno"
       },
       "files": [
         {
@@ -720,7 +734,7 @@
           "sha": "1833a8f8d08001bd330035694f529517c7cf11c2"
         }
       ],
-      "state": "published-to-github"
+      "state": "public-verified"
     },
     {
       "fileBase": "lv2_gpt_10203_1_en-friendly-spider-on-decorative-web-tracing",
@@ -761,7 +775,7 @@
         "drivePdfTracing": "https://drive.google.com/file/d/1qmn59I8TrcY5sptOQ9qrkqXDTysLdYbg/view",
         "drivePdfSample": "https://drive.google.com/file/d/1NSKsBIee24qbdMbSqHvKEDf9lJdyGa2E/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10203_1_en-friendly-spider-on-decorative-web-coloring-page-sample",
-        "Status": "vygenerováno"
+        "Status": "publikováno"
       },
       "files": [
         {
@@ -785,7 +799,7 @@
           "sha": "b2bbb38a44a7e07efe19018fc4d46079158f78e3"
         }
       ],
-      "state": "published-to-github"
+      "state": "public-verified"
     },
     {
       "fileBase": "lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-tracing",
@@ -826,7 +840,7 @@
         "drivePdfTracing": "https://drive.google.com/file/d/1-JoPm3S08DwaSIZMu-qLvXyS_wvet4mP/view",
         "drivePdfSample": "https://drive.google.com/file/d/1jeRhl7aTO6meMZunMAoJi_gn1y300vpG/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-coloring-page-sample",
-        "Status": "vygenerováno"
+        "Status": "publikováno"
       },
       "files": [
         {
@@ -850,7 +864,7 @@
           "sha": "5cd18f9bee20b1dfe3a4052fb8b0e7296f85f633"
         }
       ],
-      "state": "published-to-github"
+      "state": "public-verified"
     },
     {
       "fileBase": "lv2_gpt_10205_1_en-friendly-vampire-with-bat-tracing",
@@ -891,7 +905,7 @@
         "drivePdfTracing": "https://drive.google.com/file/d/1XQcmSNMCpi_daUWmoGghuDfD7rqzdLx4/view",
         "drivePdfSample": "https://drive.google.com/file/d/1rvlQ4-8zojBii5WcgvF5bHb7oE-z36ch/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10205_1_en-friendly-vampire-with-bat-coloring-page-sample",
-        "Status": "vygenerováno"
+        "Status": "publikováno"
       },
       "files": [
         {
@@ -915,7 +929,7 @@
           "sha": "e9ce37ef1f386ddb54d798125ea6648cc147c391"
         }
       ],
-      "state": "published-to-github"
+      "state": "public-verified"
     },
     {
       "fileBase": "lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-tracing",
@@ -956,7 +970,7 @@
         "drivePdfTracing": "https://drive.google.com/file/d/1w5MV68_RafbRbYXE3vn8amPJlnmsJCqQ/view",
         "drivePdfSample": "https://drive.google.com/file/d/1Q_ZuOo9OgnsJduOUo-GhpDBKjH8vg_8U/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-coloring-page-sample",
-        "Status": "vygenerováno"
+        "Status": "publikováno"
       },
       "files": [
         {
@@ -980,7 +994,7 @@
           "sha": "534d1a3b7b88378df629322500bb9c69fc628e5b"
         }
       ],
-      "state": "published-to-github"
+      "state": "public-verified"
     },
     {
       "fileBase": "lv2_gpt_10217_1_en-friendly-frankenstein-monster-tracing",
@@ -1021,7 +1035,7 @@
         "drivePdfTracing": "https://drive.google.com/file/d/1NoXppKREvTjdOiksDXUb0KMGkuayj9PQ/view",
         "drivePdfSample": "https://drive.google.com/file/d/1zSDuI_ed6o9dQxoK7bcXEmk3LXngifIf/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10217_1_en-friendly-frankenstein-monster-coloring-page-sample",
-        "Status": "vygenerováno"
+        "Status": "publikováno"
       },
       "files": [
         {
@@ -1045,7 +1059,7 @@
           "sha": "4e396e0fff4c8593cd859f6c17196869c8c63b57"
         }
       ],
-      "state": "published-to-github"
+      "state": "public-verified"
     },
     {
       "fileBase": "lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-tracing",
@@ -1086,7 +1100,7 @@
         "drivePdfTracing": "https://drive.google.com/file/d/1jWzp5vapsjr-r1waiA_F_acrX8YX-aMQ/view",
         "drivePdfSample": "https://drive.google.com/file/d/1X_ME513plZIGcEeT2iuEK1TW9hr17ODt/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-sample",
-        "Status": "vygenerováno"
+        "Status": "publikováno"
       },
       "files": [
         {
@@ -1110,8 +1124,12 @@
           "sha": "af546cb08f8bfec7995b2b295fee1ac6d4bcd8a9"
         }
       ],
-      "state": "published-to-github"
+      "state": "public-verified"
     }
   ],
-  "publishedCount": 17
+  "publishedCount": 17,
+  "completedAt": "2026-10-04T18:48:10.518922+00:00",
+  "sourceCommit": "c77e30e0c16325f65b5c11b0e5e1f40a6c8f8a48",
+  "deploymentCommit": "e3f4df642f81c56434da3640d317815c7f75fdd9",
+  "catalogUrl": "https://vinmat.eu/worldforkids/cs/?type=obtahovacky&season=halloween"
 }
