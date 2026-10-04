@@ -1,5 +1,5 @@
 {
-  "state": "in-progress",
+  "state": "completed",
   "items": [
     {
       "fileBase": "lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-tracing",
@@ -52,7 +52,20 @@
           "driveId": null
         }
       ],
-      "state": "prepared"
+      "state": "public-verified",
+      "titlePlacement": {
+        "x": 157.49533373712904,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Tracing"
+        ],
+        "widths": [
+          280.28492307692306
+        ],
+        "height": 43.47692307692308,
+        "alignment": "center"
+      }
     },
     {
       "fileBase": "lv2_gpt_10188_1_en-friendly-ghost-in-front-of-haunted-house-tracing",
@@ -105,7 +118,20 @@
           "driveId": null
         }
       ],
-      "state": "prepared"
+      "state": "public-verified",
+      "titlePlacement": {
+        "x": 22.67716535433071,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Tracing"
+        ],
+        "widths": [
+          280.28492307692306
+        ],
+        "height": 43.47692307692308,
+        "alignment": "left"
+      }
     },
     {
       "fileBase": "lv2_gpt_10189_1_en-cat-sitting-on-pumpkin-tracing",
@@ -158,7 +184,20 @@
           "driveId": null
         }
       ],
-      "state": "prepared"
+      "state": "public-verified",
+      "titlePlacement": {
+        "x": 157.49533373712904,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Tracing"
+        ],
+        "widths": [
+          280.28492307692306
+        ],
+        "height": 43.47692307692308,
+        "alignment": "center"
+      }
     },
     {
       "fileBase": "lv2_gpt_10190_1_en-witch-with-broom-and-moon-tracing",
@@ -211,7 +250,20 @@
           "driveId": null
         }
       ],
-      "state": "prepared"
+      "state": "public-verified",
+      "titlePlacement": {
+        "x": 157.49533373712904,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Tracing"
+        ],
+        "widths": [
+          280.28492307692306
+        ],
+        "height": 43.47692307692308,
+        "alignment": "center"
+      }
     },
     {
       "fileBase": "lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-tracing",
@@ -264,7 +316,20 @@
           "driveId": null
         }
       ],
-      "state": "prepared"
+      "state": "public-verified",
+      "titlePlacement": {
+        "x": 157.49533373712904,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Tracing"
+        ],
+        "widths": [
+          280.28492307692306
+        ],
+        "height": 43.47692307692308,
+        "alignment": "center"
+      }
     },
     {
       "fileBase": "lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-tracing",
@@ -317,7 +382,20 @@
           "driveId": null
         }
       ],
-      "state": "prepared"
+      "state": "public-verified",
+      "titlePlacement": {
+        "x": 157.49533373712904,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Tracing"
+        ],
+        "widths": [
+          280.28492307692306
+        ],
+        "height": 43.47692307692308,
+        "alignment": "center"
+      }
     },
     {
       "fileBase": "lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-tracing",
@@ -370,7 +448,20 @@
           "driveId": null
         }
       ],
-      "state": "prepared"
+      "state": "public-verified",
+      "titlePlacement": {
+        "x": 157.49533373712904,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Tracing"
+        ],
+        "widths": [
+          280.28492307692306
+        ],
+        "height": 43.47692307692308,
+        "alignment": "center"
+      }
     },
     {
       "fileBase": "lv2_gpt_10200_1_en-children-trick-or-treating-tracing",
@@ -423,7 +514,20 @@
           "driveId": null
         }
       ],
-      "state": "prepared"
+      "state": "public-verified",
+      "titlePlacement": {
+        "x": 157.49533373712904,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Tracing"
+        ],
+        "widths": [
+          280.28492307692306
+        ],
+        "height": 43.47692307692308,
+        "alignment": "center"
+      }
     },
     {
       "fileBase": "lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-tracing",
@@ -476,7 +580,20 @@
           "driveId": null
         }
       ],
-      "state": "prepared"
+      "state": "public-verified",
+      "titlePlacement": {
+        "x": 157.49533373712904,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Tracing"
+        ],
+        "widths": [
+          280.28492307692306
+        ],
+        "height": 43.47692307692308,
+        "alignment": "center"
+      }
     },
     {
       "fileBase": "lv2_gpt_10201_1_en-owl-post-carrier-with-letter-and-lantern-tracing",
@@ -529,7 +646,20 @@
           "driveId": null
         }
       ],
-      "state": "prepared"
+      "state": "public-verified",
+      "titlePlacement": {
+        "x": 157.49533373712904,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Tracing"
+        ],
+        "widths": [
+          280.28492307692306
+        ],
+        "height": 43.47692307692308,
+        "alignment": "center"
+      }
     },
     {
       "fileBase": "lv2_gpt_10202_1_en-friendly-scarecrow-in-pumpkin-patch-tracing",
@@ -582,7 +712,20 @@
           "driveId": null
         }
       ],
-      "state": "prepared"
+      "state": "public-verified",
+      "titlePlacement": {
+        "x": 157.49533373712904,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Tracing"
+        ],
+        "widths": [
+          280.28492307692306
+        ],
+        "height": 43.47692307692308,
+        "alignment": "center"
+      }
     },
     {
       "fileBase": "lv2_gpt_10203_1_en-friendly-spider-on-decorative-web-tracing",
@@ -635,7 +778,20 @@
           "driveId": null
         }
       ],
-      "state": "prepared"
+      "state": "public-verified",
+      "titlePlacement": {
+        "x": 157.49533373712904,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Tracing"
+        ],
+        "widths": [
+          280.28492307692306
+        ],
+        "height": 43.47692307692308,
+        "alignment": "center"
+      }
     },
     {
       "fileBase": "lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-tracing",
@@ -688,7 +844,20 @@
           "driveId": null
         }
       ],
-      "state": "prepared"
+      "state": "public-verified",
+      "titlePlacement": {
+        "x": 157.49533373712904,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Tracing"
+        ],
+        "widths": [
+          280.28492307692306
+        ],
+        "height": 43.47692307692308,
+        "alignment": "center"
+      }
     },
     {
       "fileBase": "lv2_gpt_10205_1_en-friendly-vampire-with-bat-tracing",
@@ -741,7 +910,22 @@
           "driveId": null
         }
       ],
-      "state": "prepared"
+      "state": "public-verified",
+      "titlePlacement": {
+        "x": 22.67716535433071,
+        "top": 14.173228346456694,
+        "size": 34,
+        "lines": [
+          "VinMat",
+          "Tracing"
+        ],
+        "widths": [
+          123.70769230769231,
+          136.0366153846154
+        ],
+        "height": 85.26153846153846,
+        "alignment": "left"
+      }
     },
     {
       "fileBase": "lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-tracing",
@@ -794,7 +978,22 @@
           "driveId": null
         }
       ],
-      "state": "prepared"
+      "state": "public-verified",
+      "titlePlacement": {
+        "x": 428.5596559660812,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat",
+          "Tracing"
+        ],
+        "widths": [
+          130.98461538461538,
+          144.03876923076925
+        ],
+        "height": 90.27692307692308,
+        "alignment": "right"
+      }
     },
     {
       "fileBase": "lv2_gpt_10217_1_en-friendly-frankenstein-monster-tracing",
@@ -847,7 +1046,22 @@
           "driveId": null
         }
       ],
-      "state": "prepared"
+      "state": "public-verified",
+      "titlePlacement": {
+        "x": 22.67716535433071,
+        "top": 14.173228346456694,
+        "size": 32,
+        "lines": [
+          "VinMat",
+          "Tracing"
+        ],
+        "widths": [
+          116.43076923076924,
+          128.03446153846153
+        ],
+        "height": 80.24615384615385,
+        "alignment": "left"
+      }
     },
     {
       "fileBase": "lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-tracing",
@@ -900,7 +1114,20 @@
           "driveId": null
         }
       ],
-      "state": "prepared"
+      "state": "public-verified",
+      "titlePlacement": {
+        "x": 157.49533373712904,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Tracing"
+        ],
+        "widths": [
+          280.28492307692306
+        ],
+        "height": 43.47692307692308,
+        "alignment": "center"
+      }
     }
   ],
   "batches": [
@@ -908,31 +1135,43 @@
       "start": 0,
       "commit": "a2b9548f1ce29a0a2b4fbff9d756446df5a57b68",
       "driveReplaced": 6,
-      "visualQa": "passed"
+      "visualQa": "passed",
+      "verification": "passed"
     },
     {
       "start": 3,
       "commit": "66064454429a815b6a5ed18515670861424f3ab6",
       "driveReplaced": 6,
-      "visualQa": "passed"
+      "visualQa": "passed",
+      "verification": "passed"
     },
     {
       "start": 6,
       "commit": "0b373df1076f8820cef21bf99521417cb0612c29",
       "driveReplaced": 6,
-      "visualQa": "passed"
+      "visualQa": "passed",
+      "verification": "passed"
     },
     {
       "start": 9,
       "commit": "148141e44aa09e63c9a2ce3a55d4b40c1b149146",
       "driveReplaced": 6,
-      "visualQa": "passed"
+      "visualQa": "passed",
+      "verification": "passed"
     },
     {
       "start": 12,
       "commit": "ee816b9f8e50c76a932c9cb427166db4ffeeeac8",
       "driveReplaced": 6,
-      "visualQa": "passed"
+      "visualQa": "passed",
+      "verification": "passed"
+    },
+    {
+      "start": 15,
+      "commit": "f5738deb4a2274dd079801b3a73f4f0fe7d85f8f",
+      "driveReplaced": 4,
+      "visualQa": "passed",
+      "verification": "passed"
     }
   ],
   "checks": {
@@ -942,6 +1181,21 @@
     "qrCodes": 17,
     "localAssets": 119,
     "previewPairs": 34,
-    "localBuild": "passed"
+    "localBuild": "passed",
+    "titles": 17,
+    "result": "passed",
+    "items": 17,
+    "assets": 119,
+    "unbrandedPreviewPairs": 34,
+    "localizedPages": 68,
+    "localizedIndexes": 4,
+    "build": "success",
+    "pagesDeployment": "success",
+    "sourceCommit": "f5738deb4a2274dd079801b3a73f4f0fe7d85f8f",
+    "deployedCommit": "b87e659c0a587f368e29c75e9982596a7ab64f77",
+    "browserDownload": "SHA matches branded PNG",
+    "browserPreview": "unbranded B&W and sample",
+    "relatedActivities": "both directions passed",
+    "staticPrint": "branded PNG independent from preview"
   }
 }

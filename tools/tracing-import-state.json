@@ -20,7 +20,11 @@
     "pagesDeployment": "success",
     "nativeSheetFormatting": "verified",
     "unbrandedPreviewPairs": 34,
-    "tracingTypography": "approved vector lettering"
+    "tracingTypography": "approved vector lettering",
+    "updatedVisualQa": 17,
+    "titles": 17,
+    "publicCorrectionAssets": 119,
+    "pagesDeploymentCommit": "b87e659c0a587f368e29c75e9982596a7ab64f77"
   },
   "items": [
     {
