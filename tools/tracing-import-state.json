@@ -459,7 +459,8 @@
           "bytes": 59910,
           "sha": "d905095f32a2c7e0b2086980e7bc03d0bc73a9f8"
         }
-      ]
+      ],
+      "state": "published-to-github"
     },
     {
       "fileBase": "lv2_gpt_10200_1_en-children-trick-or-treating-tracing",
@@ -523,7 +524,8 @@
           "bytes": 98680,
           "sha": "27b45ddbae7e825f741f6f6b4113924a6515a1d3"
         }
-      ]
+      ],
+      "state": "published-to-github"
     },
     {
       "fileBase": "lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-tracing",
@@ -587,7 +589,8 @@
           "bytes": 52954,
           "sha": "3db57a2ffa2902d46d6bacc7ed96ff221e168268"
         }
-      ]
+      ],
+      "state": "published-to-github"
     },
     {
       "fileBase": "lv2_gpt_10201_1_en-owl-post-carrier-with-letter-and-lantern-tracing",
@@ -1102,5 +1105,5 @@
       ]
     }
   ],
-  "publishedCount": 6
+  "publishedCount": 9
 }
