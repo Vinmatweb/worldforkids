@@ -795,6 +795,112 @@
         }
       ],
       "state": "prepared"
+    },
+    {
+      "fileBase": "lv2_gpt_10217_1_en-friendly-frankenstein-monster-tracing",
+      "motifId": "10217",
+      "sourceId": "1ZG0eMnZdSqpp9KzMWnGwPBv-Nv5zLaZ0",
+      "sampleSourceId": "1lyId3r5nQBXzoxUGDSpvUm6LQYRrWQK-",
+      "previewBase": "/worldforkids/public/obtahovacky/en/lv2_gpt_10217_1_en-friendly-frankenstein-monster-tracing-coloring-preview",
+      "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10217_1_en-friendly-frankenstein-monster-coloring-page-sample-preview",
+      "files": [
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10217_1_en-friendly-frankenstein-monster-tracing-coloring.png",
+          "bytes": 797445,
+          "sha": "c73acf2ecf295bfc3fdeed0f4a0279d6b38e69b2",
+          "driveId": "1lldIWfSuRABB9UCrrXKQZkuu_L6CSlBy"
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10217_1_en-friendly-frankenstein-monster-tracing-coloring.pdf",
+          "bytes": 1137837,
+          "sha": "c54cb51ce0df366c852f7c64587859dc6fc2bb03",
+          "driveId": "1NoXppKREvTjdOiksDXUb0KMGkuayj9PQ"
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10217_1_en-friendly-frankenstein-monster-tracing-coloring.webp",
+          "bytes": 87010,
+          "sha": "0d0fbe31fb755d527779aeeac562fd1acfb04ace",
+          "driveId": null
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10217_1_en-friendly-frankenstein-monster-tracing-coloring-preview.png",
+          "bytes": 1140637,
+          "sha": "31d6bc518d22f2daabde9a82e3da3d0e598c2be7",
+          "driveId": null
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10217_1_en-friendly-frankenstein-monster-tracing-coloring-preview.webp",
+          "bytes": 87010,
+          "sha": "0d0fbe31fb755d527779aeeac562fd1acfb04ace",
+          "driveId": null
+        },
+        {
+          "path": "public/omalovanky/en/lv2_gpt_10217_1_en-friendly-frankenstein-monster-coloring-page-sample-preview.png",
+          "bytes": 1801723,
+          "sha": "eb2c183704788fb2978f02651072d10d248d3be3",
+          "driveId": null
+        },
+        {
+          "path": "public/omalovanky/en/lv2_gpt_10217_1_en-friendly-frankenstein-monster-coloring-page-sample-preview.webp",
+          "bytes": 211448,
+          "sha": "34d55e4944a2560c25f23288eeded015c8c77d48",
+          "driveId": null
+        }
+      ],
+      "state": "prepared"
+    },
+    {
+      "fileBase": "lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-tracing",
+      "motifId": "10220",
+      "sourceId": "1c1HFY5pLpyWyAjEiMSzpOE7zmuwxVC5L",
+      "sampleSourceId": "1vpf6KgL_ZpVcP8lGE0nyD6_rt9BYsIuP",
+      "previewBase": "/worldforkids/public/obtahovacky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-tracing-coloring-preview",
+      "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-sample-preview",
+      "files": [
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-tracing-coloring.png",
+          "bytes": 1109078,
+          "sha": "ec48bc6f15461d97b47a8d72e466e7f95375639e",
+          "driveId": "1o_SH1YZHuZveeB9uAPvOjt2v7fmI5Rc6"
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-tracing-coloring.pdf",
+          "bytes": 1516952,
+          "sha": "9d4629325e5d5f0abb0598eead429e5dffb1b87d",
+          "driveId": "1jWzp5vapsjr-r1waiA_F_acrX8YX-aMQ"
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-tracing-coloring.webp",
+          "bytes": 141492,
+          "sha": "1c7b4b4d5f7db54816f4d7593f3a1d805bb3bd7a",
+          "driveId": null
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-tracing-coloring-preview.png",
+          "bytes": 1237470,
+          "sha": "e2704c4393c9d21e8e7a02292a1cf2d80b3c2a65",
+          "driveId": null
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-tracing-coloring-preview.webp",
+          "bytes": 141492,
+          "sha": "1c7b4b4d5f7db54816f4d7593f3a1d805bb3bd7a",
+          "driveId": null
+        },
+        {
+          "path": "public/omalovanky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-sample-preview.png",
+          "bytes": 1756534,
+          "sha": "a6aff84d625ab387fe3368577c025da59b5a06ce",
+          "driveId": null
+        },
+        {
+          "path": "public/omalovanky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-sample-preview.webp",
+          "bytes": 254906,
+          "sha": "64b7fb6fa4efab1a13f0782d338080f3214318ee",
+          "driveId": null
+        }
+      ],
+      "state": "prepared"
     }
   ],
   "batches": [
@@ -821,6 +927,21 @@
       "commit": "148141e44aa09e63c9a2ce3a55d4b40c1b149146",
       "driveReplaced": 6,
       "visualQa": "passed"
+    },
+    {
+      "start": 12,
+      "commit": "ee816b9f8e50c76a932c9cb427166db4ffeeeac8",
+      "driveReplaced": 6,
+      "visualQa": "passed"
     }
-  ]
+  ],
+  "checks": {
+    "driveFilesVerified": 34,
+    "originalSourcesPreserved": 17,
+    "visualQa": 17,
+    "qrCodes": 17,
+    "localAssets": 119,
+    "previewPairs": 34,
+    "localBuild": "passed"
+  }
 }

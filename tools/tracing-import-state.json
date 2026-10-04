@@ -18,7 +18,9 @@
     "multiVariantMotif": "passed",
     "build": "success",
     "pagesDeployment": "success",
-    "nativeSheetFormatting": "verified"
+    "nativeSheetFormatting": "verified",
+    "unbrandedPreviewPairs": 34,
+    "tracingTypography": "approved vector lettering"
   },
   "items": [
     {
@@ -60,28 +62,30 @@
         "drivePdfTracing": "https://drive.google.com/file/d/1WPcO5p2DuOVSHCszBWD7wtdj9n9fA4r0/view",
         "drivePdfSample": "https://drive.google.com/file/d/1uWFZ6OV2lIKvYTV40VKXqOwdYdJf3JnD/view?usp=drivesdk",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-sample",
-        "Status": "publikováno"
+        "Status": "publikováno",
+        "previewBase": "/worldforkids/public/obtahovacky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-tracing-coloring-preview",
+        "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-sample-preview"
       },
       "files": [
         {
           "path": "public/obtahovacky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-tracing-coloring.png",
           "ext": "png",
           "driveId": "1qQIsug5QoTojVOhSNPvs6h77nkeWXmAP",
-          "bytes": 1004192,
-          "sha": "77dc908ededfb2f0a5f6d231e567c52c45250d9a"
+          "bytes": 1005600,
+          "sha": "fa8d1334643631aa753d914929304b1cee14c4b5"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-tracing-coloring.pdf",
           "ext": "pdf",
           "driveId": "1WPcO5p2DuOVSHCszBWD7wtdj9n9fA4r0",
-          "bytes": 1394806,
-          "sha": "1f97252dadb0c6a143d34eb9e90b53c2ff03bb63"
+          "bytes": 1411714,
+          "sha": "db7be434deaacff982a16d5bf710807e7ff5661c"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-tracing-coloring.webp",
           "ext": "webp",
-          "bytes": 46496,
-          "sha": "63e92a7f74173713e2cddb360e30cb00f36d76f4"
+          "bytes": 51420,
+          "sha": "80027513799ecc26581fafa9f519e2e8b1c40f76"
         }
       ],
       "state": "public-verified"
@@ -125,28 +129,30 @@
         "drivePdfTracing": "https://drive.google.com/file/d/135HqR1oU-ida0W1nuwiK0Dcmhew4Tiyo/view",
         "drivePdfSample": "https://drive.google.com/file/d/1JYflR_3vcNgRuywinsajQtW2Cu2lP6lQ/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10188_1_en-friendly-ghost-in-front-of-haunted-house-coloring-page-sample",
-        "Status": "publikováno"
+        "Status": "publikováno",
+        "previewBase": "/worldforkids/public/obtahovacky/en/lv2_gpt_10188_1_en-friendly-ghost-in-front-of-haunted-house-tracing-coloring-preview",
+        "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10188_1_en-friendly-ghost-in-front-of-haunted-house-coloring-page-sample-preview"
       },
       "files": [
         {
           "path": "public/obtahovacky/en/lv2_gpt_10188_1_en-friendly-ghost-in-front-of-haunted-house-tracing-coloring.png",
           "ext": "png",
           "driveId": "1mnPGvnOVaQCTkf_FcA7rIqxn9ZNe12x4",
-          "bytes": 779995,
-          "sha": "44170662537001f506f799baf2005abcb606a913"
+          "bytes": 776122,
+          "sha": "f0f042cf75e68176de4bf904d5db5541259e2533"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10188_1_en-friendly-ghost-in-front-of-haunted-house-tracing-coloring.pdf",
           "ext": "pdf",
           "driveId": "135HqR1oU-ida0W1nuwiK0Dcmhew4Tiyo",
-          "bytes": 1094934,
-          "sha": "1f81389f93d67f778e4418072f2ea76c5a798578"
+          "bytes": 1111816,
+          "sha": "09e4e025648b51827ca796096d9d1913c7f6e87d"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10188_1_en-friendly-ghost-in-front-of-haunted-house-tracing-coloring.webp",
           "ext": "webp",
-          "bytes": 57162,
-          "sha": "fbd17b4a1e8ae71fc65dc8ecba4ea02da9c5002e"
+          "bytes": 74218,
+          "sha": "9c4c004651777136d8ac62cf4f40603c3c09dfe1"
         }
       ],
       "state": "public-verified"
@@ -190,28 +196,30 @@
         "drivePdfTracing": "https://drive.google.com/file/d/1WKZaRmXyZoWCTvfjIdCEVWQgntpvxDSU/view",
         "drivePdfSample": "https://drive.google.com/file/d/1aFiEHo-rxiGjlsPRupKOFDzBsWeVfcnX/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10189_1_en-cat-sitting-on-pumpkin-coloring-page-sample",
-        "Status": "publikováno"
+        "Status": "publikováno",
+        "previewBase": "/worldforkids/public/obtahovacky/en/lv2_gpt_10189_1_en-cat-sitting-on-pumpkin-tracing-coloring-preview",
+        "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10189_1_en-cat-sitting-on-pumpkin-coloring-page-sample-preview"
       },
       "files": [
         {
           "path": "public/obtahovacky/en/lv2_gpt_10189_1_en-cat-sitting-on-pumpkin-tracing-coloring.png",
           "ext": "png",
           "driveId": "1BIp_rfmDTxcBtees_ozgSACwoUhXOLmK",
-          "bytes": 685929,
-          "sha": "783d90d0bff213364d473f6e04e80d093bd450f1"
+          "bytes": 685236,
+          "sha": "dcc549a943aa674a18f4ed7ea663ab5a6666e4bf"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10189_1_en-cat-sitting-on-pumpkin-tracing-coloring.pdf",
           "ext": "pdf",
           "driveId": "1WKZaRmXyZoWCTvfjIdCEVWQgntpvxDSU",
-          "bytes": 991091,
-          "sha": "8e993d23587315bddd0a0d4387e1f10c4d7724b1"
+          "bytes": 1008001,
+          "sha": "7ba011332e7a22ca86abcba7289c1c1a2f429480"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10189_1_en-cat-sitting-on-pumpkin-tracing-coloring.webp",
           "ext": "webp",
-          "bytes": 39854,
-          "sha": "c32d694a896e6f9bbc0f13365e9b4d64ae8f8754"
+          "bytes": 52012,
+          "sha": "932c5258faac8659e1e6d2ac967418dabbb48e2c"
         }
       ],
       "state": "public-verified"
@@ -255,28 +263,30 @@
         "drivePdfTracing": "https://drive.google.com/file/d/1j94v7tNw4m8UkvCZPwCsznJgIAmTZPcU/view",
         "drivePdfSample": "https://drive.google.com/file/d/1SacdUIyp-ZnhC5JAGkBLZYkNI5PVEvUR/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10190_1_en-witch-with-broom-and-moon-coloring-page-sample",
-        "Status": "publikováno"
+        "Status": "publikováno",
+        "previewBase": "/worldforkids/public/obtahovacky/en/lv2_gpt_10190_1_en-witch-with-broom-and-moon-tracing-coloring-preview",
+        "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10190_1_en-witch-with-broom-and-moon-coloring-page-sample-preview"
       },
       "files": [
         {
           "path": "public/obtahovacky/en/lv2_gpt_10190_1_en-witch-with-broom-and-moon-tracing-coloring.png",
           "ext": "png",
           "driveId": "1OP_dT2ly1iIFHYJbORyRS7woa_CWETz9",
-          "bytes": 733505,
-          "sha": "fa4c46c5d6001158e5e9eefae0a795af8ca2ed95"
+          "bytes": 733155,
+          "sha": "88fce47a6425b120708e6d73fa28c95a075f1268"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10190_1_en-witch-with-broom-and-moon-tracing-coloring.pdf",
           "ext": "pdf",
           "driveId": "1j94v7tNw4m8UkvCZPwCsznJgIAmTZPcU",
-          "bytes": 1009079,
-          "sha": "25162cb38faf089c8686b948aad6d0128c3dc20d"
+          "bytes": 1025985,
+          "sha": "e992f7b77cfc82e169c47d14e385ac6e9cb7b323"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10190_1_en-witch-with-broom-and-moon-tracing-coloring.webp",
           "ext": "webp",
-          "bytes": 50798,
-          "sha": "ca453ad9f74398116ef21aeb670133121b7e1b2a"
+          "bytes": 65878,
+          "sha": "4f430807de71949e67fb6b93041e3fee447d21d6"
         }
       ],
       "state": "public-verified"
@@ -320,28 +330,30 @@
         "drivePdfTracing": "https://drive.google.com/file/d/1e36aaw51DYICb03YfswQ6yCY9fRLwiYJ/view",
         "drivePdfSample": "https://drive.google.com/file/d/1eavf2td0yWa0kgXdANiQ-2K38sa0tQUx/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample",
-        "Status": "publikováno"
+        "Status": "publikováno",
+        "previewBase": "/worldforkids/public/obtahovacky/en/lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-tracing-coloring-preview",
+        "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample-preview"
       },
       "files": [
         {
           "path": "public/obtahovacky/en/lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-tracing-coloring.png",
           "ext": "png",
           "driveId": "16sMyIaUvo7rSUf9EYg7bqcR2Fm5BRrAo",
-          "bytes": 1073228,
-          "sha": "b591d73468b0526a3ba8eb3de696a794c13e80f3"
+          "bytes": 1074539,
+          "sha": "836d8688fe590c40e741bda34a6f9da28115e9fd"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-tracing-coloring.pdf",
           "ext": "pdf",
           "driveId": "1e36aaw51DYICb03YfswQ6yCY9fRLwiYJ",
-          "bytes": 1512633,
-          "sha": "943a83f807d8018977a9c8d9d497fb9d166733f1"
+          "bytes": 1529538,
+          "sha": "47bedcda82556f6cea70c4cc55156284b8e439ed"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-tracing-coloring.webp",
           "ext": "webp",
-          "bytes": 56696,
-          "sha": "048d4c40b16a13810980032d50ab34724f7835b8"
+          "bytes": 67674,
+          "sha": "f79505d292946e5df70c2428148c106521dab813"
         }
       ],
       "state": "public-verified"
@@ -385,28 +397,30 @@
         "drivePdfTracing": "https://drive.google.com/file/d/18DrKj6lZzUUQx-X0tCrdprquqErnxR-s/view",
         "drivePdfSample": "https://drive.google.com/file/d/1ymomPb94Gy6tpHc8s1DzHgvOeHFKK2ag/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample",
-        "Status": "publikováno"
+        "Status": "publikováno",
+        "previewBase": "/worldforkids/public/obtahovacky/en/lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-tracing-coloring-preview",
+        "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample-preview"
       },
       "files": [
         {
           "path": "public/obtahovacky/en/lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-tracing-coloring.png",
           "ext": "png",
           "driveId": "13ueuAMtVSfSxxFVSwP18-pRdkKSOmHgM",
-          "bytes": 926953,
-          "sha": "46f5edb08d0f0065b776987b9d66e6b151d6d789"
+          "bytes": 928084,
+          "sha": "e1899a2e70e2dbde435cbf83fc7231bb2e88d236"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-tracing-coloring.pdf",
           "ext": "pdf",
           "driveId": "18DrKj6lZzUUQx-X0tCrdprquqErnxR-s",
-          "bytes": 1302368,
-          "sha": "fa1db4ceb5e3bbc960832655367d00cae43da81e"
+          "bytes": 1319274,
+          "sha": "0f42945f95e2c88c892c8bdb528bc1b46eb8e7cd"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-tracing-coloring.webp",
           "ext": "webp",
-          "bytes": 42988,
-          "sha": "84613f2c7311ac9e326a94cf72459369c4461e3b"
+          "bytes": 49414,
+          "sha": "486dad9236718c4cfaa68ff62419b31ac5a7688c"
         }
       ],
       "state": "public-verified"
@@ -450,28 +464,30 @@
         "drivePdfTracing": "https://drive.google.com/file/d/1VrQXHyPcHHikXBQjm0SuO9JZ9qJd6tBI/view",
         "drivePdfSample": "https://drive.google.com/file/d/1-f-CZAdClBtpgAxntFo7hIGkzQrDvaC6/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-sample",
-        "Status": "publikováno"
+        "Status": "publikováno",
+        "previewBase": "/worldforkids/public/obtahovacky/en/lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-tracing-coloring-preview",
+        "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-sample-preview"
       },
       "files": [
         {
           "path": "public/obtahovacky/en/lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-tracing-coloring.png",
           "ext": "png",
           "driveId": "1Wg1l_-HYyamzxgXJ1yatk74d6VZBLJb5",
-          "bytes": 996461,
-          "sha": "9accdafb6802747fcfc26e48139dfe97dacbc5f6"
+          "bytes": 997438,
+          "sha": "a800bb03b1c0427611a2ce17556d1c70128890ce"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-tracing-coloring.pdf",
           "ext": "pdf",
           "driveId": "1VrQXHyPcHHikXBQjm0SuO9JZ9qJd6tBI",
-          "bytes": 1392241,
-          "sha": "6d16f9292ef4c1d8d6c8da7ddbfd07cc3e6baebc"
+          "bytes": 1409147,
+          "sha": "f59634444086951f84f51622e5ab5ad041597909"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-tracing-coloring.webp",
           "ext": "webp",
-          "bytes": 59910,
-          "sha": "d905095f32a2c7e0b2086980e7bc03d0bc73a9f8"
+          "bytes": 71272,
+          "sha": "6646597e6cae2812b0d4900b7f15b45e9b3acd2e"
         }
       ],
       "state": "public-verified"
@@ -515,28 +531,30 @@
         "drivePdfTracing": "https://drive.google.com/file/d/1yuiATEvz21I0akk8upXMJDX8BYIdI_00/view",
         "drivePdfSample": "https://drive.google.com/file/d/1cjamd8Ex2dAWeqBgFLPpce8z1qi0RRdz/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10200_1_en-children-trick-or-treating-coloring-page-sample",
-        "Status": "publikováno"
+        "Status": "publikováno",
+        "previewBase": "/worldforkids/public/obtahovacky/en/lv2_gpt_10200_1_en-children-trick-or-treating-tracing-coloring-preview",
+        "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10200_1_en-children-trick-or-treating-coloring-page-sample-preview"
       },
       "files": [
         {
           "path": "public/obtahovacky/en/lv2_gpt_10200_1_en-children-trick-or-treating-tracing-coloring.png",
           "ext": "png",
           "driveId": "1SD3884PX2R5vlRGuICObwGBPHA6K4VRc",
-          "bytes": 1172784,
-          "sha": "1b4d57dd1da12f3f2da43fd3dac8df84036fb9f2"
+          "bytes": 1173023,
+          "sha": "ab9603f590f2d1efe8d19f9d23d9f72b6971c706"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10200_1_en-children-trick-or-treating-tracing-coloring.pdf",
           "ext": "pdf",
           "driveId": "1yuiATEvz21I0akk8upXMJDX8BYIdI_00",
-          "bytes": 1503327,
-          "sha": "809edb74f90cc446328218fe46c756c812361b89"
+          "bytes": 1520236,
+          "sha": "6836b8c654043c91eff959b79afc3e05bd7865b6"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10200_1_en-children-trick-or-treating-tracing-coloring.webp",
           "ext": "webp",
-          "bytes": 98680,
-          "sha": "27b45ddbae7e825f741f6f6b4113924a6515a1d3"
+          "bytes": 127994,
+          "sha": "d30b9a9248b953624fa0079760689f8955d7a6df"
         }
       ],
       "state": "public-verified"
@@ -580,28 +598,30 @@
         "drivePdfTracing": "https://drive.google.com/file/d/1hl2CK6A30s8WmzWJxnJEhXWJACaizf9u/view",
         "drivePdfSample": "https://drive.google.com/file/d/1e-h1RY0KuvOrE-Zmx6DTUgLnzbZ7S6oV/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-sample",
-        "Status": "publikováno"
+        "Status": "publikováno",
+        "previewBase": "/worldforkids/public/obtahovacky/en/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-tracing-coloring-preview",
+        "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-sample-preview"
       },
       "files": [
         {
           "path": "public/obtahovacky/en/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-tracing-coloring.png",
           "ext": "png",
           "driveId": "1k4YBzUR1mE7SGk10b7pCdR9Dah3E8-Md",
-          "bytes": 1005089,
-          "sha": "5a0a2360597e3b2ec0d80ecbe2963d227a2722c7"
+          "bytes": 1006066,
+          "sha": "f69d67ed2977a16e2ba5baff265d3f71a5b0d4c2"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-tracing-coloring.pdf",
           "ext": "pdf",
           "driveId": "1hl2CK6A30s8WmzWJxnJEhXWJACaizf9u",
-          "bytes": 1355665,
-          "sha": "d2005504a0228b60e9bb505f048a573b8ba71237"
+          "bytes": 1372570,
+          "sha": "81a3e8499fa8312d1527815e4bfe693da58d57e9"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-tracing-coloring.webp",
           "ext": "webp",
-          "bytes": 52954,
-          "sha": "3db57a2ffa2902d46d6bacc7ed96ff221e168268"
+          "bytes": 63604,
+          "sha": "2890c4b8c823f14fde9428dfc15a4770bdc325cd"
         }
       ],
       "state": "public-verified"
@@ -645,28 +665,30 @@
         "drivePdfTracing": "https://drive.google.com/file/d/13k6dH4UoBF3at7iHkBLZEEejn4LEjX9J/view",
         "drivePdfSample": "https://drive.google.com/file/d/1bCgGZxaRKvV_3y1Dz_jwKeYu7HcBObsa/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10201_1_en-owl-post-carrier-with-letter-and-lantern-coloring-page-sample",
-        "Status": "publikováno"
+        "Status": "publikováno",
+        "previewBase": "/worldforkids/public/obtahovacky/en/lv2_gpt_10201_1_en-owl-post-carrier-with-letter-and-lantern-tracing-coloring-preview",
+        "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10201_1_en-owl-post-carrier-with-letter-and-lantern-coloring-page-sample-preview"
       },
       "files": [
         {
           "path": "public/obtahovacky/en/lv2_gpt_10201_1_en-owl-post-carrier-with-letter-and-lantern-tracing-coloring.png",
           "ext": "png",
           "driveId": "123_DToQEAkoKCBxm4Sts53cS4jBI9DLY",
-          "bytes": 1096934,
-          "sha": "9b8f8ee0264fb64c12cddaa9b67d9adc009d5b1d"
+          "bytes": 1098551,
+          "sha": "d609735103973f3c4064516b5c3a42db95a7c305"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10201_1_en-owl-post-carrier-with-letter-and-lantern-tracing-coloring.pdf",
           "ext": "pdf",
           "driveId": "13k6dH4UoBF3at7iHkBLZEEejn4LEjX9J",
-          "bytes": 1540430,
-          "sha": "ba4e2afb1455d1abee51c3c2a417d16e9337fb86"
+          "bytes": 1557337,
+          "sha": "51f43b6cd426d632ba99622bde1b1c1dc63428f2"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10201_1_en-owl-post-carrier-with-letter-and-lantern-tracing-coloring.webp",
           "ext": "webp",
-          "bytes": 59262,
-          "sha": "56379bd488760cac67eb01716da3688fec688f82"
+          "bytes": 72004,
+          "sha": "2adbca24ad129712c8df15f1acbca691efe608f4"
         }
       ],
       "state": "public-verified"
@@ -710,28 +732,30 @@
         "drivePdfTracing": "https://drive.google.com/file/d/1Gi-z25QQAvRE1ZXEYzaoyrxPRQlRCU0Z/view",
         "drivePdfSample": "https://drive.google.com/file/d/1g9kbhKjx0of1jFB1q2OonI4Gr1lhuzAC/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10202_1_en-friendly-scarecrow-in-pumpkin-patch-coloring-page-sample",
-        "Status": "publikováno"
+        "Status": "publikováno",
+        "previewBase": "/worldforkids/public/obtahovacky/en/lv2_gpt_10202_1_en-friendly-scarecrow-in-pumpkin-patch-tracing-coloring-preview",
+        "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10202_1_en-friendly-scarecrow-in-pumpkin-patch-coloring-page-sample-preview"
       },
       "files": [
         {
           "path": "public/obtahovacky/en/lv2_gpt_10202_1_en-friendly-scarecrow-in-pumpkin-patch-tracing-coloring.png",
           "ext": "png",
           "driveId": "1oxGWLhnnS1TvtpvM6jttKZyAsWL8pTvG",
-          "bytes": 989703,
-          "sha": "5f1fc6be21afca380ba758a04b646b36a24bd2ac"
+          "bytes": 989119,
+          "sha": "ebc408ec842f70e5446197b6ce4b8fb4d00e8654"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10202_1_en-friendly-scarecrow-in-pumpkin-patch-tracing-coloring.pdf",
           "ext": "pdf",
           "driveId": "1Gi-z25QQAvRE1ZXEYzaoyrxPRQlRCU0Z",
-          "bytes": 1350126,
-          "sha": "bd12c1419b7b7f9ed416805889e0ae64a6ef2f6e"
+          "bytes": 1367034,
+          "sha": "12d27aa932427cf8fbba540904ab75535ce2b17d"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10202_1_en-friendly-scarecrow-in-pumpkin-patch-tracing-coloring.webp",
           "ext": "webp",
-          "bytes": 82476,
-          "sha": "1833a8f8d08001bd330035694f529517c7cf11c2"
+          "bytes": 112518,
+          "sha": "427a815e6aca5aa6c22272767c57667977423be1"
         }
       ],
       "state": "public-verified"
@@ -775,28 +799,30 @@
         "drivePdfTracing": "https://drive.google.com/file/d/1qmn59I8TrcY5sptOQ9qrkqXDTysLdYbg/view",
         "drivePdfSample": "https://drive.google.com/file/d/1NSKsBIee24qbdMbSqHvKEDf9lJdyGa2E/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10203_1_en-friendly-spider-on-decorative-web-coloring-page-sample",
-        "Status": "publikováno"
+        "Status": "publikováno",
+        "previewBase": "/worldforkids/public/obtahovacky/en/lv2_gpt_10203_1_en-friendly-spider-on-decorative-web-tracing-coloring-preview",
+        "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10203_1_en-friendly-spider-on-decorative-web-coloring-page-sample-preview"
       },
       "files": [
         {
           "path": "public/obtahovacky/en/lv2_gpt_10203_1_en-friendly-spider-on-decorative-web-tracing-coloring.png",
           "ext": "png",
           "driveId": "193bgH3vrnzWkLTv1InlMnTZaYTUKkoez",
-          "bytes": 963849,
-          "sha": "ceb22409180f387c51738e318073b1ad07620e72"
+          "bytes": 965448,
+          "sha": "a9adcde4b1ecb8868b9192c8ce1e0a1899973471"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10203_1_en-friendly-spider-on-decorative-web-tracing-coloring.pdf",
           "ext": "pdf",
           "driveId": "1qmn59I8TrcY5sptOQ9qrkqXDTysLdYbg",
-          "bytes": 1311784,
-          "sha": "624ea4ad50f4002e37e137500620c4a030e943f9"
+          "bytes": 1328691,
+          "sha": "61bf9194d40327ceac4c47cc5076dd3936e20af2"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10203_1_en-friendly-spider-on-decorative-web-tracing-coloring.webp",
           "ext": "webp",
-          "bytes": 46964,
-          "sha": "b2bbb38a44a7e07efe19018fc4d46079158f78e3"
+          "bytes": 54406,
+          "sha": "18adea90185c890ecce70910a3caf947c72a161c"
         }
       ],
       "state": "public-verified"
@@ -840,28 +866,30 @@
         "drivePdfTracing": "https://drive.google.com/file/d/1-JoPm3S08DwaSIZMu-qLvXyS_wvet4mP/view",
         "drivePdfSample": "https://drive.google.com/file/d/1jeRhl7aTO6meMZunMAoJi_gn1y300vpG/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-coloring-page-sample",
-        "Status": "publikováno"
+        "Status": "publikováno",
+        "previewBase": "/worldforkids/public/obtahovacky/en/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-tracing-coloring-preview",
+        "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-coloring-page-sample-preview"
       },
       "files": [
         {
           "path": "public/obtahovacky/en/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-tracing-coloring.png",
           "ext": "png",
           "driveId": "1GaGhfgWq_fm9KOxw-vXVu1DU--I4zQGn",
-          "bytes": 1133166,
-          "sha": "c2184a459245de76163c3e962ea3aa99d3079561"
+          "bytes": 1134738,
+          "sha": "325a09054c22980bdb8be58b0adbbf5f8f2e3959"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-tracing-coloring.pdf",
           "ext": "pdf",
           "driveId": "1-JoPm3S08DwaSIZMu-qLvXyS_wvet4mP",
-          "bytes": 1585055,
-          "sha": "61dfd1b3842e2686570eb4ae7a3f9ef50d6d3046"
+          "bytes": 1601964,
+          "sha": "b1cf577eb55c1a252efabcdd9d95fc17eab1d270"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-tracing-coloring.webp",
           "ext": "webp",
-          "bytes": 60396,
-          "sha": "5cd18f9bee20b1dfe3a4052fb8b0e7296f85f633"
+          "bytes": 74362,
+          "sha": "f0a0fb70c58b96e4a233fb93c27609ff66c49e6a"
         }
       ],
       "state": "public-verified"
@@ -905,28 +933,30 @@
         "drivePdfTracing": "https://drive.google.com/file/d/1XQcmSNMCpi_daUWmoGghuDfD7rqzdLx4/view",
         "drivePdfSample": "https://drive.google.com/file/d/1rvlQ4-8zojBii5WcgvF5bHb7oE-z36ch/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10205_1_en-friendly-vampire-with-bat-coloring-page-sample",
-        "Status": "publikováno"
+        "Status": "publikováno",
+        "previewBase": "/worldforkids/public/obtahovacky/en/lv2_gpt_10205_1_en-friendly-vampire-with-bat-tracing-coloring-preview",
+        "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10205_1_en-friendly-vampire-with-bat-coloring-page-sample-preview"
       },
       "files": [
         {
           "path": "public/obtahovacky/en/lv2_gpt_10205_1_en-friendly-vampire-with-bat-tracing-coloring.png",
           "ext": "png",
           "driveId": "1GMHnFM432M3b9vuMDcxt--JCl3eZlDpw",
-          "bytes": 1045978,
-          "sha": "69269e36d8cf015a42367cd789a8026adb5b897a"
+          "bytes": 1062179,
+          "sha": "9d58870945c0478b6a66ff087ffa20ed057dc32f"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10205_1_en-friendly-vampire-with-bat-tracing-coloring.pdf",
           "ext": "pdf",
           "driveId": "1XQcmSNMCpi_daUWmoGghuDfD7rqzdLx4",
-          "bytes": 1448466,
-          "sha": "8c78079d7a836dea21ac880817f6309cebd00ad5"
+          "bytes": 1490554,
+          "sha": "1452ccd77e34022424254e3e47334559a1d51031"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10205_1_en-friendly-vampire-with-bat-tracing-coloring.webp",
           "ext": "webp",
-          "bytes": 63100,
-          "sha": "e9ce37ef1f386ddb54d798125ea6648cc147c391"
+          "bytes": 91648,
+          "sha": "d3ae2f04c68301ca389c5bc669de771608dc3200"
         }
       ],
       "state": "public-verified"
@@ -970,28 +1000,30 @@
         "drivePdfTracing": "https://drive.google.com/file/d/1w5MV68_RafbRbYXE3vn8amPJlnmsJCqQ/view",
         "drivePdfSample": "https://drive.google.com/file/d/1Q_ZuOo9OgnsJduOUo-GhpDBKjH8vg_8U/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-coloring-page-sample",
-        "Status": "publikováno"
+        "Status": "publikováno",
+        "previewBase": "/worldforkids/public/obtahovacky/en/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-tracing-coloring-preview",
+        "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-coloring-page-sample-preview"
       },
       "files": [
         {
           "path": "public/obtahovacky/en/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-tracing-coloring.png",
           "ext": "png",
           "driveId": "1dLVpH4L5N_lslJI2hC5NroWronEJT1aM",
-          "bytes": 1158055,
-          "sha": "a67c1757b43b2d10a22a4b61ec0473a27394ff1b"
+          "bytes": 1160510,
+          "sha": "67a518c25498e197f8fd87ce4823d8ece8a82c2e"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-tracing-coloring.pdf",
           "ext": "pdf",
           "driveId": "1w5MV68_RafbRbYXE3vn8amPJlnmsJCqQ",
-          "bytes": 1569119,
-          "sha": "1b998c50d176834039e275683a318385f491f9c6"
+          "bytes": 1585647,
+          "sha": "8e83f27c0cbd9335d578873c738404f527b922a3"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-tracing-coloring.webp",
           "ext": "webp",
-          "bytes": 73890,
-          "sha": "534d1a3b7b88378df629322500bb9c69fc628e5b"
+          "bytes": 97864,
+          "sha": "0796cd3b630da0ed15b88932e3290376e0702c30"
         }
       ],
       "state": "public-verified"
@@ -1035,28 +1067,30 @@
         "drivePdfTracing": "https://drive.google.com/file/d/1NoXppKREvTjdOiksDXUb0KMGkuayj9PQ/view",
         "drivePdfSample": "https://drive.google.com/file/d/1zSDuI_ed6o9dQxoK7bcXEmk3LXngifIf/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10217_1_en-friendly-frankenstein-monster-coloring-page-sample",
-        "Status": "publikováno"
+        "Status": "publikováno",
+        "previewBase": "/worldforkids/public/obtahovacky/en/lv2_gpt_10217_1_en-friendly-frankenstein-monster-tracing-coloring-preview",
+        "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10217_1_en-friendly-frankenstein-monster-coloring-page-sample-preview"
       },
       "files": [
         {
           "path": "public/obtahovacky/en/lv2_gpt_10217_1_en-friendly-frankenstein-monster-tracing-coloring.png",
           "ext": "png",
           "driveId": "1lldIWfSuRABB9UCrrXKQZkuu_L6CSlBy",
-          "bytes": 782608,
-          "sha": "0347641b13d317ffedd79390b08aaabf35da1830"
+          "bytes": 797445,
+          "sha": "c73acf2ecf295bfc3fdeed0f4a0279d6b38e69b2"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10217_1_en-friendly-frankenstein-monster-tracing-coloring.pdf",
           "ext": "pdf",
           "driveId": "1NoXppKREvTjdOiksDXUb0KMGkuayj9PQ",
-          "bytes": 1095748,
-          "sha": "4e07bb135111cd15e1f778d2fffab55443b2795f"
+          "bytes": 1137837,
+          "sha": "c54cb51ce0df366c852f7c64587859dc6fc2bb03"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10217_1_en-friendly-frankenstein-monster-tracing-coloring.webp",
           "ext": "webp",
-          "bytes": 61438,
-          "sha": "4e396e0fff4c8593cd859f6c17196869c8c63b57"
+          "bytes": 87010,
+          "sha": "0d0fbe31fb755d527779aeeac562fd1acfb04ace"
         }
       ],
       "state": "public-verified"
@@ -1100,28 +1134,30 @@
         "drivePdfTracing": "https://drive.google.com/file/d/1jWzp5vapsjr-r1waiA_F_acrX8YX-aMQ/view",
         "drivePdfSample": "https://drive.google.com/file/d/1X_ME513plZIGcEeT2iuEK1TW9hr17ODt/view",
         "sampleBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-sample",
-        "Status": "publikováno"
+        "Status": "publikováno",
+        "previewBase": "/worldforkids/public/obtahovacky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-tracing-coloring-preview",
+        "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-sample-preview"
       },
       "files": [
         {
           "path": "public/obtahovacky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-tracing-coloring.png",
           "ext": "png",
           "driveId": "1o_SH1YZHuZveeB9uAPvOjt2v7fmI5Rc6",
-          "bytes": 1109122,
-          "sha": "85340296a97f5f5ee1440b696b87b7bdfdaa22ae"
+          "bytes": 1109078,
+          "sha": "ec48bc6f15461d97b47a8d72e466e7f95375639e"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-tracing-coloring.pdf",
           "ext": "pdf",
           "driveId": "1jWzp5vapsjr-r1waiA_F_acrX8YX-aMQ",
-          "bytes": 1500043,
-          "sha": "64d961a7a59494e9834647c9a8351b654e2a0a3a"
+          "bytes": 1516952,
+          "sha": "9d4629325e5d5f0abb0598eead429e5dffb1b87d"
         },
         {
           "path": "public/obtahovacky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-tracing-coloring.webp",
           "ext": "webp",
-          "bytes": 105650,
-          "sha": "af546cb08f8bfec7995b2b295fee1ac6d4bcd8a9"
+          "bytes": 141492,
+          "sha": "1c7b4b4d5f7db54816f4d7593f3a1d805bb3bd7a"
         }
       ],
       "state": "public-verified"
