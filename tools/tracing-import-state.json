@@ -1044,7 +1044,8 @@
           "bytes": 61438,
           "sha": "4e396e0fff4c8593cd859f6c17196869c8c63b57"
         }
-      ]
+      ],
+      "state": "published-to-github"
     },
     {
       "fileBase": "lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-tracing",
@@ -1108,8 +1109,9 @@
           "bytes": 105650,
           "sha": "af546cb08f8bfec7995b2b295fee1ac6d4bcd8a9"
         }
-      ]
+      ],
+      "state": "published-to-github"
     }
   ],
-  "publishedCount": 15
+  "publishedCount": 17
 }
