@@ -18,7 +18,7 @@ csv_path = root/'assets/data/omalovanky.csv'
 with csv_path.open() as stream:
     reader = csv.DictReader(stream)
     headers, rows = reader.fieldnames, list(reader)
-ages = {1:'3–4', 2:'5–6', 3:'6–7', 4:'7–8', 5:'8–10'}
+ages = {1:'3–4', 2:'5–6', 3:'7–9', 4:'10+', 5:'8–10'}
 files, skipped = [], []
 for item in state['items']:
     base = re.sub(r'H\d+', str(item['id']), item['originalBase'])
