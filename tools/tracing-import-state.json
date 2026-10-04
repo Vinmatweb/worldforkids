@@ -264,7 +264,8 @@
           "bytes": 50798,
           "sha": "ca453ad9f74398116ef21aeb670133121b7e1b2a"
         }
-      ]
+      ],
+      "state": "published-to-github"
     },
     {
       "fileBase": "lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-tracing",
@@ -328,7 +329,8 @@
           "bytes": 56696,
           "sha": "048d4c40b16a13810980032d50ab34724f7835b8"
         }
-      ]
+      ],
+      "state": "published-to-github"
     },
     {
       "fileBase": "lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-tracing",
@@ -392,7 +394,8 @@
           "bytes": 42988,
           "sha": "84613f2c7311ac9e326a94cf72459369c4461e3b"
         }
-      ]
+      ],
+      "state": "published-to-github"
     },
     {
       "fileBase": "lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-tracing",
@@ -1099,5 +1102,5 @@
       ]
     }
   ],
-  "publishedCount": 3
+  "publishedCount": 6
 }
