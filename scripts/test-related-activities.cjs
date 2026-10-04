@@ -3,12 +3,27 @@ const model=require('../assets/js/related-activities.js');
 const item=(id,motifId,typ,vek='LV2',version=1)=>({id,motifId,typ,vek,souborZaklad:`lv2_gpt_1001_${version}_en-test-tracing`,nazev:{en:'Test'}});
 const current=item('color-1',' 1001 ','omalovanky'),tracing=item('trace-1','1001','obtahovacky'),dots=item('dots','1001','spojovacky','LV3'),second=item('trace-2','1001','obtahovacky','LV2',2);
 const all=[current,tracing,dots,second,item('other','1002','obtahovacky'),tracing];
-assert.deepEqual(model.related(all,current).map(i=>i.id),['trace-1','dots','trace-2']);
+assert.deepEqual(model.related(all,current).map(i=>i.id),['trace-1','dots']);
 assert.equal(model.related(all,{id:'none',motifId:''}).length,0);
 assert.equal(model.related([current],current).length,0);
 assert.equal(model.label(tracing,[current,tracing],'en'),'✏️ Tracing – Level 2');
 assert.match(model.label(dots,all,'en'),/Dot-to-Dot – Level 3/);
 assert.match(model.label(second,[current,tracing,second],'en'),/Variant 2$/);
+assert.deepEqual(model.related(all,second),[]);
+for(const version of [1,2,20]){
+ const color=item('color-'+version,'1001','omalovanky','LV2',version);
+ const trace=item('trace-'+version,'1001','obtahovacky','LV2',version);
+ const family=[color,trace,...all];
+ assert.ok(model.related(family,color).every(other=>model.identity(other)===model.identity(color)));
+ assert.ok(model.related(family,color).some(other=>other.id===trace.id));
+ assert.ok(model.related(family,trace).some(other=>other.id===color.id));
+}
+const legacy={id:'legacy',motifId:'1013',souborZaklad:'lv2_gem_1013-hedgehog-dot-to-dot'};
+const variant={id:'apple',motifId:'1013_1',souborZaklad:'lv2_gem_1013_1-hedgehog-apple-tree-dot-to-dot'};
+assert.notEqual(model.identity(legacy),model.identity(variant));
+assert.equal(model.identity(variant),model.identity({...variant,motifId:'1013'}));
+assert.equal(model.identity(variant),model.identity({...variant,souborZaklad:'lv3_gpt_1013_1_en-hedgehog-coloring'}));
+assert.deepEqual(model.related([current,second],current),[]);
 const html=fs.readFileSync('index.html','utf8'),nodes={};
 for(const id of ['modal-related-activities','modal-related-links','modal-related-title'])nodes[id]={children:[],classList:{toggle(name,flag){this.hidden=flag;}},replaceChildren(){this.children=[];},appendChild(node){this.children.push(node);}};
 let opened;

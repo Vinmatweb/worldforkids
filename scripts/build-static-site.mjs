@@ -375,7 +375,7 @@ function setIndexSeo(html, locale) {
 function localizeIndexPaths(html, locale) {
     html = html
         .replace('src="translations.js"', 'src="../translations.js"')
-        .replace('src="assets/js/related-activities.js"', 'src="../assets/js/related-activities.js"')
+        .replace('src="assets/js/related-activities.js', 'src="../assets/js/related-activities.js')
         .replaceAll('href="assets/', 'href="../assets/')
         .replaceAll("fetch('assets/", "fetch('../assets/")
         .replaceAll("'public/", "'../public/")
@@ -680,6 +680,8 @@ async function build() {
     let englishIndex = await readFile(path.join(root, 'index.html'), 'utf8');
     const catalogRevision = createHash('sha256').update(JSON.stringify(activities)).digest('hex').slice(0,12);
     englishIndex = englishIndex.replace(/fetch\('assets\/data\/'\+typ\+'\.csv(?:\?v=[^']*)?'\)/, `fetch('assets/data/'+typ+'.csv?v=${catalogRevision}')`);
+    const relatedRevision = createHash('sha256').update(await readFile(path.join(root, 'assets/js/related-activities.js'))).digest('hex').slice(0,12);
+    englishIndex = englishIndex.replace(/src="assets\/js\/related-activities\.js(?:\?v=[^"]*)?"/, `src="assets/js/related-activities.js?v=${relatedRevision}"`);
     englishIndex = setCatalog(englishIndex, staticCatalog(activities, 'en'));
     englishIndex = setIndexSeo(englishIndex, 'en');
     englishIndex = setIndexLocale(englishIndex, 'en');

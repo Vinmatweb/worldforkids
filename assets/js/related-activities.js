@@ -7,11 +7,21 @@
         de:{title:'Auch verfügbar als',level:'Stufe',variant:'Variante',omalovanky:'Ausmalbild',obtahovacky:'Nachspuren',spojovacky:'Punkt zu Punkt',bludiste:'Labyrinth'},
         es:{title:'También disponible como',level:'Nivel',variant:'Variante',omalovanky:'Colorear',obtahovacky:'Trazado',spojovacky:'Une los puntos',bludiste:'Laberinto'}
     };
+    // A suffix identifies a distinct drawing, independently of activity type or level.
+    function identity(item){
+        const raw=String(item.motifId||'').trim();
+        if(!raw)return '';
+        const idVariant=raw.match(/^(\d+)_(\d+)$/);
+        const fileVariant=String(item.souborZaklad||'').match(/^lv\d+_[^_]+_\d+_(\d+)(?:_|-)/i);
+        const motif=idVariant?idVariant[1]:raw;
+        const variant=fileVariant?fileVariant[1]:(idVariant?idVariant[2]:'');
+        return motif+'|'+variant;
+    }
     function related(items,current){
-        const motif=String(current.motifId||'').trim(),seen=new Set();
+        const motif=identity(current),seen=new Set();
         if(!motif)return [];
         return items.filter(item=>{
-            if(String(item.motifId||'').trim()!==motif||item.id===current.id||seen.has(item.id))return false;
+            if(identity(item)!==motif||item.id===current.id||seen.has(item.id))return false;
             seen.add(item.id);return true;
         });
     }
@@ -25,6 +35,6 @@
         }
         return result;
     }
-    root.VinMatRelatedActivities={related,label,copy};
+    root.VinMatRelatedActivities={related,label,copy,identity};
     if(typeof module!=='undefined'&&module.exports)module.exports=root.VinMatRelatedActivities;
 })(typeof window==='undefined'?globalThis:window);
