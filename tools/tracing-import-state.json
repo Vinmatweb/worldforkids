@@ -1,5 +1,5 @@
 {
-  "state": "drive-assets-recovered",
+  "state": "publishing",
   "checks": {
     "driveFilesVerified": 34,
     "sheetRowsVerified": 17,
@@ -69,7 +69,8 @@
           "bytes": 46496,
           "sha": "63e92a7f74173713e2cddb360e30cb00f36d76f4"
         }
-      ]
+      ],
+      "state": "published-to-github"
     },
     {
       "fileBase": "lv2_gpt_10188_1_en-friendly-ghost-in-front-of-haunted-house-tracing",
@@ -133,7 +134,8 @@
           "bytes": 57162,
           "sha": "fbd17b4a1e8ae71fc65dc8ecba4ea02da9c5002e"
         }
-      ]
+      ],
+      "state": "published-to-github"
     },
     {
       "fileBase": "lv2_gpt_10189_1_en-cat-sitting-on-pumpkin-tracing",
@@ -197,7 +199,8 @@
           "bytes": 39854,
           "sha": "c32d694a896e6f9bbc0f13365e9b4d64ae8f8754"
         }
-      ]
+      ],
+      "state": "published-to-github"
     },
     {
       "fileBase": "lv2_gpt_10190_1_en-witch-with-broom-and-moon-tracing",
@@ -1095,5 +1098,6 @@
         }
       ]
     }
-  ]
+  ],
+  "publishedCount": 3
 }
