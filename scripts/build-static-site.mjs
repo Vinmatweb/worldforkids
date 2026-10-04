@@ -370,6 +370,7 @@ function localizeIndexPaths(html, locale) {
     html = html
         .replace('src="translations.js"', 'src="../translations.js"')
         .replace('src="assets/js/related-activities.js"', 'src="../assets/js/related-activities.js"')
+        .replaceAll('href="assets/', 'href="../assets/')
         .replaceAll("fetch('assets/", "fetch('../assets/")
         .replaceAll("'public/", "'../public/")
         .replaceAll("url('assets/", "url('../assets/")
