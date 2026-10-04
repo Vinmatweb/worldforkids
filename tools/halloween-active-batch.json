@@ -1,6 +1,6 @@
 {
   "batch": 15,
-  "state": "prepared",
+  "state": "published-user-review-deferred",
   "items": [
     {
       "originalBase": "lv3_gpt_H1039_1_en-friendly-gargoyle-on-rooftop-coloring-page",
@@ -76,7 +76,7 @@
         "nazevEs": "Gárgola amistosa en un tejado",
         "altEs_coloring": "Gárgola amistosa en un tejado: dibujo en blanco y negro de nivel 3 para niños de 6–7 años, gratis para imprimir en A4.",
         "altEs_sample": "Gárgola amistosa en un tejado: modelo a color para el dibujo de nivel 3.",
-        "Status": "vygenerováno",
+        "Status": "publikováno",
         "driveColoring": "https://drive.google.com/file/d/1XeV7vabpVQpZ-WNVljSqGqEQe8yFTlaW/view",
         "drivePdfColoring": "https://drive.google.com/file/d/1FCnuPfIcPmjYWO__goblC7HP5QYqM2tJ/view",
         "driveSample": "https://drive.google.com/file/d/1fDCn838EfGI_G0WVRsshgwlmP5q2OyJ1/view",
@@ -158,7 +158,7 @@
         "nazevEs": "Árbol encantado amistoso",
         "altEs_coloring": "Árbol encantado amistoso: dibujo en blanco y negro de nivel 3 para niños de 6–7 años, gratis para imprimir en A4.",
         "altEs_sample": "Árbol encantado amistoso: modelo a color para el dibujo de nivel 3.",
-        "Status": "vygenerováno",
+        "Status": "publikováno",
         "driveColoring": "https://drive.google.com/file/d/1lS8fAIX05gv84v-2dKZMVJJ4l0a11bAq/view",
         "drivePdfColoring": "https://drive.google.com/file/d/1KbhJ8unsoBQ6pAo_6Mx-K9Kwmq5MQhJt/view",
         "driveSample": "https://drive.google.com/file/d/1ag-4kKge7I4PcCdQNlgbh_kyHKoI49O7/view",
@@ -240,7 +240,7 @@
         "nazevEs": "Fantasma horneando galletas de Halloween",
         "altEs_coloring": "Fantasma horneando galletas de Halloween: dibujo en blanco y negro de nivel 2 para niños de 5–6 años, gratis para imprimir en A4.",
         "altEs_sample": "Fantasma horneando galletas de Halloween: modelo a color para el dibujo de nivel 2.",
-        "Status": "vygenerováno",
+        "Status": "publikováno",
         "driveColoring": "https://drive.google.com/file/d/1nC4Fzcq2syw-jLMGqnQYxpj9BBtvbGXq/view",
         "drivePdfColoring": "https://drive.google.com/file/d/1oVoR1PIthBauY3P3vceVEDPP9OQornty/view",
         "driveSample": "https://drive.google.com/file/d/1Y38xjQBdbjSs-Bk9gp1x9UCGPi46KeHp/view",
@@ -662,7 +662,13 @@
   "checks": {
     "PNGResolutionAndQR": "6/6 passed",
     "DriveSizes": "12/12 passed",
-    "sheets": "exact values read back",
-    "mobile": "User review deferred"
-  }
+    "sheets": "published status read back",
+    "mobile": "User review deferred",
+    "publicAssets": "18/18 exact SHA and size",
+    "publicPages": "12/12 passed",
+    "browser": "sample selector and PNG/PDF links passed",
+    "actions": "Build and Pages succeeded"
+  },
+  "publishCommit": "a0e50516eb48448847d79149f3d4345ce9f66e42",
+  "deploymentCommit": "1b5efd966b9a11508a1e0ab967e29aba173860fc"
 }

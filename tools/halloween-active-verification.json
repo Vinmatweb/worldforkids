@@ -1,20 +1,20 @@
 {
-  "batch": 14,
+  "batch": 15,
   "assets": 18,
   "pages": [
-    "activities/coloring-old-castle-cutaway-with-halloween-scenes.html",
-    "cs/aktivity/omalovanka-stary-hrad-s-halloweenskymi-vyjevy.html",
-    "de/aktivitaeten/ausmalbild-alte-burg-im-querschnitt-mit-halloween-szenen.html",
-    "es/actividades/dibujo-castillo-antiguo-en-corte-con-escenas-de-halloween.html",
-    "activities/coloring-panoramic-halloween-valley.html",
-    "cs/aktivity/omalovanka-panoramaticke-halloweenske-udoli.html",
-    "de/aktivitaeten/ausmalbild-panoramisches-halloween-tal.html",
-    "es/actividades/dibujo-valle-panoramico-de-halloween.html",
-    "activities/coloring-friendly-frankenstein-monster.html",
-    "cs/aktivity/omalovanka-pratelske-frankensteinovo-monstrum.html",
-    "de/aktivitaeten/ausmalbild-freundliches-frankenstein-monster.html",
-    "es/actividades/dibujo-monstruo-amistoso-de-frankenstein.html"
+    "activities/coloring-friendly-gargoyle-on-a-rooftop.html",
+    "cs/aktivity/omalovanka-pratelsky-chrlic-na-strese.html",
+    "de/aktivitaeten/ausmalbild-freundlicher-wasserspeier-auf-einem-dach.html",
+    "es/actividades/dibujo-gargola-amistosa-en-un-tejado.html",
+    "activities/coloring-friendly-haunted-tree.html",
+    "cs/aktivity/omalovanka-pratelsky-strasidelny-strom.html",
+    "de/aktivitaeten/ausmalbild-freundlicher-spukbaum.html",
+    "es/actividades/dibujo-arbol-encantado-amistoso.html",
+    "activities/coloring-ghost-baking-halloween-cookies.html",
+    "cs/aktivity/omalovanka-duch-pece-halloweenske-susenky.html",
+    "de/aktivitaeten/ausmalbild-geist-backt-halloween-kekse.html",
+    "es/actividades/dibujo-fantasma-horneando-galletas-de-halloween.html"
   ],
-  "catalogRows": 56,
+  "catalogRows": 59,
   "status": "passed"
 }
