@@ -159,7 +159,173 @@
         }
       ],
       "state": "prepared"
+    },
+    {
+      "fileBase": "lv2_gpt_10190_1_en-witch-with-broom-and-moon-tracing",
+      "motifId": "10190",
+      "sourceId": "1-hAPtS7uGoW9xm8JlgHTx6vMSchtpdKM",
+      "sampleSourceId": "1Sx0XSz55od2cNmzompTi_DCRbftluFtt",
+      "previewBase": "/worldforkids/public/obtahovacky/en/lv2_gpt_10190_1_en-witch-with-broom-and-moon-tracing-coloring-preview",
+      "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10190_1_en-witch-with-broom-and-moon-coloring-page-sample-preview",
+      "files": [
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10190_1_en-witch-with-broom-and-moon-tracing-coloring.png",
+          "bytes": 733155,
+          "sha": "88fce47a6425b120708e6d73fa28c95a075f1268",
+          "driveId": "1OP_dT2ly1iIFHYJbORyRS7woa_CWETz9"
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10190_1_en-witch-with-broom-and-moon-tracing-coloring.pdf",
+          "bytes": 1025985,
+          "sha": "e992f7b77cfc82e169c47d14e385ac6e9cb7b323",
+          "driveId": "1j94v7tNw4m8UkvCZPwCsznJgIAmTZPcU"
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10190_1_en-witch-with-broom-and-moon-tracing-coloring.webp",
+          "bytes": 65878,
+          "sha": "4f430807de71949e67fb6b93041e3fee447d21d6",
+          "driveId": null
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10190_1_en-witch-with-broom-and-moon-tracing-coloring-preview.png",
+          "bytes": 832930,
+          "sha": "7970da91b0befdbb903e635c0de1c779c6c76005",
+          "driveId": null
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10190_1_en-witch-with-broom-and-moon-tracing-coloring-preview.webp",
+          "bytes": 65878,
+          "sha": "4f430807de71949e67fb6b93041e3fee447d21d6",
+          "driveId": null
+        },
+        {
+          "path": "public/omalovanky/en/lv2_gpt_10190_1_en-witch-with-broom-and-moon-coloring-page-sample-preview.png",
+          "bytes": 332318,
+          "sha": "74bb4bb7542ff9e692099d95c2368618916d621c",
+          "driveId": null
+        },
+        {
+          "path": "public/omalovanky/en/lv2_gpt_10190_1_en-witch-with-broom-and-moon-coloring-page-sample-preview.webp",
+          "bytes": 231508,
+          "sha": "ab93f28a3e5bc84131b1676c9f5029c315daecf9",
+          "driveId": null
+        }
+      ],
+      "state": "prepared"
+    },
+    {
+      "fileBase": "lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-tracing",
+      "motifId": "10191",
+      "sourceId": "1KOZMNwuAXiaSoFuZ8J6D-9dYZKGF54eO",
+      "sampleSourceId": "1uStUsM0nwuIOa_iNwvd71TyxM5NuBS7T",
+      "previewBase": "/worldforkids/public/obtahovacky/en/lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-tracing-coloring-preview",
+      "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample-preview",
+      "files": [
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-tracing-coloring.png",
+          "bytes": 1074539,
+          "sha": "836d8688fe590c40e741bda34a6f9da28115e9fd",
+          "driveId": "16sMyIaUvo7rSUf9EYg7bqcR2Fm5BRrAo"
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-tracing-coloring.pdf",
+          "bytes": 1529538,
+          "sha": "47bedcda82556f6cea70c4cc55156284b8e439ed",
+          "driveId": "1e36aaw51DYICb03YfswQ6yCY9fRLwiYJ"
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-tracing-coloring.webp",
+          "bytes": 67674,
+          "sha": "f79505d292946e5df70c2428148c106521dab813",
+          "driveId": null
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-tracing-coloring-preview.png",
+          "bytes": 1289979,
+          "sha": "c451c0ab46a1448f725bd17cd32d51a239611ad4",
+          "driveId": null
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-tracing-coloring-preview.webp",
+          "bytes": 67674,
+          "sha": "f79505d292946e5df70c2428148c106521dab813",
+          "driveId": null
+        },
+        {
+          "path": "public/omalovanky/en/lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample-preview.png",
+          "bytes": 486133,
+          "sha": "5df4ce68d6317b76186250187cc46a4ff8dee849",
+          "driveId": null
+        },
+        {
+          "path": "public/omalovanky/en/lv2_gpt_10191_1_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample-preview.webp",
+          "bytes": 325006,
+          "sha": "13d092d75b5e8aa4980d9532e8f06cf22127d21e",
+          "driveId": null
+        }
+      ],
+      "state": "prepared"
+    },
+    {
+      "fileBase": "lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-tracing",
+      "motifId": "10191",
+      "sourceId": "1yi19qpE8Vft0vKQ-5cyb7racz-JezbRO",
+      "sampleSourceId": "1ejWilConB70eepRbcOJ51kjjcGe_WWj_",
+      "previewBase": "/worldforkids/public/obtahovacky/en/lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-tracing-coloring-preview",
+      "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample-preview",
+      "files": [
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-tracing-coloring.png",
+          "bytes": 928084,
+          "sha": "e1899a2e70e2dbde435cbf83fc7231bb2e88d236",
+          "driveId": "13ueuAMtVSfSxxFVSwP18-pRdkKSOmHgM"
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-tracing-coloring.pdf",
+          "bytes": 1319274,
+          "sha": "0f42945f95e2c88c892c8bdb528bc1b46eb8e7cd",
+          "driveId": "18DrKj6lZzUUQx-X0tCrdprquqErnxR-s"
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-tracing-coloring.webp",
+          "bytes": 49414,
+          "sha": "486dad9236718c4cfaa68ff62419b31ac5a7688c",
+          "driveId": null
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-tracing-coloring-preview.png",
+          "bytes": 1132018,
+          "sha": "67c4b12530bbd6b434db089615246cbde6a0c6da",
+          "driveId": null
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-tracing-coloring-preview.webp",
+          "bytes": 49414,
+          "sha": "486dad9236718c4cfaa68ff62419b31ac5a7688c",
+          "driveId": null
+        },
+        {
+          "path": "public/omalovanky/en/lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample-preview.png",
+          "bytes": 327560,
+          "sha": "a4584ce7e2d25dd35dec3e8852b81d07e8801b7f",
+          "driveId": null
+        },
+        {
+          "path": "public/omalovanky/en/lv2_gpt_10191_2_en-bat-flying-over-fence-with-pumpkin-coloring-page-sample-preview.webp",
+          "bytes": 216116,
+          "sha": "bed7839ba8e36d8b78c45e89411ce79997660136",
+          "driveId": null
+        }
+      ],
+      "state": "prepared"
     }
   ],
-  "batches": []
+  "batches": [
+    {
+      "start": 0,
+      "commit": "a2b9548f1ce29a0a2b4fbff9d756446df5a57b68",
+      "driveReplaced": 6,
+      "visualQa": "passed"
+    }
+  ]
 }
