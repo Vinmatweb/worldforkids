@@ -318,12 +318,177 @@
         }
       ],
       "state": "prepared"
+    },
+    {
+      "fileBase": "lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-tracing",
+      "motifId": "10192",
+      "sourceId": "1czf2IyV5z7m83pcSZkCENTHJQHpH0l3_",
+      "sampleSourceId": "1oNBlmAslEUtvk11nIRcqK8be8_jn1BHK",
+      "previewBase": "/worldforkids/public/obtahovacky/en/lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-tracing-coloring-preview",
+      "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-sample-preview",
+      "files": [
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-tracing-coloring.png",
+          "bytes": 997438,
+          "sha": "a800bb03b1c0427611a2ce17556d1c70128890ce",
+          "driveId": "1Wg1l_-HYyamzxgXJ1yatk74d6VZBLJb5"
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-tracing-coloring.pdf",
+          "bytes": 1409147,
+          "sha": "f59634444086951f84f51622e5ab5ad041597909",
+          "driveId": "1VrQXHyPcHHikXBQjm0SuO9JZ9qJd6tBI"
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-tracing-coloring.webp",
+          "bytes": 71272,
+          "sha": "6646597e6cae2812b0d4900b7f15b45e9b3acd2e",
+          "driveId": null
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-tracing-coloring-preview.png",
+          "bytes": 1202045,
+          "sha": "9729e5629be9457f391e6702d629cb0aa721b545",
+          "driveId": null
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-tracing-coloring-preview.webp",
+          "bytes": 71272,
+          "sha": "6646597e6cae2812b0d4900b7f15b45e9b3acd2e",
+          "driveId": null
+        },
+        {
+          "path": "public/omalovanky/en/lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-sample-preview.png",
+          "bytes": 573761,
+          "sha": "62c8d98321529d5246dbd0bf616b5fb995514236",
+          "driveId": null
+        },
+        {
+          "path": "public/omalovanky/en/lv2_gpt_10192_2_en-halloween-house-with-pumpkins-moon-fence-and-bats-coloring-page-sample-preview.webp",
+          "bytes": 471478,
+          "sha": "e285aca0cee2eb1043b89997240ef0f02a6a97ef",
+          "driveId": null
+        }
+      ],
+      "state": "prepared"
+    },
+    {
+      "fileBase": "lv2_gpt_10200_1_en-children-trick-or-treating-tracing",
+      "motifId": "10200",
+      "sourceId": "1zPv1JhPDC_1c1DAdpa8cLWq8wMs61PAq",
+      "sampleSourceId": "1Nw9iD957zu255leT8l67OOZuUuApxkcp",
+      "previewBase": "/worldforkids/public/obtahovacky/en/lv2_gpt_10200_1_en-children-trick-or-treating-tracing-coloring-preview",
+      "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10200_1_en-children-trick-or-treating-coloring-page-sample-preview",
+      "files": [
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10200_1_en-children-trick-or-treating-tracing-coloring.png",
+          "bytes": 1173023,
+          "sha": "ab9603f590f2d1efe8d19f9d23d9f72b6971c706",
+          "driveId": "1SD3884PX2R5vlRGuICObwGBPHA6K4VRc"
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10200_1_en-children-trick-or-treating-tracing-coloring.pdf",
+          "bytes": 1520236,
+          "sha": "6836b8c654043c91eff959b79afc3e05bd7865b6",
+          "driveId": "1yuiATEvz21I0akk8upXMJDX8BYIdI_00"
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10200_1_en-children-trick-or-treating-tracing-coloring.webp",
+          "bytes": 127994,
+          "sha": "d30b9a9248b953624fa0079760689f8955d7a6df",
+          "driveId": null
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10200_1_en-children-trick-or-treating-tracing-coloring-preview.png",
+          "bytes": 1331768,
+          "sha": "01d8aa4a6f4ec4657cc4a6d66682472a9c757837",
+          "driveId": null
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10200_1_en-children-trick-or-treating-tracing-coloring-preview.webp",
+          "bytes": 127994,
+          "sha": "d30b9a9248b953624fa0079760689f8955d7a6df",
+          "driveId": null
+        },
+        {
+          "path": "public/omalovanky/en/lv2_gpt_10200_1_en-children-trick-or-treating-coloring-page-sample-preview.png",
+          "bytes": 1576023,
+          "sha": "81f36added14a42efab882bb709ee27fa52fcb61",
+          "driveId": null
+        },
+        {
+          "path": "public/omalovanky/en/lv2_gpt_10200_1_en-children-trick-or-treating-coloring-page-sample-preview.webp",
+          "bytes": 210258,
+          "sha": "0664902d213bed19e44442d866eb39bc5d3f87d8",
+          "driveId": null
+        }
+      ],
+      "state": "prepared"
+    },
+    {
+      "fileBase": "lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-tracing",
+      "motifId": "10025",
+      "sourceId": "1uk5mOjbfOQaVnabsR-UaxxJDZ3ZOQL2x",
+      "sampleSourceId": "1NS6ofeOMZUhtTEv3DvbJo4VMXs3bjihn",
+      "previewBase": "/worldforkids/public/obtahovacky/en/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-tracing-coloring-preview",
+      "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-sample-preview",
+      "files": [
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-tracing-coloring.png",
+          "bytes": 1006066,
+          "sha": "f69d67ed2977a16e2ba5baff265d3f71a5b0d4c2",
+          "driveId": "1k4YBzUR1mE7SGk10b7pCdR9Dah3E8-Md"
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-tracing-coloring.pdf",
+          "bytes": 1372570,
+          "sha": "81a3e8499fa8312d1527815e4bfe693da58d57e9",
+          "driveId": "1hl2CK6A30s8WmzWJxnJEhXWJACaizf9u"
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-tracing-coloring.webp",
+          "bytes": 63604,
+          "sha": "2890c4b8c823f14fde9428dfc15a4770bdc325cd",
+          "driveId": null
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-tracing-coloring-preview.png",
+          "bytes": 1215876,
+          "sha": "083fe7b3e24bcddb526a69bae4b8bde026a9de21",
+          "driveId": null
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-tracing-coloring-preview.webp",
+          "bytes": 63604,
+          "sha": "2890c4b8c823f14fde9428dfc15a4770bdc325cd",
+          "driveId": null
+        },
+        {
+          "path": "public/omalovanky/en/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-sample-preview.png",
+          "bytes": 1165369,
+          "sha": "20813dbf1d7ea35777bea21d3b6a3b9ce91324c3",
+          "driveId": null
+        },
+        {
+          "path": "public/omalovanky/en/lv2_gpt_10025_1_en-friendly-witch-cauldron-with-bubbles-coloring-page-sample-preview.webp",
+          "bytes": 126870,
+          "sha": "079e485e93ffa789a4bcd4c1a0abd247b29ded67",
+          "driveId": null
+        }
+      ],
+      "state": "prepared"
     }
   ],
   "batches": [
     {
       "start": 0,
       "commit": "a2b9548f1ce29a0a2b4fbff9d756446df5a57b68",
+      "driveReplaced": 6,
+      "visualQa": "passed"
+    },
+    {
+      "start": 3,
+      "commit": "66064454429a815b6a5ed18515670861424f3ab6",
       "driveReplaced": 6,
       "visualQa": "passed"
     }
