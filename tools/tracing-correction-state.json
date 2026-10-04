@@ -636,6 +636,165 @@
         }
       ],
       "state": "prepared"
+    },
+    {
+      "fileBase": "lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-tracing",
+      "motifId": "10204",
+      "sourceId": "1udBBhjbA8Y1EgJP6rdVk5LQ88ZxeY_nE",
+      "sampleSourceId": "1rjhWLFiWpbuyQ1pNhkPLERMN7qZrsFQM",
+      "previewBase": "/worldforkids/public/obtahovacky/en/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-tracing-coloring-preview",
+      "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-coloring-page-sample-preview",
+      "files": [
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-tracing-coloring.png",
+          "bytes": 1134738,
+          "sha": "325a09054c22980bdb8be58b0adbbf5f8f2e3959",
+          "driveId": "1GaGhfgWq_fm9KOxw-vXVu1DU--I4zQGn"
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-tracing-coloring.pdf",
+          "bytes": 1601964,
+          "sha": "b1cf577eb55c1a252efabcdd9d95fc17eab1d270",
+          "driveId": "1-JoPm3S08DwaSIZMu-qLvXyS_wvet4mP"
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-tracing-coloring.webp",
+          "bytes": 74362,
+          "sha": "f0a0fb70c58b96e4a233fb93c27609ff66c49e6a",
+          "driveId": null
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-tracing-coloring-preview.png",
+          "bytes": 1343374,
+          "sha": "051e7de2a810e3d2da5d7142a0470e702a1ea0c4",
+          "driveId": null
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-tracing-coloring-preview.webp",
+          "bytes": 74362,
+          "sha": "f0a0fb70c58b96e4a233fb93c27609ff66c49e6a",
+          "driveId": null
+        },
+        {
+          "path": "public/omalovanky/en/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-coloring-page-sample-preview.png",
+          "bytes": 1161437,
+          "sha": "34aa1b45653ef3b5a7c65d30f6eadad6ca4b28f5",
+          "driveId": null
+        },
+        {
+          "path": "public/omalovanky/en/lv2_gpt_10204_1_en-friendly-skeleton-with-pumpkin-coloring-page-sample-preview.webp",
+          "bytes": 138050,
+          "sha": "c2163ff432de085daf80d892196b4169aa32eb94",
+          "driveId": null
+        }
+      ],
+      "state": "prepared"
+    },
+    {
+      "fileBase": "lv2_gpt_10205_1_en-friendly-vampire-with-bat-tracing",
+      "motifId": "10205",
+      "sourceId": "1bTVd098Hke48pCUkqu0RJnGdkHAxOxq2",
+      "sampleSourceId": "1xXKxuCuypgtTx6b0SE6i0pKVq0GqjD2B",
+      "previewBase": "/worldforkids/public/obtahovacky/en/lv2_gpt_10205_1_en-friendly-vampire-with-bat-tracing-coloring-preview",
+      "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10205_1_en-friendly-vampire-with-bat-coloring-page-sample-preview",
+      "files": [
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10205_1_en-friendly-vampire-with-bat-tracing-coloring.png",
+          "bytes": 1062179,
+          "sha": "9d58870945c0478b6a66ff087ffa20ed057dc32f",
+          "driveId": "1GMHnFM432M3b9vuMDcxt--JCl3eZlDpw"
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10205_1_en-friendly-vampire-with-bat-tracing-coloring.pdf",
+          "bytes": 1490554,
+          "sha": "1452ccd77e34022424254e3e47334559a1d51031",
+          "driveId": "1XQcmSNMCpi_daUWmoGghuDfD7rqzdLx4"
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10205_1_en-friendly-vampire-with-bat-tracing-coloring.webp",
+          "bytes": 91648,
+          "sha": "d3ae2f04c68301ca389c5bc669de771608dc3200",
+          "driveId": null
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10205_1_en-friendly-vampire-with-bat-tracing-coloring-preview.png",
+          "bytes": 1224153,
+          "sha": "19c0abcfd4e8996fdbae6f23f99ea5318cd556fb",
+          "driveId": null
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10205_1_en-friendly-vampire-with-bat-tracing-coloring-preview.webp",
+          "bytes": 91648,
+          "sha": "d3ae2f04c68301ca389c5bc669de771608dc3200",
+          "driveId": null
+        },
+        {
+          "path": "public/omalovanky/en/lv2_gpt_10205_1_en-friendly-vampire-with-bat-coloring-page-sample-preview.png",
+          "bytes": 1814228,
+          "sha": "ad038260e724473d624714962c3a3a538475a551",
+          "driveId": null
+        },
+        {
+          "path": "public/omalovanky/en/lv2_gpt_10205_1_en-friendly-vampire-with-bat-coloring-page-sample-preview.webp",
+          "bytes": 172834,
+          "sha": "c723c091bf3e6aa05c70f79f1f41db0db72a2449",
+          "driveId": null
+        }
+      ],
+      "state": "prepared"
+    },
+    {
+      "fileBase": "lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-tracing",
+      "motifId": "10206",
+      "sourceId": "1AuiImul8TTmvPgpuxriFRi9d4or8X1YX",
+      "sampleSourceId": "1_xkLx0nug9FqC1dfcErlLk6P62fmlnQh",
+      "previewBase": "/worldforkids/public/obtahovacky/en/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-tracing-coloring-preview",
+      "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-coloring-page-sample-preview",
+      "files": [
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-tracing-coloring.png",
+          "bytes": 1160510,
+          "sha": "67a518c25498e197f8fd87ce4823d8ece8a82c2e",
+          "driveId": "1dLVpH4L5N_lslJI2hC5NroWronEJT1aM"
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-tracing-coloring.pdf",
+          "bytes": 1585647,
+          "sha": "8e83f27c0cbd9335d578873c738404f527b922a3",
+          "driveId": "1w5MV68_RafbRbYXE3vn8amPJlnmsJCqQ"
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-tracing-coloring.webp",
+          "bytes": 97864,
+          "sha": "0796cd3b630da0ed15b88932e3290376e0702c30",
+          "driveId": null
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-tracing-coloring-preview.png",
+          "bytes": 1339133,
+          "sha": "eab013cfa0a2ba5b448546169856f7a57de6fd0a",
+          "driveId": null
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-tracing-coloring-preview.webp",
+          "bytes": 97864,
+          "sha": "0796cd3b630da0ed15b88932e3290376e0702c30",
+          "driveId": null
+        },
+        {
+          "path": "public/omalovanky/en/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-coloring-page-sample-preview.png",
+          "bytes": 1720833,
+          "sha": "620cf4b0ffcecd4313be5e9c8670aa642e16def2",
+          "driveId": null
+        },
+        {
+          "path": "public/omalovanky/en/lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-coloring-page-sample-preview.webp",
+          "bytes": 216766,
+          "sha": "207270680a082da10bc22103aaaeee5ca145e0ff",
+          "driveId": null
+        }
+      ],
+      "state": "prepared"
     }
   ],
   "batches": [
@@ -654,6 +813,12 @@
     {
       "start": 6,
       "commit": "0b373df1076f8820cef21bf99521417cb0612c29",
+      "driveReplaced": 6,
+      "visualQa": "passed"
+    },
+    {
+      "start": 9,
+      "commit": "148141e44aa09e63c9a2ce3a55d4b40c1b149146",
       "driveReplaced": 6,
       "visualQa": "passed"
     }
