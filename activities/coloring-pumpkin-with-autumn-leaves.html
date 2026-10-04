@@ -24,6 +24,7 @@
     <meta property="og:locale:alternate" content="es_ES">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        .activity-print-original { display: none; }
         @media print {
             @page { margin: 0; }
             body { background: #fff !important; }
@@ -34,6 +35,7 @@
             .activity-print-card > :not(.activity-print-image) { display: none !important; }
             .activity-print-image { display: flex !important; padding: 0 !important; background: transparent !important; }
             .activity-print-image picture, .activity-print-image img { display: block !important; max-width: 100% !important; max-height: none !important; margin: 0 auto !important; }
+            .activity-screen-picture { display: none !important; }
         }
     </style>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Pumpkin with Autumn Leaves","description":"Pumpkin with Autumn Leaves: black-and-white LV2 coloring page for ages 5–6, free to print on A4 paper.","url":"https://vinmat.eu/worldforkids/activities/coloring-pumpkin-with-autumn-leaves.html","image":"https://vinmat.eu/worldforkids/public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-coloring.webp","inLanguage":"en","isAccessibleForFree":true,"learningResourceType":"Coloring","educationalLevel":"LV2","mainEntityOfPage":"https://vinmat.eu/worldforkids/activities/coloring-pumpkin-with-autumn-leaves.html","provider":{"@type":"Organization","name":"VinMat's World for Kids","url":"/worldforkids/"},"typicalAgeRange":"5–6 years"}</script>
@@ -70,7 +72,7 @@
     <main class="max-w-5xl mx-auto px-4 py-8">
         <nav aria-label="Breadcrumb" class="text-xs font-semibold text-slate-500 flex flex-wrap items-center gap-2"><a class="hover:text-indigo-700" href="/worldforkids/">Home</a><span aria-hidden="true">›</span><span>Activities</span><span aria-hidden="true">›</span><span class="text-slate-700">Pumpkin with Autumn Leaves</span></nav>
         <article class="activity-print-card mt-5 grid gap-7 md:grid-cols-[minmax(0,3fr)_minmax(240px,2fr)] bg-white rounded-3xl border border-slate-100 shadow-sm p-5 md:p-8">
-            <div class="activity-print-image bg-slate-50 rounded-2xl p-4 flex items-center justify-center"><picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-coloring.png" alt="Pumpkin with Autumn Leaves: black-and-white LV2 coloring page for ages 5–6, free to print on A4 paper." loading="lazy" class="max-w-full max-h-[70vh] object-contain"></picture></div>
+            <div class="activity-print-image bg-slate-50 rounded-2xl p-4 flex items-center justify-center"><div class="activity-screen-picture"><picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-coloring.png" alt="Pumpkin with Autumn Leaves: black-and-white LV2 coloring page for ages 5–6, free to print on A4 paper." loading="lazy" class="max-w-full max-h-[70vh] object-contain"></picture></div><img class="activity-print-original" src="/worldforkids/public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-coloring.png" alt=""></div>
             <div class="flex flex-col justify-between gap-6"><div><p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Coloring · Level 2</p><h1 class="mt-2 text-3xl font-extrabold text-slate-900">Pumpkin with Autumn Leaves</h1><p class="mt-4 text-slate-600 leading-relaxed">Pumpkin with Autumn Leaves: black-and-white LV2 coloring page for ages 5–6, free to print on A4 paper.</p><div class="flex flex-wrap gap-2 mt-5" aria-label="Level"><button type="button" data-variant="coloring" class="bg-slate-900 text-white rounded-xl px-4 py-3 font-bold">B&W</button><button type="button" data-variant="sample" class="bg-slate-100 text-slate-700 rounded-xl px-4 py-3 font-bold">Color Sample</button></div></div><div class="space-y-3"><a id="activity-png" class="block text-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-xl" href="/worldforkids/public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-coloring.png" download>Download printable (PNG)</a><a id="activity-pdf" class="block text-center bg-indigo-50 text-indigo-700 font-bold py-3 px-4 rounded-xl" href="/worldforkids/public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-coloring.pdf" download>PDF</a><button class="w-full bg-slate-800 hover:bg-slate-900 text-white font-bold py-3 px-4 rounded-xl" onclick="window.print()">Print worksheet</button></div></div>
         </article>
     <!-- STRONG_DETAIL_START -->
@@ -126,12 +128,13 @@ function copyActivityEmail(){const value='vinmatforkids@gmail.com';const status=
 function activityFallbackCopy(value,done){const input=document.createElement('input');input.value=value;document.body.appendChild(input);input.select();document.execCommand('copy');input.remove();done()}
 </script>
     <script>
-    const printableVariants={"coloring":{"base":"/worldforkids/public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-coloring","alt":"Pumpkin with Autumn Leaves: black-and-white LV2 coloring page for ages 5–6, free to print on A4 paper."},"sample":{"base":"/worldforkids/public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-sample","alt":"Pumpkin with Autumn Leaves: color sample for the LV2 coloring page."}};
+    const printableVariants={"coloring":{"base":"/worldforkids/public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-coloring","preview":"/worldforkids/public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-coloring","alt":"Pumpkin with Autumn Leaves: black-and-white LV2 coloring page for ages 5–6, free to print on A4 paper."},"sample":{"base":"/worldforkids/public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-sample","preview":"/worldforkids/public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-sample","alt":"Pumpkin with Autumn Leaves: color sample for the LV2 coloring page."}};
     document.querySelectorAll('[data-variant]').forEach(button=>button.addEventListener('click',()=>{
         const selected=printableVariants[button.dataset.variant];
         const preview=document.querySelector('.activity-print-image');
-        preview.querySelector('source').srcset=selected.base+'.webp';
-        preview.querySelector('img').src=selected.base+'.png'; preview.querySelector('img').alt=selected.alt;
+        preview.querySelector('source').srcset=selected.preview+'.webp';
+        preview.querySelector('.activity-screen-picture img').src=selected.preview+'.png'; preview.querySelector('.activity-screen-picture img').alt=selected.alt;
+        preview.querySelector('.activity-print-original').src=selected.base+'.png';
         document.getElementById('activity-png').href=selected.base+'.png';
         const pdf=document.getElementById('activity-pdf'); if(pdf)pdf.href=selected.base+'.pdf';
         document.querySelectorAll('[data-variant]').forEach(b=>{b.setAttribute('aria-pressed',String(b===button));b.className=(b===button?'bg-slate-900 text-white':'bg-slate-100 text-slate-700')+' rounded-xl px-4 py-3 font-bold';});
