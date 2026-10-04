@@ -67,7 +67,7 @@ def place_title(image, text):
     """Find a blank rectangle; never move, shrink or paint over the artwork."""
     page_width, page_height = A4
     for size in (36, 34, 32, 30, 28):
-        wrapped = [text.split(' - ')[0], '- '+text.split(' - ')[1]] if ' - ' in text else ['VinMat', 'Coloring']
+        wrapped = [text.split(' - ')[0], '- '+text.split(' - ')[1]] if ' - ' in text else text.split()
         line_options = [text.splitlines()] if '\n' in text else ([text], wrapped)
         for lines in line_options:
             line_sizes = [title_line_size(line, size) for line in lines]

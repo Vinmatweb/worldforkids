@@ -1,0 +1,165 @@
+{
+  "state": "in-progress",
+  "items": [
+    {
+      "fileBase": "lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-tracing",
+      "motifId": "10187",
+      "sourceId": "1bCUwAjlfq-FUUBNlBVMDb_gnkJGU_C9E",
+      "sampleSourceId": "1xu0fZJqhJS4nIplkUJ0CVOlILoAOYzQc",
+      "previewBase": "/worldforkids/public/obtahovacky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-tracing-coloring-preview",
+      "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-sample-preview",
+      "files": [
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-tracing-coloring.png",
+          "bytes": 1005600,
+          "sha": "fa8d1334643631aa753d914929304b1cee14c4b5",
+          "driveId": "1qQIsug5QoTojVOhSNPvs6h77nkeWXmAP"
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-tracing-coloring.pdf",
+          "bytes": 1411714,
+          "sha": "db7be434deaacff982a16d5bf710807e7ff5661c",
+          "driveId": "1WPcO5p2DuOVSHCszBWD7wtdj9n9fA4r0"
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-tracing-coloring.webp",
+          "bytes": 51420,
+          "sha": "80027513799ecc26581fafa9f519e2e8b1c40f76",
+          "driveId": null
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-tracing-coloring-preview.png",
+          "bytes": 1215821,
+          "sha": "0ba0ae24468543c189a16363c33f3bfccf6586d7",
+          "driveId": null
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-tracing-coloring-preview.webp",
+          "bytes": 51420,
+          "sha": "80027513799ecc26581fafa9f519e2e8b1c40f76",
+          "driveId": null
+        },
+        {
+          "path": "public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-sample-preview.png",
+          "bytes": 353979,
+          "sha": "a6c75ba62545fcfa84cb6548fad4fe03f8828771",
+          "driveId": null
+        },
+        {
+          "path": "public/omalovanky/en/lv2_gpt_10187_1_en-pumpkin-with-autumn-leaves-coloring-page-sample-preview.webp",
+          "bytes": 267188,
+          "sha": "f114490a2dc11a956b1eceb9112d8a9178cc5f28",
+          "driveId": null
+        }
+      ],
+      "state": "prepared"
+    },
+    {
+      "fileBase": "lv2_gpt_10188_1_en-friendly-ghost-in-front-of-haunted-house-tracing",
+      "motifId": "10188",
+      "sourceId": "1E0czP9WgGJj3pzYaRpXdUtlfT_suTZjS",
+      "sampleSourceId": "1_qELIZLpX4XZwdh09fml7xa4bW8ztycX",
+      "previewBase": "/worldforkids/public/obtahovacky/en/lv2_gpt_10188_1_en-friendly-ghost-in-front-of-haunted-house-tracing-coloring-preview",
+      "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10188_1_en-friendly-ghost-in-front-of-haunted-house-coloring-page-sample-preview",
+      "files": [
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10188_1_en-friendly-ghost-in-front-of-haunted-house-tracing-coloring.png",
+          "bytes": 776122,
+          "sha": "f0f042cf75e68176de4bf904d5db5541259e2533",
+          "driveId": "1mnPGvnOVaQCTkf_FcA7rIqxn9ZNe12x4"
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10188_1_en-friendly-ghost-in-front-of-haunted-house-tracing-coloring.pdf",
+          "bytes": 1111816,
+          "sha": "09e4e025648b51827ca796096d9d1913c7f6e87d",
+          "driveId": "135HqR1oU-ida0W1nuwiK0Dcmhew4Tiyo"
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10188_1_en-friendly-ghost-in-front-of-haunted-house-tracing-coloring.webp",
+          "bytes": 74218,
+          "sha": "9c4c004651777136d8ac62cf4f40603c3c09dfe1",
+          "driveId": null
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10188_1_en-friendly-ghost-in-front-of-haunted-house-tracing-coloring-preview.png",
+          "bytes": 885234,
+          "sha": "3d7f94afb7b3f98fa94dae6d699668a0257adc82",
+          "driveId": null
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10188_1_en-friendly-ghost-in-front-of-haunted-house-tracing-coloring-preview.webp",
+          "bytes": 74218,
+          "sha": "9c4c004651777136d8ac62cf4f40603c3c09dfe1",
+          "driveId": null
+        },
+        {
+          "path": "public/omalovanky/en/lv2_gpt_10188_1_en-friendly-ghost-in-front-of-haunted-house-coloring-page-sample-preview.png",
+          "bytes": 638618,
+          "sha": "b64e24b731547c479618160f3d5eb8afea1294cc",
+          "driveId": null
+        },
+        {
+          "path": "public/omalovanky/en/lv2_gpt_10188_1_en-friendly-ghost-in-front-of-haunted-house-coloring-page-sample-preview.webp",
+          "bytes": 442578,
+          "sha": "63b0c7af9029f8ec2d0941e30656930a9acb108c",
+          "driveId": null
+        }
+      ],
+      "state": "prepared"
+    },
+    {
+      "fileBase": "lv2_gpt_10189_1_en-cat-sitting-on-pumpkin-tracing",
+      "motifId": "10189",
+      "sourceId": "1RAQBw6TsHsujyQDMu7cIRNFNDATWY3Fe",
+      "sampleSourceId": "1lljB2tXz-18MvURR2r_y72kXLF3j6RGQ",
+      "previewBase": "/worldforkids/public/obtahovacky/en/lv2_gpt_10189_1_en-cat-sitting-on-pumpkin-tracing-coloring-preview",
+      "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv2_gpt_10189_1_en-cat-sitting-on-pumpkin-coloring-page-sample-preview",
+      "files": [
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10189_1_en-cat-sitting-on-pumpkin-tracing-coloring.png",
+          "bytes": 685236,
+          "sha": "dcc549a943aa674a18f4ed7ea663ab5a6666e4bf",
+          "driveId": "1BIp_rfmDTxcBtees_ozgSACwoUhXOLmK"
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10189_1_en-cat-sitting-on-pumpkin-tracing-coloring.pdf",
+          "bytes": 1008001,
+          "sha": "7ba011332e7a22ca86abcba7289c1c1a2f429480",
+          "driveId": "1WKZaRmXyZoWCTvfjIdCEVWQgntpvxDSU"
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10189_1_en-cat-sitting-on-pumpkin-tracing-coloring.webp",
+          "bytes": 52012,
+          "sha": "932c5258faac8659e1e6d2ac967418dabbb48e2c",
+          "driveId": null
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10189_1_en-cat-sitting-on-pumpkin-tracing-coloring-preview.png",
+          "bytes": 807140,
+          "sha": "c7e9b33bf71a81888f802177f41f780cad19ac7f",
+          "driveId": null
+        },
+        {
+          "path": "public/obtahovacky/en/lv2_gpt_10189_1_en-cat-sitting-on-pumpkin-tracing-coloring-preview.webp",
+          "bytes": 52012,
+          "sha": "932c5258faac8659e1e6d2ac967418dabbb48e2c",
+          "driveId": null
+        },
+        {
+          "path": "public/omalovanky/en/lv2_gpt_10189_1_en-cat-sitting-on-pumpkin-coloring-page-sample-preview.png",
+          "bytes": 332100,
+          "sha": "7de316bb4ee066227fa1409ce3dc7dbbdff5487f",
+          "driveId": null
+        },
+        {
+          "path": "public/omalovanky/en/lv2_gpt_10189_1_en-cat-sitting-on-pumpkin-coloring-page-sample-preview.webp",
+          "bytes": 209122,
+          "sha": "f79aecf4186a7952dda55320d46c3b4fb339c868",
+          "driveId": null
+        }
+      ],
+      "state": "prepared"
+    }
+  ],
+  "batches": []
+}

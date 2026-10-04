@@ -22,5 +22,15 @@ vm.runInContext(html.slice(html.indexOf('function ziskejCestuBase('),html.indexO
 const activity={typ:'obtahovacky',souborZaklad:'lv2_gpt_1001_1_en-test-tracing',assetDirectory:'en',varianty:['coloring','sample'],sampleBase:'/worldforkids/public/omalovanky/en/test-sample'};
 assert.equal(context.ziskejCestuBase(activity,'sample'),activity.sampleBase);
 assert.equal(context.ziskejCestuBase(activity,'coloring'),'public/obtahovacky/en/lv2_gpt_1001_1_en-test-tracing-coloring');
+activity.previewBase='/worldforkids/public/obtahovacky/en/test-preview';
+activity.samplePreviewBase='/worldforkids/public/omalovanky/en/test-sample-preview';
+assert.equal(context.ziskejCestuNahledu(activity,'coloring'),activity.previewBase);
+assert.equal(context.ziskejCestuNahledu(activity,'sample'),activity.samplePreviewBase);
+assert.equal(context.ziskejCestuBase(activity,'sample'),activity.sampleBase);
+assert.notEqual(context.ziskejCestuNahledu(activity,'coloring'),context.ziskejCestuBase(activity,'coloring'));
+assert.equal(context.ziskejCestuNahledu({...activity,previewBase:''},'coloring'),context.ziskejCestuBase(activity,'coloring'));
+const staticBuilder=fs.readFileSync('scripts/build-static-site.mjs','utf8');
+assert.ok(staticBuilder.includes("preview.querySelector('.activity-print-original').src=selected.base+'.png'"));
+assert.ok(staticBuilder.includes('.activity-screen-picture { display: none !important; }'));
 assert.ok(html.includes('tiskUrl=new URL(url,window.location.href).href'));
 console.log('Related grouping, modal opening, stale cleanup, shared sample and print URL passed.');
