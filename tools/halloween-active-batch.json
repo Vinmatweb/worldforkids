@@ -1,21 +1,21 @@
 {
-  "batch": 15,
-  "state": "published-user-review-deferred",
+  "batch": 16,
+  "state": "prepared",
   "items": [
     {
-      "originalBase": "lv3_gpt_H1039_1_en-friendly-gargoyle-on-rooftop-coloring-page",
+      "originalBase": "lv3_gpt_H1042_1_en-friendly-monsters-halloween-candy-workshop-coloring-page",
       "sample": {
-        "url": "https://drive.google.com/file/d/1npQz11IdTbLh9ruIks5eAfo6paqHtnPj/view?usp=drivesdk",
-        "title": "lv3_gpt_H1039_1_en-friendly-gargoyle-on-rooftop-coloring-page-sample.png",
-        "id": "1npQz11IdTbLh9ruIks5eAfo6paqHtnPj",
+        "url": "https://drive.google.com/file/d/1jIIHR1aUvog-sedwcm5V04XOL_lGvjYp/view?usp=drivesdk",
+        "title": "lv3_gpt_H1042_1_en-friendly-monsters-halloween-candy-workshop-coloring-page-sample.png",
+        "id": "1jIIHR1aUvog-sedwcm5V04XOL_lGvjYp",
         "mime_type": "image/png",
-        "size": "1662236",
+        "size": "2413419",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:24:16.131Z",
-        "updated_at": "2026-10-01T12:31:42.903Z",
-        "viewedByMeTime": "2026-10-02T11:24:16.131Z",
-        "display_title": "lv3_gpt_H1039_1_en-friendly-gargoyle-on-rooftop-coloring-page-sample.png",
-        "display_url": "https://drive.google.com/file/d/1npQz11IdTbLh9ruIks5eAfo6paqHtnPj/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:25:09.751Z",
+        "updated_at": "2026-10-02T11:04:44.664Z",
+        "viewedByMeTime": "2026-10-02T11:25:09.751Z",
+        "display_title": "lv3_gpt_H1042_1_en-friendly-monsters-halloween-candy-workshop-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/1jIIHR1aUvog-sedwcm5V04XOL_lGvjYp/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -24,17 +24,17 @@
         "can_list_children": false
       },
       "coloring": {
-        "url": "https://drive.google.com/file/d/1oXt61mm0V5KXe8XBWuGmuooMcDwFWcrT/view?usp=drivesdk",
-        "title": "lv3_gpt_H1039_1_en-friendly-gargoyle-on-rooftop-coloring-page-coloring.png",
-        "id": "1oXt61mm0V5KXe8XBWuGmuooMcDwFWcrT",
+        "url": "https://drive.google.com/file/d/1Xx1ncvKs-GB1A1se8sgF-JHx-UPikEVZ/view?usp=drivesdk",
+        "title": "lv3_gpt_H1042_1_en-friendly-monsters-halloween-candy-workshop-coloring-page-coloring.png",
+        "id": "1Xx1ncvKs-GB1A1se8sgF-JHx-UPikEVZ",
         "mime_type": "image/png",
-        "size": "1260095",
+        "size": "1870539",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:24:13.238Z",
-        "updated_at": "2026-10-01T10:12:29.928Z",
-        "viewedByMeTime": "2026-10-02T11:24:13.238Z",
-        "display_title": "lv3_gpt_H1039_1_en-friendly-gargoyle-on-rooftop-coloring-page-coloring.png",
-        "display_url": "https://drive.google.com/file/d/1oXt61mm0V5KXe8XBWuGmuooMcDwFWcrT/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:25:12.366Z",
+        "updated_at": "2026-10-02T10:34:06.522Z",
+        "viewedByMeTime": "2026-10-02T11:25:12.366Z",
+        "display_title": "lv3_gpt_H1042_1_en-friendly-monsters-halloween-candy-workshop-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/1Xx1ncvKs-GB1A1se8sgF-JHx-UPikEVZ/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -42,21 +42,21 @@
         "can_download": true,
         "can_list_children": false
       },
-      "id": 10218,
+      "id": 10221,
       "names": [
-        "Přátelský chrlič na střeše",
-        "Friendly Gargoyle on a Rooftop",
-        "Freundlicher Wasserspeier auf einem Dach",
-        "Gárgola amistosa en un tejado"
+        "Přátelská monstra v halloweenské dílně na sladkosti",
+        "Friendly Monsters in a Halloween Candy Workshop",
+        "Freundliche Monster in einer Halloween-Süßigkeitenwerkstatt",
+        "Monstruos amistosos en un taller de dulces de Halloween"
       ],
-      "sheetRow": 58,
-      "masterRow": 1389,
-      "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/b8f25161-0e61-41f0-8bb7-65f917958298/lv3_gpt_H1039_1_en-friendly-gargoyle-on-rooftop-coloring-page-coloring.png",
-      "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/d65b670a-2e0e-4543-9c5e-12e0bb7db61e/lv3_gpt_H1039_1_en-friendly-gargoyle-on-rooftop-coloring-page-sample.png",
-      "base": "lv3_gpt_10218_1_en-friendly-gargoyle-on-rooftop-coloring-page",
+      "sheetRow": 61,
+      "masterRow": 1392,
+      "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/c4a7a291-26e0-4c50-a965-9da53c0fa4ce/lv3_gpt_H1042_1_en-friendly-monsters-halloween-candy-workshop-coloring-page-coloring.png",
+      "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/e6d784ec-72c6-4500-8c5d-b736b7aca606/lv3_gpt_H1042_1_en-friendly-monsters-halloween-candy-workshop-coloring-page-sample.png",
+      "base": "lv3_gpt_10221_1_en-friendly-monsters-halloween-candy-workshop-coloring-page",
       "row": {
-        "ID": "10218",
-        "soubor": "lv3_gpt_10218_1_en-friendly-gargoyle-on-rooftop-coloring-page",
+        "ID": "10221",
+        "soubor": "lv3_gpt_10221_1_en-friendly-monsters-halloween-candy-workshop-coloring-page",
         "kategorie": "svatky",
         "podkategorie": "halloween",
         "datumPridani": "2026-10-02",
@@ -64,40 +64,40 @@
         "zamereni": "jemna-motorika",
         "assetDirectory": "en",
         "pdf": "1",
-        "nazevCz": "Přátelský chrlič na střeše",
-        "altCz_coloring": "Přátelský chrlič na střeše: černobílá omalovánka LV3 pro děti 6–7 let, zdarma k vytisknutí na A4.",
-        "altCz_sample": "Přátelský chrlič na střeše: barevný vzor k omalovánce LV3.",
-        "nazevEn": "Friendly Gargoyle on a Rooftop",
-        "altEn_coloring": "Friendly Gargoyle on a Rooftop: black-and-white LV3 coloring page for ages 6–7, free to print on A4 paper.",
-        "altEn_sample": "Friendly Gargoyle on a Rooftop: color sample for the LV3 coloring page.",
-        "nazevDe": "Freundlicher Wasserspeier auf einem Dach",
-        "altDe_coloring": "Freundlicher Wasserspeier auf einem Dach: schwarz-weißes Ausmalbild der Stufe 3 für Kinder von 6–7 Jahren, kostenlos auf A4 drucken.",
-        "altDe_sample": "Freundlicher Wasserspeier auf einem Dach: Farbvorlage zum Ausmalbild der Stufe 3.",
-        "nazevEs": "Gárgola amistosa en un tejado",
-        "altEs_coloring": "Gárgola amistosa en un tejado: dibujo en blanco y negro de nivel 3 para niños de 6–7 años, gratis para imprimir en A4.",
-        "altEs_sample": "Gárgola amistosa en un tejado: modelo a color para el dibujo de nivel 3.",
-        "Status": "publikováno",
-        "driveColoring": "https://drive.google.com/file/d/1XeV7vabpVQpZ-WNVljSqGqEQe8yFTlaW/view",
-        "drivePdfColoring": "https://drive.google.com/file/d/1FCnuPfIcPmjYWO__goblC7HP5QYqM2tJ/view",
-        "driveSample": "https://drive.google.com/file/d/1fDCn838EfGI_G0WVRsshgwlmP5q2OyJ1/view",
-        "drivePdfSample": "https://drive.google.com/file/d/1ihtX2UMPDkJ4-LwPfeUGF9eAMovgIaUY/view"
+        "nazevCz": "Přátelská monstra v halloweenské dílně na sladkosti",
+        "altCz_coloring": "Přátelská monstra v halloweenské dílně na sladkosti: černobílá omalovánka LV3 pro děti 6–7 let, zdarma k vytisknutí na A4.",
+        "altCz_sample": "Přátelská monstra v halloweenské dílně na sladkosti: barevný vzor k omalovánce LV3.",
+        "nazevEn": "Friendly Monsters in a Halloween Candy Workshop",
+        "altEn_coloring": "Friendly Monsters in a Halloween Candy Workshop: black-and-white LV3 coloring page for ages 6–7, free to print on A4 paper.",
+        "altEn_sample": "Friendly Monsters in a Halloween Candy Workshop: color sample for the LV3 coloring page.",
+        "nazevDe": "Freundliche Monster in einer Halloween-Süßigkeitenwerkstatt",
+        "altDe_coloring": "Freundliche Monster in einer Halloween-Süßigkeitenwerkstatt: schwarz-weißes Ausmalbild der Stufe 3 für Kinder von 6–7 Jahren, kostenlos auf A4 drucken.",
+        "altDe_sample": "Freundliche Monster in einer Halloween-Süßigkeitenwerkstatt: Farbvorlage zum Ausmalbild der Stufe 3.",
+        "nazevEs": "Monstruos amistosos en un taller de dulces de Halloween",
+        "altEs_coloring": "Monstruos amistosos en un taller de dulces de Halloween: dibujo en blanco y negro de nivel 3 para niños de 6–7 años, gratis para imprimir en A4.",
+        "altEs_sample": "Monstruos amistosos en un taller de dulces de Halloween: modelo a color para el dibujo de nivel 3.",
+        "Status": "vygenerováno",
+        "driveColoring": "https://drive.google.com/file/d/11o2gLwiIitapAnJM9piGACc_yC5X4f5R/view",
+        "drivePdfColoring": "https://drive.google.com/file/d/1RUt9LYNrchoPr-6lXVlQNZRC5VL3MU0K/view",
+        "driveSample": "https://drive.google.com/file/d/138LIvPEBoU6GzHFlPbtnj2oaC3CVEkmd/view",
+        "drivePdfSample": "https://drive.google.com/file/d/1hXfG0zDnDk1kWL77unlYKh-wPPQ4L9dR/view"
       },
       "level": 3
     },
     {
-      "originalBase": "lv3_gpt_H1040_1_en-friendly-haunted-tree-coloring-page",
+      "originalBase": "lv3_gpt_H1043_1_en-friendly-monsters-halloween-band-coloring-page",
       "sample": {
-        "url": "https://drive.google.com/file/d/1EPwc5uOMgRjCZhDJNEmHkS-V0_38iFAI/view?usp=drivesdk",
-        "title": "lv3_gpt_H1040_1_en-friendly-haunted-tree-coloring-page-sample.png",
-        "id": "1EPwc5uOMgRjCZhDJNEmHkS-V0_38iFAI",
+        "url": "https://drive.google.com/file/d/1vSMSQUoOJg5hZMzGTU2mGOl9tEKTPmt6/view?usp=drivesdk",
+        "title": "lv3_gpt_H1043_1_en-friendly-monsters-halloween-band-coloring-page-sample.png",
+        "id": "1vSMSQUoOJg5hZMzGTU2mGOl9tEKTPmt6",
         "mime_type": "image/png",
-        "size": "1856317",
+        "size": "1903314",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:24:37.275Z",
-        "updated_at": "2026-10-01T12:31:42.796Z",
-        "viewedByMeTime": "2026-10-02T11:24:37.275Z",
-        "display_title": "lv3_gpt_H1040_1_en-friendly-haunted-tree-coloring-page-sample.png",
-        "display_url": "https://drive.google.com/file/d/1EPwc5uOMgRjCZhDJNEmHkS-V0_38iFAI/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:25:34.570Z",
+        "updated_at": "2026-10-02T11:04:44.687Z",
+        "viewedByMeTime": "2026-10-02T11:25:34.570Z",
+        "display_title": "lv3_gpt_H1043_1_en-friendly-monsters-halloween-band-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/1vSMSQUoOJg5hZMzGTU2mGOl9tEKTPmt6/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -106,17 +106,17 @@
         "can_list_children": false
       },
       "coloring": {
-        "url": "https://drive.google.com/file/d/1yvZfsicF7qcs5vfTFWb-iE1tiX_MYk_3/view?usp=drivesdk",
-        "title": "lv3_gpt_H1040_1_en-friendly-haunted-tree-coloring-page-coloring.png",
-        "id": "1yvZfsicF7qcs5vfTFWb-iE1tiX_MYk_3",
+        "url": "https://drive.google.com/file/d/1McgOBZhQA6jHwMPMjkJcnB0eblhX43V6/view?usp=drivesdk",
+        "title": "lv3_gpt_H1043_1_en-friendly-monsters-halloween-band-coloring-page-coloring.png",
+        "id": "1McgOBZhQA6jHwMPMjkJcnB0eblhX43V6",
         "mime_type": "image/png",
-        "size": "1534630",
+        "size": "1368902",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:25:04.802Z",
-        "updated_at": "2026-10-01T10:12:30.498Z",
-        "viewedByMeTime": "2026-10-02T11:25:04.802Z",
-        "display_title": "lv3_gpt_H1040_1_en-friendly-haunted-tree-coloring-page-coloring.png",
-        "display_url": "https://drive.google.com/file/d/1yvZfsicF7qcs5vfTFWb-iE1tiX_MYk_3/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:25:23.805Z",
+        "updated_at": "2026-10-02T10:34:06.561Z",
+        "viewedByMeTime": "2026-10-02T11:25:23.805Z",
+        "display_title": "lv3_gpt_H1043_1_en-friendly-monsters-halloween-band-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/1McgOBZhQA6jHwMPMjkJcnB0eblhX43V6/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -124,21 +124,21 @@
         "can_download": true,
         "can_list_children": false
       },
-      "id": 10219,
+      "id": 10222,
       "names": [
-        "Přátelský strašidelný strom",
-        "Friendly Haunted Tree",
-        "Freundlicher Spukbaum",
-        "Árbol encantado amistoso"
+        "Přátelská halloweenská kapela monster",
+        "Friendly Monsters in a Halloween Band",
+        "Freundliche Monster in einer Halloween-Band",
+        "Monstruos amistosos en una banda de Halloween"
       ],
-      "sheetRow": 59,
-      "masterRow": 1390,
-      "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/6b9af5eb-f6e4-444f-aec1-c9b5d118abe6/lv3_gpt_H1040_1_en-friendly-haunted-tree-coloring-page-coloring.png",
-      "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/c634f894-5b6a-4ebd-93fd-32812d887d55/lv3_gpt_H1040_1_en-friendly-haunted-tree-coloring-page-sample.png",
-      "base": "lv3_gpt_10219_1_en-friendly-haunted-tree-coloring-page",
+      "sheetRow": 62,
+      "masterRow": 1393,
+      "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/362a6505-68bc-4c4f-9d96-61ffa462ff58/lv3_gpt_H1043_1_en-friendly-monsters-halloween-band-coloring-page-coloring.png",
+      "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/18f3eeec-bccb-47e3-b66f-7197b8718f4d/lv3_gpt_H1043_1_en-friendly-monsters-halloween-band-coloring-page-sample.png",
+      "base": "lv3_gpt_10222_1_en-friendly-monsters-halloween-band-coloring-page",
       "row": {
-        "ID": "10219",
-        "soubor": "lv3_gpt_10219_1_en-friendly-haunted-tree-coloring-page",
+        "ID": "10222",
+        "soubor": "lv3_gpt_10222_1_en-friendly-monsters-halloween-band-coloring-page",
         "kategorie": "svatky",
         "podkategorie": "halloween",
         "datumPridani": "2026-10-02",
@@ -146,40 +146,40 @@
         "zamereni": "jemna-motorika",
         "assetDirectory": "en",
         "pdf": "1",
-        "nazevCz": "Přátelský strašidelný strom",
-        "altCz_coloring": "Přátelský strašidelný strom: černobílá omalovánka LV3 pro děti 6–7 let, zdarma k vytisknutí na A4.",
-        "altCz_sample": "Přátelský strašidelný strom: barevný vzor k omalovánce LV3.",
-        "nazevEn": "Friendly Haunted Tree",
-        "altEn_coloring": "Friendly Haunted Tree: black-and-white LV3 coloring page for ages 6–7, free to print on A4 paper.",
-        "altEn_sample": "Friendly Haunted Tree: color sample for the LV3 coloring page.",
-        "nazevDe": "Freundlicher Spukbaum",
-        "altDe_coloring": "Freundlicher Spukbaum: schwarz-weißes Ausmalbild der Stufe 3 für Kinder von 6–7 Jahren, kostenlos auf A4 drucken.",
-        "altDe_sample": "Freundlicher Spukbaum: Farbvorlage zum Ausmalbild der Stufe 3.",
-        "nazevEs": "Árbol encantado amistoso",
-        "altEs_coloring": "Árbol encantado amistoso: dibujo en blanco y negro de nivel 3 para niños de 6–7 años, gratis para imprimir en A4.",
-        "altEs_sample": "Árbol encantado amistoso: modelo a color para el dibujo de nivel 3.",
-        "Status": "publikováno",
-        "driveColoring": "https://drive.google.com/file/d/1lS8fAIX05gv84v-2dKZMVJJ4l0a11bAq/view",
-        "drivePdfColoring": "https://drive.google.com/file/d/1KbhJ8unsoBQ6pAo_6Mx-K9Kwmq5MQhJt/view",
-        "driveSample": "https://drive.google.com/file/d/1ag-4kKge7I4PcCdQNlgbh_kyHKoI49O7/view",
-        "drivePdfSample": "https://drive.google.com/file/d/1B419SlTo1LjdYFoGJut3K9Yb8fAX9EmN/view"
+        "nazevCz": "Přátelská halloweenská kapela monster",
+        "altCz_coloring": "Přátelská halloweenská kapela monster: černobílá omalovánka LV3 pro děti 6–7 let, zdarma k vytisknutí na A4.",
+        "altCz_sample": "Přátelská halloweenská kapela monster: barevný vzor k omalovánce LV3.",
+        "nazevEn": "Friendly Monsters in a Halloween Band",
+        "altEn_coloring": "Friendly Monsters in a Halloween Band: black-and-white LV3 coloring page for ages 6–7, free to print on A4 paper.",
+        "altEn_sample": "Friendly Monsters in a Halloween Band: color sample for the LV3 coloring page.",
+        "nazevDe": "Freundliche Monster in einer Halloween-Band",
+        "altDe_coloring": "Freundliche Monster in einer Halloween-Band: schwarz-weißes Ausmalbild der Stufe 3 für Kinder von 6–7 Jahren, kostenlos auf A4 drucken.",
+        "altDe_sample": "Freundliche Monster in einer Halloween-Band: Farbvorlage zum Ausmalbild der Stufe 3.",
+        "nazevEs": "Monstruos amistosos en una banda de Halloween",
+        "altEs_coloring": "Monstruos amistosos en una banda de Halloween: dibujo en blanco y negro de nivel 3 para niños de 6–7 años, gratis para imprimir en A4.",
+        "altEs_sample": "Monstruos amistosos en una banda de Halloween: modelo a color para el dibujo de nivel 3.",
+        "Status": "vygenerováno",
+        "driveColoring": "https://drive.google.com/file/d/1Zz77g0otrGPdSxD4FGfErcTeNKRBBIDa/view",
+        "drivePdfColoring": "https://drive.google.com/file/d/1UVGj21JDLrbi6qH1epgYuVyD_exzUdxt/view",
+        "driveSample": "https://drive.google.com/file/d/1HoZ_FjGkBRuURbhd8kLA-eSxDTNQ_dvl/view",
+        "drivePdfSample": "https://drive.google.com/file/d/1dOj-dOtwsC8U3qrEEzjtskc1jCWHScZU/view"
       },
       "level": 3
     },
     {
-      "originalBase": "lv2_gpt_H1041_1_en-friendly-ghost-baking-halloween-cookies-coloring-page",
+      "originalBase": "lv3_gpt_H1044_1_en-friendly-ghost-pirate-ship-and-lighthouse-coloring-page",
       "sample": {
-        "url": "https://drive.google.com/file/d/1Z0uzPDIAFtKds3A3nZPc8PWFJ1wYx7uo/view?usp=drivesdk",
-        "title": "lv2_gpt_H1041_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-sample.png",
-        "id": "1Z0uzPDIAFtKds3A3nZPc8PWFJ1wYx7uo",
+        "url": "https://drive.google.com/file/d/1dwRpi7yZ9uNzJ5E1ximxNlbfzxKP_WBQ/view?usp=drivesdk",
+        "title": "lv3_gpt_H1044_1_en-friendly-ghost-pirate-ship-and-lighthouse-coloring-page-sample.png",
+        "id": "1dwRpi7yZ9uNzJ5E1ximxNlbfzxKP_WBQ",
         "mime_type": "image/png",
-        "size": "1756534",
+        "size": "2647866",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:21:42.339Z",
-        "updated_at": "2026-10-02T11:04:44.639Z",
-        "viewedByMeTime": "2026-10-02T11:21:42.339Z",
-        "display_title": "lv2_gpt_H1041_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-sample.png",
-        "display_url": "https://drive.google.com/file/d/1Z0uzPDIAFtKds3A3nZPc8PWFJ1wYx7uo/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:25:15.062Z",
+        "updated_at": "2026-10-02T11:04:44.711Z",
+        "viewedByMeTime": "2026-10-02T11:25:15.062Z",
+        "display_title": "lv3_gpt_H1044_1_en-friendly-ghost-pirate-ship-and-lighthouse-coloring-page-sample.png",
+        "display_url": "https://drive.google.com/file/d/1dwRpi7yZ9uNzJ5E1ximxNlbfzxKP_WBQ/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -188,17 +188,17 @@
         "can_list_children": false
       },
       "coloring": {
-        "url": "https://drive.google.com/file/d/12mOx8Hvq3pa_6_hsnjNJPn1zrLOEhjTW/view?usp=drivesdk",
-        "title": "lv2_gpt_H1041_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-coloring.png",
-        "id": "12mOx8Hvq3pa_6_hsnjNJPn1zrLOEhjTW",
+        "url": "https://drive.google.com/file/d/1rqxk5h9mrdr6nl-nYrWJCL7qRC0TOqwo/view?usp=drivesdk",
+        "title": "lv3_gpt_H1044_1_en-friendly-ghost-pirate-ship-and-lighthouse-coloring-page-coloring.png",
+        "id": "1rqxk5h9mrdr6nl-nYrWJCL7qRC0TOqwo",
         "mime_type": "image/png",
-        "size": "1445810",
+        "size": "1763947",
         "file_or_folder": "file",
-        "created_at": "2026-10-02T11:21:57.084Z",
-        "updated_at": "2026-10-02T10:34:06.645Z",
-        "viewedByMeTime": "2026-10-02T11:21:57.084Z",
-        "display_title": "lv2_gpt_H1041_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-coloring.png",
-        "display_url": "https://drive.google.com/file/d/12mOx8Hvq3pa_6_hsnjNJPn1zrLOEhjTW/view?usp=drivesdk",
+        "created_at": "2026-10-02T11:25:21.480Z",
+        "updated_at": "2026-10-02T10:34:06.683Z",
+        "viewedByMeTime": "2026-10-02T11:25:21.480Z",
+        "display_title": "lv3_gpt_H1044_1_en-friendly-ghost-pirate-ship-and-lighthouse-coloring-page-coloring.png",
+        "display_url": "https://drive.google.com/file/d/1rqxk5h9mrdr6nl-nYrWJCL7qRC0TOqwo/view?usp=drivesdk",
         "parent_ids": [
           "1efo6dcitquAwz--8OK93RlDMeXg_x1ir"
         ],
@@ -206,21 +206,21 @@
         "can_download": true,
         "can_list_children": false
       },
-      "id": 10220,
+      "id": 10223,
       "names": [
-        "Duch peče halloweenské sušenky",
-        "Ghost Baking Halloween Cookies",
-        "Geist backt Halloween-Kekse",
-        "Fantasma horneando galletas de Halloween"
+        "Pirátská loď duchů u majáku",
+        "Ghost Pirate Ship by a Lighthouse",
+        "Geisterpiratenschiff bei einem Leuchtturm",
+        "Barco pirata fantasma junto a un faro"
       ],
-      "sheetRow": 60,
-      "masterRow": 1391,
-      "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/64fc0ead-155c-4f02-9c75-ec987997d261/lv2_gpt_H1041_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-coloring.png",
-      "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/5bb819d3-4ac6-4b44-82e4-fa0e520a1736/lv2_gpt_H1041_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-sample.png",
-      "base": "lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-coloring-page",
+      "sheetRow": 63,
+      "masterRow": 1394,
+      "coloringLocal": "/workspace/scratch/62452b8ae3fe/attachments/d48e7b2a-6951-4284-8178-536c03b07852/lv3_gpt_H1044_1_en-friendly-ghost-pirate-ship-and-lighthouse-coloring-page-coloring.png",
+      "sampleLocal": "/workspace/scratch/62452b8ae3fe/attachments/fa295123-a896-4942-80ba-19ab916ececa/lv3_gpt_H1044_1_en-friendly-ghost-pirate-ship-and-lighthouse-coloring-page-sample.png",
+      "base": "lv3_gpt_10223_1_en-friendly-ghost-pirate-ship-and-lighthouse-coloring-page",
       "row": {
-        "ID": "10220",
-        "soubor": "lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-coloring-page",
+        "ID": "10223",
+        "soubor": "lv3_gpt_10223_1_en-friendly-ghost-pirate-ship-and-lighthouse-coloring-page",
         "kategorie": "svatky",
         "podkategorie": "halloween",
         "datumPridani": "2026-10-02",
@@ -228,37 +228,37 @@
         "zamereni": "jemna-motorika",
         "assetDirectory": "en",
         "pdf": "1",
-        "nazevCz": "Duch peče halloweenské sušenky",
-        "altCz_coloring": "Duch peče halloweenské sušenky: černobílá omalovánka LV2 pro děti 5–6 let, zdarma k vytisknutí na A4.",
-        "altCz_sample": "Duch peče halloweenské sušenky: barevný vzor k omalovánce LV2.",
-        "nazevEn": "Ghost Baking Halloween Cookies",
-        "altEn_coloring": "Ghost Baking Halloween Cookies: black-and-white LV2 coloring page for ages 5–6, free to print on A4 paper.",
-        "altEn_sample": "Ghost Baking Halloween Cookies: color sample for the LV2 coloring page.",
-        "nazevDe": "Geist backt Halloween-Kekse",
-        "altDe_coloring": "Geist backt Halloween-Kekse: schwarz-weißes Ausmalbild der Stufe 2 für Kinder von 5–6 Jahren, kostenlos auf A4 drucken.",
-        "altDe_sample": "Geist backt Halloween-Kekse: Farbvorlage zum Ausmalbild der Stufe 2.",
-        "nazevEs": "Fantasma horneando galletas de Halloween",
-        "altEs_coloring": "Fantasma horneando galletas de Halloween: dibujo en blanco y negro de nivel 2 para niños de 5–6 años, gratis para imprimir en A4.",
-        "altEs_sample": "Fantasma horneando galletas de Halloween: modelo a color para el dibujo de nivel 2.",
-        "Status": "publikováno",
-        "driveColoring": "https://drive.google.com/file/d/1nC4Fzcq2syw-jLMGqnQYxpj9BBtvbGXq/view",
-        "drivePdfColoring": "https://drive.google.com/file/d/1oVoR1PIthBauY3P3vceVEDPP9OQornty/view",
-        "driveSample": "https://drive.google.com/file/d/1Y38xjQBdbjSs-Bk9gp1x9UCGPi46KeHp/view",
-        "drivePdfSample": "https://drive.google.com/file/d/1X_ME513plZIGcEeT2iuEK1TW9hr17ODt/view"
+        "nazevCz": "Pirátská loď duchů u majáku",
+        "altCz_coloring": "Pirátská loď duchů u majáku: černobílá omalovánka LV3 pro děti 6–7 let, zdarma k vytisknutí na A4.",
+        "altCz_sample": "Pirátská loď duchů u majáku: barevný vzor k omalovánce LV3.",
+        "nazevEn": "Ghost Pirate Ship by a Lighthouse",
+        "altEn_coloring": "Ghost Pirate Ship by a Lighthouse: black-and-white LV3 coloring page for ages 6–7, free to print on A4 paper.",
+        "altEn_sample": "Ghost Pirate Ship by a Lighthouse: color sample for the LV3 coloring page.",
+        "nazevDe": "Geisterpiratenschiff bei einem Leuchtturm",
+        "altDe_coloring": "Geisterpiratenschiff bei einem Leuchtturm: schwarz-weißes Ausmalbild der Stufe 3 für Kinder von 6–7 Jahren, kostenlos auf A4 drucken.",
+        "altDe_sample": "Geisterpiratenschiff bei einem Leuchtturm: Farbvorlage zum Ausmalbild der Stufe 3.",
+        "nazevEs": "Barco pirata fantasma junto a un faro",
+        "altEs_coloring": "Barco pirata fantasma junto a un faro: dibujo en blanco y negro de nivel 3 para niños de 6–7 años, gratis para imprimir en A4.",
+        "altEs_sample": "Barco pirata fantasma junto a un faro: modelo a color para el dibujo de nivel 3.",
+        "Status": "vygenerováno",
+        "driveColoring": "https://drive.google.com/file/d/1nPkOwg7dfSaAW6pGyY7j6jV_lnR8yeRy/view",
+        "drivePdfColoring": "https://drive.google.com/file/d/1_SIxLy3f3upVirR3vjpzyWkL-Ell_TNC/view",
+        "driveSample": "https://drive.google.com/file/d/1o5J6BlqyS7-WyNybjmOv7VxX79gNgdNs/view",
+        "drivePdfSample": "https://drive.google.com/file/d/1RBMRKauen-Pzigf_m3TtwY3pWWxLmEGy/view"
       },
-      "level": 2
+      "level": 3
     }
   ],
   "files": [
     {
-      "file": "/tmp/vinmat-halloween-batch-15/lv3_gpt_10218_1_en-friendly-gargoyle-on-rooftop-coloring-page-coloring.png",
-      "path": "public/omalovanky/en/lv3_gpt_10218_1_en-friendly-gargoyle-on-rooftop-coloring-page-coloring.png",
-      "bytes": 1130281,
-      "sha": "289ed62c2d4a8562c991a35c49051f7794d43757",
-      "id": 10218,
+      "file": "/tmp/vinmat-halloween-batch-16/lv3_gpt_10221_1_en-friendly-monsters-halloween-candy-workshop-coloring-page-coloring.png",
+      "path": "public/omalovanky/en/lv3_gpt_10221_1_en-friendly-monsters-halloween-candy-workshop-coloring-page-coloring.png",
+      "bytes": 1750787,
+      "sha": "b5f053435aa599583d5b2c7d4bccb423a9a64d4a",
+      "id": 10221,
       "variant": "coloring",
       "ext": "png",
-      "driveId": "1XeV7vabpVQpZ-WNVljSqGqEQe8yFTlaW",
+      "driveId": "11o2gLwiIitapAnJM9piGACc_yC5X4f5R",
       "placement": {
         "x": 157.23779527559057,
         "top": 14.173228346456694,
@@ -271,18 +271,17 @@
         ],
         "height": 43.61538461538462,
         "alignment": "center"
-      },
-      "driveUploaded": true
+      }
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-15/lv3_gpt_10218_1_en-friendly-gargoyle-on-rooftop-coloring-page-coloring.pdf",
-      "path": "public/omalovanky/en/lv3_gpt_10218_1_en-friendly-gargoyle-on-rooftop-coloring-page-coloring.pdf",
-      "bytes": 1502928,
-      "sha": "e357e350bfbf150a1dda8aa1abbd801146730118",
-      "id": 10218,
+      "file": "/tmp/vinmat-halloween-batch-16/lv3_gpt_10221_1_en-friendly-monsters-halloween-candy-workshop-coloring-page-coloring.pdf",
+      "path": "public/omalovanky/en/lv3_gpt_10221_1_en-friendly-monsters-halloween-candy-workshop-coloring-page-coloring.pdf",
+      "bytes": 2223707,
+      "sha": "9fa6c879dff6beaab5fb3d31b30e1dd2022ed6e2",
+      "id": 10221,
       "variant": "coloring",
       "ext": "pdf",
-      "driveId": "1FCnuPfIcPmjYWO__goblC7HP5QYqM2tJ",
+      "driveId": "1RUt9LYNrchoPr-6lXVlQNZRC5VL3MU0K",
       "placement": {
         "x": 157.23779527559057,
         "top": 14.173228346456694,
@@ -295,15 +294,14 @@
         ],
         "height": 43.61538461538462,
         "alignment": "center"
-      },
-      "driveUploaded": true
+      }
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-15/lv3_gpt_10218_1_en-friendly-gargoyle-on-rooftop-coloring-page-coloring.webp",
-      "path": "public/omalovanky/en/lv3_gpt_10218_1_en-friendly-gargoyle-on-rooftop-coloring-page-coloring.webp",
-      "bytes": 122736,
-      "sha": "f850a7693881c21b148a6f094a669a50026058a0",
-      "id": 10218,
+      "file": "/tmp/vinmat-halloween-batch-16/lv3_gpt_10221_1_en-friendly-monsters-halloween-candy-workshop-coloring-page-coloring.webp",
+      "path": "public/omalovanky/en/lv3_gpt_10221_1_en-friendly-monsters-halloween-candy-workshop-coloring-page-coloring.webp",
+      "bytes": 295072,
+      "sha": "7ce1a57f10ee0262740085dbdfa5aa50cf59274a",
+      "id": 10221,
       "variant": "coloring",
       "ext": "webp",
       "driveId": null,
@@ -322,161 +320,83 @@
       }
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-15/lv3_gpt_10218_1_en-friendly-gargoyle-on-rooftop-coloring-page-sample.png",
-      "path": "public/omalovanky/en/lv3_gpt_10218_1_en-friendly-gargoyle-on-rooftop-coloring-page-sample.png",
-      "bytes": 1520769,
-      "sha": "26c8b23fcf50e25ebf7ae7e06bf9a962f4bea3f1",
-      "id": 10218,
+      "file": "/tmp/vinmat-halloween-batch-16/lv3_gpt_10221_1_en-friendly-monsters-halloween-candy-workshop-coloring-page-sample.png",
+      "path": "public/omalovanky/en/lv3_gpt_10221_1_en-friendly-monsters-halloween-candy-workshop-coloring-page-sample.png",
+      "bytes": 2253255,
+      "sha": "befef03921d51d0ade6fef43e282aa9069684cec",
+      "id": 10221,
       "variant": "sample",
       "ext": "png",
-      "driveId": "1fDCn838EfGI_G0WVRsshgwlmP5q2OyJ1",
-      "placement": null,
-      "driveUploaded": true
-    },
-    {
-      "file": "/tmp/vinmat-halloween-batch-15/lv3_gpt_10218_1_en-friendly-gargoyle-on-rooftop-coloring-page-sample.pdf",
-      "path": "public/omalovanky/en/lv3_gpt_10218_1_en-friendly-gargoyle-on-rooftop-coloring-page-sample.pdf",
-      "bytes": 2760291,
-      "sha": "1e35b4a08595959a2a6aa4a58019e1256d20b817",
-      "id": 10218,
-      "variant": "sample",
-      "ext": "pdf",
-      "driveId": "1ihtX2UMPDkJ4-LwPfeUGF9eAMovgIaUY",
-      "placement": null,
-      "driveUploaded": true
-    },
-    {
-      "file": "/tmp/vinmat-halloween-batch-15/lv3_gpt_10218_1_en-friendly-gargoyle-on-rooftop-coloring-page-sample.webp",
-      "path": "public/omalovanky/en/lv3_gpt_10218_1_en-friendly-gargoyle-on-rooftop-coloring-page-sample.webp",
-      "bytes": 211378,
-      "sha": "61af8e5bb328fac67c2614cff015ea7a74ff0e0b",
-      "id": 10218,
-      "variant": "sample",
-      "ext": "webp",
-      "driveId": null,
-      "placement": null
-    },
-    {
-      "file": "/tmp/vinmat-halloween-batch-15/lv3_gpt_10219_1_en-friendly-haunted-tree-coloring-page-coloring.png",
-      "path": "public/omalovanky/en/lv3_gpt_10219_1_en-friendly-haunted-tree-coloring-page-coloring.png",
-      "bytes": 1436799,
-      "sha": "66d7cc087315eee6c039ecc33fccfc7e01e33a25",
-      "id": 10219,
-      "variant": "coloring",
-      "ext": "png",
-      "driveId": "1lS8fAIX05gv84v-2dKZMVJJ4l0a11bAq",
+      "driveId": "138LIvPEBoU6GzHFlPbtnj2oaC3CVEkmd",
       "placement": {
-        "x": 22.67716535433071,
+        "x": 77.85860975522857,
         "top": 14.173228346456694,
         "size": 36,
         "lines": [
-          "VinMat",
-          "Coloring"
+          "VinMat Coloring - Sample"
         ],
         "widths": [
-          130.98461538461538,
-          144.55384615384617
+          439.558371040724
         ],
-        "height": 90.41538461538462,
-        "alignment": "left"
-      },
-      "driveUploaded": true
-    },
-    {
-      "file": "/tmp/vinmat-halloween-batch-15/lv3_gpt_10219_1_en-friendly-haunted-tree-coloring-page-coloring.pdf",
-      "path": "public/omalovanky/en/lv3_gpt_10219_1_en-friendly-haunted-tree-coloring-page-coloring.pdf",
-      "bytes": 1795755,
-      "sha": "f7d5469a18f01497d985b14ef15695eb81c2e6f6",
-      "id": 10219,
-      "variant": "coloring",
-      "ext": "pdf",
-      "driveId": "1KbhJ8unsoBQ6pAo_6Mx-K9Kwmq5MQhJt",
-      "placement": {
-        "x": 22.67716535433071,
-        "top": 14.173228346456694,
-        "size": 36,
-        "lines": [
-          "VinMat",
-          "Coloring"
-        ],
-        "widths": [
-          130.98461538461538,
-          144.55384615384617
-        ],
-        "height": 90.41538461538462,
-        "alignment": "left"
-      },
-      "driveUploaded": true
-    },
-    {
-      "file": "/tmp/vinmat-halloween-batch-15/lv3_gpt_10219_1_en-friendly-haunted-tree-coloring-page-coloring.webp",
-      "path": "public/omalovanky/en/lv3_gpt_10219_1_en-friendly-haunted-tree-coloring-page-coloring.webp",
-      "bytes": 212574,
-      "sha": "a096168bf8e334ba25dfbc69d6bfd61db908da13",
-      "id": 10219,
-      "variant": "coloring",
-      "ext": "webp",
-      "driveId": null,
-      "placement": {
-        "x": 22.67716535433071,
-        "top": 14.173228346456694,
-        "size": 36,
-        "lines": [
-          "VinMat",
-          "Coloring"
-        ],
-        "widths": [
-          130.98461538461538,
-          144.55384615384617
-        ],
-        "height": 90.41538461538462,
-        "alignment": "left"
+        "height": 43.61538461538462,
+        "alignment": "center"
       }
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-15/lv3_gpt_10219_1_en-friendly-haunted-tree-coloring-page-sample.png",
-      "path": "public/omalovanky/en/lv3_gpt_10219_1_en-friendly-haunted-tree-coloring-page-sample.png",
-      "bytes": 1711687,
-      "sha": "2d88bed2a5bc70d9df32e17932e0dd412342ae89",
-      "id": 10219,
-      "variant": "sample",
-      "ext": "png",
-      "driveId": "1ag-4kKge7I4PcCdQNlgbh_kyHKoI49O7",
-      "placement": null,
-      "driveUploaded": true
-    },
-    {
-      "file": "/tmp/vinmat-halloween-batch-15/lv3_gpt_10219_1_en-friendly-haunted-tree-coloring-page-sample.pdf",
-      "path": "public/omalovanky/en/lv3_gpt_10219_1_en-friendly-haunted-tree-coloring-page-sample.pdf",
-      "bytes": 2828890,
-      "sha": "8f2e9f7bc15c73e62fbde2b4ac24ecce9e2e32c7",
-      "id": 10219,
+      "file": "/tmp/vinmat-halloween-batch-16/lv3_gpt_10221_1_en-friendly-monsters-halloween-candy-workshop-coloring-page-sample.pdf",
+      "path": "public/omalovanky/en/lv3_gpt_10221_1_en-friendly-monsters-halloween-candy-workshop-coloring-page-sample.pdf",
+      "bytes": 4340443,
+      "sha": "d6ec4a03e4854f769b6b79208e56055ae22f16fe",
+      "id": 10221,
       "variant": "sample",
       "ext": "pdf",
-      "driveId": "1B419SlTo1LjdYFoGJut3K9Yb8fAX9EmN",
-      "placement": null,
-      "driveUploaded": true
+      "driveId": "1hXfG0zDnDk1kWL77unlYKh-wPPQ4L9dR",
+      "placement": {
+        "x": 77.85860975522857,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring - Sample"
+        ],
+        "widths": [
+          439.558371040724
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      }
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-15/lv3_gpt_10219_1_en-friendly-haunted-tree-coloring-page-sample.webp",
-      "path": "public/omalovanky/en/lv3_gpt_10219_1_en-friendly-haunted-tree-coloring-page-sample.webp",
-      "bytes": 301584,
-      "sha": "0efffd4627e6998f10835b77f965ba932157ac2b",
-      "id": 10219,
+      "file": "/tmp/vinmat-halloween-batch-16/lv3_gpt_10221_1_en-friendly-monsters-halloween-candy-workshop-coloring-page-sample.webp",
+      "path": "public/omalovanky/en/lv3_gpt_10221_1_en-friendly-monsters-halloween-candy-workshop-coloring-page-sample.webp",
+      "bytes": 379808,
+      "sha": "dc60a3108d3f7d220850cda152c21b2252b26d27",
+      "id": 10221,
       "variant": "sample",
       "ext": "webp",
       "driveId": null,
-      "placement": null
+      "placement": {
+        "x": 77.85860975522857,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring - Sample"
+        ],
+        "widths": [
+          439.558371040724
+        ],
+        "height": 43.61538461538462,
+        "alignment": "center"
+      }
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-15/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-coloring.png",
-      "path": "public/omalovanky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-coloring.png",
-      "bytes": 1328696,
-      "sha": "54401a0b61bb2db974c46fe550173cfec059dd26",
-      "id": 10220,
+      "file": "/tmp/vinmat-halloween-batch-16/lv3_gpt_10222_1_en-friendly-monsters-halloween-band-coloring-page-coloring.png",
+      "path": "public/omalovanky/en/lv3_gpt_10222_1_en-friendly-monsters-halloween-band-coloring-page-coloring.png",
+      "bytes": 1268660,
+      "sha": "5436480ca394be15c06b609c453f5622200bf332",
+      "id": 10222,
       "variant": "coloring",
       "ext": "png",
-      "driveId": "1nC4Fzcq2syw-jLMGqnQYxpj9BBtvbGXq",
+      "driveId": "1Zz77g0otrGPdSxD4FGfErcTeNKRBBIDa",
       "placement": {
         "x": 157.23779527559057,
         "top": 14.173228346456694,
@@ -489,18 +409,17 @@
         ],
         "height": 43.61538461538462,
         "alignment": "center"
-      },
-      "driveUploaded": true
+      }
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-15/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-coloring.pdf",
-      "path": "public/omalovanky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-coloring.pdf",
-      "bytes": 1738313,
-      "sha": "a3b579f66969599989faaed452a061a0b5b64668",
-      "id": 10220,
+      "file": "/tmp/vinmat-halloween-batch-16/lv3_gpt_10222_1_en-friendly-monsters-halloween-band-coloring-page-coloring.pdf",
+      "path": "public/omalovanky/en/lv3_gpt_10222_1_en-friendly-monsters-halloween-band-coloring-page-coloring.pdf",
+      "bytes": 1739220,
+      "sha": "90923508d4eda588d01040cfe104d0607cee5473",
+      "id": 10222,
       "variant": "coloring",
       "ext": "pdf",
-      "driveId": "1oVoR1PIthBauY3P3vceVEDPP9OQornty",
+      "driveId": "1UVGj21JDLrbi6qH1epgYuVyD_exzUdxt",
       "placement": {
         "x": 157.23779527559057,
         "top": 14.173228346456694,
@@ -513,15 +432,14 @@
         ],
         "height": 43.61538461538462,
         "alignment": "center"
-      },
-      "driveUploaded": true
+      }
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-15/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-coloring.webp",
-      "path": "public/omalovanky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-coloring.webp",
-      "bytes": 197526,
-      "sha": "3ed6956bae3788617db304a4225a601ffd846275",
-      "id": 10220,
+      "file": "/tmp/vinmat-halloween-batch-16/lv3_gpt_10222_1_en-friendly-monsters-halloween-band-coloring-page-coloring.webp",
+      "path": "public/omalovanky/en/lv3_gpt_10222_1_en-friendly-monsters-halloween-band-coloring-page-coloring.webp",
+      "bytes": 187136,
+      "sha": "67171968efea40cf392ba87709b9efc05052f798",
+      "id": 10222,
       "variant": "coloring",
       "ext": "webp",
       "driveId": null,
@@ -540,14 +458,14 @@
       }
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-15/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-sample.png",
-      "path": "public/omalovanky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-sample.png",
-      "bytes": 1619439,
-      "sha": "ca7463d3843cd328fa0244d5ee78694b9233f268",
-      "id": 10220,
+      "file": "/tmp/vinmat-halloween-batch-16/lv3_gpt_10222_1_en-friendly-monsters-halloween-band-coloring-page-sample.png",
+      "path": "public/omalovanky/en/lv3_gpt_10222_1_en-friendly-monsters-halloween-band-coloring-page-sample.png",
+      "bytes": 1754306,
+      "sha": "c8876e456d1d52ca80a19486ae90c1d3deb43a46",
+      "id": 10222,
       "variant": "sample",
       "ext": "png",
-      "driveId": "1Y38xjQBdbjSs-Bk9gp1x9UCGPi46KeHp",
+      "driveId": "1HoZ_FjGkBRuURbhd8kLA-eSxDTNQ_dvl",
       "placement": {
         "x": 77.85860975522857,
         "top": 14.173228346456694,
@@ -560,18 +478,17 @@
         ],
         "height": 43.61538461538462,
         "alignment": "center"
-      },
-      "driveUploaded": true
+      }
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-15/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-sample.pdf",
-      "path": "public/omalovanky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-sample.pdf",
-      "bytes": 3127831,
-      "sha": "d54a815c2b9390dd67918a8f331b0a6a627eb22b",
-      "id": 10220,
+      "file": "/tmp/vinmat-halloween-batch-16/lv3_gpt_10222_1_en-friendly-monsters-halloween-band-coloring-page-sample.pdf",
+      "path": "public/omalovanky/en/lv3_gpt_10222_1_en-friendly-monsters-halloween-band-coloring-page-sample.pdf",
+      "bytes": 3671423,
+      "sha": "772afd06e13e9bce2c85a87303f81e640cb5675b",
+      "id": 10222,
       "variant": "sample",
       "ext": "pdf",
-      "driveId": "1X_ME513plZIGcEeT2iuEK1TW9hr17ODt",
+      "driveId": "1dOj-dOtwsC8U3qrEEzjtskc1jCWHScZU",
       "placement": {
         "x": 77.85860975522857,
         "top": 14.173228346456694,
@@ -584,15 +501,14 @@
         ],
         "height": 43.61538461538462,
         "alignment": "center"
-      },
-      "driveUploaded": true
+      }
     },
     {
-      "file": "/tmp/vinmat-halloween-batch-15/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-sample.webp",
-      "path": "public/omalovanky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-coloring-page-sample.webp",
-      "bytes": 254906,
-      "sha": "64b7fb6fa4efab1a13f0782d338080f3214318ee",
-      "id": 10220,
+      "file": "/tmp/vinmat-halloween-batch-16/lv3_gpt_10222_1_en-friendly-monsters-halloween-band-coloring-page-sample.webp",
+      "path": "public/omalovanky/en/lv3_gpt_10222_1_en-friendly-monsters-halloween-band-coloring-page-sample.webp",
+      "bytes": 278732,
+      "sha": "61ff2327ebf83919aebf11fb5630d4a87bd0a1d3",
+      "id": 10222,
       "variant": "sample",
       "ext": "webp",
       "driveId": null,
@@ -608,21 +524,148 @@
         ],
         "height": 43.61538461538462,
         "alignment": "center"
+      }
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-16/lv3_gpt_10223_1_en-friendly-ghost-pirate-ship-and-lighthouse-coloring-page-coloring.png",
+      "path": "public/omalovanky/en/lv3_gpt_10223_1_en-friendly-ghost-pirate-ship-and-lighthouse-coloring-page-coloring.png",
+      "bytes": 1665251,
+      "sha": "46266249131adff0f332c59ffed98cf2c74a7eca",
+      "id": 10223,
+      "variant": "coloring",
+      "ext": "png",
+      "driveId": "1nPkOwg7dfSaAW6pGyY7j6jV_lnR8yeRy",
+      "placement": {
+        "x": 291.7984251968505,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring"
+        ],
+        "widths": [
+          280.8
+        ],
+        "height": 43.61538461538462,
+        "alignment": "right"
+      }
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-16/lv3_gpt_10223_1_en-friendly-ghost-pirate-ship-and-lighthouse-coloring-page-coloring.pdf",
+      "path": "public/omalovanky/en/lv3_gpt_10223_1_en-friendly-ghost-pirate-ship-and-lighthouse-coloring-page-coloring.pdf",
+      "bytes": 2057353,
+      "sha": "32ad97d431badcfdfdd0b662f834a4349c0ebd87",
+      "id": 10223,
+      "variant": "coloring",
+      "ext": "pdf",
+      "driveId": "1_SIxLy3f3upVirR3vjpzyWkL-Ell_TNC",
+      "placement": {
+        "x": 291.7984251968505,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring"
+        ],
+        "widths": [
+          280.8
+        ],
+        "height": 43.61538461538462,
+        "alignment": "right"
+      }
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-16/lv3_gpt_10223_1_en-friendly-ghost-pirate-ship-and-lighthouse-coloring-page-coloring.webp",
+      "path": "public/omalovanky/en/lv3_gpt_10223_1_en-friendly-ghost-pirate-ship-and-lighthouse-coloring-page-coloring.webp",
+      "bytes": 280396,
+      "sha": "450af9a5cda481b977aac5fb9352046b33548fa0",
+      "id": 10223,
+      "variant": "coloring",
+      "ext": "webp",
+      "driveId": null,
+      "placement": {
+        "x": 291.7984251968505,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Coloring"
+        ],
+        "widths": [
+          280.8
+        ],
+        "height": 43.61538461538462,
+        "alignment": "right"
+      }
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-16/lv3_gpt_10223_1_en-friendly-ghost-pirate-ship-and-lighthouse-coloring-page-sample.png",
+      "path": "public/omalovanky/en/lv3_gpt_10223_1_en-friendly-ghost-pirate-ship-and-lighthouse-coloring-page-sample.png",
+      "bytes": 2451598,
+      "sha": "c36ebe2fc80b3385fc813687c6fada8250daa0f9",
+      "id": 10223,
+      "variant": "sample",
+      "ext": "png",
+      "driveId": "1o5J6BlqyS7-WyNybjmOv7VxX79gNgdNs",
+      "placement": {
+        "x": 22.67716535433071,
+        "top": 14.173228346456694,
+        "size": 30,
+        "lines": [
+          "VinMat Coloring - Sample"
+        ],
+        "widths": [
+          366.2986425339367
+        ],
+        "height": 36.34615384615385,
+        "alignment": "left"
+      }
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-16/lv3_gpt_10223_1_en-friendly-ghost-pirate-ship-and-lighthouse-coloring-page-sample.pdf",
+      "path": "public/omalovanky/en/lv3_gpt_10223_1_en-friendly-ghost-pirate-ship-and-lighthouse-coloring-page-sample.pdf",
+      "bytes": 4469416,
+      "sha": "c3e59f087dd029657e70426318c24a9bf2da399a",
+      "id": 10223,
+      "variant": "sample",
+      "ext": "pdf",
+      "driveId": "1RBMRKauen-Pzigf_m3TtwY3pWWxLmEGy",
+      "placement": {
+        "x": 22.67716535433071,
+        "top": 14.173228346456694,
+        "size": 30,
+        "lines": [
+          "VinMat Coloring - Sample"
+        ],
+        "widths": [
+          366.2986425339367
+        ],
+        "height": 36.34615384615385,
+        "alignment": "left"
+      }
+    },
+    {
+      "file": "/tmp/vinmat-halloween-batch-16/lv3_gpt_10223_1_en-friendly-ghost-pirate-ship-and-lighthouse-coloring-page-sample.webp",
+      "path": "public/omalovanky/en/lv3_gpt_10223_1_en-friendly-ghost-pirate-ship-and-lighthouse-coloring-page-sample.webp",
+      "bytes": 457638,
+      "sha": "610c38777c2bbe107a8d9ef3fe64d76a7a501714",
+      "id": 10223,
+      "variant": "sample",
+      "ext": "webp",
+      "driveId": null,
+      "placement": {
+        "x": 22.67716535433071,
+        "top": 14.173228346456694,
+        "size": 30,
+        "lines": [
+          "VinMat Coloring - Sample"
+        ],
+        "widths": [
+          366.2986425339367
+        ],
+        "height": 36.34615384615385,
+        "alignment": "left"
       }
     }
   ],
-  "skipped": [
-    {
-      "id": 10218,
-      "variant": "sample",
-      "reason": "No blank area for title without covering artwork"
-    },
-    {
-      "id": 10219,
-      "variant": "sample",
-      "reason": "No blank area for title without covering artwork"
-    }
-  ],
+  "skipped": [],
   "headers": [
     "Status",
     "ID",
@@ -660,15 +703,9 @@
     "drivePdfSample"
   ],
   "checks": {
-    "PNGResolutionAndQR": "6/6 passed",
-    "DriveSizes": "12/12 passed",
-    "sheets": "published status read back",
-    "mobile": "User review deferred",
-    "publicAssets": "18/18 exact SHA and size",
-    "publicPages": "12/12 passed",
-    "browser": "sample selector and PNG/PDF links passed",
-    "actions": "Build and Pages succeeded"
-  },
-  "publishCommit": "a0e50516eb48448847d79149f3d4345ce9f66e42",
-  "deploymentCommit": "1b5efd966b9a11508a1e0ab967e29aba173860fc"
+    "PNGResolutionAndQR": "6/ 6 passed",
+    "DriveSizes": "12 passed",
+    "sheets": "exact values read back",
+    "mobile": "User review deferred"
+  }
 }
