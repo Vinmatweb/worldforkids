@@ -39,4 +39,11 @@ await replace(new URL('../index.html', import.meta.url), [
     ['aboutTracing:"✏️ Fichas de trazado", aboutTracingText:"Útiles para el control del lápiz, la coordinación mano-ojo, la motricidad fina y la práctica temprana de la escritura."', 'aboutTracing:"✏️ Trazado (en preparación)", aboutTracingText:"La categoría se está probando para asegurar el grosor de línea y la calidad de impresión."']
 ]);
 
+const tracingCsv = await readFile(new URL('../assets/data/obtahovacky.csv', import.meta.url), 'utf8');
+if (tracingCsv.trim().split(/\r?\n/).length > 1) {
+    await replace(new URL('../index.html', import.meta.url), [
+        ['aboutTracing:"✏️ Nachspuren (in Vorbereitung)", aboutTracingText:"Die Kategorie wird derzeit für zuverlässige Linienstärke und Druckqualität getestet."', 'aboutTracing:"✏️ Arbeitsblätter zum Nachspuren", aboutTracingText:"Sie fördern Stiftführung, Hand-Augen-Koordination, Feinmotorik und die Vorbereitung auf das Schreiben."'],
+        ['aboutTracing:"✏️ Trazado (en preparación)", aboutTracingText:"La categoría se está probando para asegurar el grosor de línea y la calidad de impresión."', 'aboutTracing:"✏️ Fichas de trazado", aboutTracingText:"Útiles para el control del lápiz, la coordinación mano-ojo, la motricidad fina y la práctica temprana de la escritura."']
+    ]);
+}
 console.log('Polished final German and Spanish copy.');
