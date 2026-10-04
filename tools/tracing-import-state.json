@@ -849,7 +849,8 @@
           "bytes": 60396,
           "sha": "5cd18f9bee20b1dfe3a4052fb8b0e7296f85f633"
         }
-      ]
+      ],
+      "state": "published-to-github"
     },
     {
       "fileBase": "lv2_gpt_10205_1_en-friendly-vampire-with-bat-tracing",
@@ -913,7 +914,8 @@
           "bytes": 63100,
           "sha": "e9ce37ef1f386ddb54d798125ea6648cc147c391"
         }
-      ]
+      ],
+      "state": "published-to-github"
     },
     {
       "fileBase": "lv2_gpt_10206_1_en-friendly-zombie-with-pumpkin-tracing",
@@ -977,7 +979,8 @@
           "bytes": 73890,
           "sha": "534d1a3b7b88378df629322500bb9c69fc628e5b"
         }
-      ]
+      ],
+      "state": "published-to-github"
     },
     {
       "fileBase": "lv2_gpt_10217_1_en-friendly-frankenstein-monster-tracing",
@@ -1108,5 +1111,5 @@
       ]
     }
   ],
-  "publishedCount": 12
+  "publishedCount": 15
 }
