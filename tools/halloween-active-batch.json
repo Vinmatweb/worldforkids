@@ -1,6 +1,6 @@
 {
   "batch": 16,
-  "state": "prepared",
+  "state": "published-user-review-deferred",
   "items": [
     {
       "originalBase": "lv3_gpt_H1042_1_en-friendly-monsters-halloween-candy-workshop-coloring-page",
@@ -76,7 +76,7 @@
         "nazevEs": "Monstruos amistosos en un taller de dulces de Halloween",
         "altEs_coloring": "Monstruos amistosos en un taller de dulces de Halloween: dibujo en blanco y negro de nivel 3 para niños de 6–7 años, gratis para imprimir en A4.",
         "altEs_sample": "Monstruos amistosos en un taller de dulces de Halloween: modelo a color para el dibujo de nivel 3.",
-        "Status": "vygenerováno",
+        "Status": "publikováno",
         "driveColoring": "https://drive.google.com/file/d/11o2gLwiIitapAnJM9piGACc_yC5X4f5R/view",
         "drivePdfColoring": "https://drive.google.com/file/d/1RUt9LYNrchoPr-6lXVlQNZRC5VL3MU0K/view",
         "driveSample": "https://drive.google.com/file/d/138LIvPEBoU6GzHFlPbtnj2oaC3CVEkmd/view",
@@ -158,7 +158,7 @@
         "nazevEs": "Monstruos amistosos en una banda de Halloween",
         "altEs_coloring": "Monstruos amistosos en una banda de Halloween: dibujo en blanco y negro de nivel 3 para niños de 6–7 años, gratis para imprimir en A4.",
         "altEs_sample": "Monstruos amistosos en una banda de Halloween: modelo a color para el dibujo de nivel 3.",
-        "Status": "vygenerováno",
+        "Status": "publikováno",
         "driveColoring": "https://drive.google.com/file/d/1Zz77g0otrGPdSxD4FGfErcTeNKRBBIDa/view",
         "drivePdfColoring": "https://drive.google.com/file/d/1UVGj21JDLrbi6qH1epgYuVyD_exzUdxt/view",
         "driveSample": "https://drive.google.com/file/d/1HoZ_FjGkBRuURbhd8kLA-eSxDTNQ_dvl/view",
@@ -240,7 +240,7 @@
         "nazevEs": "Barco pirata fantasma junto a un faro",
         "altEs_coloring": "Barco pirata fantasma junto a un faro: dibujo en blanco y negro de nivel 3 para niños de 6–7 años, gratis para imprimir en A4.",
         "altEs_sample": "Barco pirata fantasma junto a un faro: modelo a color para el dibujo de nivel 3.",
-        "Status": "vygenerováno",
+        "Status": "publikováno",
         "driveColoring": "https://drive.google.com/file/d/1nPkOwg7dfSaAW6pGyY7j6jV_lnR8yeRy/view",
         "drivePdfColoring": "https://drive.google.com/file/d/1_SIxLy3f3upVirR3vjpzyWkL-Ell_TNC/view",
         "driveSample": "https://drive.google.com/file/d/1o5J6BlqyS7-WyNybjmOv7VxX79gNgdNs/view",
@@ -705,7 +705,10 @@
   "checks": {
     "PNGResolutionAndQR": "6/ 6 passed",
     "DriveSizes": "12 passed",
-    "sheets": "exact values read back",
-    "mobile": "User review deferred"
+    "sheets": "published status read back",
+    "mobile": "User review deferred",
+    "publicAssets": "18 exact SHA and size",
+    "publicPages": "12 passed",
+    "actions": "Build and Pages succeeded"
   }
 }

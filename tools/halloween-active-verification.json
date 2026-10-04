@@ -1,20 +1,20 @@
 {
-  "batch": 15,
+  "batch": 16,
   "assets": 18,
   "pages": [
-    "activities/coloring-friendly-gargoyle-on-a-rooftop.html",
-    "cs/aktivity/omalovanka-pratelsky-chrlic-na-strese.html",
-    "de/aktivitaeten/ausmalbild-freundlicher-wasserspeier-auf-einem-dach.html",
-    "es/actividades/dibujo-gargola-amistosa-en-un-tejado.html",
-    "activities/coloring-friendly-haunted-tree.html",
-    "cs/aktivity/omalovanka-pratelsky-strasidelny-strom.html",
-    "de/aktivitaeten/ausmalbild-freundlicher-spukbaum.html",
-    "es/actividades/dibujo-arbol-encantado-amistoso.html",
-    "activities/coloring-ghost-baking-halloween-cookies.html",
-    "cs/aktivity/omalovanka-duch-pece-halloweenske-susenky.html",
-    "de/aktivitaeten/ausmalbild-geist-backt-halloween-kekse.html",
-    "es/actividades/dibujo-fantasma-horneando-galletas-de-halloween.html"
+    "activities/coloring-friendly-monsters-in-a-halloween-candy-workshop.html",
+    "cs/aktivity/omalovanka-pratelska-monstra-v-halloweenske-dilne-na-sladkosti.html",
+    "de/aktivitaeten/ausmalbild-freundliche-monster-in-einer-halloween-su-igkeitenwerkstatt.html",
+    "es/actividades/dibujo-monstruos-amistosos-en-un-taller-de-dulces-de-halloween.html",
+    "activities/coloring-friendly-monsters-in-a-halloween-band.html",
+    "cs/aktivity/omalovanka-pratelska-halloweenska-kapela-monster.html",
+    "de/aktivitaeten/ausmalbild-freundliche-monster-in-einer-halloween-band.html",
+    "es/actividades/dibujo-monstruos-amistosos-en-una-banda-de-halloween.html",
+    "activities/coloring-ghost-pirate-ship-by-a-lighthouse.html",
+    "cs/aktivity/omalovanka-piratska-lod-duchu-u-majaku.html",
+    "de/aktivitaeten/ausmalbild-geisterpiratenschiff-bei-einem-leuchtturm.html",
+    "es/actividades/dibujo-barco-pirata-fantasma-junto-a-un-faro.html"
   ],
-  "catalogRows": 59,
+  "catalogRows": 62,
   "status": "passed"
 }
