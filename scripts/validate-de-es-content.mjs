@@ -168,7 +168,9 @@ for (const row of allRows) {
     const active = variants.length ? variants : ['coloring'];
     for (const variant of active) {
         const prefix = `public/${row.type}/${row.assetDirectory ? row.assetDirectory+'/' : ''}${row.soubor}`;
-        const base = active.length === 1 ? prefix : `${prefix}-${variant}`;
+        const sharedSample = variant === 'sample' && row.sampleBase;
+        const base = sharedSample ? row.sampleBase.replace(/^\/worldforkids\//, '') : active.length === 1 ? prefix : `${prefix}-${variant}`;
+        if (sharedSample) assert(base.startsWith('public/') && !base.split('/').includes('..'), `${row.soubor}: invalid shared sample path`);
         if(row.pdf === '1') assert(await exists(`${base}.pdf`), `${base}.pdf: missing printable`);
         assert(await exists(`${base}.png`), `${base}.png: missing image`);
         assert(await exists(`${base}.webp`), `${base}.webp: missing image`);

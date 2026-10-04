@@ -198,6 +198,7 @@ async function readActivities() {
                 type,
                 fileBase: row.soubor,
                 assetDirectory: row.assetDirectory || '',
+                sampleBase: row.sampleBase || '',
                 pdf: row.pdf === '1',
                 level: row.soubor.split('_')[0].toUpperCase(),
                 date: row.datumPridani || '',
@@ -212,6 +213,7 @@ async function readActivities() {
 }
 
 function imageBase(activity, variant) {
+    if(variant==='sample' && activity.sampleBase)return activity.sampleBase;
     const base = `${basePath}public/${activity.type}/${activity.assetDirectory ? `${activity.assetDirectory}/` : ''}${activity.fileBase}`;
     return activity.variants.length === 1 ? base : `${base}-${variant}`;
 }
@@ -367,6 +369,7 @@ function setIndexSeo(html, locale) {
 function localizeIndexPaths(html, locale) {
     html = html
         .replace('src="translations.js"', 'src="../translations.js"')
+        .replace('src="assets/js/related-activities.js"', 'src="../assets/js/related-activities.js"')
         .replaceAll("fetch('assets/", "fetch('../assets/")
         .replaceAll("'public/", "'../public/")
         .replaceAll("url('assets/", "url('../assets/")
