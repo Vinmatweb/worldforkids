@@ -1,6 +1,6 @@
 {
   "batch": 17,
-  "state": "prepared",
+  "state": "published-user-review-deferred",
   "items": [
     {
       "originalBase": "lv4_gpt_H1045_1_en-friendly-ghosts-haunted-library-coloring-page",
@@ -76,7 +76,7 @@
         "nazevEs": "Fantasmas en una biblioteca encantada",
         "altEs_coloring": "Fantasmas en una biblioteca encantada: dibujo en blanco y negro de nivel 4 para niños de 10+ años, gratis para imprimir en A4.",
         "altEs_sample": "Fantasmas en una biblioteca encantada: modelo a color para el dibujo de nivel 4.",
-        "Status": "vygenerováno",
+        "Status": "publikováno",
         "driveColoring": "https://drive.google.com/file/d/1MPUpqPYl2v9uoyHYUW8MRnKU1JdP1Rog/view",
         "drivePdfColoring": "https://drive.google.com/file/d/1TSKKf8QQI2J4wucZgUm0_qLx41na1lJC/view",
         "driveSample": "https://drive.google.com/file/d/1gCPo7PH-xO_k_Drj6S6Ngzva7BjDfxm7/view",
@@ -158,7 +158,7 @@
         "nazevEs": "Monstruos amistosos en un observatorio a la luz de la luna",
         "altEs_coloring": "Monstruos amistosos en un observatorio a la luz de la luna: dibujo en blanco y negro de nivel 4 para niños de 10+ años, gratis para imprimir en A4.",
         "altEs_sample": "Monstruos amistosos en un observatorio a la luz de la luna: modelo a color para el dibujo de nivel 4.",
-        "Status": "vygenerováno",
+        "Status": "publikováno",
         "driveColoring": "https://drive.google.com/file/d/1Qoy-W984jsSXAm6f--3XlhgB_U4Seo1d/view",
         "drivePdfColoring": "https://drive.google.com/file/d/19G8erUBax1xZSVhBmkh8xR_YPh2s7Js8/view",
         "driveSample": "https://drive.google.com/file/d/1XP4SssseIHjB6uAwJ7HoKC82Ne5g5pCP/view",
@@ -393,7 +393,10 @@
   "checks": {
     "PNGResolutionAndQR": "4/ 4 passed",
     "DriveSizes": "8 passed",
-    "sheets": "exact values read back",
-    "mobile": "User review deferred"
+    "sheets": "published status read back",
+    "mobile": "User review deferred",
+    "publicAssets": "12 exact SHA and size",
+    "publicPages": "8 passed",
+    "actions": "Build and Pages succeeded"
   }
 }

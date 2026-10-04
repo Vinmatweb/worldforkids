@@ -1,20 +1,16 @@
 {
-  "batch": 16,
-  "assets": 18,
+  "batch": 17,
+  "assets": 12,
   "pages": [
-    "activities/coloring-friendly-monsters-in-a-halloween-candy-workshop.html",
-    "cs/aktivity/omalovanka-pratelska-monstra-v-halloweenske-dilne-na-sladkosti.html",
-    "de/aktivitaeten/ausmalbild-freundliche-monster-in-einer-halloween-su-igkeitenwerkstatt.html",
-    "es/actividades/dibujo-monstruos-amistosos-en-un-taller-de-dulces-de-halloween.html",
-    "activities/coloring-friendly-monsters-in-a-halloween-band.html",
-    "cs/aktivity/omalovanka-pratelska-halloweenska-kapela-monster.html",
-    "de/aktivitaeten/ausmalbild-freundliche-monster-in-einer-halloween-band.html",
-    "es/actividades/dibujo-monstruos-amistosos-en-una-banda-de-halloween.html",
-    "activities/coloring-ghost-pirate-ship-by-a-lighthouse.html",
-    "cs/aktivity/omalovanka-piratska-lod-duchu-u-majaku.html",
-    "de/aktivitaeten/ausmalbild-geisterpiratenschiff-bei-einem-leuchtturm.html",
-    "es/actividades/dibujo-barco-pirata-fantasma-junto-a-un-faro.html"
+    "activities/coloring-ghosts-in-a-haunted-library.html",
+    "cs/aktivity/omalovanka-duchove-ve-strasidelne-knihovne.html",
+    "de/aktivitaeten/ausmalbild-geister-in-einer-spukbibliothek.html",
+    "es/actividades/dibujo-fantasmas-en-una-biblioteca-encantada.html",
+    "activities/coloring-friendly-monsters-in-a-moonlit-observatory.html",
+    "cs/aktivity/omalovanka-pratelska-monstra-v-observatori-za-mesicniho-svitu.html",
+    "de/aktivitaeten/ausmalbild-freundliche-monster-in-einer-sternwarte-im-mondlicht.html",
+    "es/actividades/dibujo-monstruos-amistosos-en-un-observatorio-a-la-luz-de-la-luna.html"
   ],
-  "catalogRows": 62,
+  "catalogRows": 64,
   "status": "passed"
 }
