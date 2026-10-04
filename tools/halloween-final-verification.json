@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "pairs": 50,
+  "catalogRows": 64,
+  "repositoryAssets": 300,
+  "correctedAgePages": 92,
+  "languages": [
+    "cs",
+    "en",
+    "de",
+    "es"
+  ]
+}

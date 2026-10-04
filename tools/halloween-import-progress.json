@@ -3822,5 +3822,19 @@
   ],
   "originalPolicy": "Keep original unbranded PNGs in Drive; upload branded PNGs and PDFs separately without replacing originals.",
   "state": "completed",
-  "totalPublishedPairs": 50
+  "totalPublishedPairs": 50,
+  "finalVerification": {
+    "status": "passed",
+    "pairs": 50,
+    "catalogRows": 64,
+    "repositoryAssets": 300,
+    "correctedAgePages": 92,
+    "languages": [
+      "cs",
+      "en",
+      "de",
+      "es"
+    ]
+  },
+  "checks": "All 17 batches published and verified; Sheets/Drive/GitHub/public web complete"
 }
