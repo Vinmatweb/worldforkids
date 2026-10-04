@@ -461,7 +461,7 @@
 
         <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
             <a href="/worldforkids/es/actividades/trazado-monstruo-amistoso-de-frankenstein.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Monstruo amistoso de Frankenstein">
-                <picture><source media="screen" srcset="/worldforkids/public/obtahovacky/en/lv2_gpt_10217_1_en-friendly-frankenstein-monster-tracing-coloring.webp" type="image/webp"><img src="/worldforkids/public/obtahovacky/en/lv2_gpt_10217_1_en-friendly-frankenstein-monster-tracing-coloring.png" alt="Monstruo amistoso de Frankenstein: ficha de trazado de nivel 2 con líneas guía grises finas para niños de 5–6 años, gratis para imprimir en A4." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+                <picture><source media="screen" srcset="/worldforkids/public/obtahovacky/en/lv2_gpt_10217_1_en-friendly-frankenstein-monster-tracing-coloring-preview.webp" type="image/webp"><img src="/worldforkids/public/obtahovacky/en/lv2_gpt_10217_1_en-friendly-frankenstein-monster-tracing-coloring-preview.png" alt="Monstruo amistoso de Frankenstein: ficha de trazado de nivel 2 con líneas guía grises finas para niños de 5–6 años, gratis para imprimir en A4." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
             </a>
             <div class="p-4 flex-grow">
                 <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Trazado</span><span class="text-xs text-slate-400 font-bold">LV2</span></div>
@@ -471,7 +471,7 @@
 
         <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
             <a href="/worldforkids/es/actividades/trazado-fantasma-horneando-galletas-de-halloween.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Fantasma horneando galletas de Halloween">
-                <picture><source media="screen" srcset="/worldforkids/public/obtahovacky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-tracing-coloring.webp" type="image/webp"><img src="/worldforkids/public/obtahovacky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-tracing-coloring.png" alt="Fantasma horneando galletas de Halloween: ficha de trazado de nivel 2 con líneas guía grises finas para niños de 5–6 años, gratis para imprimir en A4." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+                <picture><source media="screen" srcset="/worldforkids/public/obtahovacky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-tracing-coloring-preview.webp" type="image/webp"><img src="/worldforkids/public/obtahovacky/en/lv2_gpt_10220_1_en-friendly-ghost-baking-halloween-cookies-tracing-coloring-preview.png" alt="Fantasma horneando galletas de Halloween: ficha de trazado de nivel 2 con líneas guía grises finas para niños de 5–6 años, gratis para imprimir en A4." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
             </a>
             <div class="p-4 flex-grow">
                 <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Trazado</span><span class="text-xs text-slate-400 font-bold">LV2</span></div>
@@ -1518,7 +1518,7 @@ function rozsekajCsvRadek(text) {
 
 async function nactiCsvData(typ) {
     try {
-        var r = await fetch('../assets/data/'+typ+'.csv?v=6e7d9500aa3e');
+        var r = await fetch('../assets/data/'+typ+'.csv?v=bc86f623a1ae');
         if (!r.ok) { console.warn('CSV nenalezeno: '+typ); return []; }
         var text = await r.text();
         var radky = text.split(/\r?\n/);
