@@ -1,5 +1,5 @@
 {
-  "state": "prepared",
+  "state": "published",
   "items": [
     {
       "fileBase": "lv1_gpt_10197_1_en-friendly-mummy-tracing",
@@ -741,5 +741,8 @@
     }
   ],
   "count": 8,
-  "rule": "Related activities match motif ID plus drawing variant"
+  "rule": "Related activities match motif ID plus drawing variant",
+  "sourceCommit": "a8e7533ad3dd9030e842b401fe3f9705f0e39347",
+  "buildCommit": "44cbc531443009a7fd2d928d1d55143b7691400a",
+  "verification": "tools/tracing-lv1-verification.json"
 }
