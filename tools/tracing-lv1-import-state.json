@@ -1,0 +1,745 @@
+{
+  "state": "prepared",
+  "items": [
+    {
+      "fileBase": "lv1_gpt_10197_1_en-friendly-mummy-tracing",
+      "motifId": "10197",
+      "coloringBase": "lv1_gpt_10197_1_en-friendly-mummy-coloring-page",
+      "sourceId": "1WDxbJLSsfApUWtdtCPQeFbpUwM4pGU-X",
+      "sourceLocal": "/workspace/scratch/62452b8ae3fe/attachments/e3f6299c-fed8-425d-be26-c860c86f5012/lv1_gpt_H1016_1_en-friendly-mummy-tracing-coloring.png",
+      "sampleSourceId": "1WQWZO1axoo_4PhsVo83Ga96rde89EUjo",
+      "titlePlacement": {
+        "x": 436.5618098122351,
+        "top": 14.173228346456694,
+        "size": 34,
+        "lines": [
+          "VinMat",
+          "Tracing"
+        ],
+        "widths": [
+          123.70769230769231,
+          136.0366153846154
+        ],
+        "height": 85.26153846153846,
+        "alignment": "right"
+      },
+      "tracingRow": {
+        "ID": "10197",
+        "soubor": "lv1_gpt_10197_1_en-friendly-mummy-tracing",
+        "kategorie": "svatky",
+        "podkategorie": "halloween",
+        "datumPridani": "2026-10-05",
+        "sezona": "podzim,halloween",
+        "zamereni": "jemna-motorika",
+        "nazevCz": "Veselá mumie",
+        "nazevEn": "Friendly Mummy",
+        "nazevDe": "Freundliche Mumie",
+        "nazevEs": "Momia amistosa",
+        "altCz_colored": "",
+        "altEn_colored": "",
+        "altDe_colored": "",
+        "altEs_colored": "",
+        "altCz_coloring": "Veselá mumie: obtahovačka LV1 s tenkými šedými vodicími čarami pro děti 3–4 let, zdarma k vytisknutí na A4.",
+        "altEn_coloring": "Friendly Mummy: LV1 tracing worksheet with thin gray guide lines for ages 3–4, free to print on A4 paper.",
+        "altDe_coloring": "Freundliche Mumie: Nachspurblatt der Stufe 3 mit dünnen grauen Hilfslinien für Kinder von 3–4 Jahren, kostenlos auf A4 drucken.",
+        "altEs_coloring": "Momia amistosa: ficha de trazado de nivel 3 con líneas guía grises finas para niños de 3–4 años, gratis para imprimir en A4.",
+        "altCz_partly_colored": "",
+        "altEn_partly_colored": "",
+        "altDe_partly_colored": "",
+        "altEs_partly_colored": "",
+        "altCz_sample": "Veselá mumie: barevný vzor k omalovánce LV1.",
+        "altEn_sample": "Friendly Mummy: color sample for the LV1 coloring page.",
+        "altDe_sample": "Freundliche Mumie: Farbvorlage zum Ausmalbild der Stufe 1.",
+        "altEs_sample": "Momia amistosa: modelo a color para el dibujo de nivel 1.",
+        "assetDirectory": "en",
+        "pdf": "1",
+        "sampleBase": "/worldforkids/public/omalovanky/en/lv1_gpt_10197_1_en-friendly-mummy-coloring-page-sample",
+        "previewBase": "/worldforkids/public/obtahovacky/en/lv1_gpt_10197_1_en-friendly-mummy-tracing-coloring-preview",
+        "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv1_gpt_10197_1_en-friendly-mummy-coloring-page-sample-preview"
+      },
+      "files": [
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10197_1_en-friendly-mummy-tracing-coloring.png",
+          "bytes": 1223374,
+          "sha": "278e071e1f54651d419400917ee186a0f663014f"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10197_1_en-friendly-mummy-tracing-coloring.pdf",
+          "bytes": 1720727,
+          "sha": "b8c4a0ff3f8f743a5a07462e2d5abdb350d0cb92"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10197_1_en-friendly-mummy-tracing-coloring.webp",
+          "bytes": 102802,
+          "sha": "f50a0bfc9388582fdcf22bf50d2584cac5dd8b2f"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10197_1_en-friendly-mummy-tracing-coloring-preview.png",
+          "bytes": 1428905,
+          "sha": "3e2e3ccbdc822f6abf76096ddf77a100322b8874"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10197_1_en-friendly-mummy-tracing-coloring-preview.webp",
+          "bytes": 102802,
+          "sha": "f50a0bfc9388582fdcf22bf50d2584cac5dd8b2f"
+        },
+        {
+          "path": "public/omalovanky/en/lv1_gpt_10197_1_en-friendly-mummy-coloring-page-sample-preview.png",
+          "bytes": 1381121,
+          "sha": "1ec47a231497b59e773fb05ece2561cd30764b3f"
+        },
+        {
+          "path": "public/omalovanky/en/lv1_gpt_10197_1_en-friendly-mummy-coloring-page-sample-preview.webp",
+          "bytes": 155500,
+          "sha": "7a4bc99ef2968e4995cb8ef642a816f612bbc4ce"
+        }
+      ]
+    },
+    {
+      "fileBase": "lv1_gpt_10199_1_en-friendly-cartoon-skull-tracing",
+      "motifId": "10199",
+      "coloringBase": "lv1_gpt_10199_1_en-friendly-cartoon-skull-coloring-page",
+      "sourceId": "1_KLUojtLo_ZPXmjvfVxGnBQHMjpP3htW",
+      "sourceLocal": "/workspace/scratch/62452b8ae3fe/attachments/2ba88908-dc87-4403-b734-b91e6a55fc4e/lv1_gpt_H1018_1_en-friendly-cartoon-skull-tracing-coloring.png",
+      "sampleSourceId": "13EP27fQALDKQyyx_8SH4mEtIepJ32Ar9",
+      "titlePlacement": {
+        "x": 157.49533373712904,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Tracing"
+        ],
+        "widths": [
+          280.28492307692306
+        ],
+        "height": 43.47692307692308,
+        "alignment": "center"
+      },
+      "tracingRow": {
+        "ID": "10199",
+        "soubor": "lv1_gpt_10199_1_en-friendly-cartoon-skull-tracing",
+        "kategorie": "svatky",
+        "podkategorie": "halloween",
+        "datumPridani": "2026-10-05",
+        "sezona": "podzim,halloween",
+        "zamereni": "jemna-motorika",
+        "nazevCz": "Veselá lebka",
+        "nazevEn": "Friendly Cartoon Skull",
+        "nazevDe": "Freundlicher Totenkopf",
+        "nazevEs": "Calavera simpática",
+        "altCz_colored": "",
+        "altEn_colored": "",
+        "altDe_colored": "",
+        "altEs_colored": "",
+        "altCz_coloring": "Veselá lebka: obtahovačka LV1 s tenkými šedými vodicími čarami pro děti 3–4 let, zdarma k vytisknutí na A4.",
+        "altEn_coloring": "Friendly Cartoon Skull: LV1 tracing worksheet with thin gray guide lines for ages 3–4, free to print on A4 paper.",
+        "altDe_coloring": "Freundlicher Totenkopf: Nachspurblatt der Stufe 3 mit dünnen grauen Hilfslinien für Kinder von 3–4 Jahren, kostenlos auf A4 drucken.",
+        "altEs_coloring": "Calavera simpática: ficha de trazado de nivel 3 con líneas guía grises finas para niños de 3–4 años, gratis para imprimir en A4.",
+        "altCz_partly_colored": "",
+        "altEn_partly_colored": "",
+        "altDe_partly_colored": "",
+        "altEs_partly_colored": "",
+        "altCz_sample": "Veselá lebka: barevný vzor k omalovánce LV1.",
+        "altEn_sample": "Friendly Cartoon Skull: color sample for the LV1 coloring page.",
+        "altDe_sample": "Freundlicher Totenkopf: Farbvorlage zum Ausmalbild der Stufe 1.",
+        "altEs_sample": "Calavera simpática: modelo a color para el dibujo de nivel 1.",
+        "assetDirectory": "en",
+        "pdf": "1",
+        "sampleBase": "/worldforkids/public/omalovanky/en/lv1_gpt_10199_1_en-friendly-cartoon-skull-coloring-page-sample",
+        "previewBase": "/worldforkids/public/obtahovacky/en/lv1_gpt_10199_1_en-friendly-cartoon-skull-tracing-coloring-preview",
+        "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv1_gpt_10199_1_en-friendly-cartoon-skull-coloring-page-sample-preview"
+      },
+      "files": [
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10199_1_en-friendly-cartoon-skull-tracing-coloring.png",
+          "bytes": 794195,
+          "sha": "a70116680fcbf711a800bd4001e74a11b426c263"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10199_1_en-friendly-cartoon-skull-tracing-coloring.pdf",
+          "bytes": 1152655,
+          "sha": "7292ee128cb6441dc51f14a8995f97fa2971d9cf"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10199_1_en-friendly-cartoon-skull-tracing-coloring.webp",
+          "bytes": 57086,
+          "sha": "67da560d7622ad9ba78883f2f958d674a5deb768"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10199_1_en-friendly-cartoon-skull-tracing-coloring-preview.png",
+          "bytes": 933584,
+          "sha": "676b1b2930221818d48570231f7860573d126182"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10199_1_en-friendly-cartoon-skull-tracing-coloring-preview.webp",
+          "bytes": 57086,
+          "sha": "67da560d7622ad9ba78883f2f958d674a5deb768"
+        },
+        {
+          "path": "public/omalovanky/en/lv1_gpt_10199_1_en-friendly-cartoon-skull-coloring-page-sample-preview.png",
+          "bytes": 1171149,
+          "sha": "3e50f56e681f815f77b80f81c6b372ce9d09c10f"
+        },
+        {
+          "path": "public/omalovanky/en/lv1_gpt_10199_1_en-friendly-cartoon-skull-coloring-page-sample-preview.webp",
+          "bytes": 88392,
+          "sha": "ab57a35a99b9a2423c6aa934172bd21e00b1cfa9"
+        }
+      ]
+    },
+    {
+      "fileBase": "lv1_gpt_10198_1_en-friendly-raven-tracing",
+      "motifId": "10198",
+      "coloringBase": "lv1_gpt_10198_1_en-friendly-raven-coloring-page",
+      "sourceId": "1tJjkJCsfeJdkWOSUJdnxd3MDKg8NKmoP",
+      "sourceLocal": "/workspace/scratch/62452b8ae3fe/attachments/2a547da9-7c76-4502-82f1-7c09d3366427/lv1_gpt_H1017_1_en-friendly-raven-tracing-coloring.png",
+      "sampleSourceId": "1jH5DaYhQnSA4tmMjYZRbBi0ksBz4xldE",
+      "titlePlacement": {
+        "x": 157.49533373712904,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Tracing"
+        ],
+        "widths": [
+          280.28492307692306
+        ],
+        "height": 43.47692307692308,
+        "alignment": "center"
+      },
+      "tracingRow": {
+        "ID": "10198",
+        "soubor": "lv1_gpt_10198_1_en-friendly-raven-tracing",
+        "kategorie": "svatky",
+        "podkategorie": "halloween",
+        "datumPridani": "2026-10-05",
+        "sezona": "podzim,halloween",
+        "zamereni": "jemna-motorika",
+        "nazevCz": "Veselý havran",
+        "nazevEn": "Friendly Raven",
+        "nazevDe": "Freundlicher Rabe",
+        "nazevEs": "Cuervo amistoso",
+        "altCz_colored": "",
+        "altEn_colored": "",
+        "altDe_colored": "",
+        "altEs_colored": "",
+        "altCz_coloring": "Veselý havran: obtahovačka LV1 s tenkými šedými vodicími čarami pro děti 3–4 let, zdarma k vytisknutí na A4.",
+        "altEn_coloring": "Friendly Raven: LV1 tracing worksheet with thin gray guide lines for ages 3–4, free to print on A4 paper.",
+        "altDe_coloring": "Freundlicher Rabe: Nachspurblatt der Stufe 3 mit dünnen grauen Hilfslinien für Kinder von 3–4 Jahren, kostenlos auf A4 drucken.",
+        "altEs_coloring": "Cuervo amistoso: ficha de trazado de nivel 3 con líneas guía grises finas para niños de 3–4 años, gratis para imprimir en A4.",
+        "altCz_partly_colored": "",
+        "altEn_partly_colored": "",
+        "altDe_partly_colored": "",
+        "altEs_partly_colored": "",
+        "altCz_sample": "Veselý havran: barevný vzor k omalovánce LV1.",
+        "altEn_sample": "Friendly Raven: color sample for the LV1 coloring page.",
+        "altDe_sample": "Freundlicher Rabe: Farbvorlage zum Ausmalbild der Stufe 1.",
+        "altEs_sample": "Cuervo amistoso: modelo a color para el dibujo de nivel 1.",
+        "assetDirectory": "en",
+        "pdf": "1",
+        "sampleBase": "/worldforkids/public/omalovanky/en/lv1_gpt_10198_1_en-friendly-raven-coloring-page-sample",
+        "previewBase": "/worldforkids/public/obtahovacky/en/lv1_gpt_10198_1_en-friendly-raven-tracing-coloring-preview",
+        "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv1_gpt_10198_1_en-friendly-raven-coloring-page-sample-preview"
+      },
+      "files": [
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10198_1_en-friendly-raven-tracing-coloring.png",
+          "bytes": 864927,
+          "sha": "7f1714d77f8ae779016a5945a1944e23d69ba5ff"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10198_1_en-friendly-raven-tracing-coloring.pdf",
+          "bytes": 1209225,
+          "sha": "3362a5735f2550a0bf85f84b9626235fbe455de1"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10198_1_en-friendly-raven-tracing-coloring.webp",
+          "bytes": 56204,
+          "sha": "9fbbd0048c8ee019efef00b283c3d46c8c9513ea"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10198_1_en-friendly-raven-tracing-coloring-preview.png",
+          "bytes": 1006639,
+          "sha": "565c96096982e5a2734a8e2f11a5bb4a52b559e7"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10198_1_en-friendly-raven-tracing-coloring-preview.webp",
+          "bytes": 56204,
+          "sha": "9fbbd0048c8ee019efef00b283c3d46c8c9513ea"
+        },
+        {
+          "path": "public/omalovanky/en/lv1_gpt_10198_1_en-friendly-raven-coloring-page-sample-preview.png",
+          "bytes": 1161011,
+          "sha": "14238deb4fabece6de01613485c6c59bc232bffa"
+        },
+        {
+          "path": "public/omalovanky/en/lv1_gpt_10198_1_en-friendly-raven-coloring-page-sample-preview.webp",
+          "bytes": 75808,
+          "sha": "5fbc275409382134bd3d84983078ea9cd763f680"
+        }
+      ]
+    },
+    {
+      "fileBase": "lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-tracing",
+      "motifId": "10186",
+      "coloringBase": "lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-coloring-page",
+      "sourceId": "1C7qxAk4gVzt9CBYkqzKj9UhKsmP_s3ew",
+      "sourceLocal": "/workspace/scratch/62452b8ae3fe/attachments/9d200807-9b49-4b1f-a389-f76e175ef893/lv1_gpt_H1005_1_en-friendly-cat-and-pumpkin-tracing-coloring.png",
+      "sampleSourceId": "1RMFKWsVjS6G2n-aBbwWcR5CqdLkyEpoe",
+      "titlePlacement": {
+        "x": 157.49533373712904,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Tracing"
+        ],
+        "widths": [
+          280.28492307692306
+        ],
+        "height": 43.47692307692308,
+        "alignment": "center"
+      },
+      "tracingRow": {
+        "ID": "10186",
+        "soubor": "lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-tracing",
+        "kategorie": "svatky",
+        "podkategorie": "halloween",
+        "datumPridani": "2026-10-05",
+        "sezona": "podzim,halloween",
+        "zamereni": "jemna-motorika",
+        "nazevCz": "Kočka s halloweenskou dýní",
+        "nazevEn": "Cat with a Halloween Pumpkin",
+        "nazevDe": "Katze mit Halloween-Kürbis",
+        "nazevEs": "Gato con una calabaza de Halloween",
+        "altCz_colored": "",
+        "altEn_colored": "",
+        "altDe_colored": "",
+        "altEs_colored": "",
+        "altCz_coloring": "Kočka s halloweenskou dýní: obtahovačka LV1 s tenkými šedými vodicími čarami pro děti 3–4 let, zdarma k vytisknutí na A4.",
+        "altEn_coloring": "Cat with a Halloween Pumpkin: LV1 tracing worksheet with thin gray guide lines for ages 3–4, free to print on A4 paper.",
+        "altDe_coloring": "Katze mit Halloween-Kürbis: Nachspurblatt der Stufe 3 mit dünnen grauen Hilfslinien für Kinder von 3–4 Jahren, kostenlos auf A4 drucken.",
+        "altEs_coloring": "Gato con una calabaza de Halloween: ficha de trazado de nivel 3 con líneas guía grises finas para niños de 3–4 años, gratis para imprimir en A4.",
+        "altCz_partly_colored": "",
+        "altEn_partly_colored": "",
+        "altDe_partly_colored": "",
+        "altEs_partly_colored": "",
+        "altCz_sample": "Kočka s halloweenskou dýní: barevný vzor k omalovánce LV1.",
+        "altEn_sample": "Cat with a Halloween Pumpkin: color sample for the LV1 coloring page.",
+        "altDe_sample": "Katze mit Halloween-Kürbis: Farbvorlage zum Ausmalbild der Stufe 1.",
+        "altEs_sample": "Gato con una calabaza de Halloween: modelo a color para el dibujo de nivel 1.",
+        "assetDirectory": "en",
+        "pdf": "1",
+        "sampleBase": "/worldforkids/public/omalovanky/en/lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-coloring-page-sample",
+        "previewBase": "/worldforkids/public/obtahovacky/en/lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-tracing-coloring-preview",
+        "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-coloring-page-sample-preview"
+      },
+      "files": [
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-tracing-coloring.png",
+          "bytes": 1085824,
+          "sha": "db1acbabe9fc7e587befaab7701d72ad8763852f"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-tracing-coloring.pdf",
+          "bytes": 1550437,
+          "sha": "6e8014e6d17fa4d640647558103d1a92dcbb7b5b"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-tracing-coloring.webp",
+          "bytes": 63366,
+          "sha": "a0e381818d9bf8c2c95b6905c6513b506614ef35"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-tracing-coloring-preview.png",
+          "bytes": 1303915,
+          "sha": "70d430966f19d4beac419e4c51de6125871f7e71"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-tracing-coloring-preview.webp",
+          "bytes": 63366,
+          "sha": "a0e381818d9bf8c2c95b6905c6513b506614ef35"
+        },
+        {
+          "path": "public/omalovanky/en/lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-coloring-page-sample-preview.png",
+          "bytes": 350666,
+          "sha": "1e81a17493bcaa3f3e0a0d423bf61e2ff40d8bc7"
+        },
+        {
+          "path": "public/omalovanky/en/lv1_gpt_10186_1_en-friendly-cat-and-pumpkin-coloring-page-sample-preview.webp",
+          "bytes": 204150,
+          "sha": "32047e92501fe21cfa3f2fb5507fa1c7f1dc595d"
+        }
+      ]
+    },
+    {
+      "fileBase": "lv1_gpt_10021_1_en-witch-hat-tracing",
+      "motifId": "10021",
+      "coloringBase": "lv1_gpt_10021_1_en-witch-hat-coloring-page",
+      "sourceId": "1fCBykOhCH0Yp_sFmFU7700pg9QnNnGuH",
+      "sourceLocal": "/workspace/scratch/62452b8ae3fe/attachments/eb78a351-95c3-4fd1-8e1e-e73d6850a80b/lv1_gpt_H1004_1_en-witch-hat-tracing-coloring.png",
+      "sampleSourceId": "1vFoHz8aYyqJTxCU4sW4_jXqxH_pnPG8E",
+      "titlePlacement": {
+        "x": 157.49533373712904,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Tracing"
+        ],
+        "widths": [
+          280.28492307692306
+        ],
+        "height": 43.47692307692308,
+        "alignment": "center"
+      },
+      "tracingRow": {
+        "ID": "10021",
+        "soubor": "lv1_gpt_10021_1_en-witch-hat-tracing",
+        "kategorie": "svatky",
+        "podkategorie": "halloween",
+        "datumPridani": "2026-10-05",
+        "sezona": "podzim,halloween",
+        "zamereni": "jemna-motorika",
+        "nazevCz": "Klobouk čarodějnice",
+        "nazevEn": "Witch Hat",
+        "nazevDe": "Hexenhut",
+        "nazevEs": "Sombrero de bruja",
+        "altCz_colored": "",
+        "altEn_colored": "",
+        "altDe_colored": "",
+        "altEs_colored": "",
+        "altCz_coloring": "Klobouk čarodějnice: obtahovačka LV1 s tenkými šedými vodicími čarami pro děti 3–4 let, zdarma k vytisknutí na A4.",
+        "altEn_coloring": "Witch Hat: LV1 tracing worksheet with thin gray guide lines for ages 3–4, free to print on A4 paper.",
+        "altDe_coloring": "Hexenhut: Nachspurblatt der Stufe 3 mit dünnen grauen Hilfslinien für Kinder von 3–4 Jahren, kostenlos auf A4 drucken.",
+        "altEs_coloring": "Sombrero de bruja: ficha de trazado de nivel 3 con líneas guía grises finas para niños de 3–4 años, gratis para imprimir en A4.",
+        "altCz_partly_colored": "",
+        "altEn_partly_colored": "",
+        "altDe_partly_colored": "",
+        "altEs_partly_colored": "",
+        "altCz_sample": "Klobouk čarodějnice: barevný vzor k omalovánce LV1.",
+        "altEn_sample": "Witch Hat: color sample for the LV1 coloring page.",
+        "altDe_sample": "Hexenhut: Farbvorlage zum Ausmalbild der Stufe 1.",
+        "altEs_sample": "Sombrero de bruja: modelo a color para el dibujo de nivel 1.",
+        "assetDirectory": "en",
+        "pdf": "1",
+        "sampleBase": "/worldforkids/public/omalovanky/en/lv1_gpt_10021_1_en-witch-hat-coloring-page-sample",
+        "previewBase": "/worldforkids/public/obtahovacky/en/lv1_gpt_10021_1_en-witch-hat-tracing-coloring-preview",
+        "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv1_gpt_10021_1_en-witch-hat-coloring-page-sample-preview"
+      },
+      "files": [
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10021_1_en-witch-hat-tracing-coloring.png",
+          "bytes": 834040,
+          "sha": "cbfe4561a1813d10bc11df677d194fc1e6f1c218"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10021_1_en-witch-hat-tracing-coloring.pdf",
+          "bytes": 1188284,
+          "sha": "6bdc7f87d29761aa18627aef95ae7c6b680edfca"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10021_1_en-witch-hat-tracing-coloring.webp",
+          "bytes": 26006,
+          "sha": "cda865e55c5fbb9ad364559549cf3b692ff8db9b"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10021_1_en-witch-hat-tracing-coloring-preview.png",
+          "bytes": 1041882,
+          "sha": "6d5519579e85dc3fc9e8a865cf01c22a4af4555e"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10021_1_en-witch-hat-tracing-coloring-preview.webp",
+          "bytes": 26006,
+          "sha": "cda865e55c5fbb9ad364559549cf3b692ff8db9b"
+        },
+        {
+          "path": "public/omalovanky/en/lv1_gpt_10021_1_en-witch-hat-coloring-page-sample-preview.png",
+          "bytes": 220993,
+          "sha": "de82e80937675e5a2dbc91588e172573a75f35d1"
+        },
+        {
+          "path": "public/omalovanky/en/lv1_gpt_10021_1_en-witch-hat-coloring-page-sample-preview.webp",
+          "bytes": 108474,
+          "sha": "4ca9c7cf285e965ef4be6234b85e7238793a16df"
+        }
+      ]
+    },
+    {
+      "fileBase": "lv1_gpt_10185_1_en-bat-with-spread-wings-tracing",
+      "motifId": "10185",
+      "coloringBase": "lv1_gpt_10185_1_en-bat-with-spread-wings-coloring-page",
+      "sourceId": "1gvTzUDM9dwTz6yZJI1tK-iVSMcwn4E_F",
+      "sourceLocal": "/workspace/scratch/62452b8ae3fe/attachments/4b07468d-04f7-42ee-bf36-8149b0693ca6/lv1_gpt_H1003_1_en-bat-with-spread-wings-tracing-coloring.png",
+      "sampleSourceId": "1Of7jfIhKxw0h9ZfmoKIuSCqhXSZrQ_dW",
+      "titlePlacement": {
+        "x": 157.49533373712904,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Tracing"
+        ],
+        "widths": [
+          280.28492307692306
+        ],
+        "height": 43.47692307692308,
+        "alignment": "center"
+      },
+      "tracingRow": {
+        "ID": "10185",
+        "soubor": "lv1_gpt_10185_1_en-bat-with-spread-wings-tracing",
+        "kategorie": "svatky",
+        "podkategorie": "halloween",
+        "datumPridani": "2026-10-05",
+        "sezona": "podzim,halloween",
+        "zamereni": "jemna-motorika",
+        "nazevCz": "Netopýr s roztaženými křídly",
+        "nazevEn": "Bat with Spread Wings",
+        "nazevDe": "Fledermaus mit ausgebreiteten Flügeln",
+        "nazevEs": "Murciélago con las alas abiertas",
+        "altCz_colored": "",
+        "altEn_colored": "",
+        "altDe_colored": "",
+        "altEs_colored": "",
+        "altCz_coloring": "Netopýr s roztaženými křídly: obtahovačka LV1 s tenkými šedými vodicími čarami pro děti 3–4 let, zdarma k vytisknutí na A4.",
+        "altEn_coloring": "Bat with Spread Wings: LV1 tracing worksheet with thin gray guide lines for ages 3–4, free to print on A4 paper.",
+        "altDe_coloring": "Fledermaus mit ausgebreiteten Flügeln: Nachspurblatt der Stufe 3 mit dünnen grauen Hilfslinien für Kinder von 3–4 Jahren, kostenlos auf A4 drucken.",
+        "altEs_coloring": "Murciélago con las alas abiertas: ficha de trazado de nivel 3 con líneas guía grises finas para niños de 3–4 años, gratis para imprimir en A4.",
+        "altCz_partly_colored": "",
+        "altEn_partly_colored": "",
+        "altDe_partly_colored": "",
+        "altEs_partly_colored": "",
+        "altCz_sample": "Netopýr s roztaženými křídly: barevný vzor k omalovánce LV1.",
+        "altEn_sample": "Bat with Spread Wings: color sample for the LV1 coloring page.",
+        "altDe_sample": "Fledermaus mit ausgebreiteten Flügeln: Farbvorlage zum Ausmalbild der Stufe 1.",
+        "altEs_sample": "Murciélago con las alas abiertas: modelo a color para el dibujo de nivel 1.",
+        "assetDirectory": "en",
+        "pdf": "1",
+        "sampleBase": "/worldforkids/public/omalovanky/en/lv1_gpt_10185_1_en-bat-with-spread-wings-coloring-page-sample",
+        "previewBase": "/worldforkids/public/obtahovacky/en/lv1_gpt_10185_1_en-bat-with-spread-wings-tracing-coloring-preview",
+        "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv1_gpt_10185_1_en-bat-with-spread-wings-coloring-page-sample-preview"
+      },
+      "files": [
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10185_1_en-bat-with-spread-wings-tracing-coloring.png",
+          "bytes": 912989,
+          "sha": "0d87a7fb73e59566df25b53e6d34b0d412f18297"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10185_1_en-bat-with-spread-wings-tracing-coloring.pdf",
+          "bytes": 1324298,
+          "sha": "643cd0f788dfc70d8f821a1be1d156c783698bc4"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10185_1_en-bat-with-spread-wings-tracing-coloring.webp",
+          "bytes": 39844,
+          "sha": "e1224aab72f7d46e13be0e67487590399b62d19d"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10185_1_en-bat-with-spread-wings-tracing-coloring-preview.png",
+          "bytes": 1116565,
+          "sha": "bd73bf7de09579bb82eec7ddffbd652b4b2def3d"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10185_1_en-bat-with-spread-wings-tracing-coloring-preview.webp",
+          "bytes": 39844,
+          "sha": "e1224aab72f7d46e13be0e67487590399b62d19d"
+        },
+        {
+          "path": "public/omalovanky/en/lv1_gpt_10185_1_en-bat-with-spread-wings-coloring-page-sample-preview.png",
+          "bytes": 189494,
+          "sha": "ba6de1557f30d23b65c6124cbba00d835d71c3e5"
+        },
+        {
+          "path": "public/omalovanky/en/lv1_gpt_10185_1_en-bat-with-spread-wings-coloring-page-sample-preview.webp",
+          "bytes": 113228,
+          "sha": "c4b9fc6f487c39967a5c0de860973ef5e4221bd5"
+        }
+      ]
+    },
+    {
+      "fileBase": "lv1_gpt_10017_1_en-pumpkin-tracing",
+      "motifId": "10017",
+      "coloringBase": "lv1_gpt_10017_1_en-pumpkin-coloring-page",
+      "sourceId": "1pnPKMfy3mwm3013bD63LSXy-BkU-DJcA",
+      "sourceLocal": "/workspace/scratch/62452b8ae3fe/attachments/9f6cd57a-40f5-4d40-852c-a6eeb6906e42/lv1_gpt_H1001_1_en-pumpkin-tracing-coloring.png",
+      "sampleSourceId": "1Et0rtHE7EdmQ_sykMncppjbwIB21PJoj",
+      "titlePlacement": {
+        "x": 22.67716535433071,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Tracing"
+        ],
+        "widths": [
+          280.28492307692306
+        ],
+        "height": 43.47692307692308,
+        "alignment": "left"
+      },
+      "tracingRow": {
+        "ID": "10017",
+        "soubor": "lv1_gpt_10017_1_en-pumpkin-tracing",
+        "kategorie": "svatky",
+        "podkategorie": "halloween",
+        "datumPridani": "2026-10-05",
+        "sezona": "podzim,halloween",
+        "zamereni": "jemna-motorika",
+        "nazevCz": "Halloweenová dýně",
+        "nazevEn": "Halloween Pumpkin",
+        "nazevDe": "Halloween-Kürbis",
+        "nazevEs": "Calabaza de Halloween",
+        "altCz_colored": "",
+        "altEn_colored": "",
+        "altDe_colored": "",
+        "altEs_colored": "",
+        "altCz_coloring": "Halloweenová dýně: obtahovačka LV1 s tenkými šedými vodicími čarami pro děti 3–4 let, zdarma k vytisknutí na A4.",
+        "altEn_coloring": "Halloween Pumpkin: LV1 tracing worksheet with thin gray guide lines for ages 3–4, free to print on A4 paper.",
+        "altDe_coloring": "Halloween-Kürbis: Nachspurblatt der Stufe 3 mit dünnen grauen Hilfslinien für Kinder von 3–4 Jahren, kostenlos auf A4 drucken.",
+        "altEs_coloring": "Calabaza de Halloween: ficha de trazado de nivel 3 con líneas guía grises finas para niños de 3–4 años, gratis para imprimir en A4.",
+        "altCz_partly_colored": "",
+        "altEn_partly_colored": "",
+        "altDe_partly_colored": "",
+        "altEs_partly_colored": "",
+        "altCz_sample": "Halloweenová dýně: barevný vzor k omalovánce LV1.",
+        "altEn_sample": "Halloween Pumpkin: color sample for the LV1 coloring page.",
+        "altDe_sample": "Halloween-Kürbis: Farbvorlage zum Ausmalbild der Stufe 1.",
+        "altEs_sample": "Calabaza de Halloween: modelo a color para el dibujo de nivel 1.",
+        "assetDirectory": "en",
+        "pdf": "1",
+        "sampleBase": "/worldforkids/public/omalovanky/en/lv1_gpt_10017_1_en-pumpkin-coloring-page-sample",
+        "previewBase": "/worldforkids/public/obtahovacky/en/lv1_gpt_10017_1_en-pumpkin-tracing-coloring-preview",
+        "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv1_gpt_10017_1_en-pumpkin-coloring-page-sample-preview"
+      },
+      "files": [
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10017_1_en-pumpkin-tracing-coloring.png",
+          "bytes": 832435,
+          "sha": "7752de4a0a5e6a3c5ef88cc2b059bc2d937af60a"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10017_1_en-pumpkin-tracing-coloring.pdf",
+          "bytes": 1174504,
+          "sha": "064d1cb9c917810c86713b223d717800b986406d"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10017_1_en-pumpkin-tracing-coloring.webp",
+          "bytes": 69084,
+          "sha": "69517c665b5ec499b77429f4e013850d1a7cb197"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10017_1_en-pumpkin-tracing-coloring-preview.png",
+          "bytes": 951108,
+          "sha": "87734dbfd56d211d01317508b409ea99dad64435"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10017_1_en-pumpkin-tracing-coloring-preview.webp",
+          "bytes": 69084,
+          "sha": "69517c665b5ec499b77429f4e013850d1a7cb197"
+        },
+        {
+          "path": "public/omalovanky/en/lv1_gpt_10017_1_en-pumpkin-coloring-page-sample-preview.png",
+          "bytes": 328953,
+          "sha": "e5ce499cc712b629000a8c5f884390a58f6a6d12"
+        },
+        {
+          "path": "public/omalovanky/en/lv1_gpt_10017_1_en-pumpkin-coloring-page-sample-preview.webp",
+          "bytes": 253744,
+          "sha": "018db07c8e06e342f2cd8db7024f33350b1847d8"
+        }
+      ]
+    },
+    {
+      "fileBase": "lv1_gpt_10018_1_en-friendly-ghost-tracing",
+      "motifId": "10018",
+      "coloringBase": "lv1_gpt_10018_1_en-friendly-ghost-coloring-page",
+      "sourceId": "1pcFeE4_MhpOqB4wChmP0g0VE90XsR2US",
+      "sourceLocal": "/workspace/scratch/62452b8ae3fe/attachments/48f04931-95d0-42d9-a1a5-2c876e568670/lv1_gpt_H1002_1_en-friendly-ghost-tracing-coloring.png",
+      "sampleSourceId": "1UhUYwsS-U5bwdoGb4CXtINLmtljr9e-z",
+      "titlePlacement": {
+        "x": 157.49533373712904,
+        "top": 14.173228346456694,
+        "size": 36,
+        "lines": [
+          "VinMat Tracing"
+        ],
+        "widths": [
+          280.28492307692306
+        ],
+        "height": 43.47692307692308,
+        "alignment": "center"
+      },
+      "tracingRow": {
+        "ID": "10018",
+        "soubor": "lv1_gpt_10018_1_en-friendly-ghost-tracing",
+        "kategorie": "svatky",
+        "podkategorie": "halloween",
+        "datumPridani": "2026-10-05",
+        "sezona": "podzim,halloween",
+        "zamereni": "jemna-motorika",
+        "nazevCz": "Veselý duch",
+        "nazevEn": "Friendly Ghost",
+        "nazevDe": "Freundlicher Geist",
+        "nazevEs": "Fantasma simpático",
+        "altCz_colored": "",
+        "altEn_colored": "",
+        "altDe_colored": "",
+        "altEs_colored": "",
+        "altCz_coloring": "Veselý duch: obtahovačka LV1 s tenkými šedými vodicími čarami pro děti 3–4 let, zdarma k vytisknutí na A4.",
+        "altEn_coloring": "Friendly Ghost: LV1 tracing worksheet with thin gray guide lines for ages 3–4, free to print on A4 paper.",
+        "altDe_coloring": "Freundlicher Geist: Nachspurblatt der Stufe 3 mit dünnen grauen Hilfslinien für Kinder von 3–4 Jahren, kostenlos auf A4 drucken.",
+        "altEs_coloring": "Fantasma simpático: ficha de trazado de nivel 3 con líneas guía grises finas para niños de 3–4 años, gratis para imprimir en A4.",
+        "altCz_partly_colored": "",
+        "altEn_partly_colored": "",
+        "altDe_partly_colored": "",
+        "altEs_partly_colored": "",
+        "altCz_sample": "Veselý duch: barevný vzor k omalovánce LV1.",
+        "altEn_sample": "Friendly Ghost: color sample for the LV1 coloring page.",
+        "altDe_sample": "Freundlicher Geist: Farbvorlage zum Ausmalbild der Stufe 1.",
+        "altEs_sample": "Fantasma simpático: modelo a color para el dibujo de nivel 1.",
+        "assetDirectory": "en",
+        "pdf": "1",
+        "sampleBase": "/worldforkids/public/omalovanky/en/lv1_gpt_10018_1_en-friendly-ghost-coloring-page-sample",
+        "previewBase": "/worldforkids/public/obtahovacky/en/lv1_gpt_10018_1_en-friendly-ghost-tracing-coloring-preview",
+        "samplePreviewBase": "/worldforkids/public/omalovanky/en/lv1_gpt_10018_1_en-friendly-ghost-coloring-page-sample-preview"
+      },
+      "files": [
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10018_1_en-friendly-ghost-tracing-coloring.png",
+          "bytes": 675177,
+          "sha": "7fc19ecf8df7de728dd6b3fecd1b3a97b545a30a"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10018_1_en-friendly-ghost-tracing-coloring.pdf",
+          "bytes": 993015,
+          "sha": "34d0cd2b92b9254425d559be10744f326d635b32"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10018_1_en-friendly-ghost-tracing-coloring.webp",
+          "bytes": 41330,
+          "sha": "e824c717c4cc1847f67beacedbc8dd27401feb2a"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10018_1_en-friendly-ghost-tracing-coloring-preview.png",
+          "bytes": 787797,
+          "sha": "1ca69d0788449c5e65a1339591ad76cfe1bb5da9"
+        },
+        {
+          "path": "public/obtahovacky/en/lv1_gpt_10018_1_en-friendly-ghost-tracing-coloring-preview.webp",
+          "bytes": 41330,
+          "sha": "e824c717c4cc1847f67beacedbc8dd27401feb2a"
+        },
+        {
+          "path": "public/omalovanky/en/lv1_gpt_10018_1_en-friendly-ghost-coloring-page-sample-preview.png",
+          "bytes": 162616,
+          "sha": "14b5028be6cf23f2eaeacbecebe1dac0afdea45e"
+        },
+        {
+          "path": "public/omalovanky/en/lv1_gpt_10018_1_en-friendly-ghost-coloring-page-sample-preview.webp",
+          "bytes": 108148,
+          "sha": "39d46a6300f51500e39cbaa940e1c255be77633e"
+        }
+      ]
+    }
+  ],
+  "count": 8,
+  "rule": "Related activities match motif ID plus drawing variant"
+}
