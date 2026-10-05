@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto';
-import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, readdir, writeFile, unlink } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 
@@ -718,6 +718,14 @@ async function build() {
     }
 
     for (const locale of Object.keys(languages)) {
+        // Detail directories contain generated pages. Remove obsolete name slugs.
+        const config = languages[locale];
+        const directory = path.join(root, config.output, config.activityDirectory);
+        await mkdir(directory, { recursive: true });
+        const expected = new Set(activities.map(activity => path.basename(activityRelativeUrl(activity, locale))));
+        for (const file of await readdir(directory)) {
+            if (file.endsWith('.html') && !expected.has(file)) await unlink(path.join(directory, file));
+        }
         for (const activity of activities) {
             const relative = activityRelativeUrl(activity, locale);
             await mkdir(path.dirname(path.join(root, relative)), { recursive: true });
