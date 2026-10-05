@@ -85,11 +85,11 @@ for (const value of ['10–20', '30', '90–150', '150']) assert(esDot.includes(
 const deTracing = await read('de/anleitung-nachzeichnen.html');
 const esTracing = await read('es/guia-trazado.html');
 for (const html of [deTracing, esTracing]) {
-    assert(!html.includes('index.html?type=obtahovacky'), 'Tracing guide links to an empty catalog');
+    assert(html.includes('index.html?type=obtahovacky'), 'Tracing guide is missing the published catalog link');
     for (const value of ['0,1 mm', 'RGB 195, 195, 195', '40–60 %', '30 %', '20 %', '10 %', '0–5 %']) assert(html.includes(value), `Tracing guide missing production value ${value}`);
 }
-assert(deTracing.includes('In Vorbereitung'), 'German tracing guide is not marked as upcoming');
-assert(esTracing.includes('En preparación'), 'Spanish tracing guide is not marked as upcoming');
+assert(!deTracing.includes('In Vorbereitung'), 'German tracing guide still marked as upcoming');
+assert(!esTracing.includes('En preparación'), 'Spanish tracing guide still marked as upcoming');
 
 const deStory = await read('de/unsere-geschichte.html');
 const esStory = await read('es/nuestra-historia.html');

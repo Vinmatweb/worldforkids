@@ -8,9 +8,8 @@ const pages = [
         title: '<title>Schwierigkeitsstufen für Kinderaktivitäten | VinMat</title>',
         ages: ['3–4 Jahre', '5–6 Jahre', '7–9 Jahre', '10+ Jahre', '12+ und Erwachsene'],
         levels: ['Stufe 1: Erste Schritte', 'Stufe 2: Vorschule', 'Stufe 3: Mehr Ausdauer', 'Stufe 4: Fortgeschritten', 'Stufe 5: Experte'],
-        pending: 'Nachspuren – bald',
         legal: ['Datenschutz', 'Nutzungsbedingungen'],
-        forbidden: ['Punkte-verbinden-Vorlage', '>Nachzeichnen<', "'obtahovacky'", '${', 'Datenschutz (Englisch)', 'Nutzungsbedingungen (Englisch)']
+        forbidden: ['Punkte-verbinden-Vorlage', '>Nachzeichnen<', '${', 'Datenschutz (Englisch)', 'Nutzungsbedingungen (Englisch)']
     },
     {
         file: new URL('../es/niveles-dificultad.html', import.meta.url),
@@ -19,9 +18,8 @@ const pages = [
         title: '<title>Niveles de dificultad para actividades infantiles | VinMat</title>',
         ages: ['3–4 años', '5–6 años', '7–9 años', '10+ años', '12+ y adultos'],
         levels: ['Nivel 1: Primeros pasos', 'Nivel 2: Educación infantil', 'Nivel 3: Más autonomía', 'Nivel 4: Avanzado', 'Nivel 5: Experto'],
-        pending: 'Trazado – próximamente',
         legal: ['Privacidad', 'Términos de uso'],
-        forbidden: ['Escolar joven', 'resolutores', "'obtahovacky'", '${', 'Privacidad (en inglés)', 'Términos de uso (en inglés)']
+        forbidden: ['Escolar joven', 'resolutores', '${', 'Privacidad (en inglés)', 'Términos de uso (en inglés)']
     }
 ];
 
@@ -62,8 +60,8 @@ for (const page of pages) {
     for (const value of page.forbidden) if (html.includes(value)) errors.push(`${name}: forbidden value remains: ${value}`);
 
     if (count(html, 'class="level-card"') !== 5) errors.push(`${name}: expected five level cards`);
-    if (count(html, page.pending) !== 5) errors.push(`${name}: expected five pending tracing labels`);
-    if (count(html, "navratSFiltry('LV") !== 15) errors.push(`${name}: expected 15 active filter buttons`);
+    if (count(html, "'obtahovacky')") !== 5) errors.push(`${name}: expected five tracing filter buttons`);
+    if (count(html, "navratSFiltry('LV") !== 20) errors.push(`${name}: expected 20 active filter buttons`);
     if (!html.includes("window.location.assign('index.html?type='")) errors.push(`${name}: filter navigation is missing`);
     if (html.includes('whitespace-nowrap text-center')) errors.push(`${name}: footer still prevents wrapping`);
 

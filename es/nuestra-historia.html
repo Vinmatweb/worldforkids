@@ -325,7 +325,7 @@
             cells.push(cell.trim()); return cells;
         };
         const link = (value,type,level) => {
-            if (!value) return '<span class="text-[10px] sm:text-xs text-slate-400 font-bold">Próximamente</span>';
+            if (!value) return '<span class="text-[10px] sm:text-xs text-slate-400 font-bold">-</span>';
             const query=new URLSearchParams();
             if(type) query.set('type',type); if(level) query.set('age',level);
             return `<a href="index.html?${query}" class="inline-flex min-w-8 h-8 items-center justify-center rounded-lg bg-indigo-50 text-indigo-700 font-extrabold hover:bg-indigo-600 hover:text-white">${value}</a>`;
