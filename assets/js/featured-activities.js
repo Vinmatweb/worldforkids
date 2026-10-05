@@ -44,21 +44,25 @@ const guideAgeLabels = {
 
 const guideVariantLabels = {
     en: {
+        sample: '🎨 Color sample',
         colored: '🌈 Colored',
         coloring: '◧ B&W',
         partly_colored: '🌗 Partly Colored'
     },
     cz: {
+        sample: '🎨 Barevný vzor',
         colored: '🌈 Barevná',
         coloring: '◧ Černobílá',
         partly_colored: '🌗 Částečně barevná'
     },
     de: {
+        sample: '🎨 Farbvorlage',
         colored: '🌈 Farbig',
         coloring: '◧ Schwarz-Weiß',
         partly_colored: '🌗 Teilweise farbig'
     },
     es: {
+        sample: '🎨 Modelo a color',
         colored: '🌈 A color',
         coloring: '◧ Blanco y negro',
         partly_colored: '🌗 Parcialmente coloreado'
@@ -190,6 +194,10 @@ if (row[altPrefix + '_coloring'] && row[altPrefix + '_coloring'] !== '0') {
                 variants.push('coloring');
             }
 
+            if (row[altPrefix + '_sample'] && row[altPrefix + '_sample'] !== '0') {
+                variants.push('sample');
+            }
+
             const defaultVariant = variants.includes('colored')
                 ? 'colored'
                 : variants[0];
@@ -197,6 +205,10 @@ if (row[altPrefix + '_coloring'] && row[altPrefix + '_coloring'] !== '0') {
             activities.push({
                 id: GUIDE_ACTIVITY_CONFIG.type + '-' + row.soubor,
                 fileBase: row.soubor,
+                assetDirectory: row.assetDirectory || '',
+                sampleBase: row.sampleBase || '',
+                previewBase: row.previewBase || '',
+                samplePreviewBase: row.samplePreviewBase || '',
                 level: level,
                 dateAdded: row.datumPridani || '',
                 name: row[nameColumn] || row.soubor,
@@ -204,6 +216,7 @@ if (row[altPrefix + '_coloring'] && row[altPrefix + '_coloring'] !== '0') {
                 defaultVariant: defaultVariant,
 
                 altTexts: {
+                    sample: row[altPrefix + '_sample'] || row.altEn_sample || '',
                     colored: row[altPrefix + '_colored'] || '',
                     coloring: row[altPrefix + '_coloring'] || '',
                     partly_colored: row[altPrefix + '_partly_colored'] || ''
@@ -309,18 +322,16 @@ function guideSelectBottomActivities(activities, topActivities, count = 3) {
 /* ─── OBRÁZKY A VARIANTY ─────────────────────────────────────────────────── */
 
 function guideGetImageBase(activity, variant) {
-    const base =
-        GUIDE_ACTIVITY_CONFIG.imageFolder + '/' + activity.fileBase;
-
-    /*
-     * Pokud existuje pouze jedna varianta, soubor podle logiky indexu
-     * nemá příponu -colored nebo -coloring.
-     */
-    return activity.variants.length === 1
-        ? base
-        : base + '-' + variant;
+    if (variant === 'sample' && activity.sampleBase) return activity.sampleBase;
+    const base = GUIDE_ACTIVITY_CONFIG.imageFolder + '/' +
+        (activity.assetDirectory ? activity.assetDirectory + '/' : '') + activity.fileBase;
+    return activity.variants.length === 1 ? base : base + '-' + variant;
 }
 
+function guideGetPreviewBase(activity, variant) {
+    return (variant === 'sample' ? activity.samplePreviewBase : activity.previewBase) ||
+        guideGetImageBase(activity, variant);
+}
 
 function guideEscapeHtml(text) {
     return String(text || '')
@@ -333,7 +344,7 @@ function guideEscapeHtml(text) {
 
 
 function guideCreatePicture(activity, variant) {
-    const imageBase = guideGetImageBase(activity, variant);
+    const imageBase = guideGetPreviewBase(activity, variant);
     const alt =
         activity.altTexts[variant] ||
         activity.name;
@@ -561,7 +572,7 @@ function guideUpdateModalImage() {
         document.getElementById('guide-modal-image');
 
     const imageBase =
-        guideGetImageBase(
+        guideGetPreviewBase(
             guideModalActivity,
             guideModalVariant
         );

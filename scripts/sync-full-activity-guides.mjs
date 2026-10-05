@@ -215,6 +215,7 @@ function tracing(locale) {
   const de = locale === 'de';
   const main = [
     hero(t(locale,'Nachzeichnen und Linien nachfahren','Trazado y repaso de líneas'),t(locale,'Ein ausführlicher Ratgeber zu Arbeitsblättern mit hellgrauen Führungslinien für Eltern, Lehrkräfte, Kinder und Erwachsene.','Una guía completa de fichas con líneas guía gris claro para familias, docentes, niños y adultos.'),t(locale,'Unsere kostenlosen Nachzeichenvorlagen sind als PNG und PDF verfügbar. Dieser Ratgeber erklärt Stiftkontrolle, Linienführung, Ergonomie und die Wahl der passenden Schwierigkeitsstufe.','Nuestras fichas gratuitas de trazado están disponibles en PNG y PDF. Esta guía explica el control del lápiz, las líneas, la ergonomía y la elección del nivel adecuado.'),t(locale,'✏️ Kostenlos zum Ausdrucken','✏️ Gratis para imprimir')),
+    featured(locale,'obtahovacky','top-obtahovacky-container',t(locale,'🔥 Nachzeichenvorlagen zum direkten Öffnen','🔥 Fichas de trazado listas para abrir')),
     toc([
       ['co-jsou',t(locale,'📖 Was sind Nachzeichenvorlagen?','📖 ¿Qué son las fichas de trazado?')],['proc-obtahuji',t(locale,'✏️ Warum Linien nachfahren?','✏️ ¿Por qué repasar líneas?')],['co-rozvijeji',t(locale,'🧠 Welche Fähigkeiten werden geübt?','🧠 ¿Qué habilidades se practican?')],['vyvoj-grafomotoriky',t(locale,'📈 Entwicklung der Stiftkontrolle','📈 Desarrollo del control del lápiz')],['jak-vybrat',t(locale,'🧩 Die richtige Vorlage wählen','🧩 Elegir la ficha adecuada')],['vek-obtiznost',t(locale,'👶 Stufen 1–5','👶 Niveles 1–5')],['jak-pracovat',t(locale,'👨‍👩‍👧 Sinnvoll begleiten','👨‍👩‍👧 Acompañar sin hacer la tarea')],['nejcastejsi-chyby',t(locale,'❌ Fehler und Ermüdung','❌ Errores y fatiga')],['ergonomie',t(locale,'🪑 Ergonomie','🪑 Ergonomía')],['jak-vybrat-pomucky',t(locale,'🖊️ Stifte und Hilfsmittel','🖊️ Lápices y herramientas')],['doporuceni-tisk',t(locale,'🖨️ Druckqualität','🖨️ Calidad de impresión')],['druhy',t(locale,'🧩 Varianten','🧩 Variantes')],['historie',t(locale,'🏛️ Geschichte','🏛️ Historia')],['tvorba',t(locale,'⚙️ So erstellen wir Vorlagen','⚙️ Cómo creamos las fichas')],['vyuziti-skoly',t(locale,'🏫 Einsatzmöglichkeiten','🏫 Usos')],['faq',t(locale,'❓ Häufige Fragen','❓ Preguntas frecuentes')]
     ],[t(locale,'Nachzeichnen auf einen Blick','Trazado de un vistazo'),t(locale,'Schwierigkeitsrahmen: ab 3–4 Jahren','Marco de dificultad: desde 3–4 años'),t(locale,'Stufen: 1–5','Niveles: 1–5'),t(locale,'Führungslinie: hellgrau','Línea guía: gris claro'),t(locale,'Ziel: Kontrolle, Koordination, ruhige Bewegung','Objetivo: control, coordinación y movimiento fluido'),t(locale,'Das findest du in diesem Ratgeber','Qué encontrarás en esta guía')]),
@@ -321,6 +322,7 @@ function tracing(locale) {
       ['¿Sustituyen el aprendizaje de la escritura?','No. Pueden apoyar movimientos previos, pero no sustituyen el dibujo libre ni la enseñanza específica de escritura.'],
       ['¿Por qué las líneas son tan claras?','Deben verse al trabajar, pero quedar visualmente detrás del trazo propio cuando se completa la ficha.']
     ]).map(([q,a]) => `<details class="${card}"><summary class="font-bold text-slate-900 cursor-pointer">${q}</summary><p class="text-xs mt-3">${a}</p></details>`).join('')}</div>`),
+    featured(locale,'obtahovacky','bottom-obtahovacky-container',t(locale,'🎲 Weitere Nachzeichenvorlagen entdecken','🎲 Descubrir más fichas de trazado')),
     `<section class="text-center pt-4"><a href="index.html?type=obtahovacky" class="inline-block bg-indigo-600 text-white rounded-full px-8 py-3.5 text-xs font-extrabold">${t(locale,'✏️ Alle Nachzeichenvorlagen öffnen →','✏️ Abrir todas las fichas de trazado →')}</a></section>`
   ].join('\n');
   return `<main class="max-w-4xl w-full mx-auto px-4 py-12 flex-grow space-y-12">${main}</main>`;
@@ -378,7 +380,7 @@ async function apply(file, locale, builder, featuredConfig = null) {
   if (!/<main\b[\s\S]*?<\/main>/i.test(html)) throw new Error(`${file}: main not found`);
   html = html.replace(/<main\b[\s\S]*?<\/main>/i, nextMain);
   html = html.replace(/<!-- FULL GUIDE FEATURED START -->[\s\S]*?<!-- FULL GUIDE FEATURED END -->/g, '');
-  html = html.replace(/<script src="\.\.\/assets\/js\/featured-activities\.js"><\/script>/g, '');
+  html = html.replace(/<script src="\.\.\/assets\/js\/featured-activities\.js(?:\?[^"]*)?"><\/script>/g, '');
   html = html.replace(/<script>\s*loadFeaturedActivities\([\s\S]*?\);\s*<\/script>/g, '');
   if (featuredConfig) {
     const support = `${modal(locale)}<script>loadFeaturedActivities({type:'${featuredConfig.type}',language:'${locale}',topContainer:'${featuredConfig.top}',bottomContainer:'${featuredConfig.bottom}',cardLabel:'${featuredConfig.label}',assetPrefix:'../'});</script>`;
@@ -392,8 +394,8 @@ await apply('de/anleitung-ausmalbilder.html','de',coloring,{type:'omalovanky',to
 await apply('es/guia-dibujos.html','es',coloring,{type:'omalovanky',top:'top-omalovanky-container',bottom:'bottom-omalovanky-container',label:'DIBUJO'});
 await apply('de/anleitung-labyrinthe.html','de',mazes,{type:'bludiste',top:'top-bludiste-container',bottom:'bottom-bludiste-container',label:'LABYRINTH'});
 await apply('es/guia-laberintos.html','es',mazes,{type:'bludiste',top:'top-bludiste-container',bottom:'bottom-bludiste-container',label:'LABERINTO'});
-await apply('de/anleitung-nachzeichnen.html','de',tracing);
-await apply('es/guia-trazado.html','es',tracing);
+await apply('de/anleitung-nachzeichnen.html','de',tracing,{type:'obtahovacky',top:'top-obtahovacky-container',bottom:'bottom-obtahovacky-container',label:'NACHZEICHNEN'});
+await apply('es/guia-trazado.html','es',tracing,{type:'obtahovacky',top:'top-obtahovacky-container',bottom:'bottom-obtahovacky-container',label:'TRAZADO'});
 await apply('de/geschichte-nachzeichnen.html','de',tracingHistory);
 await apply('es/historia-trazado.html','es',tracingHistory);
 
