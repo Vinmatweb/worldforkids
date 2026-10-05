@@ -1,0 +1,20 @@
+{
+  "result": "passed",
+  "localHtmlPagesAudited": 499,
+  "changedPublicPagesVerified": 15,
+  "languages": [
+    "en",
+    "cs",
+    "de",
+    "es"
+  ],
+  "deploymentCommit": "9091555682b7da654b91a4fc51b5d51a533268d1",
+  "changes": [
+    "Zero-count statistics show a dash",
+    "Removed future-activity announcements",
+    "Published DE/ES tracing descriptions and catalog links",
+    "Enabled DE/ES tracing filters",
+    "Removed coming-soon sort labels"
+  ],
+  "browserVerified": "https://vinmat.eu/worldforkids/cs/nas-pribeh.html"
+}
