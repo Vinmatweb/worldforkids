@@ -18,7 +18,7 @@ const privacyPages = {
   'privacy.html': {
     heading: '2. Cookies and Advertising',
     body: `                <p class="mb-3">
-                    VinMat's World for Kids may use Google AdSense to display advertising on selected catalogue pages. The website is primarily designed for parents, guardians, teachers and other adults who choose, download or print activities for children. The presence of printable content for children does not by itself mean that every page or every visitor is treated as child-directed.
+                    The Google AdSense code is integrated on the catalogue homepage in all four language versions. Ads may appear after the site is approved for AdSense and when ads are available. The website is primarily designed for parents, guardians, teachers and other adults who choose, download or print activities for children. The presence of printable content for children does not by itself mean that every page or every visitor is treated as child-directed.
                 </p>
                 <p class="mb-3">
                     If a specific page, user context or ad request must receive child or teen age-restricted treatment under applicable law or Google policy, the relevant Google age-treatment signal will be used. Personalized advertising and remarketing are disabled for ad requests that receive age-restricted treatment. Where consent is legally required, visitors will be offered consent choices through a Google-certified consent management platform before technologies requiring consent are used.
@@ -31,7 +31,7 @@ const privacyPages = {
   'cs/zasady-ochrany-osobnich-udaju.html': {
     heading: '2. Cookies a reklama',
     body: `                <p class="mb-3">
-                    VinMatův svět pro děti může využívat Google AdSense k zobrazování reklam na vybraných stránkách katalogu. Web je určen především rodičům, zákonným zástupcům, pedagogům a dalším dospělým, kteří pro děti vybírají, stahují nebo tisknou aktivity. Samotná přítomnost materiálů pro děti neznamená, že se každá stránka nebo každý návštěvník automaticky považuje za obsah či uživatele určeného dětem.
+                    Kód Google AdSense je integrován na hlavní stránce katalogu ve všech čtyřech jazykových verzích. Reklamy se mohou zobrazit po schválení webu pro AdSense a podle dostupnosti reklam. Web je určen především rodičům, zákonným zástupcům, pedagogům a dalším dospělým, kteří pro děti vybírají, stahují nebo tisknou aktivity. Samotná přítomnost materiálů pro děti neznamená, že se každá stránka nebo každý návštěvník automaticky považuje za obsah či uživatele určeného dětem.
                 </p>
                 <p class="mb-3">
                     Pokud musí konkrétní stránka, situace uživatele nebo reklamní požadavek podle platných právních předpisů či pravidel Googlu obdržet věkově omezené zpracování pro děti nebo dospívající, použije se odpovídající signál Googlu pro zpracování podle věku. U reklamních požadavků s věkově omezeným zpracováním se nepoužívá personalizovaná reklama ani remarketing. Tam, kde právní předpisy vyžadují souhlas, budou návštěvníkům před použitím technologií vyžadujících souhlas nabídnuty volby prostřednictvím platformy CMP certifikované společností Google.
@@ -44,7 +44,7 @@ const privacyPages = {
   'de/datenschutz.html': {
     heading: '2. Cookies und Werbung',
     body: `                <p class="mb-3">
-                    VinMats Welt für Kinder kann Google AdSense auf ausgewählten Katalogseiten zur Anzeige von Werbung verwenden. Die Website richtet sich in erster Linie an Eltern, Erziehungsberechtigte, Lehrkräfte und andere Erwachsene, die Aktivitäten für Kinder auswählen, herunterladen oder ausdrucken. Dass die Website Druckmaterialien für Kinder enthält, bedeutet nicht automatisch, dass jede Seite oder jeder Besucher als kindgerichtet behandelt wird.
+                    Der Google-AdSense-Code ist auf der Katalog-Startseite in allen vier Sprachversionen integriert. Anzeigen können erscheinen, sobald die Website für AdSense zugelassen ist und Anzeigen verfügbar sind. Die Website richtet sich in erster Linie an Eltern, Erziehungsberechtigte, Lehrkräfte und andere Erwachsene, die Aktivitäten für Kinder auswählen, herunterladen oder ausdrucken. Dass die Website Druckmaterialien für Kinder enthält, bedeutet nicht automatisch, dass jede Seite oder jeder Besucher als kindgerichtet behandelt wird.
                 </p>
                 <p class="mb-3">
                     Wenn eine bestimmte Seite, ein Nutzungskontext oder eine Anzeigenanfrage nach geltendem Recht oder nach Google-Richtlinien eine altersbeschränkte Behandlung für Kinder oder Jugendliche erhalten muss, wird das entsprechende Google-Signal zur Altersbehandlung verwendet. Für Anzeigenanfragen mit altersbeschränkter Behandlung sind personalisierte Werbung und Remarketing deaktiviert. Soweit eine Einwilligung gesetzlich erforderlich ist, werden Besuchern vor dem Einsatz einwilligungspflichtiger Technologien Auswahlmöglichkeiten über eine von Google zertifizierte Consent-Management-Plattform angeboten.
@@ -57,7 +57,7 @@ const privacyPages = {
   'es/privacidad.html': {
     heading: '2. Cookies y publicidad',
     body: `                <p class="mb-3">
-                    El mundo de VinMat para niños puede utilizar Google AdSense para mostrar publicidad en determinadas páginas del catálogo. El sitio web está pensado principalmente para padres, tutores, docentes y otros adultos que eligen, descargan o imprimen actividades para niños. El hecho de ofrecer materiales imprimibles para niños no significa por sí solo que todas las páginas o todos los visitantes deban tratarse automáticamente como dirigidos a niños.
+                    El código de Google AdSense está integrado en la página principal del catálogo en las cuatro versiones lingüísticas. Los anuncios podrán mostrarse cuando se apruebe el sitio para AdSense y según su disponibilidad. El sitio web está pensado principalmente para padres, tutores, docentes y otros adultos que eligen, descargan o imprimen actividades para niños. El hecho de ofrecer materiales imprimibles para niños no significa por sí solo que todas las páginas o todos los visitantes deban tratarse automáticamente como dirigidos a niños.
                 </p>
                 <p class="mb-3">
                     Si una página, un contexto de usuario o una solicitud de anuncio concreta debe recibir un tratamiento restringido por edad para niños o adolescentes conforme a la legislación aplicable o a las políticas de Google, se utilizará la señal de tratamiento por edad correspondiente de Google. La publicidad personalizada y el remarketing se desactivan en las solicitudes que reciben tratamiento restringido por edad. Cuando la ley exija consentimiento, se ofrecerán opciones mediante una plataforma de gestión del consentimiento certificada por Google antes de utilizar tecnologías que requieran consentimiento.
