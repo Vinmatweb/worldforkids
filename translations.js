@@ -30,11 +30,14 @@ const podkatPreklady = {
   // 1000 – Domácí a lesní zvířata
     'domaci-zvirata':   { en: '🐕 Pets',            cz: '🐕 Domácí zvířátka', de: '🐕 Haustiere', es: '🐕 Mascotas' },
     'lesni-zvirata':    { en: '🦊 Forest Animals',  cz: '🦊 Lesní zvířátka', de: '🦊 Waldtiere', es: '🦊 Animales del bosque' },
+    'hospodarska-zvirata': { en: '🐃 Farm Animals', cz: '🐃 Hospodářská zvířata', de: '🐃 Nutztiere', es: '🐃 Animales de granja' },
     'hmyz':             { en: '🐛 Insects',          cz: '🐛 Hmyz', de: '🐛 Insekten', es: '🐛 Insectos' },
     'lucni': { en: '🦋 Meadow Creatures', cz: '🦋 Luční zvířátka', de: '🦋 Wiesentiere', es: '🦋 Criaturas del prado' },
   // 2000 – Doprava
     'vlaky':            { en: '🚂 Trains',           cz: '🚂 Vlaky', de: '🚂 Züge', es: '🚂 Trenes' },
     'auta':             { en: '🚗 Cars',             cz: '🚗 Auta', de: '🚗 Autos', es: '🚗 Coches' },
+    'nakladni-doprava': { en: '🚚 Trucks', cz: '🚚 Nákladní doprava', de: '🚚 Lastwagen', es: '🚚 Camiones' },
+    'motocykly': { en: '🏍️ Motorcycles', cz: '🏍️ Motocykly', de: '🏍️ Motorräder', es: '🏍️ Motocicletas' },
     'letadla':          { en: '✈️ Aircraft',          cz: '✈️ Letadla', de: '✈️ Flugzeuge', es: '✈️ Aviones' },
     'lode':             { en: '🚢 Ships',            cz: '🚢 Lodě', de: '🚢 Schiffe', es: '🚢 Barcos' },
   // 4000 – Exotická a mořská
