@@ -1782,7 +1782,7 @@ function rozsekajCsvRadek(text) {
 
 async function nactiCsvData(typ) {
     try {
-        var r = await fetch('../assets/data/'+typ+'.csv?v=6878b0b9cd99');
+        var r = await fetch('../assets/data/'+typ+'.csv?v=20261011-waterbuffalo-lv2');
         if (!r.ok) { console.warn('CSV nenalezeno: '+typ); return []; }
         var text = await r.text();
         var radky = text.split(/\r?\n/);
@@ -1822,7 +1822,7 @@ if (row.altCz_coloring && row.altCz_coloring !== '0') {
                     cz: row.nazevCz||row.soubor, en: row.nazevEn||row.soubor,
                     de: row.nazevDe||row.nazevEn||row.soubor, es: row.nazevEs||row.nazevEn||row.soubor
                 },
-                varianty: varianty, vychozi: vychozi, assetDirectory: row.assetDirectory||'', pdf: row.pdf==='1', sampleBase: row.sampleBase||'', previewBase: row.previewBase||'', samplePreviewBase: row.samplePreviewBase||'',
+                varianty: varianty, vychozi: vychozi, assetDirectory: row.assetDirectory||'', pdf: row.pdf==='1', coloringBase: row.coloringBase||'', sampleBase: row.sampleBase||'', previewBase: row.previewBase||'', samplePreviewBase: row.samplePreviewBase||'',
                 alty: {
                     sample: { cz:row.altCz_sample||row.altEn_sample||'', en:row.altEn_sample||'', de:row.altDe_sample||row.altEn_sample||'', es:row.altEs_sample||row.altEn_sample||'' },
                     colored:        { cz:row.altCz_colored||'',        en:row.altEn_colored||'',
@@ -1840,6 +1840,7 @@ if (row.altCz_coloring && row.altCz_coloring !== '0') {
 
 // ─── CESTA / OBRÁZEK ─────────────────────────────────────────────────────────
 function ziskejCestuBase(p, v) {
+    if(v==='coloring' && p.coloringBase)return p.coloringBase;
     if(v==='sample' && p.sampleBase)return p.sampleBase;
     var z = '../public/'+p.typ+'/'+(p.assetDirectory ? p.assetDirectory+'/' : '')+p.souborZaklad;
     return p.varianty.length === 1 ? z : z+'-'+v;
@@ -1852,6 +1853,7 @@ function ziskejCestuNahledu(p, v) {
 function obrazekHTML(cestaBase, alt, css, id, lazy) {
     var idStr  = id   ? ' id="'+id+'"'         : '';
     var lazStr = lazy !== false ? ' loading="lazy"' : '';
+    if(cestaBase.slice(-4)==='.svg')return '<img'+idStr+lazStr+' src="'+cestaBase+'" alt="'+alt+'" class="'+css+'" onload="scheduleGridImageEqualization()">';
     return '<picture class="max-w-full max-h-full flex items-center justify-center">'
         +'<source srcset="'+cestaBase+'.webp" type="image/webp">'
 +'<img'+idStr+lazStr+' src="'+cestaBase+'.png" alt="'+alt+'" class="'+css+'"'
@@ -1861,6 +1863,7 @@ function obrazekHTML(cestaBase, alt, css, id, lazy) {
 }
 
 async function nejlepsiUrl(cestaBase) {
+    if(cestaBase.slice(-4)==='.svg')return cestaBase;
     try { var r=await fetch(cestaBase+'.png',{method:'HEAD'}); if(r.ok){var v=parseInt(r.headers.get('content-length')||'0');if(v>1024)return cestaBase+'.png';} } catch(e){}
     try { var r2=await fetch(cestaBase+'.webp',{method:'HEAD'}); if(r2.ok){var v2=parseInt(r2.headers.get('content-length')||'0');if(v2>1024)return cestaBase+'.webp';} } catch(e){}
     return cestaBase+'.png';
