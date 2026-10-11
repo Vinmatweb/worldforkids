@@ -1778,7 +1778,7 @@ function rozsekajCsvRadek(text) {
 
 async function nactiCsvData(typ) {
     try {
-        var r = await fetch('../assets/data/'+typ+'.csv?v=20261011-waterbuffalo-lv2');
+        var r = await fetch('../assets/data/'+typ+'.csv?v=20261011-full-assets');
         if (!r.ok) { console.warn('CSV nenalezeno: '+typ); return []; }
         var text = await r.text();
         var radky = text.split(/\r?\n/);
