@@ -1260,12 +1260,12 @@
         </article>
 
         <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
-            <a href="/worldforkids/cs/aktivity/omalovanka-pratelske-frankensteinovo-monstrum.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Přátelské Frankensteinovo monstrum">
-                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv2_gpt_10217_1_en-friendly-frankenstein-monster-coloring-page-coloring.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv2_gpt_10217_1_en-friendly-frankenstein-monster-coloring-page-coloring.png" alt="Přátelské Frankensteinovo monstrum: černobílá omalovánka LV2 pro děti 5–6 let, zdarma k vytisknutí na A4." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
+            <a href="/worldforkids/cs/aktivity/omalovanka-pratelske-sesivane-monstrum.html" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="Přátelské sešívané monstrum">
+                <picture><source media="screen" srcset="/worldforkids/public/omalovanky/en/lv3_gpt_10217_1_en-friendly-stitched-monster-coloring-page-coloring-preview.webp" type="image/webp"><img src="/worldforkids/public/omalovanky/en/lv3_gpt_10217_1_en-friendly-stitched-monster-coloring-page-coloring-preview.png" alt="Přátelské sešívané monstrum: černobílá halloweenská omalovánka LV3 pro děti 7–9 let, zdarma k vytisknutí na A4." loading="lazy" class="max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]"></picture>
             </a>
             <div class="p-4 flex-grow">
-                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Omalovánka</span><span class="text-xs text-slate-400 font-bold">LV2</span></div>
-                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/cs/aktivity/omalovanka-pratelske-frankensteinovo-monstrum.html" class="hover:text-indigo-600">Přátelské Frankensteinovo monstrum</a></h3>
+                <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">Omalovánka</span><span class="text-xs text-slate-400 font-bold">LV3</span></div>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="/worldforkids/cs/aktivity/omalovanka-pratelske-sesivane-monstrum.html" class="hover:text-indigo-600">Přátelské sešívané monstrum</a></h3>
             </div>
         </article>
 
@@ -1892,7 +1892,7 @@ function rozsekajCsvRadek(text) {
 
 async function nactiCsvData(typ) {
     try {
-        var r = await fetch('../assets/data/'+(typ==='omalovanky'?'omalovanky-20261011':typ)+'.csv?v=20261011-w4k-images-v2');
+        var r = await fetch('../assets/data/'+(typ==='omalovanky'?'omalovanky-20261012':typ)+'.csv?v=20261012-lv3-10217');
         if (!r.ok) { console.warn('CSV nenalezeno: '+typ); return []; }
         var text = await r.text();
         var radky = text.split(/\r?\n/);
