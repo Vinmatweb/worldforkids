@@ -14,7 +14,7 @@ function renderAgenda(){
  if(!arr.length){root.append(el('p','note','Na tento den zatím nemáme zařazenou ověřenou událost.'));return}
  for(const item of arr){
   const card=el('div','agenda-item'),info=el('div');
-  info.append(el('strong','',item.name),el('span','',item.organization+' · '+item.category));
+  info.append(el('strong','',item.name),el('span','',item.organization+' · '+(item.status==='official'?'Ověřený oficiální den':'Ověřený připomínkový den')));
   const link=el('a','',item.detailUrl?'Otevřít stránku →':'Ověřit zdroj ↗');
   link.href=item.detailUrl?'./'+item.detailUrl:item.sourceUrl;
   if(!item.detailUrl){link.target='_blank';link.rel='noopener noreferrer'}
@@ -37,7 +37,7 @@ function render(){
   day.addEventListener('click',()=>{selected=new Date(d);render()});cell.append(day);
   const arr=visible(d),max=view==='day'?999:2;
   for(const item of arr.slice(0,max)){
-   const link=el(item.detailUrl?'a':'div','event-chip',item.name);
+   const link=el(item.detailUrl?'a':'div','event-chip '+(item.status==='official'?'is-official':'is-other'),item.name);
    link.style.setProperty('--accent',item.accent||'#689dbb');
    link.title=item.name+' – '+item.organization;
    if(item.detailUrl)link.href='./'+item.detailUrl;
