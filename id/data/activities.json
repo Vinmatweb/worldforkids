@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "description": "Vazby na existující aktivity; bez kopírování podkladů. Odkazy přidat teprve po kontrole jejich existence.",
+  "collections": [
+    {
+      "id": "international-days-snow-leopard",
+      "slug": "irbis",
+      "title": "Levhart sněžný (irbis)",
+      "category": "mezinárodní-dny",
+      "eventId": "snow-leopard-day"
+    }
+  ],
+  "activities": []
+}
