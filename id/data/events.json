@@ -78,6 +78,22 @@
       "accent": "#58a7ce"
     },
     {
+      "id": "world-animal-day",
+      "name": "Světový den zvířat",
+      "nameEn": "World Animal Day",
+      "month": 10,
+      "day": 4,
+      "repeat": "yearly",
+      "organization": "Naturewatch Foundation (koordinátor)",
+      "organizationId": "naturewatch",
+      "category": "zvířata",
+      "status": "other",
+      "detailUrl": null,
+      "sourceUrl": "https://www.worldanimalday.org/about-us/",
+      "secondarySourceUrl": "https://naturewatch.org/campaigns/world-animal-day/",
+      "accent": "#e39c5e"
+    },
+    {
       "id": "snow-leopard-day",
       "name": "Mezinárodní den levharta sněžného",
       "nameEn": "International Day of the Snow Leopard",
