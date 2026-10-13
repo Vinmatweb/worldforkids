@@ -9,7 +9,7 @@ try{
  const page=await desktop.newPage();
  page.on('pageerror',e=>errors.push('desktop: '+e.message));
  await page.goto(origin+'/id/',{waitUntil:'networkidle'});
- await page.locator('#total-count').getByText('7 ověřených dnů v katalogu').waitFor();
+ await page.waitForFunction(()=>document.querySelector('#total-count')?.textContent.includes('7 ověřených dnů v katalogu'));
  assert.equal(await page.locator('[data-view="month"]').getAttribute('aria-pressed'),'true');
  assert.ok(await page.locator('.day-cell').count()>=28);
  await page.locator('[data-view="week"]').click();
