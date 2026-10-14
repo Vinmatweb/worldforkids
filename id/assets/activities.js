@@ -2,12 +2,16 @@ const root=document.getElementById("activity-root");
 const groups=[
  ["coloring","Omalovánky","Omalovánky LV1 až LV5; každá úroveň má samostatný barevný vzor."],
  ["tracing","Obtahovačky","Zobrazují se pouze schválené a dostupné úrovně."],
- ["story","Příběhy","Příběhové ilustrace a jejich krátké texty."],
+ ["story","Příběhy","12 obrázkových dílů. Krátké texty se doplní později."],
  ["info-card","Informační karty","Černobílá i barevná verze informačních karet."],
  ["other","Další dostupné aktivity","Další pracovní listy pro malé objevitele."]
 ];
 function create(tag,cls,text){const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e}
-function linkLabel(item){return item.type==="info-card"?"Otevřít informační kartu PDF →":"Stáhnout omalovánku PNG →"}
+function linkLabel(item){
+ if(item.type==="info-card")return "Otevřít informační kartu PDF →";
+ if(item.type==="story")return "Stáhnout příběhovou omalovánku PNG →";
+ return "Stáhnout omalovánku PNG →";
+}
 fetch(new URL("../data/activities.json",import.meta.url))
 .then(r=>{if(!r.ok)throw Error(r.status);return r.json()})
 .then(data=>{

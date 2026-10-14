@@ -112,6 +112,258 @@
       "verified": true
     },
     {
+      "id": "irbis-story-01",
+      "type": "story",
+      "name": "Příběhová omalovánka – díl 01",
+      "level": "LV3",
+      "language": "cs",
+      "format": "PNG",
+      "storyPart": 1,
+      "url": "../assets/irbis/IRBIS-01-01_LV3.png",
+      "previewUrl": "../assets/irbis/IRBIS-01-01_LV3-sample.png",
+      "fileName": "IRBIS-01-01_LV3.png",
+      "previewFileName": "IRBIS-01-01_LV3-sample.png",
+      "source": {
+        "provider": "Google Drive",
+        "fileId": "1sfFpmU_ZEsdb3Ujt2F9yo570hxzqXKbc"
+      },
+      "collectionIds": [
+        "international-days-snow-leopard"
+      ],
+      "verified": true
+    },
+    {
+      "id": "irbis-story-02",
+      "type": "story",
+      "name": "Příběhová omalovánka – díl 02",
+      "level": "LV3",
+      "language": "cs",
+      "format": "PNG",
+      "storyPart": 2,
+      "url": "../assets/irbis/IRBIS-01-02_LV3.png",
+      "previewUrl": "../assets/irbis/IRBIS-01-02_LV3-sample.png",
+      "fileName": "IRBIS-01-02_LV3.png",
+      "previewFileName": "IRBIS-01-02_LV3-sample.png",
+      "source": {
+        "provider": "Google Drive",
+        "fileId": "1ZTyXSNbvsSxUPnDp0LO02g26lU2ePAJv"
+      },
+      "collectionIds": [
+        "international-days-snow-leopard"
+      ],
+      "verified": true
+    },
+    {
+      "id": "irbis-story-03",
+      "type": "story",
+      "name": "Příběhová omalovánka – díl 03",
+      "level": "LV3",
+      "language": "cs",
+      "format": "PNG",
+      "storyPart": 3,
+      "url": "../assets/irbis/IRBIS-01-03_LV3.png",
+      "previewUrl": "../assets/irbis/IRBIS-01-03_LV3-sample.png",
+      "fileName": "IRBIS-01-03_LV3.png",
+      "previewFileName": "IRBIS-01-03_LV3-sample.png",
+      "source": {
+        "provider": "Google Drive",
+        "fileId": "1B7nh_at--SJHjkee7PvGaevfiRVls-gr"
+      },
+      "collectionIds": [
+        "international-days-snow-leopard"
+      ],
+      "verified": true
+    },
+    {
+      "id": "irbis-story-04",
+      "type": "story",
+      "name": "Příběhová omalovánka – díl 04",
+      "level": "LV4",
+      "language": "cs",
+      "format": "PNG",
+      "storyPart": 4,
+      "url": "../assets/irbis/IRBIS-01-04_LV4.png",
+      "previewUrl": "../assets/irbis/IRBIS-01-04_LV4-sample.png",
+      "fileName": "IRBIS-01-04_LV4.png",
+      "previewFileName": "IRBIS-01-04_LV4-sample.png",
+      "source": {
+        "provider": "Google Drive",
+        "fileId": "1ofgeU8bta7VK8goTE3j73_rWFAZlG3fu"
+      },
+      "collectionIds": [
+        "international-days-snow-leopard"
+      ],
+      "verified": true
+    },
+    {
+      "id": "irbis-story-05",
+      "type": "story",
+      "name": "Příběhová omalovánka – díl 05",
+      "level": "LV3",
+      "language": "cs",
+      "format": "PNG",
+      "storyPart": 5,
+      "url": "../assets/irbis/IRBIS-01-05_LV3.png",
+      "previewUrl": "../assets/irbis/IRBIS-01-05_LV3-sample.png",
+      "fileName": "IRBIS-01-05_LV3.png",
+      "previewFileName": "IRBIS-01-05_LV3-sample.png",
+      "source": {
+        "provider": "Google Drive",
+        "fileId": "16qt6EpvNl4eXKX-EK4DkpufwVmDBG-aX"
+      },
+      "collectionIds": [
+        "international-days-snow-leopard"
+      ],
+      "verified": true
+    },
+    {
+      "id": "irbis-story-06",
+      "type": "story",
+      "name": "Příběhová omalovánka – díl 06",
+      "level": "LV3",
+      "language": "cs",
+      "format": "PNG",
+      "storyPart": 6,
+      "url": "../assets/irbis/IRBIS-01-06_LV3.png",
+      "previewUrl": "../assets/irbis/IRBIS-01-06_LV3-sample.png",
+      "fileName": "IRBIS-01-06_LV3.png",
+      "previewFileName": "IRBIS-01-06_LV3-sample.png",
+      "source": {
+        "provider": "Google Drive",
+        "fileId": "1CiRhqw20mcHF_6u6zBGW_EMMeRuxklvL"
+      },
+      "collectionIds": [
+        "international-days-snow-leopard"
+      ],
+      "verified": true
+    },
+    {
+      "id": "irbis-story-07",
+      "type": "story",
+      "name": "Příběhová omalovánka – díl 07",
+      "level": "LV4",
+      "language": "cs",
+      "format": "PNG",
+      "storyPart": 7,
+      "url": "../assets/irbis/IRBIS-01-07_LV4.png",
+      "previewUrl": "../assets/irbis/IRBIS-01-07_LV4-sample.png",
+      "fileName": "IRBIS-01-07_LV4.png",
+      "previewFileName": "IRBIS-01-07_LV4-sample.png",
+      "source": {
+        "provider": "Google Drive",
+        "fileId": "14cry2zcqYU3or_03XL8frvva4b-tSZOk"
+      },
+      "collectionIds": [
+        "international-days-snow-leopard"
+      ],
+      "verified": true
+    },
+    {
+      "id": "irbis-story-08",
+      "type": "story",
+      "name": "Příběhová omalovánka – díl 08",
+      "level": "LV4",
+      "language": "cs",
+      "format": "PNG",
+      "storyPart": 8,
+      "url": "../assets/irbis/IRBIS-01-08_LV4.png",
+      "previewUrl": "../assets/irbis/IRBIS-01-08_LV4-sample.png",
+      "fileName": "IRBIS-01-08_LV4.png",
+      "previewFileName": "IRBIS-01-08_LV4-sample.png",
+      "source": {
+        "provider": "Google Drive",
+        "fileId": "1hAA7gJQoTbUT8muy6g_a5C0rvKSszxvH"
+      },
+      "collectionIds": [
+        "international-days-snow-leopard"
+      ],
+      "verified": true
+    },
+    {
+      "id": "irbis-story-09",
+      "type": "story",
+      "name": "Příběhová omalovánka – díl 09",
+      "level": "LV4",
+      "language": "cs",
+      "format": "PNG",
+      "storyPart": 9,
+      "url": "../assets/irbis/IRBIS-01-09_LV4.png",
+      "previewUrl": "../assets/irbis/IRBIS-01-09_LV4-sample.png",
+      "fileName": "IRBIS-01-09_LV4.png",
+      "previewFileName": "IRBIS-01-09_LV4-sample.png",
+      "source": {
+        "provider": "Google Drive",
+        "fileId": "1c8eYubxfkA_yAodbaQFyELhdBSPxMA27"
+      },
+      "collectionIds": [
+        "international-days-snow-leopard"
+      ],
+      "verified": true
+    },
+    {
+      "id": "irbis-story-10",
+      "type": "story",
+      "name": "Příběhová omalovánka – díl 10",
+      "level": "LV5",
+      "language": "cs",
+      "format": "PNG",
+      "storyPart": 10,
+      "url": "../assets/irbis/IRBIS-01-10_LV5.png",
+      "previewUrl": "../assets/irbis/IRBIS-01-10_LV5-sample.png",
+      "fileName": "IRBIS-01-10_LV5.png",
+      "previewFileName": "IRBIS-01-10_LV5-sample.png",
+      "source": {
+        "provider": "Google Drive",
+        "fileId": "15KokuD3Ym2jYKSSBOJSipu3Gc1VS0rPs"
+      },
+      "collectionIds": [
+        "international-days-snow-leopard"
+      ],
+      "verified": true
+    },
+    {
+      "id": "irbis-story-11",
+      "type": "story",
+      "name": "Příběhová omalovánka – díl 11",
+      "level": "LV4",
+      "language": "cs",
+      "format": "PNG",
+      "storyPart": 11,
+      "url": "../assets/irbis/IRBIS-01-11_LV4.png",
+      "previewUrl": "../assets/irbis/IRBIS-01-11_LV4-sample.png",
+      "fileName": "IRBIS-01-11_LV4.png",
+      "previewFileName": "IRBIS-01-11_LV4-sample.png",
+      "source": {
+        "provider": "Google Drive",
+        "fileId": "19bGGa-Vndkxm25BWN5TLlnNYtaLron88"
+      },
+      "collectionIds": [
+        "international-days-snow-leopard"
+      ],
+      "verified": true
+    },
+    {
+      "id": "irbis-story-12",
+      "type": "story",
+      "name": "Příběhová omalovánka – díl 12",
+      "level": "LV3",
+      "language": "cs",
+      "format": "PNG",
+      "storyPart": 12,
+      "url": "../assets/irbis/IRBIS-01-12_LV3.png",
+      "previewUrl": "../assets/irbis/IRBIS-01-12_LV3-sample.png",
+      "fileName": "IRBIS-01-12_LV3.png",
+      "previewFileName": "IRBIS-01-12_LV3-sample.png",
+      "source": {
+        "provider": "Google Drive",
+        "fileId": "1zKhXEDjzhkH1aNEAmgnCu7AQL5kYS8_r"
+      },
+      "collectionIds": [
+        "international-days-snow-leopard"
+      ],
+      "verified": true
+    },
+    {
       "id": "irbis-info-card-lv2-bw",
       "type": "info-card",
       "name": "Informační karta o levhartovi sněžném",

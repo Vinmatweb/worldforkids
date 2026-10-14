@@ -19,10 +19,11 @@
 ## Dostupné podklady o irbisovi
 V této větvi jsou převzaté původní soubory z poskytnuté složky:
 - 5 omalovánek LV1–LV5 a 5 barevných vzorů.
+- 12 příběhových omalovánek a 12 barevných vzorů, vystavených jako samostatné díly; krátké texty se doplní následně.
 - 3 informační karty LV2–LV4, každá černobíle i barevně; české verze.
 - Aktivity nesou zdrojové ID souboru, úroveň, kategorii, jazyk a kolekci. Odkaz na Etsy není přidán.
 
-Obtahovačky nalezené ve složce jsou pojmenované „ke kontrole“ a doprovodný přehled označuje všech 9 návrhů jako neschválené; proto nejsou zobrazené jako hotové listy. Složka `Příběh` se při kontrole jeví prázdná, takže příběhové omalovánky, vzory ani šest příběhových obtahovaček zatím nemají funkční odkazy v tomto preview.
+Všechny 9 obtahovaček jsou v podkladech označeny „ke kontrole“ a přehled výslovně říká, že žádná není schválena jako finální tiskový list. Proto zatím nejsou zobrazené jako hotové aktivity.
 
 ## Budoucí krátké adresy
 - `https://vinmat.eu/w4k/id/`
