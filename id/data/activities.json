@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "description": "Vazby na existující aktivity; bez kopírování podkladů. Odkazy přidat teprve po kontrole jejich existence.",
+  "version": 2,
+  "description": "Jedna aktivita může patřit do své běžné kategorie a současně do více kolekcí. Aktivity se nekopírují.",
   "collections": [
     {
       "id": "international-days-snow-leopard",
@@ -10,5 +10,226 @@
       "eventId": "snow-leopard-day"
     }
   ],
-  "activities": []
+  "activities": [
+    {
+      "id": "irbis-coloring-lv1",
+      "type": "coloring",
+      "name": "Levhart sněžný – omalovánka",
+      "level": "LV1",
+      "language": "cs",
+      "format": "PNG",
+      "url": "../assets/irbis/lv1_gpt_4101_1_en-irbis-coloring-page.png",
+      "previewUrl": "../assets/irbis/lv1_gpt_4101_1_en-irbis-coloring-page-sample.png",
+      "fileName": "lv1_gpt_4101_1_en-irbis-coloring-page.png",
+      "previewFileName": "lv1_gpt_4101_1_en-irbis-coloring-page-sample.png",
+      "source": {
+        "provider": "Google Drive",
+        "fileId": "1ufiB4p2MKTJ_DqIpHpqLbM7cI_sJxWHr"
+      },
+      "collectionIds": [
+        "international-days-snow-leopard"
+      ],
+      "verified": true
+    },
+    {
+      "id": "irbis-coloring-lv2",
+      "type": "coloring",
+      "name": "Levhart sněžný – omalovánka",
+      "level": "LV2",
+      "language": "cs",
+      "format": "PNG",
+      "url": "../assets/irbis/lv2_gpt_4101_1_en-irbis-coloring-page.png",
+      "previewUrl": "../assets/irbis/lv2_gpt_4101_1_en-irbis-coloring-page-sample.png",
+      "fileName": "lv2_gpt_4101_1_en-irbis-coloring-page.png",
+      "previewFileName": "lv2_gpt_4101_1_en-irbis-coloring-page-sample.png",
+      "source": {
+        "provider": "Google Drive",
+        "fileId": "1Jb3aSJ8aG9tFtmyAj-aqmiaoKPNxQmQn"
+      },
+      "collectionIds": [
+        "international-days-snow-leopard"
+      ],
+      "verified": true
+    },
+    {
+      "id": "irbis-coloring-lv3",
+      "type": "coloring",
+      "name": "Levhart sněžný – omalovánka",
+      "level": "LV3",
+      "language": "cs",
+      "format": "PNG",
+      "url": "../assets/irbis/lv3_gpt_4101_1_en-irbis-coloring-page.png",
+      "previewUrl": "../assets/irbis/lv3_gpt_4101_1_en-irbis-coloring-page-sample.png",
+      "fileName": "lv3_gpt_4101_1_en-irbis-coloring-page.png",
+      "previewFileName": "lv3_gpt_4101_1_en-irbis-coloring-page-sample.png",
+      "source": {
+        "provider": "Google Drive",
+        "fileId": "1jjM7CEEeTzh-giDD_vSL3kL4q14fpcFj"
+      },
+      "collectionIds": [
+        "international-days-snow-leopard"
+      ],
+      "verified": true
+    },
+    {
+      "id": "irbis-coloring-lv4",
+      "type": "coloring",
+      "name": "Levhart sněžný – omalovánka",
+      "level": "LV4",
+      "language": "cs",
+      "format": "PNG",
+      "url": "../assets/irbis/lv4_gpt_4101_1_en-irbis-coloring-page.png",
+      "previewUrl": "../assets/irbis/lv4_gpt_4101_1_en-irbis-coloring-page-sample.png",
+      "fileName": "lv4_gpt_4101_1_en-irbis-coloring-page.png",
+      "previewFileName": "lv4_gpt_4101_1_en-irbis-coloring-page-sample.png",
+      "source": {
+        "provider": "Google Drive",
+        "fileId": "1uStywo8fDUjBJ9f3yHmrPImZ6353uYw1"
+      },
+      "collectionIds": [
+        "international-days-snow-leopard"
+      ],
+      "verified": true
+    },
+    {
+      "id": "irbis-coloring-lv5",
+      "type": "coloring",
+      "name": "Levhart sněžný – omalovánka",
+      "level": "LV5",
+      "language": "cs",
+      "format": "PNG",
+      "url": "../assets/irbis/lv5_gpt_4101_1_en-irbis-coloring-page.png",
+      "previewUrl": "../assets/irbis/lv5_gpt_4101_1_en-irbis-coloring-page-sample.png",
+      "fileName": "lv5_gpt_4101_1_en-irbis-coloring-page.png",
+      "previewFileName": "lv5_gpt_4101_1_en-irbis-coloring-page-sample.png",
+      "source": {
+        "provider": "Google Drive",
+        "fileId": "1_Xq0_sZL9eDPxwvweTPcwc3hdHXwY5p1"
+      },
+      "collectionIds": [
+        "international-days-snow-leopard"
+      ],
+      "verified": true
+    },
+    {
+      "id": "irbis-info-card-lv2-bw",
+      "type": "info-card",
+      "name": "Informační karta o levhartovi sněžném",
+      "level": "LV2",
+      "language": "cs",
+      "format": "Černobíle",
+      "url": "../assets/irbis/IK_lv2_bw_cs_Levhart_snezny.pdf",
+      "previewUrl": "../assets/irbis/IK_lv2_bw_cs_Levhart_snezny.png",
+      "fileName": "IK_lv2_bw_cs_Levhart_snezny.pdf",
+      "previewFileName": "IK_lv2_bw_cs_Levhart_snezny.png",
+      "source": {
+        "provider": "Google Drive",
+        "fileId": "13FIbeh8Tzp7lbUAVkV1jnOIcM8fe4UX5"
+      },
+      "collectionIds": [
+        "international-days-snow-leopard"
+      ],
+      "verified": true
+    },
+    {
+      "id": "irbis-info-card-lv2-color",
+      "type": "info-card",
+      "name": "Informační karta o levhartovi sněžném",
+      "level": "LV2",
+      "language": "cs",
+      "format": "Barevně",
+      "url": "../assets/irbis/IK_lv2_color_cs_Levhart_snezny.pdf",
+      "previewUrl": "../assets/irbis/IK_lv2_color_cs_Levhart_snezny.png",
+      "fileName": "IK_lv2_color_cs_Levhart_snezny.pdf",
+      "previewFileName": "IK_lv2_color_cs_Levhart_snezny.png",
+      "source": {
+        "provider": "Google Drive",
+        "fileId": "1opFFbP20iOHMS9gIvP8D_RNtaJdEAiTJ"
+      },
+      "collectionIds": [
+        "international-days-snow-leopard"
+      ],
+      "verified": true
+    },
+    {
+      "id": "irbis-info-card-lv3-bw",
+      "type": "info-card",
+      "name": "Informační karta o levhartovi sněžném",
+      "level": "LV3",
+      "language": "cs",
+      "format": "Černobíle",
+      "url": "../assets/irbis/IK_lv3_bw_cs_Levhart_snezny.pdf",
+      "previewUrl": "../assets/irbis/IK_lv3_bw_cs_Levhart_snezny.png",
+      "fileName": "IK_lv3_bw_cs_Levhart_snezny.pdf",
+      "previewFileName": "IK_lv3_bw_cs_Levhart_snezny.png",
+      "source": {
+        "provider": "Google Drive",
+        "fileId": "1--P4gJ3dnHi1RUhWfn3gqm692bLU-w49"
+      },
+      "collectionIds": [
+        "international-days-snow-leopard"
+      ],
+      "verified": true
+    },
+    {
+      "id": "irbis-info-card-lv3-color",
+      "type": "info-card",
+      "name": "Informační karta o levhartovi sněžném",
+      "level": "LV3",
+      "language": "cs",
+      "format": "Barevně",
+      "url": "../assets/irbis/IK_lv3_color_cs_Levhart_snezny.pdf",
+      "previewUrl": "../assets/irbis/IK_lv3_color_cs_Levhart_snezny.png",
+      "fileName": "IK_lv3_color_cs_Levhart_snezny.pdf",
+      "previewFileName": "IK_lv3_color_cs_Levhart_snezny.png",
+      "source": {
+        "provider": "Google Drive",
+        "fileId": "1kz6AlhNCVTsKcQOyn2RXYlBMeZXQGgv2"
+      },
+      "collectionIds": [
+        "international-days-snow-leopard"
+      ],
+      "verified": true
+    },
+    {
+      "id": "irbis-info-card-lv4-bw",
+      "type": "info-card",
+      "name": "Informační karta o levhartovi sněžném",
+      "level": "LV4",
+      "language": "cs",
+      "format": "Černobíle",
+      "url": "../assets/irbis/IK_lv4_bw_cs_Levhart_snezny_vzdelavaci_karta_LV4.pdf",
+      "previewUrl": "../assets/irbis/IK_lv4_bw_cs_Levhart_snezny.png",
+      "fileName": "IK_lv4_bw_cs_Levhart_snezny_vzdelavaci_karta_LV4.pdf",
+      "previewFileName": "IK_lv4_bw_cs_Levhart_snezny.png",
+      "source": {
+        "provider": "Google Drive",
+        "fileId": "1eMVTcD7E22wcdbD2KtRa3GP_2f5XbqGk"
+      },
+      "collectionIds": [
+        "international-days-snow-leopard"
+      ],
+      "verified": true
+    },
+    {
+      "id": "irbis-info-card-lv4-color",
+      "type": "info-card",
+      "name": "Informační karta o levhartovi sněžném",
+      "level": "LV4",
+      "language": "cs",
+      "format": "Barevně",
+      "url": "../assets/irbis/IK_lv4_cs_Levhart_snezny_vzdelavaci_karta_LV4_barevna.pdf",
+      "previewUrl": "../assets/irbis/IK_lv4_color_cs_Levhart_snezny.png",
+      "fileName": "IK_lv4_cs_Levhart_snezny_vzdelavaci_karta_LV4_barevna.pdf",
+      "previewFileName": "IK_lv4_color_cs_Levhart_snezny.png",
+      "source": {
+        "provider": "Google Drive",
+        "fileId": "19NQksLhhQTbJwj4FqHaquExnuvebsSsV"
+      },
+      "collectionIds": [
+        "international-days-snow-leopard"
+      ],
+      "verified": true
+    }
+  ]
 }
