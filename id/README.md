@@ -1,10 +1,10 @@
-# Mezinárodní dny – izolovaná preview sekce
+# Mezinárodní dny – VinMat World for Kids
 
 ## Bezpečnost nasazení
-- Pracovní větev: `preview/international-days-2026`, mimo `main`. Nemergovat během kontroly AdSense.
-- Neměnit `index.html` W4K, navigaci, `sitemap.xml`, `robots.txt`, existující workflows ani žádnou ostrou publikaci.
+- Stránky jsou nasazené na `vinmat.eu/worldforkids/id/`; krátké adresy `/w4k/id/` a `/w4k/id/irbis/` na ně přesměrovávají.
+- Hlavní stránka W4K, navigace, `sitemap.xml` a `robots.txt` zůstaly beze změny.
 - Nové HTML neobsahuje AdSense ani Google Analytics, mají `noindex,follow`.
-- Žádné automatické GitHub Pages v produkčním repozitáři; samostatná preview URL se zřizuje odděleně bez vlastní domény.
+- Stránky mají `noindex,follow` a neobsahují AdSense.
 
 ## Stránky
 - `id/index.html`: kalendář měsíce / týdne / dne, filtry, navigace.
