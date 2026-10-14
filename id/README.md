@@ -23,7 +23,7 @@ V této větvi jsou převzaté původní soubory z poskytnuté složky:
 - 3 informační karty LV2–LV4, každá černobíle i barevně; české verze.
 - Aktivity nesou zdrojové ID souboru, úroveň, kategorii, jazyk a kolekci. Odkaz na Etsy není přidán.
 
-Všechny 9 obtahovaček jsou v podkladech označeny „ke kontrole“ a přehled výslovně říká, že žádná není schválena jako finální tiskový list. Proto zatím nejsou zobrazené jako hotové aktivity.
+Všech 9 dohledaných obtahovaček (3 základní LV1–LV3 a 6 příběhových LV3) je v této preview zařazeno do kategorie Obtahovačky a označeno „Ke kontrole“. Jde o dostupné podklady, nikoli o potvrzení schválení finálních tiskových listů.
 
 ## Budoucí krátké adresy
 - `https://vinmat.eu/w4k/id/`

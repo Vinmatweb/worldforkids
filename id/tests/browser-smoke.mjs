@@ -31,11 +31,13 @@ try{
  assert.match(await page.title(),/Levhart sněžný/);
  assert.equal(await page.locator('meta[name="robots"]').getAttribute('content'),'noindex,follow');
  assert.equal(await page.locator('script[src*="googlesyndication"]').count(),0);
- await page.waitForFunction(()=>document.querySelectorAll('#activity-root .activity').length===23);
+ await page.waitForFunction(()=>document.querySelectorAll('#activity-root .activity').length===32);
  assert.equal(await page.locator('#activity-root [data-category="coloring"] .activity').count(),5);
  assert.equal(await page.locator('#activity-root [data-category="story"] .activity').count(),12);
  assert.equal(await page.locator('#activity-root [data-category="info-card"] .activity').count(),6);
- assert.equal(await page.locator('#activity-root [data-category="tracing"] .activity').count(),0);
+ assert.equal(await page.locator('#activity-root [data-category="tracing"] .activity').count(),9);
+ assert.equal(await page.locator("#activity-root .review-status").count(),9);
+ assert.match(await page.locator("#activity-root [data-category=\"tracing\"] .desc").innerText(),/LV1–LV3/);
  assert.equal(await page.locator('#activity-root a[href*="etsy"]').count(),0);
  const imageResults=await page.locator('#activity-root .activity img').evaluateAll(imgs=>Promise.all(imgs.map(async img=>{
   img.loading='eager';try{await img.decode();return img.naturalWidth>0}catch{return false}
@@ -44,7 +46,7 @@ try{
  const linkStatuses=await page.locator('#activity-root .activity a').evaluateAll(links=>Promise.all(links.map(async a=>{
   const r=await fetch(a.href,{method:'HEAD'});return r.status;
  })));
- assert.deepEqual(linkStatuses,Array(23).fill(200));
+ assert.deepEqual(linkStatuses,Array(32).fill(200));
  assert.equal(await page.locator('.map img').evaluate(img=>img.complete&&img.naturalWidth>0),true);
  await page.locator('a.backlink').click();
  await page.waitForURL('**/id/');
@@ -57,10 +59,10 @@ try{
  await m.locator('[data-view="month"]').click();
  assert.ok(await m.locator('.day-cell').count()>=28);
  await m.goto(origin+'/id/irbis/',{waitUntil:'networkidle'});
- await m.waitForFunction(()=>document.querySelectorAll('#activity-root .activity').length===23);
+ await m.waitForFunction(()=>document.querySelectorAll('#activity-root .activity').length===32);
  assert.equal(await m.locator('.map img').evaluate(img=>img.complete&&img.naturalWidth>0),true);
  assert.equal(await m.locator('meta[name="robots"]').getAttribute('content'),'noindex,follow');
  assert.deepEqual(errors,[]);
  await mobile.close();await desktop.close();
- console.log('PASS: Desktop and mobile calendar, 23 verified activities, working files, noindex, no ads and no JS errors.');
+ console.log('PASS: Desktop and mobile calendar, 32 activities (9 tracing drafts marked for review), working files, noindex, no ads and no JS errors.');
 }finally{await browser.close()}
