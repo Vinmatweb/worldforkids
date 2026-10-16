@@ -142,7 +142,7 @@
             '#vinmat-analytics-consent button{flex:1;min-width:145px;border:1px solid #6366f1;border-radius:9px;padding:10px 12px;background:#eef2ff;color:#312e81;font:700 14px system-ui,sans-serif;cursor:pointer}' +
             '#vinmat-analytics-consent a,#vinmat-analytics-settings{color:#4338ca;text-decoration:underline;cursor:pointer}' +
             '#vinmat-analytics-consent button:focus-visible,#vinmat-analytics-consent a:focus-visible,#vinmat-analytics-settings:focus-visible{outline:3px solid #6366f1;outline-offset:3px}' +
-            '#vinmat-analytics-settings{border:0;background:transparent;padding:6px;font:inherit}' +
+            '#vinmat-analytics-settings{border:0;background:transparent;padding:6px;font:inherit;color:inherit}' +
             '@media print{#vinmat-analytics-consent,#vinmat-analytics-settings{display:none!important}}';
         document.head.appendChild(style);
         dialog = document.createElement('section');
