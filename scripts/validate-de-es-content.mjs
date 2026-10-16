@@ -177,42 +177,15 @@ for (const row of allRows) {
     }
 }
 
-const activityLocales = {
-    de: { directory: 'de/aktivitaeten', siteName: 'VinMats Welt für Kinder', nav: ['Startseite', 'Aktivitäten-Guide', 'Schwierigkeitsstufen', 'Unsere Geschichte'], legal: ['Datenschutz', 'Nutzungsbedingungen'] },
-    es: { directory: 'es/actividades', siteName: 'El mundo de VinMat para niños', nav: ['Inicio', 'Guía de actividades', 'Niveles de dificultad', 'Nuestra historia'], legal: ['Privacidad', 'Términos de uso'] }
-};
-
-for (const [locale, config] of Object.entries(activityLocales)) {
-    const names = (await readdir(path.join(root, config.directory))).filter((name) => name.endsWith('.html'));
-    assert(names.length === allRows.length, `${config.directory}: expected ${allRows.length} activity pages, found ${names.length}`);
-    for (const name of names) {
-        const file = `${config.directory}/${name}`;
-        const html = await read(file);
-        assert(html.includes(`<html lang="${locale}">`), `${file}: wrong html lang`);
-        assert(html.includes(`data-locale="${locale}" data-route-key="activity"`), `${file}: wrong body localization`);
-        assert(count(html, '<h1') === 1, `${file}: expected one h1`);
-        for (const lang of ['en', 'cs', 'de', 'es', 'x-default']) assert(html.includes(`hreflang="${lang}"`), `${file}: missing hreflang ${lang}`);
-        assert(html.includes('<meta property="og:type" content="article">'), `${file}: wrong OG type`);
-        assert(html.includes(`<meta property="og:site_name" content="${config.siteName}">`), `${file}: missing localized OG site name`);
-        assert(html.includes('name="twitter:card" content="summary_large_image"'), `${file}: missing Twitter metadata`);
-        assert(html.includes('"@type":"LearningResource"'), `${file}: missing LearningResource schema`);
-        assert(html.includes('"mainEntityOfPage"'), `${file}: missing schema mainEntityOfPage`);
-        assert(html.includes('"provider"'), `${file}: missing schema provider`);
-        assert(!html.includes('pagead2.googlesyndication.com'), `${file}: AdSense must not load on activity detail pages`);
-        assert(!html.includes('googletagmanager.com/gtag/js'), `${file}: Analytics must not load on activity detail pages before a consent message can be shown`);
-        assert(html.includes('data-activity-footer'), `${file}: missing localized footer`);
-        for (const value of [...config.nav, ...config.legal]) assert(html.includes(value), `${file}: missing ${value}`);
-        assert(html.includes('<span>CZ</span>'), `${file}: missing CZ language label`);
-        assert(!html.includes('>CS<'), `${file}: CS language label remains`);
-        assert(count(html, ' download>') === (html.includes('id="activity-pdf"') ? 2 : 1), `${file}: wrong number of download links`);
-        assert(html.includes('onclick="window.print()"'), `${file}: missing print button`);
-        validateScripts(html, file);
-    }
+const retiredActivityDirectories = ['de/aktivitaeten', 'es/actividades'];
+for (const directory of retiredActivityDirectories) {
+    const names = (await readdir(path.join(root, directory))).filter((name) => name.endsWith('.html'));
+    assert(names.length === 0, `${directory}: standalone activity detail pages must stay retired; found ${names.length}`);
 }
 
 const sitemap = await read('sitemap.xml');
-assert(count(sitemap, '<loc>https://vinmat.eu/worldforkids/de/aktivitaeten/') === allRows.length, 'sitemap.xml: wrong German activity URL count');
-assert(count(sitemap, '<loc>https://vinmat.eu/worldforkids/es/actividades/') === allRows.length, 'sitemap.xml: wrong Spanish activity URL count');
+assert(count(sitemap, '<loc>https://vinmat.eu/worldforkids/de/aktivitaeten/') === 0, 'sitemap.xml: retired German activity detail URLs remain');
+assert(count(sitemap, '<loc>https://vinmat.eu/worldforkids/es/actividades/') === 0, 'sitemap.xml: retired Spanish activity detail URLs remain');
 assert(sitemap.includes('<loc>https://vinmat.eu/worldforkids/de/datenschutz.html</loc>'), 'sitemap.xml: missing German privacy page');
 assert(sitemap.includes('<loc>https://vinmat.eu/worldforkids/de/nutzungsbedingungen.html</loc>'), 'sitemap.xml: missing German terms page');
 assert(sitemap.includes('<loc>https://vinmat.eu/worldforkids/es/privacidad.html</loc>'), 'sitemap.xml: missing Spanish privacy page');
