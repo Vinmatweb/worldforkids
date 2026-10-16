@@ -266,15 +266,14 @@ function picture(activity, locale, variant, className = '') {
 function activityCard(activity, locale) {
     const config = languages[locale];
     const variant = primaryVariant(activity);
-    const href = `${basePath}${activityRelativeUrl(activity, locale)}`;
     return `
         <article class="bg-white rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all border border-slate-100 flex flex-col">
-            <a href="${escapeHtml(href)}" class="bg-slate-50 p-4 flex items-center justify-center group" aria-label="${escapeHtml(activity.names[locale])}">
+            <button type="button" onclick="openModal('${escapeHtml(activity.id)}')" class="bg-slate-50 p-4 flex items-center justify-center group cursor-pointer w-full" aria-label="${escapeHtml(activity.names[locale])}">
                 ${picture(activity, locale, variant, 'max-w-full max-h-72 object-contain transition-transform duration-300 group-hover:scale-[1.02]')}
-            </a>
+            </button>
             <div class="p-4 flex-grow">
                 <div class="flex justify-between items-center mb-1"><span class="text-[10px] font-bold tracking-wider text-slate-400 uppercase">${escapeHtml(config.cardType[activity.type])}</span><span class="text-xs text-slate-400 font-bold">${escapeHtml(activity.level)}</span></div>
-                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><a href="${escapeHtml(href)}" class="hover:text-indigo-600">${escapeHtml(activity.names[locale])}</a></h3>
+                <h3 class="font-bold text-sm text-slate-900 leading-tight uppercase"><button type="button" onclick="openModal('${escapeHtml(activity.id)}')" class="hover:text-indigo-600 text-left">${escapeHtml(activity.names[locale])}</button></h3>
             </div>
         </article>`;
 }
@@ -718,19 +717,14 @@ async function build() {
     }
 
     for (const locale of Object.keys(languages)) {
-        // Detail directories contain generated pages. Remove obsolete name slugs.
+        // Individual worksheet pages were retired in favor of the catalogue modal.
+        // Keep the directories clean so builds cannot reintroduce hundreds of
+        // near-duplicate detail URLs into the sitemap or crawl graph.
         const config = languages[locale];
         const directory = path.join(root, config.output, config.activityDirectory);
         await mkdir(directory, { recursive: true });
-        const expected = new Set(activities.map(activity => path.basename(activityRelativeUrl(activity, locale))));
         for (const file of await readdir(directory)) {
-            if (file.endsWith('.html') && !expected.has(file)) await unlink(path.join(directory, file));
-        }
-        for (const activity of activities) {
-            const relative = activityRelativeUrl(activity, locale);
-            await mkdir(path.dirname(path.join(root, relative)), { recursive: true });
-            await writeFile(path.join(root, relative), activityPage(activity, locale));
-            sitemapUrls.add(activityUrl(activity, locale));
+            if (file.endsWith('.html')) await unlink(path.join(directory, file));
         }
     }
 
@@ -744,7 +738,7 @@ async function build() {
     const { finalizeLegalLocalization } = await import('./legal-localization.mjs');
     await finalizeLegalLocalization();
 
-    console.log(`Generated ${activities.length * Object.keys(languages).length} activity pages and ${sitemapUrls.size} sitemap URLs.`);
+    console.log(`Generated catalogue-only W4K site with ${activities.length} modal activities and ${sitemapUrls.size} sitemap URLs.`);
 }
 
 build().catch((error) => {
