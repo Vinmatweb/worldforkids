@@ -4,6 +4,13 @@ import path from 'node:path';
 const root = process.cwd();
 const publisherId = 'ca-pub-4310805868565928';
 const homepagePaths = new Set(['index.html', 'cs/index.html', 'de/index.html', 'es/index.html']);
+const guideAdPages = new Set([
+  'guide-activities.html', 'guide-coloring.html', 'guide-dot-to-dot.html', 'guide-mazes.html', 'guide-tracing.html', 'difficulty-levels.html',
+  'cs/pruvodce-aktivitami.html', 'cs/pruvodce-omalovanky.html', 'cs/pruvodce-spojovacky.html', 'cs/pruvodce-bludiste.html', 'cs/pruvodce-obtahovacky.html', 'cs/urovne-obtiznosti.html',
+  'de/anleitung-aktivitaeten.html', 'de/anleitung-ausmalbilder.html', 'de/anleitung-punkte-verbinden.html', 'de/anleitung-labyrinthe.html', 'de/anleitung-nachzeichnen.html', 'de/schwierigkeitsstufen.html',
+  'es/guia-actividades.html', 'es/guia-dibujos.html', 'es/guia-unir-puntos.html', 'es/guia-laberintos.html', 'es/guia-trazado.html', 'es/niveles-dificultad.html'
+]);
+const monetizedPages = new Set([...homepagePaths, ...guideAdPages]);
 const legalPages = new Set([
   'privacy.html',
   'terms.html',
@@ -18,7 +25,7 @@ const privacyPages = {
   'privacy.html': {
     heading: '2. Cookies and Advertising',
     body: `                <p class="mb-3">
-                    The Google AdSense code is integrated on the catalogue homepage in all four language versions. Ads may appear after the site is approved for AdSense and when ads are available. The website is primarily designed for parents, guardians, teachers and other adults who choose, download or print activities for children. The presence of printable content for children does not by itself mean that every page or every visitor is treated as child-directed.
+                    The Google AdSense code is integrated on the catalogue homepage and selected in-depth guide pages in all four language versions. Ads may appear after the site is approved for AdSense and when ads are available. The website is primarily designed for parents, guardians, teachers and other adults who choose, download or print activities for children. The presence of printable content for children does not by itself mean that every page or every visitor is treated as child-directed.
                 </p>
                 <p class="mb-3">
                     If a specific page, user context or ad request must receive child or teen age-restricted treatment under applicable law or Google policy, the relevant Google age-treatment signal will be used. Personalized advertising and remarketing are disabled for ad requests that receive age-restricted treatment. Where consent is legally required, visitors will be offered consent choices through a Google-certified consent management platform before technologies requiring consent are used.
@@ -31,7 +38,7 @@ const privacyPages = {
   'cs/zasady-ochrany-osobnich-udaju.html': {
     heading: '2. Cookies a reklama',
     body: `                <p class="mb-3">
-                    Kód Google AdSense je integrován na hlavní stránce katalogu ve všech čtyřech jazykových verzích. Reklamy se mohou zobrazit po schválení webu pro AdSense a podle dostupnosti reklam. Web je určen především rodičům, zákonným zástupcům, pedagogům a dalším dospělým, kteří pro děti vybírají, stahují nebo tisknou aktivity. Samotná přítomnost materiálů pro děti neznamená, že se každá stránka nebo každý návštěvník automaticky považuje za obsah či uživatele určeného dětem.
+                    Kód Google AdSense je integrován na hlavní stránce katalogu a na vybraných podrobných průvodcích ve všech čtyřech jazykových verzích. Reklamy se mohou zobrazit po schválení webu pro AdSense a podle dostupnosti reklam. Web je určen především rodičům, zákonným zástupcům, pedagogům a dalším dospělým, kteří pro děti vybírají, stahují nebo tisknou aktivity. Samotná přítomnost materiálů pro děti neznamená, že se každá stránka nebo každý návštěvník automaticky považuje za obsah či uživatele určeného dětem.
                 </p>
                 <p class="mb-3">
                     Pokud musí konkrétní stránka, situace uživatele nebo reklamní požadavek podle platných právních předpisů či pravidel Googlu obdržet věkově omezené zpracování pro děti nebo dospívající, použije se odpovídající signál Googlu pro zpracování podle věku. U reklamních požadavků s věkově omezeným zpracováním se nepoužívá personalizovaná reklama ani remarketing. Tam, kde právní předpisy vyžadují souhlas, budou návštěvníkům před použitím technologií vyžadujících souhlas nabídnuty volby prostřednictvím platformy CMP certifikované společností Google.
@@ -44,7 +51,7 @@ const privacyPages = {
   'de/datenschutz.html': {
     heading: '2. Cookies und Werbung',
     body: `                <p class="mb-3">
-                    Der Google-AdSense-Code ist auf der Katalog-Startseite in allen vier Sprachversionen integriert. Anzeigen können erscheinen, sobald die Website für AdSense zugelassen ist und Anzeigen verfügbar sind. Die Website richtet sich in erster Linie an Eltern, Erziehungsberechtigte, Lehrkräfte und andere Erwachsene, die Aktivitäten für Kinder auswählen, herunterladen oder ausdrucken. Dass die Website Druckmaterialien für Kinder enthält, bedeutet nicht automatisch, dass jede Seite oder jeder Besucher als kindgerichtet behandelt wird.
+                    Der Google-AdSense-Code ist auf der Katalog-Startseite und auf ausgewählten ausführlichen Ratgeberseiten in allen vier Sprachversionen integriert. Anzeigen können erscheinen, sobald die Website für AdSense zugelassen ist und Anzeigen verfügbar sind. Die Website richtet sich in erster Linie an Eltern, Erziehungsberechtigte, Lehrkräfte und andere Erwachsene, die Aktivitäten für Kinder auswählen, herunterladen oder ausdrucken. Dass die Website Druckmaterialien für Kinder enthält, bedeutet nicht automatisch, dass jede Seite oder jeder Besucher als kindgerichtet behandelt wird.
                 </p>
                 <p class="mb-3">
                     Wenn eine bestimmte Seite, ein Nutzungskontext oder eine Anzeigenanfrage nach geltendem Recht oder nach Google-Richtlinien eine altersbeschränkte Behandlung für Kinder oder Jugendliche erhalten muss, wird das entsprechende Google-Signal zur Altersbehandlung verwendet. Für Anzeigenanfragen mit altersbeschränkter Behandlung sind personalisierte Werbung und Remarketing deaktiviert. Soweit eine Einwilligung gesetzlich erforderlich ist, werden Besuchern vor dem Einsatz einwilligungspflichtiger Technologien Auswahlmöglichkeiten über eine von Google zertifizierte Consent-Management-Plattform angeboten.
@@ -57,7 +64,7 @@ const privacyPages = {
   'es/privacidad.html': {
     heading: '2. Cookies y publicidad',
     body: `                <p class="mb-3">
-                    El código de Google AdSense está integrado en la página principal del catálogo en las cuatro versiones lingüísticas. Los anuncios podrán mostrarse cuando se apruebe el sitio para AdSense y según su disponibilidad. El sitio web está pensado principalmente para padres, tutores, docentes y otros adultos que eligen, descargan o imprimen actividades para niños. El hecho de ofrecer materiales imprimibles para niños no significa por sí solo que todas las páginas o todos los visitantes deban tratarse automáticamente como dirigidos a niños.
+                    El código de Google AdSense está integrado en la página principal del catálogo y en determinadas guías detalladas de las cuatro versiones lingüísticas. Los anuncios podrán mostrarse cuando se apruebe el sitio para AdSense y según su disponibilidad. El sitio web está pensado principalmente para padres, tutores, docentes y otros adultos que eligen, descargan o imprimen actividades para niños. El hecho de ofrecer materiales imprimibles para niños no significa por sí solo que todas las páginas o todos los visitantes deban tratarse automáticamente como dirigidos a niños.
                 </p>
                 <p class="mb-3">
                     Si una página, un contexto de usuario o una solicitud de anuncio concreta debe recibir un tratamiento restringido por edad para niños o adolescentes conforme a la legislación aplicable o a las políticas de Google, se utilizará la señal de tratamiento por edad correspondiente de Google. La publicidad personalizada y el remarketing se desactivan en las solicitudes que reciben tratamiento restringido por edad. Cuando la ley exija consentimiento, se ofrecerán opciones mediante una plataforma de gestión del consentimiento certificada por Google antes de utilizar tecnologías que requieran consentimiento.
@@ -173,12 +180,31 @@ function stripConsentSensitiveTracking(html) {
     .replace(/\s*<script>\s*window\.dataLayer\s*=\s*window\.dataLayer\s*\|\|\s*\[\];[\s\S]*?gtag\(['"]config['"],\s*['"]G-[^'"]+['"]\);\s*<\/script>\s*/gi, '\n');
 }
 
-function ensureHomepageAdsense(html, relative) {
-  if (!homepagePaths.has(relative)) return html;
+function ensureMonetizedPageAdsense(html, relative) {
+  if (!monetizedPages.has(relative)) return html;
   html = stripAdsense(html);
   const loader = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${publisherId}" crossorigin="anonymous"></script>`;
   if (/<meta\s+charset=/i.test(html)) return html.replace(/(<meta\s+charset=[^>]+>)/i, `${loader}\n    $1`);
   return html.replace('</head>', `    ${loader}\n</head>`);
+}
+
+function removeVisibleLoadingPlaceholders(html) {
+  return html
+    .replaceAll('🔄 The latest coloring pages from the CSV table will load here...', 'Browse the current coloring-page catalogue using the filters on the main page.')
+    .replaceAll('🔄 The latest mazes from the CSV table will load here...', 'Browse the current maze catalogue using the filters on the main page.')
+    .replaceAll('🔄 Loading recommended coloring pages...', 'Browse the current coloring-page catalogue on the main page.')
+    .replaceAll('🔄 Loading recommended dot-to-dot printables...', 'Browse the current dot-to-dot catalogue on the main page.')
+    .replaceAll('🔄 Loading recommended mazes...', 'Browse the current maze catalogue on the main page.')
+    .replaceAll('🔄 Loading recommended worksheets...', 'Browse the current tracing catalogue on the main page.')
+    .replaceAll('Loading current statistics...', 'Current activity statistics')
+    .replaceAll('🔄 Načítání doporučených listů...', 'Aktuální pracovní listy najdete v katalogu na hlavní stránce.')
+    .replaceAll('🔄 Načítání doporučených spojovaček...', 'Aktuální spojovačky najdete v katalogu na hlavní stránce.')
+    .replaceAll('🔄 Načítám aktuální statistiky…', 'Aktuální statistiky aktivit')
+    .replaceAll('🔄 Cargando las fichas más recientes…', 'Consulta las fichas actuales en el catálogo de la página principal.')
+    .replaceAll('🔄 Cargando las fichas más recientes de unir puntos…', 'Consulta las fichas actuales de unir puntos en el catálogo de la página principal.')
+    .replaceAll('🔄 Cargando recomendaciones…', 'Consulta las actividades actuales en el catálogo de la página principal.')
+    .replaceAll('🔄 Cargando más fichas recomendadas…', 'Consulta las fichas actuales en el catálogo de la página principal.')
+    .replaceAll('🔄 Cargando los datos actuales…', 'Estadísticas actuales de actividades');
 }
 
 function ensurePlannerNoindex(html, relative) {
@@ -206,14 +232,23 @@ for (const file of files) {
   html = normalizeLocalizedHomeAnchors(html, file.relative);
   html = removePopularSortPlaceholder(html, file.relative);
   html = normalizePrivacyAdvertising(html, file.relative);
+  html = removeVisibleLoadingPlaceholders(html);
   html = ensurePlannerNoindex(html, file.relative);
 
-  // Keep AdSense and Google Analytics only on the four localized catalogue
-  // homepages, where the Google European-regulations message can collect and
-  // pass the user's consent choices. Direct landings on activity/guide/legal
-  // pages therefore remain free of consent-sensitive Google tags.
-  if (homepagePaths.has(file.relative)) html = ensureHomepageAdsense(html, file.relative);
-  else html = stripConsentSensitiveTracking(html);
+  // Monetize the interactive catalogue and substantial editorial guides.
+  // Legal pages, internal utilities and retired worksheet detail URLs remain
+  // free of Google ad/analytics tags.
+  if (monetizedPages.has(file.relative)) {
+    html = ensureMonetizedPageAdsense(html, file.relative);
+    if (!homepagePaths.has(file.relative)) {
+      html = html
+        .replace(/\s*<!--\s*Google tag \(gtag\.js\)\s*-->\s*/gi, '\n')
+        .replace(/\s*<script\b[^>]*src=["']https:\/\/www\.googletagmanager\.com\/gtag\/js\?id=[^"']+["'][^>]*>\s*<\/script>\s*/gi, '\n')
+        .replace(/\s*<script>\s*window\.dataLayer\s*=\s*window\.dataLayer\s*\|\|\s*\[\];[\s\S]*?gtag\(['"]config['"],\s*['"]G-[^'"]+['"]\);\s*<\/script>\s*/gi, '\n');
+    }
+  } else {
+    html = stripConsentSensitiveTracking(html);
+  }
 
   if (html !== original) {
     await writeFile(file.absolute, html);
