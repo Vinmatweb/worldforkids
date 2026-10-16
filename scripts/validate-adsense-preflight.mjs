@@ -6,6 +6,13 @@ const publisherId = 'ca-pub-4310805868565928';
 const errors = [];
 const warnings = [];
 const homepages = new Set(['index.html', 'cs/index.html', 'de/index.html', 'es/index.html']);
+const guideAdPages = new Set([
+  'guide-activities.html', 'guide-coloring.html', 'guide-dot-to-dot.html', 'guide-mazes.html', 'guide-tracing.html', 'difficulty-levels.html',
+  'cs/pruvodce-aktivitami.html', 'cs/pruvodce-omalovanky.html', 'cs/pruvodce-spojovacky.html', 'cs/pruvodce-bludiste.html', 'cs/pruvodce-obtahovacky.html', 'cs/urovne-obtiznosti.html',
+  'de/anleitung-aktivitaeten.html', 'de/anleitung-ausmalbilder.html', 'de/anleitung-punkte-verbinden.html', 'de/anleitung-labyrinthe.html', 'de/anleitung-nachzeichnen.html', 'de/schwierigkeitsstufen.html',
+  'es/guia-actividades.html', 'es/guia-dibujos.html', 'es/guia-unir-puntos.html', 'es/guia-laberintos.html', 'es/guia-trazado.html', 'es/niveles-dificultad.html'
+]);
+const monetizedPages = new Set([...homepages, ...guideAdPages]);
 const privacyPages = new Set([
   'privacy.html',
   'cs/zasady-ochrany-osobnich-udaju.html',
@@ -67,22 +74,18 @@ for (const file of files) {
     if (analyticsCount > 0) warnings.push(`${file.relative}: Google Analytics loads before any on-page consent flow; ensure your Google-certified CMP / consent setup covers this before ad serving.`);
   }
 
-  if (!homepages.has(file.relative) && adsenseCount !== 0) {
-    errors.push(`${file.relative}: AdSense loader is allowed only on localized catalogue homepages`);
+  if (monetizedPages.has(file.relative)) {
+    if (adsenseCount !== 1) errors.push(`${file.relative}: expected exactly one AdSense loader, found ${adsenseCount}`);
+    if (!html.includes(`adsbygoogle.js?client=${publisherId}`)) errors.push(`${file.relative}: AdSense loader does not use expected publisher ID ${publisherId}`);
+  } else if (adsenseCount !== 0) {
+    errors.push(`${file.relative}: AdSense loader is allowed only on catalogue homepages and selected guide pages`);
   }
   if (!homepages.has(file.relative) && analyticsCount !== 0) {
     errors.push(`${file.relative}: Google Analytics is allowed only on localized catalogue homepages so direct landings do not bypass the consent message`);
   }
 
   if (isActivity(file.relative)) {
-    if (hasNoindex(html)) errors.push(`${file.relative}: activity detail must be indexable`);
-    requireMatch(html, /<title>[^<]+<\/title>/i, `${file.relative}: missing title`);
-    requireMatch(html, /<meta\s+name=["']description["'][^>]*content=["'][^"']+/i, `${file.relative}: missing meta description`);
-    requireMatch(html, /<link\s+[^>]*rel=["']canonical["'][^>]*href=["']https:\/\/vinmat\.eu\/worldforkids\//i, `${file.relative}: missing/invalid canonical`);
-    requireMatch(html, /<h1\b[^>]*>[^<]+<\/h1>/i, `${file.relative}: missing visible H1`);
-    if (file.relative.startsWith('activities/') && /\.\.\/\.\.\/assets\/js\/(?:site-config|site-navigation)\.js/.test(html)) {
-      errors.push(`${file.relative}: EN activity contains obsolete two-level shared-script path`);
-    }
+    errors.push(`${file.relative}: retired standalone worksheet detail page still exists; activities must open in the catalogue modal`);
   }
 
   if (legalPages.has(file.relative)) {
@@ -129,4 +132,4 @@ if (errors.length) {
 }
 
 console.log(`AdSense preflight passed for ${files.length} HTML files.`);
-console.log('Checked publisher ID, homepage ad placement, activity ad exclusion, legal tracking exclusion, child-directed privacy copy, indexability, canonical/hreflang basics and stale asset references.');
+console.log('Checked publisher ID, catalogue/guide ad placement, retired worksheet-page exclusion, legal tracking exclusion, privacy copy, indexability, canonical/hreflang basics and stale asset references.');
