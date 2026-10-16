@@ -84,6 +84,7 @@ jobs:
           node --check scripts/sync-dot-guide-localizations.mjs
           node --check scripts/sync-full-activity-guides.mjs
           node --check scripts/fix-full-guide-validation.mjs
+          node --check scripts/strengthen-guide-content.mjs
           node --check scripts/sync-story-layout.mjs
           node --check scripts/finalize-localized-indexes.mjs
           node --check scripts/generate-category-pages.mjs
@@ -124,6 +125,9 @@ jobs:
 
       - name: Apply full guide production safeguards
         run: node scripts/fix-full-guide-validation.mjs
+
+      - name: Strengthen guide claims and sources
+        run: node scripts/strengthen-guide-content.mjs
 
       - name: Synchronize DE/ES story layout
         run: node scripts/sync-story-layout.mjs
