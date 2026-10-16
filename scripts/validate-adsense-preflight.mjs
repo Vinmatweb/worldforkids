@@ -62,6 +62,7 @@ for (const file of files) {
   const html = await readFile(file.absolute, 'utf8');
   const adsenseCount = count(html, 'pagead2.googlesyndication.com/pagead/js/adsbygoogle.js');
   const analyticsCount = count(html, 'www.googletagmanager.com/gtag/js');
+  const consentLoaderCount = count(html, 'assets/js/analytics-consent.js');
 
   if (homepages.has(file.relative)) {
     if (adsenseCount !== 1) errors.push(`${file.relative}: expected exactly one AdSense loader, found ${adsenseCount}`);
@@ -71,7 +72,8 @@ for (const file of files) {
     for (const lang of ['en', 'cs', 'de', 'es', 'x-default']) {
       if (!new RegExp(`hreflang=["']${lang}["']`, 'i').test(html)) errors.push(`${file.relative}: missing hreflang ${lang}`);
     }
-    if (analyticsCount > 0) warnings.push(`${file.relative}: Google Analytics loads before any on-page consent flow; ensure your Google-certified CMP / consent setup covers this before ad serving.`);
+    if (analyticsCount !== 0) errors.push(`${file.relative}: Google Analytics must not load directly before analytics consent`);
+    if (consentLoaderCount !== 1) errors.push(`${file.relative}: expected exactly one optional analytics consent loader, found ${consentLoaderCount}`);
   }
 
   if (monetizedPages.has(file.relative)) {
@@ -82,6 +84,9 @@ for (const file of files) {
   }
   if (!homepages.has(file.relative) && analyticsCount !== 0) {
     errors.push(`${file.relative}: Google Analytics is allowed only on localized catalogue homepages so direct landings do not bypass the consent message`);
+  }
+  if (!homepages.has(file.relative) && consentLoaderCount !== 0) {
+    errors.push(`${file.relative}: analytics consent loader is allowed only on catalogue homepages`);
   }
 
   if (isActivity(file.relative)) {
@@ -133,3 +138,4 @@ if (errors.length) {
 
 console.log(`AdSense preflight passed for ${files.length} HTML files.`);
 console.log('Checked publisher ID, catalogue/guide ad placement, retired worksheet-page exclusion, legal tracking exclusion, privacy copy, indexability, canonical/hreflang basics and stale asset references.');
+
