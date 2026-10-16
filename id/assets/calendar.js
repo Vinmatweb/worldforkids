@@ -13,6 +13,7 @@ const eventMatches=(e,d)=>{if(e.month!==d.getMonth()+1)return false;if(e.repeat=
 const visible=d=>events.filter(e=>eventMatches(e,d)&&(organization==="all"||e.organizationId===organization)&&(status==="all"||e.status===status));
 const eventName=e=>EN?(e.nameEn||e.name):e.name;
 const eventOrg=e=>EN?(e.organizationEn||e.organization):e.organization;
+const eventDetail=e=>EN?(e.detailUrlEn||e.detailUrl):e.detailUrl;
 function renderAgenda(){
  $("agenda-title").textContent=dateLabel(selected,{day:"numeric",month:STR.month,year:"numeric"});
  const root=$("agenda-list");root.replaceChildren();const arr=visible(selected);
@@ -21,7 +22,7 @@ function renderAgenda(){
   const card=el("div","agenda-item"),info=el("div");
   info.append(el("strong","",eventName(item)),el("span","",eventOrg(item)+" · "+(item.status==="official"?STR.official:STR.other)));
   const link=el("a","",item.detailUrl?(EN?"Open detail →":"Otevřít stránku →"):(EN?"Verify source ↗":"Ověřit zdroj ↗"));
-  link.href=item.detailUrl?"./"+item.detailUrl:item.sourceUrl;
+  link.href=item.detailUrl?"./"+eventDetail(item):item.sourceUrl;
   if(!item.detailUrl){link.target="_blank";link.rel="noopener noreferrer"}
   card.append(info,link);root.append(card)
  }
@@ -41,7 +42,7 @@ function render(){
   for(const item of arr.slice(0,max)){
    const link=el(item.detailUrl?"a":"div","event-chip "+(item.status==="official"?"is-official":"is-other"),eventName(item));
    link.style.setProperty("--accent",item.accent||"#689dbb");link.title=eventName(item)+" – "+eventOrg(item);
-   if(item.detailUrl)link.href="./"+item.detailUrl;link.append(el("small","",eventOrg(item)));cell.append(link)
+   if(item.detailUrl)link.href="./"+eventDetail(item);link.append(el("small","",eventOrg(item)));cell.append(link)
   }
   if(arr.length>max){const b=el("button","more-btn","+"+(arr.length-max)+(EN?" more":" dalších"));b.type="button";b.addEventListener("click",()=>{selected=new Date(d);render();$("agenda").scrollIntoView({block:"nearest"})});cell.append(b)}
   root.append(cell)
@@ -54,4 +55,4 @@ $("next").addEventListener("click",()=>{cursor=view==="month"?new Date(cursor.ge
 $("today").addEventListener("click",()=>{cursor=new Date(now.getFullYear(),now.getMonth(),now.getDate());selected=new Date(cursor);render()});
 $("org-filter").addEventListener("change",e=>{organization=e.target.value;render()});
 $("status-filter").addEventListener("change",e=>{status=e.target.value;render()});
-fetch(new URL("../data/events.json",import.meta.url)).then(r=>{if(!r.ok)throw Error(r.status);return r.json()}).then(data=>{events=data.events;const select=$("org-filter");const all=select.options[0];select.replaceChildren(all);const orgs=new Map();events.forEach(e=>{if(!orgs.has(e.organizationId))orgs.set(e.organizationId,eventOrg(e))});[...orgs].sort((a,b)=>a[1].localeCompare(b[1],LOCALE)).forEach(([id,label])=>{const o=document.createElement("option");o.value=id;o.textContent=label;select.append(o)});render()}).catch(()=>{$("cal-grid").replaceChildren(el("p","error",EN?"Calendar data could not be loaded.":"Data kalendáře se nepodařilo načíst."))});
+fetch(new URL("../data/events.json?v=20261016",import.meta.url)).then(r=>{if(!r.ok)throw Error(r.status);return r.json()}).then(data=>{events=data.events;const select=$("org-filter");const all=select.options[0];select.replaceChildren(all);const orgs=new Map();events.forEach(e=>{if(!orgs.has(e.organizationId))orgs.set(e.organizationId,eventOrg(e))});[...orgs].sort((a,b)=>a[1].localeCompare(b[1],LOCALE)).forEach(([id,label])=>{const o=document.createElement("option");o.value=id;o.textContent=label;select.append(o)});render()}).catch(()=>{$("cal-grid").replaceChildren(el("p","error",EN?"Calendar data could not be loaded.":"Data kalendáře se nepodařilo načíst."))});

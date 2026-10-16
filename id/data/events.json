@@ -204,7 +204,8 @@
       ],
       "sourceUrl": "https://www.un.org/en/observances/snow-leopard-day",
       "secondarySourceUrl": "https://globalsnowleopard.org/bishkek-declaration/",
-      "accent": "#587bac"
+      "accent": "#587bac",
+      "detailUrlEn": "../irbis/"
     },
     {
       "id": "freshwater-dolphin-day",
