@@ -87,10 +87,15 @@ function saferEnglish(html, file) {
     html = html.replace(/This kind of visual tracking practice is also helpful for later reading fluency\./, 'This gives children repeated practice coordinating visual scanning with pencil movement.');
   }
   if (file === 'guide-tracing.html') {
-    html = html.replace(/At the more detailed levels, tracing may feel restful, soothing and stress-relieving, especially when there is no pressure to work quickly or perfectly\./, 'At the more detailed levels, tracing may feel relaxing when there is no pressure to work quickly or perfectly.');
+    html = html
+      .replace(/At the more detailed levels, tracing may feel restful, soothing and stress-relieving, especially when there is no pressure to work quickly or perfectly\./, 'At the more detailed levels, tracing may feel relaxing when there is no pressure to work quickly or perfectly.')
+      .replace(/Longer tracing sessions may also feel restful, calming and stress-relieving, helping the user slow down and focus on one clear task\./, 'Longer tracing sessions may also feel calm and enjoyable when the user can work at a comfortable pace.');
   }
   if (file === 'guide-activities.html') {
     html = html
+      .replace(/(<span[^>]*>5–10 min<\/span>)\s*\(short attention span\)/, '$1 (VinMat suggested session)')
+      .replace(/(<span[^>]*>10–20 min<\/span>)\s*\(moderate concentration\)/, '$1 (VinMat suggested session)')
+      .replace(/(<span[^>]*>20\+ min<\/span>)\s*\(longer creative play\)/, '$1 (VinMat suggested session)')
       .replace('5–10 min (short attention span)', '5–10 min (VinMat suggested session)')
       .replace('10–20 min (moderate concentration)', '10–20 min (VinMat suggested session)')
       .replace('20+ min (longer creative play)', '20+ min (VinMat suggested session)')
