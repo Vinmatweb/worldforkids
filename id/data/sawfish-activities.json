@@ -1,0 +1,324 @@
+[
+  {
+    "id": "basic-lv1",
+    "type": "coloring",
+    "locale": "shared",
+    "level": 1,
+    "title": {
+      "cs": "Omalovánka – úroveň 1",
+      "en": "Coloring page – level 1"
+    },
+    "thumbnail": "basic-lv1-sample.webp",
+    "color": "basic-lv1-sample.webp",
+    "line": "basic-lv1.webp",
+    "source": "https://drive.google.com/drive/folders/1AwTlSb79I6s_OW-fApD5u3m3vhEO1WN7"
+  },
+  {
+    "id": "basic-lv2",
+    "type": "coloring",
+    "locale": "shared",
+    "level": 2,
+    "title": {
+      "cs": "Omalovánka – úroveň 2",
+      "en": "Coloring page – level 2"
+    },
+    "thumbnail": "basic-lv2-sample.webp",
+    "color": "basic-lv2-sample.webp",
+    "line": "basic-lv2.webp",
+    "source": "https://drive.google.com/drive/folders/1AwTlSb79I6s_OW-fApD5u3m3vhEO1WN7"
+  },
+  {
+    "id": "basic-lv3",
+    "type": "coloring",
+    "locale": "shared",
+    "level": 3,
+    "title": {
+      "cs": "Omalovánka – úroveň 3",
+      "en": "Coloring page – level 3"
+    },
+    "thumbnail": "basic-lv3-sample.webp",
+    "color": "basic-lv3-sample.webp",
+    "line": "basic-lv3.webp",
+    "source": "https://drive.google.com/drive/folders/1AwTlSb79I6s_OW-fApD5u3m3vhEO1WN7"
+  },
+  {
+    "id": "basic-lv4",
+    "type": "coloring",
+    "locale": "shared",
+    "level": 4,
+    "title": {
+      "cs": "Omalovánka – úroveň 4",
+      "en": "Coloring page – level 4"
+    },
+    "thumbnail": "basic-lv4-sample.webp",
+    "color": "basic-lv4-sample.webp",
+    "line": "basic-lv4.webp",
+    "source": "https://drive.google.com/drive/folders/1AwTlSb79I6s_OW-fApD5u3m3vhEO1WN7"
+  },
+  {
+    "id": "basic-lv5",
+    "type": "coloring",
+    "locale": "shared",
+    "level": 5,
+    "title": {
+      "cs": "Omalovánka – úroveň 5",
+      "en": "Coloring page – level 5"
+    },
+    "thumbnail": "basic-lv5-sample.webp",
+    "color": "basic-lv5-sample.webp",
+    "line": "basic-lv5.webp",
+    "source": "https://drive.google.com/drive/folders/1AwTlSb79I6s_OW-fApD5u3m3vhEO1WN7"
+  },
+  {
+    "id": "story-cs-01",
+    "type": "story",
+    "locale": "cs",
+    "level": 3,
+    "title": {
+      "cs": "Příběhový obrázek 01",
+      "en": "Story picture 01"
+    },
+    "thumbnail": "story-cs-01-color.webp",
+    "color": "story-cs-01-color.webp",
+    "line": "story-cs-01-line.webp",
+    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z"
+  },
+  {
+    "id": "story-cs-02",
+    "type": "story",
+    "locale": "cs",
+    "level": 3,
+    "title": {
+      "cs": "Příběhový obrázek 02",
+      "en": "Story picture 02"
+    },
+    "thumbnail": "story-cs-02-color.webp",
+    "color": "story-cs-02-color.webp",
+    "line": "story-cs-02-line.webp",
+    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z"
+  },
+  {
+    "id": "story-cs-03",
+    "type": "story",
+    "locale": "cs",
+    "level": 4,
+    "title": {
+      "cs": "Příběhový obrázek 03",
+      "en": "Story picture 03"
+    },
+    "thumbnail": "story-cs-03-color.webp",
+    "color": "story-cs-03-color.webp",
+    "line": "story-cs-03-line.webp",
+    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z"
+  },
+  {
+    "id": "story-cs-04",
+    "type": "story",
+    "locale": "cs",
+    "level": 4,
+    "title": {
+      "cs": "Příběhový obrázek 04",
+      "en": "Story picture 04"
+    },
+    "thumbnail": "story-cs-04-color.webp",
+    "color": "story-cs-04-color.webp",
+    "line": "story-cs-04-line.webp",
+    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z"
+  },
+  {
+    "id": "story-cs-05",
+    "type": "story",
+    "locale": "cs",
+    "level": 4,
+    "title": {
+      "cs": "Příběhový obrázek 05",
+      "en": "Story picture 05"
+    },
+    "thumbnail": "story-cs-05-color.webp",
+    "color": "story-cs-05-color.webp",
+    "line": "story-cs-05-line.webp",
+    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z"
+  },
+  {
+    "id": "story-cs-06",
+    "type": "story",
+    "locale": "cs",
+    "level": 3,
+    "title": {
+      "cs": "Příběhový obrázek 06",
+      "en": "Story picture 06"
+    },
+    "thumbnail": "story-cs-06-color.webp",
+    "color": "story-cs-06-color.webp",
+    "line": "story-cs-06-line.webp",
+    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z"
+  },
+  {
+    "id": "story-en-01",
+    "type": "story",
+    "locale": "en",
+    "level": 3,
+    "title": {
+      "cs": "Příběhový obrázek 01",
+      "en": "Story picture 01"
+    },
+    "thumbnail": "story-en-01-color.webp",
+    "color": "story-en-01-color.webp",
+    "line": "story-en-01-line.webp",
+    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z"
+  },
+  {
+    "id": "story-en-02",
+    "type": "story",
+    "locale": "en",
+    "level": 3,
+    "title": {
+      "cs": "Příběhový obrázek 02",
+      "en": "Story picture 02"
+    },
+    "thumbnail": "story-en-02-color.webp",
+    "color": "story-en-02-color.webp",
+    "line": "story-en-02-line.webp",
+    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z"
+  },
+  {
+    "id": "story-en-03",
+    "type": "story",
+    "locale": "en",
+    "level": 4,
+    "title": {
+      "cs": "Příběhový obrázek 03",
+      "en": "Story picture 03"
+    },
+    "thumbnail": "story-en-03-color.webp",
+    "color": "story-en-03-color.webp",
+    "line": "story-en-03-line.webp",
+    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z"
+  },
+  {
+    "id": "story-en-04",
+    "type": "story",
+    "locale": "en",
+    "level": 4,
+    "title": {
+      "cs": "Příběhový obrázek 04",
+      "en": "Story picture 04"
+    },
+    "thumbnail": "story-en-04-color.webp",
+    "color": "story-en-04-color.webp",
+    "line": "story-en-04-line.webp",
+    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z"
+  },
+  {
+    "id": "story-en-05",
+    "type": "story",
+    "locale": "en",
+    "level": 4,
+    "title": {
+      "cs": "Příběhový obrázek 05",
+      "en": "Story picture 05"
+    },
+    "thumbnail": "story-en-05-color.webp",
+    "color": "story-en-05-color.webp",
+    "line": "story-en-05-line.webp",
+    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z"
+  },
+  {
+    "id": "story-en-06",
+    "type": "story",
+    "locale": "en",
+    "level": 3,
+    "title": {
+      "cs": "Příběhový obrázek 06",
+      "en": "Story picture 06"
+    },
+    "thumbnail": "story-en-06-color.webp",
+    "color": "story-en-06-color.webp",
+    "line": "story-en-06-line.webp",
+    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z"
+  },
+  {
+    "id": "card-cs-lv2",
+    "type": "card",
+    "locale": "cs",
+    "level": 2,
+    "title": {
+      "cs": "Informační karta – úroveň 2",
+      "en": "Information card – level 2"
+    },
+    "thumbnail": "card-cs-lv2-color.webp",
+    "color": "card-cs-lv2-color.webp",
+    "line": "card-cs-lv2-line.webp",
+    "source": "https://drive.google.com/drive/folders/1R_4rsqC8PkhYqU4vHqQZu7gBpANazVb1"
+  },
+  {
+    "id": "card-cs-lv3",
+    "type": "card",
+    "locale": "cs",
+    "level": 3,
+    "title": {
+      "cs": "Informační karta – úroveň 3",
+      "en": "Information card – level 3"
+    },
+    "thumbnail": "card-cs-lv3-color.webp",
+    "color": "card-cs-lv3-color.webp",
+    "line": "card-cs-lv3-line.webp",
+    "source": "https://drive.google.com/drive/folders/1R_4rsqC8PkhYqU4vHqQZu7gBpANazVb1"
+  },
+  {
+    "id": "card-cs-lv4",
+    "type": "card",
+    "locale": "cs",
+    "level": 4,
+    "title": {
+      "cs": "Informační karta – úroveň 4",
+      "en": "Information card – level 4"
+    },
+    "thumbnail": "card-cs-lv4-color.webp",
+    "color": "card-cs-lv4-color.webp",
+    "line": "card-cs-lv4-line.webp",
+    "source": "https://drive.google.com/drive/folders/1R_4rsqC8PkhYqU4vHqQZu7gBpANazVb1"
+  },
+  {
+    "id": "card-en-lv2",
+    "type": "card",
+    "locale": "en",
+    "level": 2,
+    "title": {
+      "cs": "Informační karta – úroveň 2",
+      "en": "Information card – level 2"
+    },
+    "thumbnail": "card-en-lv2-color.webp",
+    "color": "card-en-lv2-color.webp",
+    "line": "card-en-lv2-line.webp",
+    "source": "https://drive.google.com/drive/folders/1R_4rsqC8PkhYqU4vHqQZu7gBpANazVb1"
+  },
+  {
+    "id": "card-en-lv3",
+    "type": "card",
+    "locale": "en",
+    "level": 3,
+    "title": {
+      "cs": "Informační karta – úroveň 3",
+      "en": "Information card – level 3"
+    },
+    "thumbnail": "card-en-lv3-color.webp",
+    "color": "card-en-lv3-color.webp",
+    "line": "card-en-lv3-line.webp",
+    "source": "https://drive.google.com/drive/folders/1R_4rsqC8PkhYqU4vHqQZu7gBpANazVb1"
+  },
+  {
+    "id": "card-en-lv4",
+    "type": "card",
+    "locale": "en",
+    "level": 4,
+    "title": {
+      "cs": "Informační karta – úroveň 4",
+      "en": "Information card – level 4"
+    },
+    "thumbnail": "card-en-lv4-color.webp",
+    "color": "card-en-lv4-color.webp",
+    "line": "card-en-lv4-line.webp",
+    "source": "https://drive.google.com/drive/folders/1R_4rsqC8PkhYqU4vHqQZu7gBpANazVb1"
+  }
+]
