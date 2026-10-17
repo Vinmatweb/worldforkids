@@ -30,7 +30,7 @@ function open(btn){
  function show(colored){
    const src=colored?p.color:p.line;p.img.src=src;p.img.alt=p.title.textContent;
    p.sample.classList.toggle("selected",colored);p.outline.classList.toggle("selected",!colored);
-   p.download.href=src;p.download.download=(p.title.textContent.replace(/[^a-z0-9]+/gi,"-").toLowerCase()||"sawfish")+(colored?"-color.webp":"-line.webp");
+   p.download.href=src;p.download.download=(p.title.textContent.replace(/[^a-z0-9]+/gi,"-").toLowerCase()||"sawfish")+(colored?"-color":"-line")+(src.toLowerCase().split(/[?#]/)[0].endsWith(".svg")?".svg":".webp");
  }
  p.levelButtons.forEach(b=>b.onclick=()=>{p.level=Number(b.dataset.levelChoice);p.color=p.dir+"basic-lv"+p.level+"-sample.webp";p.line=p.dir+"basic-lv"+p.level+".webp";p.title.textContent=(lang==="en"?"Sawfish coloring page":"Omalovánka pilouna")+" · "+words.level.toLowerCase()+" "+p.level;p.levelButtons.forEach(x=>x.classList.toggle("selected",x===b));show(true)});
  p.sample.onclick=()=>show(true);p.outline.onclick=()=>show(false);show(true);if(!d.open)d.showModal();
