@@ -11,7 +11,7 @@ function dialog(){
  d=document.createElement("dialog");d.id="saw-art-dialog";d.setAttribute("aria-labelledby","saw-art-title");
  const head=el("div","saw-dialog-head"),title=el("h2","","");title.id="saw-art-title";
  const close=el("button","saw-dialog-close","×");close.type="button";close.setAttribute("aria-label",words.close);close.addEventListener("click",()=>d.close());head.append(title,close);
- const layout=el("div","saw-dialog-layout"),view=el("div","saw-dialog-view"),img=el("img","saw-dialog-image");img.alt="";view.append(img);
+ const layout=el("div","saw-dialog-layout"),view=el("div","saw-dialog-view"),img=el("img","saw-dialog-image"),caption=el("p","saw-dialog-caption","");img.alt="";caption.hidden=true;view.append(img,caption);
  const side=el("aside","saw-dialog-side"),levels=el("div","saw-levels"),levelTitle=el("strong","",words.difficulty),levelButtons=[];
  levels.append(levelTitle);
  for(let i=1;i<=5;i++){const b=el("button","",(lang==="en"?"Level ":"Úroveň ")+i);b.type="button";b.dataset.levelChoice=String(i);levels.append(b);levelButtons.push(b)}
@@ -19,12 +19,12 @@ function dialog(){
  const actions=el("div","saw-dialog-actions"),download=el("a","",words.download),print=el("button","",words.print);download.setAttribute("download","");print.type="button";print.addEventListener("click",()=>window.print());actions.append(download,print);
  side.append(levels,modes,actions);layout.append(view,side);d.append(head,layout);document.body.append(d);
  d.addEventListener("click",ev=>{if(ev.target===d)d.close()});
- d.parts={title,img,levels,levelButtons,sample,outline,download,kind:"",dir:"",level:5,color:"",line:""};
+ d.parts={title,img,caption,levels,levelButtons,sample,outline,download,kind:"",dir:"",level:5,color:"",line:""};
  return d;
 }
 function open(btn){
  const d=dialog(),p=d.parts;
- p.title.textContent=btn.dataset.title||words.cards;p.kind=btn.dataset.kind||"card";p.dir=btn.dataset.dir||base;p.level=Number(btn.dataset.level||5);p.color=btn.dataset.color;p.line=btn.dataset.line;p.levels.hidden=p.kind!=="basic";
+ p.title.textContent=btn.dataset.title||words.cards;p.kind=btn.dataset.kind||"card";p.caption.textContent=btn.dataset.story||"";p.caption.hidden=p.kind!=="story"||!p.caption.textContent;p.dir=btn.dataset.dir||base;p.level=Number(btn.dataset.level||5);p.color=btn.dataset.color;p.line=btn.dataset.line;p.levels.hidden=p.kind!=="basic";
  p.outline.textContent=p.kind==="card"?words.outline:(lang==="en"?"Coloring page":"Omalovánka");
  p.levelButtons.forEach(b=>b.classList.toggle("selected",Number(b.dataset.levelChoice)===p.level));
  function show(colored){
