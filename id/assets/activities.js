@@ -43,9 +43,13 @@ fetch(new URL("../data/activities.json",import.meta.url))
    const list=create("div","activity-list");
    for(const item of items){
     const card=create("article","activity"),preview=create("button","activity-preview"),img=create("img");
-    preview.type="button";preview.dataset.artOpen="";preview.dataset.preview=item.previewUrl;preview.dataset.lineart=item.url;preview.dataset.filename=item.fileName;preview.dataset.title=item.name+" · "+item.level;
-    img.src=item.previewUrl;img.alt=item.name+" "+item.level+" – barevný vzor, otevřít zvětšený náhled";img.loading="lazy";
-    preview.append(img);card.append(preview,create("strong","",item.name),create("div","level",item.level+" · "+item.format));
+    img.src=item.previewUrl;img.alt=item.name+" "+item.level+" – náhled";img.loading="lazy";
+    if(item.type==="info-card")card.append(img);
+    else{
+     preview.type="button";preview.dataset.artOpen="";preview.dataset.preview=item.previewUrl;preview.dataset.lineart=item.url;preview.dataset.filename=item.fileName;preview.dataset.title=item.name+" · "+item.level;
+     img.alt=item.name+" "+item.level+" – barevný vzor, otevřít zvětšený náhled";preview.append(img);card.append(preview);
+    }
+    card.append(create("strong","",item.name),create("div","level",item.level+" · "+item.format));
     if(item.reviewStatus)card.append(create("span","review-status","Ke kontrole"));
     const link=create("a","",linkLabel(item));link.href=item.url;link.setAttribute("download",item.fileName);link.setAttribute("aria-label",linkLabel(item)+" "+item.level);
     card.append(link);list.append(card);
