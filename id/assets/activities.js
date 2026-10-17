@@ -18,10 +18,26 @@ fetch(new URL("../data/activities.json",import.meta.url))
 .then(data=>{
  root.replaceChildren();
  for(const [type,title,caption] of groups){
-  const area=create("section","category");
-  area.dataset.category=type;
+  const area=create("section","category");area.dataset.category=type;
   area.append(create("h3","",title),create("p","desc",caption));
   const items=(data.activities||[]).filter(a=>a.type===type&&a.language==="cs"&&a.collectionIds?.includes("international-days-snow-leopard")&&a.verified===true&&a.url&&a.previewUrl);
+  if(type==="story"){
+   const nav=create("div","story-jumps");
+   [["1–3","story-parts-01-03"],["4–6","story-parts-04-06"],["7–9","story-parts-07-09"],["10–12","story-parts-10-12"]].forEach(([label,id])=>{const a=create("a","","Díly "+label+" ↓");a.href="#"+id;nav.append(a)});
+   area.append(nav);root.append(area);
+   for(const slot of document.querySelectorAll("[data-story-slot]")){
+    const [lo,hi]=slot.dataset.storySlot.split("-").map(Number);
+    for(const item of items.filter(a=>a.storyPart>=lo&&a.storyPart<=hi)){
+     const card=create("article","activity"),preview=create("button","activity-preview"),img=create("img");
+     preview.type="button";preview.dataset.artOpen="";preview.dataset.preview=item.previewUrl;preview.dataset.lineart=item.url;preview.dataset.filename=item.fileName;preview.dataset.title=item.name+" · "+item.level;
+     img.src=item.previewUrl;img.alt=item.name+" "+item.level+" – barevný vzor, otevřít zvětšený náhled";img.loading="lazy";
+     preview.append(img);card.append(preview,create("strong","",item.name),create("div","level",item.level+" · "+item.format));
+     const link=create("a","",linkLabel(item));link.href=item.url;link.setAttribute("download",item.fileName);link.setAttribute("aria-label",linkLabel(item)+" "+item.level);
+     card.append(link);slot.append(card);
+    }
+   }
+   continue;
+  }
   if(!items.length)area.append(create("p","empty","Zatím zde není zveřejněný schválený materiál."));
   else{
    const list=create("div","activity-list");
