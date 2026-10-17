@@ -1,42 +1,48 @@
 (function(){
 "use strict";
 const root=document.getElementById("sawfish-gallery");
-const lang=root?.dataset.lang||"cs";
-const base=root?.dataset.base||"";
+const lang=root&&root.dataset.lang==="en"?"en":"cs";
+const base=root?root.dataset.base:"";
 const dataUrl=lang==="en"?"../../data/sawfish-activities.json":"../data/sawfish-activities.json";
-const labels=lang==="en"?{coloring:"Coloring pages",story:"Story pictures",card:"Information cards",colored:"Colored sample",outline:"Coloring page",open:"Open image",download:"Download",print:"Print",close:"Close"}:{coloring:"Omalovánky",story:"Příběhové obrázky",card:"Informační karty",colored:"Barevný vzor",outline:"Omalovánka",open:"Otevřít obrázek",download:"Stáhnout",print:"Tisk",close:"Zavřít"};
+const words=lang==="en"?{cards:"Information cards",colored:"Colored sample",outline:"Black-and-white",download:"Download",print:"Print",close:"Close",difficulty:"Difficulty",level:"Level"}:{cards:"Informační karty",colored:"Barevný vzor",outline:"Černobílá karta",download:"Stáhnout",print:"Tisk",close:"Zavřít",difficulty:"Obtížnost",level:"Úroveň"};
 function el(tag,cls,text){const x=document.createElement(tag);if(cls)x.className=cls;if(text)x.textContent=text;return x}
-function ensureDialog(){let d=document.getElementById("saw-art-dialog");if(d)return d;
+function dialog(){
+ let d=document.getElementById("saw-art-dialog");if(d)return d;
  d=document.createElement("dialog");d.id="saw-art-dialog";d.setAttribute("aria-labelledby","saw-art-title");
- const head=el("div","saw-dialog-head");const title=el("h2","",labels.open);title.id="saw-art-title";const close=el("button","saw-dialog-close","×");close.type="button";close.setAttribute("aria-label",labels.close);close.addEventListener("click",()=>d.close());head.append(title,close);
- const img=el("img","saw-dialog-image");img.alt="";const actions=el("div","saw-dialog-actions");
- const sample=el("button","",labels.colored);sample.type="button";sample.dataset.mode="color";
- const outline=el("button","",labels.outline);outline.type="button";outline.dataset.mode="line";
- const download=el("a","",labels.download);download.setAttribute("download","");
- const print=el("button","",labels.print);print.type="button";print.addEventListener("click",()=>window.print());
- actions.append(sample,outline,download,print);d.append(head,img,actions);document.body.append(d);
- d.addEventListener("click",e=>{if(e.target===d)d.close()});
- d._parts={title,img,sample,outline,download};
- return d}
-function openArt(btn){const d=ensureDialog(),p=d._parts,color=btn.dataset.color,line=btn.dataset.line,title=btn.dataset.title||labels.open;
- p.title.textContent=title;p.img.src=color;p.img.alt=title;
- p.sample.onclick=()=>{p.img.src=color;p.sample.classList.add("selected");p.outline.classList.remove("selected");p.download.href=color;p.download.download=(title.replace(/[^a-z0-9]+/gi,"-").toLowerCase()||"sawfish")+"-sample.webp"};
- p.outline.onclick=()=>{p.img.src=line;p.sample.classList.remove("selected");p.outline.classList.add("selected");p.download.href=line;p.download.download=(title.replace(/[^a-z0-9]+/gi,"-").toLowerCase()||"sawfish")+"-coloring.webp"};
- p.sample.classList.add("selected");p.outline.classList.remove("selected");p.download.href=color;p.download.download=(title.replace(/[^a-z0-9]+/gi,"-").toLowerCase()||"sawfish")+"-sample.webp";
- if(!d.open)d.showModal()}
-document.addEventListener("click",e=>{const b=e.target.closest("[data-art-open]");if(b)openArt(b)});
-if(!root)return;
-fetch(dataUrl).then(r=>{if(!r.ok)throw Error("activity data unavailable");return r.json()}).then(items=>{
- const groups={coloring:[],story:[],card:[]};
- items.filter(x=>x.locale==="shared"||x.locale===lang).forEach(x=>groups[x.type]?.push(x));
- for(const [type,list] of Object.entries(groups)){
-  if(!list.length)continue;
-  const section=el("section","saw-gallery-group");section.setAttribute("aria-label",labels[type]);
-  section.append(el("h3","",labels[type]));const grid=el("div","saw-gallery-grid");
-  list.forEach(item=>{const card=el("article","saw-art-card");const button=el("button");button.type="button";button.dataset.artOpen="";button.dataset.color=base+item.color;button.dataset.line=base+item.line;button.dataset.title=item.title[lang];
-    const img=document.createElement("img");img.src=base+item.thumbnail;img.alt=item.title[lang];img.loading="lazy";button.append(img);
-    const name=el("strong","",item.title[lang]);const level=el("small","",lang==="en"?"Level "+item.level:"Úroveň "+item.level);button.append(name,level);button.append(el("small","",labels.open));card.append(button);grid.append(card)});
-  section.append(grid);root.append(section)
+ const head=el("div","saw-dialog-head"),title=el("h2","","");title.id="saw-art-title";
+ const close=el("button","saw-dialog-close","×");close.type="button";close.setAttribute("aria-label",words.close);close.addEventListener("click",()=>d.close());head.append(title,close);
+ const layout=el("div","saw-dialog-layout"),view=el("div","saw-dialog-view"),img=el("img","saw-dialog-image");img.alt="";view.append(img);
+ const side=el("aside","saw-dialog-side"),levels=el("div","saw-levels"),levelTitle=el("strong","",words.difficulty),levelButtons=[];
+ levels.append(levelTitle);
+ for(let i=1;i<=5;i++){const b=el("button","",(lang==="en"?"Level ":"Úroveň ")+i);b.type="button";b.dataset.levelChoice=String(i);levels.append(b);levelButtons.push(b)}
+ const modes=el("div","saw-mode-buttons"),sample=el("button","",words.colored),outline=el("button","",words.outline);sample.type=outline.type="button";modes.append(sample,outline);
+ const actions=el("div","saw-dialog-actions"),download=el("a","",words.download),print=el("button","",words.print);download.setAttribute("download","");print.type="button";print.addEventListener("click",()=>window.print());actions.append(download,print);
+ side.append(levels,modes,actions);layout.append(view,side);d.append(head,layout);document.body.append(d);
+ d.addEventListener("click",ev=>{if(ev.target===d)d.close()});
+ d.parts={title,img,levels,levelButtons,sample,outline,download,kind:"",dir:"",level:5,color:"",line:""};
+ return d;
+}
+function open(btn){
+ const d=dialog(),p=d.parts;
+ p.title.textContent=btn.dataset.title||words.cards;p.kind=btn.dataset.kind||"card";p.dir=btn.dataset.dir||base;p.level=Number(btn.dataset.level||5);p.color=btn.dataset.color;p.line=btn.dataset.line;p.levels.hidden=p.kind!=="basic";
+ p.outline.textContent=p.kind==="card"?words.outline:(lang==="en"?"Coloring page":"Omalovánka");
+ p.levelButtons.forEach(b=>b.classList.toggle("selected",Number(b.dataset.levelChoice)===p.level));
+ function show(colored){
+   const src=colored?p.color:p.line;p.img.src=src;p.img.alt=p.title.textContent;
+   p.sample.classList.toggle("selected",colored);p.outline.classList.toggle("selected",!colored);
+   p.download.href=src;p.download.download=(p.title.textContent.replace(/[^a-z0-9]+/gi,"-").toLowerCase()||"sawfish")+(colored?"-color.webp":"-line.webp");
  }
-}).catch(()=>{root.textContent=lang==="en"?"Activities could not be loaded right now.":"Aktivity se nyní nepodařilo načíst."});
+ p.levelButtons.forEach(b=>b.onclick=()=>{p.level=Number(b.dataset.levelChoice);p.color=p.dir+"basic-lv"+p.level+"-sample.webp";p.line=p.dir+"basic-lv"+p.level+".webp";p.title.textContent=(lang==="en"?"Sawfish coloring page":"Omalovánka pilouna")+" · "+words.level.toLowerCase()+" "+p.level;p.levelButtons.forEach(x=>x.classList.toggle("selected",x===b));show(true)});
+ p.sample.onclick=()=>show(true);p.outline.onclick=()=>show(false);show(true);if(!d.open)d.showModal();
+}
+document.addEventListener("click",ev=>{const b=ev.target.closest("[data-art-open]");if(b)open(b)});
+if(!root)return;
+fetch(dataUrl).then(r=>{if(!r.ok)throw Error("data");return r.json()}).then(items=>{
+ const cards=items.filter(x=>x.type==="card"&&(x.locale==="shared"||x.locale===lang));
+ if(!cards.length){root.textContent=lang==="en"?"No information cards are available yet.":"Informační karty zatím nejsou k dispozici.";return}
+ const section=el("section","saw-gallery-group");section.setAttribute("aria-label",words.cards);section.append(el("h3","",words.cards));const grid=el("div","saw-gallery-grid");
+ cards.forEach(item=>{const card=el("article","saw-art-card"),button=el("button");button.type="button";button.dataset.artOpen="";button.dataset.kind="card";button.dataset.color=base+item.color;button.dataset.line=base+item.line;button.dataset.title=item.title[lang];
+ const image=document.createElement("img");image.src=base+item.thumbnail;image.alt=item.title[lang];image.loading="lazy";button.append(image,el("strong","",item.title[lang]),el("small","",lang==="en"?"Level "+item.level:"Úroveň "+item.level));card.append(button);grid.append(card)});
+ section.append(grid);root.append(section);
+}).catch(()=>{root.textContent=lang==="en"?"Information cards could not be loaded.":"Informační karty se nepodařilo načíst."});
 })();
