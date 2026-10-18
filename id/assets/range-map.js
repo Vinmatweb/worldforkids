@@ -13,7 +13,17 @@ async function initializeRangeMaps(){
   const canvas=host.querySelector(".animal-range-map__canvas"),map=L.map(canvas,{minZoom:0,maxZoom:ranges.maxZoom||14,zoomControl:true,scrollWheelZoom:false,doubleClickZoom:true,touchZoom:true,worldCopyJump:false,attributionControl:true,zoomSnap:0.5}).setView(species.center,species.zoom);
   L.tileLayer(ranges.tileUrl,{subdomains:ranges.tileSubdomains||["a","b","c"],minZoom:0,maxZoom:19,maxNativeZoom:19,noWrap:true,attribution:'<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors</a>',crossOrigin:true,updateWhenIdle:true,keepBuffer:2}).addTo(map);
   const rangeLayer=L.featureGroup();
-  for(const feature of species.features||[]){const [lng,lat]=feature.geometry.coordinates,props=feature.properties||{},name=typeof props.name==="object"?(props.name[host.dataset.lang]||props.name.en):props.name;const circle=L.circle([lat,lng],{radius:(props.radiusKm||20)*1000,color:species.color,weight:3,opacity:.95,fillColor:species.color,fillOpacity:.2});if(name){circle.bindTooltip(name,{sticky:true,direction:"top"});circle.bindPopup(name+" · "+lang.legend)}circle.addTo(rangeLayer)}
+  for(const feature of species.features||[]){
+   const geometry=feature.geometry,props=feature.properties||{},name=typeof props.name==="object"?(props.name[host.dataset.lang]||props.name.en):props.name;
+   const style={color:species.color,weight:3,opacity:.95,fillColor:species.color,fillOpacity:.2};let layer;
+   if(geometry.type==="Point"){
+    const [lng,lat]=geometry.coordinates;layer=L.circle([lat,lng],{...style,radius:(props.radiusKm||20)*1000});
+    if(name)layer.bindPopup(name+" · "+lang.legend);
+   }else if(geometry.type==="Polygon"||geometry.type==="MultiPolygon"){
+    layer=L.geoJSON(feature,{style,onEachFeature:(_feature,shape)=>{if(name)shape.bindPopup(name)}});
+   }else continue;
+   if(name)layer.bindTooltip(name,{sticky:true,direction:"top"});layer.addTo(rangeLayer);
+  }
   rangeLayer.addTo(map);
   const legend=document.createElement("div");legend.className="animal-range-map__legend";const swatch=document.createElement("span");swatch.className="animal-range-map__legend-swatch";swatch.setAttribute("aria-hidden","true");const legendText=document.createElement("span");legendText.textContent=lang.legend;legend.append(swatch,legendText);host.insertBefore(legend,canvas);
   let applyingPreset=false;const buttons=[rangeBtn,worldBtn];const setActive=action=>buttons.forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.mapAction===action)));const clearActive=()=>{if(!applyingPreset)buttons.forEach(b=>b.setAttribute("aria-pressed","false"))};map.on("dragstart zoomstart",clearActive);
