@@ -5,7 +5,7 @@ const lang=root&&root.dataset.lang==="en"?"en":"cs";
 const base=root?root.dataset.base:(lang==="en"?"../../assets/sawfish/":"../assets/sawfish/");
 const dataUrl=lang==="en"?"../../data/sawfish-activities.json":"../data/sawfish-activities.json";
 const printRoot=base+"print/";
-const assetVersion="20261018-maze-preview-print";
+const assetVersion="20261018-maze-preview-print-v2";
 const versioned=url=>url?url+(url.includes("?")?"&":"?")+"v="+assetVersion:url;
 const previewPath=url=>url?url.replace(/\/print\/([^?#]+)\.png(?=([?#]|$))/,"/print/previews/$1.webp"):url;
 const W=lang==="en"?{cards:"Information cards",card:"Information card",colored:"Color sample",outline:"Coloring page",trace:"Tracing page",download:"Download",print:"Print",close:"Close",difficulty:"Difficulty",level:"Level",open:"Open coloring page",ages:{2:"Recommended age: 5–6",3:"Recommended age: 7–9",4:"Recommended age: 10+"},maze:"Open mangrove maze"}:{cards:"Informační karty",card:"Informační karta",colored:"Barevný vzor",outline:"Omalovánka",trace:"Obtahovačka",download:"Stáhnout",print:"Tisk",close:"Zavřít",difficulty:"Obtížnost",level:"Úroveň",open:"Otevřít omalovánku",ages:{2:"Doporučený věk: 5–6 let",3:"Doporučený věk: 7–9 let",4:"Doporučený věk: 10+ let"},maze:"Otevřít bludiště mangrovů"};
@@ -32,7 +32,7 @@ function dialog(){
 function open(btn){
  const d=dialog(),p=d.parts;opener=btn;scrollY=window.scrollY;
  p.kind=btn.dataset.kind||"card";p.title.textContent=btn.dataset.title||W.cards;p.level=Number(btn.dataset.level||5);p.dir=btn.dataset.dir||base;p.mode=btn.dataset.mode||"color";
- p.pageRule.textContent="@page{size:A4 "+(p.kind==="maze"?"landscape":"portrait")+";margin:0}";
+ const orientation=p.kind==="maze"?"landscape":"portrait";document.body.dataset.printOrientation=orientation;p.pageRule.textContent="@page{size:A4 "+orientation+";margin:0}";
  p.levels.hidden=p.kind!=="basic";
  p.trace.hidden=!btn.dataset.trace&&p.kind!=="basic";
  p.sample.textContent=W.colored;p.outline.textContent=p.kind==="card"? (lang==="en"?"Black-and-white":"Černobílá karta"):W.outline;
