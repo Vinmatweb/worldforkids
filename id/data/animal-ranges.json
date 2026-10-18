@@ -7,13 +7,6 @@
     "c"
   ],
   "maxZoom": 14,
-  "tripoint": {
-    "center": [
-      49.17,
-      87.82
-    ],
-    "zoom": 9
-  },
   "species": {
     "smalltooth-sawfish": {
       "center": [
