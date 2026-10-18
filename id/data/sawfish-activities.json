@@ -521,5 +521,32 @@
       "blackAndWhite": "19cGXaeh63RvIOj-Xrr5bSVugo1RZgVJZ"
     },
     "materialLocale": "en"
+  },
+  {
+    "id": "maze-mangrove-lv4",
+    "type": "maze",
+    "locale": "shared",
+    "level": 4,
+    "variant": null,
+    "topic": "mangrove",
+    "title": {
+      "cs": "Bludiště mangrovů · LV4",
+      "en": "Mangrove maze · LV4"
+    },
+    "thumbnail": "print/previews/sawfish-mangrove-maze-lv4-en-color.webp",
+    "color": "print/sawfish-mangrove-maze-lv4-en-color.png",
+    "line": "print/sawfish-mangrove-maze-lv4-en-bw.png",
+    "printColor": "print/sawfish-mangrove-maze-lv4-en-color.png",
+    "printLine": "print/sawfish-mangrove-maze-lv4-en-bw.png",
+    "source": "https://drive.google.com/drive/folders/1yUdaek7Ch7IBAPxqzmgDGal2pNe3IKpC",
+    "sourceFiles": {
+      "color": "1gqAMw0hFuqnO6NMNnzaWC-LTWLkBradi",
+      "blackAndWhite": "19T9f5Y6RjgsiLRlgAAXMvzwn1xkMtmPl"
+    },
+    "sourceNames": {
+      "color": "Sawfish ray at the mangrove maze.png",
+      "blackAndWhite": "Mangrove maze and sawfish coloring page.png"
+    },
+    "materialLocale": "en"
   }
 ]
