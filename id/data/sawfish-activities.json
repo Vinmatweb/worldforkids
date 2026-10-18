@@ -450,7 +450,8 @@
     "sourceFiles": {
       "color": "1EBZZ98EpjLLao-pHkMGeqIK0iRxRsMOd",
       "blackAndWhite": "1I_x8Dx11uyCuV5cJoNi14v8B0K_Y3Rbp"
-    }
+    },
+    "materialLocale": "en"
   },
   {
     "id": "maze-mangrove-lv3-v1",
@@ -463,16 +464,17 @@
       "cs": "Bludiště mangrovů · LV3 · varianta 1",
       "en": "Mangrove maze · LV3 · variant 1"
     },
-    "thumbnail": "print/sawfish-mangrove-maze-lv3-v1-en-color.png",
-    "color": "print/sawfish-mangrove-maze-lv3-v1-en-color.png",
-    "line": "print/sawfish-mangrove-maze-lv3-v1-en-bw.png",
-    "printColor": "print/sawfish-mangrove-maze-lv3-v1-en-color.png",
-    "printLine": "print/sawfish-mangrove-maze-lv3-v1-en-bw.png",
+    "thumbnail": "print/sawfish-mangrove-maze-lv3-en-v1-color.png",
+    "color": "print/sawfish-mangrove-maze-lv3-en-v1-color.png",
+    "line": "print/sawfish-mangrove-maze-lv3-en-v1-bw.png",
+    "printColor": "print/sawfish-mangrove-maze-lv3-en-v1-color.png",
+    "printLine": "print/sawfish-mangrove-maze-lv3-en-v1-bw.png",
     "source": "https://drive.google.com/drive/folders/1yUdaek7Ch7IBAPxqzmgDGal2pNe3IKpC",
     "sourceFiles": {
       "color": "1cOwup_5yBxYgzsrql-7BgPQIt5iwP7uI",
       "blackAndWhite": "1yvlJjz3-z8FkBb0H7VIrS9XELe-d8x_X"
-    }
+    },
+    "materialLocale": "en"
   },
   {
     "id": "maze-mangrove-lv3-v2",
@@ -485,16 +487,17 @@
       "cs": "Bludiště mangrovů · LV3 · varianta 2",
       "en": "Mangrove maze · LV3 · variant 2"
     },
-    "thumbnail": "print/sawfish-mangrove-maze-lv3-v2-en-color.png",
-    "color": "print/sawfish-mangrove-maze-lv3-v2-en-color.png",
-    "line": "print/sawfish-mangrove-maze-lv3-v2-en-bw.png",
-    "printColor": "print/sawfish-mangrove-maze-lv3-v2-en-color.png",
-    "printLine": "print/sawfish-mangrove-maze-lv3-v2-en-bw.png",
+    "thumbnail": "print/sawfish-mangrove-maze-lv3-en-v2-color.png",
+    "color": "print/sawfish-mangrove-maze-lv3-en-v2-color.png",
+    "line": "print/sawfish-mangrove-maze-lv3-en-v2-bw.png",
+    "printColor": "print/sawfish-mangrove-maze-lv3-en-v2-color.png",
+    "printLine": "print/sawfish-mangrove-maze-lv3-en-v2-bw.png",
     "source": "https://drive.google.com/drive/folders/1yUdaek7Ch7IBAPxqzmgDGal2pNe3IKpC",
     "sourceFiles": {
       "color": "1Y1LkSidizfC4FMJ5RGMZrRrl1Npt5oUs",
       "blackAndWhite": "1vMlNgIru6RhXs640Wz500HJ4S3lR99zw"
-    }
+    },
+    "materialLocale": "en"
   },
   {
     "id": "maze-mangrove-lv3-v3",
@@ -507,15 +510,16 @@
       "cs": "Bludiště mangrovů · LV3 · varianta 3",
       "en": "Mangrove maze · LV3 · variant 3"
     },
-    "thumbnail": "print/sawfish-mangrove-maze-lv3-v3-en-color.png",
-    "color": "print/sawfish-mangrove-maze-lv3-v3-en-color.png",
-    "line": "print/sawfish-mangrove-maze-lv3-v3-en-bw.png",
-    "printColor": "print/sawfish-mangrove-maze-lv3-v3-en-color.png",
-    "printLine": "print/sawfish-mangrove-maze-lv3-v3-en-bw.png",
+    "thumbnail": "print/sawfish-mangrove-maze-lv3-en-v3-color.png",
+    "color": "print/sawfish-mangrove-maze-lv3-en-v3-color.png",
+    "line": "print/sawfish-mangrove-maze-lv3-en-v3-bw.png",
+    "printColor": "print/sawfish-mangrove-maze-lv3-en-v3-color.png",
+    "printLine": "print/sawfish-mangrove-maze-lv3-en-v3-bw.png",
     "source": "https://drive.google.com/drive/folders/1yUdaek7Ch7IBAPxqzmgDGal2pNe3IKpC",
     "sourceFiles": {
       "color": "18fw7-5SDx8rQkywQ1Eugek2MHrBfe0Dw",
       "blackAndWhite": "19cGXaeh63RvIOj-Xrr5bSVugo1RZgVJZ"
-    }
+    },
+    "materialLocale": "en"
   }
 ]
