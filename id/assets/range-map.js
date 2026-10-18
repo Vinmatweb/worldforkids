@@ -5,12 +5,6 @@ const LEAFLET_JS_SRI = "sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=";
 
 function loadLeaflet() {
   if (window.L) return Promise.resolve(window.L);
-  const css = document.createElement("link");
-  css.rel = "stylesheet";
-  css.href = LEAFLET_CSS;
-  css.integrity = LEAFLET_CSS_SRI;
-  css.crossOrigin = "anonymous";
-  document.head.append(css);
   return new Promise((resolve, reject) => {
     const script = document.createElement("script");
     script.src = LEAFLET_JS;
