@@ -106,6 +106,11 @@ async function initializeRangeMaps() {
       }
     ).addTo(map);
 
+    const note = document.createElement("p");
+    note.className = "animal-range-map__note";
+    note.textContent = lang.note;
+    host.append(note);
+
     host.querySelector(".animal-range-map__controls").addEventListener("click", event => {
       const button = event.target.closest("button[data-map-action]");
       if (!button) return;
