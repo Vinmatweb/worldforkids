@@ -37,7 +37,7 @@ function open(btn){
  function filesForLevel(n){
   return {
    color:{preview:printRoot+"sawfish-color-sample-lv"+n+"-en.png",download:printRoot+"sawfish-color-sample-lv"+n+"-en.png",name:"sawfish-coloring-lv"+n+"-en-color-sample.png"},
-   bw:{preview:p.dir+"basic-lv"+n+".webp",download:printRoot+"sawfish-coloring-lv"+n+"-en-bw.png",name:"sawfish-coloring-lv"+n+"-en-bw.png"},
+   bw:{preview:printRoot+"sawfish-coloring-lv"+n+"-en-bw.png",download:printRoot+"sawfish-coloring-lv"+n+"-en-bw.pdf",name:"sawfish-coloring-lv"+n+"-en-bw.pdf"},
    trace:{preview:printRoot+"sawfish-tracing-lv"+n+"-en.png",download:printRoot+"sawfish-tracing-lv"+n+"-en.png",name:"sawfish-tracing-lv"+n+"-en.png"}
   };
  }
