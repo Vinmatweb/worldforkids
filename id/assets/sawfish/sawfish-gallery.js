@@ -4,7 +4,7 @@ const root=document.getElementById("sawfish-gallery");
 const lang=root&&root.dataset.lang==="en"?"en":"cs";
 const base=root?root.dataset.base:"";
 const dataUrl=lang==="en"?"../../data/sawfish-activities.json":"../data/sawfish-activities.json";
-const words=lang==="en"?{cards:"Information cards",colored:"Colored sample",outline:"Black-and-white",download:"Download",print:"Print",close:"Close",difficulty:"Difficulty",level:"Level"}:{cards:"Informační karty",colored:"Barevný vzor",outline:"Černobílá karta",download:"Stáhnout",print:"Tisk",close:"Zavřít",difficulty:"Obtížnost",level:"Úroveň"};
+const words=lang==="en"?{cards:"Information cards",card:"Information card",colored:"Colored sample",outline:"Black-and-white",download:"Download",print:"Print",close:"Close",difficulty:"Difficulty",level:"Level"}:{cards:"Informační karty",card:"Informační karta",colored:"Barevný vzor",outline:"Černobílá karta",download:"Stáhnout",print:"Tisk",close:"Zavřít",difficulty:"Obtížnost",level:"Úroveň"};
 function el(tag,cls,text){const x=document.createElement(tag);if(cls)x.className=cls;if(text)x.textContent=text;return x}
 function dialog(){
  let d=document.getElementById("saw-art-dialog");if(d)return d;
@@ -40,9 +40,9 @@ if(!root)return;
 fetch(dataUrl).then(r=>{if(!r.ok)throw Error("data");return r.json()}).then(items=>{
  const cards=items.filter(x=>x.type==="card"&&(x.locale==="shared"||x.locale===lang));
  if(!cards.length){root.textContent=lang==="en"?"No information cards are available yet.":"Informační karty zatím nejsou k dispozici.";return}
- const section=el("section","saw-gallery-group");section.setAttribute("aria-label",words.cards);section.append(el("h3","",words.cards));const grid=el("div","saw-gallery-grid");
- cards.forEach(item=>{const card=el("article","saw-art-card"),button=el("button");button.type="button";button.dataset.artOpen="";button.dataset.kind="card";button.dataset.color=base+item.color;button.dataset.line=base+item.line;button.dataset.title=item.title[lang];
- const image=document.createElement("img");image.src=base+item.thumbnail;image.alt=item.title[lang];image.loading="lazy";button.append(image,el("strong","",item.title[lang]),el("small","",lang==="en"?"Level "+item.level:"Úroveň "+item.level));card.append(button);grid.append(card)});
+ const section=el("section","saw-gallery-group");section.setAttribute("aria-label",words.cards);const grid=el("div","saw-gallery-grid");
+ cards.forEach(item=>{const card=el("article","saw-art-card"),button=el("button");button.type="button";button.dataset.artOpen="";button.dataset.kind="card";button.dataset.color=base+item.color;button.dataset.line=base+item.line;button.dataset.title=words.card;
+ const image=document.createElement("img");image.src=base+item.thumbnail;image.alt=item.title[lang];image.loading="lazy";button.append(image);const ages=lang==="en"?{2:"Suitable for ages 5–6",3:"Suitable for ages 7–9",4:"Suitable for ages 10+"}:{2:"Vhodné pro 5–6 let",3:"Vhodné pro 7–9 let",4:"Vhodné pro 10+ let"};card.append(button,el("small","age-label",ages[item.level]||""));grid.append(card)});
  section.append(grid);root.append(section);
 }).catch(()=>{root.textContent=lang==="en"?"Information cards could not be loaded.":"Informační karty se nepodařilo načíst."});
 })();
