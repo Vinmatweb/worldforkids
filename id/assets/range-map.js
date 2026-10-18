@@ -20,7 +20,6 @@ const labels = {
   cs: {
     range: "Areál druhu",
     world: "Celý svět",
-    tripoint: "Pomezí tří států",
     map: "Interaktivní mapa výskytu",
     note: "Zvýrazněné oblasti ukazují přibližný známý výskyt. Mapa podkladu © OpenStreetMap contributors.",
     loading: "Načítám mapu světa…",
@@ -29,7 +28,6 @@ const labels = {
   en: {
     range: "Species range",
     world: "Whole world",
-    tripoint: "Three-country border",
     map: "Interactive species range map",
     note: "Highlighted areas show approximate known occurrence. Basemap © OpenStreetMap contributors.",
     loading: "Loading world map…",
@@ -61,8 +59,7 @@ async function initializeRangeMaps() {
     controls.setAttribute("aria-label", lang.map + " controls");
     controls.innerHTML =
       '<button type="button" data-map-action="range">' + lang.range + '</button>' +
-      '<button type="button" data-map-action="world">' + lang.world + '</button>' +
-      '<button type="button" data-map-action="tripoint">' + lang.tripoint + '</button>';
+      '<button type="button" data-map-action="world">' + lang.world + '</button>';
     host.prepend(controls);
 
     const canvas = host.querySelector(".animal-range-map__canvas");
@@ -119,8 +116,6 @@ async function initializeRangeMaps() {
         map.fitBounds(rangeLayer.getBounds().pad(0.16), { maxZoom: 6 });
       } else if (button.dataset.mapAction === "world") {
         map.fitBounds([[-58, -180], [78, 180]], { padding: [8, 8] });
-      } else if (button.dataset.mapAction === "tripoint") {
-        map.setView(ranges.tripoint.center, ranges.tripoint.zoom);
       }
     });
 
