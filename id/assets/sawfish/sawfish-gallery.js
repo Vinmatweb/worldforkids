@@ -16,22 +16,22 @@ function dialog(){
  d=document.createElement("dialog");d.id="saw-art-dialog";d.setAttribute("aria-labelledby","saw-art-title");
  const head=el("div","saw-dialog-head"),title=el("h2","");title.id="saw-art-title";
  const close=el("button","saw-dialog-close","×");close.type="button";close.setAttribute("aria-label",W.close);close.addEventListener("click",()=>d.close());head.append(title,close);
- const layout=el("div","saw-dialog-layout"),view=el("div","saw-dialog-view"),img=el("img","saw-dialog-image"),printImg=el("img","saw-dialog-print-image");img.alt="";printImg.alt="";view.append(img,printImg);
+ const layout=el("div","saw-dialog-layout"),view=el("div","saw-dialog-view"),img=el("img","saw-dialog-image"),printImg=el("img","saw-dialog-print-image"),printError=el("p","saw-print-error",lang==="en"?"The print file could not be loaded. Check your connection and try again.":"Tiskový soubor se nepodařilo načíst. Zkontroluj připojení a zkus to znovu.");img.alt="";printImg.alt="";printError.setAttribute("role","status");printError.setAttribute("aria-live","polite");printError.hidden=true;view.append(img,printImg,printError);
  const side=el("aside","saw-dialog-side"),levels=el("div","saw-levels"),levelTitle=el("strong","",W.difficulty),levelButtons=[];
  levels.append(levelTitle);
  for(let i=1;i<=5;i++){const b=el("button","",(lang==="en"?"Level ":"Úroveň ")+i);b.type="button";b.dataset.levelChoice=String(i);levels.append(b);levelButtons.push(b)}
  const modes=el("div","saw-mode-buttons"),sample=el("button","",W.colored),outline=el("button","",W.outline),trace=el("button","",W.trace);
  [sample,outline,trace].forEach(b=>b.type="button");modes.append(sample,outline,trace);
- const actions=el("div","saw-dialog-actions"),download=el("a","",W.download),print=el("button","",W.print);download.setAttribute("download","");print.type="button";print.addEventListener("click",()=>window.print());actions.append(download,print);
+ const actions=el("div","saw-dialog-actions"),download=el("a","",W.download),print=el("button","",W.print);download.setAttribute("download","");print.type="button";print.addEventListener("click",async()=>{const p=d.parts;print.disabled=true;printError.hidden=true;try{const source=p.printImageToLoad;if(!source)throw new Error("No print image selected");printImg.src=versioned(source);if(!printImg.complete)await new Promise((resolve,reject)=>{printImg.onload=resolve;printImg.onerror=()=>reject(new Error("Print image failed to load"))});if(!printImg.naturalWidth)throw new Error("Print image is empty");if(typeof printImg.decode==="function")await printImg.decode();window.print()}catch(error){printImg.removeAttribute("src");printError.hidden=false}finally{print.disabled=false}});actions.append(download,print);
  side.append(levels,modes,actions);layout.append(view,side);d.append(head,layout);document.body.append(d);
  d.addEventListener("click",ev=>{if(ev.target===d)d.close()});
- d.addEventListener("close",()=>{if(opener&&opener.isConnected)opener.focus({preventScroll:true});window.scrollTo({top:scrollY,behavior:"instant"})});
+ d.addEventListener("close",()=>{printImg.removeAttribute("src");printError.hidden=true;if(opener&&opener.isConnected)opener.focus({preventScroll:true});window.scrollTo({top:scrollY,behavior:"instant"})});
  const pageRule=el("style");pageRule.id="saw-print-page-rule";pageRule.textContent="@page{size:A4 portrait;margin:0}";document.head.append(pageRule);
- d.parts={title,img,printImg,pageRule,levels,levelButtons,sample,outline,trace,download,kind:"",mode:"color",level:5,dir:"",files:null};return d;
+ d.parts={title,img,printImg,printError,print,pageRule,levels,levelButtons,sample,outline,trace,download,kind:"",mode:"color",level:5,dir:"",files:null,printImageToLoad:""};return d;
 }
 function open(btn){
  const d=dialog(),p=d.parts;opener=btn;scrollY=window.scrollY;
- p.kind=btn.dataset.kind||"card";p.title.textContent=btn.dataset.title||W.cards;p.level=Number(btn.dataset.level||5);p.dir=btn.dataset.dir||base;p.mode=btn.dataset.mode||"color";
+ p.kind=btn.dataset.kind||"card";p.printImg.removeAttribute("src");p.printError.hidden=true;p.title.textContent=btn.dataset.title||W.cards;p.level=Number(btn.dataset.level||5);p.dir=btn.dataset.dir||base;p.mode=btn.dataset.mode||"color";
  const orientation=p.kind==="maze"?"landscape":"portrait";document.body.dataset.printOrientation=orientation;p.pageRule.textContent="@page{size:A4 "+orientation+";margin:0}";
  p.levels.hidden=p.kind!=="basic";
  p.trace.hidden=!btn.dataset.trace&&p.kind!=="basic";
@@ -45,13 +45,13 @@ function open(btn){
   };
  }
  function show(mode){
-  p.mode=mode;p.files=p.kind==="basic"?filesForLevel(p.level):{
+  p.mode=mode;p.printImg.removeAttribute("src");p.printError.hidden=true;p.files=p.kind==="basic"?filesForLevel(p.level):{
    color:{preview:btn.dataset.previewColor||previewPath(btn.dataset.color),printImage:btn.dataset.color,download:btn.dataset.printColor||btn.dataset.color,name:(btn.dataset.filename||"sawfish-activity")+"-color.png"},
    bw:{preview:btn.dataset.previewLine||previewPath(btn.dataset.line),printImage:btn.dataset.line,download:btn.dataset.printLine||btn.dataset.line,name:(btn.dataset.filename||"sawfish-activity")+"-bw"+((btn.dataset.printLine||"").endsWith(".pdf")?".pdf":".png")},
    trace:{preview:btn.dataset.previewTrace||previewPath(btn.dataset.trace),printImage:btn.dataset.trace,download:btn.dataset.printTrace||btn.dataset.trace,name:(btn.dataset.filename||"sawfish-activity")+"-tracing.png"}
   };
   const f=p.files[mode];if(!f||!f.preview)return;
-  p.img.src=versioned(f.preview);p.img.alt=p.title.textContent;p.printImg.src=versioned(f.printImage||f.preview);p.printImg.alt=p.title.textContent;p.download.href=versioned(f.download);p.download.download=f.name;
+  p.img.src=versioned(f.preview);p.img.alt=p.title.textContent;p.printImageToLoad=f.printImage||f.preview;p.printImg.alt=p.title.textContent;p.download.href=versioned(f.download);p.download.download=f.name;
   [[p.sample,"color"],[p.outline,"bw"],[p.trace,"trace"]].forEach(([b,m])=>{b.classList.toggle("selected",m===mode);b.setAttribute("aria-pressed",String(m===mode))});
  }
  p.levelButtons.forEach(b=>b.onclick=()=>{p.level=Number(b.dataset.levelChoice);p.title.textContent=(lang==="en"?"Sawfish coloring page":"Omalovánka pilouna")+ " · "+W.level+" "+p.level;p.levelButtons.forEach(x=>x.classList.toggle("selected",x===b));show(p.mode)});

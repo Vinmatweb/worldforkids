@@ -2,132 +2,23 @@ const LEAFLET_CSS = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css";
 const LEAFLET_JS = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js";
 const LEAFLET_CSS_SRI = "sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=";
 const LEAFLET_JS_SRI = "sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=";
-
-function loadLeaflet() {
-  if (window.L) return Promise.resolve(window.L);
-  return new Promise((resolve, reject) => {
-    const script = document.createElement("script");
-    script.src = LEAFLET_JS;
-    script.integrity = LEAFLET_JS_SRI;
-    script.crossOrigin = "anonymous";
-    script.onload = () => resolve(window.L);
-    script.onerror = reject;
-    document.head.append(script);
-  });
+function loadLeaflet(){if(window.L)return Promise.resolve(window.L);return new Promise((resolve,reject)=>{const link=document.createElement("link");link.rel="stylesheet";link.href=LEAFLET_CSS;link.integrity=LEAFLET_CSS_SRI;link.crossOrigin="anonymous";document.head.append(link);const script=document.createElement("script");script.src=LEAFLET_JS;script.integrity=LEAFLET_JS_SRI;script.crossOrigin="anonymous";script.onload=()=>resolve(window.L);script.onerror=reject;document.head.append(script)})}
+const labels={cs:{range:"Areál druhu",world:"Celý svět",map:"Interaktivní mapa výskytu",legend:"Orientační současné útočiště (schematické vyznačení)",loading:"Načítám mapu světa…",failed:"Interaktivní mapu se nepodařilo načíst. Zkontroluj připojení k internetu."},en:{range:"Species range",world:"Whole world",map:"Interactive species range map",legend:"Approximate present-day refuge (schematic marking)",loading:"Loading world map…",failed:"The interactive map could not be loaded. Check your internet connection."}};
+async function initializeRangeMaps(){
+ const hosts=[...document.querySelectorAll("[data-animal-range-map]")];if(!hosts.length)return;const dictUrl=new URL("../data/animal-ranges.json",import.meta.url);
+ const [L,ranges]=await Promise.all([loadLeaflet(),fetch(dictUrl).then(r=>{if(!r.ok)throw Error("Range data unavailable");return r.json()})]);
+ for(const host of hosts){const species=ranges.species[host.dataset.animalRangeMap],lang=labels[host.dataset.lang]||labels.cs;if(!species)continue;host.setAttribute("role","region");host.setAttribute("aria-label",lang.map);
+  const controls=document.createElement("div");controls.className="animal-range-map__controls";controls.setAttribute("aria-label",lang.map+" controls");
+  const rangeBtn=document.createElement("button"),worldBtn=document.createElement("button");rangeBtn.type=worldBtn.type="button";rangeBtn.dataset.mapAction="range";worldBtn.dataset.mapAction="world";rangeBtn.textContent=lang.range;worldBtn.textContent=lang.world;controls.append(rangeBtn,worldBtn);host.prepend(controls);
+  const canvas=host.querySelector(".animal-range-map__canvas"),map=L.map(canvas,{minZoom:0,maxZoom:ranges.maxZoom||14,zoomControl:true,scrollWheelZoom:false,doubleClickZoom:true,touchZoom:true,worldCopyJump:false,attributionControl:true,zoomSnap:0.5}).setView(species.center,species.zoom);
+  L.tileLayer(ranges.tileUrl,{subdomains:ranges.tileSubdomains||["a","b","c"],minZoom:0,maxZoom:19,maxNativeZoom:19,noWrap:true,attribution:'<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors</a>',crossOrigin:true,updateWhenIdle:true,keepBuffer:2}).addTo(map);
+  const rangeLayer=L.featureGroup();
+  for(const feature of species.features||[]){const [lng,lat]=feature.geometry.coordinates,props=feature.properties||{},name=typeof props.name==="object"?(props.name[host.dataset.lang]||props.name.en):props.name;const circle=L.circle([lat,lng],{radius:(props.radiusKm||20)*1000,color:species.color,weight:3,opacity:.95,fillColor:species.color,fillOpacity:.2});if(name){circle.bindTooltip(name,{sticky:true,direction:"top"});circle.bindPopup(name+" · "+lang.legend)}circle.addTo(rangeLayer)}
+  rangeLayer.addTo(map);
+  const legend=document.createElement("div");legend.className="animal-range-map__legend";const swatch=document.createElement("span");swatch.className="animal-range-map__legend-swatch";swatch.setAttribute("aria-hidden","true");const legendText=document.createElement("span");legendText.textContent=lang.legend;legend.append(swatch,legendText);host.insertBefore(legend,canvas);
+  let applyingPreset=false;const buttons=[rangeBtn,worldBtn];const setActive=action=>buttons.forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.mapAction===action)));const clearActive=()=>{if(!applyingPreset)buttons.forEach(b=>b.setAttribute("aria-pressed","false"))};map.on("dragstart zoomstart",clearActive);
+  const preset=(action,bounds,opts)=>{applyingPreset=true;map.once("moveend",()=>{setActive(action);applyingPreset=false});map.fitBounds(bounds,opts)};
+  rangeBtn.addEventListener("click",()=>preset("range",rangeLayer.getBounds().pad(1.1),{maxZoom:6}));worldBtn.addEventListener("click",()=>preset("world",[[-58,-180],[78,180]],{padding:[8,8]}));setActive("range");host.classList.add("is-ready");requestAnimationFrame(()=>map.invalidateSize());
+ }
 }
-
-const labels = {
-  cs: {
-    range: "Areál druhu",
-    world: "Celý svět",
-    map: "Interaktivní mapa výskytu",
-    note: "Zvýrazněné oblasti ukazují přibližný známý výskyt. Mapa podkladu © OpenStreetMap contributors.",
-    loading: "Načítám mapu světa…",
-    failed: "Interaktivní mapu se nepodařilo načíst. Zkontrolujte připojení k internetu."
-  },
-  en: {
-    range: "Species range",
-    world: "Whole world",
-    map: "Interactive species range map",
-    note: "Highlighted areas show approximate known occurrence. Basemap © OpenStreetMap contributors.",
-    loading: "Loading world map…",
-    failed: "The interactive map could not be loaded. Check your internet connection."
-  }
-};
-
-async function initializeRangeMaps() {
-  const hosts = [...document.querySelectorAll("[data-animal-range-map]")];
-  if (!hosts.length) return;
-  const dictUrl = new URL("../data/animal-ranges.json", import.meta.url);
-  const [L, ranges] = await Promise.all([
-    loadLeaflet(),
-    fetch(dictUrl).then(response => {
-      if (!response.ok) throw new Error("Range data unavailable");
-      return response.json();
-    })
-  ]);
-
-  for (const host of hosts) {
-    const species = ranges.species[host.dataset.animalRangeMap];
-    const lang = labels[host.dataset.lang] || labels.cs;
-    if (!species) continue;
-    host.setAttribute("role", "region");
-    host.setAttribute("aria-label", lang.map);
-
-    const controls = document.createElement("div");
-    controls.className = "animal-range-map__controls";
-    controls.setAttribute("aria-label", lang.map + " controls");
-    controls.innerHTML =
-      '<button type="button" data-map-action="range">' + lang.range + '</button>' +
-      '<button type="button" data-map-action="world">' + lang.world + '</button>';
-    host.prepend(controls);
-
-    const canvas = host.querySelector(".animal-range-map__canvas");
-    const map = L.map(canvas, {
-      minZoom: 0,
-      maxZoom: ranges.maxZoom || 14,
-      zoomControl: true,
-      scrollWheelZoom: true,
-      doubleClickZoom: true,
-      touchZoom: true,
-      worldCopyJump: false,
-      attributionControl: true,
-      zoomSnap: 0.5
-    }).setView(species.center, species.zoom);
-
-    L.tileLayer(ranges.tileUrl, {
-      subdomains: ranges.tileSubdomains || ["a", "b", "c"],
-      minZoom: 0,
-      maxZoom: 19,
-      maxNativeZoom: 19,
-      noWrap: true,
-      attribution: '<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors</a>',
-      crossOrigin: true,
-      updateWhenIdle: true,
-      keepBuffer: 2
-    }).addTo(map);
-
-    const rangeLayer = L.geoJSON(
-      { type: "FeatureCollection", features: species.features },
-      {
-        style: {
-          color: species.color,
-          weight: 2,
-          opacity: 0.95,
-          fillColor: species.color,
-          fillOpacity: 0.36
-        },
-        onEachFeature(feature, layer) {
-          const name = feature.properties && feature.properties.name;
-          if (name) layer.bindTooltip(name, { sticky: true, direction: "top" });
-        }
-      }
-    ).addTo(map);
-
-    const note = document.createElement("p");
-    note.className = "animal-range-map__note";
-    note.textContent = lang.note;
-    host.append(note);
-
-    host.querySelector(".animal-range-map__controls").addEventListener("click", event => {
-      const button = event.target.closest("button[data-map-action]");
-      if (!button) return;
-      if (button.dataset.mapAction === "range") {
-        map.fitBounds(rangeLayer.getBounds().pad(0.16), { maxZoom: 6 });
-      } else if (button.dataset.mapAction === "world") {
-        map.fitBounds([[-58, -180], [78, 180]], { padding: [8, 8] });
-      }
-    });
-
-    host.classList.add("is-ready");
-    requestAnimationFrame(() => map.invalidateSize());
-  }
-}
-
-initializeRangeMaps().catch(error => {
-  console.error("Animal range map could not be initialized.", error);
-  document.querySelectorAll("[data-animal-range-map]").forEach(host => {
-    const fallback = host.querySelector(".animal-range-map__fallback");
-    if (fallback) fallback.textContent = (labels[host.dataset.lang] || labels.cs).failed;
-  });
-});
+initializeRangeMaps().catch(error=>{console.error("Animal range map could not be initialized.",error);document.querySelectorAll("[data-animal-range-map]").forEach(host=>{const fallback=host.querySelector(".animal-range-map__fallback");if(fallback)fallback.textContent=(labels[host.dataset.lang]||labels.cs).failed})});
