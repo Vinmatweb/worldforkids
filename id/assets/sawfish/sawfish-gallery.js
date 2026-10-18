@@ -2,47 +2,72 @@
 "use strict";
 const root=document.getElementById("sawfish-gallery");
 const lang=root&&root.dataset.lang==="en"?"en":"cs";
-const base=root?root.dataset.base:"";
+const base=root?root.dataset.base:(lang==="en"?"../../assets/sawfish/":"../assets/sawfish/");
 const dataUrl=lang==="en"?"../../data/sawfish-activities.json":"../data/sawfish-activities.json";
-const words=lang==="en"?{cards:"Information cards",card:"Information card",colored:"Colored sample",outline:"Black-and-white",download:"Download",print:"Print",close:"Close",difficulty:"Difficulty",level:"Level"}:{cards:"Informační karty",card:"Informační karta",colored:"Barevný vzor",outline:"Černobílá karta",download:"Stáhnout",print:"Tisk",close:"Zavřít",difficulty:"Obtížnost",level:"Úroveň"};
-function el(tag,cls,text){const x=document.createElement(tag);if(cls)x.className=cls;if(text)x.textContent=text;return x}
+const printRoot=base+"print/";
+const W=lang==="en"?{cards:"Information cards",card:"Information card",colored:"Color sample",outline:"Coloring page",trace:"Tracing page",download:"Download",print:"Print",close:"Close",difficulty:"Difficulty",level:"Level",open:"Open coloring page",ages:{2:"Recommended age: 5–6",3:"Recommended age: 7–9",4:"Recommended age: 10+"},maze:"Open mangrove maze"}:{cards:"Informační karty",card:"Informační karta",colored:"Barevný vzor",outline:"Omalovánka",trace:"Obtahovačka",download:"Stáhnout",print:"Tisk",close:"Zavřít",difficulty:"Obtížnost",level:"Úroveň",open:"Otevřít omalovánku",ages:{2:"Doporučený věk: 5–6 let",3:"Doporučený věk: 7–9 let",4:"Doporučený věk: 10+ let"},maze:"Otevřít bludiště mangrovů"};
+const el=(tag,cls,txt)=>{const x=document.createElement(tag);if(cls)x.className=cls;if(txt)x.textContent=txt;return x};
+let opener=null,scrollY=0;
 function dialog(){
  let d=document.getElementById("saw-art-dialog");if(d)return d;
  d=document.createElement("dialog");d.id="saw-art-dialog";d.setAttribute("aria-labelledby","saw-art-title");
- const head=el("div","saw-dialog-head"),title=el("h2","","");title.id="saw-art-title";
- const close=el("button","saw-dialog-close","×");close.type="button";close.setAttribute("aria-label",words.close);close.addEventListener("click",()=>d.close());head.append(title,close);
- const layout=el("div","saw-dialog-layout"),view=el("div","saw-dialog-view"),img=el("img","saw-dialog-image"),caption=el("p","saw-dialog-caption","");img.alt="";caption.hidden=true;view.append(img,caption);
- const side=el("aside","saw-dialog-side"),levels=el("div","saw-levels"),levelTitle=el("strong","",words.difficulty),levelButtons=[];
+ const head=el("div","saw-dialog-head"),title=el("h2","");title.id="saw-art-title";
+ const close=el("button","saw-dialog-close","×");close.type="button";close.setAttribute("aria-label",W.close);close.addEventListener("click",()=>d.close());head.append(title,close);
+ const layout=el("div","saw-dialog-layout"),view=el("div","saw-dialog-view"),img=el("img","saw-dialog-image");img.alt="";view.append(img);
+ const side=el("aside","saw-dialog-side"),levels=el("div","saw-levels"),levelTitle=el("strong","",W.difficulty),levelButtons=[];
  levels.append(levelTitle);
  for(let i=1;i<=5;i++){const b=el("button","",(lang==="en"?"Level ":"Úroveň ")+i);b.type="button";b.dataset.levelChoice=String(i);levels.append(b);levelButtons.push(b)}
- const modes=el("div","saw-mode-buttons"),sample=el("button","",words.colored),outline=el("button","",words.outline);sample.type=outline.type="button";modes.append(sample,outline);
- const actions=el("div","saw-dialog-actions"),download=el("a","",words.download),print=el("button","",words.print);download.setAttribute("download","");print.type="button";print.addEventListener("click",()=>window.print());actions.append(download,print);
+ const modes=el("div","saw-mode-buttons"),sample=el("button","",W.colored),outline=el("button","",W.outline),trace=el("button","",W.trace);
+ [sample,outline,trace].forEach(b=>b.type="button");modes.append(sample,outline,trace);
+ const actions=el("div","saw-dialog-actions"),download=el("a","",W.download),print=el("button","",W.print);download.setAttribute("download","");print.type="button";print.addEventListener("click",()=>window.print());actions.append(download,print);
  side.append(levels,modes,actions);layout.append(view,side);d.append(head,layout);document.body.append(d);
  d.addEventListener("click",ev=>{if(ev.target===d)d.close()});
- d.parts={title,img,caption,levels,levelButtons,sample,outline,download,kind:"",dir:"",level:5,color:"",line:""};
- return d;
+ d.addEventListener("close",()=>{if(opener&&opener.isConnected)opener.focus({preventScroll:true});window.scrollTo({top:scrollY,behavior:"instant"})});
+ d.parts={title,img,levels,levelButtons,sample,outline,trace,download,kind:"",mode:"color",level:5,dir:"",files:null};return d;
 }
 function open(btn){
- const d=dialog(),p=d.parts;
- p.title.textContent=btn.dataset.title||words.cards;p.kind=btn.dataset.kind||"card";p.caption.textContent=btn.dataset.story||"";p.caption.hidden=p.kind!=="story"||!p.caption.textContent;p.dir=btn.dataset.dir||base;p.level=Number(btn.dataset.level||5);p.color=btn.dataset.color;p.line=btn.dataset.line;p.levels.hidden=p.kind!=="basic";
- p.outline.textContent=p.kind==="card"?words.outline:(lang==="en"?"Coloring page":"Omalovánka");
+ const d=dialog(),p=d.parts;opener=btn;scrollY=window.scrollY;
+ p.kind=btn.dataset.kind||"card";p.title.textContent=btn.dataset.title||W.cards;p.level=Number(btn.dataset.level||5);p.dir=btn.dataset.dir||base;p.mode=btn.dataset.mode||"color";
+ p.levels.hidden=p.kind!=="basic";
+ p.trace.hidden=!btn.dataset.trace&&p.kind!=="basic";
+ p.sample.textContent=W.colored;p.outline.textContent=p.kind==="card"? (lang==="en"?"Black-and-white":"Černobílá karta"):W.outline;
  p.levelButtons.forEach(b=>b.classList.toggle("selected",Number(b.dataset.levelChoice)===p.level));
- function show(colored){
-   const src=colored?p.color:p.line;p.img.src=src;p.img.alt=p.title.textContent;
-   p.sample.classList.toggle("selected",colored);p.outline.classList.toggle("selected",!colored);
-   p.download.href=src;p.download.download=(p.title.textContent.replace(/[^a-z0-9]+/gi,"-").toLowerCase()||"sawfish")+(colored?"-color":"-line")+(src.toLowerCase().split(/[?#]/)[0].endsWith(".svg")?".svg":".webp");
+ function filesForLevel(n){
+  return {
+   color:{preview:printRoot+"sawfish-color-sample-lv"+n+"-en.png",download:printRoot+"sawfish-color-sample-lv"+n+"-en.png",name:"sawfish-coloring-lv"+n+"-en-color-sample.png"},
+   bw:{preview:p.dir+"basic-lv"+n+".webp",download:printRoot+"sawfish-coloring-lv"+n+"-en-bw.pdf",name:"sawfish-coloring-lv"+n+"-en-bw.pdf"},
+   trace:{preview:printRoot+"sawfish-tracing-lv"+n+"-en.png",download:printRoot+"sawfish-tracing-lv"+n+"-en.png",name:"sawfish-tracing-lv"+n+"-en.png"}
+  };
  }
- p.levelButtons.forEach(b=>b.onclick=()=>{p.level=Number(b.dataset.levelChoice);p.color=p.dir+"basic-lv"+p.level+"-sample.webp";p.line=p.dir+"basic-lv"+p.level+".webp";p.title.textContent=(lang==="en"?"Sawfish coloring page":"Omalovánka pilouna")+" · "+words.level.toLowerCase()+" "+p.level;p.levelButtons.forEach(x=>x.classList.toggle("selected",x===b));show(true)});
- p.sample.onclick=()=>show(true);p.outline.onclick=()=>show(false);show(true);if(!d.open)d.showModal();
+ function show(mode){
+  p.mode=mode;p.files=p.kind==="basic"?filesForLevel(p.level):{
+   color:{preview:btn.dataset.color,download:btn.dataset.printColor||btn.dataset.color,name:(btn.dataset.filename||"sawfish-activity")+"-color.png"},
+   bw:{preview:btn.dataset.line,download:btn.dataset.printLine||btn.dataset.line,name:(btn.dataset.filename||"sawfish-activity")+"-bw"+((btn.dataset.printLine||"").endsWith(".pdf")?".pdf":".png")},
+   trace:{preview:btn.dataset.trace,download:btn.dataset.printTrace||btn.dataset.trace,name:(btn.dataset.filename||"sawfish-activity")+"-tracing.png"}
+  };
+  const f=p.files[mode];if(!f||!f.preview)return;
+  p.img.src=f.preview;p.img.alt=p.title.textContent;p.download.href=f.download;p.download.download=f.name;
+  [[p.sample,"color"],[p.outline,"bw"],[p.trace,"trace"]].forEach(([b,m])=>{b.classList.toggle("selected",m===mode);b.setAttribute("aria-pressed",String(m===mode))});
+ }
+ p.levelButtons.forEach(b=>b.onclick=()=>{p.level=Number(b.dataset.levelChoice);p.title.textContent=(lang==="en"?"Sawfish coloring page":"Omalovánka pilouna")+ " · "+W.level+" "+p.level;p.levelButtons.forEach(x=>x.classList.toggle("selected",x===b));show(p.mode)});
+ p.sample.onclick=()=>show("color");p.outline.onclick=()=>show("bw");p.trace.onclick=()=>show("trace");
+ show(p.mode);if(!d.open)d.showModal();
 }
-document.addEventListener("click",ev=>{const b=ev.target.closest("[data-art-open]");if(b)open(b)});
+document.addEventListener("click",ev=>{const b=ev.target.closest("[data-art-open]");if(b){ev.preventDefault();open(b)}});
 if(!root)return;
 fetch(dataUrl).then(r=>{if(!r.ok)throw Error("data");return r.json()}).then(items=>{
- const cards=items.filter(x=>x.type==="card"&&(x.locale==="shared"||x.locale===lang));
- if(!cards.length){root.textContent=lang==="en"?"No information cards are available yet.":"Informační karty zatím nejsou k dispozici.";return}
- const section=el("section","saw-gallery-group");section.setAttribute("aria-label",words.cards);const grid=el("div","saw-gallery-grid");
- cards.forEach(item=>{const card=el("article","saw-art-card"),button=el("button");button.type="button";button.dataset.artOpen="";button.dataset.kind="card";button.dataset.color=base+item.color;button.dataset.line=base+item.line;button.dataset.title=words.card;
- const image=document.createElement("img");image.src=base+item.thumbnail;image.alt=item.title[lang];image.loading="lazy";button.append(image);const ages=lang==="en"?{2:"Suitable for ages 5–6",3:"Suitable for ages 7–9",4:"Suitable for ages 10+"}:{2:"Vhodné pro 5–6 let",3:"Vhodné pro 7–9 let",4:"Vhodné pro 10+ let"};image.alt=ages[item.level]||words.card;card.append(button,el("small","age-label",ages[item.level]||""));grid.append(card)});
- section.append(grid);root.append(section);
-}).catch(()=>{root.textContent=lang==="en"?"Information cards could not be loaded.":"Informační karty se nepodařilo načíst."});
+ const cards=items.filter(x=>x.type==="card"&&x.locale===lang);
+ const section=el("section","saw-gallery-group");section.setAttribute("aria-label",W.cards);const grid=el("div","saw-gallery-grid");
+ cards.sort((a,b)=>a.level-b.level).forEach(item=>{
+  const card=el("article","saw-art-card"),button=el("button","saw-card-open");button.type="button";button.dataset.artOpen="";button.dataset.kind="card";button.dataset.color=base+item.color;button.dataset.line=base+item.line;button.dataset.printColor=base+item.printColor;button.dataset.printLine=base+item.printLine;button.dataset.level=item.level;button.dataset.title=(lang==="en"?"Information card · LV":"Informační karta · LV")+item.level+" · "+(lang==="en"?"English":"česky");button.dataset.filename="sawfish-information-card-lv"+item.level+"-"+lang;
+  const image=document.createElement("img");image.src=base+item.thumbnail;image.alt=button.dataset.title;image.loading="lazy";button.append(image);const label=el("strong","card-level","LV"+item.level);const age=el("small","age-label",W.ages[item.level]||"");card.append(button,label,age);grid.append(card);
+ });
+ if(cards.length){section.append(grid);root.append(section)}
+ const topic=document.querySelector('[data-activity-topic="mangrove"]');
+ const mazes=items.filter(x=>x.type==="maze"&&x.topic==="mangrove");
+ if(topic&&mazes.length){const wrap=el("div","saw-related-activities"),label=el("strong","",lang==="en"?"Related activity: mangrove maze":"Související aktivita: bludiště mangrovů"),list=el("div","saw-related-buttons");wrap.append(label,list);
+  mazes.forEach(item=>{const b=el("button","saw-open-activity",(lang==="en"?"Level ":"Úroveň ")+item.level+(item.variant?" · "+(lang==="en"?"variant ":"varianta ")+item.variant:""));b.type="button";b.dataset.artOpen="";b.dataset.kind="maze";b.dataset.level=item.level;b.dataset.color=base+item.color;b.dataset.line=base+item.line;b.dataset.printColor=base+item.color;b.dataset.printLine=base+item.line;b.dataset.title=(lang==="en"?"Mangrove maze · LV":"Bludiště mangrovů · LV")+item.level+(item.variant?" · "+item.variant:"");b.dataset.filename="sawfish-mangrove-maze-lv"+item.level+(item.variant?"-v"+item.variant:"")+"-"+lang;list.append(b)});
+  topic.append(wrap);
+ }
+}).catch(()=>{if(root)root.textContent=lang==="en"?"Information cards could not be loaded.":"Informační karty se nepodařilo načíst."});
 })();

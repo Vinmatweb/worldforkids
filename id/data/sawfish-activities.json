@@ -11,7 +11,12 @@
     "thumbnail": "basic-lv1-sample.webp",
     "color": "basic-lv1-sample.webp",
     "line": "basic-lv1.webp",
-    "source": "https://drive.google.com/drive/folders/1AwTlSb79I6s_OW-fApD5u3m3vhEO1WN7"
+    "source": "https://drive.google.com/drive/folders/1AwTlSb79I6s_OW-fApD5u3m3vhEO1WN7",
+    "printColor": "print/sawfish-color-sample-lv1-en.png",
+    "printLine": "print/sawfish-coloring-lv1-en-bw.pdf",
+    "trace": "print/sawfish-tracing-lv1-en.png",
+    "printTrace": "print/sawfish-tracing-lv1-en.png",
+    "materialLocale": "en"
   },
   {
     "id": "basic-lv2",
@@ -25,7 +30,12 @@
     "thumbnail": "basic-lv2-sample.webp",
     "color": "basic-lv2-sample.webp",
     "line": "basic-lv2.webp",
-    "source": "https://drive.google.com/drive/folders/1AwTlSb79I6s_OW-fApD5u3m3vhEO1WN7"
+    "source": "https://drive.google.com/drive/folders/1AwTlSb79I6s_OW-fApD5u3m3vhEO1WN7",
+    "printColor": "print/sawfish-color-sample-lv2-en.png",
+    "printLine": "print/sawfish-coloring-lv2-en-bw.pdf",
+    "trace": "print/sawfish-tracing-lv2-en.png",
+    "printTrace": "print/sawfish-tracing-lv2-en.png",
+    "materialLocale": "en"
   },
   {
     "id": "basic-lv3",
@@ -39,7 +49,12 @@
     "thumbnail": "basic-lv3-sample.webp",
     "color": "basic-lv3-sample.webp",
     "line": "basic-lv3.webp",
-    "source": "https://drive.google.com/drive/folders/1AwTlSb79I6s_OW-fApD5u3m3vhEO1WN7"
+    "source": "https://drive.google.com/drive/folders/1AwTlSb79I6s_OW-fApD5u3m3vhEO1WN7",
+    "printColor": "print/sawfish-color-sample-lv3-en.png",
+    "printLine": "print/sawfish-coloring-lv3-en-bw.pdf",
+    "trace": "print/sawfish-tracing-lv3-en.png",
+    "printTrace": "print/sawfish-tracing-lv3-en.png",
+    "materialLocale": "en"
   },
   {
     "id": "basic-lv4",
@@ -53,7 +68,12 @@
     "thumbnail": "basic-lv4-sample.webp",
     "color": "basic-lv4-sample.webp",
     "line": "basic-lv4.webp",
-    "source": "https://drive.google.com/drive/folders/1AwTlSb79I6s_OW-fApD5u3m3vhEO1WN7"
+    "source": "https://drive.google.com/drive/folders/1AwTlSb79I6s_OW-fApD5u3m3vhEO1WN7",
+    "printColor": "print/sawfish-color-sample-lv4-en.png",
+    "printLine": "print/sawfish-coloring-lv4-en-bw.pdf",
+    "trace": "print/sawfish-tracing-lv4-en.png",
+    "printTrace": "print/sawfish-tracing-lv4-en.png",
+    "materialLocale": "en"
   },
   {
     "id": "basic-lv5",
@@ -67,7 +87,12 @@
     "thumbnail": "basic-lv5-sample.webp",
     "color": "basic-lv5-sample.webp",
     "line": "basic-lv5.webp",
-    "source": "https://drive.google.com/drive/folders/1AwTlSb79I6s_OW-fApD5u3m3vhEO1WN7"
+    "source": "https://drive.google.com/drive/folders/1AwTlSb79I6s_OW-fApD5u3m3vhEO1WN7",
+    "printColor": "print/sawfish-color-sample-lv5-en.png",
+    "printLine": "print/sawfish-coloring-lv5-en-bw.pdf",
+    "trace": "print/sawfish-tracing-lv5-en.png",
+    "printTrace": "print/sawfish-tracing-lv5-en.png",
+    "materialLocale": "en"
   },
   {
     "id": "story-cs-01",
@@ -78,10 +103,15 @@
       "cs": "Příběhový obrázek 01",
       "en": "Story picture 01"
     },
-    "thumbnail": "story-cs-01-color.webp",
-    "color": "story-cs-01-color.webp",
-    "line": "story-cs-01-line.webp",
-    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z"
+    "thumbnail": "print/sawfish-story-01-lv3-cs-color.png",
+    "color": "print/sawfish-story-01-lv3-cs-color.png",
+    "line": "print/sawfish-story-01-lv3-cs-bw.png",
+    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z",
+    "printColor": "print/sawfish-story-01-lv3-cs-color.png",
+    "printLine": "print/sawfish-story-01-lv3-cs-bw.pdf",
+    "trace": "print/sawfish-story-01-lv3-tracing.png",
+    "printTrace": "print/sawfish-story-01-lv3-tracing.png",
+    "storyPage": true
   },
   {
     "id": "story-cs-02",
@@ -92,10 +122,15 @@
       "cs": "Příběhový obrázek 02",
       "en": "Story picture 02"
     },
-    "thumbnail": "story-cs-02-color.webp",
-    "color": "story-cs-02-color.webp",
-    "line": "story-cs-02-line.webp",
-    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z"
+    "thumbnail": "print/sawfish-story-02-lv3-cs-color.png",
+    "color": "print/sawfish-story-02-lv3-cs-color.png",
+    "line": "print/sawfish-story-02-lv3-cs-bw.png",
+    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z",
+    "printColor": "print/sawfish-story-02-lv3-cs-color.png",
+    "printLine": "print/sawfish-story-02-lv3-cs-bw.pdf",
+    "trace": "print/sawfish-story-02-lv3-tracing.png",
+    "printTrace": "print/sawfish-story-02-lv3-tracing.png",
+    "storyPage": true
   },
   {
     "id": "story-cs-03",
@@ -106,10 +141,15 @@
       "cs": "Příběhový obrázek 03",
       "en": "Story picture 03"
     },
-    "thumbnail": "story-cs-03-color.webp",
-    "color": "story-cs-03-color.webp",
-    "line": "story-cs-03-line.webp",
-    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z"
+    "thumbnail": "print/sawfish-story-03-lv4-cs-color.png",
+    "color": "print/sawfish-story-03-lv4-cs-color.png",
+    "line": "print/sawfish-story-03-lv4-cs-bw.png",
+    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z",
+    "printColor": "print/sawfish-story-03-lv4-cs-color.png",
+    "printLine": "print/sawfish-story-03-lv4-cs-bw.pdf",
+    "trace": "print/sawfish-story-03-lv4-tracing.png",
+    "printTrace": "print/sawfish-story-03-lv4-tracing.png",
+    "storyPage": true
   },
   {
     "id": "story-cs-04",
@@ -120,10 +160,15 @@
       "cs": "Příběhový obrázek 04",
       "en": "Story picture 04"
     },
-    "thumbnail": "story-cs-04-color.webp",
-    "color": "story-cs-04-color.webp",
-    "line": "story-cs-04-line.webp",
-    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z"
+    "thumbnail": "print/sawfish-story-04-lv4-cs-color.png",
+    "color": "print/sawfish-story-04-lv4-cs-color.png",
+    "line": "print/sawfish-story-04-lv4-cs-bw.png",
+    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z",
+    "printColor": "print/sawfish-story-04-lv4-cs-color.png",
+    "printLine": "print/sawfish-story-04-lv4-cs-bw.pdf",
+    "trace": "print/sawfish-story-04-lv4-tracing.png",
+    "printTrace": "print/sawfish-story-04-lv4-tracing.png",
+    "storyPage": true
   },
   {
     "id": "story-cs-05",
@@ -134,10 +179,15 @@
       "cs": "Příběhový obrázek 05",
       "en": "Story picture 05"
     },
-    "thumbnail": "story-cs-05-color.webp",
-    "color": "story-cs-05-color.webp",
-    "line": "story-cs-05-line.webp",
-    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z"
+    "thumbnail": "print/sawfish-story-05-lv4-cs-color.png",
+    "color": "print/sawfish-story-05-lv4-cs-color.png",
+    "line": "print/sawfish-story-05-lv4-cs-bw.png",
+    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z",
+    "printColor": "print/sawfish-story-05-lv4-cs-color.png",
+    "printLine": "print/sawfish-story-05-lv4-cs-bw.pdf",
+    "trace": "print/sawfish-story-05-lv4-tracing.png",
+    "printTrace": "print/sawfish-story-05-lv4-tracing.png",
+    "storyPage": true
   },
   {
     "id": "story-cs-06",
@@ -148,10 +198,15 @@
       "cs": "Příběhový obrázek 06",
       "en": "Story picture 06"
     },
-    "thumbnail": "story-cs-06-color.webp",
-    "color": "story-cs-06-color.webp",
-    "line": "story-cs-06-line.webp",
-    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z"
+    "thumbnail": "print/sawfish-story-06-lv3-cs-color.png",
+    "color": "print/sawfish-story-06-lv3-cs-color.png",
+    "line": "print/sawfish-story-06-lv3-cs-bw.png",
+    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z",
+    "printColor": "print/sawfish-story-06-lv3-cs-color.png",
+    "printLine": "print/sawfish-story-06-lv3-cs-bw.pdf",
+    "trace": "print/sawfish-story-06-lv3-tracing.png",
+    "printTrace": "print/sawfish-story-06-lv3-tracing.png",
+    "storyPage": true
   },
   {
     "id": "story-en-01",
@@ -162,10 +217,15 @@
       "cs": "Příběhový obrázek 01",
       "en": "Story picture 01"
     },
-    "thumbnail": "story-en-01-color.webp",
-    "color": "story-en-01-color.webp",
-    "line": "story-en-01-line.webp",
-    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z"
+    "thumbnail": "print/sawfish-story-01-lv3-en-color.png",
+    "color": "print/sawfish-story-01-lv3-en-color.png",
+    "line": "print/sawfish-story-01-lv3-en-bw.png",
+    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z",
+    "printColor": "print/sawfish-story-01-lv3-en-color.png",
+    "printLine": "print/sawfish-story-01-lv3-en-bw.pdf",
+    "trace": "print/sawfish-story-01-lv3-tracing.png",
+    "printTrace": "print/sawfish-story-01-lv3-tracing.png",
+    "storyPage": true
   },
   {
     "id": "story-en-02",
@@ -176,10 +236,15 @@
       "cs": "Příběhový obrázek 02",
       "en": "Story picture 02"
     },
-    "thumbnail": "story-en-02-color.webp",
-    "color": "story-en-02-color.webp",
-    "line": "story-en-02-line.webp",
-    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z"
+    "thumbnail": "print/sawfish-story-02-lv3-en-color.png",
+    "color": "print/sawfish-story-02-lv3-en-color.png",
+    "line": "print/sawfish-story-02-lv3-en-bw.png",
+    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z",
+    "printColor": "print/sawfish-story-02-lv3-en-color.png",
+    "printLine": "print/sawfish-story-02-lv3-en-bw.pdf",
+    "trace": "print/sawfish-story-02-lv3-tracing.png",
+    "printTrace": "print/sawfish-story-02-lv3-tracing.png",
+    "storyPage": true
   },
   {
     "id": "story-en-03",
@@ -190,10 +255,15 @@
       "cs": "Příběhový obrázek 03",
       "en": "Story picture 03"
     },
-    "thumbnail": "story-en-03-color.webp",
-    "color": "story-en-03-color.webp",
-    "line": "story-en-03-line.webp",
-    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z"
+    "thumbnail": "print/sawfish-story-03-lv4-en-color.png",
+    "color": "print/sawfish-story-03-lv4-en-color.png",
+    "line": "print/sawfish-story-03-lv4-en-bw.png",
+    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z",
+    "printColor": "print/sawfish-story-03-lv4-en-color.png",
+    "printLine": "print/sawfish-story-03-lv4-en-bw.pdf",
+    "trace": "print/sawfish-story-03-lv4-tracing.png",
+    "printTrace": "print/sawfish-story-03-lv4-tracing.png",
+    "storyPage": true
   },
   {
     "id": "story-en-04",
@@ -204,10 +274,15 @@
       "cs": "Příběhový obrázek 04",
       "en": "Story picture 04"
     },
-    "thumbnail": "story-en-04-color.webp",
-    "color": "story-en-04-color.webp",
-    "line": "story-en-04-line.webp",
-    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z"
+    "thumbnail": "print/sawfish-story-04-lv4-en-color.png",
+    "color": "print/sawfish-story-04-lv4-en-color.png",
+    "line": "print/sawfish-story-04-lv4-en-bw.png",
+    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z",
+    "printColor": "print/sawfish-story-04-lv4-en-color.png",
+    "printLine": "print/sawfish-story-04-lv4-en-bw.pdf",
+    "trace": "print/sawfish-story-04-lv4-tracing.png",
+    "printTrace": "print/sawfish-story-04-lv4-tracing.png",
+    "storyPage": true
   },
   {
     "id": "story-en-05",
@@ -218,10 +293,15 @@
       "cs": "Příběhový obrázek 05",
       "en": "Story picture 05"
     },
-    "thumbnail": "story-en-05-color.webp",
-    "color": "story-en-05-color.webp",
-    "line": "story-en-05-line.webp",
-    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z"
+    "thumbnail": "print/sawfish-story-05-lv4-en-color.png",
+    "color": "print/sawfish-story-05-lv4-en-color.png",
+    "line": "print/sawfish-story-05-lv4-en-bw.png",
+    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z",
+    "printColor": "print/sawfish-story-05-lv4-en-color.png",
+    "printLine": "print/sawfish-story-05-lv4-en-bw.pdf",
+    "trace": "print/sawfish-story-05-lv4-tracing.png",
+    "printTrace": "print/sawfish-story-05-lv4-tracing.png",
+    "storyPage": true
   },
   {
     "id": "story-en-06",
@@ -232,10 +312,15 @@
       "cs": "Příběhový obrázek 06",
       "en": "Story picture 06"
     },
-    "thumbnail": "story-en-06-color.webp",
-    "color": "story-en-06-color.webp",
-    "line": "story-en-06-line.webp",
-    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z"
+    "thumbnail": "print/sawfish-story-06-lv3-en-color.png",
+    "color": "print/sawfish-story-06-lv3-en-color.png",
+    "line": "print/sawfish-story-06-lv3-en-bw.png",
+    "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z",
+    "printColor": "print/sawfish-story-06-lv3-en-color.png",
+    "printLine": "print/sawfish-story-06-lv3-en-bw.pdf",
+    "trace": "print/sawfish-story-06-lv3-tracing.png",
+    "printTrace": "print/sawfish-story-06-lv3-tracing.png",
+    "storyPage": true
   },
   {
     "id": "card-cs-lv2",
@@ -247,9 +332,13 @@
       "en": "Information card – level 2"
     },
     "thumbnail": "card-cs-lv2-color.webp",
-    "color": "card-cs-lv2-color.webp",
-    "line": "card-cs-lv2-line.webp",
-    "source": "https://drive.google.com/drive/folders/1R_4rsqC8PkhYqU4vHqQZu7gBpANazVb1"
+    "color": "print/sawfish-information-card-lv2-cs-color.png",
+    "line": "print/sawfish-information-card-lv2-cs-bw.png",
+    "source": "https://drive.google.com/drive/folders/1R_4rsqC8PkhYqU4vHqQZu7gBpANazVb1",
+    "printColor": "print/sawfish-information-card-lv2-cs-color.png",
+    "printLine": "print/sawfish-information-card-lv2-cs-bw.png",
+    "difficultyLevel": 2,
+    "ageGuide": "5–6"
   },
   {
     "id": "card-cs-lv3",
@@ -261,9 +350,13 @@
       "en": "Information card – level 3"
     },
     "thumbnail": "card-cs-lv3-color.webp",
-    "color": "card-cs-lv3-color.webp",
-    "line": "card-cs-lv3-line.webp",
-    "source": "https://drive.google.com/drive/folders/1R_4rsqC8PkhYqU4vHqQZu7gBpANazVb1"
+    "color": "print/sawfish-information-card-lv3-cs-color.png",
+    "line": "print/sawfish-information-card-lv3-cs-bw.png",
+    "source": "https://drive.google.com/drive/folders/1R_4rsqC8PkhYqU4vHqQZu7gBpANazVb1",
+    "printColor": "print/sawfish-information-card-lv3-cs-color.png",
+    "printLine": "print/sawfish-information-card-lv3-cs-bw.png",
+    "difficultyLevel": 3,
+    "ageGuide": "7–9"
   },
   {
     "id": "card-cs-lv4",
@@ -275,9 +368,13 @@
       "en": "Information card – level 4"
     },
     "thumbnail": "card-cs-lv4-color.webp",
-    "color": "card-cs-lv4-color.webp",
-    "line": "card-cs-lv4-line.webp",
-    "source": "https://drive.google.com/drive/folders/1R_4rsqC8PkhYqU4vHqQZu7gBpANazVb1"
+    "color": "print/sawfish-information-card-lv4-cs-color.png",
+    "line": "print/sawfish-information-card-lv4-cs-bw.png",
+    "source": "https://drive.google.com/drive/folders/1R_4rsqC8PkhYqU4vHqQZu7gBpANazVb1",
+    "printColor": "print/sawfish-information-card-lv4-cs-color.png",
+    "printLine": "print/sawfish-information-card-lv4-cs-bw.png",
+    "difficultyLevel": 4,
+    "ageGuide": "10+"
   },
   {
     "id": "card-en-lv2",
@@ -289,9 +386,13 @@
       "en": "Information card – level 2"
     },
     "thumbnail": "card-en-lv2-color.webp",
-    "color": "card-en-lv2-color.webp",
-    "line": "card-en-lv2-line.webp",
-    "source": "https://drive.google.com/drive/folders/1R_4rsqC8PkhYqU4vHqQZu7gBpANazVb1"
+    "color": "print/sawfish-information-card-lv2-en-color.png",
+    "line": "print/sawfish-information-card-lv2-en-bw.png",
+    "source": "https://drive.google.com/drive/folders/1R_4rsqC8PkhYqU4vHqQZu7gBpANazVb1",
+    "printColor": "print/sawfish-information-card-lv2-en-color.png",
+    "printLine": "print/sawfish-information-card-lv2-en-bw.png",
+    "difficultyLevel": 2,
+    "ageGuide": "5–6"
   },
   {
     "id": "card-en-lv3",
@@ -303,9 +404,13 @@
       "en": "Information card – level 3"
     },
     "thumbnail": "card-en-lv3-color.webp",
-    "color": "card-en-lv3-color.webp",
-    "line": "card-en-lv3-line.webp",
-    "source": "https://drive.google.com/drive/folders/1R_4rsqC8PkhYqU4vHqQZu7gBpANazVb1"
+    "color": "print/sawfish-information-card-lv3-en-color.png",
+    "line": "print/sawfish-information-card-lv3-en-bw.png",
+    "source": "https://drive.google.com/drive/folders/1R_4rsqC8PkhYqU4vHqQZu7gBpANazVb1",
+    "printColor": "print/sawfish-information-card-lv3-en-color.png",
+    "printLine": "print/sawfish-information-card-lv3-en-bw.png",
+    "difficultyLevel": 3,
+    "ageGuide": "7–9"
   },
   {
     "id": "card-en-lv4",
@@ -317,8 +422,100 @@
       "en": "Information card – level 4"
     },
     "thumbnail": "card-en-lv4-color.webp",
-    "color": "card-en-lv4-color.webp",
-    "line": "card-en-lv4-line.webp",
-    "source": "https://drive.google.com/drive/folders/1R_4rsqC8PkhYqU4vHqQZu7gBpANazVb1"
+    "color": "print/sawfish-information-card-lv4-en-color.png",
+    "line": "print/sawfish-information-card-lv4-en-bw.png",
+    "source": "https://drive.google.com/drive/folders/1R_4rsqC8PkhYqU4vHqQZu7gBpANazVb1",
+    "printColor": "print/sawfish-information-card-lv4-en-color.png",
+    "printLine": "print/sawfish-information-card-lv4-en-bw.png",
+    "difficultyLevel": 4,
+    "ageGuide": "10+"
+  },
+  {
+    "id": "maze-mangrove-lv2",
+    "type": "maze",
+    "locale": "shared",
+    "level": 2,
+    "variant": null,
+    "topic": "mangrove",
+    "title": {
+      "cs": "Bludiště mangrovů · LV2",
+      "en": "Mangrove maze · LV2"
+    },
+    "thumbnail": "print/sawfish-mangrove-maze-lv2-en-color.png",
+    "color": "print/sawfish-mangrove-maze-lv2-en-color.png",
+    "line": "print/sawfish-mangrove-maze-lv2-en-bw.png",
+    "printColor": "print/sawfish-mangrove-maze-lv2-en-color.png",
+    "printLine": "print/sawfish-mangrove-maze-lv2-en-bw.png",
+    "source": "https://drive.google.com/drive/folders/1yUdaek7Ch7IBAPxqzmgDGal2pNe3IKpC",
+    "sourceFiles": {
+      "color": "1EBZZ98EpjLLao-pHkMGeqIK0iRxRsMOd",
+      "blackAndWhite": "1I_x8Dx11uyCuV5cJoNi14v8B0K_Y3Rbp"
+    }
+  },
+  {
+    "id": "maze-mangrove-lv3-v1",
+    "type": "maze",
+    "locale": "shared",
+    "level": 3,
+    "variant": 1,
+    "topic": "mangrove",
+    "title": {
+      "cs": "Bludiště mangrovů · LV3 · varianta 1",
+      "en": "Mangrove maze · LV3 · variant 1"
+    },
+    "thumbnail": "print/sawfish-mangrove-maze-lv3-v1-en-color.png",
+    "color": "print/sawfish-mangrove-maze-lv3-v1-en-color.png",
+    "line": "print/sawfish-mangrove-maze-lv3-v1-en-bw.png",
+    "printColor": "print/sawfish-mangrove-maze-lv3-v1-en-color.png",
+    "printLine": "print/sawfish-mangrove-maze-lv3-v1-en-bw.png",
+    "source": "https://drive.google.com/drive/folders/1yUdaek7Ch7IBAPxqzmgDGal2pNe3IKpC",
+    "sourceFiles": {
+      "color": "1cOwup_5yBxYgzsrql-7BgPQIt5iwP7uI",
+      "blackAndWhite": "1yvlJjz3-z8FkBb0H7VIrS9XELe-d8x_X"
+    }
+  },
+  {
+    "id": "maze-mangrove-lv3-v2",
+    "type": "maze",
+    "locale": "shared",
+    "level": 3,
+    "variant": 2,
+    "topic": "mangrove",
+    "title": {
+      "cs": "Bludiště mangrovů · LV3 · varianta 2",
+      "en": "Mangrove maze · LV3 · variant 2"
+    },
+    "thumbnail": "print/sawfish-mangrove-maze-lv3-v2-en-color.png",
+    "color": "print/sawfish-mangrove-maze-lv3-v2-en-color.png",
+    "line": "print/sawfish-mangrove-maze-lv3-v2-en-bw.png",
+    "printColor": "print/sawfish-mangrove-maze-lv3-v2-en-color.png",
+    "printLine": "print/sawfish-mangrove-maze-lv3-v2-en-bw.png",
+    "source": "https://drive.google.com/drive/folders/1yUdaek7Ch7IBAPxqzmgDGal2pNe3IKpC",
+    "sourceFiles": {
+      "color": "1Y1LkSidizfC4FMJ5RGMZrRrl1Npt5oUs",
+      "blackAndWhite": "1vMlNgIru6RhXs640Wz500HJ4S3lR99zw"
+    }
+  },
+  {
+    "id": "maze-mangrove-lv3-v3",
+    "type": "maze",
+    "locale": "shared",
+    "level": 3,
+    "variant": 3,
+    "topic": "mangrove",
+    "title": {
+      "cs": "Bludiště mangrovů · LV3 · varianta 3",
+      "en": "Mangrove maze · LV3 · variant 3"
+    },
+    "thumbnail": "print/sawfish-mangrove-maze-lv3-v3-en-color.png",
+    "color": "print/sawfish-mangrove-maze-lv3-v3-en-color.png",
+    "line": "print/sawfish-mangrove-maze-lv3-v3-en-bw.png",
+    "printColor": "print/sawfish-mangrove-maze-lv3-v3-en-color.png",
+    "printLine": "print/sawfish-mangrove-maze-lv3-v3-en-bw.png",
+    "source": "https://drive.google.com/drive/folders/1yUdaek7Ch7IBAPxqzmgDGal2pNe3IKpC",
+    "sourceFiles": {
+      "color": "18fw7-5SDx8rQkywQ1Eugek2MHrBfe0Dw",
+      "blackAndWhite": "19cGXaeh63RvIOj-Xrr5bSVugo1RZgVJZ"
+    }
   }
 ]
