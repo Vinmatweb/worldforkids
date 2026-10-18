@@ -42,7 +42,7 @@ fetch(dataUrl).then(r=>{if(!r.ok)throw Error("data");return r.json()}).then(item
  if(!cards.length){root.textContent=lang==="en"?"No information cards are available yet.":"Informační karty zatím nejsou k dispozici.";return}
  const section=el("section","saw-gallery-group");section.setAttribute("aria-label",words.cards);const grid=el("div","saw-gallery-grid");
  cards.forEach(item=>{const card=el("article","saw-art-card"),button=el("button");button.type="button";button.dataset.artOpen="";button.dataset.kind="card";button.dataset.color=base+item.color;button.dataset.line=base+item.line;button.dataset.title=words.card;
- const image=document.createElement("img");image.src=base+item.thumbnail;image.alt=item.title[lang];image.loading="lazy";button.append(image);const ages=lang==="en"?{2:"Suitable for ages 5–6",3:"Suitable for ages 7–9",4:"Suitable for ages 10+"}:{2:"Vhodné pro 5–6 let",3:"Vhodné pro 7–9 let",4:"Vhodné pro 10+ let"};card.append(button,el("small","age-label",ages[item.level]||""));grid.append(card)});
+ const image=document.createElement("img");image.src=base+item.thumbnail;image.alt=item.title[lang];image.loading="lazy";button.append(image);const ages=lang==="en"?{2:"Suitable for ages 5–6",3:"Suitable for ages 7–9",4:"Suitable for ages 10+"}:{2:"Vhodné pro 5–6 let",3:"Vhodné pro 7–9 let",4:"Vhodné pro 10+ let"};image.alt=ages[item.level]||words.card;card.append(button,el("small","age-label",ages[item.level]||""));grid.append(card)});
  section.append(grid);root.append(section);
 }).catch(()=>{root.textContent=lang==="en"?"Information cards could not be loaded.":"Informační karty se nepodařilo načíst."});
 })();
