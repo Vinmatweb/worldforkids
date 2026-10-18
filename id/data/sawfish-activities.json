@@ -13,7 +13,7 @@
     "line": "basic-lv1.webp",
     "source": "https://drive.google.com/drive/folders/1AwTlSb79I6s_OW-fApD5u3m3vhEO1WN7",
     "printColor": "print/sawfish-color-sample-lv1-en.png",
-    "printLine": "print/sawfish-coloring-lv1-en-bw.pdf",
+    "printLine": "print/sawfish-coloring-lv1-en-bw.png",
     "trace": "print/sawfish-tracing-lv1-en.png",
     "printTrace": "print/sawfish-tracing-lv1-en.png",
     "materialLocale": "en"
@@ -32,7 +32,7 @@
     "line": "basic-lv2.webp",
     "source": "https://drive.google.com/drive/folders/1AwTlSb79I6s_OW-fApD5u3m3vhEO1WN7",
     "printColor": "print/sawfish-color-sample-lv2-en.png",
-    "printLine": "print/sawfish-coloring-lv2-en-bw.pdf",
+    "printLine": "print/sawfish-coloring-lv2-en-bw.png",
     "trace": "print/sawfish-tracing-lv2-en.png",
     "printTrace": "print/sawfish-tracing-lv2-en.png",
     "materialLocale": "en"
@@ -51,7 +51,7 @@
     "line": "basic-lv3.webp",
     "source": "https://drive.google.com/drive/folders/1AwTlSb79I6s_OW-fApD5u3m3vhEO1WN7",
     "printColor": "print/sawfish-color-sample-lv3-en.png",
-    "printLine": "print/sawfish-coloring-lv3-en-bw.pdf",
+    "printLine": "print/sawfish-coloring-lv3-en-bw.png",
     "trace": "print/sawfish-tracing-lv3-en.png",
     "printTrace": "print/sawfish-tracing-lv3-en.png",
     "materialLocale": "en"
@@ -70,7 +70,7 @@
     "line": "basic-lv4.webp",
     "source": "https://drive.google.com/drive/folders/1AwTlSb79I6s_OW-fApD5u3m3vhEO1WN7",
     "printColor": "print/sawfish-color-sample-lv4-en.png",
-    "printLine": "print/sawfish-coloring-lv4-en-bw.pdf",
+    "printLine": "print/sawfish-coloring-lv4-en-bw.png",
     "trace": "print/sawfish-tracing-lv4-en.png",
     "printTrace": "print/sawfish-tracing-lv4-en.png",
     "materialLocale": "en"
@@ -89,7 +89,7 @@
     "line": "basic-lv5.webp",
     "source": "https://drive.google.com/drive/folders/1AwTlSb79I6s_OW-fApD5u3m3vhEO1WN7",
     "printColor": "print/sawfish-color-sample-lv5-en.png",
-    "printLine": "print/sawfish-coloring-lv5-en-bw.pdf",
+    "printLine": "print/sawfish-coloring-lv5-en-bw.png",
     "trace": "print/sawfish-tracing-lv5-en.png",
     "printTrace": "print/sawfish-tracing-lv5-en.png",
     "materialLocale": "en"
@@ -108,7 +108,7 @@
     "line": "print/sawfish-story-01-lv3-cs-bw.png",
     "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z",
     "printColor": "print/sawfish-story-01-lv3-cs-color.png",
-    "printLine": "print/sawfish-story-01-lv3-cs-bw.pdf",
+    "printLine": "print/sawfish-story-01-lv3-cs-bw.png",
     "trace": "print/sawfish-story-01-lv3-tracing.png",
     "printTrace": "print/sawfish-story-01-lv3-tracing.png",
     "storyPage": true
@@ -127,7 +127,7 @@
     "line": "print/sawfish-story-02-lv3-cs-bw.png",
     "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z",
     "printColor": "print/sawfish-story-02-lv3-cs-color.png",
-    "printLine": "print/sawfish-story-02-lv3-cs-bw.pdf",
+    "printLine": "print/sawfish-story-02-lv3-cs-bw.png",
     "trace": "print/sawfish-story-02-lv3-tracing.png",
     "printTrace": "print/sawfish-story-02-lv3-tracing.png",
     "storyPage": true
@@ -146,7 +146,7 @@
     "line": "print/sawfish-story-03-lv4-cs-bw.png",
     "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z",
     "printColor": "print/sawfish-story-03-lv4-cs-color.png",
-    "printLine": "print/sawfish-story-03-lv4-cs-bw.pdf",
+    "printLine": "print/sawfish-story-03-lv4-cs-bw.png",
     "trace": "print/sawfish-story-03-lv4-tracing.png",
     "printTrace": "print/sawfish-story-03-lv4-tracing.png",
     "storyPage": true
@@ -165,7 +165,7 @@
     "line": "print/sawfish-story-04-lv4-cs-bw.png",
     "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z",
     "printColor": "print/sawfish-story-04-lv4-cs-color.png",
-    "printLine": "print/sawfish-story-04-lv4-cs-bw.pdf",
+    "printLine": "print/sawfish-story-04-lv4-cs-bw.png",
     "trace": "print/sawfish-story-04-lv4-tracing.png",
     "printTrace": "print/sawfish-story-04-lv4-tracing.png",
     "storyPage": true
@@ -184,7 +184,7 @@
     "line": "print/sawfish-story-05-lv4-cs-bw.png",
     "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z",
     "printColor": "print/sawfish-story-05-lv4-cs-color.png",
-    "printLine": "print/sawfish-story-05-lv4-cs-bw.pdf",
+    "printLine": "print/sawfish-story-05-lv4-cs-bw.png",
     "trace": "print/sawfish-story-05-lv4-tracing.png",
     "printTrace": "print/sawfish-story-05-lv4-tracing.png",
     "storyPage": true
@@ -203,7 +203,7 @@
     "line": "print/sawfish-story-06-lv3-cs-bw.png",
     "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z",
     "printColor": "print/sawfish-story-06-lv3-cs-color.png",
-    "printLine": "print/sawfish-story-06-lv3-cs-bw.pdf",
+    "printLine": "print/sawfish-story-06-lv3-cs-bw.png",
     "trace": "print/sawfish-story-06-lv3-tracing.png",
     "printTrace": "print/sawfish-story-06-lv3-tracing.png",
     "storyPage": true
@@ -222,7 +222,7 @@
     "line": "print/sawfish-story-01-lv3-en-bw.png",
     "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z",
     "printColor": "print/sawfish-story-01-lv3-en-color.png",
-    "printLine": "print/sawfish-story-01-lv3-en-bw.pdf",
+    "printLine": "print/sawfish-story-01-lv3-en-bw.png",
     "trace": "print/sawfish-story-01-lv3-tracing.png",
     "printTrace": "print/sawfish-story-01-lv3-tracing.png",
     "storyPage": true
@@ -241,7 +241,7 @@
     "line": "print/sawfish-story-02-lv3-en-bw.png",
     "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z",
     "printColor": "print/sawfish-story-02-lv3-en-color.png",
-    "printLine": "print/sawfish-story-02-lv3-en-bw.pdf",
+    "printLine": "print/sawfish-story-02-lv3-en-bw.png",
     "trace": "print/sawfish-story-02-lv3-tracing.png",
     "printTrace": "print/sawfish-story-02-lv3-tracing.png",
     "storyPage": true
@@ -260,7 +260,7 @@
     "line": "print/sawfish-story-03-lv4-en-bw.png",
     "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z",
     "printColor": "print/sawfish-story-03-lv4-en-color.png",
-    "printLine": "print/sawfish-story-03-lv4-en-bw.pdf",
+    "printLine": "print/sawfish-story-03-lv4-en-bw.png",
     "trace": "print/sawfish-story-03-lv4-tracing.png",
     "printTrace": "print/sawfish-story-03-lv4-tracing.png",
     "storyPage": true
@@ -279,7 +279,7 @@
     "line": "print/sawfish-story-04-lv4-en-bw.png",
     "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z",
     "printColor": "print/sawfish-story-04-lv4-en-color.png",
-    "printLine": "print/sawfish-story-04-lv4-en-bw.pdf",
+    "printLine": "print/sawfish-story-04-lv4-en-bw.png",
     "trace": "print/sawfish-story-04-lv4-tracing.png",
     "printTrace": "print/sawfish-story-04-lv4-tracing.png",
     "storyPage": true
@@ -298,7 +298,7 @@
     "line": "print/sawfish-story-05-lv4-en-bw.png",
     "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z",
     "printColor": "print/sawfish-story-05-lv4-en-color.png",
-    "printLine": "print/sawfish-story-05-lv4-en-bw.pdf",
+    "printLine": "print/sawfish-story-05-lv4-en-bw.png",
     "trace": "print/sawfish-story-05-lv4-tracing.png",
     "printTrace": "print/sawfish-story-05-lv4-tracing.png",
     "storyPage": true
@@ -317,7 +317,7 @@
     "line": "print/sawfish-story-06-lv3-en-bw.png",
     "source": "https://drive.google.com/drive/folders/1givHhR19Kr7LXtLuibYi1k1pjA3qMx7Z",
     "printColor": "print/sawfish-story-06-lv3-en-color.png",
-    "printLine": "print/sawfish-story-06-lv3-en-bw.pdf",
+    "printLine": "print/sawfish-story-06-lv3-en-bw.png",
     "trace": "print/sawfish-story-06-lv3-tracing.png",
     "printTrace": "print/sawfish-story-06-lv3-tracing.png",
     "storyPage": true

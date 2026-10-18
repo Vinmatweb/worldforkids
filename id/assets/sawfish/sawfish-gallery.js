@@ -5,6 +5,8 @@ const lang=root&&root.dataset.lang==="en"?"en":"cs";
 const base=root?root.dataset.base:(lang==="en"?"../../assets/sawfish/":"../assets/sawfish/");
 const dataUrl=lang==="en"?"../../data/sawfish-activities.json":"../data/sawfish-activities.json";
 const printRoot=base+"print/";
+const assetVersion="20261018-activity-files";
+const versioned=url=>url?url+(url.includes("?")?"&":"?")+"v="+assetVersion:url;
 const W=lang==="en"?{cards:"Information cards",card:"Information card",colored:"Color sample",outline:"Coloring page",trace:"Tracing page",download:"Download",print:"Print",close:"Close",difficulty:"Difficulty",level:"Level",open:"Open coloring page",ages:{2:"Recommended age: 5–6",3:"Recommended age: 7–9",4:"Recommended age: 10+"},maze:"Open mangrove maze"}:{cards:"Informační karty",card:"Informační karta",colored:"Barevný vzor",outline:"Omalovánka",trace:"Obtahovačka",download:"Stáhnout",print:"Tisk",close:"Zavřít",difficulty:"Obtížnost",level:"Úroveň",open:"Otevřít omalovánku",ages:{2:"Doporučený věk: 5–6 let",3:"Doporučený věk: 7–9 let",4:"Doporučený věk: 10+ let"},maze:"Otevřít bludiště mangrovů"};
 const el=(tag,cls,txt)=>{const x=document.createElement(tag);if(cls)x.className=cls;if(txt)x.textContent=txt;return x};
 let opener=null,scrollY=0;
@@ -35,7 +37,7 @@ function open(btn){
  function filesForLevel(n){
   return {
    color:{preview:printRoot+"sawfish-color-sample-lv"+n+"-en.png",download:printRoot+"sawfish-color-sample-lv"+n+"-en.png",name:"sawfish-coloring-lv"+n+"-en-color-sample.png"},
-   bw:{preview:p.dir+"basic-lv"+n+".webp",download:printRoot+"sawfish-coloring-lv"+n+"-en-bw.pdf",name:"sawfish-coloring-lv"+n+"-en-bw.pdf"},
+   bw:{preview:p.dir+"basic-lv"+n+".webp",download:printRoot+"sawfish-coloring-lv"+n+"-en-bw.png",name:"sawfish-coloring-lv"+n+"-en-bw.png"},
    trace:{preview:printRoot+"sawfish-tracing-lv"+n+"-en.png",download:printRoot+"sawfish-tracing-lv"+n+"-en.png",name:"sawfish-tracing-lv"+n+"-en.png"}
   };
  }
@@ -46,7 +48,7 @@ function open(btn){
    trace:{preview:btn.dataset.trace,download:btn.dataset.printTrace||btn.dataset.trace,name:(btn.dataset.filename||"sawfish-activity")+"-tracing.png"}
   };
   const f=p.files[mode];if(!f||!f.preview)return;
-  p.img.src=f.preview;p.img.alt=p.title.textContent;p.download.href=f.download;p.download.download=f.name;
+  p.img.src=versioned(f.preview);p.img.alt=p.title.textContent;p.download.href=versioned(f.download);p.download.download=f.name;
   [[p.sample,"color"],[p.outline,"bw"],[p.trace,"trace"]].forEach(([b,m])=>{b.classList.toggle("selected",m===mode);b.setAttribute("aria-pressed",String(m===mode))});
  }
  p.levelButtons.forEach(b=>b.onclick=()=>{p.level=Number(b.dataset.levelChoice);p.title.textContent=(lang==="en"?"Sawfish coloring page":"Omalovánka pilouna")+ " · "+W.level+" "+p.level;p.levelButtons.forEach(x=>x.classList.toggle("selected",x===b));show(p.mode)});
