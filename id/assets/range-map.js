@@ -67,22 +67,23 @@ async function initializeRangeMaps() {
 
     const canvas = host.querySelector(".animal-range-map__canvas");
     const map = L.map(canvas, {
-      minZoom: 1,
+      minZoom: 0,
       maxZoom: ranges.maxZoom || 14,
       zoomControl: true,
       scrollWheelZoom: true,
       doubleClickZoom: true,
       touchZoom: true,
-      worldCopyJump: true,
+      worldCopyJump: false,
       attributionControl: true,
       zoomSnap: 0.5
     }).setView(species.center, species.zoom);
 
     L.tileLayer(ranges.tileUrl, {
       subdomains: ranges.tileSubdomains || ["a", "b", "c"],
-      minZoom: 1,
+      minZoom: 0,
       maxZoom: 19,
       maxNativeZoom: 19,
+      noWrap: true,
       attribution: '<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors</a>',
       crossOrigin: true,
       updateWhenIdle: true,
