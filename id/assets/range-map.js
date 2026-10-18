@@ -67,7 +67,7 @@ async function initializeRangeMaps() {
 
     const canvas = host.querySelector(".animal-range-map__canvas");
     const map = L.map(canvas, {
-      minZoom: 2,
+      minZoom: 1,
       maxZoom: ranges.maxZoom || 14,
       zoomControl: true,
       scrollWheelZoom: true,
@@ -80,7 +80,7 @@ async function initializeRangeMaps() {
 
     L.tileLayer(ranges.tileUrl, {
       subdomains: ranges.tileSubdomains || ["a", "b", "c"],
-      minZoom: 2,
+      minZoom: 1,
       maxZoom: 19,
       maxNativeZoom: 19,
       attribution: '<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors</a>',
