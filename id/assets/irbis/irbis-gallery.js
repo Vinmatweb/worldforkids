@@ -10,7 +10,7 @@ const W=lang==="en"?{
   color:"Barevný vzor",bw:"Omalovánka",trace:"Obtahovačka",download:"Stáhnout",print:"Tisk",close:"Zavřít",difficulty:"Obtížnost",level:"Úroveň",cards:"Informační karty",error:"Tiskový soubor se nepodařilo načíst. Zkontroluj připojení a zkus to znovu.",pdf:"Tiskové PDF se otevřelo v nové kartě. Tisk spusť přímo v prohlížeči PDF.",labels:{basic:"Omalovánka levharta sněžného",story:"Příběhový obrázek",card:"Informační karta"},age:{2:"Doporučený věk: 5–6 let",3:"Doporučený věk: 7–9 let",4:"Doporučený věk: 10+ let"}
 };
 const el=(tag,cls,txt)=>{const x=document.createElement(tag);if(cls)x.className=cls;if(txt)x.textContent=txt;return x};
-let activities=null,opener=null,scrollY=0;
+let activities=null,activitiesPromise=null,opener=null,scrollY=0;
 const version=url=>url+(url.includes("?")?"&":"?")+"v=20261019-irbis-v1";
 function dialog(){
  let d=document.getElementById("saw-art-dialog");if(d)return d;
@@ -64,7 +64,7 @@ function setMode(d,mode){
  [[p.color,"color"],[p.bw,"bw"],[p.trace,"trace"]].forEach(([b,m])=>{b.hidden=!item[m];b.classList.toggle("selected",m===mode);b.setAttribute("aria-pressed",String(m===mode))});
 }
 function open(button){
- if(!activities)return;const d=dialog(),p=d.parts;opener=button;scrollY=window.scrollY;p.err.hidden=true;p.printImg.removeAttribute("src");
+ if(!activities){if(activitiesPromise)activitiesPromise.then(()=>open(button)).catch(()=>{});return}const d=dialog(),p=d.parts;opener=button;scrollY=window.scrollY;p.err.hidden=true;p.printImg.removeAttribute("src");
  p.kind=button.hasAttribute("data-basic-open")?"basic":button.hasAttribute("data-card-level")?"card":"story";
  p.level=p.kind==="basic"?Number(button.dataset.level||5):p.kind==="card"?Number(button.dataset.cardLevel||2):0;
  p.item=p.kind==="story"?activities.stories.find(x=>x.id===button.dataset.storyId):null;p.mode=button.dataset.mode||"color";
@@ -78,7 +78,7 @@ function open(button){
 }
 document.addEventListener("click",ev=>{const b=ev.target.closest("[data-art-open]");if(b){ev.preventDefault();open(b)}});
 if(root){
- fetch(version(dataUrl)).then(r=>{if(!r.ok)throw Error("activity data");return r.json()}).then(items=>{
+ activitiesPromise=fetch(version(dataUrl)).then(r=>{if(!r.ok)throw Error("activity data");return r.json()}).then(items=>{
   activities=items;const grid=el("div","saw-gallery-grid");
   items.cards.forEach(item=>{
     const card=el("article","saw-art-card"),button=el("button","saw-card-open");button.type="button";button.dataset.artOpen="";button.dataset.cardLevel=String(item.level);button.setAttribute("aria-label",W.labels.card+" · LV"+item.level);
