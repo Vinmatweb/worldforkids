@@ -14,3 +14,5 @@
 @media(max-width:620px){.animal-range-map__canvas{height:clamp(340px,95vw,460px);min-height:340px;border-radius:14px}.animal-range-map__controls{gap:6px}.animal-range-map__controls button{padding:8px 11px;font-size:13px}}
 
 .animal-range-map__legend{display:flex;align-items:center;gap:9px;margin:0 0 9px;font-size:13px;font-weight:700;color:#3d5964}.animal-range-map__legend-swatch{width:16px;height:16px;border:3px solid #ef8c55;border-radius:50%;background:#ef8c5533;flex:0 0 auto}
+
+.animal-range-map__legend-swatch.is-area{border-radius:4px;background:#7897b033;border-color:#7897b0}

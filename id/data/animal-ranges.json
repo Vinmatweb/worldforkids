@@ -60,12 +60,15 @@
         82.5
       ],
       "zoom": 4,
-      "color": "#4d9d94",
+      "color": "#7897b0",
       "features": [
         {
           "type": "Feature",
           "properties": {
-            "name": "Hindu Kush and Pamir",
+            "name": {
+              "en": "Hindu Kush and Pamir",
+              "cs": "Hindúkuš a Pamír"
+            },
             "kind": "Approximate mountain range"
           },
           "geometry": {
@@ -123,7 +126,10 @@
         {
           "type": "Feature",
           "properties": {
-            "name": "Karakoram and Himalaya",
+            "name": {
+              "en": "Karakoram and Himalaya",
+              "cs": "Karákóram a Himálaj"
+            },
             "kind": "Approximate mountain range"
           },
           "geometry": {
@@ -201,7 +207,10 @@
         {
           "type": "Feature",
           "properties": {
-            "name": "Tian Shan and Central Asian ranges",
+            "name": {
+              "en": "Tian Shan and Central Asian ranges",
+              "cs": "Ťan-šan a středoasijská pohoří"
+            },
             "kind": "Approximate mountain range"
           },
           "geometry": {
@@ -275,7 +284,10 @@
         {
           "type": "Feature",
           "properties": {
-            "name": "Altai and southern Siberia",
+            "name": {
+              "en": "Altai and southern Siberia",
+              "cs": "Altaj a jižní Sibiř"
+            },
             "kind": "Approximate mountain range"
           },
           "geometry": {
@@ -337,7 +349,10 @@
         {
           "type": "Feature",
           "properties": {
-            "name": "Tibetan Plateau and Kunlun",
+            "name": {
+              "en": "Tibetan Plateau and Kunlun",
+              "cs": "Tibetská náhorní plošina a Kchun-lun"
+            },
             "kind": "Approximate mountain range"
           },
           "geometry": {

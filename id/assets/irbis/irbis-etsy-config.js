@@ -1,0 +1,1 @@
+window.IRBIS_ETSY_PRODUCT_URL = "";
