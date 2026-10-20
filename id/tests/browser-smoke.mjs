@@ -70,7 +70,7 @@ try{
  assert.match(await page.locator('#agenda-list').innerText(),/nemáme zařazenou/);
  await page.locator('#status-filter').selectOption('other');
  assert.equal(await page.locator('#total-count').innerText(),'1 událost v roce 2026');
- assert.equal(await page.locator('a[href="https://vinmat.eu/worldforkids/id/en/"]').count(),1);
+ assert.equal(new URL(await page.locator('a[lang="en"]').getAttribute('href')).pathname,'/worldforkids/id/en/');
  await page.locator('#org-filter').selectOption('all');
  await page.locator('#status-filter').selectOption('all');
  await page.locator('#month-select').selectOption('11');
