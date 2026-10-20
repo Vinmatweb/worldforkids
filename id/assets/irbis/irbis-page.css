@@ -15,7 +15,7 @@
 .saw-hero-art{position:relative;display:block;width:100%;height:300px;padding:8px;border:1px solid #ffffffd9;border-radius:18px;background:transparent;overflow:hidden;cursor:zoom-in;box-shadow:none}
 .saw-hero-art img{display:block;width:100%;height:100%;object-fit:contain;transform:scale(1.055)}
 .saw-hero-art-action{display:block;width:100%;margin:10px 0 0;padding:0;border:0;background:transparent;text-align:center;color:#203a52;font-size:14px;font-weight:850;line-height:1.45;text-decoration:underline;text-underline-offset:3px;cursor:pointer}.saw-hero-art-action span{display:block;color:#314d66;font-weight:750}
-.saw-hero-art-action span{display:block;color:#eaf0f5;font-weight:650}
+.saw-hero-art-action span{display:block;color:#314d66;font-weight:800}
 .saw-status{display:flex;gap:10px;flex-wrap:wrap}.saw-status span{background:#fff2e8;color:#8a4a2a;border:1px solid #f5d7c5;border-radius:999px;padding:8px 12px;font-weight:800;font-size:13px}
 .saw-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:18px 0 24px}
 .saw-stat{min-width:0;padding:16px;background:var(--saw-soft);border:1px solid #dcebe7;border-radius:16px}
