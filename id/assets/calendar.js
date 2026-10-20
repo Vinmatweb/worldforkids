@@ -159,7 +159,8 @@ for(let y=yearStart;y<=yearEnd;y++){const opt=document.createElement("option");o
 function initFilterFromUrl(id,value,allowed){if(allowed.includes(value))$(id).value=value;return $(id).value}
 organization=params.get("org")||"all";
 classification=initFilterFromUrl("status-filter",classification,["all","un","unesco","campaign","national","other"]);
-document.querySelectorAll("[data-language-link]").forEach(a=>{a.addEventListener("click",()=>syncAddress())});\n$("contact-copy").addEventListener("click",async()=>{const status=$("contact-status"),email="vinmatforkids@gmail.com";try{await navigator.clipboard.writeText(email);status.textContent=EN?"Email copied":"E-mail zkopírován"}catch{const input=document.createElement("textarea");input.value=email;input.style.position="fixed";input.style.opacity="0";document.body.append(input);input.select();document.execCommand("copy");input.remove();status.textContent=EN?"Email copied":"E-mail zkopírován"}setTimeout(()=>status.textContent="",2200)});
+document.querySelectorAll("[data-language-link]").forEach(a=>{a.addEventListener("click",()=>syncAddress())});
+$("contact-copy").addEventListener("click",async()=>{const status=$("contact-status"),email="vinmatforkids@gmail.com";try{await navigator.clipboard.writeText(email);status.textContent=EN?"Email copied":"E-mail zkopírován"}catch{const input=document.createElement("textarea");input.value=email;input.style.position="fixed";input.style.opacity="0";document.body.append(input);input.select();document.execCommand("copy");input.remove();status.textContent=EN?"Email copied":"E-mail zkopírován"}setTimeout(()=>status.textContent="",2200)});
 document.addEventListener("keydown",e=>{
  if(e.key!=="ArrowLeft"&&e.key!=="ArrowRight")return;
  const active=document.activeElement;if(!active?.matches(".date-btn"))return;
