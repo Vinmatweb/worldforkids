@@ -92,7 +92,7 @@ try{
  assert.equal(await page.locator('a[href="./irbis/"]').count(),1);
  await page.locator('#today').click();
  await page.locator('#prev').click();await page.locator('#next').click();
- assert.equal(await page.locator('a[href="https://vinmat.eu/worldforkids/"]').count(),1);
+ assert.equal(await page.locator('a[href="https://vinmat.eu/worldforkids/"]').count(),2);
  assert.equal(await page.locator('#contact-copy').count(),1);
  assert.equal(await page.locator('#contact-copy').innerText(),'✉ Contact');
  await page.close();await desktop.close();
