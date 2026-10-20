@@ -93,3 +93,12 @@ body{background:linear-gradient(180deg,#eaf0f5 0,#f7f9fb 430px,#f7f9fb 100%);col
 .saw-topic-art button,.saw-art-card button{aspect-ratio:.78}
 @media(max-width:620px){.saw-topic-art button{aspect-ratio:.95}.saw-art-card button{aspect-ratio:.78}}
 .saw-print-status{max-width:560px;padding:12px 14px;border:1px solid #cfdde7;border-radius:12px;background:#f3f8fb;color:#35566d;text-align:center;font-weight:700}.saw-print-status.saw-print-error{border-color:#ead1c4;background:#fff7f2;color:#754d3d}
+
+
+.back-to-top{position:fixed;right:max(18px,env(safe-area-inset-right));bottom:max(18px,env(safe-area-inset-bottom));z-index:80;width:50px;height:50px;display:grid;place-items:center;border:1px solid #c9d8e3;border-radius:50%;background:#fff;color:#17344d;box-shadow:0 8px 26px rgba(19,43,71,.2);transition:transform .18s ease,background-color .18s ease,box-shadow .18s ease}
+.back-to-top[hidden]{display:none}
+.back-to-top svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.back-to-top:hover{transform:translateY(-2px);background:#eaf3f8;box-shadow:0 11px 30px rgba(19,43,71,.25)}
+.back-to-top:focus-visible{outline:3px solid #f1ae45;outline-offset:3px}
+@media(max-width:620px){.back-to-top{right:max(14px,env(safe-area-inset-right));bottom:max(14px,env(safe-area-inset-bottom));width:46px;height:46px}}
+@media(prefers-reduced-motion:reduce){.back-to-top{transition:none}}
