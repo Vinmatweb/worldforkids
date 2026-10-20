@@ -8,8 +8,8 @@ const activeCount=activeYear===2026?124:123;
 const eventData=JSON.parse(await readFile(new URL('../data/events.json',import.meta.url),'utf8'));
 assert.equal(eventData.events.length,124);
 assert.equal(new Set(eventData.events.map(e=>e.id)).size,124);
-assert.ok(eventData.events.every(e=>e.source?.url));
-assert.deepEqual(new Set(eventData.events.map(e=>e.start.slice(5,7))).size,12);
+assert.ok(eventData.events.every(e=>e.sourceUrl));
+assert.equal(new Set(eventData.events.map(e=>e.date2026.start.slice(5,7))).size,12);
 const browser=await chromium.launch({headless:true});
 const errors=[];
 try{
@@ -36,8 +36,7 @@ try{
  await page.locator('[data-view="month"]').click();
  await page.locator('#prev').click();
  await page.locator('#next').click();
- const visibleSources=await page.locator('#cal-grid a[href^="http"]').count();
- assert.ok(visibleSources>0);
+ assert.ok(await page.locator('#cal-grid a[href^="http"]').count()>0);
  await page.locator('a[lang="en"]').click();
  await page.waitForURL('**/id/en/');
  await page.waitForFunction(n=>document.querySelector('#total-count')?.textContent.startsWith(n+' events listed for '+new Date().getFullYear()),activeCount);
