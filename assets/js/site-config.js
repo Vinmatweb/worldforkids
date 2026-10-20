@@ -47,3 +47,15 @@
         localeUrl: localeUrl
     };
 }());
+
+/* Shared privacy-friendly pageview analytics for vinmat.eu. */
+(function () {
+    'use strict';
+    if (window.__vinmatGoatCounterLoaded) return;
+    window.__vinmatGoatCounterLoaded = true;
+    const tag = document.createElement('script');
+    tag.async = true;
+    tag.src = 'https://gc.zgo.at/count.js';
+    tag.dataset.goatcounter = 'https://vinmat.goatcounter.com/count';
+    document.head.appendChild(tag);
+}());
