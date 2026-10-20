@@ -16,7 +16,7 @@ const TXT = EN ? {
 } : {
   month:"long", empty:"Na tento den zatím nemáme zařazenou ověřenou událost.",
   loadError:"Data kalendáře se nepodařilo načíst.",
-  count:(n,y)=>n+(n===1?" událost":(n>=2&&n<=4?" události":" událostí"))+" v roce "+y,
+  count:(n,y)=>n+(n===1?" událost":([2,3,4].includes(n)?" události":" událostí"))+" v roce "+y,
   dayTypes:{un:"Den OSN",unesco:"Den UNESCO",campaign:"Kampaň / ochranářská iniciativa",national:"Národní den",other:"Ostatní připomínkový den"},
   organizerMissing:"Pořadatel zatím neověřen",
   source:"Ověřovací zdroj", detail:"Otevřít stránku →", verify:"Ověřit zdroj ↗",
@@ -42,7 +42,7 @@ let events = [], organization=params.get("org")||"all", classification=params.ge
 function eventName(e){return EN?(e.nameEn||e.name):e.name}
 function organizerNames(e){return (e.organizers||[]).map(o=>EN?o.nameEn:o.name).filter(Boolean)}
 function detailPath(e){return EN?(e.detailUrlEn||e.detailUrl):e.detailUrl}
-function detailHref(e){const path=detailPath(e);return path?new URL("./"+path,location.href).href:null}
+function detailHref(e){const path=detailPath(e);return path?(path.startsWith("/")?new URL(path,location.origin).href:new URL("./"+path,location.href).href):null}
 function typeName(e){return EN?e.typeLabelEn:e.typeLabel}
 function categoryName(e){return TXT.dayTypes[e.classification]||TXT.dayTypes.other}
 function eventMatchesFilters(e){
@@ -159,7 +159,7 @@ for(let y=yearStart;y<=yearEnd;y++){const opt=document.createElement("option");o
 function initFilterFromUrl(id,value,allowed){if(allowed.includes(value))$(id).value=value;return $(id).value}
 organization=params.get("org")||"all";
 classification=initFilterFromUrl("status-filter",classification,["all","un","unesco","campaign","national","other"]);
-document.querySelectorAll("[data-language-link]").forEach(a=>{a.addEventListener("click",()=>syncAddress())});
+document.querySelectorAll("[data-language-link]").forEach(a=>{a.addEventListener("click",()=>syncAddress())});\n$("contact-copy").addEventListener("click",async()=>{const status=$("contact-status"),email="vinmatforkids@gmail.com";try{await navigator.clipboard.writeText(email);status.textContent=EN?"Email copied":"E-mail zkopírován"}catch{const input=document.createElement("textarea");input.value=email;input.style.position="fixed";input.style.opacity="0";document.body.append(input);input.select();document.execCommand("copy");input.remove();status.textContent=EN?"Email copied":"E-mail zkopírován"}setTimeout(()=>status.textContent="",2200)});
 document.addEventListener("keydown",e=>{
  if(e.key!=="ArrowLeft"&&e.key!=="ArrowRight")return;
  const active=document.activeElement;if(!active?.matches(".date-btn"))return;
