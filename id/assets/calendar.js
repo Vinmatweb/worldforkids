@@ -157,7 +157,7 @@ const yearSelect=$("year-select");yearSelect.replaceChildren();
 const yearStart=Math.min(2024,todayDate.getFullYear()),yearEnd=Math.max(todayDate.getFullYear()+10,2035);
 for(let y=yearStart;y<=yearEnd;y++){const opt=document.createElement("option");opt.value=String(y);opt.textContent=String(y);yearSelect.append(opt)}
 function initFilterFromUrl(id,value,allowed){if(allowed.includes(value))$(id).value=value;return $(id).value}
-organization=initFilterFromUrl("org-filter",organization,["all"]);
+organization=params.get("org")||"all";
 classification=initFilterFromUrl("status-filter",classification,["all","un","unesco","campaign","national","other"]);
 document.querySelectorAll("[data-language-link]").forEach(a=>{a.addEventListener("click",()=>syncAddress())});
 document.addEventListener("keydown",e=>{
