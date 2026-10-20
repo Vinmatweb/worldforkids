@@ -13,3 +13,20 @@
 .story-panel .activity-list{grid-template-columns:repeat(3,minmax(0,1fr))}.story-jumps{display:flex;gap:10px;flex-wrap:wrap}.story-jumps a{padding:8px 12px;border:1px solid #cddce8;border-radius:999px;background:#f4faff;font-weight:800;text-decoration:none}@media(max-width:820px){.story-panel .activity-list{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:520px){.story-panel .activity-list{grid-template-columns:1fr}}
 
 .social-links{display:flex;align-items:center;gap:7px}.social-links a{display:grid;place-items:center;width:34px;height:34px;color:#275465;border-radius:50%;background:#edf5f4;text-decoration:none;font-weight:900}.social-links a:hover{background:#155f6d;color:#fff}.social-links svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.social-links a:nth-child(2) svg,.social-links a:nth-child(3) svg{fill:currentColor;stroke:none}.social-links .social-dot{fill:currentColor;stroke:none}
+
+/* Event-type distinctions and compact, readable calendar labels */
+.event-chip .event-title{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;overflow-wrap:anywhere}
+.event-chip .event-meta{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.event-chip.is-un{background:#e8f3f7;border-left-color:var(--accent,#3687a0)}
+.event-chip.is-unesco{background:#f0ecf8;border-left-color:var(--accent,#7663a8)}
+.event-chip.is-campaign{background:#e9f4ed;border-left-color:var(--accent,#4f9a78)}
+.event-chip.is-national{background:#fbf0e7;border-left-color:var(--accent,#c77d43)}
+.event-chip.is-other{background:#edf3f7;border-left-color:var(--accent,#6f8ca1)}
+.agenda-info{display:grid;gap:3px;min-width:min(100%,320px)}
+.agenda-date{font-weight:700}
+.agenda-links{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.agenda-links a{font-size:13px}
+.state-key .dot.un{background:#3687a0}.state-key .dot.unesco{background:#7663a8}
+.state-key .dot.campaign{background:#4f9a78}.state-key .dot.national{background:#c77d43}
+.state-key .dot.other{background:#6f8ca1}
+@media(max-width:680px){.day-cell{padding:5px;min-height:96px}.event-chip{padding:5px 5px;font-size:10px}.event-chip .event-meta{font-size:9px}.agenda-item{align-items:flex-start}.agenda-links{width:100%}}

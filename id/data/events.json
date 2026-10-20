@@ -1,259 +1,3264 @@
 {
-  "version": 2,
-  "lastVerified": "2026-10-16",
+  "version": 3,
+  "lastVerified": "2026-10-20",
   "events": [
     {
+      "id": "national-bird-day",
+      "topic": "Ptáci",
+      "name": "Den ptactva (USA)",
+      "nameEn": "National Bird Day",
+      "date2026": {
+        "start": "2026-01-05",
+        "end": "2026-01-05"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 1,
+        "day": 5
+      },
+      "durationDays": 0,
+      "classification": "national",
+      "typeLabel": "Národní den (USA)",
+      "typeLabelEn": "National day · United States",
+      "organizers": [],
+      "origin": {
+        "cs": "USA",
+        "en": "United States"
+      },
+      "detailUrl": null,
+      "sourceUrl": "https://www.worldanimalprotection.org/animal-awareness-days",
+      "accent": "#c77d43"
+    },
+    {
+      "id": "penguin-awareness-day",
+      "topic": "Tučňáci",
+      "name": "Den povědomí o tučňácích",
+      "nameEn": "Penguin Awareness Day",
+      "date2026": {
+        "start": "2026-01-20",
+        "end": "2026-01-20"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 1,
+        "day": 20
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://cincinnatizoo.org/happy-penguin-awareness-day-2/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "international-zebra-day",
+      "topic": "Zebry",
+      "name": "Mezinárodní den zeber",
+      "nameEn": "International Zebra Day",
+      "date2026": {
+        "start": "2026-01-31",
+        "end": "2026-01-31"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 1,
+        "day": 31
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://sdzsafaripark.org/wildlife-awareness-days",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-wetlands-day",
+      "topic": "Mokřady a jejich živočichové",
+      "name": "Světový den mokřadů",
+      "nameEn": "World Wetlands Day",
+      "date2026": {
+        "start": "2026-02-02",
+        "end": "2026-02-02"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 2,
+        "day": 2
+      },
+      "durationDays": 0,
+      "classification": "un",
+      "typeLabel": "Den OSN",
+      "typeLabelEn": "UN observance",
+      "organizers": [
+        {
+          "id": "un",
+          "name": "OSN",
+          "nameEn": "United Nations"
+        }
+      ],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.un.org/observances/list-days-weeks",
+      "accent": "#3687a0"
+    },
+    {
+      "id": "international-day-of-the-arabian-leopard",
+      "topic": "Levhart arabský",
+      "name": "Mezinárodní den levharta arabského",
+      "nameEn": "International Day of the Arabian Leopard",
+      "date2026": {
+        "start": "2026-02-10",
+        "end": "2026-02-10"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 2,
+        "day": 10
+      },
+      "durationDays": 0,
+      "classification": "un",
+      "typeLabel": "Den OSN",
+      "typeLabelEn": "UN observance",
+      "organizers": [
+        {
+          "id": "un",
+          "name": "OSN",
+          "nameEn": "United Nations"
+        }
+      ],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.un.org/observances/list-days-weeks",
+      "accent": "#3687a0"
+    },
+    {
+      "id": "world-bonobo-day",
+      "topic": "Bonobo",
+      "name": "Světový den bonobů",
+      "nameEn": "World Bonobo Day",
+      "date2026": {
+        "start": "2026-02-14",
+        "end": "2026-02-14"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 2,
+        "day": 14
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.bonobos.org/blog/leading-bonobo-nonprofits-merge/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-hippopotamus-day",
+      "topic": "Hroši",
+      "name": "Světový den hrochů",
+      "nameEn": "World Hippopotamus Day",
+      "date2026": {
+        "start": "2026-02-15",
+        "end": "2026-02-15"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 2,
+        "day": 15
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.worldanimalprotection.org/animal-awareness-days",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-whale-day",
+      "topic": "Velryby",
+      "name": "Světový den velryb",
+      "nameEn": "World Whale Day",
+      "date2026": {
+        "start": "2026-02-15",
+        "end": "2026-02-15"
+      },
+      "recurrence": {
+        "type": "nthWeekday",
+        "month": 2,
+        "weekday": 0,
+        "occurrence": 3
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://pacificwhale.org/world-whale-day/?form=FUNLGMCFSLP",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-pangolin-day",
+      "topic": "Luskouni",
+      "name": "Světový den luskounů",
+      "nameEn": "World Pangolin Day",
+      "date2026": {
+        "start": "2026-02-21",
+        "end": "2026-02-21"
+      },
+      "recurrence": {
+        "type": "nthWeekday",
+        "month": 2,
+        "weekday": 6,
+        "occurrence": 3
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://pangolinsg.org/2017/02/18/celebrating-world-pangolin-day-and-five-years-of-the-iucn-ssc-pangolin-specialist-group/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "international-polar-bear-day",
+      "topic": "Medvěd lední",
+      "name": "Mezinárodní den ledních medvědů",
+      "nameEn": "International Polar Bear Day",
+      "date2026": {
+        "start": "2026-02-27",
+        "end": "2026-02-27"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 2,
+        "day": 27
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://polarbearsinternational.org/news-media/events/international-polar-bear-day/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-seagrass-day",
+      "topic": "Mořské louky a jejich živočichové",
+      "name": "Světový den mořských trav",
+      "nameEn": "World Seagrass Day",
+      "date2026": {
+        "start": "2026-03-01",
+        "end": "2026-03-01"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 3,
+        "day": 1
+      },
+      "durationDays": 0,
+      "classification": "un",
+      "typeLabel": "Den OSN",
+      "typeLabelEn": "UN observance",
+      "organizers": [
+        {
+          "id": "un",
+          "name": "OSN",
+          "nameEn": "United Nations"
+        }
+      ],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.un.org/en/observances/seagrass-day",
+      "accent": "#3687a0"
+    },
+    {
       "id": "world-wildlife-day",
+      "topic": "Volně žijící zvířata a rostliny",
       "name": "Světový den divoké přírody",
       "nameEn": "World Wildlife Day",
-      "month": 3,
-      "day": 3,
-      "repeat": "yearly",
-      "organization": "OSN / CITES",
-      "organizationEn": "UN / CITES",
-      "organizationId": "un",
-      "category": "zvířata",
-      "status": "official",
+      "date2026": {
+        "start": "2026-03-03",
+        "end": "2026-03-03"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 3,
+        "day": 3
+      },
+      "durationDays": 0,
+      "classification": "un",
+      "typeLabel": "Den OSN",
+      "typeLabelEn": "UN observance",
+      "organizers": [
+        {
+          "id": "un",
+          "name": "OSN / CITES",
+          "nameEn": "UN / CITES"
+        }
+      ],
+      "origin": null,
       "detailUrl": null,
-      "sourceUrl": "https://www.un.org/en/observances/world-wildlife-day",
+      "sourceUrl": "https://wildlifeday.org/en/about",
       "accent": "#34a792"
     },
     {
+      "id": "world-platypus-day",
+      "topic": "Ptakopysk",
+      "name": "Světový den ptakopysků",
+      "nameEn": "World Platypus Day",
+      "date2026": {
+        "start": "2026-03-07",
+        "end": "2026-03-07"
+      },
+      "recurrence": {
+        "type": "nthWeekday",
+        "month": 3,
+        "weekday": 6,
+        "occurrence": 1
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://sdzsafaripark.org/wildlife-awareness-days",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "national-panda-day",
+      "topic": "Panda velká",
+      "name": "Den pandy velké",
+      "nameEn": "National Panda Day",
+      "date2026": {
+        "start": "2026-03-16",
+        "end": "2026-03-16"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 3,
+        "day": 16
+      },
+      "durationDays": 0,
+      "classification": "national",
+      "typeLabel": "Národní / neoficiální den",
+      "typeLabelEn": "National / unofficial day",
+      "organizers": [],
+      "origin": {
+        "cs": "Původ názvu není znám",
+        "en": "Name origin is unclear"
+      },
+      "detailUrl": null,
+      "sourceUrl": "https://www.worldanimalprotection.org/our-campaigns/sentience/animal-awareness-days/world-panda-day/",
+      "accent": "#c77d43"
+    },
+    {
+      "id": "world-frog-day",
+      "topic": "Žáby",
+      "name": "Světový den žab",
+      "nameEn": "World Frog Day",
+      "date2026": {
+        "start": "2026-03-20",
+        "end": "2026-03-20"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 3,
+        "day": 20
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.worldanimalprotection.org/animal-awareness-days",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-sparrow-day",
+      "topic": "Vrabci",
+      "name": "Světový den vrabců",
+      "nameEn": "World Sparrow Day",
+      "date2026": {
+        "start": "2026-03-20",
+        "end": "2026-03-20"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 3,
+        "day": 20
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.natureforever.org/wildlife-conservation/world-sparrow-day/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "international-day-of-forests",
+      "topic": "Lesy a jejich živočichové",
+      "name": "Mezinárodní den lesů",
+      "nameEn": "International Day of Forests",
+      "date2026": {
+        "start": "2026-03-21",
+        "end": "2026-03-21"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 3,
+        "day": 21
+      },
+      "durationDays": 0,
+      "classification": "un",
+      "typeLabel": "Den OSN",
+      "typeLabelEn": "UN observance",
+      "organizers": [
+        {
+          "id": "un",
+          "name": "OSN",
+          "nameEn": "United Nations"
+        }
+      ],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.un.org/observances/list-days-weeks",
+      "accent": "#3687a0"
+    },
+    {
+      "id": "international-seal-day",
+      "topic": "Tuleni",
+      "name": "Mezinárodní den tuleňů",
+      "nameEn": "International Seal Day",
+      "date2026": {
+        "start": "2026-03-22",
+        "end": "2026-03-22"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 3,
+        "day": 22
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.worldanimalprotection.org/animal-awareness-days",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-water-day",
+      "topic": "Voda a vodní živočichové",
+      "name": "Světový den vody",
+      "nameEn": "World Water Day",
+      "date2026": {
+        "start": "2026-03-22",
+        "end": "2026-03-22"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 3,
+        "day": 22
+      },
+      "durationDays": 0,
+      "classification": "un",
+      "typeLabel": "Den OSN",
+      "typeLabelEn": "UN observance",
+      "organizers": [
+        {
+          "id": "un",
+          "name": "OSN",
+          "nameEn": "United Nations"
+        }
+      ],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.un.org/observances/list-days-weeks",
+      "accent": "#3687a0"
+    },
+    {
+      "id": "world-bear-day",
+      "topic": "Medvědi",
+      "name": "Světový den medvědů",
+      "nameEn": "World Bear Day",
+      "date2026": {
+        "start": "2026-03-23",
+        "end": "2026-03-23"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 3,
+        "day": 23
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.worldanimalprotection.org/our-campaigns/sentience/animal-awareness-days/world-bear-day/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "manatee-appreciation-day",
+      "topic": "Kapustňáci",
+      "name": "Den povědomí o kapustňácích",
+      "nameEn": "Manatee Appreciation Day",
+      "date2026": {
+        "start": "2026-03-25",
+        "end": "2026-03-25"
+      },
+      "recurrence": {
+        "type": "lastWeekday",
+        "month": 3,
+        "weekday": 3
+      },
+      "durationDays": 0,
+      "classification": "campaign",
+      "typeLabel": "Osvětová iniciativa (původ USA)",
+      "typeLabelEn": "Awareness initiative · United States origin",
+      "organizers": [],
+      "origin": {
+        "cs": "USA",
+        "en": "United States"
+      },
+      "detailUrl": null,
+      "sourceUrl": "https://www.worldanimalprotection.org/animal-awareness-days",
+      "accent": "#4f9a78"
+    },
+    {
+      "id": "world-aquatic-animal-day",
+      "topic": "Vodní živočichové",
+      "name": "Světový den vodních živočichů",
+      "nameEn": "World Aquatic Animal Day",
+      "date2026": {
+        "start": "2026-04-03",
+        "end": "2026-04-03"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 4,
+        "day": 3
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://law.lclark.edu/centers/animal_law_studies/animal_law_clinics/aali/worldaquaticanimalday/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-civet-day",
+      "topic": "Cibetky",
+      "name": "Světový den cibetek",
+      "nameEn": "World Civet Day",
+      "date2026": {
+        "start": "2026-04-04",
+        "end": "2026-04-04"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 4,
+        "day": 4
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.thecivetproject.com/worldcivetday",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-stray-animals-day",
+      "topic": "Zvířata bez domova",
+      "name": "Světový den zvířat bez domova",
+      "nameEn": "World Stray Animals Day",
+      "date2026": {
+        "start": "2026-04-04",
+        "end": "2026-04-04"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 4,
+        "day": 4
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.worldanimalprotection.org/animal-awareness-days",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "international-beaver-day",
+      "topic": "Bobři",
+      "name": "Mezinárodní den bobrů",
+      "nameEn": "International Beaver Day",
+      "date2026": {
+        "start": "2026-04-07",
+        "end": "2026-04-07"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 4,
+        "day": 7
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.beaversww.org/international-beaver-day/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "international-bat-appreciation-day",
+      "topic": "Netopýři",
+      "name": "Den povědomí o netopýrech",
+      "nameEn": "International Bat Appreciation Day",
+      "date2026": {
+        "start": "2026-04-17",
+        "end": "2026-04-17"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 4,
+        "day": 17
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://sdzsafaripark.org/wildlife-awareness-days",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "international-mother-earth-day",
+      "topic": "Příroda a zvířata",
+      "name": "Mezinárodní den Matky Země",
+      "nameEn": "International Mother Earth Day",
+      "date2026": {
+        "start": "2026-04-22",
+        "end": "2026-04-22"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 4,
+        "day": 22
+      },
+      "durationDays": 0,
+      "classification": "un",
+      "typeLabel": "Den OSN",
+      "typeLabelEn": "UN observance",
+      "organizers": [
+        {
+          "id": "un",
+          "name": "OSN",
+          "nameEn": "United Nations"
+        }
+      ],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.un.org/observances/list-days-weeks",
+      "accent": "#3687a0"
+    },
+    {
+      "id": "international-pallas-s-cat-day",
+      "topic": "Manul",
+      "name": "Mezinárodní den manulů",
+      "nameEn": "International Pallas’s Cat Day",
+      "date2026": {
+        "start": "2026-04-23",
+        "end": "2026-04-23"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 4,
+        "day": 23
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://pallascats.org/education/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-penguin-day",
+      "topic": "Tučňáci",
+      "name": "Světový den tučňáků",
+      "nameEn": "World Penguin Day",
+      "date2026": {
+        "start": "2026-04-25",
+        "end": "2026-04-25"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 4,
+        "day": 25
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.worldanimalprotection.org/our-campaigns/sentience/animal-awareness-days/world-penguin-day/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-veterinary-day",
+      "topic": "Veterinární péče o zvířata",
+      "name": "Světový den veterinárních lékařů",
+      "nameEn": "World Veterinary Day",
+      "date2026": {
+        "start": "2026-04-25",
+        "end": "2026-04-25"
+      },
+      "recurrence": {
+        "type": "lastWeekday",
+        "month": 4,
+        "weekday": 6
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní profesní den",
+      "typeLabelEn": "International professional day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://worldvet.org/news/wva-theme-for-world-veterinary-day-2026-veterinarians-guardians-of-food-and-health/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "international-flamingo-day",
+      "topic": "Plameňáci",
+      "name": "Mezinárodní den plameňáků",
+      "nameEn": "International Flamingo Day",
+      "date2026": {
+        "start": "2026-04-26",
+        "end": "2026-04-26"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 4,
+        "day": 26
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://sdzsafaripark.org/wildlife-awareness-days",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "international-hyena-day",
+      "topic": "Hyeny",
+      "name": "Mezinárodní den hyen",
+      "nameEn": "International Hyena Day",
+      "date2026": {
+        "start": "2026-04-27",
+        "end": "2026-04-27"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 4,
+        "day": 27
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.worldanimalprotection.org/animal-awareness-days",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-tapir-day",
+      "topic": "Tapíři",
+      "name": "Světový den tapírů",
+      "nameEn": "World Tapir Day",
+      "date2026": {
+        "start": "2026-04-27",
+        "end": "2026-04-27"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 4,
+        "day": 27
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://english.tpedoit.gov.taipei/News_Content.aspx?n=9DE3AECE53F4FA2B&s=28E40D908636947E&sms=DFFA119D1FD5602C",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-tuna-day",
+      "topic": "Tuňáci",
+      "name": "Světový den tuňáků",
+      "nameEn": "World Tuna Day",
+      "date2026": {
+        "start": "2026-05-02",
+        "end": "2026-05-02"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 5,
+        "day": 2
+      },
+      "durationDays": 0,
+      "classification": "un",
+      "typeLabel": "Den OSN",
+      "typeLabelEn": "UN observance",
+      "organizers": [
+        {
+          "id": "un",
+          "name": "OSN",
+          "nameEn": "United Nations"
+        }
+      ],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.un.org/observances/list-days-weeks",
+      "accent": "#3687a0"
+    },
+    {
+      "id": "international-leopard-day",
+      "topic": "Levharti",
+      "name": "Mezinárodní den levhartů",
+      "nameEn": "International Leopard Day",
+      "date2026": {
+        "start": "2026-05-03",
+        "end": "2026-05-03"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 5,
+        "day": 3
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.internationalleopardday.org/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "wild-koala-day",
+      "topic": "Koala",
+      "name": "Den volně žijících koal",
+      "nameEn": "Wild Koala Day",
+      "date2026": {
+        "start": "2026-05-03",
+        "end": "2026-05-03"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 5,
+        "day": 3
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.wildkoaladay.com.au/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-donkey-day",
+      "topic": "Osli",
+      "name": "Světový den oslů",
+      "nameEn": "World Donkey Day",
+      "date2026": {
+        "start": "2026-05-08",
+        "end": "2026-05-08"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 5,
+        "day": 8
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.worldanimalprotection.org/animal-awareness-days",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-binturong-day",
+      "topic": "Binturong",
+      "name": "Světový den binturongů",
+      "nameEn": "World Binturong Day",
+      "date2026": {
+        "start": "2026-05-09",
+        "end": "2026-05-09"
+      },
+      "recurrence": {
+        "type": "nthWeekday",
+        "month": 5,
+        "weekday": 6,
+        "occurrence": 2
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.abconservation.org/en/projects/world-binturong-day/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-migratory-bird-day-may",
+      "topic": "Stěhovaví ptáci",
+      "name": "Světový den stěhovavých ptáků – květen",
+      "nameEn": "World Migratory Bird Day – May",
+      "date2026": {
+        "start": "2026-05-09",
+        "end": "2026-05-09"
+      },
+      "recurrence": {
+        "type": "nthWeekday",
+        "month": 5,
+        "weekday": 6,
+        "occurrence": 2
+      },
+      "durationDays": 0,
+      "classification": "campaign",
+      "typeLabel": "Kampaň UNEP / CMS / AEWA",
+      "typeLabelEn": "UNEP / CMS / AEWA campaign",
+      "organizers": [
+        {
+          "id": "unep",
+          "name": "UNEP",
+          "nameEn": "UNEP"
+        },
+        {
+          "id": "cms",
+          "name": "CMS",
+          "nameEn": "CMS"
+        },
+        {
+          "id": "aewa",
+          "name": "AEWA",
+          "nameEn": "AEWA"
+        }
+      ],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.worldmigratorybirdday.org/assets/files/WMBD_2026_Campaign_Toolkit_en.pdf",
+      "accent": "#4f9a78"
+    },
+    {
+      "id": "endangered-species-day",
+      "topic": "Ohrožené druhy",
+      "name": "Den ohrožených druhů",
+      "nameEn": "Endangered Species Day",
+      "date2026": {
+        "start": "2026-05-15",
+        "end": "2026-05-15"
+      },
+      "recurrence": {
+        "type": "nthWeekday",
+        "month": 5,
+        "weekday": 5,
+        "occurrence": 3
+      },
+      "durationDays": 0,
+      "classification": "campaign",
+      "typeLabel": "Ochranářská iniciativa (původ USA)",
+      "typeLabelEn": "Conservation initiative · United States origin",
+      "organizers": [],
+      "origin": {
+        "cs": "USA",
+        "en": "United States"
+      },
+      "detailUrl": null,
+      "sourceUrl": "https://www.endangered.org/u-s-celebrates-endangered-species-day-on-friday/",
+      "accent": "#4f9a78"
+    },
+    {
       "id": "world-bee-day",
+      "topic": "Včely",
       "name": "Světový den včel",
       "nameEn": "World Bee Day",
-      "month": 5,
-      "day": 20,
-      "repeat": "yearly",
-      "organization": "OSN / FAO",
-      "organizationEn": "UN / FAO",
-      "organizationId": "un",
-      "category": "zvířata",
-      "status": "official",
+      "date2026": {
+        "start": "2026-05-20",
+        "end": "2026-05-20"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 5,
+        "day": 20
+      },
+      "durationDays": 0,
+      "classification": "un",
+      "typeLabel": "Den OSN",
+      "typeLabelEn": "UN observance",
+      "organizers": [
+        {
+          "id": "un",
+          "name": "OSN / FAO",
+          "nameEn": "UN / FAO"
+        }
+      ],
+      "origin": null,
       "detailUrl": null,
-      "sourceUrl": "https://www.un.org/en/observances/list-days-weeks",
+      "sourceUrl": "https://www.un.org/observances/list-days-weeks",
       "accent": "#e2a02b"
     },
     {
+      "id": "world-tree-kangaroo-day",
+      "topic": "Klokani stromoví",
+      "name": "Světový den stromových klokanů",
+      "nameEn": "World Tree Kangaroo Day",
+      "date2026": {
+        "start": "2026-05-21",
+        "end": "2026-05-21"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 5,
+        "day": 21
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://sdzsafaripark.org/wildlife-awareness-days",
+      "accent": "#6f8ca1"
+    },
+    {
       "id": "biodiversity-day",
+      "topic": "Biodiverzita",
       "name": "Mezinárodní den biologické rozmanitosti",
       "nameEn": "International Day for Biological Diversity",
-      "month": 5,
-      "day": 22,
-      "repeat": "yearly",
-      "organization": "OSN / CBD",
-      "organizationEn": "UN / CBD",
-      "organizationId": "un",
-      "category": "příroda",
-      "status": "official",
+      "date2026": {
+        "start": "2026-05-22",
+        "end": "2026-05-22"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 5,
+        "day": 22
+      },
+      "durationDays": 0,
+      "classification": "un",
+      "typeLabel": "Den OSN",
+      "typeLabelEn": "UN observance",
+      "organizers": [
+        {
+          "id": "un",
+          "name": "OSN / CBD",
+          "nameEn": "UN / CBD"
+        }
+      ],
+      "origin": null,
       "detailUrl": null,
-      "sourceUrl": "https://www.un.org/en/observances/biological-diversity-day",
+      "sourceUrl": "https://www.un.org/observances/list-days-weeks",
       "accent": "#4baf83"
     },
     {
+      "id": "world-fish-migration-day",
+      "topic": "Migrující ryby",
+      "name": "Světový den migrace ryb",
+      "nameEn": "World Fish Migration Day",
+      "date2026": {
+        "start": "2026-05-23",
+        "end": "2026-05-23"
+      },
+      "recurrence": {
+        "type": "specificYear",
+        "year": 2026
+      },
+      "durationDays": 0,
+      "classification": "campaign",
+      "typeLabel": "Mezinárodní ochranářská kampaň",
+      "typeLabelEn": "International conservation campaign",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://worldfishmigrationday.com/events/",
+      "accent": "#4f9a78"
+    },
+    {
+      "id": "world-turtle-day",
+      "topic": "Želvy",
+      "name": "Světový den želv",
+      "nameEn": "World Turtle Day",
+      "date2026": {
+        "start": "2026-05-23",
+        "end": "2026-05-23"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 5,
+        "day": 23
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://worldturtleday.org/press/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-otter-day",
+      "topic": "Vydry",
+      "name": "Světový den vyder",
+      "nameEn": "World Otter Day",
+      "date2026": {
+        "start": "2026-05-27",
+        "end": "2026-05-27"
+      },
+      "recurrence": {
+        "type": "lastWeekday",
+        "month": 5,
+        "weekday": 3
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.otter.org/world-otter-day?rq=+World+Otter+Day",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-dugong-day",
+      "topic": "Dugong",
+      "name": "Světový den dugongů",
+      "nameEn": "World Dugong Day",
+      "date2026": {
+        "start": "2026-05-28",
+        "end": "2026-05-28"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 5,
+        "day": 28
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://coraltrianglecenter.org/world-dugong-day-discovering-the-unique-dugong-and-conservation-efforts-in-maluku/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-parrot-day",
+      "topic": "Papoušci",
+      "name": "Světový den papoušků",
+      "nameEn": "World Parrot Day",
+      "date2026": {
+        "start": "2026-05-31",
+        "end": "2026-05-31"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 5,
+        "day": 31
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://iucn.org/story/202405/celebrating-world-parrot-day-introducing-iucn-ssc-wild-parrot-specialist-group-boost",
+      "accent": "#6f8ca1"
+    },
+    {
       "id": "environment-day",
+      "topic": "Příroda a životní prostředí",
       "name": "Světový den životního prostředí",
       "nameEn": "World Environment Day",
-      "month": 6,
-      "day": 5,
-      "repeat": "yearly",
-      "organization": "OSN / UNEP",
-      "organizationEn": "UN / UNEP",
-      "organizationId": "un",
-      "category": "příroda",
-      "status": "official",
+      "date2026": {
+        "start": "2026-06-05",
+        "end": "2026-06-05"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 6,
+        "day": 5
+      },
+      "durationDays": 0,
+      "classification": "un",
+      "typeLabel": "Den OSN",
+      "typeLabelEn": "UN observance",
+      "organizers": [
+        {
+          "id": "un",
+          "name": "OSN / UNEP",
+          "nameEn": "UN / UNEP"
+        }
+      ],
+      "origin": null,
       "detailUrl": null,
-      "sourceUrl": "https://www.un.org/en/observances/world-environment-day",
+      "sourceUrl": "https://www.unesco.org/en/days/list?hub=180536",
       "accent": "#3f9a78"
     },
     {
       "id": "oceans-day",
+      "topic": "Oceány a mořští živočichové",
       "name": "Světový den oceánů",
       "nameEn": "World Oceans Day",
-      "month": 6,
-      "day": 8,
-      "repeat": "yearly",
-      "organization": "OSN",
-      "organizationEn": "United Nations",
-      "organizationId": "un",
-      "category": "příroda",
-      "status": "official",
+      "date2026": {
+        "start": "2026-06-08",
+        "end": "2026-06-08"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 6,
+        "day": 8
+      },
+      "durationDays": 0,
+      "classification": "un",
+      "typeLabel": "Den OSN",
+      "typeLabelEn": "UN observance",
+      "organizers": [
+        {
+          "id": "un",
+          "name": "OSN",
+          "nameEn": "United Nations"
+        }
+      ],
+      "origin": null,
       "detailUrl": null,
-      "sourceUrl": "https://www.un.org/en/observances/world-oceans-day",
+      "sourceUrl": "https://www.un.org/observances/list-days-weeks",
       "accent": "#58a7ce"
     },
     {
+      "id": "international-lynx-day",
+      "topic": "Rysi",
+      "name": "Mezinárodní den rysů",
+      "nameEn": "International Lynx Day",
+      "date2026": {
+        "start": "2026-06-11",
+        "end": "2026-06-11"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 6,
+        "day": 11
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.balkanlynx.com/en",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "national-cougar-day",
+      "topic": "Puma",
+      "name": "Den pumy",
+      "nameEn": "National Cougar Day",
+      "date2026": {
+        "start": "2026-06-12",
+        "end": "2026-06-12"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 6,
+        "day": 12
+      },
+      "durationDays": 0,
+      "classification": "national",
+      "typeLabel": "Národní den (USA)",
+      "typeLabelEn": "National day · United States",
+      "organizers": [],
+      "origin": {
+        "cs": "USA",
+        "en": "United States"
+      },
+      "detailUrl": null,
+      "sourceUrl": "https://sdzsafaripark.org/wildlife-awareness-days",
+      "accent": "#c77d43"
+    },
+    {
+      "id": "world-sea-turtle-day",
+      "topic": "Mořské želvy",
+      "name": "Světový den mořských želv",
+      "nameEn": "World Sea Turtle Day",
+      "date2026": {
+        "start": "2026-06-16",
+        "end": "2026-06-16"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 6,
+        "day": 16
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.galapagos.org/newsroom/celebrating-world-sea-turtle-day/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-croc-day",
+      "topic": "Krokodýli",
+      "name": "Světový den krokodýlů",
+      "nameEn": "World Croc Day",
+      "date2026": {
+        "start": "2026-06-17",
+        "end": "2026-06-17"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 6,
+        "day": 17
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://crocodileresearchcoalition.org/world-croc-day",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-albatross-day",
+      "topic": "Albatrosi",
+      "name": "Světový den albatrosů",
+      "nameEn": "World Albatross Day",
+      "date2026": {
+        "start": "2026-06-19",
+        "end": "2026-06-19"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 6,
+        "day": 19
+      },
+      "durationDays": 0,
+      "classification": "campaign",
+      "typeLabel": "Iniciativa mezivládní dohody ACAP",
+      "typeLabelEn": "ACAP intergovernmental agreement initiative",
+      "organizers": [
+        {
+          "id": "acap",
+          "name": "ACAP",
+          "nameEn": "ACAP"
+        }
+      ],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://acap.aq/world-albatross-day/introduction-to-world-albatross-day",
+      "accent": "#4f9a78"
+    },
+    {
+      "id": "international-horseshoe-crab-day",
+      "topic": "Ostrorepi",
+      "name": "Mezinárodní den ostrorepů",
+      "nameEn": "International Horseshoe Crab Day",
+      "date2026": {
+        "start": "2026-06-20",
+        "end": "2026-06-20"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 6,
+        "day": 20
+      },
+      "durationDays": 0,
+      "classification": "campaign",
+      "typeLabel": "Iniciativa IUCN SSC",
+      "typeLabelEn": "IUCN SSC initiative",
+      "organizers": [
+        {
+          "id": "iucn-ssc",
+          "name": "IUCN SSC",
+          "nameEn": "IUCN SSC"
+        }
+      ],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://iucn.org/sites/default/files/2023-09/2022-iucn-ssc-horseshoe-crab-sg-report_publication.pdf",
+      "accent": "#4f9a78"
+    },
+    {
+      "id": "world-giraffe-day",
+      "topic": "Žirafy",
+      "name": "Světový den žiraf",
+      "nameEn": "World Giraffe Day",
+      "date2026": {
+        "start": "2026-06-21",
+        "end": "2026-06-21"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 6,
+        "day": 21
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://sdzsafaripark.org/wildlife-awareness-days",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-camel-day",
+      "topic": "Velbloudi",
+      "name": "Světový den velbloudů",
+      "nameEn": "World Camel Day",
+      "date2026": {
+        "start": "2026-06-22",
+        "end": "2026-06-22"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 6,
+        "day": 22
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.fao.org/camelids-2024/events/list/1/en",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-meerkat-day",
+      "topic": "Surikaty",
+      "name": "Světový den surikat",
+      "nameEn": "World Meerkat Day",
+      "date2026": {
+        "start": "2026-07-03",
+        "end": "2026-07-03"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 7,
+        "day": 3
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://zooatlanta.org/meerklass-a-review/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-horse-day",
+      "topic": "Kůň",
+      "name": "Světový den koní",
+      "nameEn": "World Horse Day",
+      "date2026": {
+        "start": "2026-07-11",
+        "end": "2026-07-11"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 7,
+        "day": 11
+      },
+      "durationDays": 0,
+      "classification": "un",
+      "typeLabel": "Den OSN",
+      "typeLabelEn": "UN observance",
+      "organizers": [
+        {
+          "id": "un",
+          "name": "OSN",
+          "nameEn": "United Nations"
+        }
+      ],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.un.org/en/observances/horse-day",
+      "accent": "#3687a0"
+    },
+    {
+      "id": "shark-awareness-day",
+      "topic": "Žraloci",
+      "name": "Den povědomí o žralocích",
+      "nameEn": "Shark Awareness Day",
+      "date2026": {
+        "start": "2026-07-14",
+        "end": "2026-07-14"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 7,
+        "day": 14
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://saveourseas.com/update/save-the-sharks-to-keep-oceans-healthy/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-chimpanzee-day",
+      "topic": "Šimpanzi",
+      "name": "Světový den šimpanzů",
+      "nameEn": "World Chimpanzee Day",
+      "date2026": {
+        "start": "2026-07-14",
+        "end": "2026-07-14"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 7,
+        "day": 14
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://worldchimpanzeeday.org/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-orca-day",
+      "topic": "Kosatky",
+      "name": "Světový den kosatek",
+      "nameEn": "World Orca Day",
+      "date2026": {
+        "start": "2026-07-14",
+        "end": "2026-07-14"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 7,
+        "day": 14
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.portseattle.org/blog/heres-what-you-can-do-protect-orcas",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-snake-day",
+      "topic": "Hadi",
+      "name": "Světový den hadů",
+      "nameEn": "World Snake Day",
+      "date2026": {
+        "start": "2026-07-16",
+        "end": "2026-07-16"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 7,
+        "day": 16
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.worldanimalprotection.org/our-campaigns/sentience/animal-awareness-days/world-snake-day/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-echidna-day",
+      "topic": "Ježury",
+      "name": "Světový den ježur",
+      "nameEn": "World Echidna Day",
+      "date2026": {
+        "start": "2026-07-19",
+        "end": "2026-07-19"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 7,
+        "day": 19
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://sdzsafaripark.org/wildlife-awareness-days",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "international-day-for-the-conservation-of-the-mangrove-ecosystem",
+      "topic": "Mangrovy a jejich živočichové",
+      "name": "Mezinárodní den ochrany mangrovových ekosystémů",
+      "nameEn": "International Day for the Conservation of the Mangrove Ecosystem",
+      "date2026": {
+        "start": "2026-07-26",
+        "end": "2026-07-26"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 7,
+        "day": 26
+      },
+      "durationDays": 0,
+      "classification": "unesco",
+      "typeLabel": "Den UNESCO",
+      "typeLabelEn": "UNESCO observance",
+      "organizers": [
+        {
+          "id": "unesco",
+          "name": "UNESCO",
+          "nameEn": "UNESCO"
+        }
+      ],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.unesco.org/en/days/list?hub=180536",
+      "accent": "#7663a8"
+    },
+    {
+      "id": "international-tiger-day",
+      "topic": "Tygři",
+      "name": "Mezinárodní den tygrů",
+      "nameEn": "International Tiger Day",
+      "date2026": {
+        "start": "2026-07-29",
+        "end": "2026-07-29"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 7,
+        "day": 29
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://sdzsafaripark.org/wildlife-awareness-days",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "international-clouded-leopard-day",
+      "topic": "Levhart obláčkový",
+      "name": "Mezinárodní den levhartů obláčkových",
+      "nameEn": "International Clouded Leopard Day",
+      "date2026": {
+        "start": "2026-08-04",
+        "end": "2026-08-04"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 8,
+        "day": 4
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://cincinnatizoo.org/international-clouded-leopard-day/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "international-owl-awareness-day",
+      "topic": "Sovy",
+      "name": "Mezinárodní den povědomí o sovách",
+      "nameEn": "International Owl Awareness Day",
+      "date2026": {
+        "start": "2026-08-04",
+        "end": "2026-08-04"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 8,
+        "day": 4
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://delawarestateparks.blog/2021/08/06/burrowing-owls-practice-their-nesting-skills-at-the-brandywine-zoo/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "international-cat-day",
+      "topic": "Kočky",
+      "name": "Mezinárodní den koček",
+      "nameEn": "International Cat Day",
+      "date2026": {
+        "start": "2026-08-08",
+        "end": "2026-08-08"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 8,
+        "day": 8
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://icatcare.org/resources/icatcare_annual_review_2024.pdf",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "international-moon-bear-day",
+      "topic": "Medvěd ušatý",
+      "name": "Mezinárodní den medvědů ušatých",
+      "nameEn": "International Moon Bear Day",
+      "date2026": {
+        "start": "2026-08-08",
+        "end": "2026-08-08"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 8,
+        "day": 8
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.animalsasia.org/key-issues/what-is-a-moon-bear/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-lion-day",
+      "topic": "Lvi",
+      "name": "Světový den lvů",
+      "nameEn": "World Lion Day",
+      "date2026": {
+        "start": "2026-08-10",
+        "end": "2026-08-10"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 8,
+        "day": 10
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.londonzoo.org/zoo-stories/news/asiatic-lions-get-their-paws-world-lion-day-2026",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-elephant-day",
+      "topic": "Sloni",
+      "name": "Světový den slonů",
+      "nameEn": "World Elephant Day",
+      "date2026": {
+        "start": "2026-08-12",
+        "end": "2026-08-12"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 8,
+        "day": 12
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://sdzsafaripark.org/wildlife-awareness-days",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-hirola-day",
+      "topic": "Hirola",
+      "name": "Světový den hirol",
+      "nameEn": "World Hirola Day",
+      "date2026": {
+        "start": "2026-08-12",
+        "end": "2026-08-12"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 8,
+        "day": 12
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.worldanimalprotection.org/animal-awareness-days",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "international-wolf-day",
+      "topic": "Vlci",
+      "name": "Mezinárodní den vlků",
+      "nameEn": "International Wolf Day",
+      "date2026": {
+        "start": "2026-08-13",
+        "end": "2026-08-13"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 8,
+        "day": 13
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.worldanimalprotection.org/our-campaigns/sentience/animal-awareness-days/international-wolf-day/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-lizard-day",
+      "topic": "Ještěři",
+      "name": "Světový den ještěrů",
+      "nameEn": "World Lizard Day",
+      "date2026": {
+        "start": "2026-08-14",
+        "end": "2026-08-14"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 8,
+        "day": 14
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.akronzoo.org/blog/we-skinking-love-world-lizard-day",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "international-orangutan-day",
+      "topic": "Orangutani",
+      "name": "Mezinárodní den orangutanů",
+      "nameEn": "International Orangutan Day",
+      "date2026": {
+        "start": "2026-08-19",
+        "end": "2026-08-19"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 8,
+        "day": 19
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.azaorangutansafe.org/toolkit",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "national-dog-day-international-dog-day",
+      "topic": "Psi",
+      "name": "Den psů",
+      "nameEn": "National Dog Day / International Dog Day",
+      "date2026": {
+        "start": "2026-08-26",
+        "end": "2026-08-26"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 8,
+        "day": 26
+      },
+      "durationDays": 0,
+      "classification": "campaign",
+      "typeLabel": "Osvětová iniciativa (původ USA)",
+      "typeLabelEn": "Awareness initiative · United States origin",
+      "organizers": [],
+      "origin": {
+        "cs": "USA",
+        "en": "United States"
+      },
+      "detailUrl": null,
+      "sourceUrl": "https://www.colleenpaige.com/",
+      "accent": "#4f9a78"
+    },
+    {
+      "id": "world-african-wild-dog-day",
+      "topic": "Pes hyenový",
+      "name": "Světový den psů hyenových",
+      "nameEn": "World African Wild Dog Day",
+      "date2026": {
+        "start": "2026-08-26",
+        "end": "2026-08-26"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 8,
+        "day": 26
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://pilanesbergwildlifetrust.co.za/wp-content/uploads/2024/09/PWT-July-August-Newsletter-2024.pdf",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-lake-day",
+      "topic": "Jezera a jejich živočichové",
+      "name": "Světový den jezer",
+      "nameEn": "World Lake Day",
+      "date2026": {
+        "start": "2026-08-27",
+        "end": "2026-08-27"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 8,
+        "day": 27
+      },
+      "durationDays": 0,
+      "classification": "un",
+      "typeLabel": "Den OSN",
+      "typeLabelEn": "UN observance",
+      "organizers": [
+        {
+          "id": "un",
+          "name": "OSN",
+          "nameEn": "United Nations"
+        }
+      ],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://press.un.org/en/2024/ga12668.doc.htm",
+      "accent": "#3687a0"
+    },
+    {
+      "id": "international-bat-night",
+      "topic": "Netopýři",
+      "name": "Mezinárodní noc pro netopýry",
+      "nameEn": "International Bat Night",
+      "date2026": {
+        "start": "2026-08-29",
+        "end": "2026-08-30"
+      },
+      "recurrence": {
+        "type": "lastFullWeekend",
+        "month": 8
+      },
+      "durationDays": 1,
+      "classification": "campaign",
+      "typeLabel": "Kampaň UNEP/EUROBATS",
+      "typeLabelEn": "UNEP / EUROBATS campaign",
+      "organizers": [
+        {
+          "id": "unep",
+          "name": "UNEP",
+          "nameEn": "UNEP"
+        },
+        {
+          "id": "eurobats",
+          "name": "EUROBATS",
+          "nameEn": "EUROBATS"
+        }
+      ],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.eurobats.org/international-bat-night",
+      "accent": "#4f9a78"
+    },
+    {
+      "id": "international-whale-shark-day",
+      "topic": "Žralok obrovský",
+      "name": "Mezinárodní den žraloků obrovských",
+      "nameEn": "International Whale Shark Day",
+      "date2026": {
+        "start": "2026-08-30",
+        "end": "2026-08-30"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 8,
+        "day": 30
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.aquarium.co.za/news/whale-sharks",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "international-primate-day",
+      "topic": "Primáti",
+      "name": "Mezinárodní den primátů",
+      "nameEn": "International Primate Day",
+      "date2026": {
+        "start": "2026-09-01",
+        "end": "2026-09-01"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 9,
+        "day": 1
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.worldanimalprotection.org/our-campaigns/sentience/animal-awareness-days/international-primate-day/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "international-vulture-awareness-day",
+      "topic": "Supi",
+      "name": "Mezinárodní den povědomí o supech",
+      "nameEn": "International Vulture Awareness Day",
+      "date2026": {
+        "start": "2026-09-05",
+        "end": "2026-09-05"
+      },
+      "recurrence": {
+        "type": "nthWeekday",
+        "month": 9,
+        "weekday": 6,
+        "occurrence": 1
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://sdzsafaripark.org/wildlife-awareness-days",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-shorebirds-day",
+      "topic": "Bahňáci",
+      "name": "Světový den bahňáků",
+      "nameEn": "World Shorebirds Day",
+      "date2026": {
+        "start": "2026-09-06",
+        "end": "2026-09-06"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 9,
+        "day": 6
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.worldshorebirdsday.org/world-shorebirds-day-2026/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-dolphin-day",
+      "topic": "Delfíni",
+      "name": "Světový den delfínů",
+      "nameEn": "World Dolphin Day",
+      "date2026": {
+        "start": "2026-09-12",
+        "end": "2026-09-12"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 9,
+        "day": 12
+      },
+      "durationDays": 0,
+      "classification": "campaign",
+      "typeLabel": "Ochranářská iniciativa Sea Shepherd",
+      "typeLabelEn": "Sea Shepherd conservation initiative",
+      "organizers": [
+        {
+          "id": "sea-shepherd",
+          "name": "Sea Shepherd",
+          "nameEn": "Sea Shepherd"
+        }
+      ],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.seashepherdglobal.org/latest-news/world-dolphin-day/",
+      "accent": "#4f9a78"
+    },
+    {
+      "id": "world-manta-day",
+      "topic": "Manty",
+      "name": "Světový den mant",
+      "nameEn": "World Manta Day",
+      "date2026": {
+        "start": "2026-09-17",
+        "end": "2026-09-17"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 9,
+        "day": 17
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.mantatrust.org/save-the-mantas",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "international-red-panda-day",
+      "topic": "Panda červená",
+      "name": "Mezinárodní den pand červených",
+      "nameEn": "International Red Panda Day",
+      "date2026": {
+        "start": "2026-09-19",
+        "end": "2026-09-19"
+      },
+      "recurrence": {
+        "type": "nthWeekday",
+        "month": 9,
+        "weekday": 6,
+        "occurrence": 3
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://redpandanetwork.org/international-red-panda-day",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-rhino-day",
+      "topic": "Nosorožci",
+      "name": "Světový den nosorožců",
+      "nameEn": "World Rhino Day",
+      "date2026": {
+        "start": "2026-09-22",
+        "end": "2026-09-22"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 9,
+        "day": 22
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://sdzsafaripark.org/wildlife-awareness-days",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-gorilla-day",
+      "topic": "Gorily",
+      "name": "Světový den goril",
+      "nameEn": "World Gorilla Day",
+      "date2026": {
+        "start": "2026-09-24",
+        "end": "2026-09-24"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 9,
+        "day": 24
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://sdzsafaripark.org/wildlife-awareness-days",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "international-rabbit-day",
+      "topic": "Králíci",
+      "name": "Mezinárodní den králíků",
+      "nameEn": "International Rabbit Day",
+      "date2026": {
+        "start": "2026-09-26",
+        "end": "2026-09-26"
+      },
+      "recurrence": {
+        "type": "nthWeekday",
+        "month": 9,
+        "weekday": 6,
+        "occurrence": 4
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://rabbit.org/activism/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-cassowary-day",
+      "topic": "Kasuáři",
+      "name": "Světový den kasuárů",
+      "nameEn": "World Cassowary Day",
+      "date2026": {
+        "start": "2026-09-26",
+        "end": "2026-09-26"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 9,
+        "day": 26
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://sdzsafaripark.org/wildlife-awareness-days",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-rivers-day",
+      "topic": "Řeky a jejich živočichové",
+      "name": "Světový den řek",
+      "nameEn": "World Rivers Day",
+      "date2026": {
+        "start": "2026-09-27",
+        "end": "2026-09-27"
+      },
+      "recurrence": {
+        "type": "nthWeekday",
+        "month": 9,
+        "weekday": 0,
+        "occurrence": 4
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://worldriversday.com/about/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-rabies-day",
+      "topic": "Zvířata a prevence vztekliny",
+      "name": "Světový den boje proti vzteklině",
+      "nameEn": "World Rabies Day",
+      "date2026": {
+        "start": "2026-09-28",
+        "end": "2026-09-28"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 9,
+        "day": 28
+      },
+      "durationDays": 0,
+      "classification": "campaign",
+      "typeLabel": "Osvětová kampaň GARC / WHO",
+      "typeLabelEn": "GARC / WHO awareness campaign",
+      "organizers": [
+        {
+          "id": "garc",
+          "name": "GARC",
+          "nameEn": "GARC"
+        },
+        {
+          "id": "who",
+          "name": "WHO",
+          "nameEn": "WHO"
+        }
+      ],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.who.int/news-room/events/detail/2026/09/28/default-calendar/world-rabies-day-2026",
+      "accent": "#4f9a78"
+    },
+    {
+      "id": "international-raccoon-appreciation-day",
+      "topic": "Mývalové",
+      "name": "Mezinárodní den povědomí o mývalech",
+      "nameEn": "International Raccoon Appreciation Day",
+      "date2026": {
+        "start": "2026-10-01",
+        "end": "2026-10-01"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 10,
+        "day": 1
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Neoficiální osvětový den",
+      "typeLabelEn": "Unofficial awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://nhpbs.org/learnathome/?resource=6964",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-farmed-animals-day",
+      "topic": "Hospodářská zvířata",
+      "name": "Světový den hospodářských zvířat",
+      "nameEn": "World Farmed Animals Day",
+      "date2026": {
+        "start": "2026-10-02",
+        "end": "2026-10-02"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 10,
+        "day": 2
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.worldanimalprotection.org/our-campaigns/sentience/animal-awareness-days/world-farmed-animals-day/",
+      "accent": "#6f8ca1"
+    },
+    {
       "id": "world-animal-day",
+      "topic": "Všechna zvířata",
       "name": "Světový den zvířat",
       "nameEn": "World Animal Day",
-      "month": 10,
-      "day": 4,
-      "repeat": "yearly",
-      "organization": "Naturewatch Foundation (koordinátor)",
-      "organizationEn": "Naturewatch Foundation (coordinator)",
-      "organizationId": "naturewatch",
-      "category": "zvířata",
-      "status": "other",
+      "date2026": {
+        "start": "2026-10-04",
+        "end": "2026-10-04"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 10,
+        "day": 4
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [
+        {
+          "id": "naturewatch",
+          "name": "Naturewatch Foundation (koordinátor)",
+          "nameEn": "Naturewatch Foundation (coordinator)"
+        }
+      ],
+      "origin": null,
       "detailUrl": null,
       "sourceUrl": "https://www.worldanimalday.org/about-us/",
-      "secondarySourceUrl": "https://naturewatch.org/campaigns/world-animal-day/",
-      "accent": "#e39c5e"
+      "accent": "#e39c5e",
+      "secondarySourceUrl": "https://naturewatch.org/campaigns/world-animal-day/"
+    },
+    {
+      "id": "world-octopus-day",
+      "topic": "Chobotnice",
+      "name": "Světový den chobotnic",
+      "nameEn": "World Octopus Day",
+      "date2026": {
+        "start": "2026-10-08",
+        "end": "2026-10-08"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 10,
+        "day": 8
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.project1882.org/about/press-centre",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-migratory-bird-day-october",
+      "topic": "Stěhovaví ptáci",
+      "name": "Světový den stěhovavých ptáků – říjen",
+      "nameEn": "World Migratory Bird Day – October",
+      "date2026": {
+        "start": "2026-10-10",
+        "end": "2026-10-10"
+      },
+      "recurrence": {
+        "type": "nthWeekday",
+        "month": 10,
+        "weekday": 6,
+        "occurrence": 2
+      },
+      "durationDays": 0,
+      "classification": "campaign",
+      "typeLabel": "Kampaň UNEP / CMS / AEWA",
+      "typeLabelEn": "UNEP / CMS / AEWA campaign",
+      "organizers": [
+        {
+          "id": "unep",
+          "name": "UNEP",
+          "nameEn": "UNEP"
+        },
+        {
+          "id": "cms",
+          "name": "CMS",
+          "nameEn": "CMS"
+        },
+        {
+          "id": "aewa",
+          "name": "AEWA",
+          "nameEn": "AEWA"
+        }
+      ],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.worldmigratorybirdday.org/assets/files/WMBD_2026_Campaign_Toolkit_en.pdf",
+      "accent": "#4f9a78"
     },
     {
       "id": "international-sawfish-day",
-      "name": "Mezinárodní den pilouna",
+      "topic": "Piloun",
+      "name": "Mezinárodní den pilounů",
       "nameEn": "International Sawfish Day",
-      "month": 10,
-      "day": 17,
-      "repeat": "yearly",
-      "organization": "Sawfish Conservation Society; AZA SSP a EAZA",
-      "organizationEn": "Sawfish Conservation Society; AZA SSP and EAZA",
-      "organizationId": "sawfish-partners",
-      "category": "zvířata",
-      "status": "other",
+      "date2026": {
+        "start": "2026-10-17",
+        "end": "2026-10-17"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 10,
+        "day": 17
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [
+        {
+          "id": "sawfish-partners",
+          "name": "Sawfish Conservation Society; AZA SSP a EAZA",
+          "nameEn": "Sawfish Conservation Society; AZA SSP and EAZA"
+        }
+      ],
+      "origin": null,
       "detailUrl": "sawfish/",
+      "sourceUrl": "https://internationalsawfishday.org/",
+      "accent": "#248e91",
+      "detailUrlEn": "sawfish/",
       "collectionIds": [
         "international-days-sawfish"
       ],
-      "sourceUrl": "https://www.sawfishconservationsociety.org/international-sawfish-day",
-      "secondarySourceUrl": "https://www.fisheries.noaa.gov/feature-story/international-sawfish-day-october-17",
-      "accent": "#248e91"
+      "secondarySourceUrl": "https://www.fisheries.noaa.gov/feature-story/international-sawfish-day-october-17"
     },
     {
       "id": "world-okapi-day",
+      "topic": "Okapi",
       "name": "Světový den okapi",
       "nameEn": "World Okapi Day",
-      "month": 10,
-      "day": 18,
-      "repeat": "yearly",
-      "organization": "Wildlife Conservation Society (první ročník); Okapi Conservation Project",
-      "organizationEn": "Wildlife Conservation Society (inaugural event); Okapi Conservation Project",
-      "organizationId": "okapi-conservation",
-      "category": "zvířata",
-      "status": "other",
+      "date2026": {
+        "start": "2026-10-18",
+        "end": "2026-10-18"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 10,
+        "day": 18
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [
+        {
+          "id": "okapi-conservation",
+          "name": "Wildlife Conservation Society (první ročník); Okapi Conservation Project",
+          "nameEn": "Wildlife Conservation Society (inaugural event); Okapi Conservation Project"
+        }
+      ],
+      "origin": null,
       "detailUrl": null,
-      "sourceUrl": "https://blog.wcs.org/photo/2016/10/18/world-okapi-day-bronx-zoo-africa/",
-      "secondarySourceUrl": "https://www.okapiconservation.org/world-okapi-day",
-      "accent": "#aa754e"
+      "sourceUrl": "https://sdzsafaripark.org/wildlife-awareness-days",
+      "accent": "#aa754e",
+      "secondarySourceUrl": "https://www.okapiconservation.org/world-okapi-day"
     },
     {
       "id": "international-sloth-day",
+      "topic": "Lenochod",
       "name": "Mezinárodní den lenochodů",
       "nameEn": "International Sloth Day",
-      "month": 10,
-      "day": 20,
-      "repeat": "yearly",
-      "organization": "Sloth Conservation Foundation (SloCo)",
-      "organizationEn": "Sloth Conservation Foundation (SloCo)",
-      "organizationId": "sloco",
-      "category": "zvířata",
-      "status": "other",
+      "date2026": {
+        "start": "2026-10-20",
+        "end": "2026-10-20"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 10,
+        "day": 20
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [
+        {
+          "id": "sloco",
+          "name": "Sloth Conservation Foundation (SloCo)",
+          "nameEn": "Sloth Conservation Foundation (SloCo)"
+        }
+      ],
+      "origin": null,
       "detailUrl": null,
       "sourceUrl": "https://www.slothconservation.org/international-sloth-day",
       "accent": "#74a46c"
     },
     {
       "id": "world-earthworm-day",
+      "topic": "Žížala",
       "name": "Světový den žížal",
       "nameEn": "World Earthworm Day",
-      "month": 10,
-      "day": 21,
-      "repeat": "yearly",
-      "organization": "Earthworm Society of Britain",
-      "organizationEn": "Earthworm Society of Britain",
-      "organizationId": "earthworm-society",
-      "category": "zvířata",
-      "status": "other",
+      "date2026": {
+        "start": "2026-10-21",
+        "end": "2026-10-21"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 10,
+        "day": 21
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [
+        {
+          "id": "earthworm-society",
+          "name": "Earthworm Society of Britain",
+          "nameEn": "Earthworm Society of Britain"
+        }
+      ],
+      "origin": null,
       "detailUrl": null,
       "sourceUrl": "https://www.earthwormsoc.org.uk/worldwormday",
       "accent": "#a86b4e"
     },
     {
       "id": "international-wombat-day",
-      "name": "Mezinárodní den vombatů",
+      "topic": "Vombat",
+      "name": "Den vombatů",
       "nameEn": "International Wombat Day",
-      "month": 10,
-      "day": 22,
-      "repeat": "yearly",
-      "organization": "Nezávislá připomínková událost",
-      "organizationEn": "Independent awareness day",
-      "organizationId": "community",
-      "category": "zvířata",
-      "status": "other",
+      "date2026": {
+        "start": "2026-10-22",
+        "end": "2026-10-22"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 10,
+        "day": 22
+      },
+      "durationDays": 0,
+      "classification": "campaign",
+      "typeLabel": "Australská osvětová iniciativa",
+      "typeLabelEn": "Australian awareness initiative",
+      "organizers": [
+        {
+          "id": "community",
+          "name": "Nezávislá připomínková událost",
+          "nameEn": "Independent awareness day"
+        }
+      ],
+      "origin": {
+        "cs": "Austrálie",
+        "en": "Australia"
+      },
       "detailUrl": null,
-      "sourceUrl": "https://www.wombatday.com/",
-      "secondarySourceUrl": "https://www.worldanimalprotection.org/our-campaigns/sentience/animal-awareness-days/international-wombat-day/",
-      "accent": "#bc8156"
+      "sourceUrl": "https://www.parks.vic.gov.au/news/2025/10/21/01/38/celebrating-world-wombat-day",
+      "accent": "#bc8156",
+      "secondarySourceUrl": "https://www.worldanimalprotection.org/our-campaigns/sentience/animal-awareness-days/international-wombat-day/"
     },
     {
       "id": "snow-leopard-day",
+      "topic": "Levhart sněžný (irbis)",
       "name": "Mezinárodní den levharta sněžného",
       "nameEn": "International Day of the Snow Leopard",
-      "month": 10,
-      "day": 23,
-      "repeat": "yearly",
-      "organization": "OSN (Valné shromáždění); GSLEP (původní iniciativa)",
-      "organizationEn": "United Nations General Assembly; GSLEP (original initiative)",
-      "organizationId": "un",
-      "category": "zvířata",
-      "status": "official",
+      "date2026": {
+        "start": "2026-10-23",
+        "end": "2026-10-23"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 10,
+        "day": 23
+      },
+      "durationDays": 0,
+      "classification": "un",
+      "typeLabel": "Den OSN",
+      "typeLabelEn": "UN observance",
+      "organizers": [
+        {
+          "id": "un",
+          "name": "OSN (Valné shromáždění); GSLEP (původní iniciativa)",
+          "nameEn": "United Nations General Assembly; GSLEP (original initiative)"
+        }
+      ],
+      "origin": null,
       "detailUrl": "irbis/",
-      "collectionId": "international-days-snow-leopard",
+      "sourceUrl": "https://www.unep.org/en/events/un-day/international-day-snow-leopard-2025",
+      "accent": "#587bac",
+      "detailUrlEn": "../irbis/",
       "collectionIds": [
         "international-days-snow-leopard"
       ],
-      "sourceUrl": "https://www.un.org/en/observances/snow-leopard-day",
-      "secondarySourceUrl": "https://globalsnowleopard.org/bishkek-declaration/",
-      "accent": "#587bac",
-      "detailUrlEn": "../irbis/"
+      "secondarySourceUrl": "https://globalsnowleopard.org/bishkek-declaration/"
     },
     {
       "id": "freshwater-dolphin-day",
+      "topic": "Sladkovodní delfín",
       "name": "Mezinárodní den sladkovodních delfínů",
-      "nameEn": "International Freshwater Dolphin Day",
-      "month": 10,
-      "day": 24,
-      "repeat": "yearly",
-      "organization": "World Animal Protection",
-      "organizationEn": "World Animal Protection",
-      "organizationId": "world-animal-protection",
-      "category": "zvířata",
-      "status": "other",
+      "nameEn": "Freshwater Dolphin Day",
+      "date2026": {
+        "start": "2026-10-24",
+        "end": "2026-10-24"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 10,
+        "day": 24
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [
+        {
+          "id": "world-animal-protection",
+          "name": "World Animal Protection",
+          "nameEn": "World Animal Protection"
+        }
+      ],
+      "origin": null,
       "detailUrl": null,
-      "sourceUrl": "https://www.worldanimalprotection.org/our-campaigns/sentience/animal-awareness-days/freshwater-dolphin-day/",
+      "sourceUrl": "https://www.wwf.org.kh/our_work/public_awareness_and_advocacy/freshwater_dolphin_day/",
       "accent": "#4b8db9"
     },
     {
       "id": "international-gibbon-day",
+      "topic": "Gibon",
       "name": "Mezinárodní den gibonů",
       "nameEn": "International Gibbon Day",
-      "month": 10,
-      "day": 24,
-      "repeat": "yearly",
-      "organization": "IUCN SSC Section on Small Apes (odborná sekce)",
-      "organizationEn": "IUCN SSC Section on Small Apes (expert group)",
-      "organizationId": "iucn-small-apes",
-      "category": "zvířata",
-      "status": "other",
+      "date2026": {
+        "start": "2026-10-24",
+        "end": "2026-10-24"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 10,
+        "day": 24
+      },
+      "durationDays": 0,
+      "classification": "campaign",
+      "typeLabel": "Iniciativa IUCN / ochranářských organizací",
+      "typeLabelEn": "IUCN and conservation organisations initiative",
+      "organizers": [
+        {
+          "id": "iucn-small-apes",
+          "name": "IUCN SSC Section on Small Apes (odborná sekce)",
+          "nameEn": "IUCN SSC Section on Small Apes (expert group)"
+        }
+      ],
+      "origin": null,
       "detailUrl": null,
-      "sourceUrl": "https://gibbons.asia/international-gibbon-day/",
+      "sourceUrl": "https://iucn.org/news/species/202012/establishment-global-gibbon-network-initiative",
       "accent": "#7764a6"
     },
     {
+      "id": "world-kangaroo-day",
+      "topic": "Klokani",
+      "name": "Světový den klokanů",
+      "nameEn": "World Kangaroo Day",
+      "date2026": {
+        "start": "2026-10-24",
+        "end": "2026-10-24"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 10,
+        "day": 24
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://sdzsafaripark.org/wildlife-awareness-days",
+      "accent": "#6f8ca1"
+    },
+    {
       "id": "world-lemur-day",
+      "topic": "Lemur",
       "name": "Světový den lemurů",
       "nameEn": "World Lemur Day",
-      "month": 10,
-      "repeat": "lastFriday",
-      "repeatLabel": "poslední pátek v říjnu",
-      "organization": "Lemur Conservation Network; GERP Madagascar",
-      "organizationEn": "Lemur Conservation Network; GERP Madagascar",
-      "organizationId": "lemur-network",
-      "category": "zvířata",
-      "status": "other",
+      "date2026": {
+        "start": "2026-10-30",
+        "end": "2026-10-30"
+      },
+      "recurrence": {
+        "type": "lastWeekday",
+        "month": 10,
+        "weekday": 5
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [
+        {
+          "id": "lemur-network",
+          "name": "Lemur Conservation Network; GERP Madagascar",
+          "nameEn": "Lemur Conservation Network; GERP Madagascar"
+        }
+      ],
+      "origin": null,
       "detailUrl": null,
       "sourceUrl": "https://www.lemurconservationnetwork.org/world-lemur-day/",
       "accent": "#ca8158"
+    },
+    {
+      "id": "world-basking-shark-day",
+      "topic": "Žralok veliký",
+      "name": "Světový den žraloků velikých",
+      "nameEn": "World Basking Shark Day",
+      "date2026": {
+        "start": "2026-11-03",
+        "end": "2026-11-03"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 11,
+        "day": 3
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://baskingsharkscotland.co.uk/basking-sharks/world-basking-shark-day/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-jellyfish-day",
+      "topic": "Medúzy",
+      "name": "Světový den medúz",
+      "nameEn": "World Jellyfish Day",
+      "date2026": {
+        "start": "2026-11-03",
+        "end": "2026-11-03"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 11,
+        "day": 3
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.visitsealife.com/london/information/news/world-jellyfish-day-2024/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "national-bison-day",
+      "topic": "Bizon americký",
+      "name": "Národní den bizonů (USA)",
+      "nameEn": "National Bison Day",
+      "date2026": {
+        "start": "2026-11-07",
+        "end": "2026-11-07"
+      },
+      "recurrence": {
+        "type": "nthWeekday",
+        "month": 11,
+        "weekday": 6,
+        "occurrence": 1
+      },
+      "durationDays": 0,
+      "classification": "national",
+      "typeLabel": "Národní den (USA)",
+      "typeLabelEn": "National day · United States",
+      "organizers": [],
+      "origin": {
+        "cs": "USA",
+        "en": "United States"
+      },
+      "detailUrl": null,
+      "sourceUrl": "https://www.nps.gov/subjects/bison/people.htm",
+      "accent": "#c77d43"
+    },
+    {
+      "id": "world-numbat-day",
+      "topic": "Mravencojed žíhaný (numbat)",
+      "name": "Světový den numbatů",
+      "nameEn": "World Numbat Day",
+      "date2026": {
+        "start": "2026-11-07",
+        "end": "2026-11-07"
+      },
+      "recurrence": {
+        "type": "nthWeekday",
+        "month": 11,
+        "weekday": 6,
+        "occurrence": 1
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.numbat.org.au/news/2026/10/14/world-numbat-day-quiz-night-7th-november",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-falconry-day",
+      "topic": "Dravci – sokolnictví",
+      "name": "Světový den sokolnictví",
+      "nameEn": "World Falconry Day",
+      "date2026": {
+        "start": "2026-11-16",
+        "end": "2026-11-16"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 11,
+        "day": 16
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní profesní / kulturní den",
+      "typeLabelEn": "International professional / cultural day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://education.iaf.org/our-programs/iaf-school-links-program/about-islp/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-anteater-day",
+      "topic": "Mravenečníci",
+      "name": "Světový den mravenečníků",
+      "nameEn": "World Anteater Day",
+      "date2026": {
+        "start": "2026-11-19",
+        "end": "2026-11-19"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 11,
+        "day": 19
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.worldanimalprotection.org/our-campaigns/sentience/animal-awareness-days/world-anteater-day/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-fisheries-day",
+      "topic": "Ryby – udržitelný rybolov",
+      "name": "Světový den rybolovu",
+      "nameEn": "World Fisheries Day",
+      "date2026": {
+        "start": "2026-11-21",
+        "end": "2026-11-21"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 11,
+        "day": 21
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní tematický den",
+      "typeLabelEn": "International thematic day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.fao.org/in-action/blue-ports-initiative/news/news-detail/recognizing-the-role-of-fishing-ports-on-world-fisheries-day/en",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "international-jaguar-day",
+      "topic": "Jaguár",
+      "name": "Mezinárodní den jaguárů",
+      "nameEn": "International Jaguar Day",
+      "date2026": {
+        "start": "2026-11-29",
+        "end": "2026-11-29"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 11,
+        "day": 29
+      },
+      "durationDays": 0,
+      "classification": "campaign",
+      "typeLabel": "Mezinárodní ochranářská iniciativa",
+      "typeLabelEn": "International conservation initiative",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.undp.org/press-releases/latin-america-launches-new-roadmap-save-jaguar",
+      "accent": "#4f9a78"
+    },
+    {
+      "id": "world-coati-day",
+      "topic": "Nosálové",
+      "name": "Světový den nosálů",
+      "nameEn": "World Coati Day",
+      "date2026": {
+        "start": "2026-12-03",
+        "end": "2026-12-03"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 12,
+        "day": 3
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://worldcoatiday.org/about-wcd/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "international-cheetah-day",
+      "topic": "Gepard",
+      "name": "Mezinárodní den gepardů",
+      "nameEn": "International Cheetah Day",
+      "date2026": {
+        "start": "2026-12-04",
+        "end": "2026-12-04"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 12,
+        "day": 4
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://cheetah.org/about/what-we-do/international-cheetah-day/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "wildlife-conservation-day",
+      "topic": "Volně žijící zvířata – ochrana",
+      "name": "Den ochrany volně žijících zvířat",
+      "nameEn": "Wildlife Conservation Day",
+      "date2026": {
+        "start": "2026-12-04",
+        "end": "2026-12-04"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 12,
+        "day": 4
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.worldanimalprotection.org/our-campaigns/sentience/animal-awareness-days/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "world-soil-day",
+      "topic": "Půdní živočichové",
+      "name": "Světový den půdy",
+      "nameEn": "World Soil Day",
+      "date2026": {
+        "start": "2026-12-05",
+        "end": "2026-12-05"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 12,
+        "day": 5
+      },
+      "durationDays": 0,
+      "classification": "un",
+      "typeLabel": "Den OSN",
+      "typeLabelEn": "UN observance",
+      "organizers": [
+        {
+          "id": "un",
+          "name": "OSN",
+          "nameEn": "United Nations"
+        }
+      ],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.fao.org/world-soil-day/en",
+      "accent": "#3687a0"
+    },
+    {
+      "id": "international-animal-rights-day",
+      "topic": "Zvířata – práva a dobré životní podmínky",
+      "name": "Mezinárodní den práv zvířat",
+      "nameEn": "International Animal Rights Day",
+      "date2026": {
+        "start": "2026-12-10",
+        "end": "2026-12-10"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 12,
+        "day": 10
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Mezinárodní osvětový den",
+      "typeLabelEn": "International awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.worldanimalprotection.org/our-campaigns/sentience/animal-awareness-days/international-animal-rights-day/",
+      "accent": "#6f8ca1"
+    },
+    {
+      "id": "international-mountain-day",
+      "topic": "Hory a jejich živočichové",
+      "name": "Mezinárodní den hor",
+      "nameEn": "International Mountain Day",
+      "date2026": {
+        "start": "2026-12-11",
+        "end": "2026-12-11"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 12,
+        "day": 11
+      },
+      "durationDays": 0,
+      "classification": "un",
+      "typeLabel": "Den OSN",
+      "typeLabelEn": "UN observance",
+      "organizers": [
+        {
+          "id": "un",
+          "name": "OSN",
+          "nameEn": "United Nations"
+        }
+      ],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://www.fao.org/mountain-partnership/events/international-mountain-day/en",
+      "accent": "#3687a0"
+    },
+    {
+      "id": "monkey-day",
+      "topic": "Opice",
+      "name": "Den opic",
+      "nameEn": "Monkey Day",
+      "date2026": {
+        "start": "2026-12-14",
+        "end": "2026-12-14"
+      },
+      "recurrence": {
+        "type": "fixedDate",
+        "month": 12,
+        "day": 14
+      },
+      "durationDays": 0,
+      "classification": "other",
+      "typeLabel": "Neoficiální osvětový den",
+      "typeLabelEn": "Unofficial awareness day",
+      "organizers": [],
+      "origin": null,
+      "detailUrl": null,
+      "sourceUrl": "https://beardsleyzoo.org/events/international-monkey-day-86tlc5gc/",
+      "accent": "#6f8ca1"
     }
   ]
 }

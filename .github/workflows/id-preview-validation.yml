@@ -3,6 +3,7 @@ name: International Days preview validation
 on:
   push:
     branches:
+      - main
       - preview/international-days-2026
     paths:
       - 'id/**'
@@ -28,14 +29,18 @@ jobs:
       - name: Validate JavaScript and JSON
         run: |
           node --check id/assets/calendar.js
+          node --check id/assets/calendar-dates.mjs
           node --check id/assets/activities.js
           node --check id/tests/browser-smoke.mjs
+          node --check id/tests/calendar-dates.mjs
+          node id/tests/calendar-dates.mjs
           node -e "const e=require('./id/data/events.json'); const a=require('./id/data/activities.json'); if(!e.events.length||!Array.isArray(a.activities))process.exit(1)"
       - name: Verify noindex and no ad scripts
         run: |
           grep -q 'name="robots" content="noindex,follow"' id/index.html
+          grep -q 'name="robots" content="noindex,follow"' id/en/index.html
           grep -q 'name="robots" content="noindex,follow"' id/irbis/index.html
-          ! grep -Ei 'googlesyndication|adsbygoogle|googletagmanager' id/index.html id/irbis/index.html
+          ! grep -Ei 'googlesyndication|adsbygoogle|googletagmanager' id/index.html id/en/index.html id/irbis/index.html
       - name: Install isolated browser test dependency
         run: |
           npm install --no-save --package-lock=false playwright
@@ -45,5 +50,5 @@ jobs:
           python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/id-preview-server.log 2>&1 &
           sleep 2
           curl -fsS http://127.0.0.1:8765/id/ >/dev/null
-      - name: Browser smoke tests desktop and mobile
+      - name: Browser smoke tests desktop, tablet and mobile
         run: node id/tests/browser-smoke.mjs
