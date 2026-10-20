@@ -11,13 +11,13 @@ const W=lang==="en"?{
 };
 const el=(tag,cls,txt)=>{const x=document.createElement(tag);if(cls)x.className=cls;if(txt)x.textContent=txt;return x};
 let activities=null,activitiesPromise=null,opener=null,scrollY=0;
-const version=url=>url+(url.includes("?")?"&":"?")+"v=20261020-irbis-trace-v1";
+const version=url=>url+(url.includes("?")?"&":"?")+"v=20261020-irbis-content-v1";
 function dialog(){
  let d=document.getElementById("saw-art-dialog");if(d)return d;
  d=document.createElement("dialog");d.id="saw-art-dialog";d.setAttribute("aria-labelledby","saw-art-title");
  const head=el("div","saw-dialog-head"),title=el("h2","saw-dialog-title");title.id="saw-art-title";
  const close=el("button","saw-dialog-close","×");close.type="button";close.setAttribute("aria-label",W.close);close.addEventListener("click",()=>d.close());head.append(title,close);
- const layout=el("div","saw-dialog-layout"),view=el("div","saw-dialog-view"),img=el("img","saw-dialog-image"),printImg=el("img","saw-dialog-print-image"),err=el("p","saw-print-error",W.error);
+ const layout=el("div","saw-dialog-layout"),view=el("div","saw-dialog-view"),img=el("img","saw-dialog-image"),printImg=el("img","saw-dialog-print-image"),err=el("p","saw-print-status",W.error);
  img.alt="";printImg.alt="";err.hidden=true;err.setAttribute("role","status");err.setAttribute("aria-live","polite");view.append(img,printImg,err);
  const side=el("aside","saw-dialog-side"),levels=el("div","saw-levels"),levelLabel=el("strong","",W.difficulty);levels.append(levelLabel);const levelButtons=[];
  for(let n=1;n<=5;n++){const b=el("button","",W.level+" "+n);b.type="button";b.dataset.levelChoice=String(n);levels.append(b);levelButtons.push(b)}
@@ -38,7 +38,7 @@ function dialog(){
      document.body.dataset.printOrientation=asset.orientation||"portrait";
      d.pageRule.textContent="@page{size:A4 "+(asset.orientation||"portrait")+";margin:0}";
      window.print();
-   }catch(e){printImg.removeAttribute("src");err.textContent=W.error;err.hidden=false}
+   }catch(e){printImg.removeAttribute("src");err.className="saw-print-status saw-print-error";err.textContent=W.error;err.hidden=false}
    finally{print.disabled=false}
  });
  actions.append(download,print);side.append(levels,modes,actions);layout.append(view,side);d.append(head,layout);document.body.append(d);
@@ -59,12 +59,12 @@ function setMode(d,mode){
  else if(p.kind==="basic")item=activities.basic.find(x=>x.level===p.level);
  const v=item&&item[mode];if(!v){p.mode="bw";mode="bw";item=p.kind==="card"?activities.cards.find(x=>x.level===p.level)[lang]:p.kind==="basic"?activities.basic.find(x=>x.level===p.level):p.item}
  const variant=item&&item[mode];if(!variant)return;
- p.mode=mode;p.item=item;p.variant=variant;p.title.textContent=titleFor(p.kind,item,p.level);p.img.src=version(base+variant.preview);p.img.alt=p.title.textContent;p.printImg.removeAttribute("src");p.err.hidden=true;
+ p.mode=mode;p.item=item;p.variant=variant;p.title.textContent=titleFor(p.kind,item,p.level);p.img.src=version(base+variant.preview);p.img.alt=p.title.textContent;p.printImg.removeAttribute("src");p.err.className="saw-print-status";p.err.hidden=true;
  p.download.href=version(base+variant.download);p.download.download=variant.name;
  [[p.color,"color"],[p.bw,"bw"],[p.trace,"trace"]].forEach(([b,m])=>{b.hidden=!item[m];b.classList.toggle("selected",m===mode);b.setAttribute("aria-pressed",String(m===mode))});
 }
 function open(button){
- if(!activities){if(activitiesPromise)activitiesPromise.then(()=>open(button)).catch(()=>{});return}const d=dialog(),p=d.parts;opener=button;scrollY=window.scrollY;p.err.hidden=true;p.printImg.removeAttribute("src");
+ if(!activities){if(activitiesPromise)activitiesPromise.then(()=>open(button)).catch(()=>{});return}const d=dialog(),p=d.parts;opener=button;scrollY=window.scrollY;p.err.className="saw-print-status";p.err.hidden=true;p.printImg.removeAttribute("src");
  p.kind=button.hasAttribute("data-basic-open")?"basic":button.hasAttribute("data-card-level")?"card":"story";
  p.level=p.kind==="basic"?Number(button.dataset.level||5):p.kind==="card"?Number(button.dataset.cardLevel||2):0;
  p.item=p.kind==="story"?activities.stories.find(x=>x.id===button.dataset.storyId):null;p.mode=button.dataset.mode||"color";
