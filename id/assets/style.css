@@ -30,3 +30,36 @@
 .state-key .dot.campaign{background:#4f9a78}.state-key .dot.national{background:#c77d43}
 .state-key .dot.other{background:#6f8ca1}
 @media(max-width:680px){.day-cell{padding:5px;min-height:96px}.event-chip{padding:5px 5px;font-size:10px}.event-chip .event-meta{font-size:9px}.agenda-item{align-items:flex-start}.agenda-links{width:100%}}
+
+/* Calendar refinements: native hidden state, consistent category colors, direct period selection. */
+#weekdays[hidden]{display:none!important}
+.period-pickers{display:flex;align-items:center;gap:6px}
+.period-select{min-height:43px;border:1px solid #cddce8;border-radius:13px;background:#fff;padding:8px 10px;color:#193d58;font-weight:700}
+#month-select{min-width:108px}
+#year-select{min-width:82px}
+.home-link{color:#d9effb!important}
+.event-chip.is-un{border-left-color:#3687a0;background:#e8f3f7}
+.event-chip.is-unesco{border-left-color:#7663a8;background:#f0ecf8}
+.event-chip.is-campaign{border-left-color:#4f9a78;background:#e9f4ed}
+.event-chip.is-national{border-left-color:#c77d43;background:#fbf0e7}
+.event-chip.is-other{border-left-color:#6f8ca1;background:#edf3f7}
+.dot.un{background:#3687a0}
+.dot.unesco{background:#7663a8}
+.dot.campaign{background:#4f9a78}
+.dot.national{background:#c77d43}
+.dot.other{background:#6f8ca1}
+.footer-contact{border:0;background:transparent;color:#446f8c;font:700 13px system-ui,sans-serif;padding:0;cursor:pointer}
+.footer-contact:hover{color:#244f78;text-decoration:underline}
+.footer-contact-status{font-size:12px;color:#526e80;margin-left:6px}
+@media(max-width:680px){
+ .period-select{min-height:40px;padding:7px 8px;font-size:13px}
+ #month-select{min-width:96px}
+ #year-select{min-width:72px}
+ .section-head .calendar-controls{justify-content:center;gap:6px}
+ .calendar-controls #period-label{flex-basis:100%;order:2;text-align:center;font-size:14px}
+ .calendar-controls #today{order:0}
+ .calendar-controls #prev{order:1}
+ .calendar-controls .period-pickers{order:2}
+ .calendar-controls #next{order:3}
+ .calendar-controls #period-label{order:4}
+}
