@@ -47,6 +47,7 @@ try{
  await page.locator('[data-view="week"]').click();
  assert.equal(await page.locator('.day-cell').count(),7);
  assert.equal(await page.locator('#agenda-title').innerText(),'24. října 2026');
+ await page.locator('[data-view="month"]').click();
  await page.locator('#year-select').selectOption('2027');
  assert.match(await page.locator('#period-label').innerText(),/říjen 2027/i);
  assert.equal(await page.locator('#total-count').innerText(),'123 událostí v roce 2027');
