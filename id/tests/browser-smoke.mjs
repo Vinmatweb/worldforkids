@@ -54,7 +54,6 @@ try{
  assert.match(await page.locator('#period-label').innerText(),/únor 2027/i);
  await page.locator('#year-select').selectOption('2026');
  await page.locator('#month-select').selectOption('9');
- await page.locator('#day-date-placeholder').count().catch(()=>{}); // no-op sentinel for a date-boundary selection below
  await page.locator('#month-select').selectOption('11');
  await page.locator('[data-view="month"]').click();
  await page.locator('[data-date="2026-12-31"]').click();
@@ -74,7 +73,6 @@ try{
  await page.locator('#org-filter').selectOption('all');
  await page.locator('#status-filter').selectOption('all');
  await page.locator('#month-select').selectOption('11');
- await page.locator('#day-date-placeholder').count().catch(()=>{});
  await page.locator('[data-date="2026-12-04"]').click();
  await page.locator('#org-filter').selectOption('cheetah-conservation-fund');
  await page.locator('#status-filter').selectOption('other');
