@@ -178,3 +178,15 @@ fetch(new URL("../data/events.json?v=20261020-calendar-fixes-v1",import.meta.url
   organization=initFilterFromUrl("org-filter",organization,["all",...[...map.keys()]]);
   render();
  }).catch(()=>{$("cal-grid").replaceChildren(el("p","error",TXT.loadError))});
+
+/* Shared privacy-friendly pageview analytics for vinmat.eu. */
+(function () {
+    'use strict';
+    if (window.__vinmatGoatCounterLoaded) return;
+    window.__vinmatGoatCounterLoaded = true;
+    const tag = document.createElement('script');
+    tag.async = true;
+    tag.src = 'https://gc.zgo.at/count.js';
+    tag.dataset.goatcounter = 'https://vinmat.goatcounter.com/count';
+    document.head.appendChild(tag);
+}());
