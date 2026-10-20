@@ -11,7 +11,7 @@ const W=lang==="en"?{
 };
 const el=(tag,cls,txt)=>{const x=document.createElement(tag);if(cls)x.className=cls;if(txt)x.textContent=txt;return x};
 let activities=null,activitiesPromise=null,opener=null,scrollY=0;
-const version=url=>url+(url.includes("?")?"&":"?")+"v=20261019-irbis-v1";
+const version=url=>url+(url.includes("?")?"&":"?")+"v=20261020-irbis-trace-v1";
 function dialog(){
  let d=document.getElementById("saw-art-dialog");if(d)return d;
  d=document.createElement("dialog");d.id="saw-art-dialog";d.setAttribute("aria-labelledby","saw-art-title");
