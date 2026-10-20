@@ -87,7 +87,7 @@ try{
  await page.locator('#status-filter').selectOption('all');
  await page.locator('#month-select').selectOption('9');
  await page.locator('[data-date="2026-10-23"]').click();
- const snowEvent=page.locator('.event-chip').filter({hasText:'International Snow Leopard Day'});
+ const snowEvent=page.locator('.event-chip').filter({hasText:'International Day of the Snow Leopard'});
  assert.equal(new URL(await snowEvent.getAttribute('href')).pathname,'/worldforkids/id/en/irbis/');
  assert.equal(await page.locator('a[href="./irbis/"]').count(),1);
  await page.locator('#today').click();
