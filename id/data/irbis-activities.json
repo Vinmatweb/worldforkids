@@ -15,6 +15,13 @@
         "print": "lv1_gpt_4101_1_en-irbis-coloring-page.png",
         "download": "lv1_gpt_4101_1_en-irbis-coloring-page.png",
         "name": "snehovy-levhart-omalovanka-LV1-cs-omalovanka.png"
+      },
+      "trace": {
+        "preview": "previews/irbis-tracing-lv1.webp",
+        "print": "lv1_gpt_4101_1_en-irbis-coloring-page-obtahovacka-uroven-1.png",
+        "download": "lv1_gpt_4101_1_en-irbis-coloring-page-obtahovacka-uroven-1.png",
+        "name": "levhart-snezny-obtahovacka-LV1-cs-en.png",
+        "orientation": "portrait"
       }
     },
     {
@@ -30,6 +37,13 @@
         "print": "lv2_gpt_4101_1_en-irbis-coloring-page.png",
         "download": "lv2_gpt_4101_1_en-irbis-coloring-page.png",
         "name": "snehovy-levhart-omalovanka-LV2-cs-omalovanka.png"
+      },
+      "trace": {
+        "preview": "previews/irbis-tracing-lv2.webp",
+        "print": "lv2_gpt_4101_1_en-irbis-coloring-page-obtahovacka-uroven-2.png",
+        "download": "lv2_gpt_4101_1_en-irbis-coloring-page-obtahovacka-uroven-2.png",
+        "name": "levhart-snezny-obtahovacka-LV2-cs-en.png",
+        "orientation": "portrait"
       }
     },
     {
@@ -45,6 +59,13 @@
         "print": "lv3_gpt_4101_1_en-irbis-coloring-page.png",
         "download": "lv3_gpt_4101_1_en-irbis-coloring-page.png",
         "name": "snehovy-levhart-omalovanka-LV3-cs-omalovanka.png"
+      },
+      "trace": {
+        "preview": "previews/irbis-tracing-lv3.webp",
+        "print": "lv3_gpt_4101_1_en-irbis-coloring-page-obtahovacka-uroven-3.png",
+        "download": "lv3_gpt_4101_1_en-irbis-coloring-page-obtahovacka-uroven-3.png",
+        "name": "levhart-snezny-obtahovacka-LV3-cs-en.png",
+        "orientation": "portrait"
       }
     },
     {
@@ -60,6 +81,13 @@
         "print": "lv4_gpt_4101_1_en-irbis-coloring-page.png",
         "download": "lv4_gpt_4101_1_en-irbis-coloring-page.png",
         "name": "snehovy-levhart-omalovanka-LV4-cs-omalovanka.png"
+      },
+      "trace": {
+        "preview": "previews/irbis-tracing-lv4.webp",
+        "print": "irbis-tracing-LV4.png",
+        "download": "irbis-tracing-LV4.png",
+        "name": "levhart-snezny-obtahovacka-LV4-cs-en.png",
+        "orientation": "portrait"
       }
     },
     {
@@ -75,6 +103,13 @@
         "print": "lv5_gpt_4101_1_en-irbis-coloring-page.png",
         "download": "lv5_gpt_4101_1_en-irbis-coloring-page.png",
         "name": "snehovy-levhart-omalovanka-LV5-cs-omalovanka.png"
+      },
+      "trace": {
+        "preview": "previews/irbis-tracing-lv5.webp",
+        "print": "irbis-tracing-LV5.png",
+        "download": "irbis-tracing-LV5.png",
+        "name": "levhart-snezny-obtahovacka-LV5-cs-en.png",
+        "orientation": "portrait"
       }
     }
   ],
@@ -93,6 +128,13 @@
         "print": "IRBIS-01-01_LV3.png",
         "download": "IRBIS-01-01_LV3.png",
         "name": "snehovy-levhart-pribeh-01-LV3-cs-omalovanka.png"
+      },
+      "trace": {
+        "preview": "previews/irbis-story-01-trace.webp",
+        "print": "IRBIS-01-01_LV3-obtahovacka-uroven-3.png",
+        "download": "IRBIS-01-01_LV3-obtahovacka-uroven-3.png",
+        "name": "levhart-snezny-pribeh-01-obtahovacka-LV3-cs-en.png",
+        "orientation": "portrait"
       }
     },
     {
@@ -109,6 +151,13 @@
         "print": "IRBIS-01-02_LV3.png",
         "download": "IRBIS-01-02_LV3.png",
         "name": "snehovy-levhart-pribeh-02-LV3-cs-omalovanka.png"
+      },
+      "trace": {
+        "preview": "previews/irbis-story-02-trace.webp",
+        "print": "IRBIS-01-02_LV3-obtahovacka-uroven-3.png",
+        "download": "IRBIS-01-02_LV3-obtahovacka-uroven-3.png",
+        "name": "levhart-snezny-pribeh-02-obtahovacka-LV3-cs-en.png",
+        "orientation": "portrait"
       }
     },
     {
@@ -125,6 +174,13 @@
         "print": "IRBIS-01-03_LV3.png",
         "download": "IRBIS-01-03_LV3.png",
         "name": "snehovy-levhart-pribeh-03-LV3-cs-omalovanka.png"
+      },
+      "trace": {
+        "preview": "previews/irbis-story-03-trace.webp",
+        "print": "IRBIS-01-03_LV3-obtahovacka-uroven-3.png",
+        "download": "IRBIS-01-03_LV3-obtahovacka-uroven-3.png",
+        "name": "levhart-snezny-pribeh-03-obtahovacka-LV3-cs-en.png",
+        "orientation": "portrait"
       }
     },
     {
@@ -157,6 +213,13 @@
         "print": "IRBIS-01-05_LV3.png",
         "download": "IRBIS-01-05_LV3.png",
         "name": "snehovy-levhart-pribeh-05-LV3-cs-omalovanka.png"
+      },
+      "trace": {
+        "preview": "previews/irbis-story-05-trace.webp",
+        "print": "IRBIS-01-05_LV3-obtahovacka-uroven-3.png",
+        "download": "IRBIS-01-05_LV3-obtahovacka-uroven-3.png",
+        "name": "levhart-snezny-pribeh-05-obtahovacka-LV3-cs-en.png",
+        "orientation": "portrait"
       }
     },
     {
@@ -173,6 +236,13 @@
         "print": "IRBIS-01-06_LV3.png",
         "download": "IRBIS-01-06_LV3.png",
         "name": "snehovy-levhart-pribeh-06-LV3-cs-omalovanka.png"
+      },
+      "trace": {
+        "preview": "previews/irbis-story-06-trace.webp",
+        "print": "IRBIS-01-06_LV3-obtahovacka-uroven-3.png",
+        "download": "IRBIS-01-06_LV3-obtahovacka-uroven-3.png",
+        "name": "levhart-snezny-pribeh-06-obtahovacka-LV3-cs-en.png",
+        "orientation": "portrait"
       }
     },
     {
@@ -269,6 +339,13 @@
         "print": "IRBIS-01-12_LV3.png",
         "download": "IRBIS-01-12_LV3.png",
         "name": "snehovy-levhart-pribeh-12-LV3-cs-omalovanka.png"
+      },
+      "trace": {
+        "preview": "previews/irbis-story-12-trace.webp",
+        "print": "IRBIS-01-12_LV3-obtahovacka-uroven-3.png",
+        "download": "IRBIS-01-12_LV3-obtahovacka-uroven-3.png",
+        "name": "levhart-snezny-pribeh-12-obtahovacka-LV3-cs-en.png",
+        "orientation": "portrait"
       }
     }
   ],
