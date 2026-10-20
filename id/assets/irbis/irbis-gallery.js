@@ -27,9 +27,10 @@ function dialog(){
    const p=d.parts,asset=p.variant;if(!asset)return;print.disabled=true;err.hidden=true;
    try{
      if(asset.print.toLowerCase().endsWith(".pdf")){
-       const opened=window.open(version(base+asset.print),"_blank","noopener");
+       const opened=window.open(version(base+asset.print),"_blank");
        if(!opened)throw new Error("PDF tab blocked");
-       err.textContent=W.pdf;err.hidden=false;return;
+       opened.opener=null;
+       err.textContent=W.pdf;err.className="saw-print-status";err.hidden=false;return;
      }
      const source=base+asset.print;printImg.removeAttribute("src");printImg.src=version(source);
      if(!printImg.complete)await new Promise((resolve,reject)=>{printImg.onload=resolve;printImg.onerror=()=>reject(new Error("print load failed"))});
