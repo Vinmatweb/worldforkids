@@ -32,3 +32,15 @@ async function initializeRangeMaps(){
  }
 }
 initializeRangeMaps().catch(error=>{console.error("Animal range map could not be initialized.",error);document.querySelectorAll("[data-animal-range-map]").forEach(host=>{const fallback=host.querySelector(".animal-range-map__fallback");if(fallback)fallback.textContent=(labels[host.dataset.lang]||labels.cs).failed})});
+
+/* Shared privacy-friendly pageview analytics for vinmat.eu. */
+(function () {
+    'use strict';
+    if (window.__vinmatGoatCounterLoaded) return;
+    window.__vinmatGoatCounterLoaded = true;
+    const tag = document.createElement('script');
+    tag.async = true;
+    tag.src = 'https://gc.zgo.at/count.js';
+    tag.dataset.goatcounter = 'https://vinmat.goatcounter.com/count';
+    document.head.appendChild(tag);
+}());
