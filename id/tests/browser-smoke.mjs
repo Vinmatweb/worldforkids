@@ -83,10 +83,13 @@ try{
  assert.equal(new URL(page.url()).searchParams.get('view'),'month');
  assert.equal(await page.locator('#org-filter').inputValue(),'cheetah-conservation-fund');
  assert.equal(await page.locator('a[lang="cs"]').count(),1);
- assert.equal(await page.locator('a[href="https://vinmat.eu/worldforkids/id/en/irbis/"]').count(),1);
- assert.equal(await page.locator('a[href="./irbis/"]').count(),1);
  await page.locator('#org-filter').selectOption('all');
  await page.locator('#status-filter').selectOption('all');
+ await page.locator('#month-select').selectOption('9');
+ await page.locator('[data-date="2026-10-23"]').click();
+ const snowEvent=page.locator('.event-chip').filter({hasText:'International Snow Leopard Day'});
+ assert.equal(new URL(await snowEvent.getAttribute('href')).pathname,'/worldforkids/id/en/irbis/');
+ assert.equal(await page.locator('a[href="./irbis/"]').count(),1);
  await page.locator('#today').click();
  await page.locator('#prev').click();await page.locator('#next').click();
  assert.equal(await page.locator('a[href="https://vinmat.eu/worldforkids/"]').count(),1);
