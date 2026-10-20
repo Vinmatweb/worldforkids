@@ -166,7 +166,7 @@ document.addEventListener("keydown",e=>{
  const active=document.activeElement;if(!active?.matches(".date-btn"))return;
  e.preventDefault();const next=addDays(dateFromKey(active.dataset.date),e.key==="ArrowRight"?1:-1);
  setDateAndRender(next);
- const target=$('[data-date="'+calendarDateKey(next)+'"]');if(target)target.focus();
+ const target=document.querySelector('[data-date="'+calendarDateKey(next)+'"]');if(target)target.focus();
 });
 fetch(new URL("../data/events.json?v=20261020-calendar-fixes-v1",import.meta.url))
  .then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()})
