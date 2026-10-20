@@ -2530,7 +2530,7 @@
       "organizers": [],
       "origin": null,
       "detailUrl": null,
-      "sourceUrl": "https://www.project1882.org/about/press-centre",
+      "sourceUrl": "https://www.project1882.org/news/world-octopus-day-ban-octopus-farming-now",
       "accent": "#6f8ca1"
     },
     {
@@ -2763,7 +2763,7 @@
       "detailUrl": "irbis/",
       "sourceUrl": "https://www.unep.org/en/events/un-day/international-day-snow-leopard-2025",
       "accent": "#587bac",
-      "detailUrlEn": "../irbis/",
+      "detailUrlEn": "/worldforkids/id/en/irbis/",
       "collectionIds": [
         "international-days-snow-leopard"
       ],
@@ -2789,9 +2789,9 @@
       "typeLabelEn": "International awareness day",
       "organizers": [
         {
-          "id": "world-animal-protection",
-          "name": "World Animal Protection",
-          "nameEn": "World Animal Protection"
+          "id": "wwf-cambodia",
+          "name": "WWF-Cambodia (pořadatel osvětových akcí)",
+          "nameEn": "WWF-Cambodia (host of outreach events)"
         }
       ],
       "origin": null,
@@ -3122,7 +3122,13 @@
       "classification": "other",
       "typeLabel": "Mezinárodní osvětový den",
       "typeLabelEn": "International awareness day",
-      "organizers": [],
+      "organizers": [
+        {
+          "id": "cheetah-conservation-fund",
+          "name": "Cheetah Conservation Fund (koordinátor celosvětového dne)",
+          "nameEn": "Cheetah Conservation Fund (global observance coordinator)"
+        }
+      ],
       "origin": null,
       "detailUrl": null,
       "sourceUrl": "https://cheetah.org/about/what-we-do/international-cheetah-day/",
