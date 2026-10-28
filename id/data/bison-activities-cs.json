@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "species": "Bison bison",
+  "basic": [
+    {
+      "level": 1,
+      "color": {
+        "preview": "previews/basic-lv1-color.webp",
+        "print": "BIZON-01-00_LV1_CS_COLOR.png",
+        "download": "BIZON-01-00_LV1_CS_COLOR.png",
+        "name": "bizon-omalovanka-LV1-barevny-vzor.png",
+        "sourceDriveId": "1ogbN64_8VATb8A6QDT3thYUYiiOMMrR-",
+        "orientation": "portrait"
+      },
+      "bw": {
+        "preview": "previews/basic-lv1-bw.webp",
+        "print": "BIZON-01-00_LV1_CS_BW.png",
+        "download": "BIZON-01-00_LV1_CS_BW.png",
+        "name": "bizon-omalovanka-LV1-cernobile.png",
+        "sourceDriveId": "1bMoqFV2Ev6RW40c_1vihVsFhv7iWfwoM",
+        "orientation": "portrait"
+      }
+    },
+    {
+      "level": 2,
+      "color": {
+        "preview": "previews/basic-lv2-color.webp",
+        "print": "BIZON-01-00_LV2_CS_COLOR.png",
+        "download": "BIZON-01-00_LV2_CS_COLOR.png",
+        "name": "bizon-omalovanka-LV2-barevny-vzor.png",
+        "sourceDriveId": "1O0icuVV_z2PLIPDdW6k9qc-NO4BE8q9c",
+        "orientation": "portrait"
+      },
+      "bw": {
+        "preview": "previews/basic-lv2-bw.webp",
+        "print": "BIZON-01-00_LV2_CS_BW.png",
+        "download": "BIZON-01-00_LV2_CS_BW.png",
+        "name": "bizon-omalovanka-LV2-cernobile.png",
+        "sourceDriveId": "1bq5t3-7esJCJj-_ufyxA7KwDuRirghl7",
+        "orientation": "portrait"
+      }
+    },
+    {
+      "level": 3,
+      "color": {
+        "preview": "previews/basic-lv3-color.webp",
+        "print": "BIZON-01-00_LV3_CS_COLOR.png",
+        "download": "BIZON-01-00_LV3_CS_COLOR.png",
+        "name": "bizon-omalovanka-LV3-barevny-vzor.png",
+        "sourceDriveId": "14gxPWtSwDOci4JhTzHFPEbmrDHKwObS6",
+        "orientation": "portrait"
+      },
+      "bw": {
+        "preview": "previews/basic-lv3-bw.webp",
+        "print": "BIZON-01-00_LV3_CS_BW.png",
+        "download": "BIZON-01-00_LV3_CS_BW.png",
+        "name": "bizon-omalovanka-LV3-cernobile.png",
+        "sourceDriveId": "1qf0FXurNHAy1HmYB1AjZeg-XueOYTZf6",
+        "orientation": "portrait"
+      }
+    },
+    {
+      "level": 4,
+      "color": {
+        "preview": "previews/basic-lv4-color.webp",
+        "print": "BIZON-01-00_LV4_CS_COLOR.png",
+        "download": "BIZON-01-00_LV4_CS_COLOR.png",
+        "name": "bizon-omalovanka-LV4-barevny-vzor.png",
+        "sourceDriveId": "1xyzr7FsMYBz-HAH1aOsNBOYVqVgU8-EH",
+        "orientation": "portrait"
+      },
+      "bw": {
+        "preview": "previews/basic-lv4-bw.webp",
+        "print": "BIZON-01-00_LV4_CS_BW.png",
+        "download": "BIZON-01-00_LV4_CS_BW.png",
+        "name": "bizon-omalovanka-LV4-cernobile.png",
+        "sourceDriveId": "1wfM7VND5KBSUK4dBd7NpUrWzc78zSQLJ",
+        "orientation": "portrait"
+      }
+    },
+    {
+      "level": 5,
+      "color": {
+        "preview": "previews/basic-lv5-color.webp",
+        "print": "BIZON-01-00_LV5_CS_COLOR.png",
+        "download": "BIZON-01-00_LV5_CS_COLOR.png",
+        "name": "bizon-omalovanka-LV5-barevny-vzor.png",
+        "sourceDriveId": "10Dply1O66-nlgFdF7vCdG-m-kFg58B5f",
+        "orientation": "portrait"
+      },
+      "bw": {
+        "preview": "previews/basic-lv5-bw.webp",
+        "print": "BIZON-01-00_LV5_CS_BW.png",
+        "download": "BIZON-01-00_LV5_CS_BW.png",
+        "name": "bizon-omalovanka-LV5-cernobile.png",
+        "sourceDriveId": "1gwpe4e3Ws07lA0a1AntgsutFelteWr_D",
+        "orientation": "portrait"
+      }
+    }
+  ],
+  "cards": [],
+  "stories": []
+}
