@@ -2955,9 +2955,10 @@
         "cs": "USA",
         "en": "United States"
       },
-      "detailUrl": null,
+      "detailUrl": "/worldforkids/id/bison/",
       "sourceUrl": "https://www.nps.gov/subjects/bison/people.htm",
-      "accent": "#c77d43"
+      "accent": "#c77d43",
+      "detailUrlEn": "/worldforkids/id/en/bison/"
     },
     {
       "id": "world-numbat-day",

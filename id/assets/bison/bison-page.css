@@ -1,0 +1,20 @@
+:root{--saw-sea:#7b8b70;--saw-deep:#3e5140;--saw-muted:#626a5d;--saw-line:#e2e6de;--saw-soft:#f4f5f0;--saw-accent:#a16b42}
+.saw-hero{background:linear-gradient(125deg,#3e5140,#778568 62%,#d2c4a8)}
+.saw-hero-art-action{color:#3d4a39}
+.saw-hero-art-action span{color:#495b45}
+.saw-topic h3,.saw-sources a{color:#6c4f38}
+.saw-topic .scene-note{background:#f5f2eb;border-left-color:#ae7a4d;color:#4e453a}
+.saw-status span{background:#f6eee5;border-color:#e7d5c2;color:#76543a}
+.bison-calendar-link{display:inline-block;margin-top:16px;color:#fff;font-weight:800;text-underline-offset:4px}
+.bison-facts .saw-stat{background:#f5f4ee;border-color:#e5e0d4}
+.bison-facts .saw-stat span{color:#746650}
+.bison-facts .saw-stat strong{color:#3e5140}
+.bison-topic-art{margin:0}
+.bison-topic-art .bison-art-frame{aspect-ratio:1.05;display:grid;place-items:center;border:1px solid #dfe4dc;border-radius:16px;background:transparent;padding:8px;overflow:hidden}
+.bison-topic-art img{display:block;width:100%;height:100%;object-fit:contain;border-radius:10px}
+.bison-topic-art figcaption{text-align:center;margin-top:7px;color:#766a58;font-size:12px;font-weight:750}
+.bison-activity-note{margin:0 0 14px;color:#4a6470;line-height:1.65}
+.bison-activities .section-head{align-items:center}
+.bison-activities .button{flex:0 0 auto}
+#bison-card-gallery{display:none}
+@media(max-width:760px){.saw-hero-layout{grid-template-columns:1fr;gap:8px;padding:20px}.saw-hero-art-wrap{justify-self:center;max-width:230px}.saw-hero-art{height:250px}.bison-activities .section-head{align-items:flex-start;flex-direction:column}.bison-activities .button{width:100%}.bison-topic-art .bison-art-frame{aspect-ratio:1.1}}
