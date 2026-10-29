@@ -1,0 +1,427 @@
+{
+  "schemaVersion": 1,
+  "species": "ring-tailed-lemur",
+  "basic": [
+    {
+      "level": 1,
+      "color": {
+        "preview": "previews/basic-lv1-color.webp",
+        "print": "print/basic-lv1-color.png",
+        "download": "print/basic-lv1-color.png",
+        "name": "lemur-kata-omalovanka-LV1-cs-barevny-vzor.png",
+        "orientation": "portrait"
+      },
+      "bw": {
+        "preview": "previews/basic-lv1-bw.webp",
+        "print": "print/basic-lv1-bw.png",
+        "download": "print/basic-lv1-bw.png",
+        "name": "lemur-kata-omalovanka-LV1-cs-cerne-bila.png",
+        "orientation": "portrait"
+      }
+    },
+    {
+      "level": 2,
+      "color": {
+        "preview": "previews/basic-lv2-color.webp",
+        "print": "print/basic-lv2-color.png",
+        "download": "print/basic-lv2-color.png",
+        "name": "lemur-kata-omalovanka-LV2-cs-barevny-vzor.png",
+        "orientation": "portrait"
+      },
+      "bw": {
+        "preview": "previews/basic-lv2-bw.webp",
+        "print": "print/basic-lv2-bw.png",
+        "download": "print/basic-lv2-bw.png",
+        "name": "lemur-kata-omalovanka-LV2-cs-cerne-bila.png",
+        "orientation": "portrait"
+      }
+    },
+    {
+      "level": 3,
+      "color": {
+        "preview": "previews/basic-lv3-color.webp",
+        "print": "print/basic-lv3-color.png",
+        "download": "print/basic-lv3-color.png",
+        "name": "lemur-kata-omalovanka-LV3-cs-barevny-vzor.png",
+        "orientation": "portrait"
+      },
+      "bw": {
+        "preview": "previews/basic-lv3-bw.webp",
+        "print": "print/basic-lv3-bw.png",
+        "download": "print/basic-lv3-bw.png",
+        "name": "lemur-kata-omalovanka-LV3-cs-cerne-bila.png",
+        "orientation": "portrait"
+      }
+    },
+    {
+      "level": 4,
+      "color": {
+        "preview": "previews/basic-lv4-color.webp",
+        "print": "print/basic-lv4-color.png",
+        "download": "print/basic-lv4-color.png",
+        "name": "lemur-kata-omalovanka-LV4-cs-barevny-vzor.png",
+        "orientation": "portrait"
+      },
+      "bw": {
+        "preview": "previews/basic-lv4-bw.webp",
+        "print": "print/basic-lv4-bw.png",
+        "download": "print/basic-lv4-bw.png",
+        "name": "lemur-kata-omalovanka-LV4-cs-cerne-bila.png",
+        "orientation": "portrait"
+      }
+    },
+    {
+      "level": 5,
+      "color": {
+        "preview": "previews/basic-lv5-color.webp",
+        "print": "print/basic-lv5-color.png",
+        "download": "print/basic-lv5-color.png",
+        "name": "lemur-kata-omalovanka-LV5-cs-barevny-vzor.png",
+        "orientation": "portrait"
+      },
+      "bw": {
+        "preview": "previews/basic-lv5-bw.webp",
+        "print": "print/basic-lv5-bw.png",
+        "download": "print/basic-lv5-bw.png",
+        "name": "lemur-kata-omalovanka-LV5-cs-cerne-bila.png",
+        "orientation": "portrait"
+      }
+    }
+  ],
+  "stories": [
+    {
+      "id": "LEMUR-01-01",
+      "level": 3,
+      "color": {
+        "preview": "previews/story-01-en-color.webp",
+        "print": "print/story-01-en-color.png",
+        "download": "print/story-01-en-color.png",
+        "name": "lemur-kata-pribeh-01-LV3-en-barevny-vzor.png",
+        "orientation": "portrait"
+      },
+      "bw": {
+        "preview": "previews/story-01-en-bw.webp",
+        "print": "print/story-01-en-bw.png",
+        "download": "print/story-01-en-bw.png",
+        "name": "lemur-kata-pribeh-01-LV3-en-omalovanka.png",
+        "orientation": "portrait"
+      }
+    },
+    {
+      "id": "LEMUR-01-02",
+      "level": 5,
+      "color": {
+        "preview": "previews/story-02-en-color.webp",
+        "print": "print/story-02-en-color.png",
+        "download": "print/story-02-en-color.png",
+        "name": "lemur-kata-pribeh-02-LV5-en-barevny-vzor.png",
+        "orientation": "portrait"
+      }
+    },
+    {
+      "id": "LEMUR-01-03",
+      "level": 3,
+      "color": {
+        "preview": "previews/story-03-en-color.webp",
+        "print": "print/story-03-en-color.png",
+        "download": "print/story-03-en-color.png",
+        "name": "lemur-kata-pribeh-03-LV3-en-barevny-vzor.png",
+        "orientation": "portrait"
+      },
+      "bw": {
+        "preview": "previews/story-03-en-bw.webp",
+        "print": "print/story-03-en-bw.png",
+        "download": "print/story-03-en-bw.png",
+        "name": "lemur-kata-pribeh-03-LV3-en-omalovanka.png",
+        "orientation": "portrait"
+      }
+    },
+    {
+      "id": "LEMUR-01-04",
+      "level": 3,
+      "color": {
+        "preview": "previews/story-04-en-color.webp",
+        "print": "print/story-04-en-color.png",
+        "download": "print/story-04-en-color.png",
+        "name": "lemur-kata-pribeh-04-LV3-en-barevny-vzor.png",
+        "orientation": "portrait"
+      },
+      "bw": {
+        "preview": "previews/story-04-en-bw.webp",
+        "print": "print/story-04-en-bw.png",
+        "download": "print/story-04-en-bw.png",
+        "name": "lemur-kata-pribeh-04-LV3-en-omalovanka.png",
+        "orientation": "portrait"
+      }
+    },
+    {
+      "id": "LEMUR-01-05",
+      "level": 3,
+      "color": {
+        "preview": "previews/story-05-en-color.webp",
+        "print": "print/story-05-en-color.png",
+        "download": "print/story-05-en-color.png",
+        "name": "lemur-kata-pribeh-05-LV3-en-barevny-vzor.png",
+        "orientation": "portrait"
+      },
+      "bw": {
+        "preview": "previews/story-05-en-bw.webp",
+        "print": "print/story-05-en-bw.png",
+        "download": "print/story-05-en-bw.png",
+        "name": "lemur-kata-pribeh-05-LV3-en-omalovanka.png",
+        "orientation": "portrait"
+      }
+    },
+    {
+      "id": "LEMUR-01-06",
+      "level": 3,
+      "color": {
+        "preview": "previews/story-06-en-color.webp",
+        "print": "print/story-06-en-color.png",
+        "download": "print/story-06-en-color.png",
+        "name": "lemur-kata-pribeh-06-LV3-en-barevny-vzor.png",
+        "orientation": "portrait"
+      },
+      "bw": {
+        "preview": "previews/story-06-en-bw.webp",
+        "print": "print/story-06-en-bw.png",
+        "download": "print/story-06-en-bw.png",
+        "name": "lemur-kata-pribeh-06-LV3-en-omalovanka.png",
+        "orientation": "portrait"
+      }
+    },
+    {
+      "id": "LEMUR-01-07",
+      "level": 3,
+      "color": {
+        "preview": "previews/story-07-en-color.webp",
+        "print": "print/story-07-en-color.png",
+        "download": "print/story-07-en-color.png",
+        "name": "lemur-kata-pribeh-07-LV3-en-barevny-vzor.png",
+        "orientation": "portrait"
+      },
+      "bw": {
+        "preview": "previews/story-07-en-bw.webp",
+        "print": "print/story-07-en-bw.png",
+        "download": "print/story-07-en-bw.png",
+        "name": "lemur-kata-pribeh-07-LV3-en-omalovanka.png",
+        "orientation": "portrait"
+      }
+    },
+    {
+      "id": "LEMUR-01-08",
+      "level": 3,
+      "color": {
+        "preview": "previews/story-08-en-color.webp",
+        "print": "print/story-08-en-color.png",
+        "download": "print/story-08-en-color.png",
+        "name": "lemur-kata-pribeh-08-LV3-en-barevny-vzor.png",
+        "orientation": "portrait"
+      },
+      "bw": {
+        "preview": "previews/story-08-en-bw.webp",
+        "print": "print/story-08-en-bw.png",
+        "download": "print/story-08-en-bw.png",
+        "name": "lemur-kata-pribeh-08-LV3-en-omalovanka.png",
+        "orientation": "portrait"
+      }
+    },
+    {
+      "id": "LEMUR-01-09",
+      "level": 4,
+      "color": {
+        "preview": "previews/story-09-en-color.webp",
+        "print": "print/story-09-en-color.png",
+        "download": "print/story-09-en-color.png",
+        "name": "lemur-kata-pribeh-09-LV4-en-barevny-vzor.png",
+        "orientation": "portrait"
+      },
+      "bw": {
+        "preview": "previews/story-09-en-bw.webp",
+        "print": "print/story-09-en-bw.png",
+        "download": "print/story-09-en-bw.png",
+        "name": "lemur-kata-pribeh-09-LV4-en-omalovanka.png",
+        "orientation": "portrait"
+      }
+    },
+    {
+      "id": "LEMUR-01-10",
+      "level": 4,
+      "color": {
+        "preview": "previews/story-10-en-color.webp",
+        "print": "print/story-10-en-color.png",
+        "download": "print/story-10-en-color.png",
+        "name": "lemur-kata-pribeh-10-LV4-en-barevny-vzor.png",
+        "orientation": "portrait"
+      },
+      "bw": {
+        "preview": "previews/story-10-en-bw.webp",
+        "print": "print/story-10-en-bw.png",
+        "download": "print/story-10-en-bw.png",
+        "name": "lemur-kata-pribeh-10-LV4-en-omalovanka.png",
+        "orientation": "portrait"
+      }
+    },
+    {
+      "id": "LEMUR-01-11",
+      "level": 3,
+      "color": {
+        "preview": "previews/story-11-en-color.webp",
+        "print": "print/story-11-en-color.png",
+        "download": "print/story-11-en-color.png",
+        "name": "lemur-kata-pribeh-11-LV3-en-barevny-vzor.png",
+        "orientation": "portrait"
+      },
+      "bw": {
+        "preview": "previews/story-11-en-bw.webp",
+        "print": "print/story-11-en-bw.png",
+        "download": "print/story-11-en-bw.png",
+        "name": "lemur-kata-pribeh-11-LV3-en-omalovanka.png",
+        "orientation": "portrait"
+      }
+    },
+    {
+      "id": "LEMUR-01-12",
+      "level": 4,
+      "color": {
+        "preview": "previews/story-12-en-color.webp",
+        "print": "print/story-12-en-color.png",
+        "download": "print/story-12-en-color.png",
+        "name": "lemur-kata-pribeh-12-LV4-en-barevny-vzor.png",
+        "orientation": "portrait"
+      },
+      "bw": {
+        "preview": "previews/story-12-en-bw.webp",
+        "print": "print/story-12-en-bw.png",
+        "download": "print/story-12-en-bw.png",
+        "name": "lemur-kata-pribeh-12-LV4-en-omalovanka.png",
+        "orientation": "portrait"
+      }
+    },
+    {
+      "id": "LEMUR-01-13",
+      "level": 4,
+      "color": {
+        "preview": "previews/story-13-en-color.webp",
+        "print": "print/story-13-en-color.png",
+        "download": "print/story-13-en-color.png",
+        "name": "lemur-kata-pribeh-13-LV4-en-barevny-vzor.png",
+        "orientation": "portrait"
+      },
+      "bw": {
+        "preview": "previews/story-13-en-bw.webp",
+        "print": "print/story-13-en-bw.png",
+        "download": "print/story-13-en-bw.png",
+        "name": "lemur-kata-pribeh-13-LV4-en-omalovanka.png",
+        "orientation": "portrait"
+      }
+    }
+  ],
+  "cards": [
+    {
+      "level": 2,
+      "cs": {
+        "bw": {
+          "preview": "previews/card-lv2-cs-bw.webp",
+          "print": "print/card-lv2-cs-bw.pdf",
+          "download": "print/card-lv2-cs-bw.pdf",
+          "name": "lemur-kata-informacni-karta-LV2-cs-cerne-bila.pdf",
+          "orientation": "portrait"
+        },
+        "color": {
+          "preview": "previews/card-lv2-cs-color.webp",
+          "print": "print/card-lv2-cs-color.png",
+          "download": "print/card-lv2-cs-color.png",
+          "name": "lemur-kata-informacni-karta-LV2-cs-barevny-vzor.png",
+          "orientation": "portrait"
+        }
+      },
+      "en": {
+        "bw": {
+          "preview": "previews/card-lv2-en-bw.webp",
+          "print": "print/card-lv2-en-bw.png",
+          "download": "print/card-lv2-en-bw.png",
+          "name": "lemur-kata-information-card-LV2-en-black-and-white.png",
+          "orientation": "portrait"
+        },
+        "color": {
+          "preview": "previews/card-lv2-en-color.webp",
+          "print": "print/card-lv2-en-color.png",
+          "download": "print/card-lv2-en-color.png",
+          "name": "lemur-kata-information-card-LV2-en-color.png",
+          "orientation": "portrait"
+        }
+      }
+    },
+    {
+      "level": 3,
+      "cs": {
+        "bw": {
+          "preview": "previews/card-lv3-cs-bw.webp",
+          "print": "print/card-lv3-cs-bw.pdf",
+          "download": "print/card-lv3-cs-bw.pdf",
+          "name": "lemur-kata-informacni-karta-LV3-cs-cerne-bila.pdf",
+          "orientation": "portrait"
+        },
+        "color": {
+          "preview": "previews/card-lv3-cs-color.webp",
+          "print": "print/card-lv3-cs-color.png",
+          "download": "print/card-lv3-cs-color.png",
+          "name": "lemur-kata-informacni-karta-LV3-cs-barevny-vzor.png",
+          "orientation": "portrait"
+        }
+      },
+      "en": {
+        "bw": {
+          "preview": "previews/card-lv3-en-bw.webp",
+          "print": "print/card-lv3-en-bw.png",
+          "download": "print/card-lv3-en-bw.png",
+          "name": "lemur-kata-information-card-LV3-en-black-and-white.png",
+          "orientation": "portrait"
+        },
+        "color": {
+          "preview": "previews/card-lv3-en-color.webp",
+          "print": "print/card-lv3-en-color.png",
+          "download": "print/card-lv3-en-color.png",
+          "name": "lemur-kata-information-card-LV3-en-color.png",
+          "orientation": "portrait"
+        }
+      }
+    },
+    {
+      "level": 4,
+      "cs": {
+        "bw": {
+          "preview": "previews/card-lv4-cs-bw.webp",
+          "print": "print/card-lv4-cs-bw.pdf",
+          "download": "print/card-lv4-cs-bw.pdf",
+          "name": "lemur-kata-informacni-karta-LV4-cs-cerne-bila.pdf",
+          "orientation": "portrait"
+        },
+        "color": {
+          "preview": "previews/card-lv4-cs-color.webp",
+          "print": "print/card-lv4-cs-color.png",
+          "download": "print/card-lv4-cs-color.png",
+          "name": "lemur-kata-informacni-karta-LV4-cs-barevny-vzor.png",
+          "orientation": "portrait"
+        }
+      },
+      "en": {
+        "bw": {
+          "preview": "previews/card-lv4-en-bw.webp",
+          "print": "print/card-lv4-en-bw.png",
+          "download": "print/card-lv4-en-bw.png",
+          "name": "lemur-kata-information-card-LV4-en-black-and-white.png",
+          "orientation": "portrait"
+        },
+        "color": {
+          "preview": "previews/card-lv4-en-color.webp",
+          "print": "print/card-lv4-en-color.png",
+          "download": "print/card-lv4-en-color.png",
+          "name": "lemur-kata-information-card-LV4-en-color.png",
+          "orientation": "portrait"
+        }
+      }
+    }
+  ]
+}

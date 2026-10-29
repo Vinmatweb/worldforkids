@@ -1,0 +1,14 @@
+:root{--saw-sea:#6f8f70;--saw-deep:#344b3c;--saw-muted:#566b5c;--saw-line:#dbe5d9;--saw-soft:#f2f6ee;--saw-accent:#809b78}
+.saw-hero{background:linear-gradient(125deg,#344b3c,#708d6d 62%,#d6d8bc)}
+.saw-hero-art-action,.saw-hero-art-action span{color:#253d2e}
+.lemur-page .lemur-topic{display:grid;grid-template-columns:minmax(220px,35%) minmax(0,1fr);grid-template-areas:"art title" "art copy";gap:10px 26px;align-items:start;margin:0 0 34px;padding:0 0 30px;border-bottom:1px solid var(--saw-line)}
+.lemur-page .lemur-topic--reverse{grid-template-columns:minmax(0,1fr) minmax(220px,35%);grid-template-areas:"title art" "copy art"}
+.lemur-page .lemur-topic-title{grid-area:title;margin:0 0 3px;font-size:clamp(22px,2.5vw,30px);line-height:1.2;color:var(--ink)}
+.lemur-page .lemur-topic .saw-topic-art{grid-area:art;margin:0}
+.lemur-page .lemur-topic .saw-topic-copy{grid-area:copy;min-width:0}
+.lemur-page .saw-topic-art button{border-radius:18px}
+.lemur-page .saw-topic-art img{border:0;background:transparent}
+.lemur-page .scene-note{background:#f4f7f1;border-left:3px solid #809b78;padding:10px 13px;border-radius:0 10px 10px 0}
+.lemur-page .animal-range-map__note a{font-weight:750}
+.lemur-page .saw-open-activity{color:#425d47}
+@media(max-width:760px){.lemur-page .saw-hero-art{height:250px}.lemur-page .lemur-topic,.lemur-page .lemur-topic--reverse{grid-template-columns:minmax(0,1fr);grid-template-areas:"title" "art" "copy";gap:12px}.lemur-page .lemur-topic-title{font-size:23px}.lemur-page .lemur-topic .saw-topic-art{width:100%}.lemur-page .lemur-topic .saw-topic-art img{max-height:430px;object-fit:contain}}

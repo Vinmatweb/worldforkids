@@ -2879,9 +2879,10 @@
         }
       ],
       "origin": null,
-      "detailUrl": null,
+      "detailUrl": "/worldforkids/id/lemur/",
       "sourceUrl": "https://www.lemurconservationnetwork.org/world-lemur-day/",
-      "accent": "#ca8158"
+      "accent": "#ca8158",
+      "detailUrlEn": "/worldforkids/id/en/lemur/"
     },
     {
       "id": "world-basking-shark-day",

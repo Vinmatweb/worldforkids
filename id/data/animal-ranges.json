@@ -420,6 +420,77 @@
           }
         }
       ]
+    },
+    "ring-tailed-lemur": {
+      "center": [
+        -22.1,
+        46.4
+      ],
+      "zoom": 6,
+      "color": "#81986e",
+      "features": [
+        {
+          "type": "Feature",
+          "properties": {
+            "name": {
+              "cs": "Jižní a jihozápadní Madagaskar",
+              "en": "Southern and south-western Madagascar"
+            },
+            "kind": "Approximate range"
+          },
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  43.5,
+                  -14.4
+                ],
+                [
+                  46.5,
+                  -14.8
+                ],
+                [
+                  49.2,
+                  -16.8
+                ],
+                [
+                  50.4,
+                  -19.5
+                ],
+                [
+                  49.4,
+                  -22.4
+                ],
+                [
+                  47.3,
+                  -25.6
+                ],
+                [
+                  44.3,
+                  -25.3
+                ],
+                [
+                  42.9,
+                  -23.2
+                ],
+                [
+                  42.7,
+                  -20.1
+                ],
+                [
+                  43.2,
+                  -17
+                ],
+                [
+                  43.5,
+                  -14.4
+                ]
+              ]
+            ]
+          }
+        }
+      ]
     }
   }
 }
